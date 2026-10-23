@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AIニュースの仮公開プレビュー。要約付きカード、検索、カテゴリー、記事詳細を架空のサンプルで確認できます。">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>AIニュース | 仮公開プレビュー</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ</a>
+  <header>
+    <a class="brand" href="./">AIニュース <span class="preview-badge">仮公開</span></a>
+    <div class="header-right"><button id="theme" type="button" aria-label="ダークモード切り替え" aria-pressed="false">◐ <span>ダーク</span></button></div>
+  </header>
+  <div class="preview-note">
+    <strong>表示確認用のプレビューです。</strong>
+    掲載記事・日時は架空のサンプルで、実際のニュースではありません。自動更新・記事編集・ログインはありません。
+  </div>
+  <div class="toolbar">
+    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワードで探す" aria-label="サンプル記事を検索" disabled></label>
+    <label>サンプル日付 <select id="date" disabled><option value="">すべて</option></select></label>
+  </div>
+  <main id="main" tabindex="-1">
+    <div id="home">
+      <nav id="categories" aria-label="カテゴリー"></nav>
+      <div class="content-grid"><section aria-labelledby="list-title">
+        <div class="section-head"><h1 id="list-title">ニュース一覧</h1><span id="count" aria-live="polite"></span></div>
+        <div id="notice" role="status">サンプルを読み込み中…</div>
+        <div id="articles"></div>
+        <p class="end-note" id="end-note" hidden>サンプル記事はここまでです。</p>
+      </section></div>
+    </div>
+    <article id="detail" hidden tabindex="-1"></article>
+    <noscript><p class="empty">記事の表示にはJavaScriptが必要です。このサイトは架空のサンプルを使った仮公開版です。</p></noscript>
+  </main>
+  <footer><small>AIニュース · 仮公開プレビュー · 架空サンプル / 閲覧専用</small></footer>
+</body>
+</html>
