@@ -51,6 +51,9 @@
   }
   function renderBlocks(blocks) {
     return blocks.map(block => {
+      if (block.type === 'feature') {
+        return `<p class="feature"><strong>${escapeHTML(block.label)}</strong>：${escapeHTML(block.text)}</p>`;
+      }
       const tag = block.type === 'heading' ? 'h2' : block.type === 'quote' ? 'blockquote' : 'p';
       return `<${tag}>${escapeHTML(block.text)}</${tag}>`;
     }).join('');
@@ -99,7 +102,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261025-copy3', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261025-readability4', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
