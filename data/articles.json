@@ -1,6 +1,6 @@
 {
-  "sample": true,
-  "description": "仮公開プレビュー用の架空サンプル。実際のニュースではありません。",
+  "sample": false,
+  "description": "実際の動画紹介記事と、明示された表示確認用の架空サンプルを掲載しています。",
   "categories": [
     {
       "id": "ai",
@@ -24,6 +24,89 @@
     }
   ],
   "articles": [
+    {
+      "id": "blender-52-lts-video-review",
+      "title": "Blender 5.2 LTSの変更点を短く整理：物理・テクスチャ・合成はどう変わる？",
+      "summary": "公式の約37分の紹介動画から、制作で気になる変更点を整理。髪・布のノード物理、Cyclesのメモリ対策、合成と素材管理の改善を押さえます。",
+      "category": "tools",
+      "publishedAt": "2026-10-25T03:05:00+09:00",
+      "sample": false,
+      "videoId": "g4OXlrxqIx0",
+      "videoTitle": "Blender 5.2 LTS 公式紹介動画",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "この記事は2026年7月14日公開のBlender公式動画を振り返るものです。本日の新発表ではありません。全機能を列挙するのではなく、実制作に関係する変更点を中心にまとめました。"
+        },
+        {
+          "type": "heading",
+          "text": "まず押さえる3点"
+        },
+        {
+          "type": "paragraph",
+          "text": "① 髪と布の物理をGeometry Nodesで扱う新しい仕組みが登場。ただし初期の実験的な機能です。\n② CyclesのTexture Cacheは、画像テクスチャの多いシーンでメモリ使用量と起動時間を減らすための仕組みです。\n③ コンポジターの応答性や映像編集との連携、オンラインのアセット利用が改善されました。"
+        },
+        {
+          "type": "heading",
+          "text": "髪・布の動きを、ノードで組み立てる"
+        },
+        {
+          "type": "paragraph",
+          "text": "Geometry Nodesに髪と布のダイナミクスが加わりました。物理をノードグループのアセットとして扱い、手続き的な形状生成と組み合わせていく方向の更新です。決まった設定だけでは足りない動きを組みたい人に注目点があります。一方、初期段階の実験的機能なので、既存の物理システムを全面的に置き換えられるとは受け取らず、必要な衝突やキャッシュの挙動を小さなシーンで確認するのが現実的です。"
+        },
+        {
+          "type": "heading",
+          "text": "重いテクスチャと、合成の待ち時間に手を入れる"
+        },
+        {
+          "type": "paragraph",
+          "text": "CyclesのTexture Cacheは、画像から最適化したキャッシュを作り、描画に必要な領域と解像度を読み込む仕組みです。大量の画像を使う制作でメモリ負荷を抑える狙いがありますが、あらゆるシーンの描画が一律に速くなる保証ではありません。レンダーファームで使うなら、生成されるキャッシュの置き場所や共有方法も確認したいところです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "合成ではインタラクティブな操作の応答性が改善され、Video Sequencerからコンポジターのノードツリーをエフェクトとして利用できるようになりました。色や効果を調整しながら編集する流れを、Blender内でつなぎやすくする更新です。Nukeなど既存の制作環境を直ちに置き換える話ではなく、どの工程をBlender内で完結させたいかで価値が変わります。"
+        },
+        {
+          "type": "heading",
+          "text": "素材管理も改善。導入は小さく試す"
+        },
+        {
+          "type": "paragraph",
+          "text": "アセットライブラリはリモート配信に対応し、Blender Online Essentialsの素材を必要に応じて取得したり、自前のライブラリを公開したりできます。素材を探して制作に持ち込む導線が増えた、という理解でよさそうです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "dotの見立て：まず試すなら、テクスチャの多い代表シーンでメモリと読み込み時間を比べるのが分かりやすいでしょう。物理や合成は実案件のコピーで検証し、見た目・互換性・アドオンの動作を確かめてから移行するのが無難です。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Blender公式動画",
+          "url": "https://www.youtube.com/watch?v=g4OXlrxqIx0"
+        },
+        {
+          "label": "Blender 5.2 LTS 公式リリース",
+          "url": "https://www.blender.org/press/blender-5-2-lts-release/"
+        },
+        {
+          "label": "Geometry Nodesの物理：公式解説",
+          "url": "https://code.blender.org/2026/07/geometry-nodes-physics/"
+        },
+        {
+          "label": "Cycles Texture Cache：公式解説",
+          "url": "https://code.blender.org/2026/05/cycles-texture-cache/"
+        },
+        {
+          "label": "コンポジター：公式リリースノート",
+          "url": "https://developer.blender.org/docs/release_notes/5.2/compositor/"
+        },
+        {
+          "label": "Video Sequencer：公式リリースノート",
+          "url": "https://developer.blender.org/docs/release_notes/5.2/sequencer/"
+        }
+      ],
+      "sourceNote": "YouTube Data APIで動画情報を取得し、Gemini APIによる動画解析をもとにdotが編集。主要事項をBlender公式資料と照合しました。実機での性能比較・全機能の検証は行っていません。"
+    },
     {
       "id": "sample-01",
       "title": "【架空サンプル】手元のPCで動く小さなAI。架空の「Mori」が示す選択肢",
@@ -53,7 +136,8 @@
           "label": "例示用URL（記事の裏付けではありません）",
           "url": "https://example.com/"
         }
-      ]
+      ],
+      "sample": true
     },
     {
       "id": "sample-02",
@@ -84,7 +168,8 @@
           "label": "例示用URL（記事の裏付けではありません）",
           "url": "https://example.com/"
         }
-      ]
+      ],
+      "sample": true
     },
     {
       "id": "sample-03",
@@ -115,7 +200,8 @@
           "label": "例示用URL（記事の裏付けではありません）",
           "url": "https://example.com/"
         }
-      ]
+      ],
+      "sample": true
     },
     {
       "id": "sample-04",
@@ -146,7 +232,8 @@
           "label": "例示用URL（記事の裏付けではありません）",
           "url": "https://example.com/"
         }
-      ]
+      ],
+      "sample": true
     }
   ]
 }

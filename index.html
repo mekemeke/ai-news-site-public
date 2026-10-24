@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AIニュースの仮公開プレビュー。要約付きカード、検索、カテゴリー、記事詳細を架空のサンプルで確認できます。">
+  <meta name="description" content="AI・3DCGの動画紹介とニュースを日本語でまとめる仮公開サイト。検索、カテゴリー、記事詳細から閲覧できます。">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>AIニュース | 仮公開プレビュー</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./app.js" defer></script>
@@ -17,26 +17,26 @@
     <div class="header-right"><button id="theme" type="button" aria-label="ダークモード切り替え" aria-pressed="false">◐ <span>ダーク</span></button></div>
   </header>
   <div class="preview-note">
-    <strong>表示確認用のプレビューです。</strong>
-    掲載記事・日時は架空のサンプルで、実際のニュースではありません。自動更新・記事編集・ログインはありません。
+    <strong>AI・3DCGの動画紹介を掲載しています。</strong>
+    「架空サンプル」表示の記事は動作確認用です。実際の記事とは区別してご覧ください。自動更新・記事編集・ログインはありません。
   </div>
   <div class="toolbar">
-    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワードで探す" aria-label="サンプル記事を検索" disabled></label>
-    <label>サンプル日付 <select id="date" disabled><option value="">すべて</option></select></label>
+    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワードで探す" aria-label="記事を検索" disabled></label>
+    <label>掲載日付 <select id="date" disabled><option value="">すべて</option></select></label>
   </div>
   <main id="main" tabindex="-1">
     <div id="home">
       <nav id="categories" aria-label="カテゴリー"></nav>
       <div class="content-grid"><section aria-labelledby="list-title">
         <div class="section-head"><h1 id="list-title">ニュース一覧</h1><span id="count" aria-live="polite"></span></div>
-        <div id="notice" role="status">サンプルを読み込み中…</div>
+        <div id="notice" role="status">記事を読み込み中…</div>
         <div id="articles"></div>
-        <p class="end-note" id="end-note" hidden>サンプル記事はここまでです。</p>
+        <p class="end-note" id="end-note" hidden>記事はここまでです。</p>
       </section></div>
     </div>
     <article id="detail" hidden tabindex="-1"></article>
-    <noscript><p class="empty">記事の表示にはJavaScriptが必要です。このサイトは架空のサンプルを使った仮公開版です。</p></noscript>
+    <noscript><p class="empty">記事の表示にはJavaScriptが必要です。このサイトには実際の記事と明示された架空サンプルが含まれます。</p></noscript>
   </main>
-  <footer><small>AIニュース · 仮公開プレビュー · 架空サンプル / 閲覧専用</small></footer>
+  <footer><small>AIニュース · 仮公開プレビュー · 閲覧専用</small></footer>
 </body>
 </html>
