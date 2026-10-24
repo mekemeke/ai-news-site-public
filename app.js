@@ -99,7 +99,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261025-layout2', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261025-copy3', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
