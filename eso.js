@@ -29,7 +29,7 @@
     const category = $('set-category').value;
     const filtered = sets.filter(item => (!category || item.category === category) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
     $('set-count').textContent = `${filtered.length} / ${sets.length} 件のセット`;
-    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${verification(item)}${icon(item)}</article>`).join('') || `<p class="empty">${term || category ? '該当するセットはない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
+    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${item.effects.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}</div>${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? '該当するセットはない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
   }
   function route() {
     if (!ready) return;
