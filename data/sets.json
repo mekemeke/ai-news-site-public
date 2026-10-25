@@ -13649,6 +13649,4930 @@
         "重装",
         "PvP"
       ]
+    },
+    {
+      "id": "curse-eater",
+      "name": "呪いを喰らう者",
+      "englishName": "Curse Eater",
+      "category": "5部位セット",
+      "summary": "直接回復に伴い有害効果を除去し、除去できた対象のマジカを回復する。",
+      "location": "シロディールのCropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接回復アビリティで自分または味方を回復すると、その対象の有害効果を最大3個解除する。1個以上解除できた場合は対象のマジカを678回復する。対象ごとに8秒に1回まで発動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/curse-eater"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "dark-convergence",
+      "name": "闇の収束",
+      "englishName": "Dark Convergence",
+      "category": "5部位セット",
+      "summary": "地面に残る効果を使うと敵を引き寄せ、遅れて範囲ダメージを与える。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中、地面に効果が残るアビリティを使用すると、60%の減速を付与する領域を作る。1秒後に敵を引き寄せ、1秒間気絶させる。4秒後、10mの領域内の全敵に魔法ダメージを与え、中心から3m以内の敵に魔法ダメージを与える。掲載時の基準値はそれぞれ821と1642で、対象1体につき50%増加し、武器・呪文ダメージの高い方に応じて変動する。再発動は25秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/dark-convergence"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "deadly-strike",
+      "name": "致死の一撃",
+      "englishName": "Deadly Strike",
+      "category": "5部位セット",
+      "summary": "継続ダメージとチャネリング攻撃を強化する。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分の継続ダメージとチャネリング攻撃の与ダメージが15%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/deadly-strike"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "desert-rose",
+      "name": "砂漠バラ",
+      "englishName": "Desert Rose",
+      "category": "5部位セット",
+      "summary": "被ダメージ時、確率でマジカを回復する。",
+      "location": "シロディールのCropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダメージを受けると25%の確率でマジカを46～2012回復する。再発動は4秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/desert-rose"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "eagle-eye",
+      "name": "鷲の目",
+      "englishName": "Eagle Eye",
+      "category": "3部位セット",
+      "summary": "遠隔の直接ダメージアビリティのクリティカル値を高める。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "遠隔の直接ダメージアビリティのクリティカル値が38～1652増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/eagle-eye"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。重量見出しはLightだが、具体的スロット一覧は回復杖・雷杖・氷杖・炎杖・弓と首飾り・指輪のみのため、軽装には分類しない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "PvP"
+      ]
+    },
+    {
+      "id": "elf-bane",
+      "name": "エルフ殺し",
+      "englishName": "Elf Bane",
+      "category": "5部位セット",
+      "summary": "戦闘中の炎継続ダメージアビリティの持続を延ばす。",
+      "location": "シロディールのVlastarus。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中、自分の炎属性継続ダメージアビリティの持続時間を5秒延ばす。ビーム効果とチャネリング効果には適用されない。Dragonknight Standardには適用される。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/elf-bane"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "endurance",
+      "name": "持久力",
+      "englishName": "Endurance",
+      "category": "3部位セット",
+      "summary": "体力上限と体力再生を高める3部位セット。",
+      "location": "帝都の宝物庫（Treasure Vaults）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が44～1928増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "体力再生が14～618増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/endurance"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "PvP"
+      ]
+    },
+    {
+      "id": "enervating-aura",
+      "name": "脱力のオーラ",
+      "englishName": "Enervating Aura",
+      "category": "5部位セット",
+      "summary": "直接ダメージから敵の再生能力を弱める範囲効果を発生させる。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接ダメージを与えると10%の確率で対象の足元に領域を作り、1秒後に爆発させる。5m以内の敵にEnervating AuraとMinor Enervationを10秒間付与する。Enervating Auraは、命中したプレイヤー1人につき敵プレイヤーの体力・マジカ・スタミナ再生をそれぞれ3～129低下させる。再発動は15秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/enervating-aura"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "farstrider",
+      "name": "Farstrider",
+      "englishName": "Farstrider",
+      "category": "5部位セット",
+      "summary": "移動・引き寄せアビリティの直接攻撃で敵のクリティカル耐性を奪う。",
+      "location": "バトルグラウンド。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～421増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "瞬間移動（Blink）、突進（Charge）、跳躍（Leap）、転移（Teleport）、引き寄せ（Pull）アビリティで直接ダメージを与えると、10秒間、敵のクリティカル耐性を40%低下させ、自分のクリティカル耐性をその低下量と同じだけ増加させる。再発動は7秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/farstrider"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。日本語名称は未照合。画像未取得。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "fasallas-guile",
+      "name": "ファサラの策謀",
+      "englishName": "Fasalla's Guile",
+      "category": "5部位セット",
+      "summary": "戦闘中、近くの敵の被回復量とシールド強度を下げる。",
+      "location": "エリート装備商人（Elite Gear Vendors）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中、1秒ごとに5m以内の敵へ汚染（弱／Minor Defile）を2秒間付与し、被回復量とダメージシールドの強度を6%低下させる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/fasallas-guile"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "galerions-revenge",
+      "name": "ガレリオンの復讐",
+      "englishName": "Galerion's Revenge",
+      "category": "5部位セット",
+      "summary": "軽・重攻撃で印を蓄積し、一定数で魔法ダメージを与える。",
+      "location": "テルバー商人（Tel Var Merchant）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "軽攻撃または重攻撃でダメージを与えると、敵にMark of Revengeを15秒間付与する。敵に5累積すると印が爆発し、魔法ダメージを与える。掲載時の基準値は1462で、武器・呪文ダメージの高い方に応じて変動する。印は0.5秒に1回まで付与できる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/galerions-revenge"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。軽装は全部位。中装・重装は腰・手・足・脚のみ。武器・盾・首飾り・指輪も掲載。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "gorethief",
+      "name": "Gorethief",
+      "englishName": "Gorethief",
+      "category": "5部位セット",
+      "summary": "直接攻撃で累積を作り、回避の回復やバッシュの範囲出血に消費する。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接ダメージを与えるとGorethiefを30秒間、最大10累積まで獲得する。このセットの装備中にロール回避すると1累積を消費して自己回復する。回復の掲載基準値は2021で、最大体力に応じて変動する。最大累積かつセット装備中に敵へバッシュすると全累積を消費し、自分の8m以内の敵に出血ダメージを与える。ダメージの掲載基準値は2144で、武器・呪文ダメージの高い方に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/gorethief"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。日本語名称は未照合。画像未取得。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "grace-of-the-ancients",
+      "name": "古代の恩寵",
+      "englishName": "Grace of the Ancients",
+      "category": "3部位セット",
+      "summary": "最大マジカを高める3部位セット。",
+      "location": "シロディールのCropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが55～2406増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/grace-of-the-ancients"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "PvP"
+      ]
+    },
+    {
+      "id": "hawks-eye",
+      "name": "ホークアイ",
+      "englishName": "Hawk's Eye",
+      "category": "5部位セット",
+      "summary": "弓アビリティを低コスト化し、ダメージを強化する。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "弓アビリティの消費コストを6%軽減し、与ダメージを6%増加させる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/hawks-eye"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "hew-and-sunder",
+      "name": "打開と切り裂き",
+      "englishName": "Hew and Sunder",
+      "category": "5部位セット",
+      "summary": "重攻撃の対象周辺の敵の数に応じ、攻撃貫通力が増える。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "重攻撃でダメージを与えると、対象から8m以内にいる敵1体につき攻撃貫通力が28～1236増加する。効果は10秒間。再発動は7秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/hew-and-sunder"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "hrothgars-chill",
+      "name": "フロスガーの冷気",
+      "englishName": "Hrothgar's Chill",
+      "category": "5部位セット",
+      "summary": "気絶や移動不能を与えた敵の耐性に応じた冷気爆発を起こす。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵を気絶または移動不能にすると、その敵に冷気の爆発を発生させる。冷気（Chilled）のステータス効果を付与し、その敵の物理耐性と呪文耐性の合計の13%を冷気ダメージとして本人とその8m以内の敵に与える。この効果は呪文耐性を無視し、防御できない。再発動は7秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/hrothgars-chill"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "imperial-physique",
+      "name": "インペリアルフィジカル",
+      "englishName": "Imperial Physique",
+      "category": "5部位セット",
+      "summary": "帝都内で資源上限を増やし、テルバー倍率が高いと効果が大きくなる。",
+      "location": "テルバー商人（Tel Var Merchant）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "帝都にいる間、所持するテルバーストーンの力により体力・マジカ・スタミナをそれぞれ24～1032増加させる。テルバーストーンの倍率が4倍の間、この増加効果が600%増える。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/imperial-physique"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "impregnable-armor",
+      "name": "非貫通アーマー",
+      "englishName": "Impregnable Armor",
+      "category": "5部位セット",
+      "summary": "各部位ボーナスでクリティカル耐性を積み上げる。",
+      "location": "バトルグラウンド。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカル耐性が22～986増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/impregnable-armor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "indomitable-fury",
+      "name": "不屈の激昂",
+      "englishName": "Indomitable Fury",
+      "category": "5部位セット",
+      "summary": "打破後に被ダメージを抑え、アルティマを生成する。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "打破すると、防護（弱／Minor Protection）と勇壮（弱／Minor Heroism）を7秒間得る。被ダメージが5%軽減され、1.5秒ごとに1アルティマを生成する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/indomitable-fury"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "jerall-mountains-warchief",
+      "name": "ジェラール山脈族長",
+      "englishName": "Jerall Mountains Warchief",
+      "category": "モンスターセット",
+      "summary": "敵の被回復量を累積で削る代わり、自分にも被回復低下が蓄積する。",
+      "location": "シロディールのエリート装備売りで同盟ポイントと交換。場所はエルスウェアの東門、ハイロックの南門、モロウウィンドの北門。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "直接ダメージを与えると、敵にMaladyを付与する。Maladyは5秒間、1累積につき被回復量を1%低下させ、最大35累積まで重なる。付与は0.5秒に1回まで。Maladyを付与すると自分にContagionが1累積付く。Contagionは5秒間、1累積につき自分の被回復量を1%低下させ、最大15累積まで重なる。自分への累積獲得は1秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/jerall-mountains-warchief"
+        },
+        {
+          "label": "DMM / ESO公式U39紹介（日本語名称・モンスター分類・入手先のみ。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/12066"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/12066"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。日本語名称・モンスター分類・入手先はDMM / ESO公式U39紹介記事で照合。画像未取得。頭・肩のみ、全重量。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "PvP"
+      ]
+    },
+    {
+      "id": "judgment-of-akatosh",
+      "name": "アカトシュの審判",
+      "englishName": "Judgment of Akatosh",
+      "category": "5部位セット",
+      "summary": "移動・引き寄せ攻撃から遅れて周囲の敵を減速・気絶させる。",
+      "location": "貢献報酬（参照ページ表記：Rewards of the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御力が53～2291増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "瞬間移動（Blink）、突進（Charge）、跳躍（Leap）、転移（Teleport）、引き寄せ（Pull）アビリティで直接ダメージを与えると、対象の時間を歪める。3秒後、その敵を中心に時間のエネルギーが爆発し、12m以内の全敵の移動速度を6秒間70%低下させ、3秒間気絶させる。この効果は防御可能。再発動は15秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/judgment-of-akatosh"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/11299"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "knight-slayer",
+      "name": "騎士殺し",
+      "englishName": "Knight Slayer",
+      "category": "5部位セット",
+      "summary": "最大までチャージした重攻撃に、敵の最大体力に比例する追加ダメージを付ける。",
+      "location": "バトルグラウンド。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大までチャージした重攻撃が、敵の最大体力の8%に相当するオブリビオンダメージを追加で与える。追加ダメージの上限は掲載範囲で186～8000。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/knight-slayer"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "kynes-kiss",
+      "name": "カイネの口づけ",
+      "englishName": "Kyne's Kiss",
+      "category": "5部位セット",
+      "summary": "12m以上離れた敵への直接攻撃で体力とスタミナを回復する。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "対象から12m以上離れた状態で直接ダメージを与えると、体力を回復し、スタミナを30～1314回復する。体力回復の掲載基準値は521で、最大マジカ・最大スタミナの高い方に応じて変動する。再発動は5秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/kynes-kiss"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "lamp-knights-art",
+      "name": "ランプの騎士の技",
+      "englishName": "Lamp Knight's Art",
+      "category": "5部位セット",
+      "summary": "攻撃貫通力を大きく得る一方、与ダメージが減少する。",
+      "location": "貢献報酬（Rewards for the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "攻撃貫通力が100000増加する。自分の与ダメージが46%低下する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/lamp-knights-art"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14280"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "languor-of-peryite",
+      "name": "ペライトの倦怠",
+      "englishName": "Languor of Peryite",
+      "category": "5部位セット",
+      "summary": "防御姿勢のプレイヤーへの攻撃と、制御無効の敵への再生妨害に向く。",
+      "location": "貢献報酬（参照ページ表記：Rewards of the Worthy）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御姿勢を取るプレイヤーへの与ダメージが6%増加する。クラウドコントロール無効の敵に軽攻撃でダメージを与えると、Languorを10秒間付与し、対象のマジカ再生とスタミナ再生をそれぞれ5～248低下させる。この付与は10秒に1回まで発動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ツールチップ・装備スロット・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/languor-of-peryite"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/10292?page=7"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）、全効果・装備スロット・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。可変のダメージ・回復量は表示基準値であり、実際の適用値とは限らない。品質・レベル別の対応とゲーム内実測は未検証。画像未取得。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "lekis-focus",
+      "name": "レキのフォーカス",
+      "englishName": "Leki's Focus",
+      "category": "5部位セット",
+      "summary": "範囲攻撃の威力を落とす代わりに範囲攻撃への防御を高める。",
+      "location": "精鋭装備商人（Elite Gear Vendors）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "範囲攻撃による与ダメージが5%低下する代わりに、回避（強）を常時得て、範囲攻撃からの被ダメージを20%軽減する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/lekis-focus"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "light-of-cyrodiil",
+      "name": "シロディールの光",
+      "englishName": "Light of Cyrodiil",
+      "category": "5部位セット",
+      "summary": "詠唱中の防御と妨害を受けた後の消費軽減を備える。",
+      "location": "シロディールの Cropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "アビリティの詠唱中またはチャネリング中は、被ダメージを15%軽減する。妨害を受けると、その後30秒以内に次に使う、体力・マジカ・スタミナを消費するアビリティ1回のリソース消費がなくなる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/light-of-cyrodiil"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "maras-balm",
+      "name": "マーラの香油",
+      "englishName": "Mara's Balm",
+      "category": "5部位セット",
+      "summary": "マイナス効果の除去で回復し、多数のマイナス効果を一括除去する。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分のマイナス効果が取り除かれると体力を25～1106回復する。この回復は1秒に1回まで発動する。また、マイナス効果が6個以上ある状態でダメージを受けると、マイナス効果1個につき体力を25～1106回復してから、すべてのマイナス効果を除去する。後者の効果は30秒に1回まで発動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/maras-balm"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "marksmans-crest",
+      "name": "射手の頂飾",
+      "englishName": "Marksman's Crest",
+      "category": "5部位セット",
+      "summary": "スタミナ消費を抑え、弓による対人ダメージを伸ばす。",
+      "location": "精鋭装備商人（Elite Gear Vendors）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "スタミナアビリティの消費を5%減らし、プレイヤーに対する弓アビリティのダメージを8%増やす。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/marksmans-crest"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "meritorious-service",
+      "name": "勲功",
+      "englishName": "Meritorious Service",
+      "category": "5部位セット",
+      "summary": "戦闘中の支援アビリティでグループの耐性を高める。",
+      "location": "テルバー商人。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に支援（Support）アビリティを使用すると、自分と10m以内にいるグループメンバー最大5人の物理耐性・呪文耐性を、20秒間82～3540増やす。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/meritorious-service"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "netch-oil",
+      "name": "ネッチの油",
+      "englishName": "Netch Oil",
+      "category": "5部位セット",
+      "summary": "行動不能の無効化中に減速・移動不能も防ぐ。",
+      "location": "バトルグラウンド。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "行動不能（Crowd Control）への無効化がある間、減速と移動不能も無効になる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/netch-oil"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14810"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "nibenay-bay-battlereeve",
+      "name": "ニベネイ湾バトルリーブ",
+      "englishName": "Nibenay Bay Battlereeve",
+      "category": "モンスターセット",
+      "summary": "強制移動へのシールドと、シールドがない間の対人防御を備える。",
+      "location": "シロディールの精鋭装備商人。頭・肩部位を収録したコンテナから入手。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "引き寄せ・ノックバック・テレポートのアビリティによって強制的に移動させられると、最大15112ダメージを吸収するシールドを6秒間得る。このシールドはバトルスピリットの影響を受けない。発動は14秒に1回まで。このセットによるシールドがない間は、プレイヤーからの被ダメージを5%軽減する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/nibenay-bay-battlereeve"
+        },
+        {
+          "label": "ESO公式：Update 39（2023-08-21／Cyrodiil Monster Masks分類・頭肩の入手経路のみ照合、旧効果値は不使用）",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/641025/pc-mac-patch-notes-v9-1-5-update-39"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/12066"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "PvP"
+      ]
+    },
+    {
+      "id": "nocturnals-ploy",
+      "name": "ノクターナルの策略",
+      "englishName": "Nocturnal's Ploy",
+      "category": "5部位セット",
+      "summary": "直接付与するデバフに連動して敵のバフを解除する。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵へ直接、強（Major）のデバフを付けると、その対象の持続時間付きの強バフを1つ解除する。直接、弱（Minor）のデバフを付けると、その対象の弱バフを1つ解除する。各効果はそれぞれ15秒に1回まで発動し、同じ対象がこの効果を受けるのも15秒に1回まで。遅延を伴うアビリティには適用されない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/nocturnals-ploy"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "oakfathers-retribution",
+      "name": "オークの父の報復",
+      "englishName": "Oakfather's Retribution",
+      "category": "5部位セット",
+      "summary": "敵の強・弱バフの数に応じて攻撃性能が上がる。",
+      "location": "シロディール。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵に有効な強（Major）バフ1個につき、その敵に対する攻撃貫通力が553増える。敵に有効な弱（Minor）バフ1個につき、その敵に対する武器ダメージと呪文ダメージが31増える。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/oakfathers-retribution"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/12875"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "phoenix",
+      "name": "不死鳥",
+      "englishName": "Phoenix",
+      "category": "5部位セット",
+      "summary": "低体力時の被弾でシールドと周囲への炎攻撃を発動する。",
+      "location": "テルバー商人。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が25%未満の状態でダメージを受けると、581～25000ダメージを吸収するシールドを10秒間得て、近くの敵に1006炎ダメージを与える。発動は1分に1回まで。炎ダメージは武器ダメージと呪文ダメージの高い方に応じて変動する（1006は資料の表示基準値）。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/phoenix"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "plaguebreak",
+      "name": "疫病爆発",
+      "englishName": "Plaguebreak",
+      "category": "5部位セット",
+      "summary": "敵プレイヤーに疫病を付け、途中解除時の爆発を狙う。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接ダメージを与えると敵プレイヤーが疫病の媒介者となり、10秒間で1000病気ダメージを受け、病気のステータス効果も付与される。疫病が途中で解除されると爆発し、媒介者から8m以内のすべての敵に735病気ダメージを与える。爆発の命中した敵1体につきダメージが50%増える。各対象には20秒に1回、各攻撃では1回まで発動する。ダメージは武器ダメージと呪文ダメージの高い方に応じて変動する（1000・735は資料の表示基準値）。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/plaguebreak"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "rallying-cry",
+      "name": "鬨の声",
+      "englishName": "Rallying Cry",
+      "category": "5部位セット",
+      "summary": "対人戦のクリティカル回復でグループの攻撃と耐性を支援する。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "バトルスピリットが有効な間に自分の回復がクリティカルになると、自分と12m以内のグループメンバーは20秒間、クリティカル耐性22～986と武器ダメージ・呪文ダメージ6～300を得る。効果を受けるグループメンバー1人につき、武器ダメージ・呪文ダメージの増加量が0～15、クリティカル耐性の増加量が1～50減る。発動は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/rallying-cry"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "ravager",
+      "name": "破壊者",
+      "englishName": "Ravager",
+      "category": "5部位セット",
+      "summary": "敵の耐性を下げようとすると攻撃力の累積を得る。",
+      "location": "シロディールの Vlastarus。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "対象の物理耐性または呪文耐性を下げようとするたびに、Ravagerの累積を5秒間得る。1累積につき武器ダメージと呪文ダメージが3～146増える。累積は1秒に1回まで得られる。4累積に達すると持続時間が2倍になるが、持続時間を更新できなくなる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/ravager"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "reactive-armor",
+      "name": "反応型鎧",
+      "englishName": "Reactive Armor",
+      "category": "5部位セット",
+      "summary": "行動不能を受けた後の被ダメージを抑える。",
+      "location": "テルバー商人。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "行動不能効果を受けた後、5秒間、被ダメージを33%軽減する。発動は20秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/reactive-armor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "robes-of-alteration-mastery",
+      "name": "変性術師の衣服",
+      "englishName": "Robes of Alteration Mastery",
+      "category": "5部位セット",
+      "summary": "全アビリティの消費を軽減する。",
+      "location": "シロディールの Cropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "すべてのアビリティの消費を6%減らす。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/robes-of-alteration-mastery"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/1918"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "robes-of-transmutation",
+      "name": "変化の武具",
+      "englishName": "Robes of Transmutation",
+      "category": "5部位セット",
+      "summary": "継続回復を受けた対象にクリティカル耐性を与える。",
+      "location": "精鋭装備商人（Elite Gear Vendors）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "与回復量が4%増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "継続回復アビリティで自分または味方を回復すると、その対象にクリティカル耐性31～1363を4秒間与える。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/robes-of-transmutation"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "sentry",
+      "name": "哨戒兵",
+      "englishName": "Sentry",
+      "category": "5部位セット",
+      "summary": "攻撃力を増やし、しゃがみ始めにステルスを看破する。",
+      "location": "シロディールの Bruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器ダメージと呪文ダメージが6～266増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "しゃがみ始めると、10秒間ステルス看破を得る。発動は30秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/sentry"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "shadow-walker",
+      "name": "影の歩き手",
+      "englishName": "Shadow Walker",
+      "category": "5部位セット",
+      "summary": "隠密・透明状態で静止すると体力とスタミナを回復する。",
+      "location": "シロディールの Bruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "隠密中または透明状態で、かつ移動していない間、1秒ごとに体力50～2150とスタミナ50～2150を回復する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/shadow-walker"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "shared-pain",
+      "name": "分かち合う痛み",
+      "englishName": "Shared Pain",
+      "category": "5部位セット",
+      "summary": "継続ダメージへの軽減と攻撃者への反撃を備える。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "継続ダメージアビリティでダメージを受けるたびに、その攻撃者へ139魔法ダメージを与える。このダメージは武器ダメージと呪文ダメージの高い方に応じて変動する（139は資料の表示基準値）。また、継続ダメージアビリティからの被ダメージを8%軽減する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/shared-pain"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14280"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "shell-splitter",
+      "name": "殻破り",
+      "englishName": "Shell Splitter",
+      "category": "5部位セット",
+      "summary": "防御された攻撃をきっかけに貫通力が累積する。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分の攻撃を敵が防御すると、攻撃貫通力が5秒間631増える。最大20累積まで重なり、累積を得られるのは0.5秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/shell-splitter"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "shield-breaker",
+      "name": "シールドブレイカー",
+      "englishName": "Shield Breaker",
+      "category": "5部位セット",
+      "summary": "ダメージシールドを持つ敵に対して与ダメージ強化が増す。",
+      "location": "テルバー商人。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "与ダメージが6%増える。有効なダメージシールドを持つ対象を攻撃するとき、この増加効果は2倍になる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/shield-breaker"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "shield-of-the-valiant",
+      "name": "守護のバリアント",
+      "englishName": "Shield of the Valiant",
+      "category": "5部位セット",
+      "summary": "対人被ダメージと打破の消費を軽減する。",
+      "location": "シロディールの Bruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "プレイヤーから受けるダメージを3%軽減する。"
+        },
+        {
+          "label": "5部位",
+          "text": "打破の消費を40%減らす。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/shield-of-the-valiant"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "siegemasters-focus",
+      "name": "Siegemaster's Focus",
+      "englishName": "Siegemaster's Focus",
+      "category": "5部位セット",
+      "summary": "破城槌以外の攻城兵器の使用中に防御と敵の視認を補う。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "破城槌以外の攻城兵器を使用中、ノックバックと行動不能効果を無効化し、被ダメージを33%軽減する。また、壁越しに敵が見えるようになる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/siegemasters-focus"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。日本語名は未照合のため英語名を保持。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "snake-in-the-stars",
+      "name": "星の蛇",
+      "englishName": "Snake in the Stars",
+      "category": "5部位セット",
+      "summary": "デバフを付けた敵の回復に反応してダメージを与える。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵に強（Major）または弱（Minor）のデバフを付けると、その敵にStar Venomを4秒間付与する。発動は12秒に1回まで。Star Venomを受けている敵は回復を受けるたびに1170オブリビオンダメージを受ける。このダメージは0.1秒に1回まで。同じ敵がStar Venomを受けられるのは12秒ごとに1つまで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/snake-in-the-stars"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "soldier-of-anguish",
+      "name": "苦痛の戦士",
+      "englishName": "Soldier of Anguish",
+      "category": "5部位セット",
+      "summary": "近接軽攻撃から遅延爆発を起こし、敵の回復を吸収する。",
+      "location": "報酬箱「Rewards for the Worthy」。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "近接軽攻撃によって地面に輪を設置し、1.3秒後に爆発させる。命中したすべての敵へ112～4830の回復吸収を4秒間付け、次に受ける回復のうち112～4830を無効にする。発動は6秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/soldier-of-anguish"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別HTML（HTTP 200）で全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持し、レベル・品質別の対応とゲーム内実測は未検証。能力値依存の値は固定値ではなく資料の表示基準値。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "spell-strategist",
+      "name": "魔法戦略家",
+      "englishName": "Spell Strategist",
+      "category": "5部位セット",
+      "summary": "軽攻撃で印を付けた相手に対する攻撃力を高める。",
+      "location": "Rewards for the Worthy（報酬箱）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "軽攻撃でダメージを与えると対象に5秒間の印を付け、その対象に対する武器ダメージと呪文ダメージが10～460増加する。再発動は4秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/spell-strategist"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "spellshredder",
+      "name": "Spellshredder",
+      "englishName": "Spellshredder",
+      "category": "5部位セット",
+      "summary": "敵に付与されたシールドや継続回復に応じて与ダメージを増やす。",
+      "location": "Rewards for the Worthy（報酬箱）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵に付与されているダメージシールドまたは継続回復効果1つにつき、その敵への与ダメージが2%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/spellshredder"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。日本語名称は未照合のため英語名で掲載。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "steadfast-hero",
+      "name": "頑強な英雄",
+      "englishName": "Steadfast Hero",
+      "category": "5部位セット",
+      "summary": "自身や味方の有害効果を除去すると自己防御を強化する。",
+      "location": "Rewards for the Worthy（報酬箱）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分または味方のマイナス効果を除去すると、自分にMajor Protection（防護・強）が10秒間付与され、被ダメージが10%減少する。再発動は12秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/steadfast-hero"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "the-arch-mage",
+      "name": "アークメイジ",
+      "englishName": "The Arch-Mage",
+      "category": "5部位セット",
+      "summary": "完全にチャージした重攻撃後のマジカ再生を増やす。",
+      "location": "シロディールのCropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "完全にチャージした重攻撃を完了すると、10秒間、マジカ再生がさらに11～506増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/the-arch-mage"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "the-juggernaut",
+      "name": "ジャガーノート",
+      "englishName": "The Juggernaut",
+      "category": "5部位セット",
+      "summary": "低体力で被弾した際に回復と防御力上昇を得る。",
+      "location": "シロディールのVlastarus。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が30%未満の状態でダメージを受けると、即座に体力を回復し、15秒間、防御力が465～20000増加する。回復量の掲載値は4428で、最大体力に応じて変動する。再発動は1分に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/the-juggernaut"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "the-morag-tong",
+      "name": "モラグ・トング",
+      "englishName": "The Morag Tong",
+      "category": "5部位セット",
+      "summary": "直接ダメージを与えた敵の、毒・病気による被ダメージを増やす。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接ダメージを与えると、その敵が毒および病気攻撃から受けるダメージを5秒間10%増加させる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/the-morag-tong"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "thews-of-the-harbinger",
+      "name": "導き手の力",
+      "englishName": "Thews of the Harbinger",
+      "category": "5部位セット",
+      "summary": "防御時に攻撃者へ最大体力に応じた物理ダメージを返す。",
+      "location": "テルバー商人。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御すると攻撃者に物理ダメージを与える。掲載値は717で、最大体力に応じて変動する。再発動間隔は資料に記載なし。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装は全防具部位、中装と軽装は手・脚。武器・盾・宝飾品も掲載されている。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/thews-of-the-harbinger"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "trackers-lash",
+      "name": "追跡者の鞭打",
+      "englishName": "Tracker's Lash",
+      "category": "5部位セット",
+      "summary": "攻撃を回避されると攻撃力上昇を蓄積する。",
+      "location": "Rewards for the Worthy（報酬箱）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分の攻撃が回避されると、武器ダメージと呪文ダメージが7秒間95増加する。最大5累積。発動は0.5秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/trackers-lash"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14280"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "unflinching-ultimate",
+      "name": "揺るがぬアルティメット",
+      "englishName": "Unflinching Ultimate",
+      "category": "5部位セット",
+      "summary": "消費アルティマに応じた行動阻害への耐性を得る。",
+      "location": "PvPセットとして掲載。個別ページの入手先欄がセット名自身になっているため、具体的な入手経路は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "アルティメットを発動した後、消費したアルティマ20につき1秒間、行動阻害効果に対する無効化を得る。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/unflinching-ultimate"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14810"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 入手先欄がセット名を反復しており、詳細入手先は未確認。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "vanguards-challenge",
+      "name": "挑む先遣隊",
+      "englishName": "Vanguard's Challenge",
+      "category": "5部位セット",
+      "summary": "挑発した敵プレイヤーの攻撃を自分へ引き付ける。",
+      "location": "バトルグラウンド。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵プレイヤーを挑発すると、15秒間、その敵が自分以外のプレイヤーへ与えるダメージが35%減少し、自分へ与えるダメージが35%増加する。自分が隠密状態または透明状態になるか、対象との距離が28mを超えると効果が失われる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/vanguards-challenge"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "vengeance-leech",
+      "name": "復讐の吸血",
+      "englishName": "Vengeance Leech",
+      "category": "3部位セット",
+      "summary": "敵を倒すと体力・マジカ・スタミナを回復する。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "敵を倒すと、体力を64～2772回復し、マジカとスタミナもそれぞれ64～2772回復する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "武器・盾・首飾り・指輪。防具の重量区分なし。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/vengeance-leech"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "PvP"
+      ]
+    },
+    {
+      "id": "vicecanon-of-venom",
+      "name": "バイスカノンの毒",
+      "englishName": "Vicecanon of Venom",
+      "category": "5部位セット",
+      "summary": "背後からの直接クリティカルで生命を吸収する毒を付与する。",
+      "location": "テルバー商人。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵の背後から直接クリティカルダメージを与えると、10秒間にわたる毒ダメージを付与し、その与ダメージの100%分、自分の体力を回復する。毒の合計ダメージ掲載値は1300で、武器ダメージと呪文ダメージの高い方に応じて変動する。敵1体につき10秒に1回発動する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "中装は全防具部位、軽装と重装は手・足。武器・盾・宝飾品も掲載されている。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/vicecanon-of-venom"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "vicious-death",
+      "name": "残忍な死",
+      "englishName": "Vicious Death",
+      "category": "5部位セット",
+      "summary": "敵プレイヤーを倒すと周囲の敵を巻き込む爆発を起こす。",
+      "location": "Elite Gear Vendors（精鋭装備商人）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "プレイヤーを倒すと、その対象を爆発させ、半径5m内の他の敵すべてに炎ダメージを与える。掲載値は3322で、武器ダメージと呪文ダメージの高い方に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/vicious-death"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "ward-of-cyrodiil",
+      "name": "シロディールの結界",
+      "englishName": "Ward of Cyrodiil",
+      "category": "5部位セット",
+      "summary": "近接の武術系ダメージで敵の回復とシールドを弱める。",
+      "location": "シロディールのBruma。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "近接の武術系（Martial）ダメージを与えると、敵にMajor Defile（不治・強）を4秒間付与し、対象の被回復量とダメージシールド強度を12%減少させる。再発動は5秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/ward-of-cyrodiil"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "warriors-fury",
+      "name": "戦士の激昂",
+      "englishName": "Warrior's Fury",
+      "category": "5部位セット",
+      "summary": "被弾で攻撃力が累積し、上限で持続時間が延びる。",
+      "location": "Elite Gear Vendors（精鋭装備商人）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダメージを受けると、武器ダメージと呪文ダメージが5秒間0～24増加する。最大20累積、発動は0.5秒に1回。20累積に達すると持続時間は2倍になるが、それ以降は持続時間を更新できない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/warriors-fury"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "重装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "willpower",
+      "name": "意志",
+      "englishName": "Willpower",
+      "category": "3部位セット",
+      "summary": "マジカ最大値と攻撃力を増やす3部位セット。",
+      "location": "帝都の宝物庫。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが40～1752増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが4～206増加する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "武器・盾・首飾り・指輪。防具の重量区分なし。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/willpower"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "PvP"
+      ]
+    },
+    {
+      "id": "wizards-riposte",
+      "name": "魔術師カウンター",
+      "englishName": "Wizard's Riposte",
+      "category": "5部位セット",
+      "summary": "直接クリティカルを受けた相手のクリティカルダメージを減らす。",
+      "location": "バトルグラウンド。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカル耐性が15～660増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接クリティカルダメージを受けると、その敵にMinor Enervationを5秒間付与し、対象のクリティカル与ダメージを10%減少させる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/wizards-riposte"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "PvP"
+      ]
+    },
+    {
+      "id": "wrath-of-the-imperium",
+      "name": "帝国の憤怒",
+      "englishName": "Wrath of the Imperium",
+      "category": "3部位セット",
+      "summary": "遠隔の直接ダメージアビリティを強化する3部位セット。",
+      "location": "シロディールのCropsford。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "遠隔の直接ダメージアビリティに対する武器ダメージと呪文ダメージが7～325増加する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "武器・盾・首飾り・指輪。防具の重量区分なし。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/wrath-of-the-imperium"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "PvP"
+      ]
+    },
+    {
+      "id": "anthelmirs-construct",
+      "name": "アンセルミルのコンストラクト",
+      "englishName": "Anthelmir's Construct",
+      "category": "モンスターセット",
+      "summary": "重攻撃で斧を投げ、回収すると再発動を早める。",
+      "location": "Aradros the Awakened in Oathsworn Pit, Urgarlag Chief-bane。頭・肩用のモンスターセット。部位ごとの配分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "完全にチャージした重攻撃でダメージを与えると、敵へ斧を投げて物理ダメージを与え、対象の防御力を5秒間400減少させる。ダメージ掲載値は1572で、武器ダメージと呪文ダメージの高い方に応じて変動する。再発動は10秒に1回。斧は対象へ飛んだ後、地面に5秒間残り、触れるとこのセットのクールダウンが5秒短縮される。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/anthelmirs-construct"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/12875"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "archdruid-devyric",
+      "name": "アークドルイド・デヴィリック",
+      "englishName": "Archdruid Devyric",
+      "category": "モンスターセット",
+      "summary": "重攻撃を起点に直線範囲の敵へ被ダメージ増加を付与する。",
+      "location": "Archdruid Devyric in Earthen Root Enclave, Urgarlag Chief-bane。頭・肩用のモンスターセット。部位ごとの配分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "重攻撃でダメージを与えると、1.2秒後、対象に向かう7m×5mの直線範囲内の敵最大6体へ雷撃ダメージを与える。ダメージ掲載値は650で、武器ダメージと呪文ダメージの高い方に応じて変動する。命中した敵にMajor Vulnerability（脆弱・強）を7秒間付与し、被ダメージを10%増加させる。再発動は15秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/archdruid-devyric"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "balorgh",
+      "name": "バローグ",
+      "englishName": "Balorgh",
+      "category": "モンスターセット",
+      "summary": "アルティマ消費量に応じて攻撃力と貫通力を高める。",
+      "location": "Balorgh in March of Sacrifices, Urgarlag Chief-bane。頭・肩用のモンスターセット。部位ごとの配分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "アルティメットアビリティを使用すると、12秒間、消費したアルティマの総量と同じ値だけ武器ダメージと呪文ダメージが増加し、その23倍だけ物理貫通力と呪文貫通力が増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/balorgh"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "bar-sakka",
+      "name": "バル・サッカ",
+      "englishName": "Bar-Sakka",
+      "category": "モンスターセット",
+      "summary": "回避ロールで血の池を作り、与ダメージに応じたシールドを得る。",
+      "location": "参照資料の入手先表記はNaj-Caldeesh。コンテンツの種別、頭・肩の入手区分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "戦闘中の回避ロールで6mの血の池を作る。1秒後、池の中の敵へ魔法ダメージを与える。掲載値は788で、最大体力に応じて変動し、クリティカルは発生しない。池が敵へ与えた合計ダメージに基づくダメージシールドを6秒間獲得し、吸収量の上限は15000。再発動は10秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/bar-sakka"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14810"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 入手先表記Naj-Caldeeshとダンジョンの対応は未確認のため、入手分類をその他として保留。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "その他"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "その他"
+      ]
+    },
+    {
+      "id": "baron-thirsk",
+      "name": "シルスク男爵",
+      "englishName": "Baron Thirsk",
+      "category": "モンスターセット",
+      "summary": "範囲直接攻撃から爆発するスキャンプを召喚する。",
+      "location": "Baron Thirsk in Nobles District, Tel Var lockbox merchant。頭・肩用のモンスターセット。部位ごとの配分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "1部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "範囲の直接ダメージを与えると、対象に6秒間の印を付ける。その後2秒ごとに近くへ爆発スキャンプを召喚し、召喚の1秒後に爆発して4m以内の敵最大6体へ魔法ダメージを与える。最初のダメージ掲載値は362で、武器ダメージと呪文ダメージの高い方に応じて変動する。後続のスキャンプが召喚されるたびにダメージが100%増加する。命中した敵にMinor Timidityを10秒間付与し、1.5秒ごとにアルティマを1失わせる。セットの再発動は25秒に1回。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/baron-thirsk"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "PvP"
+      ]
+    },
+    {
+      "id": "baron-zaudrus",
+      "name": "ザウドラス男爵",
+      "englishName": "Baron Zaudrus",
+      "category": "モンスターセット",
+      "summary": "ステータス効果を与えて累積をため、アルティマに変換する。",
+      "location": "Baron Zaudrus in The Cauldron, Urgarlag Chief-bane。頭・肩用のモンスターセット。部位ごとの配分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大スタミナが12～548増加する。"
+        },
+        {
+          "label": "1部位",
+          "text": "最大マジカが12～548増加する。"
+        },
+        {
+          "label": "1部位",
+          "text": "最大体力が14～603増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "敵にステータス効果を付与すると、Zaudrus’s Ambitionを10秒間、1累積獲得する。最大3累積。3累積に達すると累積をすべて消費し、アルティマを4獲得する。その獲得後1秒間は新たな累積を得られない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/baron-zaudrus"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "black-gem-monstrosity",
+      "name": "黒き石の怪物",
+      "englishName": "Black Gem Monstrosity",
+      "category": "モンスターセット",
+      "summary": "魂魔法で用意した宝石片を通常攻撃で放ち、対象の最大体力に応じて攻撃する。",
+      "location": "Black Gem Foundry。頭・肩用のモンスターセット。部位ごとの配分と必要難易度は今回未確認。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "戦闘中に魂魔法アビリティを使用すると魂石を1つ消費し、Black Gemsplitterを10秒間獲得する。この獲得効果は6秒に1回発動する。軽攻撃または重攻撃でダメージを与えると宝石片を対象へ発射し、対象の最大体力の17.1%に相当する魔法ダメージを与える。ダメージ上限は17100。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（UESP由来データ、2026-10-17抽出／個別ツールチップ・重量・入手先）",
+          "url": "https://esodecoded.com/sets/black-gem-monstrosity"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/14810"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別ページを通常の公開HTTPで取得（200）し、全効果・重量・入手先を照合。資料日2026-10-17。数値範囲は掲載値を保持。変動する発動効果の掲載値は固定ダメージ・固定回復量を保証しない。レベル・品質別の対応とゲーム内実測は未検証。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "chokethorn",
+      "name": "チョークソーン",
+      "englishName": "Chokethorn",
+      "category": "モンスターセット",
+      "summary": "回復アビリティの使用に反応して、自分または味方を継続回復する。",
+      "location": "Canonreeve Oraneth in Elden Hollow I, Maj al-Ragath。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "マジカ再生が3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "コストのある回復アビリティを使うと33%の確率でストラングラーの苗を呼び出し、自分または味方の体力を6秒間で回復する。資料の回復量表示は6986で、最大マジカと最大スタミナの高い方に応じて変動する。再発動は10秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Chokethorn（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/chokethorn"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "domihaus",
+      "name": "ドミーハウス",
+      "englishName": "Domihaus",
+      "category": "モンスターセット",
+      "summary": "自分の周囲に炎と物理の継続ダメージを与える輪を作り、輪の内側で攻撃力を得る。",
+      "location": "Domihaus the Bloody-Horned in Falkreath Hold, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大スタミナが25–1096増加する。"
+        },
+        {
+          "label": "1部位",
+          "text": "最大マジカが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "ダメージを与えると自分の周囲に10mの溶けた大地の輪を10秒間作る。輪は1秒ごとに炎ダメージと物理ダメージを与え、資料の基準表示はそれぞれ90。ダメージは武器・呪文ダメージの高い方に応じて変動する。輪の内側に立つと武器・呪文ダメージが6–300増加する。再発動は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Domihaus（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/domihaus"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "earthgore",
+      "name": "アースゴア",
+      "englishName": "Earthgore",
+      "category": "モンスターセット",
+      "summary": "体力の低い自分やグループメンバーを回復した際、有害な範囲効果を消して追加回復を行う。",
+      "location": "Earthgore Amalgam in Bloodroot Forge, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "与回復量が4%増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "体力50%未満の自分またはグループメンバーを回復すると、その足元に血の池を作り、有害な範囲効果を直ちにすべて取り除く。2秒後から、範囲内で体力が最も低いグループメンバーを2秒ごとに8秒間回復する。各回の資料表示は1702で、最大マジカ・最大スタミナの高い方に応じて変動する。再発動は20秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Earthgore（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/earthgore"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "encratiss-behemoth",
+      "name": "エンクラティスのベヒーモス",
+      "englishName": "Encratis's Behemoth",
+      "category": "モンスターセット",
+      "summary": "炎ダメージをきっかけに、周囲の味方の炎被ダメージを減らし、敵の炎被ダメージを増やす。",
+      "location": "Pyroturge Encratis in Black Drake Villa, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大マジカが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "敵に炎ダメージを与えると、12mまで届くBehemoth’s Auraを12秒間得る。オーラ内の自分と最大11人のグループメンバーは炎の被ダメージが5%減少する。オーラ内の敵は炎の被ダメージが5%増加する。再発動は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Encratis's Behemoth（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/encratiss-behemoth"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "euphotic-gatekeeper",
+      "name": "真光の門番",
+      "englishName": "Euphotic Gatekeeper",
+      "category": "モンスターセット",
+      "summary": "ロール回避後に殻を残し、近くで直接攻撃を防いでから毒の爆発を起こす。",
+      "location": "Zelvraak the Unbreathing in Graven Deep, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "スタミナ再生が3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "ロール回避を使うと、回避後にHadolid Huskを作る。殻から5m以内にいる間、自分への直接ダメージ攻撃をすべて殻が吸収する。1秒後に殻が爆発し、5m以内の敵すべてに毒ダメージを与える。資料の基準表示は1155で、武器・呪文ダメージの高い方に応じて変動する。再発動は20秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Euphotic Gatekeeper（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/euphotic-gatekeeper"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "glittering-goad",
+      "name": "Glittering Goad",
+      "englishName": "Glittering Goad",
+      "category": "モンスターセット",
+      "summary": "バッシュや重攻撃で冷気の継続ダメージを付け、完走時は敵を弱体化し、撃破時は資源を回復する。",
+      "location": "The Night Market。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器・呪文ダメージが3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "バッシュまたは重攻撃でダメージを与えると、対象に8秒間で812の冷気ダメージを与える。再発動は8秒に1回まで。効果が最後まで続くと、対象は対象自身の12m以内にいる最大6体の敵へMinor Brittleを10秒間付与する。対象が死亡すると輝くエネルギーを放ち、倒れた敵の12m以内にいる自分とグループメンバーのマジカとスタミナを847回復する。ダメージ・回復値は資料の掲載値で、能力値へのスケーリングは本文に記載なし。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Glittering Goad（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/glittering-goad"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。日本語セット名は未照合のため英語名を使用。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。入手先はThe Night Marketとだけ記載。入手分類の詳細は未照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "その他"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "その他"
+      ]
+    },
+    {
+      "id": "glorgoloch-the-destroyer",
+      "name": "破壊者グローゴロク",
+      "englishName": "Glorgoloch the Destroyer",
+      "category": "モンスターセット",
+      "summary": "戦闘中に立ち止まるほど防御が積み重なり、移動すると徐々に失われる。",
+      "location": "Glorgoloch the Destroyer in Arena District, Tel Var lockbox merchant。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大体力が28–1206増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "戦闘中、静止している1秒ごとにFlesh Fortressを1累積し、最大10累積まで得る。1累積につき防御力が8–380、クリティカル耐性が0–38増加する。移動している1秒ごとに1累積を失い、戦闘終了ですべて失う。突進およびテレポートのアビリティ使用では累積を失わない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Glorgoloch the Destroyer（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/glorgoloch-the-destroyer"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "PvP"
+      ]
+    },
+    {
+      "id": "grothdarr",
+      "name": "グロスダール",
+      "englishName": "Grothdarr",
+      "category": "モンスターセット",
+      "summary": "近距離への攻撃から、自分の周囲に炎の継続ダメージを発生させる。",
+      "location": "Mad Architect in Vaults of Madness, Glirion the Redbeard。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大マジカが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "8m以内の敵にダメージを与えると10%の確率で自分の周囲を巡る溶岩を作る。5秒間、1秒ごとに自分の8m以内の敵すべてへ炎ダメージを与える。資料の基準表示は各259で、武器・呪文ダメージの高い方に応じて変動する。再発動は10秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Grothdarr（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/grothdarr"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "grundwulf",
+      "name": "グランドウルフ",
+      "englishName": "Grundwulf",
+      "category": "モンスターセット",
+      "summary": "クリティカルダメージを与えるとマジカとスタミナを回復する。",
+      "location": "Grundwulf in Moongrave Fane, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "クリティカル値が15–657増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "クリティカルダメージを与えると、最大値が高い方の資源（マジカまたはスタミナ）を16–700回復し、もう一方を8–350回復する。再発動は5秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Grundwulf（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/grundwulf"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "ilambris",
+      "name": "イランブリス",
+      "englishName": "Ilambris",
+      "category": "モンスターセット",
+      "summary": "炎または雷撃ダメージに反応して、両属性の流星雨を発生させる。",
+      "location": "Ilambris-Athor or Ilambris-Zaven in Crypt of Hearts I, Glirion the Redbeard。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大マジカが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "炎または雷撃ダメージを与えると33%の確率で流星雨を降らせ、4m以内の敵すべてに1秒ごと、5秒間、炎と雷撃のダメージを与える。資料の基準表示は各属性145で、武器・呪文ダメージの高い方に応じて変動する。再発動は8秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Ilambris（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/ilambris"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "immolator-charr",
+      "name": "生け贄を捧げる者チャー",
+      "englishName": "Immolator Charr",
+      "category": "モンスターセット",
+      "summary": "体力が少ない時の被弾で、移動妨害や行動制御への耐性を得る。",
+      "location": "Immolator Charr in Temple District, Tel Var lockbox merchant。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "防御力が34–1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "最大体力が28–1206増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "体力50%未満でダメージを受けると、移動不能、減速、クラウドコントロール効果への無効化を10秒間得る。再発動は40秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Immolator Charr（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/immolator-charr"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "PvP"
+      ]
+    },
+    {
+      "id": "infernal-guardian",
+      "name": "業火のガーディアン",
+      "englishName": "Infernal Guardian",
+      "category": "モンスターセット",
+      "summary": "ダメージシールドを付与すると、遠くの敵へ炎の砲弾を放つことがある。",
+      "location": "Razor Master Erthas in City of Ash I, Glirion the Redbeard。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大マジカが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "自分または味方へダメージシールドを付与すると50%の確率で、自分から最も遠い敵に2秒間で3発の砲弾を放つ。各弾は着弾地点の5m以内の敵すべてに炎ダメージを与える。資料の基準表示は各641で、武器・呪文ダメージの高い方に応じて変動する。再発動は6秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Infernal Guardian（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/infernal-guardian"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "kargaeda",
+      "name": "カーガエダ",
+      "englishName": "Kargaeda",
+      "category": "モンスターセット",
+      "summary": "前進・拡大する旋風で敵を攻撃し、その中のグループメンバーの資源消費を抑える。",
+      "location": "Varallion in Coral Aerie, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大マジカが17–731増加する。"
+        },
+        {
+          "label": "1部位",
+          "text": "最大スタミナが17–731増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "重攻撃でダメージを与えると、6mの旋風を作る。旋風は8秒間ゆっくり前進し、3秒ごとに3m拡大する。中の敵は1秒ごとに雷撃ダメージと物理ダメージを受ける。資料の基準表示は各属性150で、武器・呪文ダメージの高い方に応じて変動する。旋風内のグループメンバーのマジカ・スタミナ消費コストは10%減少する。再発動は20秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Kargaeda（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/kargaeda"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "kjalnars-nightmare",
+      "name": "クジャルナルの悪夢",
+      "englishName": "Kjalnar's Nightmare",
+      "category": "モンスターセット",
+      "summary": "軽攻撃で骨の累積を付け、回避不能の打ち上げか魔法ダメージを発生させる。",
+      "location": "Kjalnar Tombskald in Unhallowed Grave, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器・呪文ダメージが3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "軽攻撃で敵にダメージを与えると、5秒持続するBoneを付与する。累積の付与は0.5秒に1回まで。5累積になると1秒後に回避不能の骸骨の手が敵を攻撃し、打ち上げて3秒間気絶させる。気絶させられない敵には代わりに魔法ダメージを与える（資料の基準表示2221、武器・呪文ダメージの高い方に応じて変動）。その後、対象はこのセットの累積付与を4秒間受け付けなくなる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Kjalnar's Nightmare（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/kjalnars-nightmare"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "kragh",
+      "name": "クラグ",
+      "englishName": "Kra'gh",
+      "category": "モンスターセット",
+      "summary": "攻撃時に前方へ物理衝撃波を出すが、自分の隠れた状態が暴かれる。",
+      "location": "Kra'gh the Dreugh King in Fungal Grotto I, Maj al-Ragath。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "攻撃貫通が34–1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "ダメージを与えると10%の確率でドゥルーの肢を出し、前方に衝撃波を発生させる。2.4秒間、0.6秒ごとに物理ダメージを与える。資料の基準表示は各249で、武器・呪文ダメージの高い方に応じて変動する。この効果は自分の姿を露わにする。再発動は6秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Kra'gh（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/kragh"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "lady-malygda",
+      "name": "レディ・マリグダ",
+      "englishName": "Lady Malygda",
+      "category": "モンスターセット",
+      "summary": "近距離の直接攻撃で往復する雷撃範囲を作り、敵のクリティカルダメージを下げる。",
+      "location": "Lady Malygda in Arboretum District, Tel Var lockbox merchant。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "攻撃貫通が34–1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "12m以内の対象へ直接ダメージを与えると、5mの範囲を作る。その範囲は1秒後に素早く前進してから戻り、敵に雷撃ダメージを与え、Minor Enervationを5秒間付与する。このデバフで対象のクリティカル与ダメージが10%減少する。資料のダメージ基準表示は811で、武器・呪文ダメージの高い方に応じて変動する。再発動は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Lady Malygda（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/lady-malygda"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "PvP"
+      ]
+    },
+    {
+      "id": "lady-thorn",
+      "name": "レディ・ソーン",
+      "englishName": "Lady Thorn",
+      "category": "モンスターセット",
+      "summary": "体力を消費するアビリティで血の球を作り、シナジーで敵の与ダメージを下げる。",
+      "location": "Lady Thorn in Castle Thorn, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大体力が28–1206増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "体力コストのあるアビリティを使用すると、10秒間残る血の球を作る。生成は10秒に1回まで。球の近くにいる自分または味方はSanguine Burstシナジーを使え、付近の敵に病気ダメージを与え、Major Maimを8秒間付与して与ダメージを10%減らす。敵がこのシナジーによるMajor Maimを受けるのは20秒に1回まで。資料のダメージ基準表示は2879で、シナジー発動者の最大体力に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Lady Thorn（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/lady-thorn"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "lord-warden",
+      "name": "看守長",
+      "englishName": "Lord Warden",
+      "category": "モンスターセット",
+      "summary": "被弾すると周囲のグループメンバーを守る耐性の球を出すことがある。",
+      "location": "Lord Warden Dusk in Imperial City Prison, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "防御力が34–1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "ダメージを受けると50%の確率で影の球を10秒間作る。8m以内の自分とグループメンバーの物理耐性・呪文耐性が73–3180増加する。再発動は10秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Lord Warden（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/lord-warden"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "maarselok",
+      "name": "マーセロク",
+      "englishName": "Maarselok",
+      "category": "モンスターセット",
+      "summary": "近接重攻撃から病気の扇状攻撃を出し、敵の悪影響の数に応じて強める。",
+      "location": "Maarselok in Lair of Maarselok, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大スタミナが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "近接重攻撃でダメージを与えると、汚染の扇状攻撃を放ち、敵へ4秒間で病気ダメージを与える。資料の基準表示は1492で、武器・呪文ダメージの高い方に応じて変動する。対象の悪影響1つにつきダメージが10%増加し、増加の上限は300%。対プレイヤー時はこの係数が低下するが、資料が「reduced to It against players」と欠損しているため低下後の数値は未確認。再発動は10秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Maarselok（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/maarselok"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果は不使用）",
+          "url": "https://eso.dmm.com/news/detail/9968?page=7"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/9968?page=7"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。日本語セット名はDMM公式を照合（名称のみ、効果には不使用）。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。対プレイヤー時の係数は原資料の「It」表記で欠損しており未確定。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "magma-incarnate",
+      "name": "マグマの転生者",
+      "englishName": "Magma Incarnate",
+      "category": "モンスターセット",
+      "summary": "単体回復に反応して、グループ内で攻撃・防御のバフを連鎖させる。",
+      "location": "Magma Incarnate in The Dread Cellar, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "マジカ再生が3–129増加する。"
+        },
+        {
+          "label": "1部位",
+          "text": "スタミナ再生が3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "単体回復アビリティで自分またはグループメンバーを回復すると、28m以内で体力が最も低いグループメンバーにMinor CourageとMinor Resolveを10秒間付与する。武器・呪文ダメージが215、防御力が2974増加する。続いてデイドラのエネルギーが8m以内の別のグループメンバーへ最大3回跳び、同じ2つのバフを10秒間付与する。再発動は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Magma Incarnate（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/magma-incarnate"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "maw-of-the-infernal",
+      "name": "業火のモー",
+      "englishName": "Maw of the Infernal",
+      "category": "モンスターセット",
+      "summary": "軽・重攻撃をきっかけに、炎を吐くデイドロスを召喚する。",
+      "location": "High Kinlord Rilis in Banished Cells II, Maj al-Ragath。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器・呪文ダメージが3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "軽攻撃または重攻撃でダメージを与えると33%の確率で、火を吐くデイドロスを15秒間召喚する。デイドロスは2秒ごとに炎ダメージを与える。資料の基準表示は各599で、武器・呪文ダメージの高い方に応じて変動する。召喚は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Maw of the Infernal（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/maw-of-the-infernal"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "mighty-chudan",
+      "name": "強きチュダン",
+      "englishName": "Mighty Chudan",
+      "category": "モンスターセット",
+      "summary": "体力と防御力に加え、強固（強）を常時得る。",
+      "location": "Tree-Minder Na-Kesh in Ruins of Mazzatun, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "防御力が34–1487増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "最大体力が28–1206増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "強固（強／Major Resolve）を常時得て、物理耐性と呪文耐性が5948増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Mighty Chudan（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/mighty-chudan"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "molag-kena",
+      "name": "モラグ・キーナ",
+      "englishName": "Molag Kena",
+      "category": "モンスターセット",
+      "summary": "軽攻撃を連続させると、アビリティの消費増加と引き換えに攻撃力を高める。",
+      "location": "Molag Kena in White-Gold Tower, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器・呪文ダメージが3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "軽攻撃を2回連続で行うとOverkillが6秒間発動する。武器・呪文ダメージが13–560増加する一方、アビリティのコストも8%増加する。再発動は6秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Molag Kena（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/molag-kena"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "mother-ciannait",
+      "name": "マザー・シアネイト",
+      "englishName": "Mother Ciannait",
+      "category": "モンスターセット",
+      "summary": "詠唱・チャネリングでシールドを得て、破壊された場合はマジカを回復する。",
+      "location": "Mother Ciannait in Icereach, Urgarlag Chief-bane。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大マジカが25–1096増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "戦闘中、詠唱時間のあるアビリティを使用するか、アビリティをチャネリングすると、116–5000ダメージを吸収するシールドを6秒間得る。シールドが破壊されるとマジカが22–985回復する。再発動は7秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Mother Ciannait（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/mother-ciannait"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "nerieneth",
+      "name": "ネリエンエス",
+      "englishName": "Nerien'eth",
+      "category": "モンスターセット",
+      "summary": "直接攻撃から遅れて爆発する結晶を呼び出す。",
+      "location": "Nerien'eth in Crypt of Hearts II, Glirion the Redbeard。参照資料に記載された入手先。頭・肩ごとの割当、難易度、商人の購入条件は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "武器・呪文ダメージが3–129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "直接ダメージを与えると15%の確率でリッチの結晶を作る。2秒後に爆発し、4m以内の敵すべてへ魔法ダメージを与える。資料の基準表示は1360で、武器・呪文ダメージの高い方に応じて変動する。再発動は3秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Nerien'eth（全セット効果・装備重量・入手先／資料日2026-10-17、2026-10-25通常HTTP確認）",
+          "url": "https://esodecoded.com/sets/nerieneth"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://weezer1122eso.blogspot.com/p/itemsetslist.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-25に個別公開ページを通常HTTPで取得（HTTP 200）。資料日2026-10-17。全ボーナス行を照合し、同じ部位数の複数行も保持。数値幅は原資料の表示を保持し、品質・レベル別の対応は未検証。能力値で変動する効果の数値は資料の基準表示であり、実際の固定値ではない。ゲーム内実測なし。画像未取得。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
     }
   ]
 }
