@@ -3122,6 +3122,5412 @@
         "秘術",
         "古遺物"
       ]
+    },
+    {
+      "id": "adept-rider",
+      "name": "熟練騎手",
+      "englishName": "Adept Rider",
+      "category": "クラフトセット",
+      "summary": "徒歩と騎乗の移動速度を常時強化する。",
+      "location": "Summerset Isle の Shimmerene Dockworksでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "Gallop と迅速（強）を常時獲得し、移動速度が30%、騎乗速度が15%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Adept Rider（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/adept-rider"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "aetherial-ascension",
+      "name": "エセリアルの昇天",
+      "englishName": "Aetherial Ascension",
+      "category": "クラフトセット",
+      "summary": "行動コストと引き換えに防御力を高める。",
+      "location": "Blackreach の Arkthzand Cavern、Philosopher's Cradleでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御力が171～7377増加する。ブロック、ダッシュ、ロール回避、打破の消費コストが20%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Aetherial Ascension（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/aetherial-ascension"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "alessias-bulwark",
+      "name": "アレッシア守護",
+      "englishName": "Alessia's Bulwark",
+      "category": "クラフトセット",
+      "summary": "近接攻撃を受けた際に相手の攻撃力を下げる。",
+      "location": "Malabal Tor の Chancel of Divine Entreaty、Alik'r Desert の Alezer Kotu、Eastmarch の Hammerhomeでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "Martial 系の近接攻撃でダメージを受けると、攻撃者の武器・呪文ダメージを5秒間、6～300低下させる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Alessia's Bulwark（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/alessias-bulwark"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "ancient-dragonguard",
+      "name": "古代ドラゴンガード",
+      "englishName": "Ancient Dragonguard",
+      "category": "クラフトセット",
+      "summary": "体力の残量によって攻撃と防御の強化が切り替わる。",
+      "location": "Tideholm の Dragonguard Armoryでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が50%を超える間、武器・呪文ダメージが6～300増加する。体力が50%以下の間、物理・呪文耐性が80～3460増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Ancient Dragonguard（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/ancient-dragonguard"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "armor-master",
+      "name": "鎧匠",
+      "englishName": "Armor Master",
+      "category": "クラフトセット",
+      "summary": "防具アビリティのセットと使用で耐久力を得る。",
+      "location": "Imperial City の Memorial Armoryでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防具アビリティをスロットにセットしている間、最大体力が5%増加する。戦闘中に防具アビリティを使用すると、物理・呪文耐性が10秒間、138～5940増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Armor Master（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/armor-master"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "armor-of-the-seducer",
+      "name": "誘惑者の武具",
+      "englishName": "Armor of the Seducer",
+      "category": "クラフトセット",
+      "summary": "マジカアビリティの消費を抑える。",
+      "location": "Grahtwood の Temple of the Eight、Stormhaven の Fisherman's Island、Deshaan の Berezan's Mineでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "マジカアビリティの消費コストが10%減少する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Armor of the Seducer（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/armor-of-the-seducer"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "ashen-grip",
+      "name": "青白い柄",
+      "englishName": "Ashen Grip",
+      "category": "クラフトセット",
+      "summary": "近接攻撃をきっかけに前方へ炎を放つ。",
+      "location": "Auridon の Beacon Falls、Glenumbra の Par Molag、Stonefalls の Magmaflow Overlookでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "Martial 系の近接ダメージを与えると、前方の敵すべてに炎を吐いて炎ダメージを与える。資料基礎値は774で、武器・呪文ダメージの高い方に応じて変動するため実戦の固定値ではない。発動は4秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Ashen Grip（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/ashen-grip"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "assassins-guile",
+      "name": "アサシンの幻惑",
+      "englishName": "Assassin's Guile",
+      "category": "クラフトセット",
+      "summary": "錬金毒の持続時間を延ばす。",
+      "location": "Vvardenfell の Marandusでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分の錬金毒の持続時間が4秒延長される。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Assassin's Guile（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/assassins-guile"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "chimeras-rebuke",
+      "name": "キメラの叱責",
+      "englishName": "Chimera's Rebuke",
+      "category": "クラフトセット",
+      "summary": "完全にチャージした重攻撃で味方のリソースを回復する。",
+      "location": "Galenでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "完全にチャージした重攻撃でダメージを与えると、攻撃対象に最も近い味方3人のマジカまたはスタミナを54～2363回復する。回復するリソースの種類は、自分が装備している武器の種類で決まる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Chimera's Rebuke（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/chimeras-rebuke"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "claw-of-the-forest-wraith",
+      "name": "フォレストレイスの爪",
+      "englishName": "Claw of the Forest Wraith",
+      "category": "クラフトセット",
+      "summary": "クラスアビリティのクリティカル値を高める。",
+      "location": "Galenでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クラスアビリティのクリティカル値が47～2037増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Claw of the Forest Wraith（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/claw-of-the-forest-wraith"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "clever-alchemist",
+      "name": "賢明な錬金術師",
+      "englishName": "Clever Alchemist",
+      "category": "クラフトセット",
+      "summary": "戦闘中の薬の使用で攻撃力が一時的に上がる。",
+      "location": "Hew's Bane の No Shira Workshopでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に薬を飲むと、武器・呪文ダメージが20秒間、23～675増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Clever Alchemist（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/clever-alchemist"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "coldharbours-favorite",
+      "name": "コールドハーバーの流行",
+      "englishName": "Coldharbour's Favorite",
+      "category": "クラフトセット",
+      "summary": "回復または攻撃に反応する召喚効果。",
+      "location": "Northern Elsweyr の Valenwood Border Artisan Campでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分またはグループメンバーを回復するか、ダメージを与えると Coldharbour's Favorite が出現する。召喚は10秒に1回まで。2秒後、発動のきっかけに応じて対象の上で爆発する。回復で呼び出した場合、6秒間かけて体力を回復する。資料の合計基礎回復値は4648で、最大マジカ・最大スタミナの高い方に応じて変動する。攻撃で呼び出した場合は6秒間かけて魔法ダメージを与え、ペットの攻撃として扱う。資料の合計基礎ダメージ値は2352で、武器・呪文ダメージの高い方に応じて変動する。いずれも実戦の固定値ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Coldharbour's Favorite（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/coldharbours-favorite"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "critical-riposte",
+      "name": "クリティカル返し",
+      "englishName": "Critical Riposte",
+      "category": "クラフトセット",
+      "summary": "クリティカルを受けると攻撃者のクリティカル性能を弱める。",
+      "location": "Cyrodiil の Vlastarus Armoryでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル耐性が9～424増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカルダメージを受けると、その敵に Minor Enervation と Uncertainty を11秒間付与する。クリティカルダメージが10%、クリティカル率が6%低下する。同じ敵への適用は10秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Critical Riposte（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/critical-riposte"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "daedric-trickery",
+      "name": "デイドラの策略",
+      "englishName": "Daedric Trickery",
+      "category": "クラフトセット",
+      "summary": "ダメージを与えてランダムな強バフを得る。",
+      "location": "Vvardenfell の Randas Ancestral Tombでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダメージを与えると、5種類からランダムに選ばれた強バフを21秒間得る。発動は9秒に1回まで。候補は迅速（強）／Major Expedition、防護（強）／Major Protection、治癒力（強）／Major Mending、勇壮（強）／Major Heroism、生命力（強）／Major Vitality。"
+        },
+        {
+          "label": "候補バフの数値",
+          "text": "迅速（強）：移動速度+30%。防護（強）：被ダメージ-10%。治癒力（強）：与回復量+16%。勇壮（強）：1.5秒ごとに3アルティマ生成。生命力（強）：被回復量とダメージシールド強度+12%。ランダムに選ばれた効果のみを獲得する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Daedric Trickery（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/daedric-trickery"
+        },
+        {
+          "label": "ESO Decoded：バフ一覧（2026-10-17）",
+          "url": "https://esodecoded.com/buffs"
+        },
+        {
+          "label": "ESO Decoded：Major Mending（2026-10-03）",
+          "url": "https://esodecoded.com/buffs/major-mending"
+        },
+        {
+          "label": "ESO Decoded：Major Vitality（2026-10-03）",
+          "url": "https://esodecoded.com/buffs/major-vitality"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。候補バフの数値は別途参照。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "daring-corsair",
+      "name": "大胆な海賊",
+      "englishName": "Daring Corsair",
+      "category": "クラフトセット",
+      "summary": "武器アビリティの消費を軽減しアルティマ生成を助ける。",
+      "location": "Southern Elsweyr の Cat's-Claw Stationでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器アビリティのマジカまたはスタミナ消費コストが10%減少する。武器アビリティを使用すると勇壮（弱）を8秒間得て、戦闘中は1.5秒ごとに1アルティマを生成する。この付与効果は8秒に1回まで発動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Daring Corsair（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/daring-corsair"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "dauntless-combatant",
+      "name": "恐れ知らずの戦闘者",
+      "englishName": "Dauntless Combatant",
+      "category": "クラフトセット",
+      "summary": "行動不能効果をコストなしで自動打破する。",
+      "location": "Cyrodiil の Cropsford Armoryでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "行動不能効果を受けると、コストを消費せず自動で打破する。発動後は Winded 状態となり、21秒間はこの効果と同種の効果を発動できない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Dauntless Combatant（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/dauntless-combatant"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "deadlands-demolisher",
+      "name": "デッドランドの破壊者",
+      "englishName": "Deadlands Demolisher",
+      "category": "クラフトセット",
+      "summary": "バッシュを強化し、前方の敵の行動を妨害する。",
+      "location": "The Deadlands の Stormwright's Cleftでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "バッシュのダメージが935増加する。バッシュ時、前方の円錐範囲に追加の物理ダメージを与え、命中した敵を妨害する。この追加効果は2秒に1回まで発動し、バッシュダメージとして扱う。追加物理ダメージは資料上「0」表示で、実際の値は未確定。実戦で必ず0ダメージになる意味ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Deadlands Demolisher（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/deadlands-demolisher"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。追加物理ダメージの0表示は未解決のため要ゲーム内確認。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "deaths-wind",
+      "name": "死を招く風",
+      "englishName": "Death's Wind",
+      "category": "クラフトセット",
+      "summary": "低体力時に近接ダメージを受けると周囲の敵を押し返す。",
+      "location": "Auridon の Eastshore Islets Camp、Glenumbra の Chill House、Stonefalls の Armature's Upheavalでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が35%未満の時に近接ダメージを受けると、自分から8m以内の敵すべてをノックバックし、4秒間気絶させる。発動は15秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Death's Wind（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/deaths-wind"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "diamonds-victory",
+      "name": "ダイヤモンドの勝利",
+      "englishName": "Diamond's Victory",
+      "category": "クラフトセット",
+      "summary": "短射程と長射程のアビリティが互いの攻撃を強める。",
+      "location": "Blackwood の Pentric Runでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中、射程7m以下のアビリティを使うと遠距離優位（Range Supremacy）を5秒間得て、継続ダメージと遠隔攻撃の武器・呪文ダメージが10～437増加する。戦闘中、射程7mを超えるアビリティを使うと近接優位（Melee Supremacy）を5秒間得て、近接攻撃の武器・呪文ダメージが10～437増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Diamond's Victory（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/diamonds-victory"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "dragons-appetite",
+      "name": "ドラゴンの食欲",
+      "englishName": "Dragon's Appetite",
+      "category": "クラフトセット",
+      "summary": "出血中の敵への攻撃を強化し蓄積で自己回復する。",
+      "location": "Western Skyrim の Dragon's Bellyでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "出血中の敵に与えるダメージが5～225増加する。出血中の敵に出血以外のダメージを与えると、5秒間持続する Dragon's Appetite が1累積する。獲得は0.5秒に1回まで。10累積でこれを消費し、自分の体力を回復する。資料基礎回復値は4415で、最大マジカ・最大スタミナの高い方に応じて変動するため実戦の固定値ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Dragon's Appetite（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/dragons-appetite"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "druids-braid",
+      "name": "ドルイドの編込",
+      "englishName": "Druid's Braid",
+      "category": "クラフトセット",
+      "summary": "1部位から12部位まで段階的に最大リソースを増やす。",
+      "location": "High Isle の Hidden Foundryでクラフト。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大マジカが36～1565増加する。"
+        },
+        {
+          "label": "6部位",
+          "text": "最大スタミナが36～1565増加する。"
+        },
+        {
+          "label": "7部位",
+          "text": "最大体力が40～1722増加する。"
+        },
+        {
+          "label": "8部位",
+          "text": "最大マジカが36～1565増加する。"
+        },
+        {
+          "label": "9部位",
+          "text": "最大スタミナが36～1565増加する。"
+        },
+        {
+          "label": "10部位",
+          "text": "最大体力が40～1722増加する。"
+        },
+        {
+          "label": "11部位",
+          "text": "最大マジカが36～1565増加する。"
+        },
+        {
+          "label": "12部位",
+          "text": "最大スタミナが36～1565増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Druid's Braid（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/druids-braid"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "eternal-hunt",
+      "name": "エターナルハント",
+      "englishName": "Eternal Hunt",
+      "category": "クラフトセット",
+      "summary": "ロール回避の跡に敵を足止めするルーンを残す。",
+      "location": "Hew's Bane の The Lost Pavilionでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ロール回避するとその場にルーンを残す。敵が近づくと爆発し、毒ダメージを与えて1.5秒間移動不能にする。資料基礎ダメージ値は992で、武器・呪文ダメージの高い方に応じて変動するため実戦の固定値ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Eternal Hunt（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/eternal-hunt"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "eyes-of-mara",
+      "name": "マーラの目",
+      "englishName": "Eyes of Mara",
+      "category": "クラフトセット",
+      "summary": "回復の杖アビリティの消費を抑える。",
+      "location": "Eyevea の Mara's Eye Manufactoryでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "回復の杖アビリティの消費コストが15%減少する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Eyes of Mara（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/eyes-of-mara"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "fellowships-fortitude",
+      "name": "連盟の不屈",
+      "englishName": "Fellowship's Fortitude",
+      "category": "クラフトセット",
+      "summary": "5・10・12部位で防御力、体力、防護を得る。",
+      "location": "Solsticeでクラフト。",
+      "effects": [
+        {
+          "label": "5部位",
+          "text": "防御力が172～7425増加する。"
+        },
+        {
+          "label": "10部位",
+          "text": "最大体力が140～6020増加する。"
+        },
+        {
+          "label": "12部位",
+          "text": "防護（強）を獲得し、被ダメージが10%減少する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Fellowship's Fortitude（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/fellowships-fortitude"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "fortified-brass",
+      "name": "強化真鍮",
+      "englishName": "Fortified Brass",
+      "category": "クラフトセット",
+      "summary": "体力と防御力を常時増やす。",
+      "location": "Clockwork City の Restricted Brassworksでクラフト。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御力が80～3460増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Fortified Brass（個別ページの効果・入手先・装備分類）",
+          "url": "https://esodecoded.com/sets/fortified-brass"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別資料の掲載範囲を保持。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "grave-stake-collector",
+      "name": "墓標コレクター",
+      "englishName": "Grave-Stake Collector",
+      "category": "クラフトセット",
+      "summary": "倒した敵が残す杭を拾い、マジカとスタミナを補充する。",
+      "location": "Murkmire / Sweet Breeze Overlook のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直近に自分がダメージを与えた敵が死亡すると、6秒間残る墓杭が出現する。自分が触れるとスタミナとマジカをそれぞれ106～4564回復する。墓杭は同時に1本しか出現しない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/grave-stake-collector"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "heartland-conqueror",
+      "name": "ハートランド征服者",
+      "englishName": "Heartland Conqueror",
+      "category": "クラフトセット",
+      "summary": "武器特性の効果を強める。",
+      "location": "Blackwood / Sariellen's Sword のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器特性の効果を100%増加させる。装飾（Ornate）と複雑（Intricate）は対象外。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/heartland-conqueror"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "highland-sentinel",
+      "name": "台地の衛士",
+      "englishName": "Highland Sentinel",
+      "category": "クラフトセット",
+      "summary": "静止中にクリティカル値を蓄積する。",
+      "location": "West Weald のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位・追加能力",
+          "text": "クリティカル値が22～986増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に静止していると、1秒ごとに Sentinel’s Eye を1累積得る。1累積につきクリティカル値が10～443増加し、最大3累積。移動中は1秒ごとに1累積を失う。ただし突進・テレポート系アビリティでは累積を失わない。戦闘終了時に全累積が消える。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/highland-sentinel"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "hist-whisperer",
+      "name": "ヒストウィスパラー",
+      "englishName": "Hist Whisperer",
+      "category": "クラフトセット",
+      "summary": "通常攻撃で自分の体力とリソースを補給する。",
+      "location": "Blackwood / Withered Root のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "軽攻撃または中攻撃でダメージを与えると、自分の体力を7～318回復し、スタミナとマジカもそれぞれ7～318回復する。完全にチャージした重攻撃でダメージを与えた場合は、3種それぞれ14～636を回復する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/hist-whisperer"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "innate-axiom",
+      "name": "内在公理",
+      "englishName": "Innate Axiom",
+      "category": "クラフトセット",
+      "summary": "クラスアビリティに限定した攻撃力を得る。",
+      "location": "Clockwork City / The Refurbishing Yard のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クラスアビリティに適用される武器・呪文ダメージが9～400増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/innate-axiom"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "iron-flask",
+      "name": "鉄のフラスコ",
+      "englishName": "Iron Flask",
+      "category": "クラフトセット",
+      "summary": "戦闘中の薬使用で防御を高める。",
+      "location": "Fargrave / Forgotten Feretory のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に薬を飲むと、防御力が7779増加する。持続時間は20秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/iron-flask"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "kagrenacs-hope",
+      "name": "カグレナクの希望",
+      "englishName": "Kagrenac's Hope",
+      "category": "クラフトセット",
+      "summary": "味方の蘇生を早め、成功時にマジカを補給する。",
+      "location": "The Earth Forge のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位・追加能力",
+          "text": "武器・呪文ダメージが5～222増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "味方の蘇生に必要な時間を25%短縮する。蘇生に成功すると自分のマジカが40～1720回復する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/kagrenacs-hope"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "kvatch-gladiator",
+      "name": "クヴァッチ剣闘士",
+      "englishName": "Kvatch Gladiator",
+      "category": "クラフトセット",
+      "summary": "体力が減った相手に対する攻撃力を増す。",
+      "location": "Gold Coast / Marja's Mill のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が25%以下の対象に対する武器・呪文ダメージが128～1475増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/kvatch-gladiator"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "legacy-of-karth",
+      "name": "カースの遺産",
+      "englishName": "Legacy of Karth",
+      "category": "クラフトセット",
+      "summary": "錬金術の毒を受けた敵に追加の病気ダメージを与える。",
+      "location": "The Reach / Druadach Redoubt のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分の錬金術の毒が効いている敵に、1秒ごとに病気ダメージを与える。資料の基準表示は285。実際の効果量は自分の武器・呪文ダメージの高い方に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/legacy-of-karth"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "magnus-gift",
+      "name": "マグナスの贈物",
+      "englishName": "Magnus' Gift",
+      "category": "クラフトセット",
+      "summary": "確率でマジカアビリティの消費をなくす。",
+      "location": "Greenshade / Arananga、Rivenspire / Veawend Ede、Shadowfen / Xal Haj-Ei Shrine のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "マジカを使うアビリティを発動すると、15%の確率でそのアビリティの消費がなくなる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/magnus-gift"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "mechanical-acuity",
+      "name": "機械的精度",
+      "englishName": "Mechanical Acuity",
+      "category": "クラフトセット",
+      "summary": "非クリティカルのダメージからクリティカル確率を蓄積する。",
+      "location": "Clockwork City / Pavilion of Artifice のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカルでないダメージを与えると、4秒間の Mechanical Acuity を1累積得る。1累積につきクリティカル確率が20%増加する。獲得は1秒に1回まで、最大5累積。最大累積に達した時点、または効果終了後から25秒間は再発動しない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/mechanical-acuity"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "might-of-the-lost-legion",
+      "name": "失われた軍団の力",
+      "englishName": "Might of the Lost Legion",
+      "category": "クラフトセット",
+      "summary": "防御をきっかけに対モンスター重攻撃を強める。",
+      "location": "Murkmire / Ruined Village のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位・追加能力",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御すると強化（Empower）を3秒間得て、モンスターへの重攻撃ダメージが150%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/might-of-the-lost-legion"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "morkuldin",
+      "name": "モークルディン",
+      "englishName": "Morkuldin",
+      "category": "クラフトセット",
+      "summary": "軽・重攻撃から戦う武器を召喚する。",
+      "location": "Wrothgar / Morkuldin Forge のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "軽攻撃または重攻撃でダメージを与えると、敵を攻撃する自律武器を15秒間召喚する。召喚は15秒に1回まで。武器は2秒に1回攻撃し、軽攻撃では物理ダメージ、重攻撃では正面の円錐範囲に物理ダメージを与える。どちらも資料の基準表示は422で、自分の武器・呪文ダメージの高い方に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/morkuldin"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "naga-shaman",
+      "name": "ナガ呪術師",
+      "englishName": "Naga Shaman",
+      "category": "クラフトセット",
+      "summary": "シールド付与をきっかけに自分の回復性能を上げる。",
+      "location": "Murkmire / Deep Swamp Forge のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "与回復量が4%増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分または味方へダメージシールドを付与すると、自分に治癒力（弱／Minor Mending）と生命力（弱／Minor Vitality）が6秒間付く。与回復量は8%、被回復量とダメージシールド強度は6%増加する。発動は6秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/naga-shaman"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "new-moon-acolyte",
+      "name": "新たなる月の侍者",
+      "englishName": "New Moon Acolyte",
+      "category": "クラフトセット",
+      "summary": "アクティブアビリティの消費増と引き換えに攻撃力を得る。",
+      "location": "Southern Elsweyr / Fur-Forge Cove のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器・呪文ダメージが9～401増加する。一方、アクティブアビリティの消費は5%増える。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/new-moon-acolyte"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "nights-silence",
+      "name": "寂夜",
+      "englishName": "Night's Silence",
+      "category": "クラフトセット",
+      "summary": "隠密中の移動速度ペナルティをなくす。",
+      "location": "Auridon / Hightide Keep、Glenumbra / Mesanthano's Tower、Stonefalls / Steamfont Cavern のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "隠密による移動速度の低下を無視する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/nights-silence"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "nobles-conquest",
+      "name": "大親征",
+      "englishName": "Noble's Conquest",
+      "category": "クラフトセット",
+      "summary": "強撃で自己回復し、敵を弱体化する。",
+      "location": "Imperial City / Nobles Armory のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "対象に強撃（Bash）を行うと、10秒かけて自分の体力を回復し、その敵に脆弱（弱／Minor Vulnerability）を10秒間付与して被ダメージを5%増やす。回復は10秒に1回まで発動する。回復総量の基準表示は3408で、自分の最大体力に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/nobles-conquest"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "nocturnals-favor",
+      "name": "ノクターナルの寵愛",
+      "englishName": "Nocturnal's Favor",
+      "category": "クラフトセット",
+      "summary": "回避成功時に自分を継続回復する。",
+      "location": "Summerset Isle / Augury Basin のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "回避に成功すると、5秒かけて自分の体力を回復する。回復総量の基準表示は2820で、最大マジカ・最大スタミナの高い方に応じて変動する。発動間隔は5秒以上。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/nocturnals-favor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "oblivions-foe",
+      "name": "反オブリビオン",
+      "englishName": "Oblivion's Foe",
+      "category": "クラフトセット",
+      "summary": "魂魔法から追加の継続ダメージを与える。",
+      "location": "Coldharbour / Font of Schemes のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位・追加能力",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "魂魔法でダメージを与えると、まだ自分の印がない対象の魂に印を付け、10秒かけて魔法ダメージを与える。総量の基準表示は1875で、武器・呪文ダメージの高い方に応じて変動する。自分の印がすでにある対象には重ねて付けられない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/oblivions-foe"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "old-growth-brewer",
+      "name": "原生の醸造家",
+      "englishName": "Old Growth Brewer",
+      "category": "クラフトセット",
+      "summary": "戦闘中の薬使用で3種の再生を強化する。",
+      "location": "Galen のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に薬を飲むと、体力・マジカ・スタミナ再生がそれぞれ5～245増加する。持続時間は45秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/old-growth-brewer"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "orgnums-scales",
+      "name": "オルグヌム鱗",
+      "englishName": "Orgnum's Scales",
+      "category": "クラフトセット",
+      "summary": "低体力の間、再生と耐性を強化する。",
+      "location": "The Earth Forge / Pressure Room III のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が60%未満の間、体力再生が18～800増加し、物理耐性と呪文耐性がそれぞれ148～6400増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/orgnums-scales"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/6782"
+        },
+        {
+          "label": "日英名称の対応のみ照合",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "pelinals-wrath",
+      "name": "ペリナルの憤怒",
+      "englishName": "Pelinal's Wrath",
+      "category": "クラフトセット",
+      "summary": "撃破でシールドと攻撃力を得るが、自傷も累積する。",
+      "location": "Anvil / Colovian Revolt Forge Yard のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵を倒すと、10秒間のダメージシールド（吸収量の基準表示3876）と、10秒間の Wrath of Whitestrake を1累積得る。最大10累積。1累積ごとに武器・呪文ダメージが2～100増える代わりに、毎秒オブリビオンダメージ（基準表示159）を自分が受ける。シールド量は武器・呪文ダメージの高い方、自傷ダメージは最大体力に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/pelinals-wrath"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "red-eagles-fury",
+      "name": "赤鷲の激昂",
+      "englishName": "Red Eagle's Fury",
+      "category": "クラフトセット",
+      "summary": "武器スキルの消費増と引き換えに威力を上げる。",
+      "location": "The Reach / Red Eagle Redoubt のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器スキルのアビリティに適用される武器・呪文ダメージが10～469増加する。その武器スキルのアビリティの消費は5%増える。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/red-eagles-fury"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "redistributor",
+      "name": "再分配",
+      "englishName": "Redistributor",
+      "category": "クラフトセット",
+      "summary": "自分への過剰回復を近くのグループメンバーの回復につなげる。",
+      "location": "Imperial City / Arboretum Armory のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分自身を過剰回復すると、15m以内のグループメンバー1人の体力を回復する。基準表示は663で、自分の最大マジカ・最大スタミナの高い方に応じて変動する。発動は1秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/redistributor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "seeker-synthesis",
+      "name": "シーカーの統合",
+      "englishName": "Seeker Synthesis",
+      "category": "クラフトセット",
+      "summary": "戦闘中のアビリティ使用で薬の待ち時間を短縮する。",
+      "location": "Necrom のクラフト拠点。地名は出典の英語表記。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中にリソースを消費するアビリティを発動すると、薬のクールダウンを1秒短縮する。発動は2秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの効果・重量・分類・入手先／資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/seeker-synthesis"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページを照合。範囲は資料掲載の下限～上限で、品質・レベル別の対応とゲーム内実測は未検証。必要研究特性数は未照合。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "クラフト",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "senche-rahts-grit",
+      "name": "センチラートの底力",
+      "englishName": "Senche-raht's Grit",
+      "category": "5部位セット",
+      "summary": "継続ダメージを受けた後の耐久と回復を補強する。",
+      "location": "Northern Elsweyr / Starlight Adeptorium のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "与回復量が4%増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "継続ダメージアビリティによるダメージを受けると、3秒間、被回復量が0～6%、物理耐性と呪文耐性が60～2585増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/senche-rahts-grit"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "serpents-disdain",
+      "name": "大蛇の軽蔑",
+      "englishName": "Serpent's Disdain",
+      "category": "5部位セット",
+      "summary": "自分が付与するステータス効果を長持ちさせる。",
+      "location": "High Isle / Stonelore Forge and Craft のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分が付与するステータス効果と、それに伴う効果の持続時間を16秒延長する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/serpents-disdain"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "shacklebreaker",
+      "name": "シャックルブレイカー",
+      "englishName": "Shacklebreaker",
+      "category": "5部位セット",
+      "summary": "スタミナとマジカの両資源を増強する。",
+      "location": "Vvardenfell / Zergonipal のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大スタミナが48～2065増加する。最大マジカが48～2065増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/shacklebreaker"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "shalidors-curse",
+      "name": "呪えしシャリドール",
+      "englishName": "Shalidor's Curse",
+      "category": "5部位セット",
+      "summary": "低体力時の軽・重攻撃に自己回復を加える。",
+      "location": "Eyevea / Shalidor's Cursed Manufactory のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が50%未満の間に軽攻撃または重攻撃でダメージを与えると、体力を回復する。掲載基準値は941。最大マジカと最大スタミナの高い方に応じて回復量が変動する。発動間隔は1秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/shalidors-curse"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "shared-burden",
+      "name": "負荷の分担",
+      "englishName": "Shared Burden",
+      "category": "5部位セット",
+      "summary": "コンパニオンへのダメージ分担と自動復活を組み合わせる。",
+      "location": "Solstice のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘に入ると、自分が受けるダメージの6%をコンパニオンへ移す。コンパニオンの被ダメージを0～16%減らす。コンパニオンが戦闘中に死亡した場合、12秒後に自動復活し、復活後3秒間は被ダメージが100%減少する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/shared-burden"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "shattered-fate",
+      "name": "砕かれた運命",
+      "englishName": "Shattered Fate",
+      "category": "12部位セット",
+      "summary": "5・10・12部位で貫通力、攻撃力、クリティカルを得る。",
+      "location": "Necrom のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "5部位",
+          "text": "攻撃貫通力が184～7918増加する。"
+        },
+        {
+          "label": "10部位",
+          "text": "武器・呪文ダメージが15～687増加する。"
+        },
+        {
+          "label": "12部位",
+          "text": "クリティカル値が35～1528増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/shattered-fate"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "sloads-semblance",
+      "name": "スロードの装い",
+      "englishName": "Sload's Semblance",
+      "category": "5部位セット",
+      "summary": "敵の最大体力に応じたオブリビオンダメージを継続して与える。",
+      "location": "Artaeum / Craftworks のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵にダメージを与えると10%の確率で影の真珠を放つ。6秒間、1秒ごとに対象の最大体力の3%に当たるオブリビオンダメージを与える。各回の上限掲載範囲は69～3000。この効果は自分の隠密状態を解除し、反射されない。発動間隔は6秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/sloads-semblance"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "song-of-lamae",
+      "name": "ラマエ歌",
+      "englishName": "Song of Lamae",
+      "category": "5部位セット",
+      "summary": "低体力時に反撃し、与えたダメージ分を回復する。",
+      "location": "Malabal Tor / Sleepy Senche Overlook、Alik'r Desert / Rkulftzel、Eastmarch / Tinkerer Tobin's Workshop のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が30%未満の状態でダメージを受けると、攻撃者に魔法ダメージを与え、実際に与えたダメージ分の体力を回復する。ダメージ掲載基準値は1377で、自分の最大体力に応じて変動する。発動間隔は3秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/song-of-lamae"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "spectres-eye",
+      "name": "霊なる瞳",
+      "englishName": "Spectre's Eye",
+      "category": "5部位セット",
+      "summary": "戦闘中のマジカアビリティ使用で範囲攻撃に備える。",
+      "location": "Coldharbour / Deathspinner's Lair のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中にマジカアビリティを使用すると、30秒間、回避（強 / Major Evasion）を得て、範囲攻撃からの被ダメージを20%減らす。発動間隔は30秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/spectres-eye"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "spell-parasite",
+      "name": "寄生魔術師",
+      "englishName": "Spell Parasite",
+      "category": "5部位セット",
+      "summary": "ダメージを与えるたびにマジカを補給する。",
+      "location": "Blackreach / Greymoor Caverns / Parasite's Cave のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダメージを与えるとマジカが1～63回復する。発動間隔は0.25秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/spell-parasite"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "stuhns-favor",
+      "name": "ストゥーンの恩恵",
+      "englishName": "Stuhn's Favor",
+      "category": "5部位セット",
+      "summary": "オフバランスの敵への攻撃で貫通力を高める。",
+      "location": "Western Skyrim / Hunter's House のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "オフバランス状態の敵にダメージを与えると、10秒間、攻撃貫通力が123～5312増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/stuhns-favor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "tavas-favor",
+      "name": "ターヴァの寵",
+      "englishName": "Tava's Favor",
+      "category": "5部位セット",
+      "summary": "攻撃の回避をアルティマ生成につなげる。",
+      "location": "Hew's Bane / Forebear's Junction のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "攻撃を回避すると、3秒かけて合計12アルティマを得る。発動間隔は3秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/tavas-favor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "telvanni-efficiency",
+      "name": "テルヴァンニの効率",
+      "englishName": "Telvanni Efficiency",
+      "category": "5部位セット",
+      "summary": "コンパニオンの生存状態に合わせて再使用時間か消費を軽減する。",
+      "location": "Necrom のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "生存しているコンパニオンがいる間、そのコンパニオンのアビリティのクールダウンを50%短縮する。生存しているコンパニオンがいない間、自分のマジカ・スタミナ・体力・アルティマを消費するアビリティのコストを8%減らす。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/telvanni-efficiency"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "tharrikers-strike",
+      "name": "サリカーの一撃",
+      "englishName": "Tharriker's Strike",
+      "category": "5部位セット",
+      "summary": "完全チャージ重攻撃から与ダメージ強化を得る。",
+      "location": "West Weald のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "完全にチャージした重攻撃でダメージを与えると、4秒間、狂戦士（強 / Major Berserk）を得て、与ダメージが10%増加する。発動間隔は1秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/tharrikers-strike"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "threads-of-war",
+      "name": "戦いの流れ",
+      "englishName": "Threads of War",
+      "category": "5部位セット",
+      "summary": "武器攻撃に武器属性に応じたステータス効果を付与する。",
+      "location": "West Weald のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "軽攻撃と完全にチャージした重攻撃が、100%のステータス効果発生確率を得る。発生するステータス効果は武器のダメージ種別で決まる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/threads-of-war"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "tide-born-wildstalker",
+      "name": "潮の子の荒野の追跡者",
+      "englishName": "Tide-Born Wildstalker",
+      "category": "5部位セット",
+      "summary": "モンスターに対する直接ダメージを強化する。",
+      "location": "Solstice のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "攻撃貫通力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "モンスターに与える直接ダメージが15%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/tide-born-wildstalker"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "trial-by-fire",
+      "name": "炎の試練",
+      "englishName": "Trial by Fire",
+      "category": "5部位セット",
+      "summary": "元素ステータス効果を受けている間の防御を強化する。",
+      "location": "Wrothgar / Malacath Statue のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "元素のステータス効果を受けている間、防御力が197～8500増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/trial-by-fire"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "twice-born-star",
+      "name": "双子星",
+      "englishName": "Twice-Born Star",
+      "category": "5部位セット",
+      "summary": "ムンダス・ストーンの恩恵を2つ併用できる。",
+      "location": "Craglorn / Atelier of the Twice-Born Star のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ムンダス・ストーンの恩恵を同時に2つ受けられる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/twice-born-star"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "twilights-embrace",
+      "name": "黄昏の抱擁",
+      "englishName": "Twilight's Embrace",
+      "category": "5部位セット",
+      "summary": "受ける回復を常時強化する。",
+      "location": "Grahtwood / Vineshade Lodge、Stormhaven / Windridge Warehouse、Deshaan / Avayan's Farm のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分の被回復量が10%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/twilights-embrace"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "unchained-aggressor",
+      "name": "解き放たれた侵入者",
+      "englishName": "Unchained Aggressor",
+      "category": "5部位セット",
+      "summary": "打破後に与ダメージ強化を得る。",
+      "location": "Cyrodiil / Bruma Armory のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "打破すると、12秒間、狂戦士（強 / Major Berserk）を得て、与ダメージが10%増加する。発動間隔は14秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/unchained-aggressor"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "vampires-kiss",
+      "name": "吸血鬼の口づけ",
+      "englishName": "Vampire's Kiss",
+      "category": "5部位セット",
+      "summary": "敵撃破後の継続回復で連戦を支える。",
+      "location": "Malabal Tor / Matthild's Last Venture、Alik'r Desert / Artisan's Oasis、Eastmarch / Crimson Kada's Crafting Cavern のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器・呪文ダメージが3～129増加する。敵を倒すと10秒かけて体力を回復する。合計回復量の掲載基準値は10512で、最大マジカと最大スタミナの高い方に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/vampires-kiss"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "varens-legacy",
+      "name": "ヴァレンレガシー",
+      "englishName": "Varen's Legacy",
+      "category": "5部位セット",
+      "summary": "防御後の範囲直接攻撃に追加ダメージを与える。",
+      "location": "Gold Coast / Strid River Artisans Camp のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御すると、その後5秒以内に使用する次の範囲直接ダメージ攻撃に76～3290のダメージを追加する。チャネリング効果には適用されない。発動間隔は2秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/varens-legacy"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        },
+        {
+          "label": "日英名称の対応のみ照合",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "vastaries-tutelage",
+      "name": "ヴァスタリーの教え",
+      "englishName": "Vastarie's Tutelage",
+      "category": "5部位セット",
+      "summary": "蘇生した味方と自分の攻撃力と消費効率を高める。",
+      "location": "Northern Elsweyr / Rimmen Masterworks のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "マジカ再生が3～129増加する。スタミナ再生が3～129増加する。味方を蘇生すると、自分と蘇生した味方は10秒間、武器・呪文ダメージが6～258増加し、アルティメット以外のアビリティのコストが10%減少する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/vastaries-tutelage"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "way-of-the-arena",
+      "name": "アリーナの流儀",
+      "englishName": "Way of the Arena",
+      "category": "5部位セット",
+      "summary": "打破の消費を軽減しながら基本能力を増やす。",
+      "location": "Craglorn / Lanista's Waystation のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器・呪文ダメージが3～165増加する。打破のコストが40%減少する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/way-of-the-arena"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "whitestrakes-retribution",
+      "name": "ホワイトストレークの報復",
+      "englishName": "Whitestrake's Retribution",
+      "category": "5部位セット",
+      "summary": "低体力で被弾したときにダメージシールドを展開する。",
+      "location": "Greenshade / Lanalda Pond、Rivenspire / Westwind Lighthouse、Shadowfen / Weeping Wamasu Falls のセット製作台でクラフト。必要な研究特性数は未確認。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力が30%未満の状態でダメージを受けると、6秒間、303～13035のダメージを吸収するシールドを得る。発動間隔は15秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：個別ページ（効果・重量・入手先／2026-10-17取得データ）",
+          "url": "https://esodecoded.com/sets/whitestrakes-retribution"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・公式",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        },
+        {
+          "label": "日英名称の対応のみ照合",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "個別ページの現行HTMLで照合。数値は掲載範囲・基準値で実測値ではない。 日本語名は公式資料で照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "willows-path",
+      "name": "ウィロー路",
+      "englishName": "Willow's Path",
+      "category": "5部位セット",
+      "summary": "3種類のリソース再生を割合で高める。",
+      "location": "リーパーズ・マーチのGreenspeaker's Grove、バンコライのViridian Hideaway、リフトのSmokefrost Vigilにあるセット作業台で制作。必要な研究特性数は未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力再生・マジカ再生・スタミナ再生がそれぞれ18%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/willows-path"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "wretched-vitality",
+      "name": "哀れなる活力",
+      "englishName": "Wretched Vitality",
+      "category": "5部位セット",
+      "summary": "戦闘中の強・弱バフやデバフの付与で、マジカとスタミナの再生を高める。",
+      "location": "デッドランドのThe Razorworksにあるセット作業台で制作。必要な研究特性数は未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中、持続時間のある強（Major）のバフまたはデバフを対象に付与すると、自分のマジカ再生とスタミナ再生が15秒間260増加する。同じ条件で弱（Minor）のバフまたはデバフを付与した場合は、15秒間130増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/wretched-vitality"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "adamant-lurker",
+      "name": "大胆なラーカー",
+      "englishName": "Adamant Lurker",
+      "category": "5部位セット",
+      "summary": "静止中の体力再生を大きく高める。",
+      "location": "テルヴァンニ半島とアポクリファ（Necrom）。フィールドで入手。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "体力再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "その場に静止している間、体力再生が35～1505増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/adamant-lurker"
+        },
+        {
+          "label": "ArzyeL Armory（Necromの具体的な入手ゾーンのみ照合、2026-10-25確認）",
+          "url": "https://arzyelarmory.com/adamant-lurker-eso/"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア２"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "akaviri-dragonguard",
+      "name": "アカヴィリのドラゴンガード",
+      "englishName": "Akaviri Dragonguard",
+      "category": "5部位セット",
+      "summary": "アルティメットの消費軽減と生存補助を組み合わせる。",
+      "location": "イーストマーチ（Eastmarch）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力再生が3～158増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "アルティメットアビリティの消費を15%軽減する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/akaviri-dragonguard"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/エリア"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "armor-of-the-trainee",
+      "name": "訓練生の鎧",
+      "englishName": "Armor of the Trainee",
+      "category": "3部位セット",
+      "summary": "1～3部位で最大体力・マジカ・スタミナを順番に補強する。",
+      "location": "ケナーシズルースト、ベトニク、ストロス・エムカイ、バル・フォイエン、ブリークロック島。フィールドで入手。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "最大体力が33～1454増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "最大マジカが33～1454増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが33～1454増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/armor-of-the-trainee"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/エリア"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "armor-of-the-veiled-heritance",
+      "name": "ベールの継承者の鎧",
+      "englishName": "Armor of the Veiled Heritance",
+      "category": "5部位セット",
+      "summary": "戦闘中の中断成功で攻撃力を高め、強撃も強化する。",
+      "location": "オーリドン（Auridon）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が34～1487増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に対象の詠唱・チャネリングを中断（Interrupt）すると、武器ダメージと呪文ダメージが15秒間12～516増加する。これとは別に、強撃のダメージが12～516増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/armor-of-the-veiled-heritance"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/エリア"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "ayleid-refuge",
+      "name": "Ayleid Refuge（日本語名未確認）",
+      "englishName": "Ayleid Refuge",
+      "category": "5部位セット",
+      "summary": "防御後に短時間の被ダメージ軽減を得る。",
+      "location": "ウェストウィールド（West Weald）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "攻撃を防御すると、3秒間、被ダメージを11%軽減する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/ayleid-refuge"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。日本語名未確認のため英語名で識別。ゲーム内実測なし。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "back-alley-gourmand",
+      "name": "裏路地グルメ",
+      "englishName": "Back-Alley Gourmand",
+      "category": "5部位セット",
+      "summary": "食べ物のバフ中にクリティカルの威力と回復量を強化する。",
+      "location": "ガレン（Galen）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル率の能力値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル率の能力値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "食べ物のバフが有効な間、クリティカルダメージとクリティカル回復量が13%増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/back-alley-gourmand"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア２"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "bahrahas-curse",
+      "name": "バーラハの呪い",
+      "englishName": "Bahraha's Curse",
+      "category": "5部位セット",
+      "summary": "ダメージで範囲攻撃・鈍足・自己回復を発動し、罠への耐性も得る。",
+      "location": "ヒューズベイン（Hew's Bane）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "環境中の罠から受けるダメージを40%軽減する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダメージを与えると25%の確率で、5秒間持続する汚された地面を生成する。その範囲3.5m以内の敵の移動速度を60%低下させ、1秒ごとに魔法ダメージを与える（資料の基準値349）。与えたダメージの100%分、自分の体力を回復する。発動は5秒に1回まで。ダメージは最大体力に応じて変動し、349固定ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/bahrahas-curse"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア１"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "bastion-of-the-draoife",
+      "name": "Bastion of the Draoife（日本語名未確認）",
+      "englishName": "Bastion of the Draoife",
+      "category": "5部位セット",
+      "summary": "防御で累積を得てマジカとスタミナの再生を強化する。",
+      "location": "ガレン（Galen）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "攻撃を防御すると、10秒間持続するInflectionを1累積得る。最大3累積、獲得は0.5秒に1累積まで。1累積につきマジカ再生とスタミナ再生が2～106増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/bastion-of-the-draoife"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。日本語名未確認のため英語名で識別。ゲーム内実測なし。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "beekeepers-gear",
+      "name": "養蜂家の装備",
+      "englishName": "Beekeeper's Gear",
+      "category": "5部位セット",
+      "summary": "最大体力と体力再生に集中した耐久型セット。",
+      "location": "グリーンシェイド（Greenshade）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "体力再生が20～900増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/beekeepers-gear"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/エリア"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "blessing-of-high-isle",
+      "name": "ハイ・アイルの祝福",
+      "englishName": "Blessing of High Isle",
+      "category": "5部位セット",
+      "summary": "戦闘中の被回復を攻撃力強化につなげる。",
+      "location": "ハイ・アイルとアメノス（High Isle and Amenos）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中に回復を受けると、武器ダメージと呪文ダメージが5秒間8～369増加する。"
+        },
+        {
+          "label": "装備重量・部位",
+          "text": "基本は軽装。参照データには重装の肩も掲載されているため重装タグを併記するが、重装全身が存在する意味ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/blessing-of-high-isle"
+        },
+        {
+          "label": "DMM / ESO公式 v8.0.5（日本語名と基本軽装分類の照合）",
+          "url": "https://eso.dmm.com/news/detail/9966"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。資料のLight(All)とHeavy(Shoulder)を区別し、重装は肩のみ掲載。数値範囲のレベル・品質別対応とゲーム内実測は未検証。",
+      "armorWeights": [
+        "軽装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "bloodthorns-touch",
+      "name": "ブラッドソーンの接触",
+      "englishName": "Bloodthorn's Touch",
+      "category": "5部位セット",
+      "summary": "直接攻撃でマジカとスタミナを回復する。",
+      "location": "グレナンブラ（Glenumbra）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "直接ダメージを与えると、マジカとスタミナをそれぞれ18～800回復する。発動は5秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/bloodthorns-touch"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/エリア"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "bog-raider",
+      "name": "Bog Raider（日本語名未確認）",
+      "englishName": "Bog Raider",
+      "category": "5部位セット",
+      "summary": "攻撃した敵の死亡でアルティマと体力再生を得る。",
+      "location": "ブラックウッド（Blackwood）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分が直前にダメージを与えていた敵が死亡すると、アルティマを10獲得し、体力再生が10秒間26～1156増加する。発動は10秒に1回まで。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/bog-raider"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。日本語名未確認のため英語名で識別。ゲーム内実測なし。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "bright-throats-boast",
+      "name": "ブライトスロートの自慢",
+      "englishName": "Bright-Throat's Boast",
+      "category": "5部位セット",
+      "summary": "飲み物のバフ中にマジカの容量と再生を高める。",
+      "location": "マークマイア（Murkmire）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "マジカ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "飲み物のバフが有効な間、最大マジカが46～2000、マジカ再生が3～133増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/bright-throats-boast"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア１"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "call-of-the-undertaker",
+      "name": "墓堀の呼び声",
+      "englishName": "Call of the Undertaker",
+      "category": "5部位セット",
+      "summary": "攻撃した敵から自分と味方が回復を得られるようにする。",
+      "location": "北エルスウェア（Northern Elsweyr）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "被回復量が4%増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "与回復量が4%増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダメージを与えた敵に8秒間、Minor Lifestealを付与する。自分や味方がその敵にダメージを与えると、1秒ごとに体力を600回復する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/call-of-the-undertaker"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア２"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "camonna-tong",
+      "name": "カモンナ・トング",
+      "englishName": "Camonna Tong",
+      "category": "5部位セット",
+      "summary": "モンスターの討伐経験値を一時的な攻撃力に変える。",
+      "location": "テルヴァンニ半島とアポクリファ（Necrom）。フィールドで入手。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "モンスターを倒して経験値を得ると、そのモンスター本来の経験値50につき武器ダメージと呪文ダメージが1増加する。持続は30秒、累積上限は540。経験値の獲得量を増やす効果は、このセットの計算には影響しない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/camonna-tong"
+        },
+        {
+          "label": "ArzyeL Armory（Necromの具体的な入手ゾーンのみ照合、2026-10-25確認）",
+          "url": "https://arzyelarmory.com/camonna-tong-eso/"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア２"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "champion-of-the-hist",
+      "name": "ヒストの勇者",
+      "englishName": "Champion of the Hist",
+      "category": "5部位セット",
+      "summary": "最大体力を補強し、戦闘中のアルティマ獲得を支える。",
+      "location": "マークマイア（Murkmire）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大体力が37～1600増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "戦闘中は常にMinor Heroismを得て、1.5秒ごとにアルティマを1獲得する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/champion-of-the-hist"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア１"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "crafty-alfiq",
+      "name": "狡猾なるアルフィク",
+      "englishName": "Crafty Alfiq",
+      "category": "5部位セット",
+      "summary": "最大マジカの増加に特化する。",
+      "location": "北エルスウェア（Northern Elsweyr）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大マジカが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大マジカが59～2550増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/crafty-alfiq"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア２"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "darkstride",
+      "name": "闇歩み",
+      "englishName": "Darkstride",
+      "category": "5部位セット",
+      "summary": "最大スタミナを補強し、ダッシュと隠密の消費を減らす。",
+      "location": "リベンスパイア（Rivenspire）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "ダッシュと隠密の消費を50%軽減する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/darkstride"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/エリア"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "dead-waters-guile",
+      "name": "デッドウォーターの奸智",
+      "englishName": "Dead-Water's Guile",
+      "category": "5部位セット",
+      "summary": "敵へのとどめでアルティマを得る。",
+      "location": "マークマイア（Murkmire）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28～1206増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分が敵を倒すたびに、アルティマを0～15獲得する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/dead-waters-guile"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア１"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "deadlands-assassin",
+      "name": "Deadlands Assassin（日本語名未確認）",
+      "englishName": "Deadlands Assassin",
+      "category": "5部位セット",
+      "summary": "近距離の重攻撃から範囲攻撃を発動し、低体力の敵には出血も加える。",
+      "location": "ブラックウッド（Blackwood）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器ダメージと呪文ダメージが4～200増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "10m以内の敵に重攻撃でダメージを与えると、扇状にナイフを投げ、命中した敵に物理ダメージを与える（資料の基準値816）。命中した敵の体力が50%以下なら、さらに14秒間かけて出血ダメージを与える（資料の合計基準値1631）。発動は15秒に1回まで。ダメージは武器ダメージと呪文ダメージの高い方に応じて変動し、記載基準値に固定されない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/deadlands-assassin"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。日本語名未確認のため英語名で識別。ゲーム内実測なし。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "death-dancer",
+      "name": "Death-Dancer（日本語名未確認）",
+      "englishName": "Death-Dancer",
+      "category": "5部位セット",
+      "summary": "残りスタミナに応じてクリティカル補強と基本戦闘消費軽減を切り替える。",
+      "location": "ソルスティス（Solstice）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大スタミナが25～1096増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル率の能力値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "スタミナが50%以上の間、クリティカル率の能力値が35～1528増加する。スタミナが50%未満の間は、基本戦闘アビリティ（Core Combat）の消費を0～23%軽減する。ちょうど50%ではクリティカル側が適用される。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/death-dancer"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。日本語名未確認のため英語名で識別。ゲーム内実測なし。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "defiler",
+      "name": "冒涜者",
+      "englishName": "Defiler",
+      "category": "5部位セット",
+      "summary": "クリティカルを契機にハンガーの毒と気絶で前方を攻撃する。",
+      "location": "ヴァーデンフェル（Vvardenfell）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル率の能力値が15～657増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル率の能力値が15～657増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカルダメージを与えると、ハンガーを召喚する。ハンガーは前方の敵すべてに毒を吐き、毒ダメージ（資料の基準値990）と5秒間の気絶を命中した敵に与える。発動は5秒に1回まで。ダメージは武器ダメージと呪文ダメージの高い方に応じて変動し、990固定ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/defiler"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア１"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
+    },
+    {
+      "id": "dragonguard-elite",
+      "name": "ドラゴンガードの精鋭",
+      "englishName": "Dragonguard Elite",
+      "category": "5部位セット",
+      "summary": "正面・側面への直接攻撃を重ねてクリティカル能力値を高める。",
+      "location": "南エルスウェア（Southern Elsweyr）で入手するフィールドセット。個別のボス別ドロップは未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル率の能力値が15～657増加する。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージが3～129増加する。"
+        },
+        {
+          "label": "4部位",
+          "text": "スタミナ再生が3～129増加する。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵の正面または側面から直接ダメージを与えると、5秒間持続するDragonguard Tacticsを1累積得る。最大10累積で、獲得は0.5秒に1累積まで。1累積につきクリティカル率の能力値が6～275増加する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別ページの全ボーナス・入手地域・重量。資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/dragonguard-elite"
+        },
+        {
+          "label": "日本語名称の照合のみ（効果値には不使用）・コミュニティ資料",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/拡張エリア２"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "全ボーナス段階を個別ページで照合。数値範囲は資料どおりで、レベル・品質別の対応は未検証。ゲーム内実測なし。 日本語名はコミュニティ資料との照合で、公式クライアント未確認。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ]
     }
   ]
 }
