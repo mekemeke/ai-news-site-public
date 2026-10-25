@@ -189,6 +189,542 @@
         "重装",
         "試練"
       ]
+    },
+    {
+      "id": "oakensoul-ring",
+      "name": "オークの魂の指輪",
+      "englishName": "Oakensoul Ring",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "武器切り替えを封じる代わりに、攻撃・防御・回復の多数のバフを得る指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・制約",
+          "text": "装備中はメイン武器と予備武器を切り替えられない。以下の15種類のバフを得る。"
+        },
+        {
+          "label": "攻撃バフ①",
+          "text": "狂戦士（弱）：与ダメージ+5%。勇気（弱）：武器・呪文ダメージ+215。残忍（強）：武器・呪文ダメージ+20%。"
+        },
+        {
+          "label": "攻撃バフ②",
+          "text": "獰猛（強）：武器・呪文クリティカルの値+2629。威力（弱）：クリティカルダメージ+10%。"
+        },
+        {
+          "label": "防御バフ",
+          "text": "防護（弱）：被ダメージを5%軽減。強固（強）：物理・呪文耐性+5948。"
+        },
+        {
+          "label": "回復・再生バフ",
+          "text": "治癒力（弱）：与回復量+8%。不屈（弱）・知力（弱）・耐久（弱）：体力・マジカ・スタミナ再生をそれぞれ15%増加。勇壮（弱）：1.5秒ごとに1アルティマ生成。"
+        },
+        {
+          "label": "対モンスターバフ",
+          "text": "殺戮（弱）：モンスターへの与ダメージ+5%。神盾（弱）：モンスターからの被ダメージを5%軽減。強化：モンスターへの重攻撃ダメージ+150%。"
+        },
+        {
+          "label": "重複・注意",
+          "text": "同名の強・弱バフを別のスキルや装備から得ても、その同名効果は重複しない。各増加率を単純に足して最終ダメージ倍率とするものではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Oakensoul Ring（2026-10-17抽出の1部位効果・指輪分類）",
+          "url": "https://esodecoded.com/sets/oakensoul-ring"
+        },
+        {
+          "label": "DMM / ESO公式（日本語セット名のみ照合。旧効果は不使用）",
+          "url": "https://eso.dmm.com/news/detail/9966"
+        },
+        {
+          "label": "ESO Decoded：Major Brutality（U51統合後のツールチップ）",
+          "url": "https://esodecoded.com/buffs/major-brutality"
+        },
+        {
+          "label": "ESO Decoded：Major Savagery（U51統合後のツールチップ）",
+          "url": "https://esodecoded.com/buffs/major-savagery"
+        },
+        {
+          "label": "ESO Decoded：Minor Berserk・強化の現行ツールチップ",
+          "url": "https://esodecoded.com/buffs/minor-berserk"
+        },
+        {
+          "label": "ESO Decoded：Minor Courage",
+          "url": "https://esodecoded.com/buffs/minor-courage"
+        },
+        {
+          "label": "ESO Decoded：Minor Protection・Minor Heroism",
+          "url": "https://esodecoded.com/buffs/minor-protection"
+        },
+        {
+          "label": "ESO Decoded：Major Resolve",
+          "url": "https://esodecoded.com/buffs/major-resolve"
+        },
+        {
+          "label": "ESO Decoded：Minor Mending",
+          "url": "https://esodecoded.com/buffs/minor-mending"
+        },
+        {
+          "label": "ESO Decoded：Minor Fortitude・Intellect・Endurance（個別ツールチップを採用）",
+          "url": "https://esodecoded.com/buffs/minor-fortitude"
+        },
+        {
+          "label": "ESO Decoded：Minor Slayer（個別ツールチップを採用）",
+          "url": "https://esodecoded.com/buffs/minor-slayer"
+        },
+        {
+          "label": "ESO Decoded：Minor Aegis（個別ツールチップを採用）",
+          "url": "https://esodecoded.com/buffs/minor-aegis"
+        },
+        {
+          "label": "ESO Decoded：Minor Forceの10%を照合",
+          "url": "https://esodecoded.com/sets/velothi-ur-mages-amulet"
+        },
+        {
+          "label": "DMM / ESO公式：U50（強化を150%へ変更）",
+          "url": "https://eso.dmm.com/news/detail/15731?page=1"
+        },
+        {
+          "label": "DMM / ESO公式：U51（残忍・獰猛の統合を照合）",
+          "url": "https://eso.dmm.com/news/detail/15689"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "セットは2026-10-17抽出資料、各バフは2026-10-03〜17の掲載ツールチップを照合。参照サイトの短い概要欄に旧値が混在するため、個別ツールチップを優先。ゲーム内実測、品質・レベル・CP別の数値、勇壮の戦闘外挙動は未検証。秘術の指輪であり重・中・軽装の分類対象外。画像未取得。"
+    },
+    {
+      "id": "ring-of-the-pale-order",
+      "name": "ペイル騎士団の指輪",
+      "englishName": "Ring of the Pale Order",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "与えたダメージで自分を回復するが、他プレイヤーからの回復を受けられなくなる指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・回復",
+          "text": "自分が与えたダメージの20%分の体力を回復する。グループを組んでいる味方1人につき、この割合が4ポイント低下する。"
+        },
+        {
+          "label": "1部位・回復制限",
+          "text": "回復を受けられる相手は自分自身、自分のペット、自分のコンパニオンだけ。他プレイヤーによる回復は受けられない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Ring of the Pale Order（2026-10-17抽出の全1部位効果・指輪分類）",
+          "url": "https://esodecoded.com/sets/ring-of-the-pale-order"
+        },
+        {
+          "label": "DMM / ESO公式：v11.3.4（日本語名称とコンパニオン回復の修正）",
+          "url": "https://eso.dmm.com/news/detail/15459"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを照合。ゲーム内実測、品質・レベル・CP別の数値は未検証。大人数グループでの下限やコンパニオンの人数計算は今回未検証のため説明を追加していない。指輪であり重・中・軽装の分類対象外。画像未取得。"
+    },
+    {
+      "id": "velothi-ur-mages-amulet",
+      "name": "ヴェロシのウルの魔術師のアミュレット",
+      "englishName": "Velothi Ur-Mage's Amulet",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "軽・重攻撃の火力を大きく犠牲にし、貫通と対モンスターダメージを高める首飾り。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・貫通",
+          "text": "攻撃貫通力が1650増加する。"
+        },
+        {
+          "label": "1部位・攻撃強化",
+          "text": "モンスターへの与ダメージが15%増加する。威力（弱）を常時得て、クリティカルダメージが10%増加する。"
+        },
+        {
+          "label": "1部位・代償",
+          "text": "軽攻撃・重攻撃で与える総ダメージが99%低下する。"
+        },
+        {
+          "label": "対象・計算",
+          "text": "15%増加の対象はモンスター。対プレイヤーへの15%増加とは扱わない。他の与ダメージボーナスと別枠で1.15倍になるとは限らない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Velothi Ur-Mage's Amulet（2026-10-17抽出の全1部位効果・首飾り分類）",
+          "url": "https://esodecoded.com/sets/velothi-ur-mages-amulet"
+        },
+        {
+          "label": "DMM / ESO公式：U50（日本語名称・対モンスター増加の加算処理修正）",
+          "url": "https://eso.dmm.com/news/detail/15731?page=1"
+        },
+        {
+          "label": "DMM / ESO公式：v9.0.5（日本語名称・ネックレス分類のみ照合）",
+          "url": "https://eso.dmm.com/news/detail/11658"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを照合。1部位ボーナスが2行あるが2部位セットではなく、どちらも首飾り1つで発動する効果。ゲーム内実測、品質・レベル・CP別の数値は未検証。重・中・軽装の分類対象外。画像未取得。"
+    },
+    {
+      "category": "クラフト",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "orders-wrath",
+      "name": "騎士団の憤怒（仮表記）",
+      "englishName": "Order's Wrath",
+      "summary": "クリティカル値に加え、5部位でクリティカルダメージとクリティカル回復を8%強化するクラフトセット。",
+      "location": "ハイアイル（High Isle）のSteadfast Hammer and Sawで作成。必要研究数は作成対象の装備について3特性。軽装・中装・重装の全防具、武器、盾、首飾り、指輪に対応。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値を657追加（資料の掲載範囲：15～657）。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器ダメージと呪文ダメージを129追加（掲載範囲：3～129）。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値を657追加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカル値を943追加（掲載範囲：21～943）。さらに、クリティカルダメージとクリティカル回復を8%増加。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・装備種別・場所（データ取得2026-10-17）",
+          "url": "https://esodecoded.com/sets/orders-wrath"
+        },
+        {
+          "label": "ArzyeLBuilds：2026年クラフトセット案内・3特性と作成場所",
+          "url": "https://arzyelbuilds.com/eso-best-crafted-sets/"
+        },
+        {
+          "label": "綾のESOプレイ日記：日英名称対応（2026-02-15）",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verificationNote": "数値はESO Decodedの取得日付きゲームデータ掲載値。範囲の上限を代表値として示し、掲載範囲も併記した。レベル・CP・品質と範囲の対応はこの資料だけでは未確認のため、CP160金品質と断定しない。実機照合および資料取得日以降の変更確認は未実施。 日本語名は2026年の日本語コミュニティ資料による仮表記で、公式日本語資料で未確認。英語名を識別の基準とする。作成場所の正式日本語名は未確認。"
+    },
+    {
+      "category": "クラフト",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "hundings-rage",
+      "name": "怒れるフンディング",
+      "englishName": "Hunding's Rage",
+      "summary": "最大スタミナとクリティカル値を補い、5部位で武器・呪文ダメージを増やすクラフトセット。",
+      "location": "Reaper's MarchのBroken Arch、BangkoraiのWethers' Cleft、The RiftのTrollslayer's Gullyで作成。必要研究数は作成対象の装備について6特性。軽装・中装・重装の全防具、武器、盾、首飾り、指輪に対応。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値を657追加（資料の掲載範囲：15～657）。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナを1096追加（掲載範囲：25～1096）。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値を657追加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器ダメージと呪文ダメージを300追加（掲載範囲：6～300）。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・装備種別・場所（データ取得2026-10-03）",
+          "url": "https://esodecoded.com/sets/hundings-rage"
+        },
+        {
+          "label": "ArzyeLBuilds：6特性とクラフト場所",
+          "url": "https://arzyelbuilds.com/eso-hundings-rage/"
+        },
+        {
+          "label": "綾のESOプレイ日記：日英名称対応（2026-02-15）",
+          "url": "https://esolove.blog.jp/craft_set_station_location.html"
+        },
+        {
+          "label": "DMM / ESO公式過去資料（日本語名称のみ照合）",
+          "url": "https://eso.dmm.com/news/detail/8563"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verificationNote": "数値はESO Decodedの取得日付きゲームデータ掲載値。範囲の上限を代表値として示し、掲載範囲も併記した。レベル・CP・品質と範囲の対応はこの資料だけでは未確認のため、CP160金品質と断定しない。実機照合および資料取得日以降の変更確認は未実施。 日本語名は公式過去資料で照合。公式の旧効果値は採用していない。作成場所の正式日本語名は未確認。必要特性数は現役攻略サイト掲載値を確認したが、当該ページの最終更新日は確認できなかった。"
+    },
+    {
+      "category": "クラフト",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "law-of-julianos",
+      "name": "ジュリアノスの掟",
+      "englishName": "Law of Julianos",
+      "summary": "最大マジカとクリティカル値を補い、5部位で武器・呪文ダメージを増やすクラフトセット。",
+      "location": "ロスガー（Wrothgar）のBoreal Forgeで作成。必要研究数は作成対象の装備について6特性。軽装・中装・重装の全防具、武器、盾、首飾り、指輪に対応。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値を657追加（資料の掲載範囲：15～657）。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカを1096追加（掲載範囲：25～1096）。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値を657追加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器ダメージと呪文ダメージを300追加（掲載範囲：6～300）。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・装備種別・場所（データ取得2026-10-17）",
+          "url": "https://esodecoded.com/sets/law-of-julianos"
+        },
+        {
+          "label": "ArzyeLBuilds：6特性とクラフト場所",
+          "url": "https://arzyelbuilds.com/eso-law-of-julianos/"
+        },
+        {
+          "label": "ESO日本語公式：日本語名・ロスガーのクラフトセット（名称の確認のみ、2024-03-15）",
+          "url": "https://eso.dmm.com/news/detail/12852"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verificationNote": "数値はESO Decodedの取得日付きゲームデータ掲載値。範囲の上限を代表値として示し、掲載範囲も併記した。レベル・CP・品質と範囲の対応はこの資料だけでは未確認のため、CP160金品質と断定しない。実機照合および資料取得日以降の変更確認は未実施。 日本語名は日本語公式記事で確認。公式記事は名称確認だけに使い、現行効果の根拠にはしていない。Boreal Forgeの正式日本語名は未確認。必要特性数は現役攻略サイト掲載値を確認したが、当該ページの最終更新日は確認できなかった。"
+    },
+    {
+      "id": "mothers-sorrow",
+      "name": "母の悲しみ",
+      "englishName": "Mother's Sorrow",
+      "category": "軽装・フィールドセット",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "軽装",
+        "フィールド"
+      ],
+      "summary": "最大マジカとクリティカルの値を高める軽装セット。",
+      "location": "デシャーン（Deshaan）のフィールドセット。防具全身、武器、盾、首飾り、指輪が存在する。部位別のボス・宝箱等のドロップ先は今回未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが25〜1096増加。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカルの値が15〜657増加。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカルの値が15〜657増加。"
+        },
+        {
+          "label": "5部位",
+          "text": "クリティカルの値が35〜1528増加。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Mother's Sorrow（効果・重量・入手エリア・装備種）",
+          "url": "https://esodecoded.com/sets/mothers-sorrow"
+        },
+        {
+          "label": "DMM / ESO公式過去資料（日本語名称のみ照合。旧数値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/8563"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "ESO Decodedの2026-10-03取得データを参照。数値レンジは参照資料の表記で、レベル・品質・CPとの対応、ゲーム内実測、現行日本語クライアントの表記は未検証。クリティカルの値はパーセントではない。日本語名称は公式過去資料と照合。画像未取得。"
+    },
+    {
+      "id": "briarheart",
+      "name": "ブライア・ハート",
+      "englishName": "Briarheart",
+      "category": "中装・フィールドセット",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "中装",
+        "フィールド"
+      ],
+      "summary": "クリティカルを起点に10秒間攻撃を強化し、効果中のクリティカルで自己回復する中装セット。",
+      "location": "ロスガー（Wrothgar）のフィールドセット。防具全身、武器、盾、首飾り、指輪が存在する。部位別のボス・宝箱等のドロップ先は今回未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカルの値が15〜657増加。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが25〜1096増加。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカルの値が15〜657増加。"
+        },
+        {
+          "label": "5部位・攻撃強化",
+          "text": "クリティカルダメージを与えると、武器・呪文ダメージが15〜450増加し、10秒持続する。この強化は15秒に1回発動できる。"
+        },
+        {
+          "label": "5部位・回復",
+          "text": "強化の持続中にクリティカルダメージを与えると、自身の体力を回復する。資料上の回復値は95で、最大マジカと最大スタミナの高い方に応じて変動する。95を実際のキャラクターでの固定回復量とは扱わない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Briarheart（効果・重量・入手エリア・装備種）",
+          "url": "https://esodecoded.com/sets/briarheart"
+        },
+        {
+          "label": "DMM / ESO公式過去資料（日本語名称のみ照合。旧数値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/8184"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "ESO Decodedの2026-10-03取得データを参照。数値レンジは参照資料の表記で、レベル・品質・CPとの対応、ゲーム内実測、現行日本語クライアントの表記は未検証。クリティカルの値はパーセントではない。日本語名称は公式過去資料と照合。画像未取得。"
+    },
+    {
+      "id": "plague-doctor",
+      "name": "疫病医",
+      "englishName": "Plague Doctor",
+      "category": "重装・フィールドセット",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "フィールド"
+      ],
+      "browseTags": [
+        "重装",
+        "フィールド"
+      ],
+      "summary": "2〜5部位の各段階で最大体力を増やす重装セット。",
+      "location": "デシャーン（Deshaan）のフィールドセット。防具全身、武器、盾、首飾り、指輪が存在する。部位別のボス・宝箱等のドロップ先は今回未検証。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が28〜1206増加。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が28〜1206増加。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が28〜1206増加。"
+        },
+        {
+          "label": "5部位",
+          "text": "最大体力が65〜2804増加。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Plague Doctor（効果・重量・入手エリア・装備種）",
+          "url": "https://esodecoded.com/sets/plague-doctor"
+        },
+        {
+          "label": "DMM / ESO公式過去資料（日本語名称のみ照合。旧数値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/8563"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "ESO Decodedの2026-10-03取得データを参照。数値レンジは参照資料の表記で、レベル・品質・CPとの対応、ゲーム内実測、現行日本語クライアントの表記は未検証。クリティカルの値はパーセントではない。日本語名称は公式過去資料と照合。画像未取得。"
     }
   ]
 }
