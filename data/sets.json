@@ -1181,6 +1181,684 @@
         "重装",
         "ダンジョン"
       ]
+    },
+    {
+      "id": "crushing-wall",
+      "name": "壁破壊（仮表記）",
+      "englishName": "Crushing Wall",
+      "category": "アリーナ武器",
+      "armorWeights": [],
+      "setType": "武器セット",
+      "acquisitionTypes": [
+        "アリーナ"
+      ],
+      "browseTags": [
+        "アリーナ",
+        "武器セット"
+      ],
+      "summary": "属性の壁のダメージを増やす攻撃杖。",
+      "location": "メイルストローム・アリーナ。通常難易度で通常版、ベテランで完璧版（Perfected）を入手する区分は公式v6.0.5で確認。現在の個別ドロップ率・報酬箱・キュレーション挙動は未検証。",
+      "effects": [
+        {
+          "label": "武器種",
+          "text": "攻撃の杖（炎・氷・雷）"
+        },
+        {
+          "label": "2部位",
+          "text": "属性の壁（Wall of Elements）の与ダメージに29〜1250を加える。軽攻撃・重攻撃への加算ではない。"
+        },
+        {
+          "label": "完璧版（Perfected）の追加効果",
+          "text": "2部位で攻撃貫通力がさらに27〜1190増加する。通常版の属性の壁強化も併せて得る。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Crushing Wall（通常版の全効果・入手先・武器種）",
+          "url": "https://esodecoded.com/sets/crushing-wall"
+        },
+        {
+          "label": "ESO Decoded：Perfected Crushing Wall（追加ボーナスと通常効果）",
+          "url": "https://esodecoded.com/sets/perfected-crushing-wall"
+        },
+        {
+          "label": "ESO公式：PC/Mac v6.0.5（通常／ベテランの報酬区分とPerfectedの追加能力）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26"
+        },
+        {
+          "label": "ESO公式：PC/Mac v8.1.5（効果変更の履歴）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/7694101"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "通常版とPerfectedを1系統として整理。数値の範囲は参照資料の掲載範囲。未記載のクールダウン・対象数・距離条件は補っていない。ゲーム内実測、CP160・品質別の確定値、変異別の細部は未検証。画像未取得。日本語セット名の公式照合は未完了。"
+    },
+    {
+      "id": "merciless-charge",
+      "name": "無慈悲なチャージ",
+      "englishName": "Merciless Charge",
+      "category": "アリーナ武器",
+      "armorWeights": [],
+      "setType": "武器セット",
+      "acquisitionTypes": [
+        "アリーナ"
+      ],
+      "browseTags": [
+        "アリーナ",
+        "武器セット"
+      ],
+      "summary": "クリティカルチャージの使用後、直接ダメージを強化する両手武器。",
+      "location": "メイルストローム・アリーナ。通常難易度で通常版、ベテランで完璧版（Perfected）を入手する区分は公式v6.0.5で確認。現在の個別ドロップ率・報酬箱・キュレーション挙動は未検証。",
+      "effects": [
+        {
+          "label": "武器種",
+          "text": "両手武器（大剣・大槌・両手斧）"
+        },
+        {
+          "label": "2部位",
+          "text": "クリティカルチャージ（Critical Charge）を使用すると、18秒間、直接ダメージ攻撃の与ダメージが増加する。資料の表示は1%から最大12%。効果量は武器ダメージと呪文ダメージの高い方に応じて変動する。"
+        },
+        {
+          "label": "増加率の上限",
+          "text": "公式v10.2.5では武器ダメージまたは呪文ダメージが6666で最大12%に達すると説明されている。攻撃するたびに1%ずつ積み上がる効果としては扱わない。"
+        },
+        {
+          "label": "完璧版（Perfected）の追加効果",
+          "text": "2部位で攻撃貫通力がさらに27〜1190増加する。通常版の直接ダメージ強化も併せて得る。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Merciless Charge（通常版の全効果・入手先・武器種）",
+          "url": "https://esodecoded.com/sets/merciless-charge"
+        },
+        {
+          "label": "ESO Decoded：Perfected Merciless Charge（追加ボーナスと通常効果）",
+          "url": "https://esodecoded.com/sets/perfected-merciless-charge"
+        },
+        {
+          "label": "ESO公式：PC/Mac v6.0.5（通常／ベテランの報酬区分とPerfectedの追加能力）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26"
+        },
+        {
+          "label": "DMM / ESO公式：v10.2.5（日本語名称・最大12%・6666の条件）",
+          "url": "https://eso.dmm.com/news/detail/13728"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "通常版とPerfectedを1系統として整理。数値の範囲は参照資料の掲載範囲。未記載のクールダウン・対象数・距離条件は補っていない。ゲーム内実測、CP160・品質別の確定値、変異別の細部は未検証。画像未取得。"
+    },
+    {
+      "id": "thunderous-volley",
+      "name": "斉射（雷）",
+      "englishName": "Thunderous Volley",
+      "category": "アリーナ武器",
+      "armorWeights": [],
+      "setType": "武器セット",
+      "acquisitionTypes": [
+        "アリーナ"
+      ],
+      "browseTags": [
+        "アリーナ",
+        "武器セット"
+      ],
+      "summary": "斉射の継続ダメージを、命中の進行に応じて強める弓。",
+      "location": "メイルストローム・アリーナ。通常難易度で通常版、ベテランで完璧版（Perfected）を入手する区分は公式v6.0.5で確認。現在の個別ドロップ率・報酬箱・キュレーション挙動は未検証。",
+      "effects": [
+        {
+          "label": "武器種",
+          "text": "弓"
+        },
+        {
+          "label": "2部位",
+          "text": "斉射（Volley）の各ダメージ発生に10〜430を加える。この加算量は斉射のダメージが発生するたびに4〜191ずつ増え、増加は最大8回まで。"
+        },
+        {
+          "label": "完璧版（Perfected）の追加効果",
+          "text": "2部位でクリティカルの値がさらに12〜526増加する。通常版の斉射強化も併せて得る。クリティカル率が526%増える意味ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Thunderous Volley（通常版の全効果・入手先・武器種／独立レビュー確認の抽出日2026-10-17）",
+          "url": "https://esodecoded.com/sets/thunderous-volley"
+        },
+        {
+          "label": "ESO Decoded：Perfected Thunderous Volley（追加ボーナスと通常効果／抽出日2026-10-03）",
+          "url": "https://esodecoded.com/sets/perfected-thunderous-volley"
+        },
+        {
+          "label": "ESO公式：PC/Mac v6.0.5（通常／ベテランの報酬区分とPerfectedの追加能力）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26"
+        },
+        {
+          "label": "DMM / ESO公式：v8.1.5（日本語名称・増加量191）",
+          "url": "https://eso.dmm.com/news/detail/10295"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "通常版とPerfectedを1系統として整理。数値の範囲は参照資料の掲載範囲。未記載のクールダウン・対象数・距離条件は補っていない。ゲーム内実測、CP160・品質別の確定値、変異別の細部は未検証。画像未取得。通常版は独立レビュー確認の抽出日2026-10-17、Perfected版は2026-10-03。初回取得時の通常版キャッシュには2026-10-03と表示されていた。"
+    },
+    {
+      "id": "grand-rejuvenation",
+      "name": "大いなる再生",
+      "englishName": "Grand Rejuvenation",
+      "category": "アリーナ武器",
+      "armorWeights": [],
+      "setType": "武器セット",
+      "acquisitionTypes": [
+        "アリーナ"
+      ],
+      "browseTags": [
+        "アリーナ",
+        "武器セット"
+      ],
+      "summary": "範囲回復の初回効果を受けた仲間へ、マジカとスタミナを補給する杖。",
+      "location": "ドラゴンスター・アリーナ。通常難易度で通常版、ベテランで完璧版（Perfected）を入手する区分は公式v6.0.5で確認。現在の個別ドロップ率・報酬箱・キュレーション挙動は未検証。",
+      "effects": [
+        {
+          "label": "武器種",
+          "text": "回復の杖"
+        },
+        {
+          "label": "2部位",
+          "text": "マスヒーリング（Grand Healing）の最初の回復を受けた自分とグループメンバーに、6秒間の資源回復効果を与える。2秒ごとにマジカとスタミナをそれぞれ5〜224回復する。"
+        },
+        {
+          "label": "回復回数",
+          "text": "公式Update 35では6秒間に4回の回復と説明されている。現在のゲーム内タイミングは未実測。"
+        },
+        {
+          "label": "完璧版（Perfected）の追加効果",
+          "text": "2部位で最大マジカがさらに20〜877増加する。通常版の資源回復効果も併せて得る。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Grand Rejuvenation（通常版の全効果・入手先・武器種）",
+          "url": "https://esodecoded.com/sets/grand-rejuvenation"
+        },
+        {
+          "label": "ESO Decoded：Perfected Grand Rejuvenation（追加ボーナスと通常効果）",
+          "url": "https://esodecoded.com/sets/perfected-grand-rejuvenation"
+        },
+        {
+          "label": "ESO公式：PC/Mac v6.0.5（通常／ベテランの報酬区分とPerfectedの追加能力）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26"
+        },
+        {
+          "label": "DMM / ESO公式：v8.1.5（日本語名称のみ。回復間隔の訳文は不採用）",
+          "url": "https://eso.dmm.com/news/detail/10295"
+        },
+        {
+          "label": "ESO公式：Xbox Update 35（6秒間・4回の回復）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/7708408/"
+        }
+      ],
+      "sourceDate": "2026-08-23",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "通常版とPerfectedを1系統として整理。数値の範囲は参照資料の掲載範囲。未記載のクールダウン・対象数・距離条件は補っていない。ゲーム内実測、CP160・品質別の確定値、変異別の細部は未検証。画像未取得。Decodedの装備欄は内部名Runeと表記。回復の杖分類は対象スキルに対応する武器種として整理。"
+    },
+    {
+      "id": "puncturing-remedy",
+      "name": "穿刺回復（仮表記）",
+      "englishName": "Puncturing Remedy",
+      "category": "アリーナ武器",
+      "armorWeights": [],
+      "setType": "武器セット",
+      "acquisitionTypes": [
+        "アリーナ"
+      ],
+      "browseTags": [
+        "アリーナ",
+        "武器セット"
+      ],
+      "summary": "穿刺攻撃を自己回復と一時的な耐性強化につなげる片手武器・盾。",
+      "location": "ドラゴンスター・アリーナ。通常難易度で通常版、ベテランで完璧版（Perfected）を入手する区分は公式v6.0.5で確認。現在の個別ドロップ率・報酬箱・キュレーション挙動は未検証。",
+      "effects": [
+        {
+          "label": "武器種",
+          "text": "片手武器（短剣・剣・メイス・斧）と盾"
+        },
+        {
+          "label": "2部位・回復",
+          "text": "穿刺（Puncture）でダメージを与えると、自分の体力を回復する。掲載値は2230で、実際の回復量は自分の最大体力に応じて変動する。"
+        },
+        {
+          "label": "2部位・耐性",
+          "text": "過剰回復を含む回復量に相当する物理耐性と呪文耐性を5秒間得る。満タン時の過剰回復も対象。"
+        },
+        {
+          "label": "完璧版（Perfected）の追加効果",
+          "text": "2部位で被回復量がさらに3%増加する。通常版の回復と耐性強化も併せて得る。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Puncturing Remedy（通常版の全効果・入手先・武器種）",
+          "url": "https://esodecoded.com/sets/puncturing-remedy"
+        },
+        {
+          "label": "ESO Decoded：Perfected Puncturing Remedy（追加ボーナスと通常効果）",
+          "url": "https://esodecoded.com/sets/perfected-puncturing-remedy"
+        },
+        {
+          "label": "ESO公式：PC/Mac v6.0.5（通常／ベテランの報酬区分とPerfectedの追加能力）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "通常版とPerfectedを1系統として整理。数値の範囲は参照資料の掲載範囲。未記載のクールダウン・対象数・距離条件は補っていない。ゲーム内実測、CP160・品質別の確定値、変異別の細部は未検証。画像未取得。日本語セット名の公式照合は未完了。"
+    },
+    {
+      "id": "destructive-impact",
+      "name": "破壊の衝撃",
+      "englishName": "Destructive Impact",
+      "category": "アリーナ武器",
+      "armorWeights": [],
+      "setType": "武器セット",
+      "acquisitionTypes": [
+        "アリーナ"
+      ],
+      "browseTags": [
+        "アリーナ",
+        "武器セット"
+      ],
+      "summary": "破壊の一撃の消費を抑え、使用直後の武器・呪文ダメージを強める杖。",
+      "location": "ドラゴンスター・アリーナ。通常難易度で通常版、ベテランで完璧版（Perfected）を入手する区分は公式v6.0.5で確認。現在の個別ドロップ率・報酬箱・キュレーション挙動は未検証。",
+      "effects": [
+        {
+          "label": "武器種",
+          "text": "攻撃の杖（炎・氷・雷）"
+        },
+        {
+          "label": "2部位・消費軽減",
+          "text": "破壊の一撃（Destructive Touch）の消費を10%減らす。"
+        },
+        {
+          "label": "2部位・使用後の強化",
+          "text": "破壊の一撃を使用してから4秒間、武器ダメージと呪文ダメージが13〜600増加する。"
+        },
+        {
+          "label": "完璧版（Perfected）の追加効果",
+          "text": "2部位で武器ダメージと呪文ダメージがさらに2〜103増加する。通常版の消費軽減と使用後の強化も併せて得る。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Destructive Impact（通常版の全効果・入手先・武器種）",
+          "url": "https://esodecoded.com/sets/destructive-impact"
+        },
+        {
+          "label": "ESO Decoded：Perfected Destructive Impact（追加ボーナスと通常効果）",
+          "url": "https://esodecoded.com/sets/perfected-destructive-impact"
+        },
+        {
+          "label": "ESO公式：PC/Mac v6.0.5（通常／ベテランの報酬区分とPerfectedの追加能力）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26"
+        },
+        {
+          "label": "DMM / ESO公式：v6.0.5（日本語名称のみ。旧呪文ダメージ限定の説明は不採用）",
+          "url": "https://eso.dmm.com/news/detail/6783"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "通常版とPerfectedを1系統として整理。数値の範囲は参照資料の掲載範囲。未記載のクールダウン・対象数・距離条件は補っていない。ゲーム内実測、CP160・品質別の確定値、変異別の細部は未検証。画像未取得。Perfected側の抽出日は2026-10-03。"
+    },
+    {
+      "category": "モンスターセット",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "bloodspawn",
+      "name": "ブラッドスポーン",
+      "englishName": "Bloodspawn",
+      "summary": "被ダメージをきっかけに、アルティマ生成と短時間の耐性強化を得るセット。",
+      "location": "スピンドルクラッチ2（Spindleclutch II）。頭はベテランの最終ボス、肩はMaj al-Ragathの対応するアンドーンテッド貴品箱。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "スタミナ再生が129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "ダメージを受けたとき、6%の確率で13アルティマを得る。さらに物理耐性と呪文耐性が3731増え、5秒間持続する。再発動は5秒に1回まで。"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "sources": [
+        {
+          "label": "ESO Decoded（全セット効果・重量・ダンジョンと担当NPC。資料抽出日2026-10-03）",
+          "url": "https://esodecoded.com/sets/bloodspawn"
+        },
+        {
+          "label": "DMM / ESO公式パッチ（日本語名・変更履歴の照合。古い効果値で上書きしない）",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        },
+        {
+          "label": "DMM / ESO公式v10.1.5（2024-08-30：肩貴品箱と誓い担当NPC。旧資料のため価格は本文に固定しない）",
+          "url": "https://eso.dmm.com/news/detail/13472"
+        },
+        {
+          "label": "ESO公式スタッフ投稿・PTS v2.5.1（2016年：頭はベテラン最終ボス、肩はアンドーンテッド箱という一般区分。現在の個別難易度を実測したものではない）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/3146356/"
+        }
+      ],
+      "verificationNote": " 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
+    },
+    {
+      "category": "モンスターセット",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "engine-guardian",
+      "name": "エンジンのガーディアン",
+      "englishName": "Engine Guardian",
+      "summary": "リソースを消費するスキルから機械を召喚し、自分の体力または戦闘リソースを補うセット。",
+      "location": "ダークシェイド洞窟2（Darkshade Caverns II）。頭はベテランの最終ボス、肩はMaj al-Ragathの対応するアンドーンテッド貴品箱。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "体力再生が129増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "リソースを消費するアビリティを使うと、25%の確率でドゥエマーの機械を召喚する。6秒間、0.5秒ごとに自分のスタミナ550、マジカ550、または体力1955のいずれかを回復する。再発動は10秒に1回まで。"
+        },
+        {
+          "label": "回復の区分",
+          "text": "3種類を同時に回復するという意味ではない。武器・呪文ダメージによる増減式は参照ツールチップに記載されていない。"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "sources": [
+        {
+          "label": "ESO Decoded（全セット効果・重量・ダンジョンと担当NPC。資料抽出日2026-10-03）",
+          "url": "https://esodecoded.com/sets/engine-guardian"
+        },
+        {
+          "label": "DMM / ESO公式パッチ（日本語名・変更履歴の照合。古い効果値で上書きしない）",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        },
+        {
+          "label": "DMM / ESO公式v10.1.5（2024-08-30：肩貴品箱と誓い担当NPC。旧資料のため価格は本文に固定しない）",
+          "url": "https://eso.dmm.com/news/detail/13472"
+        },
+        {
+          "label": "ESO公式スタッフ投稿・PTS v2.5.1（2016年：頭はベテラン最終ボス、肩はアンドーンテッド箱という一般区分。現在の個別難易度を実測したものではない）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/3146356/"
+        }
+      ],
+      "verificationNote": "回復するリソースの抽選仕様・射程は未確認。 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
+    },
+    {
+      "category": "モンスターセット",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "iceheart",
+      "name": "アイスハート",
+      "englishName": "Iceheart",
+      "summary": "クリティカルダメージでシールドを獲得し、シールドが残る間は周囲に氷結ダメージを与えるセット。",
+      "location": "Direfrost Keep（ダイアフロスト砦）。頭はベテランの最終ボス、肩はGlirion the Redbeardの対応するアンドーンテッド貴品箱。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "クリティカル値が657増加する。"
+        },
+        {
+          "label": "2部位・防御",
+          "text": "クリティカルダメージを与えると、20%の確率でダメージを5000まで吸収するシールドを得る。持続は6秒。再発動は6秒に1回まで。"
+        },
+        {
+          "label": "2部位・攻撃",
+          "text": "シールドが残っている間、自分から5m以内にいる敵すべてに、1秒ごとに氷結ダメージを与える。参照資料の基準表示値は259。ダメージ量は武器ダメージと呪文ダメージの高い方に応じて増減する。"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "sources": [
+        {
+          "label": "ESO Decoded（全セット効果・重量・ダンジョンと担当NPC。資料抽出日2026-10-03）",
+          "url": "https://esodecoded.com/sets/iceheart"
+        },
+        {
+          "label": "DMM / ESO公式パッチ（日本語名・変更履歴の照合。古い効果値で上書きしない）",
+          "url": "https://eso.dmm.com/news/detail/6351"
+        },
+        {
+          "label": "DMM / ESO公式v10.1.5（2024-08-30：肩貴品箱と誓い担当NPC。旧資料のため価格は本文に固定しない）",
+          "url": "https://eso.dmm.com/news/detail/13472"
+        },
+        {
+          "label": "ESO公式スタッフ投稿・PTS v2.5.1（2016年：頭はベテラン最終ボス、肩はアンドーンテッド箱という一般区分。現在の個別難易度を実測したものではない）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/3146356/"
+        }
+      ],
+      "verificationNote": "出典内の日付が不一致のため抽出日欄の2026-10-03を採用。259はステータスで変動する基準表示値。 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
+    },
+    {
+      "category": "モンスターセット",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "slimecraw",
+      "name": "スライムクロー",
+      "englishName": "Slimecraw",
+      "summary": "クリティカル値を補い、2部位では狂戦士（弱）を常時得るセット。",
+      "location": "ウェイレスト下水道1（Wayrest Sewers I）。頭はベテランの最終ボス、肩はMaj al-Ragathの対応するアンドーンテッド貴品箱。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "クリティカル値が657増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "クリティカル値がさらに113増加する。狂戦士（弱）を常時得て、与ダメージが5%増加する。"
+        },
+        {
+          "label": "持続・条件",
+          "text": "2部位のバフは装備中に常時有効。命中などの発動条件やクールダウンはない。"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "sources": [
+        {
+          "label": "ESO Decoded（全セット効果・重量・ダンジョンと担当NPC。資料抽出日2026-10-17）",
+          "url": "https://esodecoded.com/sets/slimecraw"
+        },
+        {
+          "label": "DMM / ESO公式パッチ（日本語名・変更履歴の照合。古い効果値で上書きしない）",
+          "url": "https://eso.dmm.com/news/detail/14539"
+        },
+        {
+          "label": "DMM / ESO公式v10.1.5（2024-08-30：肩貴品箱と誓い担当NPC。旧資料のため価格は本文に固定しない）",
+          "url": "https://eso.dmm.com/news/detail/13472"
+        },
+        {
+          "label": "ESO公式スタッフ投稿・PTS v2.5.1（2016年：頭はベテラン最終ボス、肩はアンドーンテッド箱という一般区分。現在の個別難易度を実測したものではない）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/3146356/"
+        }
+      ],
+      "verificationNote": "公式v11.0.5でクリティカルボーナスを1部位と2部位に分ける変更を確認。 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
+    },
+    {
+      "category": "モンスターセット",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "zaan",
+      "name": "ザーン",
+      "englishName": "Zaan",
+      "summary": "軽・重攻撃のクリティカルを起点に炎のつながりを作り、触れた敵へ段階的に強まる炎を与えるセット。",
+      "location": "Scalecaller Peak。頭はベテランの最終ボス、肩はUrgarlag Chief-baneの対応するアンドーンテッド貴品箱。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "クリティカル値が657増加する。"
+        },
+        {
+          "label": "2部位・発動と持続",
+          "text": "軽攻撃または重攻撃でクリティカルダメージを与えると、33%の確率で敵と炎でつながる。敵から8m以内に留まっている間、つながりは10秒間持続する。再発動は20秒に1回まで。"
+        },
+        {
+          "label": "2部位・ダメージ",
+          "text": "つながりに触れた敵は1秒ごとに炎ダメージを受け、炎上状態になる。参照資料の最初のダメージ基準表示値は145で、ダメージ発生のたびに100%増加する。ダメージ量は武器ダメージと呪文ダメージの高い方に応じて増減する。"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "sources": [
+        {
+          "label": "ESO Decoded（全セット効果・重量・ダンジョンと担当NPC。資料抽出日2026-10-17）",
+          "url": "https://esodecoded.com/sets/zaan"
+        },
+        {
+          "label": "DMM / ESO公式パッチ（日本語名・変更履歴の照合。古い効果値で上書きしない）",
+          "url": "https://eso.dmm.com/news/detail/9968?page=7"
+        },
+        {
+          "label": "DMM / ESO公式v10.1.5（2024-08-30：肩貴品箱と誓い担当NPC。旧資料のため価格は本文に固定しない）",
+          "url": "https://eso.dmm.com/news/detail/13472"
+        },
+        {
+          "label": "ESO公式スタッフ投稿・PTS v2.5.1（2016年：頭はベテラン最終ボス、肩はアンドーンテッド箱という一般区分。現在の個別難易度を実測したものではない）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/3146356/"
+        }
+      ],
+      "verificationNote": "145はステータスで変動する基準表示値。100%増加を指数的な倍増とは断定しない。 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
+    },
+    {
+      "category": "モンスターセット",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ],
+      "verifiedAt": "2026-10-25",
+      "id": "symphony-of-blades",
+      "name": "刀剣のシンフォニー",
+      "englishName": "Symphony of Blades",
+      "summary": "主要リソースが不足した仲間を回復すると、その仲間のマジカまたはスタミナを継続補給するセット。",
+      "location": "マラタールの深淵（Depths of Malatar）。頭はベテランの最終ボス、肩はUrgarlag Chief-baneの対応するアンドーンテッド貴品箱。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "与回復量が4%増加する。"
+        },
+        {
+          "label": "2部位",
+          "text": "主要リソースが50%未満のグループメンバーを回復すると、メリディアの恵みを付与する。6秒間、1秒ごとにマジカまたはスタミナを570回復する。どちらを回復するかは、対象の最大マジカと最大スタミナの高い方で決まる。"
+        },
+        {
+          "label": "対象・再発動",
+          "text": "自分自身には適用されない。再発動は対象ごとに18秒に1回まで。"
+        }
+      ],
+      "sourceDate": "2026-08-23",
+      "sources": [
+        {
+          "label": "ESO Decoded（全セット効果・重量・ダンジョンと担当NPC。資料抽出日2026-08-23）",
+          "url": "https://esodecoded.com/sets/symphony-of-blades"
+        },
+        {
+          "label": "DMM / ESO公式パッチ（日本語名・変更履歴の照合。古い効果値で上書きしない）",
+          "url": "https://eso.dmm.com/news/detail/6782"
+        },
+        {
+          "label": "DMM / ESO公式v10.1.5（2024-08-30：肩貴品箱と誓い担当NPC。旧資料のため価格は本文に固定しない）",
+          "url": "https://eso.dmm.com/news/detail/13472"
+        },
+        {
+          "label": "ESO公式スタッフ投稿・PTS v2.5.1（2016年：頭はベテラン最終ボス、肩はアンドーンテッド箱という一般区分。現在の個別難易度を実測したものではない）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/3146356/"
+        }
+      ],
+      "verificationNote": "出典の抽出日は2026-08-23。 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
     }
   ]
 }
