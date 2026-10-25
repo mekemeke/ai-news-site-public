@@ -45,7 +45,7 @@
     const query = $('search').value.trim().toLocaleLowerCase('ja');
     const date = $('date').value;
     const filtered = articles.filter(article => (!category || article.category === category) && (!date || dayLabel(article.publishedAt) === date) && (!query || [article.title, article.summary, categoryName(article.category), ...article.blocks.map(block => block.text)].join(' ').toLocaleLowerCase('ja').includes(query)));
-    $('articles').innerHTML = filtered.map(article => `<article class="news-card">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></article>`).join('') || '<div class="empty">該当する記事がありません。条件を変えてお試しください。</div>';
+    $('articles').innerHTML = filtered.map(article => `<article class="news-card">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
     $('count').textContent = `${filtered.length} / ${articles.length} 件の記事`;
     $('end-note').hidden = filtered.length === 0;
   }
@@ -102,12 +102,12 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261025-readability4', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261025-navigation1', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
       categories = data.categories;
-      articles = [...data.articles].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+      articles = data.articles.filter(article => !isSample(article)).sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       const dates = [...new Set(articles.map(article => dayLabel(article.publishedAt)))].sort().reverse();
       $('date').innerHTML = '<option value="">すべて</option>' + dates.map(date => `<option value="${escapeHTML(date)}">${escapeHTML(date)}</option>`).join('');
       renderCategories();

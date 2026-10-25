@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "sets": [
+    {
+      "id": "powerful-assault",
+      "name": "強襲者",
+      "englishName": "Powerful Assault",
+      "category": "5部位セット",
+      "summary": "グループの攻撃を支援するセット。",
+      "location": "帝都下水道のテルバー商人、他プレイヤーとの取引。",
+      "effects": [
+        {
+          "label": "グループ攻撃支援",
+          "text": "襲撃スキルの使用で、12m以内の対象6人の武器・呪文ダメージが307増加する。持続時間は15秒。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Hyperioxes：ESO Tank Sets（Update 51・2026-10-11更新／主要効果・入手先）",
+          "url": "https://hyperioxes.com/eso/tank/sets"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ・効果の数値には不使用）",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        }
+      ],
+      "sourceDate": "2026-10-11",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "U51対応ガイドで確認／ゲーム内検証なし",
+      "icon": "assets/eso/powerful-assault.png",
+      "iconAlt": "強襲者の代表頭部アイコン"
+    },
+    {
+      "id": "nazaray",
+      "name": "ナザレイ",
+      "englishName": "Nazaray",
+      "category": "モンスターセット",
+      "summary": "敵に付いた強・弱デバフの持続を延ばすセット。",
+      "location": "船大工の後悔。部位・難易度の条件は今回未検証。",
+      "effects": [
+        {
+          "label": "敵弱体の延長",
+          "text": "アルティメットを使うと、12m以内の近い敵6体にある強・弱デバフを延長する。消費20アルティマにつき1秒延び、同じ敵への再発動は30秒間隔。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Hyperioxes：ESO Tank Sets（Update 51・2026-10-11更新／主要効果・入手先）",
+          "url": "https://hyperioxes.com/eso/tank/sets"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ）",
+          "url": "https://eso.dmm.com/news/detail/14838"
+        }
+      ],
+      "sourceDate": "2026-10-11",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "U51対応ガイドで確認／ゲーム内検証なし",
+      "icon": "assets/eso/nazaray.png",
+      "iconAlt": "ナザレイの代表頭部アイコン"
+    },
+    {
+      "id": "lucent-echoes",
+      "name": "ルーセントの残響",
+      "englishName": "Lucent Echoes",
+      "category": "重装・試練セット",
+      "summary": "体力の状態に応じて、グループ支援と自己防御を担うセット。",
+      "location": "ルーセント要塞。",
+      "effects": [
+        {
+          "label": "グループ支援・自己防御",
+          "text": "体力が50%を上回る間、28m以内のグループメンバーのクリティカルダメージとクリティカル回復を11%強化する。50%未満では自身の被ダメージを20%軽減する。体力がちょうど50%の場合は未確認。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Hyperioxes：ESO Tank Sets（Update 51・2026-10-11更新／主要効果・入手先）",
+          "url": "https://hyperioxes.com/eso/tank/sets"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称・重装分類の照合のみ・効果説明には不使用）",
+          "url": "https://eso.dmm.com/news/detail/13091"
+        }
+      ],
+      "sourceDate": "2026-10-11",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "U51対応ガイドで確認／ゲーム内検証なし",
+      "icon": "assets/eso/lucent-echoes.webp",
+      "iconAlt": "ルーセントの残響の代表頭部アイコン"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>装備セット | ESOデータベース</title>
+  <link rel="stylesheet" href="./style.css?v=20261025-navigation1">
+  <script src="./eso.js?v=20261025-navigation1" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ</a>
+  <header><a class="brand" href="./">AIニュース <span class="preview-badge">仮公開</span></a></header>
+  <nav class="primary-nav" aria-label="メインナビゲーション"><a href="./">ニュース</a><a href="./eso.html" aria-current="page">ESOデータベース</a></nav>
+  <main id="main" tabindex="-1">
+    <nav class="database-nav" aria-label="ESOデータベース"><a href="./eso.html" aria-current="page">装備セット</a><span aria-disabled="true">スキル <small>準備中</small></span></nav>
+    <section id="sets-home" aria-labelledby="sets-title">
+      <h1 id="sets-title">装備セット</h1>
+      <p class="lead">日本語名・英名・分類から装備セットを探す。</p>
+      <p class="database-note"><strong>収録は3件。</strong>Update 51対応ガイド（2026年10月11日更新）をもとに、主要効果を短く整理した。全セットボーナス・全件を網羅したデータベースではない。ゲーム内検証は行っていない。画像はセットの代表頭部アイコンで、全部位の外見や通常版・完璧版の見た目の差、ライブ性能を示すものではない。</p>
+      <div class="set-filters">
+        <label>セット検索<input id="set-search" type="search" placeholder="日本語名・英名・入手先で探す" disabled></label>
+        <label>分類<select id="set-category" disabled><option value="">すべての分類</option></select></label>
+        <button id="set-reset" type="button" disabled>条件をクリア</button>
+      </div>
+      <p id="set-count" role="status"></p>
+      <div id="set-notice" role="status">データを読み込み中…</div>
+      <div id="sets" class="set-grid"></div>
+      <p class="source"><a href="https://eso-hub.com/en/sets" target="_blank" rel="noopener noreferrer">ESO-Hubで全セットを見る（外部・英語） ↗</a>。ESO-Hubのデータ・画像は取り込んでいない。</p>
+      <p class="source"><a href="https://wikiwiki.jp/tesowiki/" target="_blank" rel="noopener noreferrer">日本語Wiki（外部・ページごとに更新日を確認） ↗</a>。データ・画像は取り込んでいない。</p>
+    </section>
+    <article id="set-detail" hidden tabindex="-1"></article>
+    <noscript><p class="empty">検索と3件の参考カード・アイコンの表示にはJavaScriptが必要。</p></noscript>
+  </main>
+  <footer><p>装備アイコンの権利は ZeniMax Media / Bethesda Softworks / ZeniMax Online Studios に帰属します。画像参照元：<a href="https://hyperioxes.com/eso/tank/sets" target="_blank" rel="noopener noreferrer">Hyperioxes</a>。本ページは非公式・非商用のファン情報ページです。</p><small>ESOデータベース · 閲覧専用</small></footer>
+</body>
+</html>
