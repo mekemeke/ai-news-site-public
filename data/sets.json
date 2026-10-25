@@ -725,6 +725,462 @@
       "sourceDate": "2026-10-03",
       "verifiedAt": "2026-10-25",
       "verificationNote": "ESO Decodedの2026-10-03取得データを参照。数値レンジは参照資料の表記で、レベル・品質・CPとの対応、ゲーム内実測、現行日本語クライアントの表記は未検証。クリティカルの値はパーセントではない。日本語名称は公式過去資料と照合。画像未取得。"
+    },
+    {
+      "id": "ring-of-the-wild-hunt",
+      "name": "ワイルドハントの指輪（仮表記）",
+      "englishName": "Ring of the Wild Hunt",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "戦闘状態に応じて移動速度を高める指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・戦闘中",
+          "text": "移動速度が15%増加する。"
+        },
+        {
+          "label": "1部位・非戦闘時",
+          "text": "移動速度が45%増加する。戦闘中の15%との加算ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・装備種別・入手方式",
+          "url": "https://esodecoded.com/sets/ring-of-the-wild-hunt"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "取得日付き掲載データを参照。ゲーム内実測・取得日以降のパッチ差分は未検証。日本語名は公式未照合の仮表記。宝飾品のため防具重量の分類対象外。画像未取得。"
+    },
+    {
+      "id": "markyn-ring-of-majesty",
+      "name": "マーキンの壮麗なる指輪（仮表記）",
+      "englishName": "Markyn Ring of Majesty",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "3部位以上装備しているセットの種類数に応じて攻撃と防御を強化する指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "3部位以上装備しているセット1種類につき、武器・呪文ダメージが100、防御力が1157増加する。"
+        },
+        {
+          "label": "計算例",
+          "text": "条件を満たすセットが2種類なら武器・呪文ダメージは200、防御力は2314増加。装備3個ごとではなく、条件を満たすセットの種類数で計算する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・装備種別・入手方式",
+          "url": "https://esodecoded.com/sets/markyn-ring-of-majesty"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "取得日付き掲載データを参照。ゲーム内実測・取得日以降のパッチ差分は未検証。日本語名は公式未照合の仮表記。宝飾品のため防具重量の分類対象外。画像未取得。"
+    },
+    {
+      "id": "sea-serpents-coil",
+      "name": "シーサーペントのとぐろ（仮表記）",
+      "englishName": "Sea-Serpent's Coil",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "体力満タン時の防御と、被弾後の攻撃強化を切り替える首飾り。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・体力満タン時",
+          "text": "被ダメージを40%軽減する。ただしSerpent's Rebukeの持続中は適用されない。"
+        },
+        {
+          "label": "1部位・発動条件",
+          "text": "戦闘中、体力が満タンの状態でダメージを受けると、Serpent's Rebukeが10秒間発動する。"
+        },
+        {
+          "label": "1部位・発動中",
+          "text": "自身の移動速度が40%低下する一方、狂戦士（強）と勇気（強）を得る。与ダメージが10%、武器・呪文ダメージが430増加する。"
+        },
+        {
+          "label": "制約",
+          "text": "発動中は体力を満タンへ戻しても40%の被ダメージ軽減は適用されない。同名の強バフは他の取得源と重複しない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・装備種別・入手方式",
+          "url": "https://esodecoded.com/sets/sea-serpents-coil"
+        },
+        {
+          "label": "ESO Decoded：勇気（強）の430と狂戦士（強）の10%・同名バフ非重複",
+          "url": "https://esodecoded.com/buffs"
+        },
+        {
+          "label": "ESO Decoded：勇気（強）の個別ツールチップ",
+          "url": "https://esodecoded.com/buffs/major-courage"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "取得日付き掲載データを参照。ゲーム内実測・取得日以降のパッチ差分は未検証。日本語名は公式未照合の仮表記。宝飾品のため防具重量の分類対象外。画像未取得。"
+    },
+    {
+      "id": "torugs-pact",
+      "name": "トラグパクト（仮表記）",
+      "englishName": "Torug's Pact",
+      "category": "クラフト",
+      "summary": "武器付呪の再発動を早め、オブリビオンダメージ以外の付呪を強化するセット。",
+      "location": "GrahtwoodのFisherman's Isle、StormhavenのHammerdeath Workshop、DeshaanのLake Hlaalu Retreat。作成対象の装備について3特性の研究が必要。 軽装・中装・重装、武器、盾、首飾り、指輪に対応。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が1487増加（掲載範囲：34～1487）。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大体力が1206増加（掲載範囲：28～1206）。"
+        },
+        {
+          "label": "4部位",
+          "text": "防御力が1487増加（掲載範囲：34～1487）。"
+        },
+        {
+          "label": "5部位",
+          "text": "武器付呪の再発動までの時間を33%短縮し、オブリビオンダメージ以外の武器付呪の効果量を45%増加する。武器本体の攻撃力を45%増やす効果ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・制作場所",
+          "url": "https://esodecoded.com/sets/torugs-pact"
+        },
+        {
+          "label": "日本語ESO Wiki：特性数と日英名称のみ照合（旧効果値は不使用）",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "数値は取得日付き資料の掲載上限値。CP160・金品質との対応、実機と取得日以降の変更は未検証。日本語名はコミュニティ表記で公式未照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "hist-bark",
+      "name": "ヒスト樹皮（仮表記）",
+      "englishName": "Hist Bark",
+      "category": "クラフト",
+      "summary": "防御姿勢の間、範囲攻撃から受けるダメージを軽減するセット。",
+      "location": "GreenshadeのRootwatch Tower、RivenspireのTrader's Rest、ShadowfenのHatchling's Crown。作成対象の装備について4特性の研究が必要。 軽装・中装・重装、武器、盾、首飾り、指輪に対応。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "防御力が1487増加（掲載範囲：34～1487）。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが1096増加（掲載範囲：25～1096）。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が1206増加（掲載範囲：28～1206）。"
+        },
+        {
+          "label": "5部位",
+          "text": "防御姿勢を維持している間、回避（強）を得て範囲攻撃の被ダメージを20%軽減する。攻撃を回避する確率が20%増える効果ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・制作場所",
+          "url": "https://esodecoded.com/sets/hist-bark"
+        },
+        {
+          "label": "日本語ESO Wiki：特性数と日英名称のみ照合（旧効果値は不使用）",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-08-23",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "数値は取得日付き資料の掲載上限値。CP160・金品質との対応、実機と取得日以降の変更は未検証。日本語名はコミュニティ表記で公式未照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "night-mothers-gaze",
+      "name": "夜母の注視（仮表記）",
+      "englishName": "Night Mother's Gaze",
+      "category": "クラフト",
+      "summary": "クリティカルダメージで敵の物理・呪文耐性を下げるセット。",
+      "location": "Reaper's MarchのOld Town Cavern、BangkoraiのSilaseli Ruins、The RiftのEldbjorg's Hideaway。作成対象の装備について6特性の研究が必要。 軽装・中装・重装、武器、盾、首飾り、指輪に対応。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が657増加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "3部位",
+          "text": "武器・呪文ダメージが129増加（掲載範囲：3～129）。"
+        },
+        {
+          "label": "4部位",
+          "text": "クリティカル値が657増加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "5部位",
+          "text": "敵にクリティカルダメージを与えると、その敵に侵害（強）を4秒間付与する。対象の物理耐性と呪文耐性がそれぞれ5948低下する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・制作場所",
+          "url": "https://esodecoded.com/sets/night-mothers-gaze"
+        },
+        {
+          "label": "日本語ESO Wiki：特性数と日英名称のみ照合（旧効果値は不使用）",
+          "url": "https://wikiwiki.jp/tesowiki/セットアイテム/クラフト"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "数値は取得日付き資料の掲載上限値。CP160・金品質との対応、実機と取得日以降の変更は未検証。日本語名はコミュニティ表記で公式未照合。",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "クラフト"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "クラフト"
+      ]
+    },
+    {
+      "id": "spell-power-cure",
+      "name": "呪文攻撃治癒",
+      "englishName": "Spell Power Cure",
+      "category": "軽装・ダンジョンセット",
+      "summary": "超過回復で対象の武器・呪文ダメージを高める回復支援セット。",
+      "location": "白金の塔（White-Gold Tower）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大マジカが1096増加（掲載範囲：25～1096）。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大マジカが1096増加（掲載範囲：25～1096）。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが129増加（掲載範囲：3～129）。"
+        },
+        {
+          "label": "5部位",
+          "text": "自分または味方を超過回復すると、その対象に勇気（強）を5秒間付与する。対象の武器・呪文ダメージが430増加する。"
+        },
+        {
+          "label": "発動条件",
+          "text": "体力上限を超える回復が条件。5秒間回復し続ける必要がある、という意味ではない。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・重量・入手先",
+          "url": "https://esodecoded.com/sets/spell-power-cure"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称と該当変更の照合（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称と該当変更の照合（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/7342"
+        }
+      ],
+      "sourceDate": "2026-08-23",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "部位ボーナスは資料の掲載上限値。品質・レベル・CPとの対応、ゲーム内実測、2026-08-23の資料取得日以降の変更は未検証。画像未取得。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "pillar-of-nirn",
+      "name": "ニルンの柱",
+      "englishName": "Pillar of Nirn",
+      "category": "中装・ダンジョンセット",
+      "summary": "ダメージを与えた敵の足元に裂け目を発生させ、範囲出血を加えるセット。",
+      "location": "ファルクリース要塞（Falkreath Hold）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "クリティカル値が657増加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "3部位",
+          "text": "クリティカル値が657増加（掲載範囲：15～657）。"
+        },
+        {
+          "label": "4部位",
+          "text": "武器・呪文ダメージが129増加（掲載範囲：3～129）。"
+        },
+        {
+          "label": "5部位・攻撃",
+          "text": "ダメージを与えると1秒後に対象の足元へ裂け目を発生させ、半径2.5m以内の敵すべてに803の出血ダメージを与える。さらに10秒間で合計2405の出血ダメージを与える。"
+        },
+        {
+          "label": "5部位・再発動と変動",
+          "text": "10秒に1回発動可能。803・2405は資料上の表示値であり、ダメージは武器・呪文ダメージの高い方に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・重量・入手先",
+          "url": "https://esodecoded.com/sets/pillar-of-nirn"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称と該当変更の照合（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/12328"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "部位ボーナスは資料の掲載上限値。品質・レベル・CPとの対応、ゲーム内実測、資料取得日以降の変更は未検証。発動ダメージはキャラクターのステータスで変動する。画像未取得。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "中装",
+        "ダンジョン"
+      ]
+    },
+    {
+      "id": "turning-tide",
+      "name": "潮の変わり目",
+      "englishName": "Turning Tide",
+      "category": "重装・ダンジョンセット",
+      "summary": "防御後の強撃で敵に脆弱（強）を付与し、味方の攻撃を支援するセット。",
+      "location": "船大工の後悔（Shipwright's Regret）。",
+      "effects": [
+        {
+          "label": "2部位",
+          "text": "最大体力が1206増加（掲載範囲：28～1206）。"
+        },
+        {
+          "label": "3部位",
+          "text": "最大スタミナが1096増加（掲載範囲：25～1096）。"
+        },
+        {
+          "label": "4部位",
+          "text": "最大体力が1206増加（掲載範囲：28～1206）。"
+        },
+        {
+          "label": "5部位・発動条件",
+          "text": "防御すると流水を10秒間得る。その間の次の強撃で、幅5m・長さ10mの直線状範囲にいる最大6体の敵へ2223の魔法ダメージを与える。"
+        },
+        {
+          "label": "5部位・弱体化",
+          "text": "同じ対象に脆弱（強）を10秒間付与し、被ダメージを10%増加させる。防御だけでは弱体化は発生しない。"
+        },
+        {
+          "label": "5部位・再発動と変動",
+          "text": "15秒に1回発動可能。2223は資料上の表示値であり、ダメージは自分の最大体力に応じて変動する。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全セット効果・重量・入手先",
+          "url": "https://esodecoded.com/sets/turning-tide"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称と該当変更の照合（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/9524"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "部位ボーナスは資料の掲載上限値。品質・レベル・CPとの対応、ゲーム内実測、資料取得日以降の変更は未検証。発動ダメージはキャラクターのステータスで変動する。画像未取得。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "重装",
+        "ダンジョン"
+      ]
     }
   ]
 }
