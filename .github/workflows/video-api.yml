@@ -1,0 +1,77 @@
+name: Public video API
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'smoke: search + text only; search: metadata; analyze: one short video'
+        type: choice
+        options: [smoke, search, analyze]
+        default: smoke
+        required: true
+      genre:
+        description: Topic (terrain = 地形生成)
+        type: choice
+        options: [AI, 3DCG, terrain, ESO]
+        default: AI
+        required: true
+      video_id:
+        description: Analyze only — public YouTube ID, exactly 11 characters, <= 5 minutes
+        type: string
+        default: ''
+      free_confirmed:
+        description: Confirm this key's project is still Free tier with billing disabled
+        type: boolean
+        default: false
+        required: true
+permissions: {}
+concurrency:
+  group: public-video-api
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.repository == 'mekemeke/ai-news-site-public' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Offline checks
+        run: python3 -m unittest discover -s tests -v
+      - name: Bounded API call
+        env:
+          MODE: ${{ inputs.mode }}
+          GENRE: ${{ inputs.genre }}
+          VIDEO_ID: ${{ inputs.video_id }}
+          FREE_CONFIRMED: ${{ inputs.free_confirmed }}
+          FREE_TIER_VERIFIED_ON: ${{ vars.FREE_TIER_VERIFIED_ON }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: timeout 120s python3 scripts/video_api.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: public-video-result
+          path: out/result.json
+          if-no-files-found: error
+          retention-days: 1
+  publish:
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: public-video-result
+          path: out
+      - name: Save fixed public JSON path on isolated branch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: timeout 110s python3 scripts/publish_video_result.py
