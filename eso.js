@@ -78,7 +78,7 @@
   async function load() {
     $('set-notice').textContent = 'データを読み込み中…';
     try {
-      const response = await fetch('./data/sets.json?v=20261025-navigation1', {credentials:'omit'});
+      const response = await fetch('./data/sets.json?v=20261025-catalog650-effects1', {credentials:'omit'});
       if (!response.ok) throw new Error('Data unavailable');
       const data = await response.json();
       if (data.version !== 1 || !Array.isArray(data.sets)) throw new Error('Invalid data');
