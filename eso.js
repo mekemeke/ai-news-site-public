@@ -27,9 +27,9 @@
   function renderList() {
     const term = $('set-search').value.trim().toLocaleLowerCase('ja');
     const category = $('set-category').value;
-    const filtered = sets.filter(item => (!category || item.category === category) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
-    $('set-count').textContent = `${filtered.length} / ${sets.length} 件のセット`;
-    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${item.effects.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}</div>${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? '該当するセットはない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
+    const filtered = sets.filter(item => (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
+    $('set-count').textContent = `収録データ内：${filtered.length} / ${sets.length} セット系列`;
+    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${item.effects.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}</div>${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
   }
   function route() {
     if (!ready) return;
@@ -84,11 +84,11 @@
       if (data.version !== 1 || !Array.isArray(data.sets)) throw new Error('Invalid data');
       const ids = new Set();
       for (const item of data.sets) {
-        if (!item || (item.englishName !== undefined && typeof item.englishName !== 'string') || (item.verificationNote !== undefined && typeof item.verificationNote !== 'string') || !/^[a-z0-9-]+$/.test(item.id) || ids.has(item.id) || !['name','category','summary','sourceDate','verifiedAt'].every(key => typeof item[key] === 'string' && item[key]) || !Array.isArray(item.effects) || !item.effects.every(e => e && typeof e.label === 'string' && typeof e.text === 'string') || !Array.isArray(item.sources) || !item.sources.length || !item.sources.every(s => s && typeof s.label === 'string' && typeof s.url === 'string')) throw new Error('Invalid set');
+        if (!item || (item.browseTags !== undefined && (!Array.isArray(item.browseTags) || !item.browseTags.every(tag => typeof tag === 'string'))) || (item.englishName !== undefined && typeof item.englishName !== 'string') || (item.verificationNote !== undefined && typeof item.verificationNote !== 'string') || !/^[a-z0-9-]+$/.test(item.id) || ids.has(item.id) || !['name','category','summary','sourceDate','verifiedAt'].every(key => typeof item[key] === 'string' && item[key]) || !Array.isArray(item.effects) || !item.effects.every(e => e && typeof e.label === 'string' && typeof e.text === 'string') || !Array.isArray(item.sources) || !item.sources.length || !item.sources.every(s => s && typeof s.label === 'string' && typeof s.url === 'string')) throw new Error('Invalid set');
         ids.add(item.id);
       }
       sets = data.sets;
-      const categories = [...new Set(sets.map(item => item.category))].sort((a,b) => a.localeCompare(b,'ja'));
+      const categories = [...new Set([...['軽装','中装','重装','モンスター','秘術','武器セット','フィールド','ダンジョン','試練','アリーナ','クラフト','PvP','古遺物'], ...sets.flatMap(item => [item.category, ...(item.browseTags || [])])])].sort((a,b) => a.localeCompare(b,'ja'));
       $('set-category').innerHTML = '<option value="">すべての分類</option>' + categories.map(category => `<option value="${escapeHTML(category)}">${escapeHTML(category)}</option>`).join('');
       for (const id of ['set-search','set-category','set-reset']) $(id).disabled = false;
       $('set-notice').textContent = '';

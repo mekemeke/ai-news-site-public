@@ -38,13 +38,28 @@
         {
           "label": "DMM / ESO公式（日本語名称の照合のみ・効果の数値には不使用）",
           "url": "https://eso.dmm.com/news/detail/7107"
+        },
+        {
+          "label": "ESO Decoded（分類・装備重量のみ／資料日2026-08-23、2026-10-25確認。効果値はこの資料から上書きしない）",
+          "url": "https://esodecoded.com/sets/powerful-assault"
         }
       ],
       "sourceDate": "2026-10-11",
       "verifiedAt": "2026-10-25",
       "verificationNote": "2026-10-25にU51対応ガイドと実ツールチップで照合。ゲーム内実測なし。数値は参照資料の掲載値で、品質・レベル別の差は未検証。",
       "icon": "assets/eso/powerful-assault.png",
-      "iconAlt": "強襲者の代表頭部アイコン"
+      "iconAlt": "強襲者の代表頭部アイコン",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "PvP"
+      ],
+      "browseTags": [
+        "中装",
+        "PvP"
+      ]
     },
     {
       "id": "nazaray",
@@ -75,13 +90,33 @@
         {
           "label": "DMM / ESO公式（日本語名称の照合のみ）",
           "url": "https://eso.dmm.com/news/detail/14838"
+        },
+        {
+          "label": "ESO Decoded（分類・装備重量のみ／資料日2026-08-23、2026-10-25確認。効果値はこの資料から上書きしない）",
+          "url": "https://esodecoded.com/sets/nazaray"
         }
       ],
       "sourceDate": "2026-10-11",
       "verifiedAt": "2026-10-25",
       "verificationNote": "2026-10-25にU51対応ガイドと実ツールチップで照合。ゲーム内実測なし。数値は参照資料の掲載値で、品質・レベル別の差は未検証。",
       "icon": "assets/eso/nazaray.png",
-      "iconAlt": "ナザレイの代表頭部アイコン"
+      "iconAlt": "ナザレイの代表頭部アイコン",
+      "armorWeights": [
+        "軽装",
+        "中装",
+        "重装"
+      ],
+      "setType": "モンスター",
+      "acquisitionTypes": [
+        "ダンジョン"
+      ],
+      "browseTags": [
+        "軽装",
+        "中装",
+        "重装",
+        "モンスター",
+        "ダンジョン"
+      ]
     },
     {
       "id": "lucent-echoes",
@@ -132,13 +167,28 @@
         {
           "label": "ESO公式：PC/Mac v10.0.5（通常版と完璧版の追加ボーナス区分を照合）",
           "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42"
+        },
+        {
+          "label": "ESO Decoded（分類・装備重量のみ／資料日2026-10-03、2026-10-25確認。効果値はこの資料から上書きしない）",
+          "url": "https://esodecoded.com/sets/lucent-echoes"
         }
       ],
       "sourceDate": "2026-10-11",
       "verifiedAt": "2026-10-25",
       "verificationNote": "2026-10-25にU51対応ガイドと実ツールチップで照合。ゲーム内実測なし。数値は参照資料の掲載値で、品質・レベル別の差は未検証。",
       "icon": "assets/eso/lucent-echoes.webp",
-      "iconAlt": "ルーセントの残響の代表頭部アイコン"
+      "iconAlt": "ルーセントの残響の代表頭部アイコン",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "通常セット",
+      "acquisitionTypes": [
+        "試練"
+      ],
+      "browseTags": [
+        "重装",
+        "試練"
+      ]
     }
   ]
 }
