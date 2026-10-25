@@ -1859,6 +1859,1269 @@
         }
       ],
       "verificationNote": "出典の抽出日は2026-08-23。 数値は掲載範囲の上限値で、品質・レベル・CP別の対応とゲーム内実測は未検証。頭・肩の入手区分は公式の一般則との照合。個別ドロップ率は未確認。画像未取得。"
+    },
+    {
+      "id": "belharzas-band",
+      "name": "ベルハルザのバンド",
+      "englishName": "Belharza's Band",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "軽攻撃の連続命中で直線上の敵を攻撃する指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・常時",
+          "text": "軽攻撃のダメージが900増加する。"
+        },
+        {
+          "label": "1部位・累積と発動",
+          "text": "近接の軽攻撃で連続してダメージを与えると、Belharza's Temperを10秒間、最大5累積まで得る。5累積になると全累積を消費し、1秒後に直線上の敵へ1471の物理ダメージを与え、3秒間気絶させる。発動は10秒に1回まで。ダメージは武器ダメージと呪文ダメージの高い方に比例する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "指輪。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Belharza's Band（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/belharzas-band"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/8933"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "bloodlords-embrace",
+      "name": "血の王の抱擁",
+      "englishName": "Bloodlord's Embrace",
+      "category": "秘術セット",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "重装"
+      ],
+      "summary": "強撃で呪った敵の攻撃を防御し、マジカを回復する胴防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "強撃でダメージを与えた敵に、浄化で除去できない持続性の血の呪いを付与する。呪える敵は同時に1体までで、再び強撃ダメージを与えると呪いの対象が移る。呪った敵の攻撃を防御するとマジカが1605回復する。この回復は1秒に1回まで。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装・胴体。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Bloodlord's Embrace（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/bloodlords-embrace"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/14539"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "cryptcanon-vestments",
+      "name": "クリプトカノンのベスト",
+      "englishName": "Cryptcanon Vestments",
+      "category": "秘術セット",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "軽装"
+      ],
+      "summary": "自分のアルティマを生存中のグループメンバーへ分配する胴防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・アルティマ譲渡",
+          "text": "アルティメットアビリティ本来の効果を発動できなくなる。代わりにその使用操作で、自分のアルティマを生存中のグループメンバーへ均等に分配する。"
+        },
+        {
+          "label": "1部位・戦闘中",
+          "text": "戦闘中は勇壮（弱）を得て、1.5秒ごとに1アルティマを生成する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "軽装・胴体。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Cryptcanon Vestments（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/cryptcanon-vestments"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/11658"
+        },
+        {
+          "label": "ESO Decoded：Minor Heroism（2026-10-03抽出のバフ効果）",
+          "url": "https://esodecoded.com/buffs/minor-heroism"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "death-dealers-fete",
+      "name": "デスディーラーの祝宴（仮訳）",
+      "englishName": "Death Dealer's Fete",
+      "category": "秘術セット",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ],
+      "summary": "戦闘を続けるほど最大体力・マジカ・スタミナが増える指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "戦闘中は2秒ごとに持続性のEscalating Feteを1累積、最大30累積まで得る。1累積につき最大体力・最大マジカ・最大スタミナがそれぞれ88増加する。戦闘外では4秒ごとに1累積を失う。"
+        },
+        {
+          "label": "最大累積時",
+          "text": "30累積では3種類の最大リソースがそれぞれ2640増加する（88×30の計算値）。"
+        },
+        {
+          "label": "装備部位",
+          "text": "指輪。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Death Dealer's Fete（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/death-dealers-fete"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。日本語名は仮訳。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "dov-rha-sabatons",
+      "name": "ドヴ・ルハのサバトン",
+      "englishName": "Dov-rha Sabatons",
+      "category": "秘術セット",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "重装"
+      ],
+      "summary": "ダッシュで防御力を蓄え、停止時に衝撃波とシールドへつなげる足防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・ダッシュ中",
+          "text": "ダッシュ中は0.5秒ごとに竜鱗を1累積、最大20累積まで得る。1累積につき防御力が660増加する。"
+        },
+        {
+          "label": "1部位・停止時",
+          "text": "ダッシュを止めると8mの衝撃波で累積数に応じた物理ダメージを与え、与ダメージと同量のダメージシールドを得る。その後10秒間は竜鱗を維持するが、新しい累積は獲得できない。20累積で発動した場合は敵を3秒間気絶させる。"
+        },
+        {
+          "label": "ダメージの算定",
+          "text": "衝撃波のダメージは物理耐性と呪文耐性の高い方に比例する。参照資料の1累積あたりの表示値は0だが、実際の可変ダメージ量は未確認。固定0ダメージと断定しない。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装・足。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Dov-rha Sabatons（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/dov-rha-sabatons"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/9966"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。衝撃波の掲載値0は可変値未検証として区別。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "esoteric-environment-greaves",
+      "name": "秘伝の環境グリーヴ",
+      "englishName": "Esoteric Environment Greaves",
+      "category": "秘術セット",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "重装"
+      ],
+      "summary": "スタミナを消費して直接被ダメージを半減する脚防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "現在のスタミナが最大値の50%を超えている間、受ける直接ダメージを50%軽減する。ただし直接ダメージを受けるとスタミナを968失う。スタミナ喪失は0.3秒に1回まで。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装・脚。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Esoteric Environment Greaves（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/esoteric-environment-greaves"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/11658"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "fauns-lark-cladding",
+      "name": "ファウンの悪戯覆い",
+      "englishName": "Faun's Lark Cladding",
+      "category": "秘術セット",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "中装"
+      ],
+      "summary": "ダッシュで通り抜けた敵を魅了し、リソースを回復する胴防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "1秒間連続でダッシュすると敵を通り抜けられるようになる。通り抜けた敵は4秒間魅了され、自分へ近づきながら攻撃やアビリティを使用できなくなる。この方法で敵を魅了すると、自分のスタミナとマジカがそれぞれ678回復し、体力も678回復する。敵を魅了すると自分の隠密状態が解除される。"
+        },
+        {
+          "label": "装備部位",
+          "text": "中装・胴体。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Faun's Lark Cladding（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/fauns-lark-cladding"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/10657"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "gaze-of-sithis",
+      "name": "シシスの凝視",
+      "englishName": "Gaze of Sithis",
+      "category": "秘術セット",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "重装"
+      ],
+      "summary": "防御による軽減を失う代わりに体力・再生・防御力を得る頭防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・体力",
+          "text": "最大体力が3276増加する。"
+        },
+        {
+          "label": "1部位・再生",
+          "text": "体力再生が1025増加する。"
+        },
+        {
+          "label": "1部位・防御力",
+          "text": "防御力が4000増加する。"
+        },
+        {
+          "label": "1部位・代償",
+          "text": "防御（ブロック）によるダメージ軽減が0になる。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装・頭。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Gaze of Sithis（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/gaze-of-sithis"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/8935"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "harpooners-wading-kilt",
+      "name": "銛打ちの水避けキルト",
+      "englishName": "Harpooner's Wading Kilt",
+      "category": "秘術セット",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "中装"
+      ],
+      "summary": "直接攻撃でクリティカル性能を蓄積し、直接被弾で累積を失う脚防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は今回未検証。",
+      "effects": [
+        {
+          "label": "1部位・累積獲得",
+          "text": "直接ダメージを与えるとHunter's Focusを20秒間、最大10累積まで得る。獲得は1秒につき1累積まで。1累積につきクリティカル値が110、クリティカルダメージが1%増加する。"
+        },
+        {
+          "label": "1部位・累積喪失",
+          "text": "直接ダメージを受けると5累積を失う。この喪失は1秒に1回まで。キルトを外すと全累積を失う。"
+        },
+        {
+          "label": "装備部位",
+          "text": "中装・脚。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：Harpooner's Wading Kilt（2026-10-17抽出の効果・部位・分類）",
+          "url": "https://esodecoded.com/sets/harpooners-wading-kilt"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称のみ照合。旧効果値は不使用）",
+          "url": "https://eso.dmm.com/news/detail/11300"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "2026-10-17抽出の効果・部位を照合。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。"
+    },
+    {
+      "id": "huntsmans-warmask",
+      "name": "狩人の戦面（仮表記）",
+      "englishName": "Huntsman's Warmask",
+      "category": "秘術セット",
+      "summary": "標的を絞って火力を高める一方、他の敵への攻撃力を失う頭防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・印の付与",
+          "text": "強撃（Bash）または完全にチャージした重攻撃でダメージを与えると、標的にハーシーンの印を1分間付ける。再発動は10秒に1回まで。"
+        },
+        {
+          "label": "1部位・印の効果中",
+          "text": "狂戦士（弱）を得て与ダメージが5%増加する。さらに印の標的への与ダメージが15%増えるが、それ以外の敵への与ダメージは50%低下する。"
+        },
+        {
+          "label": "1部位・標的死亡時",
+          "text": "印が付いている敵が死亡すると、最大値が高い方のリソースを2418回復する。対象はスタミナまたはマジカ。"
+        },
+        {
+          "label": "装備部位",
+          "text": "中装・頭。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/huntsmans-warmask"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。日本語名は公式未照合。10秒の再発動間隔は原文の効果全体の記述に基づく。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "中装"
+      ]
+    },
+    {
+      "id": "lefthanders-aegis-belt",
+      "name": "レフトハンダーのアイギスベルト",
+      "englishName": "Lefthander's Aegis Belt",
+      "category": "秘術セット",
+      "summary": "回避ロールによる回避を、短時間のダメージシールドへ置き換える腰防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "回避ロールで攻撃を回避できなくなる。代わりに1秒間、最大20990ダメージを吸収するシールドを得る。このシールドは戦いの精神（Battle Spirit）の影響を受けない。"
+        },
+        {
+          "label": "装備部位",
+          "text": "中装・腰。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/lefthanders-aegis-belt"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/10658"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "中装"
+      ]
+    },
+    {
+      "id": "malacaths-band-of-brutality",
+      "name": "マラキャスの残忍なバンド",
+      "englishName": "Malacath's Band of Brutality",
+      "category": "秘術セット",
+      "summary": "通常の与ダメージを伸ばす代わりに、クリティカルダメージが低下する指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "与ダメージが16%増加し、与クリティカルダメージは50%低下する。クリティカル攻撃そのものを禁止する効果ではない。"
+        },
+        {
+          "label": "装備部位",
+          "text": "指輪。防具重量の分類対象外。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/malacaths-band-of-brutality"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/6893"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "moras-whispers",
+      "name": "モラの囁き",
+      "englishName": "Mora's Whispers",
+      "category": "秘術セット",
+      "summary": "シャリドールの蔵書庫の収集状況に応じて、クリティカル値と各種経験値を高める肩防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・収集による成長",
+          "text": "シャリドールの蔵書庫に集めた本が多いほどボーナスが増える。上限はクリティカル値1528、インスピレーション・同盟ランク・同盟スキルの獲得量が各10%増加、モンスター討伐経験値が15%増加。"
+        },
+        {
+          "label": "装備部位",
+          "text": "軽装・肩。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/moras-whispers"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/9966"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。収集状況別の細かな増加式は掲載なし。 資料の現在値229/1%/2%は収集状況依存のため固定効果として不採用。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "軽装"
+      ]
+    },
+    {
+      "id": "pearls-of-ehlnofey",
+      "name": "エルノフェイの真珠",
+      "englishName": "Pearls of Ehlnofey",
+      "category": "秘術セット",
+      "summary": "主要リソースが減った状態での回復アビリティ使用を、アルティマ生成につなげる首飾り。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・発動条件",
+          "text": "戦闘中、主要リソースが50%未満の状態で、リソースを消費して回復アビリティを使おうとすると発動する。"
+        },
+        {
+          "label": "1部位・効果",
+          "text": "勇壮（強）を1.5秒間得る。このバフは1.5秒ごとに3アルティマを生成する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "首飾り。防具重量の分類対象外。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-03）",
+          "url": "https://esodecoded.com/sets/pearls-of-ehlnofey"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/7340"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。効果時間は現行参照値の1.5秒を採用。旧日本語パッチの5秒とは区別。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "prowlers-talisman",
+      "name": "プラウラーのタリスマン（仮表記）",
+      "englishName": "Prowler's Talisman",
+      "category": "秘術セット",
+      "summary": "隠密・スリを助け、攻撃のクリティカル有無に応じてリソースを強化する首飾り。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・透明化",
+          "text": "戦いの精神が有効でない時、しゃがみながら能動的にブロックすると10秒間透明になる。発動は45秒に1回まで。"
+        },
+        {
+          "label": "1部位・スリ",
+          "text": "スリの成功確率が5%上昇する。"
+        },
+        {
+          "label": "1部位・クリティカル時",
+          "text": "クリティカルダメージを与えると、最大マジカと最大スタミナが10秒間増加する。最大10累積で、それぞれの増加量は最大1900。"
+        },
+        {
+          "label": "1部位・非クリティカル時",
+          "text": "クリティカルではないダメージを与えると、体力・マジカ・スタミナ再生が10秒間増加する。最大10累積で、それぞれの増加量は最大160。"
+        },
+        {
+          "label": "1部位・発動間隔",
+          "text": "上記2種類の攻撃時効果はいずれも1秒に1回まで発動する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "首飾り。防具重量の分類対象外。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/prowlers-talisman"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。日本語名は公式未照合。強化段階別の効果差と2種の効果のクールダウン共有は未検証。 資料の強化段階はアップグレード0。1900・160は10累積時の合計上限。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "rourken-steamguards",
+      "name": "ローケンのスチームガード",
+      "englishName": "Rourken Steamguards",
+      "category": "秘術セット",
+      "summary": "ブロック開始直後の短い時間に、大幅な被ダメージ軽減を得る手防具。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・開始時",
+          "text": "自分でブロックを開始した時だけ、スチーム・ガーディアンを0.5秒間得て被ダメージを90%軽減する。通常は10秒に1回まで発動する。"
+        },
+        {
+          "label": "1部位・再使用短縮",
+          "text": "スチーム・ガーディアンの効果中に攻撃をブロックすると、再発動までのクールダウンが5秒短くなる。この短縮は効果が付与されるごとに1回まで。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装・手。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/rourken-steamguards"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/13197"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。0.5秒・90%は現行参照値。旧日本語パッチの数値とは区別。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "重装"
+      ]
+    },
+    {
+      "id": "shapeshifters-chain",
+      "name": "シェイプシフターの鎖",
+      "englishName": "Shapeshifter's Chain",
+      "category": "秘術セット",
+      "summary": "変身系アルティメットとウェアウルフの消費を抑え、変身中の最大リソースを増やす首飾り。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・消費軽減",
+          "text": "変身系アルティメットとウェアウルフのアビリティの消費コストが15%低下する。"
+        },
+        {
+          "label": "1部位・変身中",
+          "text": "最大体力・最大スタミナ・最大マジカがそれぞれ1707増加する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "首飾り。防具重量の分類対象外。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/shapeshifters-chain"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/8182"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "shattered-paths-signet",
+      "name": "砕けた道の印章",
+      "englishName": "Shattered Paths Signet",
+      "category": "秘術セット",
+      "summary": "アルティマを保持して、モンスターへのステータス効果ダメージを強化する指輪。",
+      "location": "古遺物の断片の手掛かりから入手。個々の手掛かりのドロップ場所は未検証。",
+      "effects": [
+        {
+          "label": "1部位・ダメージ強化",
+          "text": "所持アルティマ1につき、ステータス効果によってモンスターへ与えるダメージが1%増加する。増加率の上限は133%。Feral Guardianが有効な間は、この上限が半分になる。"
+        },
+        {
+          "label": "1部位・ステータス付与",
+          "text": "133以上のアルティマを所持している時、軽攻撃または重攻撃でランダムなステータス効果を付与する。発動は2秒に1回まで。"
+        },
+        {
+          "label": "1部位・代償",
+          "text": "装備中は自身に萎縮（弱）を適用し、戦闘中は1.5秒ごとに1アルティマを消費する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "指輪。防具重量の分類対象外。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：全1部位効果・部位・装備重量・入手方式（資料日2026-10-17）",
+          "url": "https://esodecoded.com/sets/shattered-paths-signet"
+        },
+        {
+          "label": "DMM / ESO公式：日本語名称の照合のみ。旧効果値は不使用。",
+          "url": "https://eso.dmm.com/news/detail/15459"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "掲載ツールチップを確認。ゲーム内実測なし。133%・2秒・1.5秒は現行参照値。旧日本語パッチの数値・対人効果とは区別。 数値は参照表示値で、品質・レベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "snow-treaders",
+      "name": "雪歩き",
+      "englishName": "Snow Treaders",
+      "category": "秘術アイテム",
+      "summary": "移動妨害への耐性と引き換えに、戦闘中のダッシュを失う。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "戦闘中は、浄化で解除できる減速と移動不能を受けなくなる。ただし、戦闘中はダッシュできない。"
+        },
+        {
+          "label": "装備部位",
+          "text": "中装・足。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/snow-treaders"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [
+        "中装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "中装"
+      ]
+    },
+    {
+      "id": "spaulder-of-ruin",
+      "name": "破滅の肩当て",
+      "englishName": "Spaulder of Ruin",
+      "category": "秘術アイテム",
+      "summary": "周囲の味方の攻撃力を高める代わりに、自分の再生能力が下がる。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "しゃがみ、またはProwlを発動すると、範囲12mの「Aura of Pride」の有効・無効を切り替える。範囲内のグループメンバー最大6人は武器ダメージと呪文ダメージが260増加する。その恩恵を受ける対象1人につき、自分の体力再生・マジカ再生・スタミナ再生がそれぞれ70低下する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "軽装・肩。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/spaulder-of-ruin"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/14539"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "軽装"
+      ]
+    },
+    {
+      "id": "stormweavers-cavort",
+      "name": "ストームウィーバーの騒乱",
+      "englishName": "Stormweaver's Cavort",
+      "category": "秘術アイテム",
+      "summary": "移動や防御などの消費リソースをスタミナからマジカへ変更する。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "マジカ再生が300増加する。ダッシュ、ロール回避、強撃、打破、隠密、防御が、スタミナの代わりにマジカを消費する。防御・隠密・ダッシュ中はマジカ再生が0になる一方、これらの行動によってスタミナ再生が0になることはなくなる。"
+        },
+        {
+          "label": "装備部位",
+          "text": "軽装・脚。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/stormweavers-cavort"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/10657"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "軽装"
+      ]
+    },
+    {
+      "id": "syrabanes-ward",
+      "name": "シラベインの結界",
+      "englishName": "Syrabane's Ward",
+      "category": "秘術アイテム",
+      "summary": "踏ん張って移動を止め、周囲のグループの防御を支援する。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "自分で踏ん張りを行っている間、範囲12mの保護領域を作り、その間は移動できなくなる。領域内のグループメンバーは防御で軽減できるダメージ量が30%増え、体力再生が950増加する。体力再生の増加は装備者自身には適用されない。"
+        },
+        {
+          "label": "装備部位",
+          "text": "重装・腰。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/syrabanes-ward"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/10657"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [
+        "重装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "重装"
+      ]
+    },
+    {
+      "id": "the-saint-and-the-seducer",
+      "name": "セイントと誘惑者",
+      "englishName": "The Saint and the Seducer",
+      "category": "秘術アイテム",
+      "summary": "戦闘中に強化と周囲の敵への弱体化がランダムに切り替わる。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "戦闘中、5種類のバフ（強）からランダムに1つを得て、10秒ごとに切り替わる。自分から12m以内の敵には、現在のバフに対応するデバフ（弱）が付く。組み合わせは下記の5通り。"
+        },
+        {
+          "label": "Major Berserk / Minor Maim",
+          "text": "自分の与ダメージが10%増加／敵の与ダメージが5%低下。"
+        },
+        {
+          "label": "Major Resolve / Minor Breach",
+          "text": "自分の物理耐性・呪文耐性が5948増加／敵の物理耐性・呪文耐性が2974低下。"
+        },
+        {
+          "label": "Major Force / Minor Brittle",
+          "text": "自分のクリティカルダメージが20%増加／敵の被クリティカルダメージが10%増加。"
+        },
+        {
+          "label": "Major Evasion / Minor Vulnerability",
+          "text": "自分が範囲攻撃から受けるダメージが20%低下／敵の被ダメージが5%増加。"
+        },
+        {
+          "label": "Major Courage / Minor Cowardice",
+          "text": "自分の武器ダメージ・呪文ダメージが430増加／敵の武器ダメージ・呪文ダメージが215低下。"
+        },
+        {
+          "label": "装備部位",
+          "text": "宝飾品・首。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-03、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/the-saint-and-the-seducer"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/13197"
+        },
+        {
+          "label": "ESO Decoded：major-berserk（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/major-berserk"
+        },
+        {
+          "label": "ESO Decoded：minor-maim（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/minor-maim"
+        },
+        {
+          "label": "ESO Decoded：major-resolve（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/major-resolve"
+        },
+        {
+          "label": "ESO Decoded：minor-breach（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/minor-breach"
+        },
+        {
+          "label": "ESO Decoded：major-force（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/major-force"
+        },
+        {
+          "label": "ESO Decoded：minor-brittle（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/minor-brittle"
+        },
+        {
+          "label": "ESO Decoded：major-evasion（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/major-evasion"
+        },
+        {
+          "label": "ESO Decoded：minor-vulnerability（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/minor-vulnerability"
+        },
+        {
+          "label": "ESO Decoded：major-courage（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/major-courage"
+        },
+        {
+          "label": "ESO Decoded：minor-cowardice（個別ページ掲載ツールチップの効果値／2026-10-17資料、2026-10-25確認）",
+          "url": "https://esodecoded.com/buffs/minor-cowardice"
+        }
+      ],
+      "sourceDate": "2026-10-03",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。 セット自体の資料日は2026-10-03。バフ値は2026-10-17の各個別ページ内ツールチップで別途照合。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "the-shadow-queens-cowl",
+      "name": "影の女王の頭巾",
+      "englishName": "The Shadow Queen's Cowl",
+      "category": "秘術アイテム",
+      "summary": "壁越しの目撃者の確認と、スリ後の発見回避を助ける。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "しゃがんでいる間、壁の向こうの目撃者と衛兵を視認できる。目撃者または衛兵へのスリに成功すると、その対象にDistractedを10秒間与える。対象は気絶し、効果中の隠密探知半径が30m短くなる。"
+        },
+        {
+          "label": "装備部位",
+          "text": "軽装・頭。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/the-shadow-queens-cowl"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/13197"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "軽装"
+      ]
+    },
+    {
+      "id": "thrassian-stranglers",
+      "name": "サラシアのストラングラー",
+      "englishName": "Thrassian Stranglers",
+      "category": "秘術アイテム",
+      "summary": "敵撃破で攻撃力を蓄積するが、最大体力とシールド性能が下がる。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "敵を倒すたびに「Sload’s Call」を1累積得る。持続は1時間で、最大50累積。1累積ごとに武器ダメージと呪文ダメージが23増える代わりに、最大体力が120減り、自分のダメージシールドの有効性が1%低下する。この装備を外す、透明化する、またはしゃがむと累積を失う。"
+        },
+        {
+          "label": "装備部位",
+          "text": "軽装・手。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/thrassian-stranglers"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/7107"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [
+        "軽装"
+      ],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物",
+        "軽装"
+      ]
+    },
+    {
+      "id": "torc-of-the-last-ayleid-king",
+      "name": "最後のアイレイド王のトルク",
+      "englishName": "Torc of the Last Ayleid King",
+      "category": "秘術アイテム",
+      "summary": "他のセット効果をすべて無効にし、単体で攻防と再生を強化する。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "被ダメージを15%減らし、武器ダメージと呪文ダメージが1337、マジカ再生とスタミナ再生が500増加する。代わりに、他の装備セットのボーナスはすべて無効になる。"
+        },
+        {
+          "label": "装備部位",
+          "text": "宝飾品・首。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/torc-of-the-last-ayleid-king"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/12875"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
+    },
+    {
+      "id": "torc-of-tonal-constancy",
+      "name": "音調平準化のトルク",
+      "englishName": "Torc of Tonal Constancy",
+      "category": "秘術アイテム",
+      "summary": "残量が少ないリソースに応じて、もう一方の再生を高める。",
+      "location": "古遺物の手掛かりを集め、占い・発掘で復元する。個々の手掛かりの入手先は未検証。",
+      "effects": [
+        {
+          "label": "1部位",
+          "text": "スタミナが50%未満の間、マジカ再生が450増加する。マジカが50%未満の間、スタミナ再生が450増加する。"
+        },
+        {
+          "label": "装備部位",
+          "text": "宝飾品・首。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded（個別セットの効果・重量・部位／資料日2026-10-17、2026-10-25確認）",
+          "url": "https://esodecoded.com/sets/torc-of-tonal-constancy"
+        },
+        {
+          "label": "DMM / ESO公式（日本語名称の照合のみ。過去パッチの効果値は不採用）",
+          "url": "https://eso.dmm.com/news/detail/6780"
+        }
+      ],
+      "sourceDate": "2026-10-17",
+      "verifiedAt": "2026-10-25",
+      "verificationNote": "参照資料の効果を独自の日本語で整理。ゲーム内実測・品質やレベル別の差は未検証。",
+      "armorWeights": [],
+      "setType": "秘術",
+      "acquisitionTypes": [
+        "古遺物"
+      ],
+      "browseTags": [
+        "秘術",
+        "古遺物"
+      ]
     }
   ]
 }
