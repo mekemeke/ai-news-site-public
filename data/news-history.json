@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "runs": [
+    {
+      "runDate": "2026-10-26",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "newCount": 12,
+      "deletedCount": 0,
+      "counts": {
+        "youtube": 2,
+        "headline": 6,
+        "roundup": 4
+      }
+    }
+  ],
+  "articles": [
+    {
+      "id": "20261026-scenario-blender-video",
+      "runDate": "2026-10-26",
+      "kind": "youtube",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=UOz90g4ZUAA"
+      ],
+      "sourceMessageIds": [],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-gaea-debris-video",
+      "runDate": "2026-10-26",
+      "kind": "youtube",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=DcteH2TE36I"
+      ],
+      "sourceMessageIds": [],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-grok-bot-phone",
+      "runDate": "2026-10-26",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/elonmusk/status/2114365361068138990"
+      ],
+      "sourceMessageIds": [
+        "1792974196.943509",
+        "1792974084.006979"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-nanbeige43-teacher",
+      "runDate": "2026-10-26",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/nanbeige/status/2114328933181333798"
+      ],
+      "sourceMessageIds": [
+        "1792974199.676449"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-muse-voice-avatar",
+      "runDate": "2026-10-26",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/testingcatalog/status/2114389254927220845",
+        "https://x.com/testingcatalog/status/2114362756153430406"
+      ],
+      "sourceMessageIds": [
+        "1792974199.676449"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-ai-practical-roundup",
+      "runDate": "2026-10-26",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/OfficialLoganK/status/2114186751468265823",
+        "https://x.com/tetumemo/status/2114201534624096647",
+        "https://x.com/Michael_Fenech_/status/2114419721479266788",
+        "https://x.com/nvandewetering/status/2114180142712909874",
+        "https://x.com/Texas_Twins_Dad/status/2114217410823688573",
+        "https://facebook.com/groups/runlocalai/permalink/1522910719636637/",
+        "https://facebook.com/groups/runlocalai/permalink/1523135759614133/",
+        "https://facebook.com/groups/runlocalai/permalink/1519084413352601/"
+      ],
+      "sourceMessageIds": [
+        "1792974198.337769",
+        "1792974204.986349",
+        "1792974085.234439",
+        "1792974086.458959",
+        "1792974084.006979",
+        "1792974149.008849"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-blender-android-demo",
+      "runDate": "2026-10-26",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/Blender/status/2112882920100679859"
+      ],
+      "sourceMessageIds": [
+        "1792973379.560219"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-hi3d-code-weights",
+      "runDate": "2026-10-26",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/Hi3D_AI/status/2113456796715319591",
+        "https://github.com/hi3d-official/Hi3Dv1.0"
+      ],
+      "sourceMessageIds": [
+        "1792973379.560219"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-cg-workflow-roundup",
+      "runDate": "2026-10-26",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/UnrealEngine/status/2113692223921606793",
+        "https://x.com/ianiluvr/status/2113925819437638082",
+        "https://x.com/BunchoCG/status/2113844598925918341",
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/"
+      ],
+      "sourceMessageIds": [
+        "1792973379.560219",
+        "1792974150.423899"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-terrain-workflow-roundup",
+      "runDate": "2026-10-26",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/sai0xgen/status/2114394053932458297",
+        "https://x.com/itsfazley/status/2114341216045425010",
+        "https://x.com/rewind02/status/2114371572043489425",
+        "https://x.com/xbquan/status/2114262710452203896",
+        "https://x.com/oTTeuMsTudio/status/2114183814868005136",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/"
+      ],
+      "sourceMessageIds": [
+        "1792973746.974769",
+        "1792973748.237009",
+        "1792974153.330269"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-eso-season-two-witches-festival",
+      "runDate": "2026-10-26",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/Bethesda_jpn/status/2113099275211071516",
+        "https://www.elderscrollsonline.com/en-us/news/post/70487",
+        "https://x.com/TESOnline/status/2113328339964268564",
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
+      ],
+      "sourceMessageIds": [
+        "1792973753.073739"
+      ],
+      "forumEvidence": [
+        {
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700409/plunder-skulls",
+          "previousCheckedAt": null,
+          "checkedAt": "2026-10-26T01:02:00Z",
+          "points": [
+            "10月23日ZOS公式回答：Zheklegページは金箱の確定ドロップではない",
+            "Impresario購入品は帰属する"
+          ],
+          "officialReplyUrl": "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
+        }
+      ]
+    },
+    {
+      "id": "20261026-eso-community-roundup",
+      "runDate": "2026-10-26",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/kafka_IDK/status/2114192037964869640",
+        "https://x.com/Green_tea_rider/status/2114181476883497429",
+        "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty",
+        "https://x.com/tokino_werewolf/status/2114382626794664325"
+      ],
+      "sourceMessageIds": [
+        "1792973753.073739"
+      ],
+      "forumEvidence": [
+        {
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty",
+          "previousCheckedAt": null,
+          "checkedAt": "2026-10-26T01:02:00Z",
+          "points": [
+            "10月25日開始のソロダンジョン難度議論",
+            "長期戦への不満とビルド調整の挑戦を評価する意見の両方",
+            "公式の調整方針は未確認"
+          ]
+        }
+      ]
+    }
+  ]
+}

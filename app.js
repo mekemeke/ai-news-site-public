@@ -36,7 +36,7 @@
   }
   function metadata(article) {
     const sample = isSample(article);
-    return `<div class="meta"><span class="category">${escapeHTML(categoryName(article.category))}</span><span class="status">${sample ? '架空サンプル' : '動画紹介・振り返り'}</span><time datetime="${escapeHTML(article.publishedAt)}">${sample ? 'サンプル日時' : '記事掲載'} ${escapeHTML(dateLabel(article.publishedAt))} JST</time></div>`;
+    return `<div class="meta"><span class="category">${escapeHTML(categoryName(article.category))}</span><span class="status">${sample ? '架空サンプル' : 'ニュース・動画紹介'}</span><time datetime="${escapeHTML(article.publishedAt)}">${sample ? 'サンプル日時' : '記事掲載'} ${escapeHTML(dateLabel(article.publishedAt))} JST</time></div>`;
   }
   function renderCategories() {
     $('categories').innerHTML = [{id: '', name: 'すべて'}, ...categories].map(item => `<button type="button" data-category="${escapeHTML(item.id)}" aria-pressed="${item.id === category}">${escapeHTML(item.name)}</button>`).join('');
@@ -102,7 +102,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261025-navigation1', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261026-morning1', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
