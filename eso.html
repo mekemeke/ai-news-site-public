@@ -7,8 +7,8 @@
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>装備セット | ESOデータベース</title>
-  <link rel="stylesheet" href="./style.css?v=20261025-navigation1">
-  <script src="./eso.js?v=20261025-catalog650-effects1" defer></script>
+  <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
+  <script src="./eso.js?v=20261027-eso-filters1" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">本文へ</a>
@@ -24,6 +24,11 @@
       <nav class="database-nav" aria-label="入手先"><a href="#?category=%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89">フィールド</a><a href="#?category=%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3">ダンジョン</a><a href="#?category=%E8%A9%A6%E7%B7%B4">試練</a><a href="#?category=%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A">アリーナ</a><a href="#?category=%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88">クラフト</a><a href="#?category=PvP">PvP</a><a href="#?category=%E5%8F%A4%E9%81%BA%E7%89%A9">古遺物</a></nav>
       <nav class="database-nav" aria-label="効果の種類"><a href="#?category=%E3%83%9A%E3%83%83%E3%83%88">ペット</a><a href="#?category=%E8%BB%BD%E6%94%BB%E6%92%83">軽攻撃</a><a href="#?category=%E9%87%8D%E6%94%BB%E6%92%83">重攻撃</a></nav>
       <p class="database-note">効果別の分類は、強化・発動条件・制約を含む。ペットには召喚体やペットダメージ、ペットの有無による条件も含む。</p>
+      <section id="effect-filter-section" aria-labelledby="effect-filter-title" hidden>
+        <h2 id="effect-filter-title">名前付きバフ・デバフ</h2>
+        <p>獲得・付与する名前付き効果。自己へのデバフも含む。名前が条件・延長・解除だけに出るものは対象外。参照資料による分類で、ゲーム内では未検証。</p>
+        <div id="effect-filters" class="effect-filters"></div>
+      </section>
       <p><a href="#">すべての収録セットを見る</a></p>
       <div class="set-filters">
         <label>セット検索<input id="set-search" type="search" placeholder="日本語名・英名・入手先で探す" disabled></label>

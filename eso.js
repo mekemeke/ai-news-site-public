@@ -24,9 +24,34 @@
   function verification(item) {
     return `<p class="reference-date">出典日：${escapeHTML(item.sourceDate)} · 資料確認日：${escapeHTML(item.verifiedAt)}</p>${item.verificationNote ? `<p><strong>${escapeHTML(item.verificationNote)}</strong></p>` : ''}`;
   }
+  function renderEffectFilters() {
+    const tags = new Set(sets.flatMap(item => item.browseTags || []));
+    const groups = [
+      ['メジャーバフ', 'バフ（強）：'], ['マイナーバフ', 'バフ（弱）：'],
+      ['メジャーデバフ', 'デバフ（強）：'], ['マイナーデバフ', 'デバフ（弱）：']
+    ];
+    const link = tag => `<a data-effect="${escapeHTML(tag)}" href="#?category=${encodeURIComponent(tag)}">${escapeHTML(tag)}</a>`;
+    $('effect-filters').innerHTML = groups.map(([group, prefix]) => {
+      const effects = [...tags].filter(tag => tag.startsWith(prefix) && tag.length > prefix.length).sort((a,b) => a.localeCompare(b,'ja'));
+      if (!tags.has(group) && !effects.length) return '';
+      return `<details><summary>${escapeHTML(group)}（${effects.length}種類）</summary><nav aria-label="${escapeHTML(group)}の効果">${tags.has(group) ? link(group) : ''}${effects.map(link).join('')}</nav></details>`;
+    }).join('');
+    $('effect-filter-section').hidden = !$('effect-filters').innerHTML;
+  }
+  function syncEffectFilters() {
+    for (const link of $('effect-filters').querySelectorAll('a[data-effect]')) {
+      const tag = link.dataset.effect;
+      link.setAttribute('href', '#?category=' + encodeURIComponent(tag) + ($('set-search').value ? '&q=' + encodeURIComponent($('set-search').value) : ''));
+      if (tag === $('set-category').value) {
+        link.setAttribute('aria-current', 'true');
+        link.closest('details').open = true;
+      } else link.removeAttribute('aria-current');
+    }
+  }
   function renderList() {
     const term = $('set-search').value.trim().toLocaleLowerCase('ja');
     const category = $('set-category').value;
+    syncEffectFilters();
     const filtered = sets.filter(item => (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
     $('set-count').textContent = `収録データ内：${filtered.length} / ${sets.length} セット系列`;
     $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${item.effects.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}</div>${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
@@ -78,7 +103,7 @@
   async function load() {
     $('set-notice').textContent = 'データを読み込み中…';
     try {
-      const response = await fetch('./data/sets.json?v=20261025-catalog650-effects1', {credentials:'omit'});
+      const response = await fetch('./data/sets.json?v=20261027-named-effects1', {credentials:'omit'});
       if (!response.ok) throw new Error('Data unavailable');
       const data = await response.json();
       if (data.version !== 1 || !Array.isArray(data.sets)) throw new Error('Invalid data');
@@ -90,6 +115,7 @@
       sets = data.sets;
       const categories = [...new Set([...['軽装','中装','重装','モンスター','秘術','武器セット','フィールド','ダンジョン','試練','アリーナ','クラフト','PvP','古遺物'], ...sets.flatMap(item => [item.category, ...(item.browseTags || [])])])].sort((a,b) => a.localeCompare(b,'ja'));
       $('set-category').innerHTML = '<option value="">すべての分類</option>' + categories.map(category => `<option value="${escapeHTML(category)}">${escapeHTML(category)}</option>`).join('');
+      renderEffectFilters();
       for (const id of ['set-search','set-category','set-reset']) $(id).disabled = false;
       $('set-notice').textContent = '';
       ready = true;
