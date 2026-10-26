@@ -30,6 +30,58 @@
     return `<a href="${escapeHTML(url.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label || url.href)} ↗</a>`;
   }
   const isSample = article => article.sample === true || article.id.startsWith('sample-');
+  function explanationURL(value) {
+    if (typeof value !== 'string' || !/^https:\/\//i.test(value) || /[\s\\]/.test(value)) return null;
+    let url;
+    try { url = new URL(value); } catch { return null; }
+    const host = url.hostname.toLowerCase();
+    // Public DNS names only: reject IP literals (including URL-normalized numeric IPs),
+    // credentials, nonstandard ports and reserved/internal namespace labels.
+    if (url.protocol !== 'https:' || url.username || url.password || url.port ||
+        host.length > 253 || !/^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,63}$/.test(host) ||
+        /(^|\.)(localhost|local|localdomain|internal|intranet|lan|home|corp|private|test|invalid|example|onion|arpa)(\.|$)/.test(host)) return null;
+    return url.href;
+  }
+  function linkedText(block) {
+    const text = String(block.text ?? '');
+    const links = (Array.isArray(block.links) ? block.links : []).flatMap(link => {
+      if (!link || typeof link.text !== 'string' || !link.text) return [];
+      const href = explanationURL(link.url);
+      return href ? [{text: link.text, href}] : [];
+    });
+    let result = '', offset = 0;
+    while (offset < text.length) {
+      let next = null;
+      for (const link of links) {
+        const index = text.indexOf(link.text, offset);
+        if (index !== -1 && (!next || index < next.index || (index === next.index && link.text.length > next.text.length))) next = {...link, index};
+      }
+      if (!next) return result + escapeHTML(text.slice(offset));
+      result += escapeHTML(text.slice(offset, next.index)) + `<a href="${escapeHTML(next.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(next.text)}</a>`;
+      offset = next.index + next.text.length;
+    }
+    return result;
+  }
+  function thumbnail(article, detail = false) {
+    const field = article.category === 'eso' ? 'eso' : ['3dcg', 'terrain', 'cg'].includes(article.category) ? 'cg' : 'ai';
+    const kind = ['roundup', 'tips', 'tip', 'digest', '小ネタ'].includes(article.kind) ? 'tips' : 'news';
+    const aliases = {'ai-product': 'ai-news', 'cg-product': 'cg-news', 'terrain-product': 'cg-news', 'eso-official': 'eso-news'};
+    const requested = typeof article.thumbnailKey === 'string' ? article.thumbnailKey : '';
+    const key = /^(ai|cg|eso)-(tips|news)$/.test(requested) ? requested : Object.hasOwn(aliases, requested) ? aliases[requested] : `${field}-${kind}`;
+    const fallback = `assets/news/${key}.svg`;
+    const fallbackAlt = `${key.split('-')[0].toUpperCase()} ${key.endsWith('-tips') ? '小ネタ' : 'ニュース'}（共通文字カード）`;
+    const valid = typeof article.thumbnail === 'string' && /^assets\/news\/(?:[A-Za-z0-9_-]+\/)*[A-Za-z0-9_-]+\.(svg|png|jpe?g|webp)$/.test(article.thumbnail) && typeof article.thumbnailAlt === 'string' && article.thumbnailAlt.trim();
+    return `<img class="news-thumbnail" src="${valid ? article.thumbnail : fallback}" alt="${escapeHTML(valid ? article.thumbnailAlt : fallbackAlt)}" width="800" height="450" loading="${detail ? 'eager' : 'lazy'}" decoding="async" data-fallback="${fallback}" data-fallback-alt="${fallbackAlt}">`;
+  }
+  // Capture image errors without inline handlers (the existing CSP remains unchanged).
+  document.addEventListener('error', event => {
+    const image = event.target;
+    if (!image.matches?.('img.news-thumbnail') || !image.dataset.fallback) return;
+    const fallback = image.dataset.fallback;
+    delete image.dataset.fallback;
+    image.alt = image.dataset.fallbackAlt;
+    if (image.getAttribute('src') !== fallback) image.src = fallback;
+  }, true);
   function videoEmbed(article) {
     const id = article.videoId;
     if (typeof id !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(id)) return '';
@@ -84,7 +136,7 @@
     const query = $('search').value.trim().toLocaleLowerCase('ja');
     const date = $('date').value;
     const filtered = articles.filter(article => (!category || article.category === category) && (!date || dayLabel(article.publishedAt) === date) && (!query || [article.title, article.summary, categoryName(article.category), ...article.blocks.map(block => block.text)].join(' ').toLocaleLowerCase('ja').includes(query)));
-    $('articles').innerHTML = filtered.map(article => `<article class="news-card">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
+    $('articles').innerHTML = filtered.map(article => `<article class="news-card">${thumbnail(article)}<div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
     $('count').textContent = `${filtered.length} / ${articles.length} 件の記事`;
     $('end-note').hidden = filtered.length === 0;
   }
@@ -93,10 +145,10 @@
     return blocks.map(block => {
       if (block.type === 'xpost') return xPostEmbed(block, seenPosts);
       if (block.type === 'feature') {
-        return `<p class="feature"><strong>${escapeHTML(block.label)}</strong>：${escapeHTML(block.text)}</p>`;
+        return `<p class="feature"><strong>${escapeHTML(block.label)}</strong>：${linkedText(block)}</p>`;
       }
       const tag = block.type === 'heading' ? 'h2' : block.type === 'quote' ? 'blockquote' : 'p';
-      return `<${tag}>${escapeHTML(block.text)}</${tag}>`;
+      return `<${tag}>${linkedText(block)}</${tag}>`;
     }).join('');
   }
   function route() {
@@ -125,7 +177,7 @@
       $('detail').innerHTML = '<a class="back" href="#">← 一覧に戻る</a><h1>記事が見つかりません</h1><p>指定された記事は見つかりませんでした。一覧から記事を選んでください。</p>';
     } else {
       document.title = article.title + ' | ' + title;
-      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}</h1>${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
+      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}</h1>${thumbnail(article, true)}${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
     }
     window.scrollTo(0, 0);
     $('detail').focus({preventScroll: true});

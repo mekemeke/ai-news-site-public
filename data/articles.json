@@ -21,18 +21,18 @@
   ],
   "articles": [
     {
-      "id": "20261026-backfill-chatgpt-app-report",
-      "title": "ChatGPTが意図せずアプリを入れたとの報告：原因と公式確認は未確認",
-      "summary": "PC上で意図しないアプリの導入・動作があったという利用者の報告を、確認済みの製品不具合とは分けて紹介する。",
+      "id": "20261026-ai-news",
+      "title": "AIニュース:2026年10月26日",
+      "summary": "ChatGPTの予期しない操作報告、テレビのデータ収集疑惑、AI新機能の案内をまとめた。公式確認がない主張は、その旨を各項目に記した。",
       "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
       "sample": false,
-      "kind": "headline",
+      "kind": "roundup",
       "runDate": "2026-10-26",
       "blocks": [
         {
           "type": "heading",
-          "text": "ChatGPTが意図せずアプリを入れたという利用者報告"
+          "text": "ChatGPTが勝手にアプリを入れたとの報告、原因は未確認"
         },
         {
           "type": "paragraph",
@@ -47,39 +47,84 @@
           "url": "https://x.com/8787sasuke/status/2114305280502841673"
         },
         {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "エージェントの行動履歴を追えることは重要だが、単一の報告から原因や製品全体の挙動まで決めつけないことも同じくらい重要だ。"
-        }
-      ],
-      "sources": [
+          "type": "heading",
+          "text": "Samsungテレビにデータ収集疑惑、研究者の主張として紹介"
+        },
         {
-          "label": "@8787sasuke：ChatGPTが、勝手にアプリを入れていた",
-          "url": "https://x.com/8787sasuke/status/2114305280502841673"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974196.943509"
-      ],
-      "sourceUrls": [
-        "https://x.com/8787sasuke/status/2114305280502841673"
-      ]
-    },
-    {
-      "id": "20261026-backfill-managed-agents",
-      "title": "AI StudioにManaged Agents管理ハブの予告との報告",
-      "summary": "ツール、環境、トリガーをまとめて扱う管理画面の紹介。提供開始や利用条件は未確認。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "headline",
-      "runDate": "2026-10-26",
-      "blocks": [
+          "type": "paragraph",
+          "text": "@IntCyberDigest は、Samsungの2025年製テレビを調べた研究者が、視聴内容や広告スキップを追うAI、画面・音声関連の処理を見つけたとする主張を紹介した。研究者はその後OpenAIからアカウントを停止されたとも述べたという。いずれも未確認の報告で、メーカーやOpenAIの公式確認や、両事象の因果関係の確認はなし。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@IntCyberDigest https://x.com/IntCyberDigest/status/2114356807741104266"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/IntCyberDigest/status/2114356807741104266"
+        },
         {
           "type": "heading",
-          "text": "Google AI StudioのManaged Agents管理ハブ"
+          "text": "Brotliに問題があるとの投稿、影響範囲や識別番号は未確認",
+          "links": [
+            {
+              "text": "Brotli",
+              "url": "https://github.com/google/brotli"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "@Isichan_Hitori は、HTTP2Shell／CVE-2026-111497と記載した問題について、Brotliを含むアプリや実行環境を読み取り専用で棚卸しする指示例を公開した。版、利用実装の証拠、外部データを展開する経路、公式情報と修正版を分けて確認し、Brotliがあるだけで影響ありとしない点を重視する。脆弱性の名称・CVE番号・影響範囲自体は未確認の報告。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@Isichan_Hitori https://x.com/Isichan_Hitori/status/2114153735870173192"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Isichan_Hitori/status/2114153735870173192"
+        },
+        {
+          "type": "heading",
+          "text": "Tailscaleの遠隔接続に安全上の問題との報告",
+          "links": [
+            {
+              "text": "Tailscale",
+              "url": "https://tailscale.com/docs/concepts/what-is-tailscale"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "@umiyuki_ai は、研究者による複数の脆弱性報告と一部の修正対応があると紹介し、SSH接続後の権限取得や端末間の横移動に関する懸念を挙げた。未確認の報告で、影響する版・攻撃の前提条件・公式アドバイザリは未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@umiyuki_ai https://x.com/umiyuki_ai/status/2114437494217568413"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/umiyuki_ai/status/2114437494217568413"
+        },
+        {
+          "type": "heading",
+          "text": "Cloudflare CEOがソフトの脆弱性増加を警告したとの紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "@masahirochaen は、今後数週間から数か月に別ソフトの脆弱性公表が続くとのCloudflare CEOの見通しを紹介した。PHPの欠陥を狙う攻撃が大量に観測されているという数字にも触れているが、発言の全文、観測条件、件数は未確認だ。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@masahirochaen https://x.com/masahirochaen/status/2114492709688009039"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/masahirochaen/status/2114492709688009039"
+        },
+        {
+          "type": "heading",
+          "text": "Google AI StudioにAIの作業をまとめて管理する画面が登場予定との報告"
         },
         {
           "type": "paragraph",
@@ -94,39 +139,8 @@
           "url": "https://x.com/testingcatalog/status/2114349445760303238"
         },
         {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "エージェントの能力だけでなく、何を使い、何をきっかけに動くかを見渡せる管理画面に価値がある。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@testingcatalog：AI Studioに、エージェントの管理ハブ",
-          "url": "https://x.com/testingcatalog/status/2114349445760303238"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974198.337769"
-      ],
-      "sourceUrls": [
-        "https://x.com/testingcatalog/status/2114349445760303238"
-      ]
-    },
-    {
-      "id": "20261026-backfill-onepassword-agents",
-      "title": "1Password for Agentsの紹介：パスワードを渡さずログインを任せる方向へ",
-      "summary": "承認したサイトへのログインをエージェントへ委任する仕組みとして紹介されている。対応範囲や提供時期は未確認。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "headline",
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
           "type": "heading",
-          "text": "1Password for Agentsでログインを委任する構想"
+          "text": "1PasswordがAIへのログイン代行を紹介、パスワードを直接渡さない仕組み"
         },
         {
           "type": "paragraph",
@@ -141,32 +155,284 @@
           "url": "https://x.com/tetumemo/status/2114231733721997722"
         },
         {
+          "type": "heading",
+          "text": "Codexの提供拡大が完了したとの投稿、変更内容は未確認"
+        },
+        {
+          "type": "paragraph",
+          "text": "@thsottiaux は、予告していた展開が行き渡った趣旨の投稿を行い、翌日のCodex利用と翌週への期待に触れた。返信には使用量表示がリセットされたという報告もあるが、対象プラン・配布範囲・個人ごとの利用枠は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@thsottiaux https://x.com/thsottiaux/status/2114237083652882932"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/thsottiaux/status/2114237083652882932"
+        },
+        {
+          "type": "heading",
+          "text": "Grok Botが電話で用件を伝え、結果を要約する機能を紹介"
+        },
+        {
+          "type": "feature",
+          "label": "電話代行",
+          "text": "Slack朝刊が紹介した投稿では、相手へ電話して依頼を伝え、返事をメモし、会話の要約を利用者へ届ける。問い合わせなど、会話後の記録も必要な用事を想定した機能だ。"
+        },
+        {
+          "type": "feature",
+          "label": "確認できていない範囲",
+          "text": "対象地域・電話番号、対応プラン、追加料金、提供対象の詳細は受信資料だけでは確定できない。誰でも無料で利用できる機能としては扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@elonmusk：Grok Botの電話代行 https://x.com/elonmusk/status/2114365361068138990"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/elonmusk/status/2114365361068138990"
+        },
+        {
+          "type": "heading",
+          "text": "Museの音声通話が段階提供との報告、アバター共有も予告"
+        },
+        {
+          "type": "feature",
+          "label": "音声通話",
+          "text": "エージェントとのリアルタイム会話について、声の候補を選べることや、チャットに文字起こしが残るという利用者報告が紹介された。全ユーザーへの提供完了を意味するものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@testingcatalog：Muse音声通話 https://x.com/testingcatalog/status/2114389254927220845"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/testingcatalog/status/2114389254927220845"
+        },
+        {
+          "type": "feature",
+          "label": "アバター共有",
+          "text": "共有画面に動くプレビューが表示される機能が予告されている。受信資料では、Workingなどの状態に応じた表示も紹介された。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@testingcatalog：Museアバター共有の予告 https://x.com/testingcatalog/status/2114362756153430406"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/testingcatalog/status/2114362756153430406"
+        },
+        {
+          "type": "feature",
+          "label": "提供状況",
+          "text": "いずれもTestingCatalogが伝えた情報の要約であり、本記事ではMuseの実画面や対象地域・プランを確認していない。音声通話の段階提供と、アバター共有の予告は分けて読む必要がある。"
+        },
+        {
+          "type": "heading",
+          "text": "Gemini APIの支出上限、設定しても停止まで遅れる場合があるとの説明",
+          "links": [
+            {
+              "text": "API",
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Google側のローガン・キルパトリックの説明として、支出上限の反映に約10分かかり、リアルタイム化は作業中との情報が紹介された。通知だけの予算アラートとは別の機能という説明だが、本記事では管理画面や適用範囲を確認していない。上限ぴったりで必ず止まる前提にはしない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@OfficialLoganK https://x.com/OfficialLoganK/status/2114186751468265823"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/OfficialLoganK/status/2114186751468265823"
+        },
+        {
+          "type": "heading",
+          "text": "ProからPlusへの変更後も通知が続くとの報告"
+        },
+        {
+          "type": "feature",
+          "label": "プラン変更後の挙動",
+          "text": "投稿者はProからPlusへ変更した後、Dotからのメッセージが届き続ける一方で、返信や削除ができなかったと報告している。仕事用Enterpriseと個人利用を分け、個人では常駐するDotを1体にする運用にも触れている。本人の主張で、再現性や契約変更との因果関係に公式の確認はなし。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@_simonsmith https://x.com/_simonsmith/status/2114477899545780569"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/_simonsmith/status/2114477899545780569"
+        },
+        {
+          "type": "heading",
+          "text": "「個人のDotsはProのみ」とする投稿"
+        },
+        {
+          "type": "feature",
+          "label": "提供対象についての情報",
+          "text": "別の日本語投稿では、個人でDotsを使えるのはProで、Plusは対象外と説明されていた。未確認の報告で、公式の現行プランや提供条件の確認はなし。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@Sokichi_Hoshino https://x.com/Sokichi_Hoshino/status/2114201444631162997"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Sokichi_Hoshino/status/2114201444631162997"
+        },
+        {
+          "type": "heading",
+          "text": "マスク氏がAIデータセンター企業の資金調達と再編を予測"
+        },
+        {
+          "type": "paragraph",
+          "text": "@elonmusk は、データセンター以外の大きな売上を持たない企業で債務調達が難しくなっていると主張し、SpaceXのGPU向け資金調達や既存事業の売上に言及した。多数のネオクラウド（AI向け計算設備を提供する新興クラウド企業）が統合され、少数だけが残るとの予測も述べている。本人の主張・予測であり、市場全体の動向や調達額を独立に確認したものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@elonmusk https://x.com/elonmusk/status/2114434646914068862"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/elonmusk/status/2114434646914068862"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
-          "text": "ログインの委任と秘密そのものの受け渡しを分ける考え方は重要だ。実際の権限範囲と対応サービスは正式資料で確かめたい。"
+          "text": "便利な新機能は気になるけど、まだ予告や利用者の報告も多いね。使える条件と、実際に確認できたことを分けて追っていきたい。"
         }
       ],
       "sources": [
         {
+          "label": "@8787sasuke：ChatGPTが、勝手にアプリを入れていた",
+          "url": "https://x.com/8787sasuke/status/2114305280502841673"
+        },
+        {
+          "label": "@IntCyberDigest：テレビの中に、視聴を見るAIがいた、という話",
+          "url": "https://x.com/IntCyberDigest/status/2114356807741104266"
+        },
+        {
+          "label": "@Isichan_Hitori：Brotli、入っている場所を表にしてもらう",
+          "url": "https://x.com/Isichan_Hitori/status/2114153735870173192"
+        },
+        {
+          "label": "@umiyuki_ai：Tailscale SSH、一人ならまず深呼吸",
+          "url": "https://x.com/umiyuki_ai/status/2114437494217568413"
+        },
+        {
+          "label": "@masahirochaen：PHP級の穴は、まだ出てくる前提で",
+          "url": "https://x.com/masahirochaen/status/2114492709688009039"
+        },
+        {
+          "label": "@testingcatalog：AI Studioに、エージェントの管理ハブ",
+          "url": "https://x.com/testingcatalog/status/2114349445760303238"
+        },
+        {
           "label": "@tetumemo：パスワードは見せずに、ログインだけ任せる",
           "url": "https://x.com/tetumemo/status/2114231733721997722"
+        },
+        {
+          "label": "@thsottiaux：「全部行き渡った」。明日は思い切りCodex",
+          "url": "https://x.com/thsottiaux/status/2114237083652882932"
+        },
+        {
+          "label": "@elonmusk：Grok Botの電話代行",
+          "url": "https://x.com/elonmusk/status/2114365361068138990"
+        },
+        {
+          "label": "@testingcatalog：Muse音声通話",
+          "url": "https://x.com/testingcatalog/status/2114389254927220845"
+        },
+        {
+          "label": "@testingcatalog：Museアバター共有の予告",
+          "url": "https://x.com/testingcatalog/status/2114362756153430406"
+        },
+        {
+          "label": "@OfficialLoganK：Gemini APIの支出上限",
+          "url": "https://x.com/OfficialLoganK/status/2114186751468265823"
+        },
+        {
+          "label": "@_simonsmith：ProからPlusへの変更後も通知が続くとの報告",
+          "url": "https://x.com/_simonsmith/status/2114477899545780569"
+        },
+        {
+          "label": "@Sokichi_Hoshino：「個人のDotsはProのみ」とする投稿",
+          "url": "https://x.com/Sokichi_Hoshino/status/2114201444631162997"
+        },
+        {
+          "label": "@elonmusk：データセンター専用の会社から、借金が細っている",
+          "url": "https://x.com/elonmusk/status/2114434646914068862"
+        },
+        {
+          "label": "用語解説：Brotli",
+          "url": "https://github.com/google/brotli"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+        },
+        {
+          "label": "用語解説：Tailscale",
+          "url": "https://tailscale.com/docs/concepts/what-is-tailscale"
         }
       ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
       "sourceMessageIds": [
         "1792974190.499809",
-        "1792974206.254429"
+        "1792974196.943509",
+        "1792974201.064469",
+        "1792974203.726399",
+        "1792974206.254429",
+        "1792974207.524059",
+        "1792974198.337769",
+        "1792974084.006979",
+        "1792974199.676449",
+        "1792974204.986349",
+        "1792974085.234439",
+        "1792974086.458959",
+        "1792974149.008849",
+        "1792974078.598409"
       ],
       "sourceUrls": [
-        "https://x.com/tetumemo/status/2114231733721997722"
-      ]
+        "https://x.com/8787sasuke/status/2114305280502841673",
+        "https://x.com/IntCyberDigest/status/2114356807741104266",
+        "https://x.com/Isichan_Hitori/status/2114153735870173192",
+        "https://x.com/umiyuki_ai/status/2114437494217568413",
+        "https://x.com/masahirochaen/status/2114492709688009039",
+        "https://x.com/testingcatalog/status/2114349445760303238",
+        "https://x.com/tetumemo/status/2114231733721997722",
+        "https://x.com/thsottiaux/status/2114237083652882932",
+        "https://x.com/elonmusk/status/2114365361068138990",
+        "https://x.com/testingcatalog/status/2114389254927220845",
+        "https://x.com/testingcatalog/status/2114362756153430406",
+        "https://x.com/OfficialLoganK/status/2114186751468265823",
+        "https://x.com/_simonsmith/status/2114477899545780569",
+        "https://x.com/Sokichi_Hoshino/status/2114201444631162997",
+        "https://x.com/elonmusk/status/2114434646914068862"
+      ],
+      "sourceNote": "既存の2026年10月26日公開記事を内容別に再編集。元記事の確認範囲・未確認の注記を各項目に引き継ぎ、ここで新たな裏取りや実機検証をしたものではない。10月25日夕方の地形素材は所有者指定の例外掲載。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "editorialSourceArticles": [
+        "20261026-backfill-chatgpt-app-report",
+        "20261026-backfill-ai-risk-reports",
+        "20261026-backfill-managed-agents",
+        "20261026-backfill-onepassword-agents",
+        "20261026-backfill-ai-product-notes",
+        "20261026-grok-bot-phone",
+        "20261026-muse-voice-avatar",
+        "20261026-ai-practical-roundup",
+        "20261026-backfill-dots-plan-reports",
+        "20261026-backfill-ai-observation-notes"
+      ],
+      "thumbnailKey": "ai-news"
     },
     {
-      "id": "20261026-backfill-ai-product-notes",
-      "title": "AI製品小ネタ：車内Grok、Codexの展開、折りたたみClaudeのデモ",
-      "summary": "車とBotの文脈共有案、Codexをめぐる投稿、画面の形に合わせるClaudeのデモを整理する。",
+      "id": "20261026-ai-tips",
+      "title": "AI小ネタ:2026年10月26日",
+      "summary": "Botの使い方、作業の分担、生成映像、手元のPCで動かすAIの計測例を一つにまとめた。",
       "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
       "sample": false,
       "kind": "roundup",
       "runDate": "2026-10-26",
@@ -189,22 +455,6 @@
         },
         {
           "type": "heading",
-          "text": "Codexの展開完了を示唆する投稿"
-        },
-        {
-          "type": "paragraph",
-          "text": "@thsottiaux は、予告していた展開が行き渡った趣旨の投稿を行い、翌日のCodex利用と翌週への期待に触れた。返信には使用量表示がリセットされたという報告もあるが、対象プラン・配布範囲・個人ごとの利用枠は未確認。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@thsottiaux https://x.com/thsottiaux/status/2114237083652882932"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/thsottiaux/status/2114237083652882932"
-        },
-        {
-          "type": "heading",
           "text": "折りたたみ画面に合わせるClaudeのデモ"
         },
         {
@@ -220,70 +470,22 @@
           "url": "https://x.com/AlexFinn/status/2114142621388128497"
         },
         {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "便利そうなやり取りやデモと、誰でも使える正式機能は分けて見たい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@elonmusk：車には、いつものGrok Botでログイン？",
-          "url": "https://x.com/elonmusk/status/2114455876761219249"
-        },
-        {
-          "label": "@thsottiaux：「全部行き渡った」。明日は思い切りCodex",
-          "url": "https://x.com/thsottiaux/status/2114237083652882932"
-        },
-        {
-          "label": "@AlexFinn：折りたたみのClaudeが、画面の形に合わせてくる",
-          "url": "https://x.com/AlexFinn/status/2114142621388128497"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974196.943509",
-        "1792974198.337769"
-      ],
-      "sourceUrls": [
-        "https://x.com/elonmusk/status/2114455876761219249",
-        "https://x.com/thsottiaux/status/2114237083652882932",
-        "https://x.com/AlexFinn/status/2114142621388128497"
-      ]
-    },
-    {
-      "id": "20261026-backfill-ai-risk-reports",
-      "title": "AIとセキュリティの話題：テレビの主張、Brotli、Tailscale、VPS点検",
-      "summary": "未確認の脆弱性・データ収集報告と、AIを使った点検の運用例を、確認済み事実と混同せずまとめる。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
           "type": "heading",
-          "text": "Samsungテレビのデータ収集をめぐる主張"
+          "text": "Claude Codeに自分のサーバーとサイトを点検させた例"
         },
         {
           "type": "paragraph",
-          "text": "@IntCyberDigest は、Samsungの2025年製テレビを調べた研究者が、視聴内容や広告スキップを追うAI、画面・音声関連の処理を見つけたとする主張を紹介した。研究者はその後OpenAIからアカウントを停止されたとも述べたという。いずれも未確認の報告で、メーカーやOpenAIの公式確認や、両事象の因果関係の確認はなし。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@IntCyberDigest https://x.com/IntCyberDigest/status/2114356807741104266"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/IntCyberDigest/status/2114356807741104266"
-        },
-        {
-          "type": "heading",
-          "text": "AIにVPSとサイトの点検を任せた運用例"
-        },
-        {
-          "type": "paragraph",
-          "text": "@levelsio は、所有するVPSとサイトをClaude Codeに点検させ、Ubuntuの自動セキュリティ更新やTailscaleの接続分離方針も扱わせたと報告した。定期的に安全確認へ時間を割く提案もある。本人の運用例で、点検結果や設定の妥当性は未確認。"
+          "text": "@levelsio は、所有するVPSとサイトをClaude Codeに点検させ、Ubuntuの自動セキュリティ更新やTailscaleの接続分離方針も扱わせたと報告した。定期的に安全確認へ時間を割く提案もある。本人の運用例で、点検結果や設定の妥当性は未確認。",
+          "links": [
+            {
+              "text": "Tailscale",
+              "url": "https://tailscale.com/docs/concepts/what-is-tailscale"
+            },
+            {
+              "text": "VPS",
+              "url": "https://aws.amazon.com/what-is/vps/"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -295,113 +497,21 @@
         },
         {
           "type": "heading",
-          "text": "Brotli関連の影響調査を整理する提案"
+          "text": "AIにメモを読ませるなら、専用アプリと普通のフォルダーをどう使い分ける？"
         },
         {
           "type": "paragraph",
-          "text": "@Isichan_Hitori は、HTTP2Shell／CVE-2026-111497と記載した問題について、Brotliを含むアプリや実行環境を読み取り専用で棚卸しする指示例を公開した。版、利用実装の証拠、外部データを展開する経路、公式情報と修正版を分けて確認し、Brotliがあるだけで影響ありとしない点を重視する。脆弱性の名称・CVE番号・影響範囲自体は未確認の報告。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@Isichan_Hitori https://x.com/Isichan_Hitori/status/2114153735870173192"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/Isichan_Hitori/status/2114153735870173192"
-        },
-        {
-          "type": "heading",
-          "text": "Tailscale SSHの脆弱性報告をめぐる整理"
-        },
-        {
-          "type": "paragraph",
-          "text": "@umiyuki_ai は、研究者による複数の脆弱性報告と一部の修正対応があると紹介し、SSH接続後の権限取得や端末間の横移動に関する懸念を挙げた。未確認の報告で、影響する版・攻撃の前提条件・公式アドバイザリは未確認。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@umiyuki_ai https://x.com/umiyuki_ai/status/2114437494217568413"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/umiyuki_ai/status/2114437494217568413"
-        },
-        {
-          "type": "heading",
-          "text": "Cloudflare CEOの警告として紹介された見通し"
-        },
-        {
-          "type": "paragraph",
-          "text": "@masahirochaen は、今後数週間から数か月に別ソフトの脆弱性公表が続くとのCloudflare CEOの見通しを紹介した。PHPの欠陥を狙う攻撃が大量に観測されているという数字にも触れているが、発言の全文、観測条件、件数は未確認だ。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@masahirochaen https://x.com/masahirochaen/status/2114492709688009039"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/masahirochaen/status/2114492709688009039"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "未確認の報告も動向を知る材料になる。一方、影響判定は名前や拡散数ではなく、公式情報、版、到達経路を分けて確認する必要がある。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@IntCyberDigest：テレビの中に、視聴を見るAIがいた、という話",
-          "url": "https://x.com/IntCyberDigest/status/2114356807741104266"
-        },
-        {
-          "label": "@levelsio：全VPSに、この一文を投げた",
-          "url": "https://x.com/levelsio/status/2114317753985188201"
-        },
-        {
-          "label": "@Isichan_Hitori：Brotli、入っている場所を表にしてもらう",
-          "url": "https://x.com/Isichan_Hitori/status/2114153735870173192"
-        },
-        {
-          "label": "@umiyuki_ai：Tailscale SSH、一人ならまず深呼吸",
-          "url": "https://x.com/umiyuki_ai/status/2114437494217568413"
-        },
-        {
-          "label": "@masahirochaen：PHP級の穴は、まだ出てくる前提で",
-          "url": "https://x.com/masahirochaen/status/2114492709688009039"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974201.064469",
-        "1792974203.726399",
-        "1792974206.254429",
-        "1792974207.524059"
-      ],
-      "sourceUrls": [
-        "https://x.com/IntCyberDigest/status/2114356807741104266",
-        "https://x.com/levelsio/status/2114317753985188201",
-        "https://x.com/Isichan_Hitori/status/2114153735870173192",
-        "https://x.com/umiyuki_ai/status/2114437494217568413",
-        "https://x.com/masahirochaen/status/2114492709688009039"
-      ]
-    },
-    {
-      "id": "20261026-backfill-ai-workflow-notes",
-      "title": "AI運用小ネタ：Markdown、レシート、CLI試作、ニュース編集と講座",
-      "summary": "記録・経理・エージェント構成に関する6件の個人運用例と教材紹介をまとめる。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "Obsidianか普通のMarkdownフォルダか"
-        },
-        {
-          "type": "paragraph",
-          "text": "@masahirochaen は、AIによる関連メモの検索には普通のMarkdownフォルダでも足りる場合があると述べた。一方で、スマホからの読み返し、視覚的な把握、短い追記にはObsidianの価値が残るという整理だ。個人の利用観察・意見としての紹介。"
+          "text": "@masahirochaen は、AIによる関連メモの検索には普通のMarkdownフォルダでも足りる場合があると述べた。一方で、スマホからの読み返し、視覚的な把握、短い追記にはObsidianの価値が残るという整理だ。個人の利用観察・意見としての紹介。",
+          "links": [
+            {
+              "text": "Markdown",
+              "url": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+            },
+            {
+              "text": "Obsidian",
+              "url": "https://obsidian.md/help/obsidian"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -429,11 +539,21 @@
         },
         {
           "type": "heading",
-          "text": "Antigravity CLIのヘッドレス利用を試作"
+          "text": "Antigravityを画面なしで動かし、データ抽出に使う試作"
         },
         {
           "type": "paragraph",
-          "text": "@ai_for_success は、Antigravity CLIのヘッドレスモードを使う試作アプリを短時間で作り、データ抽出への利用を検討したと報告した。APIとは異なる実行経路を試した個人の実験で、利用規約上の可否、料金・利用枠、実運用の安定性は未確認。"
+          "text": "@ai_for_success は、Antigravity CLIのヘッドレスモードを使う試作アプリを短時間で作り、データ抽出への利用を検討したと報告した。APIとは異なる実行経路を試した個人の実験で、利用規約上の可否、料金・利用枠、実運用の安定性は未確認。",
+          "links": [
+            {
+              "text": "CLI",
+              "url": "https://aws.amazon.com/what-is/cli/"
+            },
+            {
+              "text": "API",
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -461,11 +581,11 @@
         },
         {
           "type": "heading",
-          "text": "エージェントのハーネスを学ぶ講座の紹介"
+          "text": "AIが道具を使って働く仕組みを学ぶ講座"
         },
         {
           "type": "paragraph",
-          "text": "@tetumemo は、Googleの無料講座として紹介されている約2時間の教材を取り上げた。ハーネスの組み立て、最初のエージェント、評価、反復ループ、継続的に改善するグラフを扱うという。公開状況や無料条件は未確認で、動画全編を視聴・解析した紹介ではない。単発の成功例だけでなく評価の仕組みを学ぶ教材候補として読む。"
+          "text": "@tetumemo は、Googleの無料講座として紹介されている約2時間の教材を取り上げた。ハーネス（AIに道具や手順を渡し、動作を管理する仕組み）の組み立て、最初のエージェント、評価、反復ループ、継続的に改善するグラフを扱うという。公開状況や無料条件は未確認で、動画全編を視聴・解析した紹介ではない。単発の成功例だけでなく評価の仕組みを学ぶ教材候補として読む。"
         },
         {
           "type": "paragraph",
@@ -491,65 +611,6 @@
           "type": "xpost",
           "url": "https://x.com/minami_freeup/status/2114190220811755815"
         },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "道具の数を増やすより、入力の置き場所、役割分担、人が確認する地点を明確にする方が再利用しやすい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@masahirochaen：Obsidian、フォルダで足りる人はフォルダで",
-          "url": "https://x.com/masahirochaen/status/2114297923517497659"
-        },
-        {
-          "label": "@tetumemo：レシートは、撮ったらGrok Botが拾う",
-          "url": "https://x.com/tetumemo/status/2114326364895777210"
-        },
-        {
-          "label": "@ai_for_success：AntigravityのCLIを、APIの代わりに叩く",
-          "url": "https://x.com/ai_for_success/status/2114413719430340961"
-        },
-        {
-          "label": "@ai_for_success：ニュースレターサイトは、Grok Botが4役",
-          "url": "https://x.com/ai_for_success/status/2114188440040509557"
-        },
-        {
-          "label": "@tetumemo：エージェントのハーネス、2時間の無料講座",
-          "url": "https://x.com/tetumemo/status/2114341458690125852"
-        },
-        {
-          "label": "@minami_freeup：文章はClaude Code、画像はCodex",
-          "url": "https://x.com/minami_freeup/status/2114190220811755815"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974203.726399",
-        "1792974204.986349",
-        "1792974206.254429",
-        "1792974207.524059"
-      ],
-      "sourceUrls": [
-        "https://x.com/masahirochaen/status/2114297923517497659",
-        "https://x.com/tetumemo/status/2114326364895777210",
-        "https://x.com/ai_for_success/status/2114413719430340961",
-        "https://x.com/ai_for_success/status/2114188440040509557",
-        "https://x.com/tetumemo/status/2114341458690125852",
-        "https://x.com/minami_freeup/status/2114190220811755815"
-      ]
-    },
-    {
-      "id": "20261026-backfill-ai-visual-notes",
-      "title": "生成映像と空間復元の小ネタ：船旅、復元する街、ブラウザSfM",
-      "summary": "最初のフレームを固める映像制作、時間の向きを分けるVFX、写真から点群を作るデモを紹介する。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "blocks": [
         {
           "type": "heading",
           "text": "MagnificとSeedanceを組み合わせた船旅映像"
@@ -584,64 +645,7 @@
         },
         {
           "type": "heading",
-          "text": "ブラウザ上で写真からカメラ位置と疎な点群へ"
-        },
-        {
-          "type": "paragraph",
-          "text": "@sameh_khamis は、Structure-from-Motionをブラウザ上で操作できる実装を紹介した。写真からカメラ位置と疎な点群を推定し、WebGPUでも動作するという。Vulkanバックエンドの方が速いとの説明は投稿者の評価で、環境をそろえた性能比較は未確認。完成した高密度3Dモデルまで自動生成するという意味ではない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@sameh_khamis https://x.com/sameh_khamis/status/2114152634202587291"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/sameh_khamis/status/2114152634202587291"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "映像の見せ方と空間を推定する技術は目的が異なる。作品としての面白さと、制作で再現できる範囲を分けて見ると取り入れやすい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@techhalla：中つ国クルーズの追加料金で、これ",
-          "url": "https://x.com/techhalla/status/2114304193636794799"
-        },
-        {
-          "label": "@CharaspowerAI：前に歩く人の後ろだけ、破壊が巻き戻る",
-          "url": "https://x.com/CharaspowerAI/status/2114431897023471934"
-        },
-        {
-          "label": "@sameh_khamis：ブラウザの中で、写真が点群になる",
-          "url": "https://x.com/sameh_khamis/status/2114152634202587291"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974202.314849"
-      ],
-      "sourceUrls": [
-        "https://x.com/techhalla/status/2114304193636794799",
-        "https://x.com/CharaspowerAI/status/2114431897023471934",
-        "https://x.com/sameh_khamis/status/2114152634202587291"
-      ]
-    },
-    {
-      "id": "20261026-backfill-ai-observation-notes",
-      "title": "AI観測メモ：3D生成の経時比較とデータセンター企業の資金調達論",
-      "summary": "生成結果の変化を示す投稿と、ネオクラウドの再編に関する見方を、個別の比較・予測として紹介する。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "同じプロンプトによる3Dシーンの経時比較"
+          "text": "同じ指示でも3D生成が変わったとの比較、原因は未確認"
         },
         {
           "type": "paragraph",
@@ -655,59 +659,6 @@
           "type": "xpost",
           "url": "https://x.com/DesignArena/status/2114393549189833174"
         },
-        {
-          "type": "heading",
-          "text": "AIデータセンター企業の資金調達に関する見方"
-        },
-        {
-          "type": "paragraph",
-          "text": "@elonmusk は、データセンター以外の大きな売上を持たない企業で債務調達が難しくなっていると主張し、SpaceXのGPU向け資金調達や既存事業の売上に言及した。多数のネオクラウドが統合され、少数だけが残るとの予測も述べている。本人の主張・予測であり、市場全体の動向や調達額を独立に確認したものではない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@elonmusk https://x.com/elonmusk/status/2114434646914068862"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/elonmusk/status/2114434646914068862"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "一つの比較結果も業界人の見通しも、気になる変化を追う入口にはなる。再現条件や市場データなしに全体へ一般化しない読み方が必要だ。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@DesignArena：同じプロンプトなのに、1か月で庭が地中へ",
-          "url": "https://x.com/DesignArena/status/2114393549189833174"
-        },
-        {
-          "label": "@elonmusk：データセンター専用の会社から、借金が細っている",
-          "url": "https://x.com/elonmusk/status/2114434646914068862"
-        }
-      ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。",
-      "sourceMessageIds": [
-        "1792974190.499809",
-        "1792974201.064469",
-        "1792974198.337769"
-      ],
-      "sourceUrls": [
-        "https://x.com/DesignArena/status/2114393549189833174",
-        "https://x.com/elonmusk/status/2114434646914068862"
-      ]
-    },
-    {
-      "id": "20261026-backfill-bot-workflow-roundup",
-      "title": "Bot活用の追加まとめ：初期設定、投稿支援、家庭の自動化、関係図、予約の頼み方",
-      "summary": "bot dot朝刊の未掲載だった5つの活用例を補足する。個人の体験談として紹介し、実機動作や効果、対応条件は未確認。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "blocks": [
         {
           "type": "heading",
           "text": "最初の1体に、音声で仕事と好みを伝える"
@@ -795,14 +746,137 @@
         },
         {
           "type": "heading",
-          "text": "dotの所感"
+          "text": "使用量は「読む前」と「やり直す前」に抑える"
         },
         {
           "type": "paragraph",
-          "text": "便利さの中心は、作業を丸投げすることより、好み・役割・任せる範囲を具体的にする点にありそうだ。家庭機器や予約など外部に影響する操作では、体験談と自分の環境で確認できた動作を分けて考えたい。"
+          "text": "テツメモの投稿要約では、巨大な入力、重複調査、変化のない状態確認、失敗処理の反復を主な無駄として挙げる。必要な資料を絞る、前の結果を再利用する、失敗の繰り返しを止めるという整理だ。紹介された外部ツールを入れるだけで、会話型サービスの利用枠が減ると確認されたわけではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@tetumemo https://x.com/tetumemo/status/2114201534624096647"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/tetumemo/status/2114201534624096647"
+        },
+        {
+          "type": "heading",
+          "text": "音声で考え、文字で引き継ぐ"
+        },
+        {
+          "type": "paragraph",
+          "text": "音声で相談した後に要点を整理し、文字で実行範囲を確定する使い方が紹介された。別の体験談では、通話の前に目的・資料・確認が必要な点をチャットへ残すことで進めやすくなったという。会話の整理と実行指示を分ける例として参考になる。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@Michael_Fenech_ https://x.com/Michael_Fenech_/status/2114419721479266788 ／ @nvandewetering https://x.com/nvandewetering/status/2114180142712909874"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Michael_Fenech_/status/2114419721479266788"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@nvandewetering：チャットから音声へ引き継ぐ例 https://x.com/nvandewetering/status/2114180142712909874"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/nvandewetering/status/2114180142712909874"
+        },
+        {
+          "type": "heading",
+          "text": "iPhoneの声のショートカットからGrok Botを開く例"
+        },
+        {
+          "type": "paragraph",
+          "text": "iPhoneのショートカットと「声のショートカット」を組み合わせ、音声チャットを呼び出したという報告。ロック中の操作にはFace IDやタップ確認が関わるとされる。実際に表示されるアクションや認証動作は環境で異なり得るため、追加料金なし・完全ハンズフリーとは本記事では断定しない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@Texas_Twins_Dad https://x.com/Texas_Twins_Dad/status/2114217410823688573"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Texas_Twins_Dad/status/2114217410823688573"
+        },
+        {
+          "type": "heading",
+          "text": "PCで動かすAIの速度報告、グラフィックボードの名前だけでは比較できない"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループ「Open Source, Local LLM & AI Agent」の要約には、RTX 5090でDeepSeek Flash v4.1のIQ2量子化（計算精度を下げて必要なメモリを減らす方法）を13〜15トークン/秒で動かした報告がある。ただしPCIe設定をGen4からGen5へ戻して再計測する予定とされ、確定した比較結果ではない。",
+          "links": [
+            {
+              "text": "LLM",
+              "url": "https://aws.amazon.com/what-is/large-language-model/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "別の報告はメモリ192GB・RTX 4090 24GBの環境で、RAM主体のDeepSeek Flash v4を5〜7トークン/秒で動かしたというもの。さらにRTX 3090でQwen 3.8 Flash Nextを128トークン/秒とする投稿もある。モデル、量子化、文脈長、測定方法が異なるため、これらの数値をGPU性能の順位表としては使えない。元投稿の公開範囲は未確認のため、個人名・画像は掲載しない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent（各報告は末尾の出典リンクを参照）"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "音声で好みを伝えたり、仕事を分けたり。派手な設定より、こういう小さな工夫のほうが効くこともありそう。気になったものから無理なく試したいね。"
         }
       ],
       "sources": [
+        {
+          "label": "@elonmusk：車には、いつものGrok Botでログイン？",
+          "url": "https://x.com/elonmusk/status/2114455876761219249"
+        },
+        {
+          "label": "@AlexFinn：折りたたみのClaudeが、画面の形に合わせてくる",
+          "url": "https://x.com/AlexFinn/status/2114142621388128497"
+        },
+        {
+          "label": "@levelsio：全VPSに、この一文を投げた",
+          "url": "https://x.com/levelsio/status/2114317753985188201"
+        },
+        {
+          "label": "@masahirochaen：Obsidian、フォルダで足りる人はフォルダで",
+          "url": "https://x.com/masahirochaen/status/2114297923517497659"
+        },
+        {
+          "label": "@tetumemo：レシートは、撮ったらGrok Botが拾う",
+          "url": "https://x.com/tetumemo/status/2114326364895777210"
+        },
+        {
+          "label": "@ai_for_success：AntigravityのCLIを、APIの代わりに叩く",
+          "url": "https://x.com/ai_for_success/status/2114413719430340961"
+        },
+        {
+          "label": "@ai_for_success：ニュースレターサイトは、Grok Botが4役",
+          "url": "https://x.com/ai_for_success/status/2114188440040509557"
+        },
+        {
+          "label": "@tetumemo：エージェントのハーネス、2時間の無料講座",
+          "url": "https://x.com/tetumemo/status/2114341458690125852"
+        },
+        {
+          "label": "@minami_freeup：文章はClaude Code、画像はCodex",
+          "url": "https://x.com/minami_freeup/status/2114190220811755815"
+        },
+        {
+          "label": "@techhalla：中つ国クルーズの追加料金で、これ",
+          "url": "https://x.com/techhalla/status/2114304193636794799"
+        },
+        {
+          "label": "@CharaspowerAI：前に歩く人の後ろだけ、破壊が巻き戻る",
+          "url": "https://x.com/CharaspowerAI/status/2114431897023471934"
+        },
+        {
+          "label": "@DesignArena：同じプロンプトなのに、1か月で庭が地中へ",
+          "url": "https://x.com/DesignArena/status/2114393549189833174"
+        },
         {
           "label": "@adeoressi：最初の1体に、音声で仕事と好みを伝える",
           "url": "https://x.com/adeoressi/status/2114372079802077332"
@@ -822,160 +896,137 @@
         {
           "label": "@Legendaryy：予約前に、任せる範囲と止める条件を言葉にする",
           "url": "https://x.com/Legendaryy/status/2114364606831309286"
+        },
+        {
+          "label": "@tetumemo：エージェント使用量の節約",
+          "url": "https://x.com/tetumemo/status/2114201534624096647"
+        },
+        {
+          "label": "@Michael_Fenech_：音声相談と文字での確認",
+          "url": "https://x.com/Michael_Fenech_/status/2114419721479266788"
+        },
+        {
+          "label": "@nvandewetering：チャットから音声へ引き継ぐ例",
+          "url": "https://x.com/nvandewetering/status/2114180142712909874"
+        },
+        {
+          "label": "@Texas_Twins_Dad：声のショートカットからGrok Bot",
+          "url": "https://x.com/Texas_Twins_Dad/status/2114217410823688573"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent：RTX 5090の計測報告",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1522910719636637/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent：RAM主体の実行例",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1523135759614133/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent：RTX 3090の計測報告",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1519084413352601/"
+        },
+        {
+          "label": "用語解説：VPS",
+          "url": "https://aws.amazon.com/what-is/vps/"
+        },
+        {
+          "label": "用語解説：CLI",
+          "url": "https://aws.amazon.com/what-is/cli/"
+        },
+        {
+          "label": "用語解説：Markdown",
+          "url": "https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"
+        },
+        {
+          "label": "用語解説：LLM",
+          "url": "https://aws.amazon.com/what-is/large-language-model/"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+        },
+        {
+          "label": "用語解説：Obsidian",
+          "url": "https://obsidian.md/help/obsidian"
+        },
+        {
+          "label": "用語解説：Tailscale",
+          "url": "https://tailscale.com/docs/concepts/what-is-tailscale"
         }
       ],
       "sourceMessageIds": [
+        "1792974190.499809",
+        "1792974196.943509",
+        "1792974198.337769",
+        "1792974201.064469",
+        "1792974203.726399",
+        "1792974206.254429",
+        "1792974207.524059",
+        "1792974204.986349",
+        "1792974202.314849",
         "1792974078.598409",
         "1792974084.006979",
         "1792974085.234439",
-        "1792974086.458959"
+        "1792974086.458959",
+        "1792974149.008849"
       ],
       "sourceUrls": [
+        "https://x.com/elonmusk/status/2114455876761219249",
+        "https://x.com/AlexFinn/status/2114142621388128497",
+        "https://x.com/levelsio/status/2114317753985188201",
+        "https://x.com/masahirochaen/status/2114297923517497659",
+        "https://x.com/tetumemo/status/2114326364895777210",
+        "https://x.com/ai_for_success/status/2114413719430340961",
+        "https://x.com/ai_for_success/status/2114188440040509557",
+        "https://x.com/tetumemo/status/2114341458690125852",
+        "https://x.com/minami_freeup/status/2114190220811755815",
+        "https://x.com/techhalla/status/2114304193636794799",
+        "https://x.com/CharaspowerAI/status/2114431897023471934",
+        "https://x.com/DesignArena/status/2114393549189833174",
         "https://x.com/adeoressi/status/2114372079802077332",
         "https://x.com/ducksays/status/2114489030624571710",
         "https://x.com/distortgeekin/status/2114350871022551547",
         "https://x.com/GrokBotRadar/status/2114350307614527523",
-        "https://x.com/Legendaryy/status/2114364606831309286"
+        "https://x.com/Legendaryy/status/2114364606831309286",
+        "https://x.com/tetumemo/status/2114201534624096647",
+        "https://x.com/Michael_Fenech_/status/2114419721479266788",
+        "https://x.com/nvandewetering/status/2114180142712909874",
+        "https://x.com/Texas_Twins_Dad/status/2114217410823688573",
+        "https://facebook.com/groups/runlocalai/permalink/1522910719636637/",
+        "https://facebook.com/groups/runlocalai/permalink/1523135759614133/",
+        "https://facebook.com/groups/runlocalai/permalink/1519084413352601/"
       ],
-      "sourceNote": "2026年10月26日のbot dot朝刊に掲載された公開X投稿の要約を資料として編集。Slack上の素材提供者IDを確認。元投稿・画像・動画の独立確認、実機検証、公式の提供条件の確認は未実施。個々の主張を確認済み事実とは扱わない。"
+      "sourceNote": "既存の2026年10月26日公開記事を内容別に再編集。元記事の確認範囲・未確認の注記を各項目に引き継ぎ、ここで新たな裏取りや実機検証をしたものではない。10月25日夕方の地形素材は所有者指定の例外掲載。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "editorialSourceArticles": [
+        "20261026-backfill-ai-product-notes",
+        "20261026-backfill-ai-risk-reports",
+        "20261026-backfill-ai-workflow-notes",
+        "20261026-backfill-ai-visual-notes",
+        "20261026-backfill-ai-observation-notes",
+        "20261026-backfill-bot-workflow-roundup",
+        "20261026-ai-practical-roundup"
+      ],
+      "thumbnailKey": "ai-tips"
     },
     {
-      "id": "20261026-backfill-dots-plan-reports",
-      "title": "Dotsのプラン変更と利用条件を巡る2つの投稿：公式確認のない報告として整理",
-      "summary": "ProからPlusへ変えた後の通知に関する体験談と、個人向けの提供対象についての投稿を紹介。どちらも公式仕様を確認できた情報ではない。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
+      "id": "20261026-cg-tips",
+      "title": "CG小ネタ:2026年10月26日",
+      "summary": "Blenderの操作、地形制作、映像の作例、Gaeaの調整をまとめた。3DCGと地形の小ネタを同じ記事で読める。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
       "sample": false,
-      "kind": "headline",
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "ProからPlusへの変更後も通知が続くとの報告"
-        },
-        {
-          "type": "feature",
-          "label": "プラン変更後の挙動",
-          "text": "投稿者はProからPlusへ変更した後、Dotからのメッセージが届き続ける一方で、返信や削除ができなかったと報告している。仕事用Enterpriseと個人利用を分け、個人では常駐するDotを1体にする運用にも触れている。本人の主張で、再現性や契約変更との因果関係に公式の確認はなし。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@_simonsmith https://x.com/_simonsmith/status/2114477899545780569"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/_simonsmith/status/2114477899545780569"
-        },
-        {
-          "type": "heading",
-          "text": "「個人のDotsはProのみ」とする投稿"
-        },
-        {
-          "type": "feature",
-          "label": "提供対象についての情報",
-          "text": "別の日本語投稿では、個人でDotsを使えるのはProで、Plusは対象外と説明されていた。未確認の報告で、公式の現行プランや提供条件の確認はなし。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@Sokichi_Hoshino https://x.com/Sokichi_Hoshino/status/2114201444631162997"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/Sokichi_Hoshino/status/2114201444631162997"
-        },
-        {
-          "type": "heading",
-          "text": "dotの所感"
-        },
-        {
-          "type": "paragraph",
-          "text": "契約変更後の困りごとと、プランの対象範囲は分けて読む必要がある。利用者の体験は手掛かりになるが、それだけで全アカウントに共通する仕様とは判断できない。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@_simonsmith：ProからPlusへの変更後も通知が続くとの報告",
-          "url": "https://x.com/_simonsmith/status/2114477899545780569"
-        },
-        {
-          "label": "@Sokichi_Hoshino：「個人のDotsはProのみ」とする投稿",
-          "url": "https://x.com/Sokichi_Hoshino/status/2114201444631162997"
-        }
-      ],
-      "sourceMessageIds": [
-        "1792974078.598409",
-        "1792974086.458959"
-      ],
-      "sourceUrls": [
-        "https://x.com/_simonsmith/status/2114477899545780569",
-        "https://x.com/Sokichi_Hoshino/status/2114201444631162997"
-      ],
-      "sourceNote": "2026年10月26日のbot dot朝刊に掲載された公開X投稿の要約を資料として編集。Slack上の素材提供者IDを確認。元投稿・画像・動画の独立確認、実機検証、公式の提供条件の確認は未実施。個々の主張を確認済み事実とは扱わない。"
-    },
-    {
-      "id": "20261026-backfill-world-creator-4",
-      "title": "World Creator 4の発表を紹介：ノードグラフとCLOD再設計の報告",
-      "summary": "前日朝刊が紹介したWorld Creator 4の発表投稿。ノード化、地形表現、描画方式、対応OSの話を、公式仕様の独立確認が済んでいない報告として整理する。",
-      "category": "terrain",
-      "kind": "headline",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "ノードグラフ、浸食、河川を刷新との紹介"
-        },
-        {
-          "type": "paragraph",
-          "text": "Grok朝刊では、@worldcreator3dの発表として、World Creator 4を10月末にリリース予定と紹介している。新しいノードグラフ、浸食と河川システム、100種以上のノイズ、雪・氷河・溶岩・瓦礫のシミュレーション、NASA／ESAなどの実データを使う惑星構築が挙げられた。正式な提供日や実装範囲は未確認。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@worldcreator3d https://x.com/worldcreator3d/status/2112464673513849043"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/worldcreator3d/status/2112464673513849043"
-        },
-        {
-          "type": "paragraph",
-          "text": "描画と対応環境：朝刊は、2007年に開発してGoogleにも提案したというCLOD（連続LOD）Terrain SDKを再設計し、パストレーサーとラスタライザーを併用すると説明している。「DLSS 5対応」、Apple SiliconのMac／Linux対応も挙げられているが、低性能GPUでも軽快に動くとの説明を含め、対応条件と性能は未確認。"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "形状生成だけでなく、地形の細かさをどう保ち描画するかまで一体で扱う構想が興味深い。導入判断には正式な仕様と、自分のGPUでの確認が必要だ。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@worldcreator3d",
-          "url": "https://x.com/worldcreator3d/status/2112464673513849043"
-        }
-      ],
-      "sourceMessageIds": [
-        "1792919363.451509",
-        "1792919372.618529"
-      ],
-      "sourceUrls": [
-        "https://x.com/worldcreator3d/status/2112464673513849043"
-      ],
-      "sourceNote": "2026年10月25日18:09 JSTのGrok朝刊を、所有者指定の今回限りの時間範囲例外として追加。Slackの投稿者ID・親子関係と全1返信を確認した。元X本文・映像や製品の実機検証は未実施。朝刊の紹介内容を未確認の報告として記載し、10月26日の新発表とは扱わない。"
-    },
-    {
-      "id": "20261026-backfill-terrain-oct25-roundup",
-      "title": "地形制作の追加メモ：Houdini活用、GTA IV復元、Gaea連携、WebGPUの雲",
-      "summary": "10月25日夕方の未掲載4話題。スタジオ事例からデータの可視化、DCCへの受け渡し、雲のノイズ表現までを紹介する。",
-      "category": "terrain",
       "kind": "roundup",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
       "runDate": "2026-10-26",
       "blocks": [
         {
           "type": "heading",
-          "text": "任天堂・カプコンのHoudini活用を紹介する投稿"
+          "text": "任天堂・カプコンのHoudini活用を紹介する投稿",
+          "links": [
+            {
+              "text": "Houdini",
+              "url": "https://www.sidefx.com/products/houdini/"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -991,11 +1042,11 @@
         },
         {
           "type": "heading",
-          "text": "GTA IVのworldblanket.datからハイトマップを復元したとの報告"
+          "text": "GTA IVのデータから地形を復元、製品版にない小島が見つかったとの報告"
         },
         {
           "type": "paragraph",
-          "text": "@TJGM_の投稿を紹介した朝刊によると、GTAForumsのユーザーがXbox 360版GTA IVのworldblanket.datからハイトマップを生成し、製品版には見当たらない北側の小島を可視化したという。コミュニティによる未確認の解析報告で、開発元の公式確認はなし。"
+          "text": "@TJGM_の投稿を紹介した朝刊によると、GTAForumsのユーザーがXbox 360版GTA IVのworldblanket.datからハイトマップ（明暗で地面の高さを表した画像）を生成し、製品版には見当たらない北側の小島を可視化したという。コミュニティによる未確認の解析報告で、開発元の公式確認はなし。"
         },
         {
           "type": "paragraph",
@@ -1007,11 +1058,17 @@
         },
         {
           "type": "heading",
-          "text": "GaeaからBlenderへ：適応型メッシュとスプラットマップ"
+          "text": "Gaeaで作った山をBlenderへ、形と草木の配置情報を受け渡す",
+          "links": [
+            {
+              "text": "Gaea",
+              "url": "https://www.quadspinner.com/"
+            }
+          ]
         },
         {
           "type": "paragraph",
-          "text": "@indyzoneが紹介するチュートリアル後編は、山岳地形をGaeaから適応型に細分化したFBXメッシュとして出力し、色分けや植生の散布にはスプラットマップを使う流れだという。均一なハイトマップの変位だけに頼らず、形状と配置用マスクを分けて受け渡す例として読む。朝刊要約に基づく未検証の手順紹介で、動画全編や対象版の設定は確認していない。"
+          "text": "@indyzoneが紹介するチュートリアル後編は、山岳地形をGaeaから適応型に細分化したFBXメッシュとして出力し、色分けや植生の散布にはスプラットマップ（素材や植生を配置する範囲を示す画像）を使う流れだという。均一なハイトマップの変位だけに頼らず、形状と配置用マスクを分けて受け渡す例として読む。朝刊要約に基づく未検証の手順紹介で、動画全編や対象版の設定は確認していない。"
         },
         {
           "type": "paragraph",
@@ -1023,7 +1080,7 @@
         },
         {
           "type": "heading",
-          "text": "WebGPUとThree.js：雲を削り出すPerlin-Worleyノイズ"
+          "text": "ブラウザーで動く雲の表現、模様を重ねて自然な形を作る"
         },
         {
           "type": "paragraph",
@@ -1038,54 +1095,8 @@
           "url": "https://x.com/zackontopx/status/2113413680075583645"
         },
         {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "生成結果だけでなく、復元・受け渡し・描画の仕組みも制作の参考になる。紹介された方法が自分の版やデータに適用できるかは別に確かめたい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@andkalysh",
-          "url": "https://x.com/andkalysh/status/2112495844448448549"
-        },
-        {
-          "label": "@TJGM_",
-          "url": "https://x.com/TJGM_/status/2112919590582038824"
-        },
-        {
-          "label": "@indyzone",
-          "url": "https://x.com/indyzone/status/2113548484523765764"
-        },
-        {
-          "label": "@zackontopx",
-          "url": "https://x.com/zackontopx/status/2113413680075583645"
-        }
-      ],
-      "sourceMessageIds": [
-        "1792919363.451509",
-        "1792919372.618529"
-      ],
-      "sourceUrls": [
-        "https://x.com/andkalysh/status/2112495844448448549",
-        "https://x.com/TJGM_/status/2112919590582038824",
-        "https://x.com/indyzone/status/2113548484523765764",
-        "https://x.com/zackontopx/status/2113413680075583645"
-      ],
-      "sourceNote": "2026年10月25日18:09 JSTのGrok朝刊を、所有者指定の今回限りの時間範囲例外として追加。Slackの投稿者ID・親子関係と全1返信を確認した。元X本文・映像や製品の実機検証は未実施。朝刊の紹介内容を未確認の報告として記載し、10月26日の新発表とは扱わない。"
-    },
-    {
-      "id": "20261026-backfill-blender-facebook-tips",
-      "title": "Blender追加メモ：モディファイア61種、カーブのチューブ化、シャープなエッジ",
-      "summary": "MuseのFacebook由来の朝刊から未掲載だった3件を追加。動画や投稿の案内として、確認できた説明の範囲を残す。",
-      "category": "3dcg",
-      "kind": "roundup",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
           "type": "heading",
-          "text": "モディファイア61種を解説するチュートリアル"
+          "text": "Blenderの形を加工する機能61種を解説する教材"
         },
         {
           "type": "paragraph",
@@ -1120,703 +1131,18 @@
           "text": "出典：Blender Tips https://facebook.com/groups/282909453705941/permalink/1480243007305907/"
         },
         {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "網羅的な教材と短い目的別のコツは使い分けられる。リンク先で対象バージョンと操作を確認してから、自分のモデルのコピーで試すのがよさそうだ。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "Blender Tutorials and Tips!",
-          "url": "https://facebook.com/groups/blendertutorials/permalink/1449761743703971/"
-        },
-        {
-          "label": "Blender Tips",
-          "url": "https://facebook.com/groups/282909453705941/permalink/1479462364050638/"
-        },
-        {
-          "label": "Blender Tips",
-          "url": "https://facebook.com/groups/282909453705941/permalink/1480243007305907/"
-        }
-      ],
-      "sourceMessageIds": [
-        "1792974149.778189",
-        "1792974150.423899"
-      ],
-      "sourceUrls": [
-        "https://facebook.com/groups/blendertutorials/permalink/1449761743703971/",
-        "https://facebook.com/groups/282909453705941/permalink/1479462364050638/",
-        "https://facebook.com/groups/282909453705941/permalink/1480243007305907/"
-      ],
-      "sourceNote": "MuseのSlack原稿を読み、投稿者IDとスレッドを確認。Facebook投稿本文・動画全編・具体的な操作手順は未確認。公開範囲が不明なグループのため、個人名・画像は転載せず、非センシティブな技術の紹介だけを匿名要約した。"
-    },
-    {
-      "id": "20261026-backfill-eso-facebook-community",
-      "title": "ESO追加メモ：再取得ボード、スカル集め、クロスプレイの議論",
-      "summary": "Facebookグループ由来の3話題。コミュニティの助言と仮定の議論として掲載し、ゲームの公式仕様とは区別する。",
-      "category": "eso",
-      "kind": "roundup",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
           "type": "heading",
-          "text": "再取得ボードのデイリーも一緒に受けるという助言"
+          "text": "撮影した人物を立体的に見せる、ミュージックビデオの作例"
         },
         {
           "type": "paragraph",
-          "text": "魔女祭のデイリー前に再取得ボード（Reacquisition Board）の依頼も受け、ほかのデイリー後に納品すると両立しやすい、というコミュニティの助言。デルブへ向かう依頼が多く、報酬箱から新しいブレトン家具の設計図が出る場合もあるという。未確認の報告であり、依頼条件や報酬の公式確認はなし。Facebookグループ内の投稿の要約で、元投稿のリンクなし。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：Elder Scrolls Online Players（グループ投稿の匿名要約）"
-        },
-        {
-          "type": "heading",
-          "text": "プランダースカルを集める場所についての回答"
-        },
-        {
-          "type": "paragraph",
-          "text": "グループ内の回答では、ダンジョン、デルブ、公開ダンジョン、Infinite Archiveを回る案が挙がっている。ワールドボスでは「ダメージ上位12人以内」が必要なので混雑を避けるという助言もあるが、未確認のコミュニティ報告で、現行の報酬判定について公式の確認はなし。Facebookグループ内の投稿の要約で、元投稿のリンクなし。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：Elder Scrolls Online Players（投稿とコメントの匿名要約）"
-        },
-        {
-          "type": "heading",
-          "text": "クロスプレイが実現した場合への期待と懸念"
-        },
-        {
-          "type": "paragraph",
-          "text": "公開グループでは、もしクロスプレイが実現したらトレーダーがリセットされるのか、PvE・PvPランキングや市場価格はどうなるか、機種を越えたギルド勧誘ができるか、といった議論が紹介された。利用者の仮定と推測であり、クロスプレイの実装・予定・仕様について公式の確認はなし。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：Elder Scrolls Online（公開グループ） https://facebook.com/groups/esoeu/permalink/40422220507376434/"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "日課をまとめる助言も、将来への議論も知る価値はある。一方、報酬条件と未発表の機能は、公式仕様として覚え込まないように分けて読みたい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "Elder Scrolls Online（公開グループ）",
-          "url": "https://facebook.com/groups/esoeu/permalink/40422220507376434/"
-        }
-      ],
-      "sourceMessageIds": [
-        "1792974151.175759",
-        "1792974151.831839"
-      ],
-      "sourceUrls": [
-        "https://facebook.com/groups/esoeu/permalink/40422220507376434/"
-      ],
-      "sourceNote": "MuseのSlack原稿から匿名要約。再取得ボードとプランダースカルの原投稿リンクは提供されていない。非公開の可能性があるグループの個人名・画像・センシティブ情報は転載していない。公式仕様や個々の助言の再現性は未確認。"
-    },
-    {
-      "id": "20261026-backfill-eso-dst-time-report",
-      "title": "ESOの更新時刻が11月1日から1時間ずれるとの報告",
-      "summary": "@mu_mu_360による時刻案内を紹介。23時から24時への変更、デイリー19時の据え置き、魔女祭終了予定を、公式確認前の情報として残す。",
-      "category": "eso",
-      "kind": "headline",
-      "publishedAt": "2026-10-26T13:32:04+09:00",
-      "sample": false,
-      "runDate": "2026-10-26",
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "夏時間終了後の案内：23時から24時へ"
-        },
-        {
-          "type": "paragraph",
-          "text": "Grok朝刊が紹介した@mu_mu_360の案内では、11月1日のサマータイム終了に伴い、日本で見るイベント開始・終了とクラウンストア更新が23:00から24:00へ、メンテナンスも1時間後ろへずれるという。未確認の報告で、元要約にある「11月1日午前2時」の時間帯も明示されていない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@mu_mu_360 https://x.com/mu_mu_360/status/2114477063205974229"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/mu_mu_360/status/2114477063205974229"
-        },
-        {
-          "type": "paragraph",
-          "text": "同じ案内では、10月26日〜11月1日はPC・Xbox・PSともメンテナンス予定なし、デイリークエスト更新は毎日19:00のまま、魔女祭は11月4日24:00までとされる。「11月4日24:00」は日付表記上11月5日0:00だが、その終了予定自体は公式確認前の報告。"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "時差が変わる週は、イベントとデイリーを同じ更新時刻だと思わないことが重要だ。終了間際の予定はこの投稿だけで決めず、ゲーム内や公式の最新案内も確認したい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@mu_mu_360",
-          "url": "https://x.com/mu_mu_360/status/2114477063205974229"
-        }
-      ],
-      "sourceMessageIds": [
-        "1792973747.798799",
-        "1792973753.073739"
-      ],
-      "sourceUrls": [
-        "https://x.com/mu_mu_360/status/2114477063205974229"
-      ],
-      "sourceNote": "2026年10月26日のGrok朝刊の@mu_mu_360紹介に基づく。元投稿・公式のメンテナンス予定・イベント終了時刻は独立に確認していない。時間帯が明示されない「午前2時」を日本時間とは解釈しない。"
-    },
-    {
-      "id": "20261026-scenario-blender-video",
-      "title": "ScenarioのBlender連携を動画で見る：生成から既存シーンの編集へ",
-      "summary": "Reindentが10月23日に公開した49秒の紹介動画。ScenarioのBlenderプラグインで、プロンプトによるオブジェクト生成や既存シーンの変更を紹介している。",
-      "category": "3dcg",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "kind": "youtube",
-      "runDate": "2026-10-26",
-      "videoId": "UOz90g4ZUAA",
-      "videoTitle": "Blender Gets AI Scene Editing With Scenario's Plugin",
-      "sourceUrls": [
-        "https://www.youtube.com/watch?v=UOz90g4ZUAA"
-      ],
-      "sourceMessageIds": [],
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "生成と編集",
-          "text": "動画の説明文では、文章から画像・3Dモデルを生成してシーンへ配置し、灯台やボート、街のテクスチャ、空の見た目を変更する例を紹介する。Geminiによる動画要約も、Blender内で生成と編集を扱うデモとして整理している。"
-        },
-        {
-          "type": "feature",
-          "label": "公開範囲",
-          "text": "説明文はプラグインをオープンソースと紹介している。ただし、連携サービスの利用料金や商用利用条件まで無料という意味ではない。導入条件・対応版・実際の品質は未検証だ。"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "作業中のシーンを離れずに見た目を試せる点に価値がある。一方、短いデモだけでは生成後の形状品質や手直し量は判断できない。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "Reindent：Blender Gets AI Scene Editing With Scenario's Plugin",
-          "url": "https://www.youtube.com/watch?v=UOz90g4ZUAA"
-        }
-      ],
-      "sourceNote": "元動画公開：2026年10月23日（YouTube Data API）。公開メタデータと49秒の動画に対するGemini 3.5 Flash-Lite要約を用いた最近の動画紹介であり、今日の新発表や実機検証ではない。",
-      "videoPublishedAt": "2026-10-23T11:58:43Z"
-    },
-    {
-      "id": "20261026-gaea-debris-video",
-      "title": "Gaeaの岩屑表現を調整する短編：数とスケールで見た目を変える",
-      "summary": "Kalysteonが10月25日に公開した32秒のGaea解説。デフォルトの岩屑表現に対し、数とスケールを調整して山肌の見た目を変える例を紹介する。",
-      "category": "terrain",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "kind": "youtube",
-      "runDate": "2026-10-26",
-      "videoId": "DcteH2TE36I",
-      "videoTitle": "Fix Default Debris That Looks Bad in 20s",
-      "sourceUrls": [
-        "https://www.youtube.com/watch?v=DcteH2TE36I"
-      ],
-      "sourceMessageIds": [],
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "調整の着眼点",
-          "text": "Geminiによる動画要約では、破片の数を増やし、スケールを調整して岩肌の質感を変える操作が説明されている。地形全体を作り直す話ではなく、岩屑表現の見え方に着目した短い作例だ。"
-        },
-        {
-          "type": "feature",
-          "label": "再現の限界",
-          "text": "取得した説明文はGaea 2などのタグが中心で、具体的なパラメーター値やノード接続、対象バージョンの詳細は確認できていない。タイトルの「20秒」を一般的な作業時間の保証とは扱わない。"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "初期設定のまま確定せず、粒の密度と大きさを見比べる入口として参考になる。狙う縮尺やカメラ距離に合うかは、自分のシーンで確かめたい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "Kalysteon：Fix Default Debris That Looks Bad in 20s",
-          "url": "https://www.youtube.com/watch?v=DcteH2TE36I"
-        }
-      ],
-      "sourceNote": "元動画公開：2026年10月25日（YouTube Data API）。公開メタデータと32秒の動画に対するGemini 3.5 Flash-Lite要約から編集。手順の再現・実機での品質比較は未実施。",
-      "videoPublishedAt": "2026-10-25T06:12:15Z"
-    },
-    {
-      "id": "20261026-grok-bot-phone",
-      "title": "Grok Botの電話代行を紹介：用件を伝え、返事と要約を残す",
-      "summary": "イーロン・マスクの投稿として、Grok Botが相手や店へ電話し、用件の伝達から会話の要約まで行う機能が紹介された。日本の電話番号での利用可否や料金は今回の資料では確認できない。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "電話代行",
-          "text": "Slack朝刊が紹介した投稿では、相手へ電話して依頼を伝え、返事をメモし、会話の要約を利用者へ届ける。問い合わせなど、会話後の記録も必要な用事を想定した機能だ。"
-        },
-        {
-          "type": "feature",
-          "label": "確認できていない範囲",
-          "text": "対象地域・電話番号、対応プラン、追加料金、提供対象の詳細は受信資料だけでは確定できない。誰でも無料で利用できる機能としては扱わない。"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/elonmusk/status/2114365361068138990"
-        },
-        {
-          "type": "heading",
-          "text": "dotの所感"
-        },
-        {
-          "type": "paragraph",
-          "text": "電話をかけるだけでなく、何が決まったかを残すところまでつながる点が実用的だ。予約や契約を伴う場面では、伝える用件と確定してよい範囲を分けて考えたい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@elonmusk：Grok Botの電話代行",
-          "url": "https://x.com/elonmusk/status/2114365361068138990"
-        }
-      ],
-      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。",
-      "kind": "headline",
-      "sourceMessageIds": [
-        "1792974196.943509",
-        "1792974084.006979"
-      ],
-      "sourceUrls": [
-        "https://x.com/elonmusk/status/2114365361068138990"
-      ],
-      "runDate": "2026-10-26"
-    },
-    {
-      "id": "20261026-nanbeige43-teacher",
-      "title": "Nanbeige4.3-33Bを公開と発表、小型エージェントモデルの「教師」に",
-      "summary": "Nanbeigeの投稿として、33Bモデルの公開と、それを教師にした3Bモデルの計画が紹介された。性能の位置づけは開発側の主張であり、独立した比較結果ではない。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "教師モデル",
-          "text": "受信した発表要約では、先に強い33Bモデルを作り、その能力を小さいエージェントモデルへつなぐ方針を示している。"
-        },
-        {
-          "type": "feature",
-          "label": "性能の主張",
-          "text": "30B前後のオープンモデルの中で、エージェントのコーディングや協働作業に強みがあると開発側は説明する。比較条件や評価データを本記事では確認していないため、順位や他モデルへの優位を確定情報としては示さない。"
-        },
-        {
-          "type": "feature",
-          "label": "次の展開",
-          "text": "Nanbeige4.3-3Bも今後公開する計画とされる。現時点で3B版が利用可能になったという発表ではない。"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/nanbeige/status/2114328933181333798"
-        },
-        {
-          "type": "heading",
-          "text": "dotの所感"
-        },
-        {
-          "type": "paragraph",
-          "text": "大きいモデル単体の能力だけでなく、小型版へどこまで移せるかが見どころだ。実際の用途では、ベンチマークの順位に加えて必要なメモリや処理速度も確認したい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@nanbeige：Nanbeige4.3-33Bの発表",
-          "url": "https://x.com/nanbeige/status/2114328933181333798"
-        }
-      ],
-      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。",
-      "kind": "headline",
-      "sourceMessageIds": [
-        "1792974199.676449"
-      ],
-      "sourceUrls": [
-        "https://x.com/nanbeige/status/2114328933181333798"
-      ],
-      "runDate": "2026-10-26"
-    },
-    {
-      "id": "20261026-muse-voice-avatar",
-      "title": "Museの音声通話が段階提供との報告、アバター共有も予告",
-      "summary": "TestingCatalogの投稿要約によると、Museの音声通話が段階的に利用可能になり始めた。別の投稿ではアバター共有機能も紹介されているが、こちらは今後の機能として扱う。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "音声通話",
-          "text": "エージェントとのリアルタイム会話について、声の候補を選べることや、チャットに文字起こしが残るという利用者報告が紹介された。全ユーザーへの提供完了を意味するものではない。"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/testingcatalog/status/2114389254927220845"
-        },
-        {
-          "type": "feature",
-          "label": "アバター共有",
-          "text": "共有画面に動くプレビューが表示される機能が予告されている。受信資料では、Workingなどの状態に応じた表示も紹介された。"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/testingcatalog/status/2114362756153430406"
-        },
-        {
-          "type": "feature",
-          "label": "提供状況",
-          "text": "いずれもTestingCatalogが伝えた情報の要約であり、本記事ではMuseの実画面や対象地域・プランを確認していない。音声通話の段階提供と、アバター共有の予告は分けて読む必要がある。"
-        },
-        {
-          "type": "heading",
-          "text": "dotの所感"
-        },
-        {
-          "type": "paragraph",
-          "text": "声で相談し、文字で振り返れる組み合わせは日常の使い勝手に直結しそうだ。見た目の共有と会話データの共有は別の話なので、利用時は実際の共有対象を確かめたい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@testingcatalog：Muse音声通話",
-          "url": "https://x.com/testingcatalog/status/2114389254927220845"
-        },
-        {
-          "label": "@testingcatalog：Museアバター共有の予告",
-          "url": "https://x.com/testingcatalog/status/2114362756153430406"
-        }
-      ],
-      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。",
-      "kind": "headline",
-      "sourceMessageIds": [
-        "1792974199.676449"
-      ],
-      "sourceUrls": [
-        "https://x.com/testingcatalog/status/2114389254927220845",
-        "https://x.com/testingcatalog/status/2114362756153430406"
-      ],
-      "runDate": "2026-10-26"
-    },
-    {
-      "id": "20261026-ai-practical-roundup",
-      "title": "AI小ネタまとめ：使用量の節約、音声からの引き継ぎ、ローカルLLMの計測例",
-      "summary": "エージェントを長く使うための運用例と、ローカルLLMの実測報告を整理した。個人の体験や条件付きの結果を含み、同じ設定での再現や料金削減を保証するものではない。",
-      "category": "ai",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "Gemini APIの支出上限は、即時停止とは限らない"
-        },
-        {
-          "type": "paragraph",
-          "text": "Google側のローガン・キルパトリックの説明として、支出上限の反映に約10分かかり、リアルタイム化は作業中との情報が紹介された。通知だけの予算アラートとは別の機能という説明だが、本記事では管理画面や適用範囲を確認していない。上限ぴったりで必ず止まる前提にはしない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@OfficialLoganK https://x.com/OfficialLoganK/status/2114186751468265823"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/OfficialLoganK/status/2114186751468265823"
-        },
-        {
-          "type": "heading",
-          "text": "使用量は「読む前」と「やり直す前」に抑える"
-        },
-        {
-          "type": "paragraph",
-          "text": "テツメモの投稿要約では、巨大な入力、重複調査、変化のない状態確認、失敗処理の反復を主な無駄として挙げる。必要な資料を絞る、前の結果を再利用する、失敗の繰り返しを止めるという整理だ。紹介された外部ツールを入れるだけで、会話型サービスの利用枠が減ると確認されたわけではない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@tetumemo https://x.com/tetumemo/status/2114201534624096647"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/tetumemo/status/2114201534624096647"
-        },
-        {
-          "type": "heading",
-          "text": "音声で考え、文字で引き継ぐ"
-        },
-        {
-          "type": "paragraph",
-          "text": "音声で相談した後に要点を整理し、文字で実行範囲を確定する使い方が紹介された。別の体験談では、通話の前に目的・資料・確認が必要な点をチャットへ残すことで進めやすくなったという。会話の整理と実行指示を分ける例として参考になる。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@Michael_Fenech_ https://x.com/Michael_Fenech_/status/2114419721479266788 ／ @nvandewetering https://x.com/nvandewetering/status/2114180142712909874"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/Michael_Fenech_/status/2114419721479266788"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/nvandewetering/status/2114180142712909874"
-        },
-        {
-          "type": "heading",
-          "text": "iPhoneの声のショートカットからGrok Botを開く例"
-        },
-        {
-          "type": "paragraph",
-          "text": "iPhoneのショートカットと「声のショートカット」を組み合わせ、音声チャットを呼び出したという報告。ロック中の操作にはFace IDやタップ確認が関わるとされる。実際に表示されるアクションや認証動作は環境で異なり得るため、追加料金なし・完全ハンズフリーとは本記事では断定しない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@Texas_Twins_Dad https://x.com/Texas_Twins_Dad/status/2114217410823688573"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/Texas_Twins_Dad/status/2114217410823688573"
-        },
-        {
-          "type": "heading",
-          "text": "ローカルLLMの速度は、GPU名だけでは比べられない"
-        },
-        {
-          "type": "paragraph",
-          "text": "Facebookグループ「Open Source, Local LLM & AI Agent」の要約には、RTX 5090でDeepSeek Flash v4.1のIQ2量子化を13〜15トークン/秒で動かした報告がある。ただしPCIe設定をGen4からGen5へ戻して再計測する予定とされ、確定した比較結果ではない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "別の報告はメモリ192GB・RTX 4090 24GBの環境で、RAM主体のDeepSeek Flash v4を5〜7トークン/秒で動かしたというもの。さらにRTX 3090でQwen 3.8 Flash Nextを128トークン/秒とする投稿もある。モデル、量子化、文脈長、測定方法が異なるため、これらの数値をGPU性能の順位表としては使えない。元投稿の公開範囲は未確認のため、個人名・画像は掲載しない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：Open Source, Local LLM & AI Agent（各報告は末尾の出典リンクを参照）"
-        },
-        {
-          "type": "heading",
-          "text": "dotの所感"
-        },
-        {
-          "type": "paragraph",
-          "text": "速いモデルを選ぶだけでなく、入力や繰り返しを減らす工夫の方がすぐ効く場合もある。実測値は条件と一緒に読み、日常の作業で再現できるかを見たい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "@OfficialLoganK：Gemini APIの支出上限",
-          "url": "https://x.com/OfficialLoganK/status/2114186751468265823"
-        },
-        {
-          "label": "@tetumemo：エージェント使用量の節約",
-          "url": "https://x.com/tetumemo/status/2114201534624096647"
-        },
-        {
-          "label": "@Michael_Fenech_：音声相談と文字での確認",
-          "url": "https://x.com/Michael_Fenech_/status/2114419721479266788"
-        },
-        {
-          "label": "@nvandewetering：チャットから音声へ引き継ぐ例",
-          "url": "https://x.com/nvandewetering/status/2114180142712909874"
-        },
-        {
-          "label": "@Texas_Twins_Dad：声のショートカットからGrok Bot",
-          "url": "https://x.com/Texas_Twins_Dad/status/2114217410823688573"
-        },
-        {
-          "label": "Open Source, Local LLM & AI Agent：RTX 5090の計測報告",
-          "url": "https://facebook.com/groups/runlocalai/permalink/1522910719636637/"
-        },
-        {
-          "label": "Open Source, Local LLM & AI Agent：RAM主体の実行例",
-          "url": "https://facebook.com/groups/runlocalai/permalink/1523135759614133/"
-        },
-        {
-          "label": "Open Source, Local LLM & AI Agent：RTX 3090の計測報告",
-          "url": "https://facebook.com/groups/runlocalai/permalink/1519084413352601/"
-        }
-      ],
-      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。",
-      "kind": "roundup",
-      "sourceMessageIds": [
-        "1792974198.337769",
-        "1792974204.986349",
-        "1792974085.234439",
-        "1792974086.458959",
-        "1792974084.006979",
-        "1792974149.008849"
-      ],
-      "sourceUrls": [
-        "https://x.com/OfficialLoganK/status/2114186751468265823",
-        "https://x.com/tetumemo/status/2114201534624096647",
-        "https://x.com/Michael_Fenech_/status/2114419721479266788",
-        "https://x.com/nvandewetering/status/2114180142712909874",
-        "https://x.com/Texas_Twins_Dad/status/2114217410823688573",
-        "https://facebook.com/groups/runlocalai/permalink/1522910719636637/",
-        "https://facebook.com/groups/runlocalai/permalink/1523135759614133/",
-        "https://facebook.com/groups/runlocalai/permalink/1519084413352601/"
-      ],
-      "runDate": "2026-10-26"
-    },
-    {
-      "id": "20261026-blender-android-demo",
-      "title": "BlenderのAndroidデモを公式が紹介：正式版とは分けて見る",
-      "summary": "Blender公式の投稿として、BCON26のAndroid移植デモとAPKが朝刊で紹介された。携帯端末での3D制作を示す試作であり、正式版の提供開始を意味するものではない。",
-      "category": "3dcg",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "kind": "headline",
-      "runDate": "2026-10-26",
-      "sourceMessageIds": [
-        "1792973379.560219"
-      ],
-      "sourceUrls": [
-        "https://x.com/Blender/status/2112882920100679859"
-      ],
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "Android移植",
-          "text": "@Blenderの投稿を紹介した朝刊によると、Blender on Androidの進捗を試すデモAPKが案内されている。デスクトップの制作環境をそのまま置き換える完成版としては扱わない。"
-        },
-        {
-          "type": "feature",
-          "label": "タッチ操作と他端末",
-          "text": "朝刊では、Android向けのビルド基盤やタッチUIをiPad・iOSにも生かし、そちらの開発をAndroidの後に再開する方針も紹介されている。iOS版の公開日や対応端末は、この資料からは確定できない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@Blender https://x.com/Blender/status/2112882920100679859"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/Blender/status/2112882920100679859"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "机を離れて形状を触れる可能性は大きい。ただし本番データの編集可否や端末ごとの安定性は別問題。デモの見栄えと実案件での適性は分けて判断したい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "Androidデモ紹介：Blender公式 @Blender",
-          "url": "https://x.com/Blender/status/2112882920100679859"
-        }
-      ],
-      "sourceNote": "2026年10月26日のSlack朝刊に収録された公式X投稿の要約をもとに編集。デモの実行、動画全体の視聴、対応端末の検証は未実施。今日新たに公開されたとは断定していない。"
-    },
-    {
-      "id": "20261026-hi3d-code-weights",
-      "title": "Hi3D v1.0がコード・重みを公開：粗いメッシュを画像で詳細化",
-      "summary": "10月23日公開のHi3D v1.0は、粗いメッシュと同じ物体の参考画像から形状を精細化する。推論コードと重みを利用できる一方、生成対象・検証GPU・ライセンスには条件がある。",
-      "category": "3dcg",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "kind": "headline",
-      "runDate": "2026-10-26",
-      "sourceMessageIds": [
-        "1792973379.560219"
-      ],
-      "sourceUrls": [
-        "https://x.com/Hi3D_AI/status/2113456796715319591",
-        "https://github.com/hi3d-official/Hi3Dv1.0"
-      ],
-      "blocks": [
-        {
-          "type": "feature",
-          "label": "形状のリファイン",
-          "text": "公式リポジトリによると、Sparc3Dを基盤に粗いメッシュを段階的に詳細化する。出力は形状のみで、テクスチャやマテリアルは生成しない。入力の大きな構造誤りを必ず直すものでもない。"
-        },
-        {
-          "type": "feature",
-          "label": "解像度とGPU",
-          "text": "最大1536³は疎な抽出グリッドの公称解像度で、ポリゴン数そのものではない。この設定の検証環境は96GBのNVIDIA H20。小容量GPUでの必要VRAMや実行可否は未確立で、96GBを最低要件と読み替えるのも不正確だ。"
-        },
-        {
-          "type": "feature",
-          "label": "公開範囲",
-          "text": "推論コードとモデル重みが対象で、学習コードや論文の評価一式は含まれない。独自のHi3D Open License Agreementに従うため、商用組み込みや再配布は適用条件を確認する必要がある。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：Hi3D公式リポジトリ https://github.com/hi3d-official/Hi3Dv1.0 ／ 発表 @Hi3D_AI https://x.com/Hi3D_AI/status/2113456796715319591"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/Hi3D_AI/status/2113456796715319591"
-        },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "ゼロから作るだけでなく、既存の粗い形を仕上げる工程に注目したい。一方、精細な出力がそのまま軽いゲーム用メッシュや編集しやすいトポロジーになるとは限らない。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "仕様・検証範囲・ライセンス概要：Hi3D公式GitHub",
-          "url": "https://github.com/hi3d-official/Hi3Dv1.0"
-        },
-        {
-          "label": "発表：@Hi3D_AI",
-          "url": "https://x.com/Hi3D_AI/status/2113456796715319591"
-        }
-      ],
-      "sourceNote": "Slack朝刊を起点に、2026年10月26日に公式GitHubのREADMEを読み、公開日・出力・GPU検証範囲・ライセンスの記載を照合。実行や性能測定は未実施。10月23日の公開を紹介する記事であり、本日の新発表ではない。"
-    },
-    {
-      "id": "20261026-cg-workflow-roundup",
-      "title": "3DCG小ネタ集：直接リグ操作、4DGS、Blenderの見やすさ",
-      "summary": "制作の手触りに関わる話題をまとめる。リグの直接操作、動く被写体の3D表現、ビューポート設定、プロシージャルなガラスの紹介を、確認できた資料の範囲で整理した。",
-      "category": "3dcg",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "sourceMessageIds": [
-        "1792973379.560219",
-        "1792974150.423899"
-      ],
-      "sourceUrls": [
-        "https://x.com/UnrealEngine/status/2113692223921606793",
-        "https://x.com/ianiluvr/status/2113925819437638082",
-        "https://x.com/BunchoCG/status/2113844598925918341",
-        "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/"
-      ],
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "UE：メッシュから直接ポーズを操作"
-        },
-        {
-          "type": "paragraph",
-          "text": "Unreal Engine公式投稿の朝刊要約では、UE5.8のリグ操作としてメッシュのクリック・ドラッグを紹介。PolyGroupsとDirect Mesh Layersで操作範囲を割り当て、IK/FKの状態に合わせるという内容だ。対象バージョンでの実際の設定や制約は公式の説明で確認したい。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：@UnrealEngine https://x.com/UnrealEngine/status/2113692223921606793"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/UnrealEngine/status/2113692223921606793"
-        },
-        {
-          "type": "heading",
-          "text": "4DGS：動く被写体を扱うMVの作例"
-        },
-        {
-          "type": "paragraph",
-          "text": "@ianiluvrの投稿として、A2OのMVで使われた4Dガウシアンスプラッティングの解説が紹介された。撮影後の視点変更という制作上の利点に注目する作例で、あらゆる撮影素材から自由な視点を復元できると一般化はできない。"
+          "text": "@ianiluvrの投稿として、A2OのMVで使われた4Dガウシアンスプラッティング（動く被写体を立体の点で再現する技術）の解説が紹介された。撮影後の視点変更という制作上の利点に注目する作例で、あらゆる撮影素材から自由な視点を復元できると一般化はできない。",
+          "links": [
+            {
+              "text": "4Dガウシアンスプラッティング",
+              "url": "https://guanjunwu.github.io/4dgs/"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1844,7 +1170,7 @@
         },
         {
           "type": "heading",
-          "text": "窓ガラス：縁のうねりと汚れを手続き化"
+          "text": "Blenderの窓ガラスに、縁のうねりや汚れを付ける例"
         },
         {
           "type": "paragraph",
@@ -1854,55 +1180,6 @@
           "type": "paragraph",
           "text": "出典：Blender Artists Community https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/"
         },
-        {
-          "type": "feature",
-          "label": "dotの所感",
-          "text": "新しい表現手法だけでなく、操作やプレビューの小さな改善も制作効率に効く。作例の完成度と、自分のシーンで再現できるかは分けて見たい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "直接リグ操作：@UnrealEngine",
-          "url": "https://x.com/UnrealEngine/status/2113692223921606793"
-        },
-        {
-          "label": "4DGSのMV作例：@ianiluvr",
-          "url": "https://x.com/ianiluvr/status/2113925819437638082"
-        },
-        {
-          "label": "ビューポート設定：@BunchoCG",
-          "url": "https://x.com/BunchoCG/status/2113844598925918341"
-        },
-        {
-          "label": "ガラスシェーダー紹介：Blender Artists Community",
-          "url": "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/"
-        }
-      ],
-      "sourceNote": "Grok・MuseのSlack朝刊要約を資料として編集。リンク先全文・動画・実機操作は未検証。Facebookグループの公開範囲は未確認のため個人名と画像は掲載せず、一般的な技法の匿名要約に限った。"
-    },
-    {
-      "id": "20261026-terrain-workflow-roundup",
-      "title": "地形生成まとめ：実DEMを基準に、AIとPCGを組み合わせる",
-      "summary": "実標高データを使う島づくり、コード主体の地形シーン、UEの植生配置を紹介。速く生成するだけでなく、現実の地形との比較やレンダー前の確認が共通するポイントだ。",
-      "category": "terrain",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "kind": "roundup",
-      "runDate": "2026-10-26",
-      "sourceMessageIds": [
-        "1792973746.974769",
-        "1792973748.237009",
-        "1792974153.330269"
-      ],
-      "sourceUrls": [
-        "https://x.com/sai0xgen/status/2114394053932458297",
-        "https://x.com/itsfazley/status/2114341216045425010",
-        "https://x.com/rewind02/status/2114371572043489425",
-        "https://x.com/xbquan/status/2114262710452203896",
-        "https://x.com/oTTeuMsTudio/status/2114183814868005136",
-        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/"
-      ],
-      "blocks": [
         {
           "type": "heading",
           "text": "実在の島を生成品質の物差しに"
@@ -1936,6 +1213,10 @@
           "url": "https://x.com/itsfazley/status/2114341216045425010"
         },
         {
+          "type": "paragraph",
+          "text": "出典：UE試作紹介：@rewind02 https://x.com/rewind02/status/2114371572043489425"
+        },
+        {
           "type": "xpost",
           "url": "https://x.com/rewind02/status/2114371572043489425"
         },
@@ -1957,7 +1238,7 @@
         },
         {
           "type": "heading",
-          "text": "UE PCG：ペイントレイヤーで植生を分ける"
+          "text": "Unreal Engineで塗り分けた地面に、別々の草木を自動配置する"
         },
         {
           "type": "paragraph",
@@ -1973,23 +1254,87 @@
         },
         {
           "type": "heading",
-          "text": "Gaea：実DEMの継ぎ目は未解決の相談"
+          "text": "Gaeaで実際の標高データをつなぐと境目が残る、利用者から相談"
         },
         {
           "type": "paragraph",
-          "text": "QuadSpinner Gaeaグループ由来の要約には、実DEMの細部を保ちながら継ぎ目を消したいという相談があった。朝刊時点では回答なしとされるため、有効なノード構成や解決策が見つかった話としては扱わない。"
+          "text": "QuadSpinner Gaeaグループ由来の要約には、実DEM（実際の標高データ）の細部を保ちながら継ぎ目を消したいという相談があった。朝刊時点では回答なしとされるため、有効なノード構成や解決策が見つかった話としては扱わない。",
+          "links": [
+            {
+              "text": "DEM",
+              "url": "https://www.usgs.gov/faqs/what-a-digital-elevation-model-dem"
+            }
+          ]
         },
         {
           "type": "paragraph",
           "text": "出典：QuadSpinner Gaea https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/"
         },
         {
+          "type": "heading",
+          "text": "Gaeaの岩屑は数と大きさを調整して見比べる"
+        },
+        {
+          "type": "feature",
+          "label": "調整の着眼点",
+          "text": "Geminiによる動画要約では、破片の数を増やし、スケールを調整して岩肌の質感を変える操作が説明されている。地形全体を作り直す話ではなく、岩屑表現の見え方に着目した短い作例だ。"
+        },
+        {
+          "type": "feature",
+          "label": "再現の限界",
+          "text": "取得した説明文はGaea 2などのタグが中心で、具体的なパラメーター値やノード接続、対象バージョンの詳細は確認できていない。タイトルの「20秒」を一般的な作業時間の保証とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Kalysteon「Fix Default Debris That Looks Bad in 20s」 https://www.youtube.com/watch?v=DcteH2TE36I"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
-          "text": "実地形を基準にし、配置ルールを明示し、低コストな確認を先に通す。この順序なら、AI生成の速さを生かしつつ破綻を見つけやすい。"
+          "text": "モデルを作り直す前に、表示や粒の大きさを少し変えるだけでも違いが出そう。地形づくりの話も一緒に置いたので、自分の作業に使えそうなコツを拾ってみてね。"
         }
       ],
       "sources": [
+        {
+          "label": "@andkalysh",
+          "url": "https://x.com/andkalysh/status/2112495844448448549"
+        },
+        {
+          "label": "@TJGM_",
+          "url": "https://x.com/TJGM_/status/2112919590582038824"
+        },
+        {
+          "label": "@indyzone",
+          "url": "https://x.com/indyzone/status/2113548484523765764"
+        },
+        {
+          "label": "@zackontopx",
+          "url": "https://x.com/zackontopx/status/2113413680075583645"
+        },
+        {
+          "label": "Blender Tutorials and Tips!",
+          "url": "https://facebook.com/groups/blendertutorials/permalink/1449761743703971/"
+        },
+        {
+          "label": "Blender Tips",
+          "url": "https://facebook.com/groups/282909453705941/permalink/1479462364050638/"
+        },
+        {
+          "label": "Blender Tips",
+          "url": "https://facebook.com/groups/282909453705941/permalink/1480243007305907/"
+        },
+        {
+          "label": "4DGSのMV作例：@ianiluvr",
+          "url": "https://x.com/ianiluvr/status/2113925819437638082"
+        },
+        {
+          "label": "ビューポート設定：@BunchoCG",
+          "url": "https://x.com/BunchoCG/status/2113844598925918341"
+        },
+        {
+          "label": "ガラスシェーダー紹介：Blender Artists Community",
+          "url": "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/"
+        },
         {
           "label": "実標高の島：@sai0xgen",
           "url": "https://x.com/sai0xgen/status/2114394053932458297"
@@ -2013,125 +1358,124 @@
         {
           "label": "未解決のDEM相談：QuadSpinner Gaea",
           "url": "https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/"
-        }
-      ],
-      "sourceNote": "2026年10月26日のGrok・MuseのSlack朝刊要約から編集。各動画の全編、制作PDF、実行環境は未検証。Facebookの公開範囲は未確認のため画像・個人名を掲載せず、非センシティブな技術論点だけを匿名要約した。"
-    },
-    {
-      "id": "20261026-eso-season-two-witches-festival",
-      "runDate": "2026-10-26",
-      "kind": "headline",
-      "category": "eso",
-      "publishedAt": "2026-10-26T10:12:13+09:00",
-      "sample": false,
-      "title": "ESOシーズン2と魔女祭が開催中：基本ゲームで遊べる範囲と報酬の注意点",
-      "summary": "10月21日に始まったシーズン2ではGreymoorとWolfhunterが基本ゲームへ合流。魔女祭の金Plunder Skullについては、新スタイルが必ず出るわけではないとZOSが説明している。",
-      "blocks": [
-        {
-          "type": "heading",
-          "text": "シーズン2で今遊べるもの"
         },
         {
-          "type": "feature",
-          "label": "基本ゲームへ統合",
-          "text": "基本ゲーム所有者は、Greymoorのゾーン・ストーリー、古遺物システム、12人用試練Kyne’s Aegisを追加購入なしで利用できる。Wolfhunterの既存4人用ダンジョンも対象だ。"
+          "label": "Kalysteon：Fix Default Debris That Looks Bad in 20s",
+          "url": "https://www.youtube.com/watch?v=DcteH2TE36I"
         },
         {
-          "type": "feature",
-          "label": "ソロダンジョン",
-          "text": "月狩人の砦とマーチ・オブ・サクリファイスに、難度を選べるソロ版と新報酬が登場した。新規のダンジョン地形を2つ追加したという意味ではなく、既存ダンジョンを一人用にしたもの。"
+          "label": "用語解説：DEM",
+          "url": "https://www.usgs.gov/faqs/what-a-digital-elevation-model-dem"
         },
         {
-          "type": "feature",
-          "label": "今後の追加",
-          "text": "Markarthの基本ゲーム化は11月9日予定。シーズン2は2027年1月27日までで、すべての追加要素が初日に揃うわけではない。Tamriel Tomeには無料と有料の選択肢がある。"
+          "label": "用語解説：Houdini",
+          "url": "https://www.sidefx.com/products/houdini/"
         },
         {
-          "type": "paragraph",
-          "text": "シーズン2の出典：@Bethesda_jpn https://x.com/Bethesda_jpn/status/2113099275211071516"
+          "label": "用語解説：Gaea",
+          "url": "https://www.quadspinner.com/"
         },
         {
-          "type": "xpost",
-          "url": "https://x.com/Bethesda_jpn/status/2113099275211071516"
-        },
-        {
-          "type": "heading",
-          "text": "魔女祭の新スタイルは確定ではない"
-        },
-        {
-          "type": "paragraph",
-          "text": "魔女祭の開催告知：@TESOnline https://x.com/TESOnline/status/2113328339964268564"
-        },
-        {
-          "type": "xpost",
-          "url": "https://x.com/TESOnline/status/2113328339964268564"
-        },
-        {
-          "type": "feature",
-          "label": "公式の回答",
-          "text": "ZOSは10月23日、Zheklegスタイルページのドロップ率と入手先を確認し、意図した設定になっていると回答した。金のPlunder Skullから必ず出るわけではない。"
-        },
-        {
-          "type": "feature",
-          "label": "購入との違い",
-          "text": "Impresarioでも販売されるが、購入品は帰属する。取引可能なドロップ品と混同しない。確率の具体的な数値や、何箱で入手できるという保証は示されていない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "dotの所感：復帰するなら、まず追加購入なしで利用できるコンテンツを確認したい。魔女祭は確定報酬と抽選報酬を分けて考えると、周回の期待を調整しやすい。"
-        }
-      ],
-      "sources": [
-        {
-          "label": "X・@Bethesda_jpn",
-          "url": "https://x.com/Bethesda_jpn/status/2113099275211071516"
-        },
-        {
-          "label": "ESO公式・Season Two: Echoes of Skyrim Now Live（10月21日）",
-          "url": "https://www.elderscrollsonline.com/en-us/news/post/70487"
-        },
-        {
-          "label": "X・@TESOnline",
-          "url": "https://x.com/TESOnline/status/2113328339964268564"
-        },
-        {
-          "label": "ESO公式フォーラム・ZOSの金Plunder Skull回答（10月23日）",
-          "url": "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
+          "label": "用語解説：4Dガウシアンスプラッティング",
+          "url": "https://guanjunwu.github.io/4dgs/"
         }
       ],
       "sourceMessageIds": [
-        "1792973753.073739"
+        "1792919363.451509",
+        "1792919372.618529",
+        "1792974149.778189",
+        "1792974150.423899",
+        "1792973379.560219",
+        "1792973746.974769",
+        "1792973748.237009",
+        "1792974153.330269"
       ],
-      "forumEvidence": [
-        {
-          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700409/plunder-skulls",
-          "previousCheckedAt": null,
-          "checkedAt": "2026-10-26T01:02:00Z",
-          "points": [
-            "10月23日ZOS公式回答：Zheklegページは金箱の確定ドロップではない",
-            "Impresario購入品は帰属する"
-          ],
-          "officialReplyUrl": "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
-        }
-      ],
-      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。",
       "sourceUrls": [
-        "https://x.com/Bethesda_jpn/status/2113099275211071516",
-        "https://www.elderscrollsonline.com/en-us/news/post/70487",
-        "https://x.com/TESOnline/status/2113328339964268564",
-        "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
-      ]
+        "https://x.com/andkalysh/status/2112495844448448549",
+        "https://x.com/TJGM_/status/2112919590582038824",
+        "https://x.com/indyzone/status/2113548484523765764",
+        "https://x.com/zackontopx/status/2113413680075583645",
+        "https://facebook.com/groups/blendertutorials/permalink/1449761743703971/",
+        "https://facebook.com/groups/282909453705941/permalink/1479462364050638/",
+        "https://facebook.com/groups/282909453705941/permalink/1480243007305907/",
+        "https://x.com/ianiluvr/status/2113925819437638082",
+        "https://x.com/BunchoCG/status/2113844598925918341",
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/",
+        "https://x.com/sai0xgen/status/2114394053932458297",
+        "https://x.com/itsfazley/status/2114341216045425010",
+        "https://x.com/rewind02/status/2114371572043489425",
+        "https://x.com/xbquan/status/2114262710452203896",
+        "https://x.com/oTTeuMsTudio/status/2114183814868005136",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/",
+        "https://www.youtube.com/watch?v=DcteH2TE36I"
+      ],
+      "sourceNote": "既存の2026年10月26日公開記事を内容別に再編集。元記事の確認範囲・未確認の注記を各項目に引き継ぎ、ここで新たな裏取りや実機検証をしたものではない。10月25日夕方の地形素材は所有者指定の例外掲載。 Gaeaの岩屑動画は2026年10月25日公開の32秒動画。既存記事で取得したYouTube公開メタデータとGemini要約の範囲を引き継ぎ、今回再解析はしていない。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "videoId": "DcteH2TE36I",
+      "videoTitle": "Fix Default Debris That Looks Bad in 20s",
+      "videoPublishedAt": "2026-10-25T06:12:15Z",
+      "editorialSourceArticles": [
+        "20261026-backfill-terrain-oct25-roundup",
+        "20261026-backfill-blender-facebook-tips",
+        "20261026-cg-workflow-roundup",
+        "20261026-terrain-workflow-roundup",
+        "20261026-gaea-debris-video"
+      ],
+      "thumbnailKey": "cg-tips"
     },
     {
-      "id": "20261026-eso-community-roundup",
-      "runDate": "2026-10-26",
-      "kind": "roundup",
+      "id": "20261026-eso-tips",
+      "title": "ESO小ネタ:2026年10月26日",
+      "summary": "日課と報酬集め、ソロ攻略、家具の使い方、夏時間終了に伴う時刻案内をまとめた。利用者の報告は公式仕様と区別している。",
       "category": "eso",
       "publishedAt": "2026-10-26T10:12:13+09:00",
       "sample": false,
-      "title": "ESO小ネタ：ソロ攻略の体験談、難度の議論、ハロウィン家具の作例",
-      "summary": "ウェアウルフでの攻略、難度設定の選び方、イベント家具の作例を紹介。個人の体験談と公式仕様を分けて読む。",
+      "kind": "roundup",
+      "runDate": "2026-10-26",
       "blocks": [
+        {
+          "type": "heading",
+          "text": "再取得ボードのデイリーも一緒に受けるという助言"
+        },
+        {
+          "type": "paragraph",
+          "text": "魔女祭のデイリー前に再取得ボード（Reacquisition Board）の依頼も受け、ほかのデイリー後に納品すると両立しやすい、というコミュニティの助言。デルブへ向かう依頼が多く、報酬箱から新しいブレトン家具の設計図が出る場合もあるという。未確認の報告であり、依頼条件や報酬の公式確認はなし。Facebookグループ内の投稿の要約で、元投稿のリンクなし。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online Players（グループ投稿の匿名要約）"
+        },
+        {
+          "type": "heading",
+          "text": "プランダースカルを集める場所についての回答"
+        },
+        {
+          "type": "paragraph",
+          "text": "グループ内の回答では、ダンジョン、デルブ、公開ダンジョン、Infinite Archiveを回る案が挙がっている。ワールドボスでは「ダメージ上位12人以内」が必要なので混雑を避けるという助言もあるが、未確認のコミュニティ報告で、現行の報酬判定について公式の確認はなし。Facebookグループ内の投稿の要約で、元投稿のリンクなし。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online Players（投稿とコメントの匿名要約）"
+        },
+        {
+          "type": "heading",
+          "text": "11月1日以降は更新時刻が1時間遅くなるとの案内、公式確認はまだ"
+        },
+        {
+          "type": "paragraph",
+          "text": "Grok朝刊が紹介した@mu_mu_360の案内では、11月1日のサマータイム終了に伴い、日本で見るイベント開始・終了とクラウンストア更新が23:00から24:00へ、メンテナンスも1時間後ろへずれるという。未確認の報告で、元要約にある「11月1日午前2時」の時間帯も明示されていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@mu_mu_360 https://x.com/mu_mu_360/status/2114477063205974229"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/mu_mu_360/status/2114477063205974229"
+        },
+        {
+          "type": "paragraph",
+          "text": "同じ案内では、10月26日〜11月1日はPC・Xbox・PSともメンテナンス予定なし、デイリークエスト更新は毎日19:00のまま、魔女祭は11月4日24:00までとされる。「11月4日24:00」は日付表記上11月5日0:00だが、その終了予定自体は公式確認前の報告。"
+        },
         {
           "type": "heading",
           "text": "ウェアウルフのソロ攻略例"
@@ -2165,15 +1509,6 @@
           "url": "https://x.com/Green_tea_rider/status/2114181476883497429"
         },
         {
-          "type": "feature",
-          "label": "フォーラムでの議論",
-          "text": "10月25日に始まった公開スレッドでは、能力制限による長期戦より戦闘の仕組みを学ぶ難しさを求める声と、攻撃・防御・回復を一人で成立させるビルド調整が試練だという声が交わされている。確認した返信にZOSの調整方針はなく、全プレイヤーの総意でもない。"
-        },
-        {
-          "type": "paragraph",
-          "text": "出典：ESO公式フォーラム https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty"
-        },
-        {
           "type": "heading",
           "text": "ハロウィン家具のハウジング作例"
         },
@@ -2190,11 +1525,16 @@
           "url": "https://x.com/tokino_werewolf/status/2114382626794664325"
         },
         {
-          "type": "paragraph",
-          "text": "dotの所感：挑戦したい人と短時間で周回したい人では、同じ難度でも評価が変わる。攻略例は装備や目的の違いを踏まえて参考にしたい。"
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "日課をまとめて済ませられるコツは助かるね。時刻変更と報酬の条件は勘違いしやすいから、遊ぶ直前にゲーム内の案内も見ておこう。"
         }
       ],
       "sources": [
+        {
+          "label": "@mu_mu_360",
+          "url": "https://x.com/mu_mu_360/status/2114477063205974229"
+        },
         {
           "label": "X・@kafka_IDK",
           "url": "https://x.com/kafka_IDK/status/2114192037964869640"
@@ -2204,36 +1544,668 @@
           "url": "https://x.com/Green_tea_rider/status/2114181476883497429"
         },
         {
-          "label": "ESO公式フォーラム・ソロダンジョンの難度に関する議論",
-          "url": "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty"
-        },
-        {
           "label": "X・@tokino_werewolf",
           "url": "https://x.com/tokino_werewolf/status/2114382626794664325"
         }
       ],
       "sourceMessageIds": [
+        "1792974151.175759",
+        "1792974151.831839",
+        "1792973747.798799",
         "1792973753.073739"
       ],
-      "forumEvidence": [
-        {
-          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty",
-          "previousCheckedAt": null,
-          "checkedAt": "2026-10-26T01:02:00Z",
-          "points": [
-            "10月25日開始のソロダンジョン難度議論",
-            "長期戦への不満とビルド調整の挑戦を評価する意見の両方",
-            "公式の調整方針は未確認"
-          ]
-        }
-      ],
-      "sourceNote": "X部分はGrok朝刊の要約と原投稿URLを使用。動画の視聴・画像の詳細検証・ゲーム内の再現試験は未実施。フォーラムは親投稿と複数の返信を実読し、コミュニティの評価として要約した。",
       "sourceUrls": [
+        "https://x.com/mu_mu_360/status/2114477063205974229",
         "https://x.com/kafka_IDK/status/2114192037964869640",
         "https://x.com/Green_tea_rider/status/2114181476883497429",
-        "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty",
         "https://x.com/tokino_werewolf/status/2114382626794664325"
-      ]
+      ],
+      "sourceNote": "既存の2026年10月26日公開記事を内容別に再編集。元記事の確認範囲・未確認の注記を各項目に引き継ぎ、ここで新たな裏取りや実機検証をしたものではない。10月25日夕方の地形素材は所有者指定の例外掲載。",
+      "editorialSourceArticles": [
+        "20261026-backfill-eso-facebook-community",
+        "20261026-backfill-eso-dst-time-report",
+        "20261026-eso-community-roundup"
+      ],
+      "thumbnailKey": "eso-tips"
+    },
+    {
+      "id": "20261026-eso-news",
+      "title": "ESOニュース:2026年10月26日",
+      "summary": "クロスプレイが来た場合の影響と、ソロダンジョンの難しさをめぐる利用者の議論。公式の実装予定とは別の話として整理した。",
+      "category": "eso",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "roundup",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "クロスプレイが実現した場合への期待と懸念"
+        },
+        {
+          "type": "paragraph",
+          "text": "公開グループでは、もしクロスプレイが実現したらトレーダーがリセットされるのか、PvE・PvPランキングや市場価格はどうなるか、機種を越えたギルド勧誘ができるか、といった議論が紹介された。利用者の仮定と推測であり、クロスプレイの実装・予定・仕様について公式の確認はなし。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online（公開グループ） https://facebook.com/groups/esoeu/permalink/40422220507376434/"
+        },
+        {
+          "type": "heading",
+          "text": "ESOのソロダンジョンは難しい？ 戦闘の長さと仕掛けをめぐる議論"
+        },
+        {
+          "type": "feature",
+          "label": "フォーラムでの議論",
+          "text": "10月25日に始まった公開スレッドでは、能力制限による長期戦より戦闘の仕組みを学ぶ難しさを求める声と、攻撃・防御・回復を一人で成立させるビルド調整が試練だという声が交わされている。確認した返信にZOSの調整方針はなく、全プレイヤーの総意でもない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：ESO公式フォーラム https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "難しさの好みも、機種をまたいで遊べることへの期待も人それぞれだね。今ある仕様への感想と、まだ決まっていない将来の話を分けて読んでおきたい。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Elder Scrolls Online（公開グループ）",
+          "url": "https://facebook.com/groups/esoeu/permalink/40422220507376434/"
+        },
+        {
+          "label": "ESO公式フォーラム・ソロダンジョンの難度に関する議論",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792974151.175759",
+        "1792974151.831839",
+        "1792973753.073739"
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/esoeu/permalink/40422220507376434/",
+        "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty"
+      ],
+      "sourceNote": "既存の2026年10月26日公開記事を内容別に再編集。元記事の確認範囲・未確認の注記を各項目に引き継ぎ、ここで新たな裏取りや実機検証をしたものではない。10月25日夕方の地形素材は所有者指定の例外掲載。",
+      "editorialSourceArticles": [
+        "20261026-backfill-eso-facebook-community",
+        "20261026-eso-community-roundup"
+      ],
+      "thumbnailKey": "eso-news"
+    },
+    {
+      "id": "20261026-nanbeige43-teacher",
+      "title": "Nanbeigeが新AI「4.3-33B」を発表、小型版の開発にも活用へ",
+      "summary": "開発元は、作業を進めるAIの基盤として新モデルを紹介。小型版も計画しているが、性能比較は未検証。",
+      "category": "ai",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "feature",
+          "label": "教師モデル",
+          "text": "受信した発表要約では、先に強い33Bモデルを作り、その能力を小さいエージェントモデルへつなぐ方針を示している。"
+        },
+        {
+          "type": "feature",
+          "label": "性能の主張",
+          "text": "30B前後のオープンモデルの中で、エージェントのコーディングや協働作業に強みがあると開発側は説明する。比較条件や評価データを本記事では確認していないため、順位や他モデルへの優位を確定情報としては示さない。"
+        },
+        {
+          "type": "feature",
+          "label": "次の展開",
+          "text": "Nanbeige4.3-3Bも今後公開する計画とされる。現時点で3B版が利用可能になったという発表ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@nanbeige：Nanbeige4.3-33Bの発表 https://x.com/nanbeige/status/2114328933181333798"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/nanbeige/status/2114328933181333798"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "小型版にどこまで力を引き継げるか、楽しみだね。自分のPCで使いやすいサイズになるかも気になる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "@nanbeige：Nanbeige4.3-33Bの発表",
+          "url": "https://x.com/nanbeige/status/2114328933181333798"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792974199.676449"
+      ],
+      "sourceUrls": [
+        "https://x.com/nanbeige/status/2114328933181333798"
+      ],
+      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。",
+      "editorialSourceArticles": [
+        "20261026-nanbeige43-teacher"
+      ],
+      "thumbnailKey": "ai-product"
+    },
+    {
+      "id": "20261026-backfill-world-creator-4",
+      "title": "World Creator 4を10月末に公開予定との発表、地形の作り方と描画を刷新",
+      "summary": "前日朝刊が紹介したWorld Creator 4の発表投稿。ノード化、地形表現、描画方式、対応OSの話を、公式仕様の独立確認が済んでいない報告として整理する。",
+      "category": "terrain",
+      "publishedAt": "2026-10-26T13:32:04+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "ノードグラフ、浸食、河川を刷新との紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Grok朝刊では、@worldcreator3dの発表として、World Creator 4を10月末にリリース予定と紹介している。新しいノードグラフ、浸食と河川システム、100種以上のノイズ、雪・氷河・溶岩・瓦礫のシミュレーション、NASA／ESAなどの実データを使う惑星構築が挙げられた。正式な提供日や実装範囲は未確認。",
+          "links": [
+            {
+              "text": "World Creator",
+              "url": "https://www.world-creator.com/en/index.phtml"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@worldcreator3d https://x.com/worldcreator3d/status/2112464673513849043"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/worldcreator3d/status/2112464673513849043"
+        },
+        {
+          "type": "paragraph",
+          "text": "描画と対応環境：朝刊は、2007年に開発してGoogleにも提案したというCLOD（連続LOD）Terrain SDKを再設計し、パストレーサーとラスタライザーを併用すると説明している。「DLSS 5対応」、Apple SiliconのMac／Linux対応も挙げられているが、低性能GPUでも軽快に動くとの説明を含め、対応条件と性能は未確認。",
+          "links": [
+            {
+              "text": "DLSS",
+              "url": "https://www.nvidia.com/en-us/geforce/technologies/dlss/"
+            },
+            {
+              "text": "連続LOD",
+              "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-using-lods-in-unreal-engine"
+            },
+            {
+              "text": "SDK",
+              "url": "https://aws.amazon.com/what-is/sdk/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "地形を作る操作も表示も変わるなら、かなり気になる更新だね。正式公開後に、いつもの制作手順がどう楽になるか見てみたい。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "@worldcreator3d",
+          "url": "https://x.com/worldcreator3d/status/2112464673513849043"
+        },
+        {
+          "label": "用語解説：World Creator",
+          "url": "https://www.world-creator.com/en/index.phtml"
+        },
+        {
+          "label": "用語解説：LOD",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-using-lods-in-unreal-engine"
+        },
+        {
+          "label": "用語解説：SDK",
+          "url": "https://aws.amazon.com/what-is/sdk/"
+        },
+        {
+          "label": "用語解説：DLSS",
+          "url": "https://www.nvidia.com/en-us/geforce/technologies/dlss/"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792919363.451509",
+        "1792919372.618529"
+      ],
+      "sourceUrls": [
+        "https://x.com/worldcreator3d/status/2112464673513849043"
+      ],
+      "sourceNote": "2026年10月25日18:09 JSTのGrok朝刊を、所有者指定の今回限りの時間範囲例外として追加。Slackの投稿者ID・親子関係と全1返信を確認した。元X本文・映像や製品の実機検証は未実施。朝刊の紹介内容を未確認の報告として記載し、10月26日の新発表とは扱わない。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "editorialSourceArticles": [
+        "20261026-backfill-world-creator-4"
+      ],
+      "thumbnailKey": "terrain-product"
+    },
+    {
+      "id": "20261026-scenario-blender-video",
+      "title": "Blenderで文章から3D生成・シーン編集、Scenarioのプラグインを動画で紹介",
+      "summary": "Reindentが10月23日に公開した49秒の紹介動画。ScenarioのBlenderプラグインで、プロンプトによるオブジェクト生成や既存シーンの変更を紹介している。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "feature",
+          "label": "生成と編集",
+          "text": "動画の説明文では、文章から画像・3Dモデルを生成してシーンへ配置し、灯台やボート、街のテクスチャ、空の見た目を変更する例を紹介する。Geminiによる動画要約も、Blender内で生成と編集を扱うデモとして整理している。"
+        },
+        {
+          "type": "feature",
+          "label": "公開範囲",
+          "text": "説明文はプラグインをオープンソースと紹介している。ただし、連携サービスの利用料金や商用利用条件まで無料という意味ではない。導入条件・対応版・実際の品質は未検証だ。"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "Blenderから出ずに試せるのは便利そうだね。短いデモだけでは分からない、生成後の手直しの量も気になるところ。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reindent：Blender Gets AI Scene Editing With Scenario's Plugin",
+          "url": "https://www.youtube.com/watch?v=UOz90g4ZUAA"
+        }
+      ],
+      "sourceMessageIds": [],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=UOz90g4ZUAA"
+      ],
+      "sourceNote": "元動画公開：2026年10月23日（YouTube Data API）。公開メタデータと49秒の動画に対するGemini 3.5 Flash-Lite要約を用いた最近の動画紹介であり、今日の新発表や実機検証ではない。",
+      "videoId": "UOz90g4ZUAA",
+      "videoTitle": "Blender Gets AI Scene Editing With Scenario's Plugin",
+      "videoPublishedAt": "2026-10-23T11:58:43Z",
+      "editorialSourceArticles": [
+        "20261026-scenario-blender-video"
+      ],
+      "thumbnailKey": "cg-product"
+    },
+    {
+      "id": "20261026-blender-android-demo",
+      "title": "BlenderのAndroid版が開発中、試せるデモを公式が紹介",
+      "summary": "Blender公式の投稿として、BCON26のAndroid移植デモとAPKが朝刊で紹介された。携帯端末での3D制作を示す試作であり、正式版の提供開始を意味するものではない。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "feature",
+          "label": "Android移植",
+          "text": "@Blenderの投稿を紹介した朝刊によると、Blender on Androidの進捗を試すデモAPKが案内されている。デスクトップの制作環境をそのまま置き換える完成版としては扱わない。"
+        },
+        {
+          "type": "feature",
+          "label": "タッチ操作と他端末",
+          "text": "朝刊では、Android向けのビルド基盤やタッチUIをiPad・iOSにも生かし、そちらの開発をAndroidの後に再開する方針も紹介されている。iOS版の公開日や対応端末は、この資料からは確定できない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@Blender https://x.com/Blender/status/2112882920100679859"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Blender/status/2112882920100679859"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "タブレットでBlenderを触れるのはわくわくするね。まずはデモとして、タッチ操作の使い心地を見てみたい。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Androidデモ紹介：Blender公式 @Blender",
+          "url": "https://x.com/Blender/status/2112882920100679859"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792973379.560219"
+      ],
+      "sourceUrls": [
+        "https://x.com/Blender/status/2112882920100679859"
+      ],
+      "sourceNote": "2026年10月26日のSlack朝刊に収録された公式X投稿の要約をもとに編集。デモの実行、動画全体の視聴、対応端末の検証は未実施。今日新たに公開されたとは断定していない。",
+      "editorialSourceArticles": [
+        "20261026-blender-android-demo"
+      ],
+      "thumbnailKey": "cg-product"
+    },
+    {
+      "id": "20261026-hi3d-code-weights",
+      "title": "粗い3Dモデルを写真で細かくするHi3D、コードとAIモデルを公開",
+      "summary": "10月23日公開のHi3D v1.0は、粗いメッシュと同じ物体の参考画像から形状を精細化する。推論コードと重みを利用できる一方、生成対象・検証GPU・ライセンスには条件がある。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "feature",
+          "label": "形状のリファイン",
+          "text": "公式リポジトリによると、Sparc3Dを基盤に粗いメッシュを段階的に詳細化する。出力は形状のみで、テクスチャやマテリアルは生成しない。入力の大きな構造誤りを必ず直すものでもない。"
+        },
+        {
+          "type": "feature",
+          "label": "解像度とGPU",
+          "text": "最大1536³は疎な抽出グリッドの公称解像度で、ポリゴン数そのものではない。この設定の検証環境は96GBのNVIDIA H20。小容量GPUでの必要VRAMや実行可否は未確立で、96GBを最低要件と読み替えるのも不正確だ。"
+        },
+        {
+          "type": "feature",
+          "label": "公開範囲",
+          "text": "推論コードとモデル重みが対象で、学習コードや論文の評価一式は含まれない。独自のHi3D Open License Agreementに従うため、商用組み込みや再配布は適用条件を確認する必要がある。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Hi3D公式リポジトリ https://github.com/hi3d-official/Hi3Dv1.0 ／ 発表 @Hi3D_AI https://x.com/Hi3D_AI/status/2113456796715319591"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Hi3D_AI/status/2113456796715319591"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "ざっくり作った形を細かくできるのは魅力的だね。ただ、必要なPC性能や使ってよい範囲は、試す前に確認しておきたい。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "仕様・検証範囲・ライセンス概要：Hi3D公式GitHub",
+          "url": "https://github.com/hi3d-official/Hi3Dv1.0"
+        },
+        {
+          "label": "発表：@Hi3D_AI",
+          "url": "https://x.com/Hi3D_AI/status/2113456796715319591"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792973379.560219"
+      ],
+      "sourceUrls": [
+        "https://github.com/hi3d-official/Hi3Dv1.0",
+        "https://x.com/Hi3D_AI/status/2113456796715319591"
+      ],
+      "sourceNote": "Slack朝刊を起点に、2026年10月26日に公式GitHubのREADMEを読み、公開日・出力・GPU検証範囲・ライセンスの記載を照合。実行や性能測定は未実施。10月23日の公開を紹介する記事であり、本日の新発表ではない。",
+      "editorialSourceArticles": [
+        "20261026-hi3d-code-weights"
+      ],
+      "thumbnailKey": "cg-product"
+    },
+    {
+      "id": "20261026-unreal-direct-mesh",
+      "title": "Unreal Engine 5.8、モデルを直接つかんでポーズを変える操作を紹介",
+      "summary": "Unreal Engine公式投稿の朝刊要約では、モデルのクリックやドラッグによるリグ操作を紹介。対応条件は未確認。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "UE：メッシュから直接ポーズを操作"
+        },
+        {
+          "type": "paragraph",
+          "text": "Unreal Engine公式投稿の朝刊要約では、UE5.8のリグ操作としてメッシュのクリック・ドラッグを紹介。PolyGroupsとDirect Mesh Layersで操作範囲を割り当て、IK/FKの状態に合わせるという内容だ。対象バージョンでの実際の設定や制約は公式の説明で確認したい。",
+          "links": [
+            {
+              "text": "IK/FK",
+              "url": "https://help.autodesk.com/cloudhelp/2027/ENU/Maya-CharacterAnimation/files/GUID-390788DB-527D-4EE5-A8DC-B99BE2D4861F.htm"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@UnrealEngine https://x.com/UnrealEngine/status/2113692223921606793"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/UnrealEngine/status/2113692223921606793"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "細かい操作部品を探さず、見えているモデルをそのまま動かせるなら助かるね。複雑なキャラクターでも扱いやすいか気になる。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "直接リグ操作：@UnrealEngine",
+          "url": "https://x.com/UnrealEngine/status/2113692223921606793"
+        },
+        {
+          "label": "用語解説：IK/FK",
+          "url": "https://help.autodesk.com/cloudhelp/2027/ENU/Maya-CharacterAnimation/files/GUID-390788DB-527D-4EE5-A8DC-B99BE2D4861F.htm"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792973379.560219",
+        "1792974150.423899"
+      ],
+      "sourceUrls": [
+        "https://x.com/UnrealEngine/status/2113692223921606793"
+      ],
+      "sourceNote": "Grok・MuseのSlack朝刊要約を資料として編集。リンク先全文・動画・実機操作は未検証。Facebookグループの公開範囲は未確認のため個人名と画像は掲載せず、一般的な技法の匿名要約に限った。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "editorialSourceArticles": [
+        "20261026-cg-workflow-roundup"
+      ],
+      "thumbnailKey": "cg-product"
+    },
+    {
+      "id": "20261026-browser-photo-3d",
+      "title": "写真から3Dの手掛かりを復元、ブラウザーで動く試作ツールを紹介",
+      "summary": "写真をもとに撮影位置と立体の点を推定する仕組みをブラウザーで動かしたとの報告。公開範囲や性能は未確認。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-26T13:32:04+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "写真から撮影位置と立体の点を復元する試作"
+        },
+        {
+          "type": "paragraph",
+          "text": "@sameh_khamis は、Structure-from-Motionをブラウザ上で操作できる実装を紹介した。写真からカメラ位置と疎な点群（写真の特徴点を立体空間にまばらに配置したもの）を推定し、WebGPUでも動作するという。Vulkanバックエンドの方が速いとの説明は投稿者の評価で、環境をそろえた性能比較は未確認。完成した高密度3Dモデルまで自動生成するという意味ではない。",
+          "links": [
+            {
+              "text": "Structure-from-Motion",
+              "url": "https://colmap.github.io/tutorial.html"
+            },
+            {
+              "text": "WebGPU",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
+            },
+            {
+              "text": "Vulkan",
+              "url": "https://www.vulkan.org/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：@sameh_khamis https://x.com/sameh_khamis/status/2114152634202587291"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/sameh_khamis/status/2114152634202587291"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "ブラウザーで気軽に試せるなら、写真から3Dを作る入口になりそう。完成モデルがそのまま出るわけではない点は押さえておきたいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "@sameh_khamis：ブラウザの中で、写真が点群になる",
+          "url": "https://x.com/sameh_khamis/status/2114152634202587291"
+        },
+        {
+          "label": "用語解説：WebGPU",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
+        },
+        {
+          "label": "用語解説：Structure-from-Motion",
+          "url": "https://colmap.github.io/tutorial.html"
+        },
+        {
+          "label": "用語解説：Vulkan",
+          "url": "https://www.vulkan.org/"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792974190.499809",
+        "1792974202.314849"
+      ],
+      "sourceUrls": [
+        "https://x.com/sameh_khamis/status/2114152634202587291"
+      ],
+      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "editorialSourceArticles": [
+        "20261026-backfill-ai-visual-notes"
+      ],
+      "thumbnailKey": "cg-product"
+    },
+    {
+      "id": "20261026-eso-season-two-witches-festival",
+      "title": "ESOシーズン2で遊べる範囲が拡大、ソロダンジョンと今後の追加を整理",
+      "summary": "基本ゲームに含まれる冒険とソロダンジョン、今後の追加予定を整理。魔女祭の報酬は別記事に分けた。",
+      "category": "eso",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "シーズン2で今遊べるもの"
+        },
+        {
+          "type": "feature",
+          "label": "基本ゲームへ統合",
+          "text": "基本ゲーム所有者は、Greymoorのゾーン・ストーリー、古遺物システム、12人用試練Kyne’s Aegisを追加購入なしで利用できる。Wolfhunterの既存4人用ダンジョンも対象だ。"
+        },
+        {
+          "type": "feature",
+          "label": "ソロダンジョン",
+          "text": "月狩人の砦とマーチ・オブ・サクリファイスに、難度を選べるソロ版と新報酬が登場した。新規のダンジョン地形を2つ追加したという意味ではなく、既存ダンジョンを一人用にしたもの。"
+        },
+        {
+          "type": "feature",
+          "label": "今後の追加",
+          "text": "Markarthの基本ゲーム化は11月9日予定。シーズン2は2027年1月27日までで、すべての追加要素が初日に揃うわけではない。Tamriel Tomeには無料と有料の選択肢がある。"
+        },
+        {
+          "type": "paragraph",
+          "text": "シーズン2の出典：@Bethesda_jpn https://x.com/Bethesda_jpn/status/2113099275211071516"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Bethesda_jpn/status/2113099275211071516"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "復帰するなら、追加購入なしで何が遊べるかを先に見ておくとよさそう。ひとりで試せるダンジョンが増えるのも嬉しいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X・@Bethesda_jpn",
+          "url": "https://x.com/Bethesda_jpn/status/2113099275211071516"
+        },
+        {
+          "label": "ESO公式・Season Two: Echoes of Skyrim Now Live（10月21日）",
+          "url": "https://www.elderscrollsonline.com/en-us/news/post/70487"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792973753.073739"
+      ],
+      "sourceUrls": [
+        "https://x.com/Bethesda_jpn/status/2113099275211071516",
+        "https://www.elderscrollsonline.com/en-us/news/post/70487"
+      ],
+      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。",
+      "editorialSourceArticles": [
+        "20261026-eso-season-two-witches-festival"
+      ],
+      "thumbnailKey": "eso-official"
+    },
+    {
+      "id": "20261026-eso-witches-festival-rewards",
+      "title": "ESO魔女祭の新スタイルは必ず出るわけではない、公式が報酬を説明",
+      "summary": "魔女祭の開催案内と、新スタイルの入手についての公式回答。購入品とドロップ品の違いも整理した。",
+      "category": "eso",
+      "publishedAt": "2026-10-26T10:12:13+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-26",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "魔女祭の新スタイルは確定ではない"
+        },
+        {
+          "type": "paragraph",
+          "text": "魔女祭の開催告知：@TESOnline https://x.com/TESOnline/status/2113328339964268564"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/TESOnline/status/2113328339964268564"
+        },
+        {
+          "type": "feature",
+          "label": "公式の回答",
+          "text": "ZOSは10月23日、Zheklegスタイルページのドロップ率と入手先を確認し、意図した設定になっていると回答した。金のPlunder Skullから必ず出るわけではない。"
+        },
+        {
+          "type": "feature",
+          "label": "購入との違い",
+          "text": "Impresarioでも販売されるが、購入品は帰属する。取引可能なドロップ品と混同しない。確率の具体的な数値や、何箱で入手できるという保証は示されていない。"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "たくさん周回しても確定ではない、と分かっているだけで予定を立てやすいね。欲しいものを買う場合との違いも見ておこう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X・@TESOnline",
+          "url": "https://x.com/TESOnline/status/2113328339964268564"
+        },
+        {
+          "label": "ESO公式フォーラム・ZOSの金Plunder Skull回答（10月23日）",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
+        }
+      ],
+      "sourceMessageIds": [
+        "1792973753.073739"
+      ],
+      "sourceUrls": [
+        "https://x.com/TESOnline/status/2113328339964268564",
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
+      ],
+      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。",
+      "editorialSourceArticles": [
+        "20261026-eso-season-two-witches-festival"
+      ],
+      "thumbnailKey": "eso-official"
     },
     {
       "id": "blender-52-lts-video-review",
