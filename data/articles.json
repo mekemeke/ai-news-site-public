@@ -121,6 +121,10 @@
           "text": "対象地域・電話番号、対応プラン、追加料金、提供対象の詳細は受信資料だけでは確定できない。誰でも無料で利用できる機能としては扱わない。"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/elonmusk/status/2114365361068138990"
+        },
+        {
           "type": "heading",
           "text": "dotの所感"
         },
@@ -170,6 +174,10 @@
           "text": "Nanbeige4.3-3Bも今後公開する計画とされる。現時点で3B版が利用可能になったという発表ではない。"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/nanbeige/status/2114328933181333798"
+        },
+        {
           "type": "heading",
           "text": "dotの所感"
         },
@@ -208,9 +216,17 @@
           "text": "エージェントとのリアルタイム会話について、声の候補を選べることや、チャットに文字起こしが残るという利用者報告が紹介された。全ユーザーへの提供完了を意味するものではない。"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/testingcatalog/status/2114389254927220845"
+        },
+        {
           "type": "feature",
           "label": "アバター共有",
           "text": "共有画面に動くプレビューが表示される機能が予告されている。受信資料では、Workingなどの状態に応じた表示も紹介された。"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/testingcatalog/status/2114362756153430406"
         },
         {
           "type": "feature",
@@ -268,6 +284,10 @@
           "text": "出典：@OfficialLoganK https://x.com/OfficialLoganK/status/2114186751468265823"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/OfficialLoganK/status/2114186751468265823"
+        },
+        {
           "type": "heading",
           "text": "使用量は「読む前」と「やり直す前」に抑える"
         },
@@ -278,6 +298,10 @@
         {
           "type": "paragraph",
           "text": "出典：@tetumemo https://x.com/tetumemo/status/2114201534624096647"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/tetumemo/status/2114201534624096647"
         },
         {
           "type": "heading",
@@ -292,6 +316,14 @@
           "text": "出典：@Michael_Fenech_ https://x.com/Michael_Fenech_/status/2114419721479266788 ／ @nvandewetering https://x.com/nvandewetering/status/2114180142712909874"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/Michael_Fenech_/status/2114419721479266788"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/nvandewetering/status/2114180142712909874"
+        },
+        {
           "type": "heading",
           "text": "iPhoneの声のショートカットからGrok Botを開く例"
         },
@@ -302,6 +334,10 @@
         {
           "type": "paragraph",
           "text": "出典：@Texas_Twins_Dad https://x.com/Texas_Twins_Dad/status/2114217410823688573"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Texas_Twins_Dad/status/2114217410823688573"
         },
         {
           "type": "heading",
@@ -415,6 +451,10 @@
           "text": "出典：@Blender https://x.com/Blender/status/2112882920100679859"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/Blender/status/2112882920100679859"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "机を離れて形状を触れる可能性は大きい。ただし本番データの編集可否や端末ごとの安定性は別問題。デモの見栄えと実案件での適性は分けて判断したい。"
@@ -463,6 +503,10 @@
         {
           "type": "paragraph",
           "text": "出典：Hi3D公式リポジトリ https://github.com/hi3d-official/Hi3Dv1.0 ／ 発表 @Hi3D_AI https://x.com/Hi3D_AI/status/2113456796715319591"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Hi3D_AI/status/2113456796715319591"
         },
         {
           "type": "feature",
@@ -515,6 +559,10 @@
           "text": "出典：@UnrealEngine https://x.com/UnrealEngine/status/2113692223921606793"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/UnrealEngine/status/2113692223921606793"
+        },
+        {
           "type": "heading",
           "text": "4DGS：動く被写体を扱うMVの作例"
         },
@@ -527,6 +575,10 @@
           "text": "出典：@ianiluvr https://x.com/ianiluvr/status/2113925819437638082"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/ianiluvr/status/2113925819437638082"
+        },
+        {
           "type": "heading",
           "text": "Blender：ビューポートの鮮明さを見直す"
         },
@@ -537,6 +589,10 @@
         {
           "type": "paragraph",
           "text": "出典：@BunchoCG https://x.com/BunchoCG/status/2113844598925918341"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/BunchoCG/status/2113844598925918341"
         },
         {
           "type": "heading",
@@ -612,6 +668,10 @@
           "text": "出典：@sai0xgen https://x.com/sai0xgen/status/2114394053932458297"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/sai0xgen/status/2114394053932458297"
+        },
+        {
           "type": "heading",
           "text": "AIによるシーン構築は、作例として見る"
         },
@@ -622,6 +682,14 @@
         {
           "type": "paragraph",
           "text": "出典：@itsfazley https://x.com/itsfazley/status/2114341216045425010 ／ @rewind02 https://x.com/rewind02/status/2114371572043489425"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/itsfazley/status/2114341216045425010"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/rewind02/status/2114371572043489425"
         },
         {
           "type": "heading",
@@ -636,6 +704,10 @@
           "text": "出典：@xbquan https://x.com/xbquan/status/2114262710452203896"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/xbquan/status/2114262710452203896"
+        },
+        {
           "type": "heading",
           "text": "UE PCG：ペイントレイヤーで植生を分ける"
         },
@@ -646,6 +718,10 @@
         {
           "type": "paragraph",
           "text": "出典：@oTTeuMsTudio https://x.com/oTTeuMsTudio/status/2114183814868005136"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/oTTeuMsTudio/status/2114183814868005136"
         },
         {
           "type": "heading",
@@ -805,6 +881,10 @@
           "text": "出典：@kafka_IDK https://x.com/kafka_IDK/status/2114192037964869640"
         },
         {
+          "type": "xpost",
+          "url": "https://x.com/kafka_IDK/status/2114192037964869640"
+        },
+        {
           "type": "heading",
           "text": "不運の選択と「難しさ」の違い"
         },
@@ -815,6 +895,10 @@
         {
           "type": "paragraph",
           "text": "出典：@Green_tea_rider https://x.com/Green_tea_rider/status/2114181476883497429"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Green_tea_rider/status/2114181476883497429"
         },
         {
           "type": "feature",
@@ -836,6 +920,10 @@
         {
           "type": "paragraph",
           "text": "出典：@tokino_werewolf https://x.com/tokino_werewolf/status/2114382626794664325"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/tokino_werewolf/status/2114382626794664325"
         },
         {
           "type": "paragraph",

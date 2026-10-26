@@ -23,3 +23,10 @@ noindexはアクセス制御ではない。サイトとリポジトリは公開�
 任意の `icon` は `assets/eso/` 直下の英数字・ハイフン・アンダースコアのファイル名（PNG / JPEG / WebP）のみ。`iconAlt` に空でない代替テキストを指定する。外部URL・階層移動・不正なパス・未指定は画像を表示しない。取得・利用条件を確認できた実物画像だけを追加し、未取得または読込失敗は未掲載と表示する。
 
 現在の3枚は親が取得元と非商用の利用範囲を確認したHyperioxes参照画像に限定する。元ファイルは `gear_breton_medium_head_d.png` / `gear_undspriggan_head_a.png` / `gear_lucentguardian_heavy_head_a.webp`（https://static.hyperioxes.com/images/icons/）。元ページは https://hyperioxes.com/eso/tank/sets 。サイトのフッターに権利帰属・画像参照元・非公式非商用を表示する。
+
+## X投稿の埋め込み
+
+記事の `blocks` に `{"type": "xpost", "url": "https://x.com/<ユーザー名>/status/<投稿ID>"}` を置くと、その位置にXの公式埋め込み（`blockquote.twitter-tweet` + `https://platform.twitter.com/widgets.js`、`data-dnt="true"`）を表示する。対応する話題の「出典」段落の直後に置く。話題との対応が不明な投稿は置かない。
+受理するのはHTTPSの `x.com` / `www.x.com` / `twitter.com` / `www.twitter.com` の `/<ユーザー名>/status/<数字>` だけ。認証情報・ポート付き、他ホスト、画像・動画パスは表示しない。クエリとハッシュは捨てる。投稿IDは文字列のまま扱う。同じ投稿は1記事で1回だけ表示。生HTMLは入れない。
+widgets.jsは詳細画面で埋め込みがあるときだけ1回読み込む。一覧では読み込まない。読込失敗・削除・非公開でも記事本文と「Xで元投稿を見る」リンクは残る。dntを指定してもXへの通信は発生する。
+CSPは `script-src` と `frame-src` に `https://platform.twitter.com` だけを追加した。
