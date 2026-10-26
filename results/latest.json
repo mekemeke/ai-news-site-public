@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "3DCG",
-  "created_at": "2026-10-26T01:06:53.533826+00:00",
-  "run_id": "40252591375",
+  "genre": "terrain",
+  "created_at": "2026-10-26T01:09:37.382685+00:00",
+  "run_id": "40252820229",
   "videos": [
     {
-      "id": "UOz90g4ZUAA",
-      "url": "https://www.youtube.com/watch?v=UOz90g4ZUAA",
-      "title": "Blender Gets AI Scene Editing With Scenario's Plugin",
-      "channel": "Reindent",
-      "description": "Scenario just put AI scene creation and editing right inside Blender. Type a prompt and it makes an image, then a 3D model, and drops it straight into your scene. Then edit what's already there: rebuild a lighthouse in granite, cut a boat down to a game-ready low-poly mesh, retexture a whole town, or generate a new sky. It's Scenario's own open-source plugin for Blender, live now.\n\nFootage: Scenario (@Scenario_gg): https://x.com/Scenario_gg/status/2113250176307536334\n\nMusic: \"Dew\" by Dylann Taylor\n\n#Blender #3D #GameDev",
-      "published_at": "2026-10-23T11:58:43Z",
-      "duration_seconds": 49
+      "id": "DcteH2TE36I",
+      "url": "https://www.youtube.com/watch?v=DcteH2TE36I",
+      "title": "Fix Default Debris That Looks Bad in 20s",
+      "channel": "Kalysteon ",
+      "description": "gaea 2, gaea, gaea tutorial, terrain generation, procedural terrain, procedural generation, landscape, environment art, terrain artist, game environment, indie game, indie dev, indie game dev, gamedev, game development, solo dev, unreal engine 5, ue5, unreal engine, unity, unity 3d, 3d art, 3d terrain, heightmap, world building, open world, level design, dark fantasy, halloween, shorts, gaea tips, kalysteon",
+      "published_at": "2026-10-25T06:12:15Z",
+      "duration_seconds": 32
     }
   ],
   "usage": {
-    "total_input_tokens": 4447,
-    "total_output_tokens": 92,
+    "total_input_tokens": 2901,
+    "total_output_tokens": 60,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "Blender上でAIを活用した3Dシーンの作成や編集が行える新しいプラグイン「Scenario」の機能を紹介しています。ユーザーはテキストプロンプトを使ってボートや灯台などのオブジェクトを生成、編集し、テクスチャや空のデザインまでシームレスに変更できます。これにより、3Dモデリングのプロセスが効率化され、エディタ内で完結することが示されています。",
+    "summary": "男性が動画でGAEAソフトウェアを使用して山肌の破片表現の質感を高める方法を解説しています。デフォルトの設定を変更し、破片の数を増やしてスケールを調整することで、リアリティのある鋭い岩肌を作成しています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
