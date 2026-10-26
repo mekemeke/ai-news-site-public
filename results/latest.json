@@ -1,36 +1,36 @@
 {
   "schema_version": 1,
   "mode": "search",
-  "genre": "AI",
-  "created_at": "2026-10-26T01:02:31.449013+00:00",
-  "run_id": "40252230239",
+  "genre": "3DCG",
+  "created_at": "2026-10-26T01:03:33.576047+00:00",
+  "run_id": "40252314524",
   "videos": [
     {
-      "id": "kMvDbJtQnjY",
-      "url": "https://www.youtube.com/watch?v=kMvDbJtQnjY",
-      "title": "AI News Tamil Oct 25th 2026",
-      "channel": "AIWeeklyTamil",
-      "description": "",
-      "published_at": "2026-10-26T01:00:19Z",
-      "duration_seconds": 51
+      "id": "TOtiqGByUB4",
+      "url": "https://www.youtube.com/watch?v=TOtiqGByUB4",
+      "title": "ChatGPT Dots Can Build Any 3D Animation in Blender",
+      "channel": "Miguel Torrez",
+      "description": "ChatGPT Dots can build 3D animations and characters for you in Blender. Ask your Dot to set up Blender inside its own computer, then give it whatever you want animated.\n\nA creator on X did exactly that and got a dancing Dots character of his own. It works for anything: buildings, videos or your own creative character.\n\nFollow @migueltorrezai for daily AI news and tutorials.\n\n#ChatGPT #Blender #3DAnimation",
+      "published_at": "2026-10-25T08:30:26Z",
+      "duration_seconds": 28
     },
     {
-      "id": "NkCc6ntIitg",
-      "url": "https://www.youtube.com/watch?v=NkCc6ntIitg",
-      "title": "daily ai news 2026 10 26　 #ai  #news #shortvideo",
-      "channel": "河童堂ソフトウエア工房",
-      "description": "今日のAIニュース　2026/10/26",
-      "published_at": "2026-10-26T00:09:15Z",
-      "duration_seconds": 165
+      "id": "jHe4dBVuvIA",
+      "url": "https://www.youtube.com/watch?v=jHe4dBVuvIA",
+      "title": "Maya & Blender MetaBridge DNA Auto Cloth Fit Mode",
+      "channel": "ChamIseul Studio Ci",
+      "description": "Maya & Blender MetaBridge DNA Auto Cloth Fit Mode\nhttps://mayalhc.gumroad.com/\n\n클래스101  “MetaHuman 헤어·의상 제작 & FAB 판매 수익화 클래스” 구매 링크\nhttps://class101.net/ko/products/688d8d0b6a08dc6e2607efb6?from=home\n\nMore subscriptions and likes will make more tutorials available in the future ...\n3D 빠른 테크닉 정보를 원하시면 꼭 구독 해주세요! \n(Subscribe for 3D fast technique!)\n\nThe blog always has the latest news.\nhttps://chamiseul-blender.blogspot.com/\n\n#maya #b3d #blender #metabridge #dna #cloth #autofit",
+      "published_at": "2026-10-24T07:36:41Z",
+      "duration_seconds": 133
     },
     {
-      "id": "K77J4zxMU1k",
-      "url": "https://www.youtube.com/watch?v=K77J4zxMU1k",
-      "title": "Today's top AI news countdown: from political bias in major chatbots to new disclosure laws on synt…",
-      "channel": "AI News Daily",
-      "description": "Today's top AI news countdown: from political bias in major chatbots to new disclosure laws on synthetic ads. Subscribe for daily AI roundups! #AINews #TechNews #ArtificialIntelligence",
-      "published_at": "2026-10-25T23:46:22Z",
-      "duration_seconds": 24
+      "id": "UOz90g4ZUAA",
+      "url": "https://www.youtube.com/watch?v=UOz90g4ZUAA",
+      "title": "Blender Gets AI Scene Editing With Scenario's Plugin",
+      "channel": "Reindent",
+      "description": "Scenario just put AI scene creation and editing right inside Blender. Type a prompt and it makes an image, then a 3D model, and drops it straight into your scene. Then edit what's already there: rebuild a lighthouse in granite, cut a boat down to a game-ready low-poly mesh, retexture a whole town, or generate a new sky. It's Scenario's own open-source plugin for Blender, live now.\n\nFootage: Scenario (@Scenario_gg): https://x.com/Scenario_gg/status/2113250176307536334\n\nMusic: \"Dew\" by Dylann Taylor\n\n#Blender #3D #GameDev",
+      "published_at": "2026-10-23T11:58:43Z",
+      "duration_seconds": 49
     }
   ],
   "api_attempts": 2
