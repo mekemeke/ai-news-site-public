@@ -5,6 +5,7 @@
   const title = 'AIニュース | 仮公開プレビュー';
   const dateFormat = new Intl.DateTimeFormat('ja-JP', {timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false});
   let categories = [], articles = [], category = '', listY = 0, lastArticle = '', ready = false;
+  let xRenderToken = 0, xScript = null;
   let dark = false;
   try { dark = localStorage.getItem('ai-news-preview-theme') === 'dark'; } catch {}
   function setTheme() {
@@ -34,6 +35,44 @@
     if (typeof id !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(id)) return '';
     return `<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${escapeHTML(article.videoTitle || article.title)}" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
   }
+  const xHosts = ['x.com', 'www.x.com', 'twitter.com', 'www.twitter.com'];
+  function xPost(value) {
+    if (typeof value !== 'string') return null;
+    let url;
+    try { url = new URL(value); } catch { return null; }
+    if (url.protocol !== 'https:' || url.username || url.password || url.port || !xHosts.includes(url.hostname)) return null;
+    const match = url.pathname.match(/^\/([A-Za-z0-9_]{1,15})\/status\/([0-9]{1,25})\/?$/);
+    if (!match) return null;
+    // IDは桁落ちを避けるため文字列のまま扱う
+    return {user: match[1], id: match[2], href: `https://x.com/${match[1]}/status/${match[2]}`};
+  }
+  function xPostEmbed(block, seen) {
+    const post = xPost(block.url);
+    if (!post || seen.has(post.id)) return '';
+    seen.add(post.id);
+    const link = `<a href="${post.href}" target="_blank" rel="noopener noreferrer">`;
+    return `<figure class="x-embed"><blockquote class="twitter-tweet" data-dnt="true" data-lang="ja"${dark ? ' data-theme="dark"' : ''}><p>@${post.user} のX投稿（埋め込みを表示できない場合は下のリンクから確認できます）</p><a href="https://twitter.com/${post.user}/status/${post.id}">https://x.com/${post.user}/status/${post.id}</a></blockquote><figcaption>${link}Xで元投稿を見る ↗</a></figcaption></figure>`;
+  }
+  function loadXWidgets(container) {
+    const token = xRenderToken;
+    if (!container || !container.querySelector('blockquote.twitter-tweet')) return;
+    const run = () => {
+      if (token !== xRenderToken || !container.isConnected) return;
+      try { window.twttr.widgets.load(container); } catch {}
+    };
+    if (window.twttr?.widgets?.load) { run(); return; }
+    if (!xScript) {
+      xScript = document.createElement('script');
+      xScript.id = 'twitter-wjs';
+      xScript.src = 'https://platform.twitter.com/widgets.js';
+      xScript.async = true;
+      xScript.charset = 'utf-8';
+      document.head.append(xScript);
+    }
+    xScript.addEventListener('load', () => {
+      if (window.twttr?.ready) window.twttr.ready(run); else run();
+    }, {once: true});
+  }
   function metadata(article) {
     const sample = isSample(article);
     return `<div class="meta"><span class="category">${escapeHTML(categoryName(article.category))}</span><span class="status">${sample ? '架空サンプル' : 'ニュース・動画紹介'}</span><time datetime="${escapeHTML(article.publishedAt)}">${sample ? 'サンプル日時' : '記事掲載'} ${escapeHTML(dateLabel(article.publishedAt))} JST</time></div>`;
@@ -50,7 +89,9 @@
     $('end-note').hidden = filtered.length === 0;
   }
   function renderBlocks(blocks) {
+    const seenPosts = new Set();
     return blocks.map(block => {
+      if (block.type === 'xpost') return xPostEmbed(block, seenPosts);
       if (block.type === 'feature') {
         return `<p class="feature"><strong>${escapeHTML(block.label)}</strong>：${escapeHTML(block.text)}</p>`;
       }
@@ -60,6 +101,7 @@
   }
   function route() {
     if (!ready) return;
+    xRenderToken++;
     const match = location.hash.match(/^#article\/(.*)$/);
     const isDetail = !!match;
     if (isDetail && !$('home').hidden) { listY = window.scrollY; lastArticle = match[1]; }
@@ -87,6 +129,7 @@
     }
     window.scrollTo(0, 0);
     $('detail').focus({preventScroll: true});
+    loadXWidgets($('detail').querySelector('.article-body'));
   }
   $('categories').addEventListener('click', event => {
     const button = event.target.closest('[data-category]');
@@ -102,7 +145,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261026-morning1', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261026-xembed1', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
