@@ -1686,11 +1686,13 @@
       "sourceUrls": [
         "https://x.com/nanbeige/status/2114328933181333798"
       ],
-      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。",
+      "sourceNote": "10月26日のSlack朝刊の投稿要約をもとに編集。リンク先・画像・動画の独立確認および実機検証は未実施。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-nanbeige43-teacher"
       ],
-      "thumbnailKey": "ai-product"
+      "thumbnailKey": "ai-product",
+      "thumbnail": "assets/news/library-ai-model-v1.webp",
+      "thumbnailAlt": "AIモデルを表すオレンジ色の汎用イラスト。実際の製品画像ではありません。"
     },
     {
       "id": "20261026-backfill-world-creator-4",
@@ -1777,11 +1779,13 @@
       "sourceUrls": [
         "https://x.com/worldcreator3d/status/2112464673513849043"
       ],
-      "sourceNote": "2026年10月25日18:09 JSTのGrok朝刊を、所有者指定の今回限りの時間範囲例外として追加。Slackの投稿者ID・親子関係と全1返信を確認した。元X本文・映像や製品の実機検証は未実施。朝刊の紹介内容を未確認の報告として記載し、10月26日の新発表とは扱わない。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "sourceNote": "2026年10月25日18:09 JSTのGrok朝刊を、所有者指定の今回限りの時間範囲例外として追加。Slackの投稿者ID・親子関係と全1返信を確認した。元X本文・映像や製品の実機検証は未実施。朝刊の紹介内容を未確認の報告として記載し、10月26日の新発表とは扱わない。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-backfill-world-creator-4"
       ],
-      "thumbnailKey": "terrain-product"
+      "thumbnailKey": "terrain-product",
+      "thumbnail": "assets/news/library-terrain-create-v1.webp",
+      "thumbnailAlt": "地形制作を表す青色の汎用イラスト。実際のソフトの出力例ではありません。"
     },
     {
       "id": "20261026-scenario-blender-video",
@@ -1819,14 +1823,16 @@
       "sourceUrls": [
         "https://www.youtube.com/watch?v=UOz90g4ZUAA"
       ],
-      "sourceNote": "元動画公開：2026年10月23日（YouTube Data API）。公開メタデータと49秒の動画に対するGemini 3.5 Flash-Lite要約を用いた最近の動画紹介であり、今日の新発表や実機検証ではない。",
+      "sourceNote": "元動画公開：2026年10月23日（YouTube Data API）。公開メタデータと49秒の動画に対するGemini 3.5 Flash-Lite要約を用いた最近の動画紹介であり、今日の新発表や実機検証ではない。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "videoId": "UOz90g4ZUAA",
       "videoTitle": "Blender Gets AI Scene Editing With Scenario's Plugin",
       "videoPublishedAt": "2026-10-23T11:58:43Z",
       "editorialSourceArticles": [
         "20261026-scenario-blender-video"
       ],
-      "thumbnailKey": "cg-product"
+      "thumbnailKey": "cg-product",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
     },
     {
       "id": "20261026-blender-android-demo",
@@ -1874,11 +1880,13 @@
       "sourceUrls": [
         "https://x.com/Blender/status/2112882920100679859"
       ],
-      "sourceNote": "2026年10月26日のSlack朝刊に収録された公式X投稿の要約をもとに編集。デモの実行、動画全体の視聴、対応端末の検証は未実施。今日新たに公開されたとは断定していない。",
+      "sourceNote": "2026年10月26日のSlack朝刊に収録された公式X投稿の要約をもとに編集。デモの実行、動画全体の視聴、対応端末の検証は未実施。今日新たに公開されたとは断定していない。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-blender-android-demo"
       ],
-      "thumbnailKey": "cg-product"
+      "thumbnailKey": "cg-product",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
     },
     {
       "id": "20261026-hi3d-code-weights",
@@ -1936,11 +1944,13 @@
         "https://github.com/hi3d-official/Hi3Dv1.0",
         "https://x.com/Hi3D_AI/status/2113456796715319591"
       ],
-      "sourceNote": "Slack朝刊を起点に、2026年10月26日に公式GitHubのREADMEを読み、公開日・出力・GPU検証範囲・ライセンスの記載を照合。実行や性能測定は未実施。10月23日の公開を紹介する記事であり、本日の新発表ではない。",
+      "sourceNote": "Slack朝刊を起点に、2026年10月26日に公式GitHubのREADMEを読み、公開日・出力・GPU検証範囲・ライセンスの記載を照合。実行や性能測定は未実施。10月23日の公開を紹介する記事であり、本日の新発表ではない。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-hi3d-code-weights"
       ],
-      "thumbnailKey": "cg-product"
+      "thumbnailKey": "cg-product",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
     },
     {
       "id": "20261026-unreal-direct-mesh",
@@ -1997,11 +2007,13 @@
       "sourceUrls": [
         "https://x.com/UnrealEngine/status/2113692223921606793"
       ],
-      "sourceNote": "Grok・MuseのSlack朝刊要約を資料として編集。リンク先全文・動画・実機操作は未検証。Facebookグループの公開範囲は未確認のため個人名と画像は掲載せず、一般的な技法の匿名要約に限った。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "sourceNote": "Grok・MuseのSlack朝刊要約を資料として編集。リンク先全文・動画・実機操作は未検証。Facebookグループの公開範囲は未確認のため個人名と画像は掲載せず、一般的な技法の匿名要約に限った。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-cg-workflow-roundup"
       ],
-      "thumbnailKey": "cg-product"
+      "thumbnailKey": "cg-product",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
     },
     {
       "id": "20261026-browser-photo-3d",
@@ -2074,11 +2086,13 @@
       "sourceUrls": [
         "https://x.com/sameh_khamis/status/2114152634202587291"
       ],
-      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。",
+      "sourceNote": "10月26日のGrok Bot AgentによるAIツイート朝刊をもとにした追加掲載。Slackの元投稿と出典URLを確認した範囲の要約で、X原文・動画・公式発表を独立に検証したものではない。未確認の主張や予告は本文中で区別した。 用語解説リンクは語句の説明用で、各ニュースの主張を確認した根拠とは別。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-backfill-ai-visual-notes"
       ],
-      "thumbnailKey": "cg-product"
+      "thumbnailKey": "cg-product",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
     },
     {
       "id": "20261026-eso-season-two-witches-festival",
@@ -2140,11 +2154,13 @@
         "https://x.com/Bethesda_jpn/status/2113099275211071516",
         "https://www.elderscrollsonline.com/en-us/news/post/70487"
       ],
-      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。",
+      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-eso-season-two-witches-festival"
       ],
-      "thumbnailKey": "eso-official"
+      "thumbnailKey": "eso-official",
+      "thumbnail": "assets/news/library-game-official-v1.webp",
+      "thumbnailAlt": "幻想世界を表す緑色の汎用イラスト。ESOの公式画像・実際のゲーム画面ではありません。"
     },
     {
       "id": "20261026-eso-witches-festival-rewards",
@@ -2201,11 +2217,13 @@
         "https://x.com/TESOnline/status/2113328339964268564",
         "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
       ],
-      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。",
+      "sourceNote": "Slack朝刊を起点に10月21日の公式Season2記事と10月23日の公式フォーラム回答を照合した。今日の新発表ではなく、開催中の内容の整理。魔女祭詳細記事は年齢確認で本文未読のため、終了時刻や追加の報酬条件は断定していない。X動画は解析していない。 サムネイルはAI生成の汎用イラストで、実際の製品画面・ゲーム画面ではありません。",
       "editorialSourceArticles": [
         "20261026-eso-season-two-witches-festival"
       ],
-      "thumbnailKey": "eso-official"
+      "thumbnailKey": "eso-official",
+      "thumbnail": "assets/news/library-game-official-v1.webp",
+      "thumbnailAlt": "幻想世界を表す緑色の汎用イラスト。ESOの公式画像・実際のゲーム画面ではありません。"
     },
     {
       "id": "blender-52-lts-video-review",

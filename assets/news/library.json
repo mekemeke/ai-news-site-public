@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "genericText": {
+    "ai": "orange",
+    "cg": "blue",
+    "eso": "green"
+  },
+  "illustrations": [
+    {
+      "path": "assets/news/library-ai-model-v1.webp",
+      "topic": "ai-model",
+      "method": "built-in image generation; WebP optimized",
+      "officialImage": false,
+      "alt": "AIモデルを表すオレンジ色の汎用イラスト。実際の製品画像ではありません。"
+    },
+    {
+      "path": "assets/news/library-cg-edit-v1.webp",
+      "topic": "cg-edit",
+      "method": "built-in image generation; WebP optimized",
+      "officialImage": false,
+      "alt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "path": "assets/news/library-terrain-create-v1.webp",
+      "topic": "terrain-create",
+      "method": "built-in image generation; WebP optimized",
+      "officialImage": false,
+      "alt": "地形制作を表す青色の汎用イラスト。実際のソフトの出力例ではありません。"
+    },
+    {
+      "path": "assets/news/library-game-official-v1.webp",
+      "topic": "game-official",
+      "method": "built-in image generation; WebP optimized",
+      "officialImage": false,
+      "alt": "幻想世界を表す緑色の汎用イラスト。ESOの公式画像・実際のゲーム画面ではありません。"
+    }
+  ]
+}
