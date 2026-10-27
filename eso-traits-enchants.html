@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>特性・付呪 | ESOデータベース</title>
+  <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
+  <link rel="stylesheet" href="./eso-traits-enchants.css?v=20261027-reference1">
+  <script src="./eso-traits-enchants.js?v=20261027-reference1" defer></script>
+</head>
+<body class="eso-reference-page">
+  <a class="skip" href="#main">本文へ</a>
+  <header><a class="brand" href="./">AIニュース <span class="preview-badge">仮公開</span></a></header>
+  <nav class="primary-nav" aria-label="メインナビゲーション"><a href="./">ニュース</a><a href="./eso.html" aria-current="page">ESOデータベース</a></nav>
+  <main id="main" tabindex="-1">
+    <nav class="database-nav" aria-label="ESOデータベース"><a href="./eso.html">装備セット</a><a href="./eso-skills.html">スキル</a><a href="./eso-traits-enchants.html" aria-current="page">特性・付呪</a></nav>
+    <section id="reference-home" aria-labelledby="reference-title">
+      <div class="eso-ref-heading"><p class="eso-ref-eyebrow">ESO / TRAITS &amp; ENCHANTMENTS</p><h1 id="reference-title">特性・付呪</h1><p class="lead">装備の種類から、付けられる特性とグリフの効果を探す。</p></div>
+      <div id="reference-coverage" class="database-note">収録範囲と参照資料の情報を読み込み中…</div>
+      <section class="eso-ref-filter-section" aria-labelledby="reference-kind-title"><h2 id="reference-kind-title"><span>01</span> 特性 / 付呪</h2><nav id="reference-views" class="eso-ref-chips eso-ref-view-chips" aria-label="特性と付呪を切り替え"></nav><p id="reference-view-hint" class="eso-ref-muted"></p></section>
+      <section class="eso-ref-filter-section" aria-labelledby="reference-group-title"><h2 id="reference-group-title"><span>02</span> 装備の種類</h2><nav id="reference-groups" class="eso-ref-chips" aria-label="装備の種類を選択"></nav></section>
+      <div class="eso-ref-filters">
+        <label class="eso-ref-equipment">装備をさらに絞る<select id="reference-equipment" disabled><option value="">すべての装備</option></select></label>
+        <label class="eso-ref-search">名前・効果を検索<input id="reference-search" type="search" placeholder="英名・日本語の効果・条件で探す" autocomplete="off" maxlength="200" disabled></label>
+        <button id="reference-reset" type="button" disabled>条件をクリア</button>
+      </div>
+      <div id="reference-equipment-note" class="eso-ref-equipment-note" hidden></div>
+      <p id="reference-count" class="eso-ref-muted" role="status" aria-live="polite"></p>
+      <p id="reference-notice" role="status">データを読み込み中…</p><button id="reference-retry" type="button" hidden>再試行</button>
+      <div id="reference-list" class="eso-ref-grid"></div>
+      <details id="reference-rules" class="eso-ref-provenance"><summary>装備部位・品質・レベルによる違い</summary><div id="reference-rule-content"></div></details>
+      <details id="reference-provenance" class="eso-ref-provenance"><summary>出典・収録範囲・対応版</summary><div id="reference-sources"></div></details>
+    </section>
+    <article id="reference-detail" class="eso-ref-detail" tabindex="-1" hidden></article>
+    <noscript><p class="empty">特性・付呪の一覧・検索・詳細表示にはJavaScriptが必要です。</p></noscript>
+  </main>
+  <footer><p>非公式・非営利のファン情報ページ。ESOは ZeniMax Media Inc. / Bethesda Softworks / ZeniMax Online Studios のゲームです。権利元による提携・公認を示すものではありません。特性・付呪の画像は掲載していません。</p><small>ESOデータベース · 閲覧専用</small></footer>
+</body>
+</html>

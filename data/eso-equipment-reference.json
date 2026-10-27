@@ -1,0 +1,2680 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "title": "ESO 装備別・特性と付呪",
+    "version": "20261027-traits-glyphs-1",
+    "gameUpdate": "U51基準（資料照合・全件実測ではありません）",
+    "checkedAt": "2026-10-27",
+    "versionNote": "ライブ U51を基準。U52 PTSの変更は未反映。",
+    "scopeNote": "プレイヤー装備向け：特性33項目（研究可能27＋非研究6）、グリフ38種類。数値表ではなく効果と適用先の一覧。",
+    "localizationNote": "日本語名は公式日本語資料で確認できた表記。現行クライアントの全文抽出ではない。未確認名は英語を維持し、効果説明は独自の日本語要約。",
+    "verificationNote": "公式資料・公開ツールチップ・歴史資料を照合。U51発売時の公式本文は年齢確認画面で閲覧できず、発売時の全変更を完全監査したものではない。全項目の現行ゲーム内実測も行っていない。"
+  },
+  "sources": [
+    {
+      "id": "official-u51-forum",
+      "name": "Update 51 Live Patch Notes: All Platforms",
+      "url": "https://forums.elderscrollsonline.com/en-gb/discussion/699461/update-51-live-patch-notes-all-platforms",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "ライブ版がU51であることを確認した運営投稿。発売時のパッチ本文全体を確認できたという意味ではない。"
+    },
+    {
+      "id": "official-u51-inc1",
+      "name": "Update 51 Incremental 1 Patch Notes - All Platforms",
+      "url": "https://www.elderscrollsonline.com/en-us/news/post/70465",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "2026年10月19日の追加パッチ本文を確認。この本文内には装備特性・グリフ効果の変更を確認していない。"
+    },
+    {
+      "id": "official-u52-pts",
+      "name": "PTS Patch Notes v12.2.0",
+      "url": "https://www.elderscrollsonline.com/en-us/news/post/70503",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "U52 PTS（テスト環境）の変更を、ライブ版へ混在させないための確認資料。"
+    },
+    {
+      "id": "dmm-6-1-5-3",
+      "name": "パッチノート v6.1.5（3）",
+      "url": "https://eso.dmm.com/news/detail/7107",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "日本語の特性名と当時の効果変更を確認。古い最大値をそのまま現行値として使っていない。"
+    },
+    {
+      "id": "dmm-3-1-5-3",
+      "name": "パッチノート v3.1.5（3）",
+      "url": "https://eso.dmm.com/news/detail/2114",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "武器特性の日本語名、複雑・装飾の表記、ProsperousからInvigoratingへの変更を確認。"
+    },
+    {
+      "id": "dmm-jewelry-guide",
+      "name": "宝飾品クラフトのプレビュー＆ガイド",
+      "url": "https://eso.dmm.com/news/detail/3154",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "宝飾品9特性と日本語表記、複雑・装飾の基本用途を確認。古い入手先や当時のHarmony効果は採用していない。"
+    },
+    {
+      "id": "dmm-8-3-5-1",
+      "name": "パッチノート v8.3.5（1）",
+      "url": "https://eso.dmm.com/news/detail/11299",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "調和のリソース回復への変更、血の渇望、宝飾品の攻撃グリフ2種のハイブリッド化を確認。"
+    },
+    {
+      "id": "dmm-9-2-5",
+      "name": "パッチノート v9.2.5",
+      "url": "https://eso.dmm.com/news/detail/12328",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "健康・堅牢などの日本語表記の照合用。"
+    },
+    {
+      "id": "official-jp-glyph-size",
+      "name": "付呪グリフの効果度合いが、付呪する装備によって違うように感じます。どうしてですか？",
+      "url": "https://help-jp.elderscrollsonline.com/app/answers/detail/a_id/38744/~/%E4%BB%98%E5%91%AA%E3%82%B0%E3%83%AA%E3%83%95%E3%81%AE%E5%8A%B9%E6%9E%9C%E5%BA%A6%E5%90%88%E3%81%84%E3%81%8C%E3%80%81%E4%BB%98%E5%91%AA%E3%81%99%E3%82%8B%E8%A3%85%E5%82%99%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E9%81%95%E3%81%86%E3%82%88%E3%81%86%E3%81%AB%E6%84%9F%E3%81%98%E3%81%BE%E3%81%99%E3%80%82%E3%81%A9%E3%81%86%E3%81%97%E3%81%A6%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "頭・胴・脚・盾と小部位の差を確認。武器を一律100%とする一般記述は、後の片手武器変更で補正。"
+    },
+    {
+      "id": "official-jp-glyph-basics",
+      "name": "グリフ - クラフト - エルダー・スクロール・オンライン",
+      "url": "https://help-jp.elderscrollsonline.com/app/answers/detail/a_id/63999/~/%E3%82%B0%E3%83%AA%E3%83%95---%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88---%E3%82%A8%E3%83%AB%E3%83%80%E3%83%BC%E3%83%BB%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "グリフ3分類と、効力・品質・本質ルーンの役割を確認。"
+    },
+    {
+      "id": "official-jp-transmute",
+      "name": "どのようにしてアイテムを「変性」させられますか？",
+      "url": "https://help-jp.elderscrollsonline.com/app/answers/detail/a_id/40134/~/%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%82%92%E3%80%8C%E5%A4%89%E6%80%A7%E3%80%8D%E3%81%95%E3%81%9B%E3%82%89%E3%82%8C%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "指定する特性を対象の装備種類で研究済みであることが、変性の条件。"
+    },
+    {
+      "id": "dmm-6-0-5-1",
+      "name": "パッチノート v6.0.5(1)",
+      "url": "https://eso.dmm.com/news/detail/6780",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "Indekoにより宝飾品用の分光再生・スキル消費減少が追加されたことを確認。"
+    },
+    {
+      "id": "dmm-companion-guide",
+      "name": "コンパニオンガイド（再掲載）",
+      "url": "https://eso.dmm.com/news/detail/13744",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "コンパニオン装備はプレイヤー装備と別仕様で、付呪できないことを確認。"
+    },
+    {
+      "id": "dmm-11-0-5",
+      "name": "パッチノート v11.0.5",
+      "url": "https://eso.dmm.com/news/detail/14539",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "薬品強化の対象は薬による有益な効果の持続時間であることを確認。"
+    },
+    {
+      "id": "dmm-4-3-5-2",
+      "name": "パッチノート v4.3.5（2）",
+      "url": "https://eso.dmm.com/news/detail/4824",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "片手武器の付呪が両手武器の半分になり、クールダウンは変更されないことを確認。"
+    },
+    {
+      "id": "hyperioxes-u51-tank",
+      "name": "Hyperioxes: Beginner Tank Guide (U51, 2026-10-14)",
+      "url": "https://hyperioxes.com/eso/tank/beginner-guide",
+      "type": "community-current",
+      "checkedAt": "2026-10-27",
+      "note": "公開ツールチップの効果分類を照合。ビルド推奨文・数値表・画像は転載していない。"
+    },
+    {
+      "id": "official-glyph-basics",
+      "name": "ESO公式サポート: Glyphs / Crafting",
+      "url": "https://help.elderscrollsonline.com/app/answers/detail/a_id/31996/~/glyphs---crafting---elder-scrolls-online",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": ""
+    },
+    {
+      "id": "official-glyph-slots",
+      "name": "ESO公式サポート: 装備部位と付呪の強さ",
+      "url": "https://help.elderscrollsonline.com/app/answers/detail/a_id/9384/~/why-did-my-enchantment-change-when-i-put-it-on-my-armor%3F",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "防具の部位差のみ採用。武器を一律100%とする古い一般記述はU21の片手武器変更を優先。"
+    },
+    {
+      "id": "community-rune-inventory",
+      "name": "ESO公式フォーラム内: SirAndyのグリフ分類・ルーン観察一覧",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/66580/spoiler-enchanting-list-of-rune-translations-and-glyph-combinations",
+      "type": "community-historical",
+      "checkedAt": "2026-10-27",
+      "note": "ユーザー投稿（最終編集2019年）。公式運営の解説ではない。基本名・分類の照合用。古い効果は公式ライブパッチで補正。"
+    },
+    {
+      "id": "official-u21",
+      "name": "ESO公式: Update 21 / v4.3.5",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "片手武器の付呪効果量半減、クールダウンは不変。"
+    },
+    {
+      "id": "official-u23",
+      "name": "ESO公式: Update 23 / v5.1.5",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "忘却ダメージの対象最大体力・上限計算と、グリフ品質と装備品質の区別。"
+    },
+    {
+      "id": "official-u10",
+      "name": "ESO公式: v2.4.5 / Dark Brotherhood",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/268496/",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "複雑の解体素材増加、グリフの最低レベル条件、毒装備による武器付呪の抑制。"
+    },
+    {
+      "id": "official-intricate-staff",
+      "name": "ESO公式フォーラム: 複雑特性について運営回答",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/271921/missing-traits-at-crafting-station-armor",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "ZOS_JessicaFolsomによるIntricate非クラフト・ドロップ特性の確認。"
+    },
+    {
+      "id": "community-weapon-damage-tooltip",
+      "name": "ESO公式フォーラム内: Weapon Damageのゲーム内表示報告",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/272397/weapon-damage-enchantment-help",
+      "type": "community-observation",
+      "checkedAt": "2026-10-27",
+      "note": "武器・呪文ダメージ両方への効果のみ参照。返信の発動率・クールダウン推測は不採用。"
+    },
+    {
+      "id": "official-u24",
+      "name": "ESO公式: Update 24 / v5.2.5",
+      "url": "https://forums.elderscrollsonline.com/en-gb/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "Shield-Play→Bracing、バッシュ消費減少を削除。"
+    },
+    {
+      "id": "official-u26",
+      "name": "ESO公式: Update 26 / v6.0.5",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "Indekoで作る宝飾グリフ2種を追加。"
+    },
+    {
+      "id": "official-u31",
+      "name": "ESO公式: Update 31 / v7.1.5",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "Prismatic Onslaughtの旧アンデッド・デイドラ限定効果を置換。"
+    },
+    {
+      "id": "official-u46",
+      "name": "ESO公式: Update 46 / v11.0.5",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+      "type": "official",
+      "checkedAt": "2026-10-27",
+      "note": "継続消費型アビリティの固定値消費減少とPotion Boostの対象を確認。"
+    },
+    {
+      "id": "community-special-traits",
+      "name": "ESO公式フォーラム内: Myrronのクラフト観察ガイド",
+      "url": "https://forums.elderscrollsonline.com/en-gb/discussion/60885/myrrons-guide-to-eso-blacksmithing",
+      "type": "community-historical",
+      "checkedAt": "2026-10-27",
+      "note": "Ornate / Intricateの非研究特性区分の補助資料。公式運営投稿ではない。"
+    }
+  ],
+  "equipmentTypes": [
+    {
+      "id": "sword",
+      "nameJa": "片手剣",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "片手武器。二刀流でも片手＋盾でも、個々の武器に武器用特性・武器用グリフを適用。付呪の基本効果量は両手側の50%。",
+      "hands": 1,
+      "enchantmentScale": 0.5
+    },
+    {
+      "id": "axe",
+      "nameJa": "片手斧",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "片手武器。二刀流でも片手＋盾でも、個々の武器に武器用特性・武器用グリフを適用。付呪の基本効果量は両手側の50%。",
+      "hands": 1,
+      "enchantmentScale": 0.5
+    },
+    {
+      "id": "mace",
+      "nameJa": "片手メイス",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "片手武器。二刀流でも片手＋盾でも、個々の武器に武器用特性・武器用グリフを適用。付呪の基本効果量は両手側の50%。",
+      "hands": 1,
+      "enchantmentScale": 0.5
+    },
+    {
+      "id": "dagger",
+      "nameJa": "短剣",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "片手武器。二刀流でも片手＋盾でも、個々の武器に武器用特性・武器用グリフを適用。付呪の基本効果量は両手側の50%。",
+      "hands": 1,
+      "enchantmentScale": 0.5
+    },
+    {
+      "id": "greatsword",
+      "nameJa": "両手剣",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "battle-axe",
+      "nameJa": "両手斧",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "maul",
+      "nameJa": "両手メイス",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "bow",
+      "nameJa": "弓",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "inferno-staff",
+      "nameJa": "業火の杖",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "ice-staff",
+      "nameJa": "氷の杖",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "lightning-staff",
+      "nameJa": "稲妻の杖",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "restoration-staff",
+      "nameJa": "回復の杖",
+      "traitGroup": "weapon",
+      "glyphGroup": "weapon",
+      "notes": "両手で持つ武器。弓・破壊杖3種・回復杖も、特性と付呪の片手／両手比較では両手側。武器用グリフを使用。",
+      "hands": 2,
+      "enchantmentScale": 1
+    },
+    {
+      "id": "armor-head",
+      "nameJa": "頭（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の100%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 1
+    },
+    {
+      "id": "armor-chest",
+      "nameJa": "胴（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の100%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 1
+    },
+    {
+      "id": "armor-legs",
+      "nameJa": "脚（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の100%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 1
+    },
+    {
+      "id": "armor-shoulders",
+      "nameJa": "肩（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の40%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 0.4
+    },
+    {
+      "id": "armor-hands",
+      "nameJa": "手（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の40%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 0.4
+    },
+    {
+      "id": "armor-waist",
+      "nameJa": "腰（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の40%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 0.4
+    },
+    {
+      "id": "armor-feet",
+      "nameJa": "足（軽・中・重装）",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "軽装・中装・重装で特性候補とグリフの種類は共通。防具用グリフの基準量の40%が適用される部位。",
+      "armorWeights": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "enchantmentScale": 0.4
+    },
+    {
+      "id": "shield",
+      "nameJa": "盾",
+      "traitGroup": "armor",
+      "glyphGroup": "armor",
+      "notes": "武器欄に装備するが、特性とグリフは防具用。防具用グリフは頭・胴・脚と同じ100%側。片手武器の50%ルールを盾に適用しない。",
+      "enchantmentScale": 1
+    },
+    {
+      "id": "ring",
+      "nameJa": "指輪",
+      "traitGroup": "jewelry",
+      "glyphGroup": "jewelry",
+      "notes": "宝飾品用特性・宝飾品用グリフを使用。指輪とネックレスの研究は別扱い。",
+      "enchantmentScale": 1
+    },
+    {
+      "id": "necklace",
+      "nameJa": "ネックレス",
+      "traitGroup": "jewelry",
+      "glyphGroup": "jewelry",
+      "notes": "宝飾品用特性・宝飾品用グリフを使用。指輪とネックレスの研究は別扱い。",
+      "enchantmentScale": 1
+    }
+  ],
+  "traits": [
+    {
+      "id": "weapon-charged",
+      "group": "weapon",
+      "nameEn": "Charged",
+      "nameJa": "チャージ",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "ステータス効果を付与する確率を高める。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-decisive",
+      "group": "weapon",
+      "nameEn": "Decisive",
+      "nameJa": "決定的",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "アルティマを得たとき、確率で追加のアルティマを得る。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-defending",
+      "group": "weapon",
+      "nameEn": "Defending",
+      "nameJa": "防衛",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "物理耐性・呪文耐性を増やす。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-infused",
+      "group": "weapon",
+      "nameEn": "Infused",
+      "nameJa": "注入",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "その武器の付呪を強め、付呪のクールダウンを短くする。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "片手／両手の特性倍率が一律2倍になる対象ではない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-nirnhoned",
+      "group": "weapon",
+      "nameEn": "Nirnhoned",
+      "nameJa": "ニルンホーンド",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "その武器自体のダメージ値を高める。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "片手／両手の特性倍率が一律2倍になる対象ではない。",
+        "最終的な与ダメージ全体をその割合だけ増幅する効果、と解釈しない。防具の同名特性とは別の効果。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-powered",
+      "group": "weapon",
+      "nameEn": "Powered",
+      "nameJa": "パワー",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "与える回復量を増やす。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "official-jp-transmute",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-precise",
+      "group": "weapon",
+      "nameEn": "Precise",
+      "nameJa": "正確",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "武器・呪文のクリティカル率を高める。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-sharpened",
+      "group": "weapon",
+      "nameEn": "Sharpened",
+      "nameJa": "鋭利",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "物理・呪文貫通を増やす。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "official-jp-transmute",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-training",
+      "group": "weapon",
+      "nameEn": "Training",
+      "nameJa": "訓練",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "敵を倒して得る経験値を増やす。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "同じ品質では両手武器側（弓・杖を含む）の特性値は片手側の2倍。",
+        "クエスト報酬など、あらゆる経験値を増やすわけではない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-divines",
+      "group": "armor",
+      "nameEn": "Divines",
+      "nameJa": "神聖",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "ムンダス・ストーンから受ける効果を強める。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-impenetrable",
+      "group": "armor",
+      "nameEn": "Impenetrable",
+      "nameJa": "貫通不可",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "クリティカル耐性を増やし、この装備の耐久度消耗を抑える。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "現行資料とU52 PTS注記の旧最大値に差があるため、最大数値は掲載しない。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-infused",
+      "group": "armor",
+      "nameEn": "Infused",
+      "nameJa": "注入",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "その防具に付いた付呪の効果量を増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "小部位の付呪を大部位の量に変えるのではなく、その部位に適用される量を増やす。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-invigorating",
+      "group": "armor",
+      "nameEn": "Invigorating",
+      "nameJa": "活性",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "体力・マジカ・スタミナの再生値を増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "旧Prosperousの後継。商人売却額を増やすOrnateとは別。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "aliases": [
+        "Prosperous（旧特性・効果は別）"
+      ]
+    },
+    {
+      "id": "armor-nirnhoned",
+      "group": "armor",
+      "nameEn": "Nirnhoned",
+      "nameJa": "ニルンホーンド",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "物理耐性・呪文耐性を一定量増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "武器の同名特性とは別効果。Reinforcedの割合増加とも区別する。"
+      ],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-reinforced",
+      "group": "armor",
+      "nameEn": "Reinforced",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "researchable": true,
+      "effectJa": "その装備自体の防御値を割合で増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-sturdy",
+      "group": "armor",
+      "nameEn": "Sturdy",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "researchable": true,
+      "effectJa": "ブロックの消費を減らす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-training",
+      "group": "armor",
+      "nameEn": "Training",
+      "nameJa": "訓練",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": true,
+      "effectJa": "敵を倒して得る経験値を増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "armor-well-fitted",
+      "group": "armor",
+      "nameEn": "Well-fitted",
+      "nameJa": "適切装備",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "スプリントとロール回避の消費を減らす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-arcane",
+      "group": "jewelry",
+      "nameEn": "Arcane",
+      "nameJa": "アルケイン",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "最大マジカを増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "dmm-jewelry-guide",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-bloodthirsty",
+      "group": "jewelry",
+      "nameEn": "Bloodthirsty",
+      "nameJa": "血の渇望",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "体力が90%未満の敵に対する武器・呪文ダメージを、敵の残り体力が減るほど高める。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-8-3-5-1",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-harmony",
+      "group": "jewelry",
+      "nameEn": "Harmony",
+      "nameJa": "調和",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "シナジーを発動すると、体力・マジカ・スタミナが回復する。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [
+        "旧仕様の「シナジーのダメージ・回復・シールドを割合増加」ではない。"
+      ],
+      "sourceIds": [
+        "dmm-8-3-5-1",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "aliases": [
+        "信頼（旧公式表記）"
+      ]
+    },
+    {
+      "id": "jewelry-healthy",
+      "group": "jewelry",
+      "nameEn": "Healthy",
+      "nameJa": "健康",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "最大体力を増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-infused",
+      "group": "jewelry",
+      "nameEn": "Infused",
+      "nameJa": "注入",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "その宝飾品の付呪の効果量を増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-jewelry-guide",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-protective",
+      "group": "jewelry",
+      "nameEn": "Protective",
+      "nameJa": "防護",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "物理耐性・呪文耐性を増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-jewelry-guide",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-robust",
+      "group": "jewelry",
+      "nameEn": "Robust",
+      "nameJa": "堅牢",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "最大スタミナを増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-9-2-5",
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "aliases": [
+        "頑丈（旧公式表記）"
+      ]
+    },
+    {
+      "id": "jewelry-swift",
+      "group": "jewelry",
+      "nameEn": "Swift",
+      "nameJa": "迅速",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "移動速度を高める。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "jewelry-triune",
+      "group": "jewelry",
+      "nameEn": "Triune",
+      "nameJa": "三位",
+      "japaneseNameStatus": "official-source-term",
+      "researchable": true,
+      "effectJa": "最大体力・最大マジカ・最大スタミナをまとめて増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "装備の品質・レベルなどで実数値が変わるため、一覧は効果の種類を示す。",
+      "notes": [],
+      "sourceIds": [
+        "dmm-6-1-5-3",
+        "dmm-jewelry-guide",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）",
+      "verificationStatus": "u51-community-tooltip-corroborated"
+    },
+    {
+      "id": "weapon-intricate",
+      "group": "weapon",
+      "nameEn": "Intricate",
+      "nameJa": "複雑",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": false,
+      "effectJa": "そのアイテムを解体したときのインスピレーションと加工済み素材の獲得量を増やす。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "ドロップ品などに付く非研究特性。戦闘用の特性とは別枠。",
+      "notes": [
+        "装備して他のアイテムを解体しても、この特性のボーナスは移らない。",
+        "研究・クラフトで選ぶ9種には数えない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "community-special-traits",
+        "official-u10",
+        "official-intricate-staff"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式パッチ・クラフト資料の履歴を参照",
+      "verificationStatus": "historical-inventory-current-rules"
+    },
+    {
+      "id": "weapon-ornate",
+      "group": "weapon",
+      "nameEn": "Ornate",
+      "nameJa": "装飾",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": false,
+      "effectJa": "そのアイテムをNPC商人に売るときの売却額を増やす。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "conditionsJa": "ドロップ品などに付く非研究特性。戦闘用の特性とは別枠。",
+      "notes": [
+        "装備して他のアイテムを売っても、その売却額は増えない。",
+        "研究・クラフトで選ぶ9種には数えない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "community-special-traits"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式パッチ・クラフト資料の履歴を参照",
+      "verificationStatus": "historical-inventory-current-rules"
+    },
+    {
+      "id": "armor-intricate",
+      "group": "armor",
+      "nameEn": "Intricate",
+      "nameJa": "複雑",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": false,
+      "effectJa": "そのアイテムを解体したときのインスピレーションと加工済み素材の獲得量を増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "ドロップ品などに付く非研究特性。戦闘用の特性とは別枠。",
+      "notes": [
+        "装備して他のアイテムを解体しても、この特性のボーナスは移らない。",
+        "研究・クラフトで選ぶ9種には数えない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "community-special-traits",
+        "official-u10",
+        "official-intricate-staff"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式パッチ・クラフト資料の履歴を参照",
+      "verificationStatus": "historical-inventory-current-rules"
+    },
+    {
+      "id": "armor-ornate",
+      "group": "armor",
+      "nameEn": "Ornate",
+      "nameJa": "装飾",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": false,
+      "effectJa": "そのアイテムをNPC商人に売るときの売却額を増やす。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "conditionsJa": "ドロップ品などに付く非研究特性。戦闘用の特性とは別枠。",
+      "notes": [
+        "装備して他のアイテムを売っても、その売却額は増えない。",
+        "研究・クラフトで選ぶ9種には数えない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "community-special-traits"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式パッチ・クラフト資料の履歴を参照",
+      "verificationStatus": "historical-inventory-current-rules"
+    },
+    {
+      "id": "jewelry-intricate",
+      "group": "jewelry",
+      "nameEn": "Intricate",
+      "nameJa": "複雑",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": false,
+      "effectJa": "そのアイテムを解体したときのインスピレーションを増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "ドロップ品などに付く非研究特性。戦闘用の特性とは別枠。",
+      "notes": [
+        "装備して他のアイテムを解体しても、この特性のボーナスは移らない。",
+        "研究・クラフトで選ぶ9種には数えない。",
+        "宝飾品での追加素材ボーナスの詳細は、この一覧では未検証。武器・防具の旧パッチ値をそのまま転用していない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "community-special-traits",
+        "official-intricate-staff"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式パッチ・クラフト資料の履歴を参照",
+      "verificationStatus": "historical-inventory-current-rules"
+    },
+    {
+      "id": "jewelry-ornate",
+      "group": "jewelry",
+      "nameEn": "Ornate",
+      "nameJa": "装飾",
+      "japaneseNameStatus": "official-term-not-slot-specific",
+      "researchable": false,
+      "effectJa": "そのアイテムをNPC商人に売るときの売却額を増やす。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "conditionsJa": "ドロップ品などに付く非研究特性。戦闘用の特性とは別枠。",
+      "notes": [
+        "装備して他のアイテムを売っても、その売却額は増えない。",
+        "研究・クラフトで選ぶ9種には数えない。"
+      ],
+      "sourceIds": [
+        "dmm-3-1-5-3",
+        "dmm-9-2-5",
+        "dmm-jewelry-guide",
+        "community-special-traits"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式パッチ・クラフト資料の履歴を参照",
+      "verificationStatus": "historical-inventory-current-rules"
+    }
+  ],
+  "enchantments": [
+    {
+      "id": "glyph-health",
+      "group": "armor",
+      "glyphGroup": "armor",
+      "nameEn": "Glyph of Health",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "最大体力を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "notes": [
+        "頭・胴・脚・盾は100%、肩・手・腰・足は40%側。"
+      ],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank",
+        "official-glyph-slots"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-magicka",
+      "group": "armor",
+      "glyphGroup": "armor",
+      "nameEn": "Glyph of Magicka",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "最大マジカを増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "notes": [
+        "頭・胴・脚・盾は100%、肩・手・腰・足は40%側。"
+      ],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank",
+        "official-glyph-slots"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-stamina",
+      "group": "armor",
+      "glyphGroup": "armor",
+      "nameEn": "Glyph of Stamina",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "最大スタミナを増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "notes": [
+        "頭・胴・脚・盾は100%、肩・手・腰・足は40%側。"
+      ],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank",
+        "official-glyph-slots"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-prismatic-defense",
+      "group": "armor",
+      "glyphGroup": "armor",
+      "nameEn": "Glyph of Prismatic Defense",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "最大体力・最大マジカ・最大スタミナをまとめて増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "armor-head",
+        "armor-chest",
+        "armor-legs",
+        "armor-shoulders",
+        "armor-hands",
+        "armor-waist",
+        "armor-feet",
+        "shield"
+      ],
+      "notes": [
+        "頭・胴・脚・盾は100%、肩・手・腰・足は40%側。"
+      ],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank",
+        "official-glyph-slots"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-flame",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Flame",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "炎ダメージを与える。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-frost",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Frost",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "氷結ダメージを与える。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-shock",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Shock",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "雷撃ダメージを与える。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-poison",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Poison",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "毒ダメージを与える。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-foulness",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Foulness",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "病気ダメージを与える。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-absorb-health",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Absorb Health",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "魔法ダメージを与え、自分の体力を回復する。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-absorb-magicka",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Absorb Magicka",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "魔法ダメージを与え、自分のマジカを回復する。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-absorb-stamina",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Absorb Stamina",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "物理ダメージを与え、自分のスタミナを回復する。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [
+        "古い資料の「魔法ダメージ」は採用していない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-prismatic-onslaught",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Prismatic Onslaught",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "魔法ダメージを与え、自分の体力・マジカ・スタミナを回復する。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [
+        "旧仕様のアンデッド・デイドラ専用ダメージではない。防具のPrismatic Defenseや宝飾品のPrismatic Recoveryとは別物。"
+      ],
+      "aliases": [],
+      "verificationStatus": "live-patch-and-u51-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u31",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-decrease-health",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Decrease Health",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "対象の最大体力に応じた忘却ダメージを与える。ダメージには上限がある。",
+      "conditionsJa": "忘却ダメージの割合はグリフ品質、上限はレベルと品質に依存。注入の通常の効果量増加をダメージに掛けない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [
+        "忘却ダメージは特殊計算。通常のダメージ付呪と同じ注入倍率で計算しない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u23"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照"
+    },
+    {
+      "id": "glyph-weapon-damage",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Weapon Damage",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "発動すると一定時間、自分の武器・呪文ダメージを増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [
+        "宝飾品のIncrease Physical Harm / Increase Magical Harmとは装備対象も発動方式も異なる。"
+      ],
+      "aliases": [
+        "Berserker",
+        "Rage"
+      ],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory",
+        "community-weapon-damage-tooltip"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-crushing",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Crushing",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "一定時間、対象の物理耐性・呪文耐性を下げる。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [
+        "Crusher"
+      ],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-weakening",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Weakening",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "一定時間、対象の武器・呪文ダメージを下げる。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-hardening",
+      "group": "weapon",
+      "glyphGroup": "weapon",
+      "nameEn": "Glyph of Hardening",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "一定時間、自分にダメージシールドを付与する。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "sword",
+        "axe",
+        "mace",
+        "dagger",
+        "greatsword",
+        "battle-axe",
+        "maul",
+        "bow",
+        "inferno-staff",
+        "ice-staff",
+        "lightning-staff",
+        "restoration-staff"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "u51-community-tooltip-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-health-recovery",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Health Recovery",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "体力再生を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "最大リソースではなく再生値。防具用グリフではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-magicka-recovery",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Magicka Recovery",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "マジカ再生を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "最大リソースではなく再生値。防具用グリフではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-stamina-recovery",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Stamina Recovery",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "スタミナ再生を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "最大リソースではなく再生値。防具用グリフではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-prismatic-recovery",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Prismatic Recovery",
+      "nameJa": "分光再生",
+      "japaneseNameStatus": "official-effect-label-only",
+      "effectJa": "体力・マジカ・スタミナの再生値をまとめて増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u26",
+        "dmm-6-0-5-1"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照",
+      "nameNoteJa": "日本語は公式資料の効果ラベル。現行クライアントの完全なグリフ名は未照合。"
+    },
+    {
+      "id": "glyph-reduce-spell-cost",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Reduce Spell Cost",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "アビリティのマジカ消費を減らす。",
+      "conditionsJa": "固定値の消費減少。発動中に繰り返し消費する継続消費型アビリティは対象外（U46以降）。アルティマ消費減少ではない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "U46以降、発動中に繰り返しリソースを消費する継続消費型アビリティには、この固定値消費減少は適用されない。アルティマ消費減少ではない。"
+      ],
+      "aliases": [
+        "Reduce Magicka Cost"
+      ],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u46",
+        "hyperioxes-u51-tank",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照"
+    },
+    {
+      "id": "glyph-reduce-feat-cost",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Reduce Feat Cost",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "アビリティのスタミナ消費を減らす。",
+      "conditionsJa": "固定値の消費減少。発動中に繰り返し消費する継続消費型アビリティは対象外（U46以降）。アルティマ消費減少ではない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "U46以降、発動中に繰り返しリソースを消費する継続消費型アビリティには、この固定値消費減少は適用されない。アルティマ消費減少ではない。"
+      ],
+      "aliases": [
+        "Reduce Stamina Cost"
+      ],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u46",
+        "hyperioxes-u51-tank",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照"
+    },
+    {
+      "id": "glyph-reduce-skill-cost",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Reduce Skill Cost",
+      "nameJa": "スキル消費減少",
+      "japaneseNameStatus": "official-effect-label-only",
+      "effectJa": "アビリティの体力・マジカ・スタミナ消費を減らす。",
+      "conditionsJa": "固定値の消費減少。発動中に繰り返し消費する継続消費型アビリティは対象外（U46以降）。アルティマ消費減少ではない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "U46以降、発動中に繰り返しリソースを消費する継続消費型アビリティには、この固定値消費減少は適用されない。アルティマ消費減少ではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u46",
+        "hyperioxes-u51-tank",
+        "official-u26",
+        "dmm-6-0-5-1"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照",
+      "nameNoteJa": "日本語は公式資料の効果ラベル。現行クライアントの完全なグリフ名は未照合。"
+    },
+    {
+      "id": "glyph-increase-physical-harm",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Increase Physical Harm",
+      "nameJa": "グリフ（物理攻撃）",
+      "japaneseNameStatus": "official-source-term",
+      "effectJa": "武器・呪文ダメージを増やし、スタミナ再生も少量増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "武器ダメージだけを増やす旧仕様ではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "dmm-8-3-5-1"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照"
+    },
+    {
+      "id": "glyph-increase-magical-harm",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Increase Magical Harm",
+      "nameJa": "グリフ（呪文攻撃）",
+      "japaneseNameStatus": "official-source-term",
+      "effectJa": "武器・呪文ダメージを増やし、マジカ再生も少量増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "呪文ダメージだけを増やす旧仕様ではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "dmm-8-3-5-1"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照"
+    },
+    {
+      "id": "glyph-decrease-physical-harm",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Decrease Physical Harm",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "物理耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-decrease-spell-harm",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Decrease Spell Harm",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "呪文耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-flame-resist",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Flame Resist",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "炎耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-frost-resist",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Frost Resist",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "氷結耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-shock-resist",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Shock Resist",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "雷撃耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-poison-resist",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Poison Resist",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "毒耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-disease-resist",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Disease Resist",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "病気耐性を増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-bashing",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Bashing",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "バッシュで与えるダメージを増やす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    },
+    {
+      "id": "glyph-bracing",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Bracing",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "ブロックの消費を減らす。",
+      "conditionsJa": "宝飾品用。旧名Shield-Play / Shielding。現在はブロック消費のみを減らし、バッシュ消費は減らさない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "旧名Shield-Play / Shielding。U24以降はバッシュ消費を減らさない。"
+      ],
+      "aliases": [
+        "Shielding",
+        "Shield-Play"
+      ],
+      "verificationStatus": "live-patch-and-u51-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u24",
+        "hyperioxes-u51-tank"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2026-10-14（Hyperioxes U51）"
+    },
+    {
+      "id": "glyph-potion-boost",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Potion Boost",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "薬による有益な効果の持続時間を延ばす。",
+      "conditionsJa": "効果量はグリフのレベル・品質、装備部位、注入などに依存。最大値を一律表示していない。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "即時の体力・マジカ・スタミナ回復量を増やす効果ではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "live-patch-corroborated",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u46",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "公式ライブパッチ履歴を参照"
+    },
+    {
+      "id": "glyph-potion-speed",
+      "group": "jewelry",
+      "glyphGroup": "jewelry",
+      "nameEn": "Glyph of Potion Speed",
+      "nameJa": null,
+      "japaneseNameStatus": "unverified-retain-English",
+      "effectJa": "対象になる薬の再使用待ち時間を短くする。",
+      "conditionsJa": "対象になる薬にはレベル条件があるため、付呪の表示を確認する。効果量・持続時間ではなく再使用待ち時間が対象。",
+      "applicableEquipmentIds": [
+        "ring",
+        "necklace"
+      ],
+      "notes": [
+        "グリフ側のレベル条件を満たす薬が対象。薬の効果量や持続時間を増やすものではない。"
+      ],
+      "aliases": [],
+      "verificationStatus": "historical-inventory-current-rules",
+      "sourceIds": [
+        "official-glyph-basics",
+        "community-rune-inventory"
+      ],
+      "checkedAt": "2026-10-27",
+      "sourceDataDate": "2019-06-02の分類資料を最新の確認済みパッチ履歴で補正"
+    }
+  ],
+  "rules": [
+    {
+      "title": "特性と付呪は別の枠",
+      "text": "特性は装備自体の性質。付呪は対応するグリフを装備に使って付ける効果で、通常は上書きできる。注入は付呪を強める「特性」であり、グリフ名ではない。",
+      "sourceIds": [
+        "official-glyph-basics",
+        "hyperioxes-u51-tank"
+      ]
+    },
+    {
+      "title": "装備種類を合わせる",
+      "text": "武器用・防具用・宝飾品用のグリフは相互に代用できない。盾は防具用。再生値を増やすRecovery系グリフは宝飾品用で、頭や胴に付ける防具用ではない。武器のAbsorb系による回復とは区別する。",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-glyph-slots",
+        "hyperioxes-u51-tank"
+      ]
+    },
+    {
+      "title": "片手・両手・弓・杖",
+      "text": "同じグリフなら片手武器の効果量は両手側の50%。この差でクールダウンは変わらない。弓と全種の杖は両手側で、二刀流は片手武器を2本それぞれ扱う。盾にこの半減を適用しない。",
+      "sourceIds": [
+        "official-u21",
+        "hyperioxes-u51-tank"
+      ]
+    },
+    {
+      "title": "防具の大部位・小部位",
+      "text": "頭・胴・脚・盾は防具グリフの基準量100%。肩・手・腰・足は40%。軽装・中装・重装の違いではなく部位の違い。付呪画面の装着後プレビューで最終値を確認する。",
+      "sourceIds": [
+        "official-glyph-slots"
+      ]
+    },
+    {
+      "title": "レベル・品質と注入",
+      "text": "グリフのレベルは効力ルーン、品質は品質ルーン、効果は本質ルーンが関係する。装備の品質とグリフの品質を混同しない。グリフの最低レベル条件を満たす装備へ適用する（低レベルのグリフを高レベル装備へ使うことは可能）。注入の効果量も装備の品質で変わるため、全レベル共通の固定最大値として読まない。",
+      "sourceIds": [
+        "official-glyph-basics",
+        "official-u10",
+        "official-u23",
+        "hyperioxes-u51-tank"
+      ]
+    },
+    {
+      "title": "注入は装備ごとに異なる",
+      "text": "U51の金品質の参照値では、武器は付呪効果30%増加・付呪クールダウン50%短縮、防具は付呪効果25%増加、宝飾品は60%増加。防具・宝飾品に武器のクールダウン短縮を当てはめない。忘却ダメージなどの例外を通常倍率だけで計算しない。",
+      "sourceIds": [
+        "hyperioxes-u51-tank",
+        "dmm-6-1-5-3"
+      ]
+    },
+    {
+      "title": "武器付呪と毒",
+      "text": "武器付呪には発動条件とクールダウンがある。すべてを同一クールダウンとして扱わない。対応する武器バーに毒を装備している間は、その武器付呪が抑制される。防具・宝飾品の常時効果とは区別する。",
+      "sourceIds": [
+        "official-u10",
+        "hyperioxes-u51-tank"
+      ]
+    },
+    {
+      "title": "特性の研究と変性",
+      "text": "研究できる特性は武器・防具・宝飾品に9種ずつ。同名でも武器と防具のニルンホーンドなどは効果が違う。変性で指定するには、その装備種類の特性を研究済みである必要がある。複雑・装飾はこの9種とは別枠。",
+      "sourceIds": [
+        "official-jp-transmute",
+        "dmm-jewelry-guide",
+        "community-special-traits",
+        "hyperioxes-u51-tank"
+      ]
+    },
+    {
+      "title": "現行とテストサーバーを分ける",
+      "text": "基準は2026年10月27日時点のライブU51。10月26日公開のU52（v12.2.0）はPTS用のため、新しい特性倍率・数値はこの一覧へ混在させていない。",
+      "sourceIds": [
+        "official-u51-forum",
+        "official-u52-pts"
+      ]
+    },
+    {
+      "title": "一覧の対象",
+      "text": "プレイヤー装備の特性と、クラフト可能なグリフの効果種類を掲載。コンパニオン装備は別仕様で付呪不可。クエスト専用・固定付呪や特殊アイテムの例外、全レベル全品質の数値表は対象外。",
+      "sourceIds": [
+        "dmm-companion-guide",
+        "official-glyph-basics"
+      ]
+    }
+  ],
+  "coverage": {
+    "equipmentTypes": 22,
+    "traits": 33,
+    "researchableTraits": 27,
+    "nonresearchableTraitEntries": 6,
+    "traitsByGroup": {
+      "weapon": 11,
+      "armor": 11,
+      "jewelry": 11
+    },
+    "glyphs": 38,
+    "glyphsByGroup": {
+      "weapon": 14,
+      "armor": 4,
+      "jewelry": 20
+    },
+    "excluded": [
+      "コンパニオン専用特性",
+      "クエスト専用・固定付呪",
+      "全レベル・全品質別の実数値",
+      "U52 PTSの未実装変更"
+    ],
+    "limitations": [
+      "U51発売時の公式本文は年齢確認画面で閲覧不可。回避していない。",
+      "グリフの一部は歴史的分類資料とライブパッチ履歴による照合で、全38種のU51ゲーム内実測ではない。",
+      "防具Sturdy / Reinforcedおよび多くのグリフの現行公式日本語アイテム名は未確認。英語を残す。",
+      "Impenetrableのライブ最大値に資料間の差があり、数値掲載を保留。",
+      "宝飾品Intricateの追加素材ボーナスの詳細は未検証。"
+    ]
+  }
+}
