@@ -1,28 +1,37 @@
 {
   "schema_version": 1,
-  "mode": "analyze",
-  "genre": "terrain",
-  "created_at": "2026-10-26T01:09:37.382685+00:00",
-  "run_id": "40252820229",
+  "mode": "search",
+  "genre": "AI",
+  "created_at": "2026-10-27T01:05:59.697211+00:00",
+  "run_id": "40430515917",
   "videos": [
     {
-      "id": "DcteH2TE36I",
-      "url": "https://www.youtube.com/watch?v=DcteH2TE36I",
-      "title": "Fix Default Debris That Looks Bad in 20s",
-      "channel": "Kalysteon ",
-      "description": "gaea 2, gaea, gaea tutorial, terrain generation, procedural terrain, procedural generation, landscape, environment art, terrain artist, game environment, indie game, indie dev, indie game dev, gamedev, game development, solo dev, unreal engine 5, ue5, unreal engine, unity, unity 3d, 3d art, 3d terrain, heightmap, world building, open world, level design, dark fantasy, halloween, shorts, gaea tips, kalysteon",
-      "published_at": "2026-10-25T06:12:15Z",
-      "duration_seconds": 32
+      "id": "kWw_f0wjHuk",
+      "url": "https://www.youtube.com/watch?v=kWw_f0wjHuk",
+      "title": "AI Uncovers a 14-Year-Old PHP Security Flaw 😳 #news #shorts #viral #usa #ai #internet #security",
+      "channel": "World in a Flash",
+      "description": "AI has helped uncover serious security flaws hidden in PHP, a programming language used across much of the internet.\n\nThe vulnerabilities, known as PHP2Shell, could allow attackers to execute code on vulnerable servers. Security researchers and developers have released fixes, making timely security updates essential.\n\nThis discovery highlights both the potential of AI to strengthen cybersecurity and the risks when powerful tools are used to find weaknesses in widely used software.\n\nFollow World in a Flash for global news, technology breakthroughs and major developments explained in YouTube Shorts.\n\n#Cybersecurity #ArtificialIntelligence #PHP #TechNews #WorldNews #Shorts",
+      "published_at": "2026-10-27T01:00:03Z",
+      "duration_seconds": 28
+    },
+    {
+      "id": "CsHeAGf1Dw4",
+      "url": "https://www.youtube.com/watch?v=CsHeAGf1Dw4",
+      "title": "OpenAI's AI says a famous computer science rule is false?? #ai #news #shorts",
+      "channel": "Waterboat",
+      "description": "openai says an internal model disproved the exponential time hypothesis, a decades-old assumption behind hundreds of hardness papers, and claims proofs of the kakeya conjecture and part of a clay millennium prize problem. plus cohere caught alibaba's open-weight qwen trying to upload a file to beijing, anthropic filed to go public as ant with $16.3 billion in half-year revenue, and meta plans to sell up to $95 billion of stock to pay for ai.\n\n0:00 intro\n0:05 openai proofs\n0:23 qwen phones home\n0:42 anthropic s-1\n1:04 meta $95b raise\n\nsources:\nhttps://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics\nhttps://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model\nhttps://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces\nhttps://www.anthropic.com/news/s1-sec\nhttps://fortune.com/2026/10/26/anthropics-s-1/\nhttps://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec\nhttps://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html\nhttps://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates\nhttps://x.com/rrwilliams/status/2114833319431209352\nhttps://x.com/gdb/status/2114860693585563907\nhttps://x.com/mark_k/status/2114759368961085669\nhttps://x.com/imdariotoo/status/2114857504563724455\nhttps://x.com/praxisvectorai/status/2114783795102577052\nhttps://x.com/readmodelmag/status/2114737424823632334\n\n#ai #ainews #shorts",
+      "published_at": "2026-10-27T00:47:09Z",
+      "duration_seconds": 81
+    },
+    {
+      "id": "uvt2z1lOrXg",
+      "url": "https://www.youtube.com/watch?v=uvt2z1lOrXg",
+      "title": "🚨 Microsoft Opens Buyouts Across 27% of Its Workforce #AINews",
+      "channel": "Super Intelligence Spotlight",
+      "description": "🚨 𝗠𝗶𝗰𝗿𝗼𝘀𝗼𝗳𝘁 𝗢𝗽𝗲𝗻𝘀 𝗕𝘂𝘆𝗼𝘂𝘁𝘀 𝗔𝗰𝗿𝗼𝘀𝘀 𝟮𝟳% 𝗼𝗳 𝗜𝘁𝘀 𝗪𝗼𝗿𝗸𝗳𝗼𝗿𝗰𝗲\n\nThe voluntary exit offer covers vice presidents and below across the US, Canada, India, and the UK.\n\nParticipating teams include Windows, Copilot, Xbox, and finance, but data center staff and sales aren't included.\n\nEmployees have until early December to decide on the severance package, with departures set for December 31.\n\nMore than 30% of eligible staff accepted an earlier retirement buyout Microsoft ran this year.\n\n#AI #Microsoft #Tech\n\n───\n𝗙𝗼𝗹𝗹𝗼𝘄 𝗦𝗜 𝗦𝗽𝗼𝘁𝗹𝗶𝗴𝗵𝘁 𝗳𝗼𝗿 𝗦𝗜/𝗔𝗜 𝗮𝗻𝗱 𝘁𝗲𝗰𝗵 𝗻𝗲𝘄𝘀: 𝗫 · 𝗟𝗶𝗻𝗸𝗲𝗱𝗜𝗻 · 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺\n\n#Shorts",
+      "published_at": "2026-10-27T00:29:12Z",
+      "duration_seconds": 31
     }
   ],
-  "usage": {
-    "total_input_tokens": 2901,
-    "total_output_tokens": 60,
-    "total_thought_tokens": 0
-  },
-  "analysis": {
-    "summary": "男性が動画でGAEAソフトウェアを使用して山肌の破片表現の質感を高める方法を解説しています。デフォルトの設定を変更し、破片の数を増やしてスケールを調整することで、リアリティのある鋭い岩肌を作成しています。",
-    "model": "gemini-3.5-flash-lite"
-  },
   "api_attempts": 2
 }
