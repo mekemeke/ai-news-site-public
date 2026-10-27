@@ -131,26 +131,130 @@
     const allInGroup = [...equipment.values()].filter(other => other[item.kind === 'trait' ? 'traitGroup' : 'glyphGroup'] === item.group);
     return allInGroup.length === items.length ? [`${groupNames[item.group]}の収録装備すべて`] : [`${items.map(item => item.nameJa).slice(0,2).join('・')} ほか${items.length - 2}種類（詳細参照）`];
   }
+  // Only group identical semantic templates. Unknowns and unaligned text are never
+  // converted into amounts; the complete source wording remains in the disclosure.
+  function comparisonRows(item) {
+    const groups = new Map(), unknownGroups = new Map();
+    for (const quality of item.numericValue?.qualities || []) {
+      if (quality.status === 'unverified') continue;
+      const occurrences = new Map();
+      for (const variant of quality.variants || []) {
+        const ordinal = occurrences.get(variant.label) || 0;
+        occurrences.set(variant.label,ordinal + 1);
+        const groupKey = `${variant.label}\u0000${ordinal}`;
+        unknownGroups.set(groupKey,variant.label);
+        const calculated = /計算上|表示丸め未確認/.test(variant.value);
+        const clean = variant.value.replace(/^計算上\s*/, '').replace(/（表示丸め未確認）$/, '');
+        for (const segment of clean.split(/\s+\/\s+/)) {
+          if (/未確認/.test(segment)) continue;
+          const matches = [...segment.matchAll(/[+−-]?\d[\d,]*(?:\.\d+)?(?:%|秒)?/g)];
+          const signed = matches.filter(match => /^[+−-]/.test(match[0]));
+          // A duration/condition inside parentheses is context, not a second effect.
+          const outside = matches.filter(match => !/[（(][^）)]*$/.test(segment.slice(0,match.index)));
+          const selected = signed.length === 1 ? signed[0] : outside.length === 1 ? outside[0] : null;
+          if (!selected) continue;
+          const before = segment.slice(0,selected.index), after = segment.slice(selected.index + selected[0].length);
+          const template = `${before}\u0001${after}`;
+          const key = `${groupKey}\u0000${template}`;
+          if (!groups.has(key)) groups.set(key,{label:variant.label,context:(before + after).trim(),before,after,values:new Map(),groupKey});
+          const row = groups.get(key);
+          // Conflicting duplicate fragments are not assigned to the same location.
+          if (row.values.has(quality.id)) row.ambiguous = true;
+          row.values.set(quality.id,{amount:selected[0],original:variant.value,calculated});
+        }
+      }
+    }
+    const rows = [...groups.values()].filter(row => !row.ambiguous);
+    for (const [groupKey,label] of unknownGroups) if (!rows.some(row => row.groupKey === groupKey)) rows.push({label,context:'',values:new Map(),groupKey});
+    return rows.length ? rows : [{label:'品質別の効果量',context:'',values:new Map()}];
+  }
+  function qualitySeries(item,row) {
+    const known = new Map((item.numericValue?.qualities || []).map(quality => [quality.id,quality]));
+    return `<span class="eso-ref-quality-inline" aria-label="品質順：白・緑・青・紫・金">${qualities.map((definition,index) => {
+      const quality = known.get(definition.id), value = row.values.get(definition.id);
+      const label = quality?.label || definition.label;
+      const amount = value?.amount || '—';
+      const note = value ? `${value.calculated ? '計算値・表示丸め未確認。' : ''}${quality.status === 'partial' ? '参考値（現行未実測）。' : '資料照合（未実測）。'}${value.original}` : '未確認';
+      return `${index ? '<span class="eso-ref-quality-separator" aria-hidden="true">/</span>' : ''}<span class="eso-ref-quality-${definition.id}" data-quality="${definition.id}" role="img" aria-label="${escapeHTML(label)} ${escapeHTML(value ? amount + '。' + note : '未確認')}" title="${escapeHTML(note)}">${escapeHTML(amount.replace(/,/g,''))}${value?.calculated ? '<sup aria-hidden="true">※</sup>' : ''}</span>`;
+    }).join('')}</span>`;
+  }
+  function effectHTML(item) {
+    const rows = comparisonRows(item), replacements = [];
+    // A number is replaced only when its semantic label immediately precedes it.
+    // Equal values at multiple positions or in multiple rows remain explicit rows.
+    for (const row of rows) {
+      const metric = row.context.replace(/[（(].*$/, '').trim() || row.label.replace(/[（(].*$/, '').trim();
+      if (!metric || /[：:]/.test(metric)) continue;
+      const candidates = [...item.effectJa.matchAll(/[+−-]?\d[\d,]*(?:\.\d+)?(?:%|秒)?/g)].filter(match => {
+        const prefix = item.effectJa.slice(0,match.index);
+        const contextMatches = prefix.endsWith(metric) || prefix.endsWith(metric + 'が') || prefix.endsWith(metric + 'を');
+        const sourceMatches = [...row.values.values()].some(value => value.amount.replace(/^[+]/,'').replace(/,/g,'') === match[0].replace(/^[+]/,'').replace(/,/g,''));
+        return contextMatches && sourceMatches;
+      });
+      if (candidates.length === 1) replacements.push({row,index:candidates[0].index,length:candidates[0][0].length});
+    }
+    const unique = replacements.filter(candidate => replacements.filter(other => other.index === candidate.index).length === 1).sort((a,b) => a.index - b.index);
+    let cursor = 0, effect = '';
+    for (const replacement of unique) {
+      effect += escapeHTML(item.effectJa.slice(cursor,replacement.index)) + qualitySeries(item,replacement.row);
+      cursor = replacement.index + replacement.length;
+    }
+    effect += escapeHTML(item.effectJa.slice(cursor));
+    const remaining = rows.filter(row => !unique.some(replacement => replacement.row === row));
+    return `<p class="eso-ref-effect">${effect}${remaining.map(row => `<span class="eso-ref-inline-row"><span class="eso-ref-inline-label">${escapeHTML(row.label)}${row.context ? ' · ' + escapeHTML(row.context) : ''}：</span>${qualitySeries(item,row)}</span>`).join('')}</p>`;
+  }
+  function numericStatus(item) {
+    const value = item.numericValue, qualitiesPresent = value?.qualities || [];
+    const unknown = qualitiesPresent.length < 5 || qualitiesPresent.some(quality => quality.status === 'unverified' || (quality.variants || []).some(variant => /未確認/.test(variant.value)));
+    const partial = qualitiesPresent.some(quality => quality.status === 'partial');
+    const allUnknown = !qualitiesPresent.length || qualitiesPresent.every(quality => quality.status === 'unverified');
+    const label = allUnknown ? '品質別未確認' : unknown ? '一部未確認' + (partial ? '・参考値' : '') : partial ? '参考値・現行未実測' : '資料照合・未実測';
+    const basis = /CP160/.test(value?.basis || '') ? `CP160 · ${item.kind === 'trait' ? '装備品質（1個）' : 'グリフ品質（追加補正なし）'}` : `${item.kind === 'trait' ? '装備品質' : 'グリフ品質'} · 基準は原文参照`;
+    const historical = new Map();
+    for (const quality of qualitiesPresent) {
+      if (quality.status === 'unverified') continue;
+      const years = new Set((quality.summary || '').match(/20\d{2}(?=年)/g) || []);
+      for (const id of quality.sourceIds || []) {
+        const source = sources.get(id);
+        if (source?.type !== 'community-historical') continue;
+        const dated = `${source.name || ''} ${source.dataDate || ''} ${/^20\d{2}年/.test(source.note || '') ? source.note : ''}`;
+        for (const year of dated.match(/20\d{2}(?=年|-)/g) || []) years.add(year);
+      }
+      for (const year of years) {
+        if (!historical.has(year)) historical.set(year,[]);
+        historical.get(year).push(qualities.find(definition => definition.id === quality.id).label[0]);
+      }
+    }
+    const warnings = [...historical].map(([year,grades]) => `${grades.join('・')}：${year}年参考値`);
+    if (qualitiesPresent.some(quality => quality.id === 'legendary' && quality.status === 'partial')) warnings.push('金も参考値');
+    const notes = lines(value?.notes).join(' ');
+    if (/片手欄は公式U21の50%則/.test(notes)) warnings.push('片手は50%換算・表示丸め未実測（時間は半減しない）');
+    if (/小部位.*未照合/.test(notes)) warnings.push('小部位の表示値は未照合');
+    if (/不一致/.test(notes)) warnings.push('資料間の不一致あり');
+    if (/百分率ポイントの加算ではない/.test(notes)) warnings.push('既存確率への増加率（百分率ポイント加算ではない）');
+    if (/記載は到達上限/.test(notes)) warnings.push('記載値は到達上限・常時ではない');
+    if (/再生\+10はU37公式記録で全品質共通/.test(notes)) warnings.push('再生+10は品質共通（注入などの装備補正は別）');
+    if (/現行の割合は未確認/.test(notes)) warnings.push('現行の割合は未確認（片手も未確認）');
+    // Keep unique gameplay exceptions visible. Generic repeated provenance belongs
+    // in the disclosure, rather than making every card a second reference table.
+    const genericNote = /^(?:同じ品質では両手武器側|片手／両手の特性倍率|研究・クラフトで選ぶ9種|頭・胴・脚・盾は100%)/;
+    const caveats = lines(item.notes).filter(note => !genericNote.test(note));
+    if (item.conditionsJa && !/^数値はCP160/.test(item.conditionsJa) && !/^ドロップ品など/.test(item.conditionsJa)) caveats.unshift(item.conditionsJa);
+    const unique = [...new Set(caveats)].filter((note,index,list) => !list.some((other,otherIndex) => otherIndex !== index && other.includes(note)));
+    return `<p class="eso-ref-quality-status">${escapeHTML(basis)} · ${label}${warnings.length ? '<br>' + escapeHTML(warnings.join(' · ')) : ''}</p>${unique.length ? `<p class="eso-ref-caution">${unique.map(escapeHTML).join('<br>')}</p>` : ''}`;
+  }
   function numericValues(item) {
-    const value = item.numericValue;
-    const basis = value?.qualityBasis || (item.kind === 'trait' ? 'equipment' : 'glyph');
-    const rows = new Map((value?.qualities || []).map(quality => [quality.id,quality]));
+    const value = item.numericValue, basis = value?.qualityBasis || (item.kind === 'trait' ? 'equipment' : 'glyph');
     const basisLabel = basis === 'glyph' ? 'グリフの品質別（装備自体の色とは別）' : '装備自体の品質別';
-    return `<section class="eso-ref-numeric" aria-label="品質別の数値"><p class="eso-ref-numeric-basis"><strong>${basisLabel}</strong><br>${escapeHTML(value?.basis || '基準レベル・効果量：未確認')}</p><table class="eso-ref-quality-table"><caption>品質別の数値</caption><thead><tr><th scope="col">品質</th><th scope="col">基準効果量</th></tr></thead><tbody>${qualities.map(definition => {
-      const quality = rows.get(definition.id), unknown = !quality || quality.status === 'unverified';
-      const variants = quality?.variants || [];
-      const amount = unknown ? '<strong class="eso-ref-quality-unknown">— 未確認</strong>' : variants.length ? variants.map(variant => `<span class="eso-ref-quality-variant"><span>${escapeHTML(variant.label)}</span><strong>${escapeHTML(variant.value)}</strong></span>`).join('') : `<strong class="eso-ref-quality-amount">${escapeHTML(quality.summary)}</strong>`;
-      const summary = quality?.summary && (unknown || variants.length) ? `<span class="eso-ref-quality-summary">${escapeHTML(quality.summary)}</span>` : '';
-      return `<tr class="eso-ref-quality-${definition.id}" data-quality="${definition.id}"><th scope="row"><span class="eso-ref-quality-label">${escapeHTML(quality?.label || definition.label)}</span>${quality?.status === 'partial' ? '<small>参考値（現行未実測）</small>' : quality?.status === 'verified' ? '<small>資料照合（未実測）</small>' : ''}</th><td>${amount}${summary}</td></tr>`;
-    }).join('')}</tbody></table>${lines(value?.notes).map(note => `<p class="eso-ref-numeric-note">${escapeHTML(note)}</p>`).join('')}<p class="eso-ref-numeric-note">— は未確認です。0ではなく、他の品質から推定していません。${value?.sourceIds.length ? ` 数値の出典：${sourceLinks(value.sourceIds)}` : ''}</p></section>`;
+    return `<div class="eso-ref-numeric"><p class="eso-ref-numeric-basis"><strong>${basisLabel}</strong> · ${escapeHTML(value?.basis || '基準レベル・効果量：未確認')}</p><p><strong>説明原文：</strong>${escapeHTML(item.effectJa)}</p>${(value?.qualities || []).map(quality => `<p class="eso-ref-numeric-original"><strong>${escapeHTML(quality.label || qualities.find(definition => definition.id === quality.id).label)}</strong>：${escapeHTML(quality.summary || '')}（${quality.status === 'unverified' ? '未確認' : quality.status === 'partial' ? '参考値・現行未実測' : '資料照合・未実測'}）${(quality.variants || []).map(variant => `<br>${escapeHTML(variant.label)}：${escapeHTML(variant.value)}`).join('')}</p>`).join('')}${lines(value?.notes).map(note => `<p class="eso-ref-numeric-note">${escapeHTML(note)}</p>`).join('')}<p class="eso-ref-numeric-note">— は未確認です。0ではなく、他の品質から推定していません。${value?.sourceIds.length ? ` 数値の出典：${sourceLinks(value.sourceIds)}` : ''}</p></div>`;
   }
   function renderCard(item) {
-    return `<article class="eso-ref-card" data-entry-id="${item.kind}/${item.id}"><p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}${typeof item.researchable === 'boolean' ? ' · ' + (item.researchable ? '研究可能' : '研究不可') : ''}</p><h2><a href="${escapeHTML(detailURL(item))}">${escapeHTML(title(item))}</a></h2>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-effect">${escapeHTML(item.effectJa)}</p>${numericValues(item)}<div class="eso-ref-availability" aria-label="対象装備">${applicability(item).map(label => `<span>${escapeHTML(label)}</span>`).join('')}</div><p class="eso-ref-condition">${escapeHTML(conditions(item))}</p>${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}<p class="eso-ref-verification">${escapeHTML(nameNote(item))}</p><p class="eso-ref-verification">出典：${sourceLinks(item.sourceIds)}</p></article>`;
+    return `<article class="eso-ref-card" data-entry-id="${item.kind}/${item.id}"><p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}${typeof item.researchable === 'boolean' ? ' · ' + (item.researchable ? '研究可能' : '研究不可') : ''}</p><h2><a href="${escapeHTML(detailURL(item))}">${escapeHTML(title(item))}</a></h2>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}${effectHTML(item)}${numericStatus(item)}<div class="eso-ref-availability" aria-label="対象装備">${applicability(item).map(label => `<span>${escapeHTML(label)}</span>`).join('')}</div><details class="eso-ref-item-notes"><summary>条件・出典・原文</summary>${numericValues(item)}<p class="eso-ref-condition">${escapeHTML(conditions(item))}</p>${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}<p class="eso-ref-verification">${escapeHTML(nameNote(item))}</p><p class="eso-ref-verification">出典：${sourceLinks(item.sourceIds)}</p></details></article>`;
   }
   function chip(label,url,selected,count) { return `<a href="${escapeHTML(url)}"${selected ? ' aria-current="true"' : ''}>${escapeHTML(label)}${count == null ? '' : `<small>${count}件</small>`}</a>`; }
   function renderFilters() {
     $('reference-views').innerHTML = Object.entries(viewNames).map(([view,label]) => chip(label,listURL({...state,view}),state.view === view,viewEntries(view).length)).join('');
-    $('reference-view-hint').textContent = state.view === 'traits' ? '特性は装備自体に付く性質です。数値は装備の品質別に表示します。CP160などの基準レベル・部位と、確認できた範囲を各表で確認してください。' : '付呪の数値はグリフの品質別です。装備自体の品質とは別に、CP160などの基準レベルと適用部位を各表で確認してください。注入特性などを含む完成装備の計算機ではありません。';
+    $('reference-view-hint').textContent = state.view === 'traits' ? '特性は装備自体に付く性質です。数値は装備の品質別に表示します。CP160などの基準レベル・部位と、確認できた範囲を「条件・出典・原文」で確認してください。' : '付呪の数値はグリフの品質別です。装備自体の品質とは別に、CP160などの基準レベルと適用部位を「条件・出典・原文」で確認してください。注入特性などを含む完成装備の計算機ではありません。';
     const items = viewEntries();
     $('reference-groups').innerHTML = chip('すべて',listURL({...state,group:'',equipmentId:''}),!state.group,items.length) + Object.entries(groupNames).map(([group,label]) => chip(label,listURL({...state,group,equipmentId:''}),state.group === group,items.filter(item => item.group === group).length)).join('');
     const groupField = state.view === 'traits' ? 'traitGroup' : 'glyphGroup';
@@ -195,7 +299,7 @@
     } else {
       document.title = `${title(item)} | 特性・付呪 | ESOデータベース`;
       const equipmentNotes = item.applicableEquipmentIds.flatMap(id => lines(equipment.get(id).notes).map(note => `${equipment.get(id).nameJa}：${note}`));
-      $('reference-detail').innerHTML = `${back}<p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}</p><h1>${escapeHTML(title(item))}</h1>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-muted">${escapeHTML(nameNote(item))}</p>${item.aliases?.length ? `<p class="eso-ref-muted">資料内の別表記・旧称：${escapeHTML(item.aliases.join(' / '))}</p>` : ''}<dl class="eso-ref-facts"><dt>種類</dt><dd>${kindNames[item.kind]} / ${groupNames[item.group]}</dd>${typeof item.researchable === 'boolean' ? `<dt>研究</dt><dd>${item.researchable ? '研究可能' : '研究不可（非研究特性）'}</dd>` : ''}<dt>対象装備</dt><dd>${escapeHTML(applicability(item,true).join(' / '))}</dd><dt>対応アップデート</dt><dd>${escapeHTML(item.gameUpdate || data.meta.gameUpdate || '未確認')}</dd><dt>品質・レベルなどの条件</dt><dd>${escapeHTML(conditions(item))}</dd></dl><h2>効果</h2><p class="eso-ref-effect">${escapeHTML(item.effectJa)}</p>${numericValues(item)}${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}${equipmentNotes.length ? `<h2>装備種類ごとの注意</h2><ul>${equipmentNotes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}<div class="source-box"><h2>出典・確認範囲</h2><ul>${item.sourceIds.map(id => `<li>${sourceReference(sources.get(id))}</li>`).join('')}</ul><p>参照資料のデータ日：${escapeHTML(item.sourceDataDate || '未確認')} · 現行ゲーム内では未検証</p>${item.versionNote ? `<p>${escapeHTML(item.versionNote)}</p>` : ''}<p>${escapeHTML(text(data.meta.versionNote) || '参照資料の対応版と現行仕様の一致は未確認です。')}</p><p>効果説明は参照資料の要約です。未確認の数値・品質差を推定して補ってはいません。効果量や装備への適用はゲーム内でも確認してください。</p></div>${back}`;
+      $('reference-detail').innerHTML = `${back}<p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}</p><h1>${escapeHTML(title(item))}</h1>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-muted">${escapeHTML(nameNote(item))}</p>${item.aliases?.length ? `<p class="eso-ref-muted">資料内の別表記・旧称：${escapeHTML(item.aliases.join(' / '))}</p>` : ''}<dl class="eso-ref-facts"><dt>種類</dt><dd>${kindNames[item.kind]} / ${groupNames[item.group]}</dd>${typeof item.researchable === 'boolean' ? `<dt>研究</dt><dd>${item.researchable ? '研究可能' : '研究不可（非研究特性）'}</dd>` : ''}<dt>対象装備</dt><dd>${escapeHTML(applicability(item,true).join(' / '))}</dd><dt>対応アップデート</dt><dd>${escapeHTML(item.gameUpdate || data.meta.gameUpdate || '未確認')}</dd><dt>品質・レベルなどの条件</dt><dd>${escapeHTML(conditions(item))}</dd></dl><h2>効果</h2>${effectHTML(item)}${numericStatus(item)}<details class="eso-ref-item-notes"><summary>品質の根拠・原文</summary>${numericValues(item)}</details>${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}${equipmentNotes.length ? `<h2>装備種類ごとの注意</h2><ul>${equipmentNotes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}<div class="source-box"><h2>出典・確認範囲</h2><ul>${item.sourceIds.map(id => `<li>${sourceReference(sources.get(id))}</li>`).join('')}</ul><p>参照資料のデータ日：${escapeHTML(item.sourceDataDate || '未確認')} · 現行ゲーム内では未検証</p>${item.versionNote ? `<p>${escapeHTML(item.versionNote)}</p>` : ''}<p>${escapeHTML(text(data.meta.versionNote) || '参照資料の対応版と現行仕様の一致は未確認です。')}</p><p>効果説明は参照資料の要約です。未確認の数値・品質差を推定して補ってはいません。効果量や装備への適用はゲーム内でも確認してください。</p></div>${back}`;
     }
     window.scrollTo(0,0);
     $('reference-detail').focus({preventScroll:true});

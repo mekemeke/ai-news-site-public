@@ -36,7 +36,7 @@ function harness(value=fixture) {
     return nodes.get(id);
   }
   const context=vm.createContext({URL,URLSearchParams,location:{hash:''},history:{replaceState(a,b,url){context.location.hash=url;}},document:{getElementById:node},window:{addEventListener(k,v){windowEvents[k]=v;},scrollTo(){}},fetch:async()=>({ok:true,json:async()=>value})});
-  const source=fs.readFileSync(path.join(root,'eso-traits-enchants.js'),'utf8').replace(/  load\(\);\r?\n\}\)\(\);/,'  globalThis.api = {load,route,filter,validate,safeURL};\n})();');
+  const source=fs.readFileSync(path.join(root,'eso-traits-enchants.js'),'utf8').replace(/  load\(\);\r?\n\}\)\(\);/,'  globalThis.api = {load,route,filter,validate,safeURL,comparisonRows,effectHTML};\n})();');
   vm.runInContext(source,context);
   return {node,context,windowEvents,api:context.api};
 }
@@ -50,32 +50,32 @@ function withNumericValues() {
   value.enchantments[1].numericValue={qualityBasis:'glyph',basis:'CP160・注入などの強化なし。装備の色ではなくグリフの色。',sourceIds:['official'],notes:['胴・頭・脚と小部位を区別する。'],qualities:[{id:'legendary',label:'金（Legendary）',status:'verified',summary:'基準部位での効果。',variants:[{label:'胴・頭・脚・盾',value:'+954 体力'},{label:'肩・手・腰・足',value:'+386 体力'}]}]};
   return value;
 }
-test('numeric values are prominent in list and detail with all five named quality colors and exact contexts',async()=>{
+test('numeric values are compact inline series in list and detail with named qualities and exact contexts',async()=>{
   const {api,node,context,windowEvents}=harness(withNumericValues());await api.load();
   context.location.hash='#?group=weapon&q=Weapon';api.route();
   let html=node('reference-list').innerHTML;
-  assert.equal((html.match(/data-quality=/g)||[]).length,5);
+  assert.equal((html.match(/data-quality=/g)||[]).length,10);
   for(const [id,label] of qualityDefinitions) {assert.ok(html.includes(`class="eso-ref-quality-${id}"`));assert.ok(html.includes(label));}
-  for(const expected of ['装備自体の品質別','CP160','片手武器','両手武器','40%','80%','— 未確認','参考値（現行未実測）','現行ゲーム内未実測','数値の出典']) assert.ok(html.includes(expected),expected);
-  assert.match(html,/<table class="eso-ref-quality-table"><caption>品質別の数値<\/caption>/);
-  assert.ok(html.indexOf('品質別の数値')<html.indexOf('対象装備'));
+  for(const expected of ['装備自体の品質別','CP160','片手武器','両手武器','40%','80%','title="未確認"','参考値（現行未実測）','現行ゲーム内未実測','数値の出典']) assert.ok(html.includes(expected),expected);
+  assert.ok(!html.includes('<table'));assert.match(html,/eso-ref-quality-inline/);
+  assert.ok(html.indexOf('data-quality=')<html.indexOf('対象装備'));
   assert.ok(!/<details[^>]*>[\s\S]*data-quality=/.test(html));
   context.location.hash='#trait/weapon-test?group=weapon&q=Weapon';windowEvents.hashchange();html=node('reference-detail').innerHTML;
-  assert.equal((html.match(/data-quality=/g)||[]).length,5);assert.ok(html.indexOf('data-quality=')<html.indexOf('出典・確認範囲'));
+  assert.equal((html.match(/data-quality=/g)||[]).length,10);assert.ok(html.indexOf('data-quality=')<html.indexOf('出典・確認範囲'));
   context.location.hash='#?group=weapon&q=Weapon';windowEvents.hashchange();assert.match(node('reference-list').innerHTML,/40%/);
   context.location.hash='#trait/weapon-test?group=weapon&q=Weapon';windowEvents.hashchange();assert.match(node('reference-detail').innerHTML,/80%/);
   context.location.hash='#?view=enchantments&equipment=shield';api.route();html=node('reference-list').innerHTML;
   for(const expected of ['グリフの品質別（装備自体の色とは別）','CP160','胴・頭・脚・盾','+954 体力','肩・手・腰・足','+386 体力']) assert.ok(html.includes(expected),expected);
-  assert.equal((html.match(/— 未確認/g)||[]).length,4);
+  assert.equal((html.match(/title="未確認"/g)||[]).length,8);
   context.location.hash='#enchantment/armor-glyph';api.route();assert.match(node('reference-detail').innerHTML,/\+386 体力/);
 });
 test('missing numeric data remains compatible and explicit unknown values never become zero or interpolated values',async()=>{
   const {api,node,context}=harness();await api.load();
   context.location.hash='#trait/weapon-test';api.route();const html=node('reference-detail').innerHTML;
-  assert.equal((html.match(/— 未確認/g)||[]).length,5);assert.match(html,/基準レベル・効果量：未確認/);assert.ok(!html.includes('>0<'));
+  assert.equal((html.match(/title="未確認"/g)||[]).length,5);assert.match(html,/基準レベル・効果量：未確認/);assert.ok(!html.includes('>0<'));
   const partial=withNumericValues();partial.traits[0].numericValue.qualities=partial.traits[0].numericValue.qualities.slice(4);
   const other=harness(partial);await other.api.load();other.context.location.hash='#trait/weapon-test';other.api.route();
-  assert.equal((other.node('reference-detail').innerHTML.match(/— 未確認/g)||[]).length,4);
+  assert.equal((other.node('reference-detail').innerHTML.match(/title="未確認"/g)||[]).length,8);
   assert.match(other.node('reference-detail').innerHTML,/40%/);assert.ok(!other.node('reference-detail').innerHTML.includes('30%'));
   const v2=withNumericValues();v2.schemaVersion=2;assert.doesNotThrow(()=>api.validate(v2));
 });
@@ -99,8 +99,8 @@ test('quality colors have WCAG AA contrast on their explicit white panel and rem
   const luminance=hex=>{const rgb=hex.match(/[a-f0-9]{2}/gi).map(value=>parseInt(value,16)/255).map(value=>value<=.04045?value/12.92:((value+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
   assert.match(css,/\.eso-reference-page \.eso-ref-numeric\{[^}]*background:#fff;/);
   for(const [id] of qualityDefinitions) {const match=css.match(new RegExp(`\\.eso-reference-page \\.eso-ref-quality-${id}\\{color:(#[a-f0-9]{6})\\}`));assert.ok(match,id);assert.ok(1.05/(luminance(match[1])+.05)>=4.5,`${id} contrast`);}
-  assert.match(css,/\.eso-ref-quality-normal \.eso-ref-quality-label:before\{[^}]*background:#fff;[^}]*border:1px solid/);
-  assert.match(css,/table-layout:fixed/);assert.match(css,/font-variant-numeric:tabular-nums/);
+  assert.match(css,/\.eso-ref-quality-legend \.eso-ref-quality-normal:before\{[^}]*background:#fff;[^}]*border:1px solid/);
+  assert.ok(!css.includes('table-layout:fixed'));assert.match(css,/font-variant-numeric:tabular-nums/);assert.match(css,/\.eso-ref-quality-inline\{[^}]*white-space:nowrap/);
 });
 test('separate trait/enchantment views, group filters and exact equipment applicability',async()=>{
   const {api,node,context}=harness();await api.load();
@@ -242,27 +242,106 @@ test('production data loads and every view, group and individual equipment combi
     assert.ok(!/<img|<svg|<iframe/.test(node('reference-detail').innerHTML));
   }
 });
-test('production numeric data renders all 355 quality rows with exact values, historical warnings and unknown gaps',async()=>{
+test('production 71 entries preserve all 355 quality records and exact facts without repeated tables',async()=>{
   const value=JSON.parse(fs.readFileSync(path.join(root,'data/eso-equipment-reference.json'),'utf8'));
   const {api,node,context}=harness(value);await api.load();
   const escape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const all=[...value.traits.map(item=>({...item,kind:'trait'})),...value.enchantments.map(item=>({...item,kind:'enchantment'}))];
   assert.equal(all.length,71);assert.equal(all.flatMap(item=>item.numericValue?.qualities||[]).length,355);
-  assert.ok(all.every(item=>item.numericValue&&item.numericValue.qualities.length===5));
   for(const key of ['numericBasis','numericVerificationNote']) assert.ok(node('reference-coverage').innerHTML.includes(escape(value.meta[key])),key);
   for(const item of all) {
     context.location.hash=`#${item.kind}/${item.id}`;api.route();const html=node('reference-detail').innerHTML;
-    assert.equal((html.match(/data-quality=/g)||[]).length,5,item.id);
+    assert.ok(!html.includes('<table'),item.id);
+    const rendered=[...html.matchAll(/data-quality="([a-z]+)"/g)].map(match=>match[1]);
+    assert.ok(rendered.length>=5&&rendered.length%5===0,item.id);
+    for(let index=0;index<rendered.length;index+=5) assert.deepEqual(rendered.slice(index,index+5),qualityDefinitions.map(([id])=>id));
+    assert.ok(html.includes(escape(item.effectJa)),item.id+' complete original effect');
     assert.ok(html.includes(escape(item.numericValue.basis)),item.id+' basis');
     for(const note of item.numericValue.notes||[]) assert.ok(html.includes(escape(note)),item.id+' note');
     for(const quality of item.numericValue.qualities) {
-      const row=html.match(new RegExp(`<tr class="eso-ref-quality-${quality.id}"[^>]*>([\\s\\S]*?)<\\/tr>`))?.[1];
-      assert.ok(row,item.id+' / '+quality.id);assert.ok(row.includes(escape(quality.label)));
-      if(quality.summary) assert.ok(row.includes(escape(quality.summary)),item.id+' / '+quality.id+' summary');
-      if(quality.status==='unverified') assert.match(row,/— 未確認/);
-      if(quality.status==='partial') assert.match(row,/参考値（現行未実測）/);
-      if(quality.status==='verified') assert.match(row,/資料照合（未実測）/);
-      for(const variant of quality.variants||[]) {assert.ok(row.includes(escape(variant.label)),item.id+' variant label');assert.ok(row.includes(escape(variant.value)),item.id+' exact value');}
+      assert.ok(html.includes(escape(quality.label)),item.id+' quality label');
+      if(quality.summary) assert.ok(html.includes(escape(quality.summary)),item.id+' summary');
+      for(const variant of quality.variants||[]) {assert.ok(html.includes(escape(variant.label)),item.id+' variant label');assert.ok(html.includes(escape(variant.value)),item.id+' exact value');}
     }
   }
+});
+test('semantic inline replacement uses exact anchors and never substitutes thresholds or ambiguous equal-value positions',async()=>{
+  const value=withNumericValues();value.traits[0].effectJa='最大体力を80増やす。体力80%未満でも有効。';
+  value.traits[0].numericValue.qualities=qualityDefinitions.map(([id,label],index)=>({id,label,status:'partial',summary:'参考値',variants:[{label:'最大体力',value:`+${40+index*10}`}]}));
+  const {api,node,context}=harness(value);await api.load();context.location.hash='#trait/weapon-test';api.route();
+  let effect=node('reference-detail').innerHTML.match(/<p class="eso-ref-effect">([\s\S]*?)<\/p>/)[1];
+  assert.match(effect,/最大体力を<span class="eso-ref-quality-inline"/);assert.match(effect,/体力80%未満/);assert.ok(!effect.includes('eso-ref-inline-row'));
+  const item={...value.traits[0],kind:'trait',effectJa:'最大体力を80増やす。最大体力を80増やす。'};
+  effect=api.effectHTML(item);assert.ok(effect.includes('最大体力を80増やす。最大体力を80増やす。'));assert.ok(effect.includes('eso-ref-inline-row'));
+  item.effectJa='体力が80%未満の敵に追加ダメージ。';effect=api.effectHTML(item);assert.ok(effect.includes(item.effectJa));
+});
+test('semantic templates separate multi-effect rows, preserve duplicate positions, and never promote unknown multipliers',async()=>{
+  const value=JSON.parse(fs.readFileSync(path.join(root,'data/eso-equipment-reference.json'),'utf8'));
+  const {api}=harness(value);
+  const absorb=value.enchantments.find(item=>item.id==='glyph-absorb-magicka');
+  const rows=api.comparisonRows(absorb);assert.equal(rows.length,4);
+  const magic=rows.filter(row=>row.context.includes('魔法'));const recovery=rows.filter(row=>row.context.includes('マジカ'));
+  assert.equal(magic.length,2);assert.equal(recovery.length,2);
+  assert.equal(magic[0].values.get('legendary').amount,'1,900');assert.equal(recovery[0].values.get('legendary').amount,'354');
+  const health=value.enchantments.find(item=>item.id==='glyph-health');
+  const unknown=api.comparisonRows(health).find(row=>row.label.includes('肩'));
+  assert.equal(unknown.values.size,0);assert.ok(!api.effectHTML(health).includes('>40%<'));
+  const harm=value.enchantments.find(item=>item.id==='glyph-increase-physical-harm');
+  const damage=api.comparisonRows(harm).find(row=>row.context.includes('武器'));
+  assert.equal(damage.values.has('normal'),false);assert.equal(damage.values.get('legendary').amount,'+174');
+  const duplicate={effectJa:'原文は不変',numericValue:{qualities:[{id:'legendary',status:'partial',variants:[{label:'同名',value:'+10'},{label:'同名',value:'+20'}]}]}};
+  assert.equal(api.comparisonRows(duplicate).length,2);assert.match(api.effectHTML(duplicate),/>\+10<.*>\+20</);
+});
+test('shared quality legend is outside list-only section and accessible values remain outside collapsed provenance',async()=>{
+  const page=fs.readFileSync(path.join(root,'eso-traits-enchants.html'),'utf8');
+  assert.equal((page.match(/aria-label="品質別数値の凡例"/g)||[]).length,1);
+  assert.ok(page.indexOf('eso-ref-quality-legend')<page.indexOf('id="reference-home"'));
+  const {api,node}=harness(withNumericValues());await api.load();const html=node('reference-list').innerHTML;
+  assert.match(html,/role="img" aria-label="白（Normal） 未確認" title="未確認">—<\/span>/);
+  assert.ok(html.indexOf('data-quality=')<html.indexOf('<details'));
+  assert.match(html,/<details class="eso-ref-item-notes"><summary>条件・出典・原文<\/summary>/);
+  assert.ok(!html.includes('<table'));
+});
+
+test('concise basis and critical old-source, rounded, partial and gameplay caveats stay visible outside disclosures',async()=>{
+  const value=JSON.parse(fs.readFileSync(path.join(root,'data/eso-equipment-reference.json'),'utf8'));
+  const {api,node,context}=harness(value);await api.load();
+  const cases=[
+    ['trait','weapon-defending',['CP160','装備品質（1個）','2023年参考値']],
+    ['enchantment','glyph-crushing',['グリフ品質（追加補正なし）','紫：2016年参考値','片手は50%換算・表示丸め未実測']],
+    ['enchantment','glyph-health',['小部位の表示値は未照合']],
+    ['trait','armor-impenetrable',['金も参考値','資料間の不一致あり']],
+    ['enchantment','glyph-decrease-health',['注入の通常の効果量増加をダメージに掛けない','金も参考値','現行の割合は未確認（片手も未確認）']],
+    ['enchantment','glyph-increase-physical-harm',['再生+10は品質共通（注入などの装備補正は別）']],
+    ['enchantment','glyph-increase-magical-harm',['再生+10は品質共通（注入などの装備補正は別）']],
+    ['enchantment','glyph-reduce-skill-cost',['継続消費型アビリティは対象外','アルティマ消費減少ではない']],
+    ['enchantment','glyph-potion-speed',['薬にはレベル条件']],
+    ['trait','jewelry-bloodthirsty',['到達上限・常時ではない']]
+  ];
+  for(const [kind,id,expected] of cases){
+    context.location.hash=`#?view=${kind==='trait'?'traits':'enchantments'}&q=${id.startsWith('glyph')?'':' '}`;api.route();
+    const card=node('reference-list').innerHTML.match(new RegExp(`<article[^>]*data-entry-id="${kind}/${id}"[\\s\\S]*?<\\/article>`))?.[0];
+    assert.ok(card,id);const visible=card.split('<details')[0];
+    for(const text of expected) assert.ok(visible.includes(text),id+': '+text);
+  }
+});
+
+test('all five grades remain one horizontal run and production token widths fit a 240px mobile content area',()=>{
+  const css=fs.readFileSync(path.join(root,'eso-traits-enchants.css'),'utf8');
+  const script=fs.readFileSync(path.join(root,'eso-traits-enchants.js'),'utf8');
+  assert.match(css,/\.eso-ref-quality-inline\{[^}]*display:inline-flex;flex-wrap:nowrap;[^}]*font-size:12px;[^}]*white-space:nowrap/);
+  assert.ok(!script.includes('<wbr>'));
+  const value=JSON.parse(fs.readFileSync(path.join(root,'data/eso-equipment-reference.json'),'utf8'));
+  const {api}=harness(value);let maxLength=0,maxWidth=0;
+  for(const item of [...value.traits,...value.enchantments]) for(const row of api.comparisonRows(item)) {
+    const amounts=qualityDefinitions.map(([id])=>row.values.get(id));
+    const tokens=amounts.map(value=>(value?.amount||'—').replace(/,/g,''));
+    const chars=tokens.join('/');maxLength=Math.max(maxLength,chars.length);
+    // Conservative 12px mono metrics: ASCII/dash <= 7.25px, 秒 12px;
+    // four slash margins = 8px, group padding = 6px, each ※ <= 9px.
+    const width=[...chars].reduce((sum,char)=>sum+(char==='秒'?12:7.25),0)+14+amounts.filter(value=>value?.calculated).length*9;
+    maxWidth=Math.max(maxWidth,width);assert.ok(width<=240,item.id+': '+width);
+    const effect=api.effectHTML(item);assert.ok(!effect.includes('<wbr>'));assert.ok(!effect.includes(' / </span>'));
+  }
+  assert.equal(maxLength,29);assert.ok(maxWidth<=228,`max estimated width ${maxWidth}`);
 });

@@ -25,7 +25,6 @@
     return `<p class="reference-date">出典日：${escapeHTML(item.sourceDate)} · 資料確認日：${escapeHTML(item.verifiedAt)}</p>${item.verificationNote ? `<p><strong>${escapeHTML(item.verificationNote)}</strong></p>` : ''}`;
   }
   const qualityIds = ['normal','fine','superior','epic','legendary'];
-  const qualityNames = ['白','緑','青','紫','金'];
   function validNumericValue(value, item) {
     if (value === undefined) return true;
     if (!value || value.qualityBasis !== 'equipment-set' || value.baseline !== 'CP160' || !['partial','unverified'].includes(value.status) || typeof value.basis !== 'string' || !Array.isArray(value.rows) || !Array.isArray(value.qualities) || value.qualities.length !== 5 || !Array.isArray(value.notes) || !value.notes.every(x => typeof x === 'string') || !Array.isArray(value.sourceIds) || !value.sourceIds.every(x => typeof x === 'string')) return false;
@@ -36,25 +35,104 @@
     }
     return value.qualities.every((quality, index) => quality && quality.id === qualityIds[index] && typeof quality.label === 'string' && ['partial','unverified','not-applicable'].includes(quality.status) && typeof quality.summary === 'string' && typeof quality.availability === 'string' && Array.isArray(quality.variants) && quality.variants.every(v => v && rowIds.has(v.rowId) && typeof v.label === 'string' && typeof v.value === 'string'));
   }
-  function qualityBlock(item, detailed = false) {
+  // Match a verified row to an exact semantic numeric expression, never an arbitrary
+  // occurrence of its endpoint. Ranges are replaced in full; originals stay in <details>.
+  const metricAliases = [
+    ['武器・呪文ダメージ', ['武器ダメージと呪文ダメージ','武器・呪文ダメージ']],
+    ['クリティカル値', ['クリティカル率の能力値','クリティカルの値','クリティカル値']],
+    ['攻撃貫通力', ['攻撃貫通力','攻撃貫通']],
+    ['防御力', ['防御力（物理・呪文耐性）','防御力']],
+    ...['最大体力','最大スタミナ','最大マジカ','スタミナ再生','マジカ再生','体力再生','クリティカル耐性'].map(label => [label,[label]]),
+    ['モンスターへの与ダメージ増加', ['モンスターへの与ダメージ']],
+    ['クリティカルダメージ増加', ['クリティカルダメージ']],
+    ['軽攻撃/重攻撃の総ダメージ低下', ['軽攻撃・重攻撃で与える総ダメージ']],
+    ['移動速度', ['移動速度']]
+  ];
+  const regexpEscape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const metricPattern = metricAliases.flatMap(([,aliases]) => aliases).sort((a,b) => b.length-a.length).map(regexpEscape).join('|');
+  const numberPattern = String.raw`\d+(?:,\d{3})*(?:\.\d+)?`;
+  const amountPattern = `${numberPattern}(?:\\s*[～〜–—-]\\s*${numberPattern})?`;
+  function rowMetric(row) {
+    if (row.label.endsWith('移動速度')) return '移動速度';
+    return metricAliases.find(([id]) => row.label.endsWith(id))?.[0] || row.label;
+  }
+  function effectPlan(item, effectIndex) {
+    const effect = item.effects[effectIndex], rows = (item.numericValue?.rows || []).filter(row => row.effectIndex === effectIndex);
+    const candidates = [];
+    const add = (match, prefix, amount, unit, metrics) => {
+      const offset = match.index + prefix.length;
+      const endpoint = Number(amount.split(/[～〜–—-]/).pop().replace(/[,\s]/g,''));
+      candidates.push({start:offset,end:offset+amount.length+unit.length,endpoint,unit,metrics});
+    };
+    const pattern = new RegExp(`((?:${metricPattern})(?:(?:と|・)(?:${metricPattern}))*(?:が|を)(?:さらに|それぞれ|各)?\\s*)(${amountPattern})([%％]?)(?![\\d.,])`,'g');
+    for (const match of effect.text.matchAll(pattern)) {
+      const metrics = [...match[1].matchAll(new RegExp(metricPattern,'g'))].map(found => metricAliases.find(([,aliases]) => aliases.includes(found[0]))[0]);
+      add(match,match[1],match[2],match[3],metrics);
+    }
+    for (const [prefix,metric,unit] of [['与えたダメージの','1部位・与ダメージに対する回復率','%'],['この割合が','グループの味方1人につき低下','']]) {
+      const pattern = new RegExp(`(${prefix})(${amountPattern})(${unit})(?![\\d.,])${unit ? '' : '(?=ポイント低下)'}`,'g');
+      for (const match of effect.text.matchAll(pattern)) add(match,match[1],match[2],match[3],[metric]);
+    }
+    const perfectedEffect = /完璧|Perfected/i.test(effect.label);
+    const compatible = (row,candidate) => {
+      if ((row.variant === 'perfected') !== perfectedEffect) return false;
+      if (!perfectedEffect && /完璧|Perfected/i.test(effect.text)) return false;
+      const clause = effect.text.slice(0,candidate.start).split(/[。；;]/).pop();
+      return !perfectedEffect || !/通常版(?:は|では)/.test(clause);
+    };
+    const matches = new Map(rows.map(row => [row,candidates.filter(candidate => compatible(row,candidate) && candidate.metrics.includes(rowMetric(row)) && candidate.endpoint === row.values.legendary && (row.unit === '%') === !!candidate.unit)]));
+    const replacements = [], usedRows = new Set();
+    for (const candidate of candidates) {
+      const aligned = rows.filter(row => matches.get(row).length === 1 && matches.get(row)[0] === candidate);
+      // Shared clauses ("最大スタミナと最大マジカがそれぞれ…") can use one
+      // group only when every named metric has an independently verified identical vector.
+      if (!aligned.length || !candidate.metrics.every(metric => aligned.some(row => rowMetric(row) === metric)) || !aligned.every(row => row.unit === aligned[0].unit && qualityIds.every(id => row.values[id] === aligned[0].values[id]))) continue;
+      if (replacements.some(other => candidate.start < other.end && candidate.end > other.start)) continue;
+      replacements.push({...candidate,rows:aligned});
+      aligned.forEach(row => usedRows.add(row));
+    }
+    replacements.sort((a,b) => a.start-b.start);
+    return {replacements,unmatched:rows.filter(row => !usedRows.has(row))};
+  }
+  function qualityValues(item, rows) {
+    const data = item.numericValue, row = rows[0], mythic = data.availability === 'mythic-fixed';
+    const ids = mythic ? ['legendary'] : qualityIds;
+    return `<span class="set-quality-values" role="group" aria-label="${escapeHTML(rows.map(row => row.label).join(' / '))}" data-row-ids="${escapeHTML(rows.map(row => row.id).join(' '))}">${ids.map(id => {
+      const quality = data.qualities[qualityIds.indexOf(id)], value = row.values[id];
+      const unavailable = quality.status === 'not-applicable';
+      const label = value === undefined ? (unavailable ? '対象外' : '未確認') : `${value}${row.unit === '%' ? 'パーセント' : 'ポイント'}`;
+      const shown = value === undefined ? (unavailable ? '対象外' : '—') : `${value}${row.unit === '%' ? '%' : ''}`;
+      return `<span class="set-quality-${id}${value === undefined ? ' set-quality-empty' : ''}" role="img" data-quality="${id}"${value !== undefined ? ' data-value="' + value + '"' : ''} aria-label="${escapeHTML(quality.label)} ${escapeHTML(label)}" title="${escapeHTML(quality.label)}：${escapeHTML(label)}">${shown}</span>`;
+    }).join('<span class="set-quality-divider" aria-hidden="true"> / </span>')}</span>`;
+  }
+  function renderEffects(item) {
+    return item.effects.map((effect,index) => {
+      const plan = effectPlan(item,index);
+      // Fold only source-text range notes, before escaping; never rewrite generated markup.
+      const fragment = value => escapeHTML(plan.replacements.length ? value.replace(/（(?:資料の)?掲載範囲：[\d.,～〜–—\-\s]+）/g,'') : value);
+      let cursor = 0, html = '';
+      for (const replacement of plan.replacements) {
+        html += fragment(effect.text.slice(cursor,replacement.start)) + qualityValues(item,replacement.rows);
+        cursor = replacement.end;
+      }
+      html += fragment(effect.text.slice(cursor));
+      const fallback = plan.unmatched.map(row => `<span class="set-quality-fallback">${escapeHTML(row.label)}：${qualityValues(item,[row])}</span>`).join('');
+      return `<p><strong>${escapeHTML(effect.label)}</strong>：${html}${fallback}</p>`;
+    }).join('');
+  }
+  function qualityBlock(item) {
     const data = item.numericValue;
-    if (!data) return '<p class="set-quality-unknown">品質別の数値は未確認。本文の単一値・範囲を各品質共通とは扱わない。</p>';
-    const mythic = data.availability === 'mythic-fixed';
-    const heading = mythic ? 'CP160・秘術の固定品質' : 'CP160・品質別の数値';
-    const rows = data.rows;
-    const linkedSources = item.sources.filter(s => data.sourceIds.includes(s.id));
+    if (!data) return '<p class="set-quality-status">品質別の数値は未確認</p>';
+    const mythic = data.availability === 'mythic-fixed', rows = data.rows;
+    const linkedSources = item.sources.filter(source => data.sourceIds.includes(source.id));
     const sources = linkedSources.map(source => {
       let url; try { url = new URL(source.url); } catch {}
       return url?.protocol === 'https:' ? `<a href="${escapeHTML(url.href)}" target="_blank" rel="noopener noreferrer">${source.id === 'mythic-quality' ? '秘術の品質' : source.id === 'eso-perfect-mixing' ? '通常/完璧版の公式ルール' : '品質別の出典（klarix）'}</a>` : '';
     }).filter(Boolean).join(' · ');
-    const table = rows.length ? `<div class="set-quality-table-wrap" role="region" tabindex="0" aria-label="${escapeHTML(item.name)}の品質別数値"><table class="set-quality-table"><caption>${escapeHTML(heading)}（資料照合済みの効果のみ）</caption><thead><tr><th scope="col">効果</th>${qualityNames.map((label,i) => `<th scope="col" class="set-quality-${qualityIds[i]}" title="${escapeHTML(data.qualities[i].label)}"><span class="set-quality-mark" aria-hidden="true"></span>${label}${mythic && i === 4 ? '相当' : ''}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr><th scope="row">${escapeHTML(row.label)}</th>${qualityIds.map((id,i) => {
-      const value = row.values[id];
-      const unavailable = data.qualities[i].status === 'not-applicable';
-      if (value === undefined) return `<td class="set-quality-empty"><span title="${unavailable ? '秘術は固定品質のため対象外' : 'この効果の品質別数値・入手可否は未確認'}">${unavailable ? '対象外' : '—'}</span></td>`;
-      return `<td class="set-quality-${id}"><span aria-label="${escapeHTML(data.qualities[i].label)} ${value}${row.unit === '%' ? 'パーセント' : 'ポイント'}">${Number(value).toLocaleString('ja-JP')}${row.unit === '%' ? '%' : ''}</span></td>`;
-    }).join('')}</tr>`).join('')}</tbody></table></div>` : `<h3>${escapeHTML(heading)}</h3><p class="set-quality-unknown">${mythic ? '白・緑・青・紫は対象外。秘術は固定品質（専用表示は橙、金相当）。本文の効果は保持しているが、このセットの固定品質数値は今回の表に未照合。' : '白・緑・青・紫・金ごとの数値は未確認。本文の単一値や範囲を品質別へ推定配分していない。'}</p>`;
-    const brief = mythic ? '秘術は品質固定。金相当欄の値だけを使用し、低品質へ換算しない。ゲーム内の秘術表示は橙。' : '同じセットをCP160・同一品質に揃えた参照値。— は未確認（0や入手不可ではない）。狭い画面では表を横にスクロールできる。';
-    return `<section class="set-quality-block" aria-label="品質別数値">${table}<p class="set-quality-note">${escapeHTML(brief)}</p>${rows.length ? '<p class="set-quality-note">表にない効果の品質差は未確認。本文の範囲は品質別の値ではない。</p>' : ''}${detailed ? `<p class="set-quality-note">${escapeHTML(data.basis)}</p><ul class="set-quality-notes">${data.notes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : `<details><summary>品質・混在装備の注意</summary><p>${escapeHTML(data.basis)}</p><ul>${data.notes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul></details>`}${sources ? `<p class="set-quality-source">${sources} · 照合日 ${escapeHTML(data.verifiedAt)}</p>` : ''}</section>`;
+    const originals = item.effects.filter((effect,index) => effectPlan(item,index).replacements.length);
+    const status = mythic ? `秘術・固定品質（金相当／橙）${rows.length ? ' · 一部確認' : ' · 数値未確認'}` : rows.length ? 'CP160 · 品質別は一部確認' : '品質別の数値は未確認';
+    const brief = mythic ? '白・緑・青・紫は対象外。秘術は固定品質（金相当、ゲーム内の専用表示は橙）。低品質へ換算しない。' : '同じセットをCP160・同一品質に揃えた参照値。— は未確認（0や入手不可ではない）。';
+    return `<div class="set-quality-meta"><p class="set-quality-status">${status}</p><details class="set-quality-details"><summary>出典・条件・元の掲載値</summary><p>${escapeHTML(brief)}</p><p>置換していない効果の品質差は未確認。本文の単一値・範囲を各品質共通とは扱わず、品質別へ推定配分していない。</p><p>${escapeHTML(data.basis)}</p><ul>${data.notes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>${originals.length ? `<h4>元の効果文（単一値・レベル範囲を含む）</h4>${originals.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}` : ''}${sources ? `<p>${sources} · 照合日 ${escapeHTML(data.verifiedAt)}</p>` : ''}</details></div>`;
   }
 
   function renderEffectFilters() {
@@ -87,7 +165,7 @@
     syncEffectFilters();
     const filtered = sets.filter(item => (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
     $('set-count').textContent = `収録データ内：${filtered.length} / ${sets.length} セット系列`;
-    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${item.effects.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}</div>${qualityBlock(item)}${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
+    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${renderEffects(item)}</div>${qualityBlock(item)}${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
   }
   function route() {
     if (!ready) return;
@@ -111,7 +189,7 @@
       $('set-detail').innerHTML = `${back}<h1>セットが見つからない</h1><p>指定されたセットは未収録、またはURLが正しくない。装備セット一覧から確認できる。</p>`;
     } else {
       document.title = item.name + ' | ESOデータベース';
-      $('set-detail').innerHTML = `${back}<h1>${escapeHTML(item.name)}</h1>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<span class="category">${escapeHTML(item.category)}</span><p class="lead">${escapeHTML(item.summary)}</p>${verification(item)}${icon(item)}<p class="image-pending">アイコンは代表頭部の参考画像。全部位の外見、通常版・完璧版の差やライブ性能を示すものではない。</p><div class="article-body"><h2>セットボーナス・発動条件</h2><p>装備数ごとの効果と条件を記載。本文は従来の参照資料の掲載値。品質別に照合できた値は下の色付き表に分けて掲載。本文の範囲を品質ごとの値とは扱わない。</p>${item.effects.length ? '' : '<p>効果データは未収録。</p>'}${item.effects.map(effect => `<p><strong>${escapeHTML(effect.label)}</strong>：${escapeHTML(effect.text)}</p>`).join('')}${qualityBlock(item, true)}<h2>入手先</h2><p>${escapeHTML(item.location || '未確認')}</p></div><div class="source-box"><strong>出典</strong><ul>${item.sources.map(source => {
+      $('set-detail').innerHTML = `${back}<h1>${escapeHTML(item.name)}</h1>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<span class="category">${escapeHTML(item.category)}</span><p class="lead">${escapeHTML(item.summary)}</p>${verification(item)}${icon(item)}<p class="image-pending">アイコンは代表頭部の参考画像。全部位の外見、通常版・完璧版の差やライブ性能を示すものではない。</p><div class="article-body"><h2>セットボーナス・発動条件</h2><p>装備数ごとの効果と条件を記載。品質別に照合した数値を文中に表示。元の単一値・範囲は「出典・条件・元の掲載値」で確認できる。</p>${item.effects.length ? '' : '<p>効果データは未収録。</p>'}${renderEffects(item)}${qualityBlock(item, true)}<h2>入手先</h2><p>${escapeHTML(item.location || '未確認')}</p></div><div class="source-box"><strong>出典</strong><ul>${item.sources.map(source => {
         let url;
         try { url = new URL(source.url); } catch {}
         return `<li>${url?.protocol === 'https:' ? `<a href="${escapeHTML(url.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label)}</a>` : escapeHTML(source.label)}</li>`;
