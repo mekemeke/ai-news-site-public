@@ -11,6 +11,20 @@
         "headline": 6,
         "roundup": 4
       }
+    },
+    {
+      "runDate": "2026-10-27",
+      "publishedAt": "2026-10-27T10:19:02+09:00",
+      "newCount": 18,
+      "deletedCount": 0,
+      "counts": {
+        "standalone": 12,
+        "tipsRoundup": 3,
+        "newsRoundup": 3
+      },
+      "sourceItemCount": 63,
+      "uniqueXPostCount": 49,
+      "notes": "Reddit freshness not verified; video metadata only; no Gemini analysis."
     }
   ],
   "articles": [
@@ -207,6 +221,329 @@
           ]
         }
       ]
+    },
+    {
+      "id": "20261027-ai-tips",
+      "runDate": "2026-10-27",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1523997879527921/",
+        "https://facebook.com/groups/runlocalai/permalink/1523042339623475/",
+        "https://facebook.com/groups/runlocalai/permalink/1523598446234531/",
+        "https://www.threads.com/@claudeai/post/De9uj5lkpyo",
+        "https://x.com/profstonge/status/2114760720466292743",
+        "https://x.com/Texas_Twins_Dad/status/2114834256874909807",
+        "https://x.com/AleiahLock/status/2114801528259424707",
+        "https://x.com/GOROman/status/2114513866235457650",
+        "https://x.com/nvandewetering/status/2114741341930549343",
+        "https://x.com/o1xhack/status/2114840673446949306",
+        "https://x.com/Daihuku0015/status/2114626943161410030",
+        "https://x.com/thsottiaux/status/2114595002210783279",
+        "https://x.com/poteto/status/2114626630429913383",
+        "https://x.com/tetumemo/status/2114858363511341527"
+      ],
+      "sourceMessageIds": [
+        "1793059270.848099",
+        "1793059271.618399",
+        "1793060675.325979",
+        "1793060680.662159",
+        "1793060681.907499",
+        "1793060683.206129",
+        "1793060684.475199",
+        "1793061073.747409",
+        "1793061086.818779",
+        "1793061088.142219"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-ai-news",
+      "runDate": "2026-10-27",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/elonmusk/status/2114753070165049749",
+        "https://x.com/ericzakariasson/status/2114833082956321095",
+        "https://x.com/santiagomed/status/2114868620933333409",
+        "https://x.com/doublenickk/status/2114819181057032558",
+        "https://x.com/artur_wala/status/2114722939262120325",
+        "https://x.com/gdb/status/2114837059462627533",
+        "https://x.com/AnthropicAI/status/2114705042817110293",
+        "https://x.com/claudeai/status/2114780227465338985",
+        "https://x.com/elonmusk/status/2114751739026985329",
+        "https://x.com/_philschmid/status/2114773524787187804",
+        "https://x.com/cursor_ai/status/2114793714531102901",
+        "https://x.com/cohere/status/2114752002370544004",
+        "https://x.com/masahirochaen/status/2114742027107897760",
+        "https://x.com/The_Cyber_News/status/2114771540352893196",
+        "https://www.anthropic.com/news/s1-sec",
+        "https://www.youtube.com/watch?v=CsHeAGf1Dw4"
+      ],
+      "sourceMessageIds": [
+        "1793060675.325979",
+        "1793060680.662159",
+        "1793060681.907499",
+        "1793060683.206129",
+        "1793061073.747409",
+        "1793061079.730119",
+        "1793061081.215729",
+        "1793061082.647439",
+        "1793061083.987829",
+        "1793061088.142219"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-cg-tips",
+      "runDate": "2026-10-27",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/282909453705941/permalink/1480884780575063/",
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4674399979510073/",
+        "https://facebook.com/groups/282909453705941/permalink/1480758537254354/",
+        "https://www.threads.com/@thegnomonworkshop/post/De92DWVAd43",
+        "https://x.com/H_Y_per/status/2114643319682978025",
+        "https://x.com/80Level/status/2114779408921747878",
+        "https://x.com/vellindie/status/2114348902673723661",
+        "https://x.com/stewchan2/status/2114534724387438661",
+        "https://x.com/bilawalsidhu/status/2114698306886758410",
+        "https://x.com/KanaWorks_AI/status/2114603112464044163",
+        "https://x.com/CharaspowerAI/status/2114794232229609496"
+      ],
+      "sourceMessageIds": [
+        "1793059272.490719",
+        "1793059273.358879",
+        "1793060084.947829",
+        "1793060090.590579",
+        "1793060483.253989",
+        "1793060490.540449",
+        "1793061073.747409",
+        "1793061085.347399",
+        "1793061088.142219",
+        "1793061089.631239"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-cg-news",
+      "runDate": "2026-10-27",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/UnrealEngine/status/2114703767941898408"
+      ],
+      "sourceMessageIds": [
+        "1793060084.947829",
+        "1793060090.590579",
+        "1793060483.253989",
+        "1793060489.210629"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-eso-tips",
+      "runDate": "2026-10-27",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/esoeu/permalink/40456479347283883/",
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29108726702072492/",
+        "https://x.com/tokumei_0000/status/2114649762226192828",
+        "https://x.com/tomi_0508/status/2114527456166314392"
+      ],
+      "sourceMessageIds": [
+        "1793059274.266059",
+        "1793059274.969679",
+        "1793060287.744249",
+        "1793060293.129479"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-eso-news",
+      "runDate": "2026-10-27",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/esoeu/permalink/40365204629744689/"
+      ],
+      "sourceMessageIds": [
+        "1793059274.266059",
+        "1793059274.969679"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-gaea3",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2067418763979727/"
+      ],
+      "sourceMessageIds": [
+        "1793059275.674349",
+        "1793059276.640889"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-gaea23",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2075572816497655/"
+      ],
+      "sourceMessageIds": [
+        "1793059275.674349",
+        "1793059276.640889"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-motion-path",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/HamdiAmer16/status/2114372918733873396"
+      ],
+      "sourceMessageIds": [
+        "1793060084.947829",
+        "1793060090.590579"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-kimi",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/KimiAI_Japan/status/2114735970109075855"
+      ],
+      "sourceMessageIds": [
+        "1793060084.947829",
+        "1793060090.590579"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-eso-u52",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/TESOnline/status/2114725070551564606",
+        "https://x.com/JHartEllis/status/2114848349392445871",
+        "https://forums.elderscrollsonline.com/en/discussion/700551/pts-patch-notes-v12-2-0",
+        "https://www.youtube.com/watch?v=mNT05afaNzA",
+        "https://www.youtube.com/watch?v=fxac-QZ-lKQ"
+      ],
+      "sourceMessageIds": [
+        "1793060287.744249",
+        "1793060293.129479"
+      ],
+      "forumEvidence": [
+        {
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700551/pts-patch-notes-v12-2-0",
+          "checkedAt": "2026-10-27T10:19:02+09:00",
+          "points": [
+            "ZOS_Kevin October26 official Update52 PTS v12.2.0 available announcement; detailed patch body not read"
+          ],
+          "previousCheckedAt": null
+        }
+      ]
+    },
+    {
+      "id": "20261027-eso-tesoctober",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/TESOnline/status/2114763991838773657"
+      ],
+      "sourceMessageIds": [
+        "1793060287.744249",
+        "1793060293.129479"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-redgpu",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/redcamel15/status/2114606572165046472"
+      ],
+      "sourceMessageIds": [
+        "1793060483.253989",
+        "1793060489.210629"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-tessera",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/carlosedubarret/status/2114753196329488736"
+      ],
+      "sourceMessageIds": [
+        "1793060483.253989",
+        "1793060489.210629"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-terra",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/OpenAI/status/2114780711664398349",
+        "https://x.com/gdb/status/2114814747254432243",
+        "https://x.com/EHuanglu/status/2114791012946333777",
+        "https://x.com/thsottiaux/status/2114800277677092936",
+        "https://x.com/tetumemo/status/2114836949500653890"
+      ],
+      "sourceMessageIds": [
+        "1793061073.747409",
+        "1793061079.730119",
+        "1793061083.987829",
+        "1793061085.347399",
+        "1793061086.818779"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-deepseek",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/cursor_ai/status/2114839997568405608"
+      ],
+      "sourceMessageIds": [
+        "1793061073.747409",
+        "1793061082.647439"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-krea-premiere",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/krea_ai/status/2114741513867395527"
+      ],
+      "sourceMessageIds": [
+        "1793061073.747409",
+        "1793061085.347399"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261027-runway-studio",
+      "runDate": "2026-10-27",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/runwayml/status/2114805465658036425"
+      ],
+      "sourceMessageIds": [
+        "1793061073.747409",
+        "1793061085.347399"
+      ],
+      "forumEvidence": []
     }
   ]
 }
