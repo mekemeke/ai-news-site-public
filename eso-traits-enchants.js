@@ -10,6 +10,13 @@
   const groupNames = {weapon:'武器',armor:'防具・盾',jewelry:'宝飾品'};
   const viewNames = {traits:'特性',enchantments:'付呪（グリフ）'};
   const kindNames = {trait:'特性',enchantment:'付呪'};
+  const qualities = [
+    {id:'normal',label:'白（Normal）'},
+    {id:'fine',label:'緑（Fine）'},
+    {id:'superior',label:'青（Superior）'},
+    {id:'epic',label:'紫（Epic）'},
+    {id:'legendary',label:'金（Legendary）'}
+  ];
   let data, ready = false, loading = false;
   let equipment = new Map(), sources = new Map(), entries = new Map();
   let state = {view:'traits',group:'',equipmentId:'',q:''};
@@ -32,8 +39,21 @@
     return sourceLink(source) + (notes.length ? ` — ${escapeHTML(notes.join(' '))}` : '');
   }
   function sourceLinks(ids) { return ids.map(id => sourceLink(sources.get(id))).join(' / '); }
+  function validateNumericValue(value,kind,sourceMap) {
+    if (value == null) return;
+    const nonempty = value => typeof value === 'string' && !!value.trim();
+    const ids = new Set(qualities.map(item => item.id)), seen = new Set();
+    if (!value || typeof value !== 'object' || value.qualityBasis !== (kind === 'trait' ? 'equipment' : 'glyph') || !nonempty(value.basis) || !Array.isArray(value.qualities) || value.qualities.length > qualities.length || !Array.isArray(value.sourceIds) || !value.sourceIds.every(id => sourceMap.has(id)) || new Set(value.sourceIds).size !== value.sourceIds.length || (value.notes != null && typeof value.notes !== 'string' && (!Array.isArray(value.notes) || !value.notes.every(note => typeof note === 'string')))) throw new Error('Invalid numeric value');
+    for (const quality of value.qualities) {
+      if (!quality || !ids.has(quality.id) || seen.has(quality.id) || !['verified','partial','unverified'].includes(quality.status) || (quality.label != null && !nonempty(quality.label)) || (quality.summary != null && typeof quality.summary !== 'string') || (quality.variants != null && (!Array.isArray(quality.variants) || !quality.variants.every(variant => variant && nonempty(variant.label) && nonempty(variant.value))))) throw new Error('Invalid quality value');
+      if (quality.sourceIds != null && (!Array.isArray(quality.sourceIds) || new Set(quality.sourceIds).size !== quality.sourceIds.length || !quality.sourceIds.every(id => sourceMap.has(id) && value.sourceIds.includes(id)) || (quality.status !== 'unverified' && !quality.sourceIds.length))) throw new Error('Invalid quality evidence');
+      if (quality.status === 'unverified' && quality.variants?.length) throw new Error('Unverified numeric variants');
+      if (quality.status !== 'unverified' && (!value.sourceIds.length || (!quality.variants?.length && !nonempty(quality.summary)))) throw new Error('Missing numeric evidence');
+      seen.add(quality.id);
+    }
+  }
   function validate(value) {
-    if (!value || value.schemaVersion !== 1 || !value.meta || !Array.isArray(value.sources) || !value.sources.length || !Array.isArray(value.equipmentTypes) || !value.equipmentTypes.length || !Array.isArray(value.traits) || !value.traits.length || !Array.isArray(value.enchantments) || !value.enchantments.length) throw new Error('Invalid reference data');
+    if (!value || ![1,2].includes(value.schemaVersion) || !value.meta || !Array.isArray(value.sources) || !value.sources.length || !Array.isArray(value.equipmentTypes) || !value.equipmentTypes.length || !Array.isArray(value.traits) || !value.traits.length || !Array.isArray(value.enchantments) || !value.enchantments.length) throw new Error('Invalid reference data');
     const em = new Map(), sm = new Map(), im = new Map();
     const nonempty = value => typeof value === 'string' && !!value.trim();
     const textOrLines = value => value == null || typeof value === 'string' || (Array.isArray(value) && value.every(item => typeof item === 'string'));
@@ -56,6 +76,7 @@
         const ids = item.applicableEquipmentIds || [...em.values()].filter(other => other[groupField] === item.group).map(other => other.id);
         if (!Array.isArray(ids) || !ids.length || new Set(ids).size !== ids.length || !ids.every(id => em.has(id) && em.get(id)[groupField] === item.group)) throw new Error('Invalid equipment applicability');
         if (kind === 'enchantment' && !Array.isArray(item.applicableEquipmentIds)) throw new Error('Missing enchantment applicability');
+        validateNumericValue(item.numericValue,kind,sm);
         im.set(key,{...item,kind,applicableEquipmentIds:ids});
       }
     }
@@ -110,13 +131,26 @@
     const allInGroup = [...equipment.values()].filter(other => other[item.kind === 'trait' ? 'traitGroup' : 'glyphGroup'] === item.group);
     return allInGroup.length === items.length ? [`${groupNames[item.group]}の収録装備すべて`] : [`${items.map(item => item.nameJa).slice(0,2).join('・')} ほか${items.length - 2}種類（詳細参照）`];
   }
+  function numericValues(item) {
+    const value = item.numericValue;
+    const basis = value?.qualityBasis || (item.kind === 'trait' ? 'equipment' : 'glyph');
+    const rows = new Map((value?.qualities || []).map(quality => [quality.id,quality]));
+    const basisLabel = basis === 'glyph' ? 'グリフの品質別（装備自体の色とは別）' : '装備自体の品質別';
+    return `<section class="eso-ref-numeric" aria-label="品質別の数値"><p class="eso-ref-numeric-basis"><strong>${basisLabel}</strong><br>${escapeHTML(value?.basis || '基準レベル・効果量：未確認')}</p><table class="eso-ref-quality-table"><caption>品質別の数値</caption><thead><tr><th scope="col">品質</th><th scope="col">基準効果量</th></tr></thead><tbody>${qualities.map(definition => {
+      const quality = rows.get(definition.id), unknown = !quality || quality.status === 'unverified';
+      const variants = quality?.variants || [];
+      const amount = unknown ? '<strong class="eso-ref-quality-unknown">— 未確認</strong>' : variants.length ? variants.map(variant => `<span class="eso-ref-quality-variant"><span>${escapeHTML(variant.label)}</span><strong>${escapeHTML(variant.value)}</strong></span>`).join('') : `<strong class="eso-ref-quality-amount">${escapeHTML(quality.summary)}</strong>`;
+      const summary = quality?.summary && (unknown || variants.length) ? `<span class="eso-ref-quality-summary">${escapeHTML(quality.summary)}</span>` : '';
+      return `<tr class="eso-ref-quality-${definition.id}" data-quality="${definition.id}"><th scope="row"><span class="eso-ref-quality-label">${escapeHTML(quality?.label || definition.label)}</span>${quality?.status === 'partial' ? '<small>参考値（現行未実測）</small>' : quality?.status === 'verified' ? '<small>資料照合（未実測）</small>' : ''}</th><td>${amount}${summary}</td></tr>`;
+    }).join('')}</tbody></table>${lines(value?.notes).map(note => `<p class="eso-ref-numeric-note">${escapeHTML(note)}</p>`).join('')}<p class="eso-ref-numeric-note">— は未確認です。0ではなく、他の品質から推定していません。${value?.sourceIds.length ? ` 数値の出典：${sourceLinks(value.sourceIds)}` : ''}</p></section>`;
+  }
   function renderCard(item) {
-    return `<article class="eso-ref-card" data-entry-id="${item.kind}/${item.id}"><p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}${typeof item.researchable === 'boolean' ? ' · ' + (item.researchable ? '研究可能' : '研究不可') : ''}</p><h2><a href="${escapeHTML(detailURL(item))}">${escapeHTML(title(item))}</a></h2>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-effect">${escapeHTML(item.effectJa)}</p><div class="eso-ref-availability" aria-label="対象装備">${applicability(item).map(label => `<span>${escapeHTML(label)}</span>`).join('')}</div><p class="eso-ref-condition">${escapeHTML(conditions(item))}</p>${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}<p class="eso-ref-verification">${escapeHTML(nameNote(item))}</p><p class="eso-ref-verification">出典：${sourceLinks(item.sourceIds)}</p></article>`;
+    return `<article class="eso-ref-card" data-entry-id="${item.kind}/${item.id}"><p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}${typeof item.researchable === 'boolean' ? ' · ' + (item.researchable ? '研究可能' : '研究不可') : ''}</p><h2><a href="${escapeHTML(detailURL(item))}">${escapeHTML(title(item))}</a></h2>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-effect">${escapeHTML(item.effectJa)}</p>${numericValues(item)}<div class="eso-ref-availability" aria-label="対象装備">${applicability(item).map(label => `<span>${escapeHTML(label)}</span>`).join('')}</div><p class="eso-ref-condition">${escapeHTML(conditions(item))}</p>${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}<p class="eso-ref-verification">${escapeHTML(nameNote(item))}</p><p class="eso-ref-verification">出典：${sourceLinks(item.sourceIds)}</p></article>`;
   }
   function chip(label,url,selected,count) { return `<a href="${escapeHTML(url)}"${selected ? ' aria-current="true"' : ''}>${escapeHTML(label)}${count == null ? '' : `<small>${count}件</small>`}</a>`; }
   function renderFilters() {
     $('reference-views').innerHTML = Object.entries(viewNames).map(([view,label]) => chip(label,listURL({...state,view}),state.view === view,viewEntries(view).length)).join('');
-    $('reference-view-hint').textContent = state.view === 'traits' ? '特性は装備自体に付く性質です。付呪（グリフ）の効果とは別に確認できます。' : 'ここでは装備に使うグリフの種類を掲載しています。グリフのレベル・品質別の数値表や、完成装備の計算機ではありません。';
+    $('reference-view-hint').textContent = state.view === 'traits' ? '特性は装備自体に付く性質です。数値は装備の品質別に表示します。CP160などの基準レベル・部位と、確認できた範囲を各表で確認してください。' : '付呪の数値はグリフの品質別です。装備自体の品質とは別に、CP160などの基準レベルと適用部位を各表で確認してください。注入特性などを含む完成装備の計算機ではありません。';
     const items = viewEntries();
     $('reference-groups').innerHTML = chip('すべて',listURL({...state,group:'',equipmentId:''}),!state.group,items.length) + Object.entries(groupNames).map(([group,label]) => chip(label,listURL({...state,group,equipmentId:''}),state.group === group,items.filter(item => item.group === group).length)).join('');
     const groupField = state.view === 'traits' ? 'traitGroup' : 'glyphGroup';
@@ -135,7 +169,7 @@
     const filtered = all.filter(item => {
       if (state.group && item.group !== state.group) return false;
       if (state.equipmentId && !item.applicableEquipmentIds.includes(state.equipmentId)) return false;
-      const haystack = normalize([item.nameJa,item.nameEn,item.effectJa,item.conditionsJa,...(item.aliases || []),...lines(item.notes),...item.applicableEquipmentIds.map(id => equipment.get(id).nameJa)].filter(Boolean).join(' '));
+      const haystack = normalize([item.nameJa,item.nameEn,item.effectJa,item.conditionsJa,...(item.aliases || []),...lines(item.notes),item.numericValue?.basis,...lines(item.numericValue?.notes),...(item.numericValue?.qualities || []).flatMap(quality => [quality.label,quality.summary,...(quality.variants || []).flatMap(variant => [variant.label,variant.value])]),...item.applicableEquipmentIds.map(id => equipment.get(id).nameJa)].filter(Boolean).join(' '));
       return words.every(word => haystack.includes(word));
     });
     $('reference-count').textContent = `${viewNames[state.view]}：${filtered.length} / ${all.length} 件${state.equipmentId ? ' · ' + equipment.get(state.equipmentId).nameJa : state.group ? ' · ' + groupNames[state.group] : ''}`;
@@ -147,8 +181,8 @@
   function renderSources() {
     const meta = data.meta, checkedAt = meta.checkedAt || meta.verifiedAt || '未確認';
     const scope = text(meta.scopeNote) || text(meta.coverageNote) || '参照資料で確認できた特性と装備用グリフを掲載。ゲーム内の実測・現行アップデートとの照合は未実施です。';
-    $('reference-coverage').innerHTML = `<p><strong>特性${data.traits.length}件 / 付呪${data.enchantments.length}件。</strong> 武器・防具・宝飾品で分類し、盾や個別の装備種類でも絞り込めます。</p><p>${escapeHTML(scope)}</p>${meta.verificationNote ? `<p>${escapeHTML(meta.verificationNote)}</p>` : ''}<p class="eso-ref-muted">資料確認日：${escapeHTML(checkedAt)} · ${escapeHTML(text(meta.versionNote) || '資料の対応版と現行仕様の一致は未確認です。')} 数値を推定せず、画像は掲載していません。</p>`;
-    const notes = [meta.localizationNote,meta.conditionsNote,meta.numericNote,meta.verificationNote].filter(note => typeof note === 'string' && note);
+    $('reference-coverage').innerHTML = `<p><strong>特性${data.traits.length}件 / 付呪${data.enchantments.length}件。</strong> 武器・防具・宝飾品で分類し、盾や個別の装備種類でも絞り込めます。</p><p>${escapeHTML(scope)}</p>${meta.numericBasis ? `<p><strong>数値の基準：</strong>${escapeHTML(meta.numericBasis)}</p>` : ''}${meta.numericVerificationNote ? `<p>${escapeHTML(meta.numericVerificationNote)}</p>` : ''}${meta.verificationNote ? `<p>${escapeHTML(meta.verificationNote)}</p>` : ''}<p class="eso-ref-muted">資料確認日：${escapeHTML(checkedAt)} · ${escapeHTML(text(meta.versionNote) || '資料の対応版と現行仕様の一致は未確認です。')} 数値を推定せず、画像は掲載していません。</p>`;
+    const notes = [meta.localizationNote,meta.conditionsNote,meta.numericNote,meta.numericBasis,meta.numericVerificationNote,meta.verificationNote].filter(note => typeof note === 'string' && note);
     $('reference-rule-content').innerHTML = rulesHTML();
     $('reference-sources').innerHTML = `<p>データ版：${escapeHTML(text(meta.version) || 'スキーマ1')} · 資料確認日：${escapeHTML(checkedAt)}</p><p>${escapeHTML(scope)}</p><p>${escapeHTML(text(meta.versionNote) || '対応アップデートは未確認です。')}</p><p>資料確認日は参照元を確認した日です。ゲーム内実測日ではありません。効果説明は日本語の要約で、名称の照合範囲は各項目に記載しています。</p>${notes.map(note => `<p>${escapeHTML(note)}</p>`).join('')}${lines(data.coverage?.excluded).length ? `<h3>収録対象外</h3><ul>${lines(data.coverage.excluded).map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}${lines(data.coverage?.limitations).length ? `<h3>確認上の制約</h3><ul>${lines(data.coverage.limitations).map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}<ul>${data.sources.map(source => `<li>${sourceReference(source)}${source.checkedAt || source.verifiedAt ? `（資料確認：${escapeHTML(source.checkedAt || source.verifiedAt)}）` : ''}</li>`).join('')}</ul>`;
   }
@@ -161,7 +195,7 @@
     } else {
       document.title = `${title(item)} | 特性・付呪 | ESOデータベース`;
       const equipmentNotes = item.applicableEquipmentIds.flatMap(id => lines(equipment.get(id).notes).map(note => `${equipment.get(id).nameJa}：${note}`));
-      $('reference-detail').innerHTML = `${back}<p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}</p><h1>${escapeHTML(title(item))}</h1>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-muted">${escapeHTML(nameNote(item))}</p>${item.aliases?.length ? `<p class="eso-ref-muted">資料内の別表記・旧称：${escapeHTML(item.aliases.join(' / '))}</p>` : ''}<dl class="eso-ref-facts"><dt>種類</dt><dd>${kindNames[item.kind]} / ${groupNames[item.group]}</dd>${typeof item.researchable === 'boolean' ? `<dt>研究</dt><dd>${item.researchable ? '研究可能' : '研究不可（非研究特性）'}</dd>` : ''}<dt>対象装備</dt><dd>${escapeHTML(applicability(item,true).join(' / '))}</dd><dt>対応アップデート</dt><dd>${escapeHTML(item.gameUpdate || data.meta.gameUpdate || '未確認')}</dd><dt>品質・レベルなどの条件</dt><dd>${escapeHTML(conditions(item))}</dd></dl><h2>効果</h2><p class="eso-ref-effect">${escapeHTML(item.effectJa)}</p>${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}${equipmentNotes.length ? `<h2>装備種類ごとの注意</h2><ul>${equipmentNotes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}<div class="source-box"><h2>出典・確認範囲</h2><ul>${item.sourceIds.map(id => `<li>${sourceReference(sources.get(id))}</li>`).join('')}</ul><p>参照資料のデータ日：${escapeHTML(item.sourceDataDate || '未確認')} · 現行ゲーム内では未検証</p>${item.versionNote ? `<p>${escapeHTML(item.versionNote)}</p>` : ''}<p>${escapeHTML(text(data.meta.versionNote) || '参照資料の対応版と現行仕様の一致は未確認です。')}</p><p>効果説明は参照資料の要約です。未確認の数値・品質差を推定して補ってはいません。効果量や装備への適用はゲーム内でも確認してください。</p></div>${back}`;
+      $('reference-detail').innerHTML = `${back}<p class="eso-ref-kind">${kindNames[item.kind]} / ${groupNames[item.group]}</p><h1>${escapeHTML(title(item))}</h1>${item.nameJa ? `<p class="eso-ref-english" lang="en">${escapeHTML(item.nameEn)}</p>` : ''}<p class="eso-ref-muted">${escapeHTML(nameNote(item))}</p>${item.aliases?.length ? `<p class="eso-ref-muted">資料内の別表記・旧称：${escapeHTML(item.aliases.join(' / '))}</p>` : ''}<dl class="eso-ref-facts"><dt>種類</dt><dd>${kindNames[item.kind]} / ${groupNames[item.group]}</dd>${typeof item.researchable === 'boolean' ? `<dt>研究</dt><dd>${item.researchable ? '研究可能' : '研究不可（非研究特性）'}</dd>` : ''}<dt>対象装備</dt><dd>${escapeHTML(applicability(item,true).join(' / '))}</dd><dt>対応アップデート</dt><dd>${escapeHTML(item.gameUpdate || data.meta.gameUpdate || '未確認')}</dd><dt>品質・レベルなどの条件</dt><dd>${escapeHTML(conditions(item))}</dd></dl><h2>効果</h2><p class="eso-ref-effect">${escapeHTML(item.effectJa)}</p>${numericValues(item)}${lines(item.notes).map(note => `<p class="eso-ref-condition">${escapeHTML(note)}</p>`).join('')}${verification(item)}${equipmentNotes.length ? `<h2>装備種類ごとの注意</h2><ul>${equipmentNotes.map(note => `<li>${escapeHTML(note)}</li>`).join('')}</ul>` : ''}<div class="source-box"><h2>出典・確認範囲</h2><ul>${item.sourceIds.map(id => `<li>${sourceReference(sources.get(id))}</li>`).join('')}</ul><p>参照資料のデータ日：${escapeHTML(item.sourceDataDate || '未確認')} · 現行ゲーム内では未検証</p>${item.versionNote ? `<p>${escapeHTML(item.versionNote)}</p>` : ''}<p>${escapeHTML(text(data.meta.versionNote) || '参照資料の対応版と現行仕様の一致は未確認です。')}</p><p>効果説明は参照資料の要約です。未確認の数値・品質差を推定して補ってはいません。効果量や装備への適用はゲーム内でも確認してください。</p></div>${back}`;
     }
     window.scrollTo(0,0);
     $('reference-detail').focus({preventScroll:true});
@@ -212,7 +246,7 @@
     $('reference-retry').hidden = true;
     $('reference-notice').textContent = 'データを読み込み中…';
     try {
-      const response = await fetch('./data/eso-equipment-reference.json?v=20261027-reference1',{credentials:'omit'});
+      const response = await fetch('./data/eso-equipment-reference.json?v=20261027-quality1',{credentials:'omit'});
       if (!response.ok) throw new Error('Data unavailable');
       const value = await response.json(), maps = validate(value);
       data = value; equipment = maps.equipment; sources = maps.sources; entries = maps.entries;

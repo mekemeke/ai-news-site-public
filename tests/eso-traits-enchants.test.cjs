@@ -41,6 +41,67 @@ function harness(value=fixture) {
   return {node,context,windowEvents,api:context.api};
 }
 const count = node => (node.innerHTML.match(/data-entry-id=/g)||[]).length;
+const qualityDefinitions = [
+  ['normal','白（Normal）'],['fine','緑（Fine）'],['superior','青（Superior）'],['epic','紫（Epic）'],['legendary','金（Legendary）']
+];
+function withNumericValues() {
+  const value=structuredClone(fixture);
+  value.traits[0].numericValue={qualityBasis:'equipment',basis:'CP160・片手武器 / 両手武器。特性の基準値。',sourceIds:['official'],notes:['過去資料の参考値。現行ゲーム内未実測。'],qualities:qualityDefinitions.map(([id,label],index)=>({id,label,status:index===0?'unverified':index===4?'verified':'partial',summary:index===0?'この品質の根拠資料は未確認。':'資料で確認した値。',variants:index===0?[]:[{label:'片手武器',value:`${index*10}%`},{label:'両手武器',value:`${index*20}%`}]}))};
+  value.enchantments[1].numericValue={qualityBasis:'glyph',basis:'CP160・注入などの強化なし。装備の色ではなくグリフの色。',sourceIds:['official'],notes:['胴・頭・脚と小部位を区別する。'],qualities:[{id:'legendary',label:'金（Legendary）',status:'verified',summary:'基準部位での効果。',variants:[{label:'胴・頭・脚・盾',value:'+954 体力'},{label:'肩・手・腰・足',value:'+386 体力'}]}]};
+  return value;
+}
+test('numeric values are prominent in list and detail with all five named quality colors and exact contexts',async()=>{
+  const {api,node,context,windowEvents}=harness(withNumericValues());await api.load();
+  context.location.hash='#?group=weapon&q=Weapon';api.route();
+  let html=node('reference-list').innerHTML;
+  assert.equal((html.match(/data-quality=/g)||[]).length,5);
+  for(const [id,label] of qualityDefinitions) {assert.ok(html.includes(`class="eso-ref-quality-${id}"`));assert.ok(html.includes(label));}
+  for(const expected of ['装備自体の品質別','CP160','片手武器','両手武器','40%','80%','— 未確認','参考値（現行未実測）','現行ゲーム内未実測','数値の出典']) assert.ok(html.includes(expected),expected);
+  assert.match(html,/<table class="eso-ref-quality-table"><caption>品質別の数値<\/caption>/);
+  assert.ok(html.indexOf('品質別の数値')<html.indexOf('対象装備'));
+  assert.ok(!/<details[^>]*>[\s\S]*data-quality=/.test(html));
+  context.location.hash='#trait/weapon-test?group=weapon&q=Weapon';windowEvents.hashchange();html=node('reference-detail').innerHTML;
+  assert.equal((html.match(/data-quality=/g)||[]).length,5);assert.ok(html.indexOf('data-quality=')<html.indexOf('出典・確認範囲'));
+  context.location.hash='#?group=weapon&q=Weapon';windowEvents.hashchange();assert.match(node('reference-list').innerHTML,/40%/);
+  context.location.hash='#trait/weapon-test?group=weapon&q=Weapon';windowEvents.hashchange();assert.match(node('reference-detail').innerHTML,/80%/);
+  context.location.hash='#?view=enchantments&equipment=shield';api.route();html=node('reference-list').innerHTML;
+  for(const expected of ['グリフの品質別（装備自体の色とは別）','CP160','胴・頭・脚・盾','+954 体力','肩・手・腰・足','+386 体力']) assert.ok(html.includes(expected),expected);
+  assert.equal((html.match(/— 未確認/g)||[]).length,4);
+  context.location.hash='#enchantment/armor-glyph';api.route();assert.match(node('reference-detail').innerHTML,/\+386 体力/);
+});
+test('missing numeric data remains compatible and explicit unknown values never become zero or interpolated values',async()=>{
+  const {api,node,context}=harness();await api.load();
+  context.location.hash='#trait/weapon-test';api.route();const html=node('reference-detail').innerHTML;
+  assert.equal((html.match(/— 未確認/g)||[]).length,5);assert.match(html,/基準レベル・効果量：未確認/);assert.ok(!html.includes('>0<'));
+  const partial=withNumericValues();partial.traits[0].numericValue.qualities=partial.traits[0].numericValue.qualities.slice(4);
+  const other=harness(partial);await other.api.load();other.context.location.hash='#trait/weapon-test';other.api.route();
+  assert.equal((other.node('reference-detail').innerHTML.match(/— 未確認/g)||[]).length,4);
+  assert.match(other.node('reference-detail').innerHTML,/40%/);assert.ok(!other.node('reference-detail').innerHTML.includes('30%'));
+  const v2=withNumericValues();v2.schemaVersion=2;assert.doesNotThrow(()=>api.validate(v2));
+});
+test('numeric labels, multi-value strings, basis and notes are escaped and numeric search remains composable',async()=>{
+  const value=withNumericValues(),number=value.traits[0].numericValue;
+  number.basis='CP160 <script>bad()</script>';number.notes=['<svg onload=bad>'];number.qualities[4].label='金 <img src=x>';number.qualities[4].summary='<iframe src=x>';number.qualities[4].variants=[{label:'片手 <b>武器</b>',value:'40% <img src=x onerror=bad>'}];
+  const {api,node,context}=harness(value);await api.load();
+  context.location.hash='#?group=weapon&q=CP160%2040';api.route();assert.equal(count(node('reference-list')),1);
+  context.location.hash='#trait/weapon-test';api.route();const html=node('reference-detail').innerHTML;
+  for(const tag of ['script','svg','img','iframe','b']) assert.ok(html.includes(`&lt;${tag}`),tag);
+  assert.ok(!/<script|<img|<svg|<iframe|<b>/.test(html));
+});
+test('numeric schema rejects invented quality identifiers, contradictions, incomplete values and unresolved sources',()=>{
+  const {api}=harness();
+  for(const change of [
+    n=>n.qualityBasis='glyph',n=>n.basis='',n=>n.qualities.push(n.qualities[0]),n=>n.qualities[0].id='__proto__',n=>n.qualities[0].status='guessed',n=>n.qualities[0].variants=[{label:'片手',value:'0'}],n=>n.qualities[4].variants=[{label:'片手',value:80}],n=>n.qualities[4].variants=[{value:'80%'}],n=>n.qualities[4].summary={},n=>n.qualities[4].sourceIds=['missing'],n=>n.qualities[4].sourceIds=[],n=>n.sourceIds=['missing'],n=>n.sourceIds=[],n=>n.sourceIds=['official','official'],n=>n.notes=[{}],n=>{n.qualities[4].variants=[];n.qualities[4].summary='';}
+  ]) {const value=withNumericValues();change(value.traits[0].numericValue);assert.throws(()=>api.validate(value));}
+});
+test('quality colors have WCAG AA contrast on their explicit white panel and remain labeled without color perception',()=>{
+  const css=fs.readFileSync(path.join(root,'eso-traits-enchants.css'),'utf8');
+  const luminance=hex=>{const rgb=hex.match(/[a-f0-9]{2}/gi).map(value=>parseInt(value,16)/255).map(value=>value<=.04045?value/12.92:((value+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
+  assert.match(css,/\.eso-reference-page \.eso-ref-numeric\{[^}]*background:#fff;/);
+  for(const [id] of qualityDefinitions) {const match=css.match(new RegExp(`\\.eso-reference-page \\.eso-ref-quality-${id}\\{color:(#[a-f0-9]{6})\\}`));assert.ok(match,id);assert.ok(1.05/(luminance(match[1])+.05)>=4.5,`${id} contrast`);}
+  assert.match(css,/\.eso-ref-quality-normal \.eso-ref-quality-label:before\{[^}]*background:#fff;[^}]*border:1px solid/);
+  assert.match(css,/table-layout:fixed/);assert.match(css,/font-variant-numeric:tabular-nums/);
+});
 test('separate trait/enchantment views, group filters and exact equipment applicability',async()=>{
   const {api,node,context}=harness();await api.load();
   assert.equal(count(node('reference-list')),4);
@@ -129,7 +190,7 @@ test('source scope, historical status, researchability and important caveats rem
 });
 test('schema rejects duplicate records, wrong-group applicability and unresolved evidence',async()=>{
   const {api}=harness();
-  for(const change of [v=>v.schemaVersion=2,v=>v.traits.push(v.traits[0]),v=>v.sources.push(v.sources[0]),v=>v.equipmentTypes.push(v.equipmentTypes[0]),v=>v.traits[0].group='toString',v=>v.traits[0].sourceIds=['missing'],v=>v.enchantments[0].applicableEquipmentIds=['shield'],v=>delete v.enchantments[0].applicableEquipmentIds,v=>v.traits[0].applicableEquipmentIds=[],v=>v.rules[0].sourceIds=['missing'],v=>v.traits[0].notes=[{}]]) {
+  for(const change of [v=>v.schemaVersion=3,v=>v.traits.push(v.traits[0]),v=>v.sources.push(v.sources[0]),v=>v.equipmentTypes.push(v.equipmentTypes[0]),v=>v.traits[0].group='toString',v=>v.traits[0].sourceIds=['missing'],v=>v.enchantments[0].applicableEquipmentIds=['shield'],v=>delete v.enchantments[0].applicableEquipmentIds,v=>v.traits[0].applicableEquipmentIds=[],v=>v.rules[0].sourceIds=['missing'],v=>v.traits[0].notes=[{}]]) {
     const value=structuredClone(fixture);change(value);assert.throws(()=>api.validate(value));
   }
 });
@@ -159,7 +220,7 @@ test('production data loads and every view, group and individual equipment combi
   assert.equal(value.equipmentTypes.length,22);assert.equal(value.traits.length,33);assert.equal(value.enchantments.length,38);
   assert.equal(value.traits.filter(item=>item.researchable).length,27);assert.equal(value.traits.filter(item=>item.researchable===false).length,6);
   assert.equal(value.coverage.traits,value.traits.length);assert.equal(value.coverage.glyphs,value.enchantments.length);
-  assert.match(node('reference-coverage').innerHTML,/全変更を完全監査したものではない/);
+  assert.match(node('reference-coverage').innerHTML,/全変更.*完全監査/);
   for(const view of ['traits','enchantments']) {
     context.location.hash='#?view='+view;api.route();assert.equal(count(node('reference-list')),value[view].length);
     for(const group of ['weapon','armor','jewelry']) {
@@ -179,5 +240,29 @@ test('production data loads and every view, group and individual equipment combi
   for(const item of maps.entries.values()) {
     context.location.hash=`#${item.kind}/${item.id}`;api.route();assert.ok(!node('reference-detail').innerHTML.includes('見つかりません'));
     assert.ok(!/<img|<svg|<iframe/.test(node('reference-detail').innerHTML));
+  }
+});
+test('production numeric data renders all 355 quality rows with exact values, historical warnings and unknown gaps',async()=>{
+  const value=JSON.parse(fs.readFileSync(path.join(root,'data/eso-equipment-reference.json'),'utf8'));
+  const {api,node,context}=harness(value);await api.load();
+  const escape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const all=[...value.traits.map(item=>({...item,kind:'trait'})),...value.enchantments.map(item=>({...item,kind:'enchantment'}))];
+  assert.equal(all.length,71);assert.equal(all.flatMap(item=>item.numericValue?.qualities||[]).length,355);
+  assert.ok(all.every(item=>item.numericValue&&item.numericValue.qualities.length===5));
+  for(const key of ['numericBasis','numericVerificationNote']) assert.ok(node('reference-coverage').innerHTML.includes(escape(value.meta[key])),key);
+  for(const item of all) {
+    context.location.hash=`#${item.kind}/${item.id}`;api.route();const html=node('reference-detail').innerHTML;
+    assert.equal((html.match(/data-quality=/g)||[]).length,5,item.id);
+    assert.ok(html.includes(escape(item.numericValue.basis)),item.id+' basis');
+    for(const note of item.numericValue.notes||[]) assert.ok(html.includes(escape(note)),item.id+' note');
+    for(const quality of item.numericValue.qualities) {
+      const row=html.match(new RegExp(`<tr class="eso-ref-quality-${quality.id}"[^>]*>([\\s\\S]*?)<\\/tr>`))?.[1];
+      assert.ok(row,item.id+' / '+quality.id);assert.ok(row.includes(escape(quality.label)));
+      if(quality.summary) assert.ok(row.includes(escape(quality.summary)),item.id+' / '+quality.id+' summary');
+      if(quality.status==='unverified') assert.match(row,/— 未確認/);
+      if(quality.status==='partial') assert.match(row,/参考値（現行未実測）/);
+      if(quality.status==='verified') assert.match(row,/資料照合（未実測）/);
+      for(const variant of quality.variants||[]) {assert.ok(row.includes(escape(variant.label)),item.id+' variant label');assert.ok(row.includes(escape(variant.value)),item.id+' exact value');}
+    }
   }
 });

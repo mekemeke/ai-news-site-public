@@ -10,6 +10,28 @@
 
 効果量の計算機や推定式ではない。品質・レベル・装備部位差はデータの注記で示し、未確認の数値や画像を補わない。資料確認日と現行ゲーム内での検証日は区別する。
 
+## 品質別の数値表示
+
+- 一覧カードと詳細に、白 / 緑 / 青 / 紫 / 金の5品質を常時表示する。色だけでなく品質名を付ける。
+- 特性は**装備自体の品質**、付呪は**グリフの品質**として明記する。CP160等の基準レベル、片手 / 両手や大小部位の条件は数値表の近くに表示する。
+- `numericValue` は任意。旧データや品質行が未収録の場合は `— 未確認` とし、0・他品質からの補間値を作らない。
+- `partial` は「参考値（現行未実測）」と表示し、資料時点や出典間の差が書かれた `summary` / `notes` を折り畳まない。`verified` もゲーム内実測済みを意味しない。
+- 品質数値パネルは白背景を固定。通常品質は白いチップと濃灰文字、緑・青・紫・金は濃色文字とし、全5色がWCAG AA 4.5:1以上となることを自動テストする。
+
+任意の `numericValue` 形式：
+
+```text
+qualityBasis: equipment（特性） / glyph（付呪）
+basis: 基準レベル・装備部位・除外する補正などの条件文字列
+qualities: [{id, label, status, summary, variants: [{label, value}]}]
+notes: 文字列または文字列配列
+sourceIds: 数値根拠の出典ID配列
+```
+
+品質IDは `normal` / `fine` / `superior` / `epic` / `legendary`。
+statusは `verified` / `partial` / `unverified` のみ。`variants` の値は単位を含む文字列で、部位や片手 / 両手などの文脈ラベルを伴う。
+未確認行に数値variantsは許容せず、確認値には解決可能な数値出典を必須とする。品質の重複、不明なID、品質基準の混同、不正型は読込エラーにする。
+
 ## 操作・URL
 
 - 初期表示は特性。付呪へ切り替えても装備と検索条件を保持する。
@@ -23,7 +45,7 @@
 
 ## データと安全性
 
-`schemaVersion: 1`。トップレベルは `meta`、`sources`、`equipmentTypes`、`traits`、`enchantments`、任意の `rules`。
+`schemaVersion: 2`（旧 `1` も読込可能）。トップレベルは `meta`、`sources`、`equipmentTypes`、`traits`、`enchantments`、任意の `rules`。
 
 - 装備は `traitGroup` と `glyphGroup` をそれぞれ持つ。特性とグリフの適用範囲を混同しない。
 - エントリーの `group` は `weapon` / `armor` / `jewelry` のいずれか。
