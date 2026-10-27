@@ -22,3 +22,7 @@
 @media(max-width:700px){#articles .news-card{grid-template-columns:minmax(0,1fr);gap:14px}}
 
 .effect-filters{display:grid;gap:8px;margin:16px 0}.effect-filters details{min-width:0;border:1px solid var(--line);border-radius:6px;padding:8px 12px}.effect-filters summary{cursor:pointer;min-height:44px;align-content:center;font-weight:800}.effect-filters nav{display:flex;flex-wrap:wrap;gap:8px;max-height:280px;overflow:auto;padding:6px}.effect-filters a{display:block;max-width:100%;overflow-wrap:anywhere;padding:8px 12px;min-height:44px;border:1px solid var(--line);border-radius:6px;font-size:14px;text-decoration:underline}.effect-filters [aria-current=true]{background:var(--ink);color:var(--bg)}.set-filters label{min-width:0;max-width:100%}
+
+
+/* News list only: preserve ESO layouts and keep controls usable on phones. */
+.news-pagination{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0}.news-pagination button{flex:0 0 auto}.news-pagination [role=status]{font-size:13px;white-space:nowrap}#list-title{scroll-margin-top:16px}

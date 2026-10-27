@@ -67,7 +67,7 @@ test('existing articles, detail switching, back, search, date and dark controls'
   const {api,context,node,windowEvents} = harness();
   await api.loadArticles();
   const visible = data.articles.filter(a => !a.sample && !a.id.startsWith('sample-'));
-  assert.equal((node('articles').innerHTML.match(/class="news-card"/g)||[]).length,visible.length);
+  assert.equal((node('articles').innerHTML.match(/class="news-card"/g)||[]).length,Math.min(15, visible.length));
   for (const article of visible.slice(0,2)) {
     context.location.hash = '#article/' + encodeURIComponent(article.id); windowEvents.hashchange();
     assert.equal(node('detail').hidden,false); assert.equal(node('home').hidden,true);
@@ -83,3 +83,4 @@ test('existing articles, detail switching, back, search, date and dark controls'
   const x = api.renderBlocks([{type:'xpost',url:'https://x.com/test/status/123'}, {type:'xpost',url:'https://x.com/test/status/123'}]);
   assert.equal((x.match(/class="x-embed"/g)||[]).length,1); assert.ok(x.includes('data-dnt="true"'));
 });
+

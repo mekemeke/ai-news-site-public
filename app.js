@@ -5,6 +5,8 @@
   const title = 'AIニュース | 仮公開プレビュー';
   const dateFormat = new Intl.DateTimeFormat('ja-JP', {timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false});
   let categories = [], articles = [], category = '', listY = 0, lastArticle = '', ready = false;
+  const PAGE_SIZE = 15;
+  let page = 1, pageCount = 1;
   let xRenderToken = 0, xScript = null;
   let dark = false;
   try { dark = localStorage.getItem('ai-news-preview-theme') === 'dark'; } catch {}
@@ -136,9 +138,17 @@
     const query = $('search').value.trim().toLocaleLowerCase('ja');
     const date = $('date').value;
     const filtered = articles.filter(article => (!category || article.category === category) && (!date || dayLabel(article.publishedAt) === date) && (!query || [article.title, article.summary, categoryName(article.category), ...article.blocks.map(block => block.text)].join(' ').toLocaleLowerCase('ja').includes(query)));
-    $('articles').innerHTML = filtered.map(article => `<article class="news-card">${thumbnail(article)}<div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
-    $('count').textContent = `${filtered.length} / ${articles.length} 件の記事`;
-    $('end-note').hidden = filtered.length === 0;
+    pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    page = Math.min(Math.max(1, page), pageCount);
+    const start = (page - 1) * PAGE_SIZE;
+    const visible = filtered.slice(start, start + PAGE_SIZE);
+    $('articles').innerHTML = visible.map(article => `<article class="news-card">${thumbnail(article)}<div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
+    $('count').textContent = `${filtered.length} / ${articles.length} 件の記事${filtered.length ? `（${start + 1}〜${start + visible.length}件目）` : ''}`;
+    $('pagination').hidden = pageCount <= 1;
+    $('page-status').textContent = `${page} / ${pageCount} ページ`;
+    $('page-prev').disabled = page <= 1;
+    $('page-next').disabled = page >= pageCount;
+    $('end-note').hidden = filtered.length === 0 || page < pageCount;
   }
   function renderBlocks(blocks) {
     const seenPosts = new Set();
@@ -156,13 +166,14 @@
     xRenderToken++;
     const match = location.hash.match(/^#article\/(.*)$/);
     const isDetail = !!match;
+    const wasDetail = !$('detail').hidden;
     if (isDetail && !$('home').hidden) { listY = window.scrollY; lastArticle = match[1]; }
     document.querySelector('.toolbar').hidden = isDetail;
     $('home').hidden = isDetail;
     $('detail').hidden = !isDetail;
     if (!isDetail) {
       document.title = title;
-      if (lastArticle) {
+      if (wasDetail && lastArticle) {
         const link = [...document.querySelectorAll('#articles h2 a')].find(item => item.getAttribute('href') === '#article/' + lastArticle);
         (link || $('main')).focus({preventScroll: true});
         window.scrollTo(0, listY);
@@ -187,12 +198,24 @@
     const button = event.target.closest('[data-category]');
     if (!button) return;
     category = button.dataset.category;
+    page = 1;
     renderCategories();
     [...$('categories').children].find(item => item.dataset.category === category)?.focus();
     renderList();
   });
-  $('search').addEventListener('input', renderList);
-  $('date').addEventListener('change', renderList);
+  function resetPage() { page = 1; renderList(); }
+  $('search').addEventListener('input', resetPage);
+  $('date').addEventListener('change', resetPage);
+  function changePage(delta) {
+    const next = Math.min(Math.max(1, page + delta), pageCount);
+    if (next === page) return;
+    page = next;
+    renderList();
+    $('list-title').focus({preventScroll: true});
+    $('list-title').scrollIntoView({block: 'start'});
+  }
+  $('page-prev').addEventListener('click', () => changePage(-1));
+  $('page-next').addEventListener('click', () => changePage(1));
   window.addEventListener('hashchange', route);
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
@@ -223,3 +246,4 @@
   }
   loadArticles();
 })();
+
