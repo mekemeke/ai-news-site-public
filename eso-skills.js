@@ -3,13 +3,20 @@
   const $ = id => document.getElementById(id);
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
   const types = {active:'アクティブ', ultimate:'アルティメット', passive:'パッシブ'};
+  const effectGroups = [
+    ['メジャーバフ', 'バフ（強）：'], ['マイナーバフ', 'バフ（弱）：'],
+    ['メジャーデバフ', 'デバフ（強）：'], ['マイナーデバフ', 'デバフ（弱）：']
+  ];
+  const combatEffects = ['軽攻撃', '重攻撃', 'ペット'];
+  const openEffectGroups = new Set();
+  let effectTags = new Set();
   const validId = value => typeof value === 'string' && /^[a-z0-9][a-z0-9-]*$/.test(value);
   const text = value => typeof value === 'string' ? value : '';
   const title = item => item.nameJa || item.nameEn;
   const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase('ja');
   let data, ready = false, loading = false;
   let classes = new Map(), trees = new Map(), skills = new Map();
-  let state = {classId:'', treeId:'', q:'', type:'', form:''};
+  let state = {classId:'', treeId:'', q:'', type:'', form:'', effect:''};
 
   function safeURL(value) {
     if (typeof value !== 'string' || !/^https:\/\//i.test(value) || /[\s\\]/.test(value)) return '';
@@ -41,6 +48,7 @@
     for (const item of value.skills) {
       if (!named(item) || sm.has(item.id) || !cm.has(item.classId) || !tm.has(`${item.classId}/${item.treeId}`) || !Object.hasOwn(types, item.type) || (item.baseSkillId != null && !validId(item.baseSkillId))) throw new Error('Invalid skill');
       for (const key of ['descriptionJa','descriptionEn','sourceUrl','verifiedAt','verificationStatus','verificationNote','sourceNoteJa','conflictSourceUrl','sourceDataDate','gameUpdate','costNote','valueBasisJa','target','nameJaSourceUrl','nameJaSourceDate','nameJaVerificationStatus','nameJaVerificationNote']) if (item[key] != null && typeof item[key] !== 'string') throw new Error('Invalid skill text');
+      if (item.browseTags != null && (!Array.isArray(item.browseTags) || !item.browseTags.every(tag => typeof tag === 'string' && tag.trim()) || new Set(item.browseTags).size !== item.browseTags.length)) throw new Error('Invalid skill effect tags');
       sm.set(item.id, item);
     }
     for (const item of sm.values()) {
@@ -53,7 +61,7 @@
   function readState(params) {
     const classId = classes.has(params.get('class')) ? params.get('class') : '';
     const treeId = classId && trees.has(`${classId}/${params.get('tree')}`) ? params.get('tree') : '';
-    return {classId, treeId, q:params.get('q') || '', type:Object.hasOwn(types, params.get('type')) ? params.get('type') : '', form:['base','morph'].includes(params.get('form')) ? params.get('form') : ''};
+    return {classId, treeId, q:params.get('q') || '', type:Object.hasOwn(types, params.get('type')) ? params.get('type') : '', form:['base','morph'].includes(params.get('form')) ? params.get('form') : '', effect:effectTags.has(params.get('effect')) ? params.get('effect') : ''};
   }
   function paramsFor(next = state) {
     const params = new URLSearchParams();
@@ -62,6 +70,7 @@
     if (next.q) params.set('q', next.q);
     if (next.type) params.set('type', next.type);
     if (next.form) params.set('form', next.form);
+    if (next.effect) params.set('effect', next.effect);
     return params.toString();
   }
   function listURL(next = state) { const query = paramsFor(next); return query ? `#?${query}` : '#'; }
@@ -111,6 +120,16 @@
   function chip(label, url, active, english) {
     return `<a href="${escapeHTML(url)}"${active ? ' aria-current="true"' : ''}>${escapeHTML(label)}${english && english !== label ? `<small lang="en">${escapeHTML(english)}</small>` : ''}</a>`;
   }
+  function renderEffectFilters() {
+    const link = (tag, label = tag) => chip(label, listURL({...state,effect:tag}), state.effect === tag);
+    $('skills-combat-effects').innerHTML = link('', 'すべての効果・攻撃・ペット') + combatEffects.map(tag => effectTags.has(tag) ? link(tag, tag === 'ペット' ? 'ペット（召喚獣・関連効果）' : tag) : `<span class="eso-skills-effect-unavailable">${escapeHTML(tag)}（収録なし）</span>`).join('');
+    $('skills-effect-groups').innerHTML = effectGroups.map(([group, prefix]) => {
+      const effects = [...effectTags].filter(tag => tag.startsWith(prefix) && tag.length > prefix.length).sort((a,b) => a.localeCompare(b,'ja'));
+      const selected = state.effect === group || effects.includes(state.effect);
+      return `<details data-effect-group="${escapeHTML(group)}"${selected || openEffectGroups.has(group) ? ' open' : ''}${selected ? ' class="eso-skills-effect-selected"' : ''}><summary>${escapeHTML(group)} <small>（${effects.length}種類）</small></summary><nav class="eso-skills-chips" aria-label="${escapeHTML(group)}で絞り込み">${effectTags.has(group) ? link(group, `${group}すべて`) : '<span class="eso-skills-effect-unavailable">収録なし</span>'}${effects.map(tag => link(tag)).join('')}</nav></details>`;
+    }).join('');
+    $('skills-effect-selection').textContent = `選択中：${state.effect || 'すべての効果・攻撃・ペット'}`;
+  }
   function renderFilters() {
     $('skills-classes').innerHTML = chip('すべてのクラス', listURL({...state,classId:'',treeId:''}), !state.classId) + data.classes.map(item => chip(title(item), listURL({...state,classId:item.id,treeId:''}), state.classId === item.id, item.nameEn)).join('');
     const selected = classes.get(state.classId);
@@ -122,11 +141,13 @@
     $('skills-search').value = state.q;
     $('skills-type').value = state.type;
     $('skills-form').value = state.form;
+    renderEffectFilters();
   }
   function matches(item) {
     if (state.classId && item.classId !== state.classId) return false;
     if (state.treeId && item.treeId !== state.treeId) return false;
     if (state.type && item.type !== state.type) return false;
+    if (state.effect && !(item.browseTags || []).includes(state.effect)) return false;
     if (state.form === 'base' && item.baseSkillId || state.form === 'morph' && !item.baseSkillId) return false;
     const base = item.baseSkillId ? skills.get(item.baseSkillId) : item;
     const cl = classes.get(item.classId), tree = trees.get(`${item.classId}/${item.treeId}`);
@@ -206,11 +227,17 @@
   $('skills-form').addEventListener('change', filter);
   $('skills-reset').addEventListener('click', () => {
     if (!ready) return;
-    state = {classId:'',treeId:'',q:'',type:'',form:''};
+    state = {classId:'',treeId:'',q:'',type:'',form:'',effect:''};
+    openEffectGroups.clear();
     history.replaceState(null, '', '#');
     renderList();
     $('skills-search').focus();
   });
+  $('skills-effect-groups').addEventListener('toggle', event => {
+    const group = event.target.dataset?.effectGroup;
+    if (!effectGroups.some(([name]) => name === group)) return;
+    if (event.target.open) openEffectGroups.add(group); else openEffectGroups.delete(group);
+  }, true);
   $('skills-retry').addEventListener('click', load);
   window.addEventListener('hashchange', route);
   async function load() {
@@ -221,11 +248,12 @@
     $('skills-retry').hidden = true;
     $('skills-notice').textContent = 'データを読み込み中…';
     try {
-      const response = await fetch('./data/skills.json?v=20261027-skills1', {credentials:'omit'});
+      const response = await fetch('./data/skills.json?v=20261027-skills-effects1', {credentials:'omit'});
       if (!response.ok) throw new Error('Data unavailable');
       const value = await response.json();
       const maps = validate(value);
       data = value; classes = maps.classes; trees = maps.trees; skills = maps.skills;
+      effectTags = new Set(data.skills.flatMap(item => item.browseTags || []));
       renderSources();
       for (const id of ['skills-search','skills-type','skills-form','skills-reset']) $(id).disabled = false;
       $('skills-notice').textContent = '';

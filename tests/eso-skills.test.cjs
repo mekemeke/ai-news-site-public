@@ -137,11 +137,106 @@ test('production dataset is compatible and every class/tree can be filtered',asy
   }
   if(value.meta.excludedCategories?.includes('Class Mastery')) assert.match(node('skills-sources').innerHTML,/今回の収録対象外：[^<]*Class Mastery/);
   if(value.meta.versionNote) assert.ok(node('skills-sources').innerHTML.includes(value.meta.versionNote.replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))));
+  assert.ok(value.skills.every(item=>Array.isArray(item.browseTags)), 'all production skills must carry audited browseTags');
+  const effects=[...new Set(value.skills.flatMap(item=>item.browseTags || []))];
+  for(const tag of ['メジャーバフ','マイナーバフ','メジャーデバフ','マイナーデバフ','軽攻撃','重攻撃','ペット']) assert.ok(effects.includes(tag),'missing production filter '+tag);
+  for(const effect of effects) {
+    context.location.hash='#?effect='+encodeURIComponent(effect);api.route();
+    assert.equal(count(node('skills-list')),value.skills.filter(item=>(item.browseTags || []).includes(effect)).length,effect);
+    for(const cl of value.classes) {
+      context.location.hash='#?class='+cl.id+'&effect='+encodeURIComponent(effect);api.route();
+      assert.equal(count(node('skills-list')),value.skills.filter(item=>item.classId===cl.id&&(item.browseTags || []).includes(effect)).length,cl.id+' / '+effect);
+    }
+  }
   for(const cl of value.classes) {
     assert.equal(cl.trees.filter(tree=>tree.category!=='class-mastery').length,3);
     for(const tree of cl.trees) {
       context.location.hash=`#?class=${cl.id}&tree=${tree.id}`;api.route();
       assert.equal(count(node('skills-list')),value.skills.filter(item=>item.classId===cl.id&&item.treeId===tree.id).length);
     }
+  }
+});
+
+function effectFixture() {
+  const value=structuredClone(fixture);
+  const categories={
+    base:['メジャーバフ','バフ（強）：残忍 / Major Brutality','軽攻撃'],
+    'morph-a':['メジャーバフ','バフ（強）：残忍 / Major Brutality','重攻撃'],
+    'morph-b':['マイナーデバフ','デバフ（弱）：脆弱 / Minor Vulnerability','ペット'],
+    ultimate:['メジャーデバフ','デバフ（強）：脆弱 / Major Vulnerability','重攻撃','ペット'],
+    passive:['マイナーバフ','バフ（弱）：防護 / Minor Protection','軽攻撃','重攻撃']
+  };
+  for (const item of value.skills) item.browseTags=[...(categories[item.id.replace(/^class-\d+-/,'')] || [])];
+  return value;
+}
+test('effect controls expose all four named groups and three combat categories with global type counts',async()=>{
+  const {api,node,context}=harness(effectFixture());await api.load();
+  const groups=node('skills-effect-groups').innerHTML;
+  assert.equal((groups.match(/<details /g)||[]).length,4);
+  for(const label of ['メジャーバフ','マイナーバフ','メジャーデバフ','マイナーデバフ']) assert.ok(groups.includes(label+'すべて'));
+  for(const label of ['軽攻撃','重攻撃','ペット（召喚獣・関連効果）']) assert.ok(node('skills-combat-effects').innerHTML.includes('>'+label+'</a>'));
+  assert.equal((groups.match(/（1種類）/g)||[]).length,4);
+  context.location.hash='#?class=class-0&q=not-found';api.route();
+  assert.equal(count(node('skills-list')),0);
+  assert.equal((node('skills-effect-groups').innerHTML.match(/（1種類）/g)||[]).length,4);
+  assert.match(node('skills-effect-groups').innerHTML,/class=class-0&amp;q=not-found&amp;effect=/);
+  const untagged=harness();await untagged.api.load();
+  assert.equal((untagged.node('skills-effect-groups').innerHTML.match(/<details /g)||[]).length,4);
+  assert.equal((untagged.node('skills-effect-groups').innerHTML.match(/収録なし/g)||[]).length,4);
+});
+test('single effect combines with class/tree/search/type/form without inheriting a base effect to its morphs',async()=>{
+  const value=effectFixture(),{api,node,context}=harness(value);await api.load();
+  for(const effect of [...new Set(value.skills.flatMap(item=>item.browseTags))]) {
+    context.location.hash='#?effect='+encodeURIComponent(effect);api.route();
+    assert.equal(count(node('skills-list')),value.skills.filter(item=>item.browseTags.includes(effect)).length,effect);
+    assert.equal(node('skills-effect-selection').textContent,'選択中：'+effect);
+    assert.match(node('skills-count').textContent,new RegExp('収録データ内：'+count(node('skills-list'))+' / 36 件'));
+  }
+  const effect='バフ（強）：残忍 / Major Brutality';
+  context.location.hash='#?class=class-0&tree=tree-0&q=炎&type=active&form=morph&effect='+encodeURIComponent(effect);api.route();
+  assert.equal(count(node('skills-list')),1);assert.match(node('skills-list').innerHTML,/data-skill-id="class-0-morph-a"/);
+  assert.match(node('skills-effect-groups').innerHTML,/<details data-effect-group="メジャーバフ" open class="eso-skills-effect-selected">/);
+  assert.match(node('skills-classes').innerHTML,/class=class-1&amp;q=/);assert.ok(!node('skills-classes').innerHTML.includes('class=class-1&amp;tree='));
+  assert.ok(node('skills-classes').innerHTML.includes('&amp;effect='+encodeURIComponent(effect).replace(/%20/g,'+')));
+  node('skills-search').value='Class 0';node('skills-search').events.input();assert.equal(count(node('skills-list')),1);assert.ok(context.location.hash.includes('effect='));
+  context.location.hash='#?class=class-0&tree=tree-0&effect='+encodeURIComponent('軽攻撃');api.route();
+  assert.equal(count(node('skills-list')),1);assert.match(node('skills-list').innerHTML,/data-skill-id="class-0-base"/);
+  context.location.hash='#?class=class-0&tree=tree-2&effect='+encodeURIComponent('ペット');api.route();
+  assert.equal(count(node('skills-list')),0);assert.match(node('skills-list').innerHTML,/この条件に一致する収録データはありません/);
+});
+test('effect URLs survive detail/family/back/forward/reload and clear only on explicit reset',async()=>{
+  const value=effectFixture(),{api,node,context,windowEvents}=harness(value);await api.load();
+  const params=new URLSearchParams({class:'class-0',tree:'tree-0',q:'炎',type:'active',effect:'メジャーバフ'}),query=params.toString();
+  context.location.hash='#?'+query;windowEvents.hashchange();assert.equal(count(node('skills-list')),2);
+  const list=node('skills-list').innerHTML;assert.ok(list.includes('effect='+encodeURIComponent('メジャーバフ')));
+  context.location.hash='#skill/class-0-base?'+query;windowEvents.hashchange();
+  assert.ok(node('skill-detail').innerHTML.includes('href="#?'+query.replace(/&/g,'&amp;')+'"'));
+  assert.ok(node('skill-detail').innerHTML.includes('class-0-morph-a?'+query.replace(/&/g,'&amp;')));
+  context.location.hash='#?'+query;windowEvents.hashchange();assert.equal(count(node('skills-list')),2);assert.equal(node('skills-effect-selection').textContent,'選択中：メジャーバフ');
+  context.location.hash='#skill/class-0-base?'+query;windowEvents.hashchange();assert.equal(node('skills-home').hidden,true);
+  const direct=harness(value);direct.context.location.hash=context.location.hash;await direct.api.load();assert.ok(direct.node('skill-detail').innerHTML.includes('effect='+encodeURIComponent('メジャーバフ')));
+  context.location.hash='#?'+query;windowEvents.hashchange();node('skills-reset').events.click();
+  assert.equal(count(node('skills-list')),36);assert.equal(context.location.hash,'#');assert.equal(node('skills-effect-selection').textContent,'選択中：すべての効果・攻撃・ペット');
+  context.location.hash='#?effect=not-collected';windowEvents.hashchange();assert.equal(count(node('skills-list')),36);
+});
+test('effect panel retains manual disclosure state and unsafe source tags cannot create HTML or script URLs',async()=>{
+  const value=effectFixture(),evil='バフ（強）：<img src=x onerror="bad()"> / Major Test';
+  value.skills[0].browseTags.push(evil);
+  const {api,node,context}=harness(value);await api.load();
+  node('skills-effect-groups').events.toggle({target:{dataset:{effectGroup:'メジャーデバフ'},open:true}});
+  node('skills-search').events.input();assert.match(node('skills-effect-groups').innerHTML,/<details data-effect-group="メジャーデバフ" open>/);
+  context.location.hash='#?effect='+encodeURIComponent(evil);api.route();
+  assert.equal(count(node('skills-list')),1);assert.ok(!node('skills-effect-groups').innerHTML.includes('<img'));
+  assert.match(node('skills-effect-groups').innerHTML,/&lt;img src=x onerror=&quot;bad\(\)&quot;&gt;/);
+  assert.ok(!node('skills-effect-groups').innerHTML.includes('href="javascript:'));
+  assert.equal(node('skills-effect-selection').textContent,'選択中：'+evil);
+  node('skills-reset').events.click();assert.ok(!node('skills-effect-groups').innerHTML.includes(' open'));
+});
+test('malformed effect-tag schemas fail safe and retry accepts a valid tagged dataset',async()=>{
+  for(const tags of ['ペット',{},['ペット',42],[''],['ペット','ペット']]) {
+    const value=effectFixture();value.skills[0].browseTags=tags;const {api,node,context}=harness(value);
+    assert.throws(()=>api.validate(value));await api.load();assert.equal(count(node('skills-list')),0);assert.equal(node('skills-retry').hidden,false);
+    context.fetch=async()=>({ok:true,json:async()=>effectFixture()});await node('skills-retry').events.click();
+    assert.equal(count(node('skills-list')),36);assert.equal(node('skills-retry').hidden,true);
   }
 });

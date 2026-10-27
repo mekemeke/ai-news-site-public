@@ -42,17 +42,18 @@
     "passive": 84
   },
   "sourceDataDates": {
+    "2026-06-12": 1,
     "2026-06-25": 2,
     "2026-08-01": 10,
     "2026-08-23": 88,
-    "2026-09-12": 11,
+    "2026-09-12": 10,
     "2026-10-03": 184,
     "2026-10-17": 151,
     "unknown": 16
   },
   "sourceDomains": {
-    "esodecoded.com": 444,
-    "eso.dmm.com": 2,
+    "eso.dmm.com": 3,
+    "esodecoded.com": 443,
     "hyperioxes.com": 16
   },
   "descriptionJaCount": 462,
@@ -84,7 +85,7 @@
     "castTimeSeconds": 127,
     "channelTimeSeconds": 6
   },
-  "iconCount": 0,
+  "iconCount": 462,
   "sourceGraphValidation": {
     "uniqueIds": true,
     "allMorphParentsExist": true,
@@ -95,6 +96,7 @@
   "knownSourceConflictIds": [
     "dragonknight-flame-lash",
     "dragonknight-molten-whip",
+    "templar-illuminate",
     "warden-arctic-blast",
     "necromancer-empowering-grasp",
     "arcanist-fatecarver",
@@ -136,5 +138,93 @@
     "全descriptionJaは独自要約。完全なツールチップの代替ではない。",
     "Surprise Attackは公式U43パッチでVeiled Strikeとその変異がShadowからAssassinationへ移動したことを確認。HyperioxesのShadow表記は採用しない。https://eso.dmm.com/news/detail/13472",
     "sourceUnlockLevelは出典表示値。ゲーム内の習得条件を独立検証したものではない。"
-  ]
+  ],
+  "effectFilters": {
+    "classificationVersion": "2026-10-27.effect-tags.v1",
+    "verifiedAt": "2026-10-27",
+    "totalSkills": 462,
+    "taggedSkills": 216,
+    "untaggedSkills": 246,
+    "tagCounts": {
+      "デバフ（弱）：不自由 / Minor Maim": 11,
+      "デバフ（弱）：体力吸収 / Minor Lifesteal": 2,
+      "デバフ（弱）：侵害 / Minor Breach": 7,
+      "デバフ（弱）：汚染 / Minor Defile": 3,
+      "デバフ（弱）：硬直 / Minor Brittle": 1,
+      "デバフ（弱）：脆弱 / Minor Vulnerability": 13,
+      "デバフ（弱）：臆病 / Minor Cowardice": 2,
+      "デバフ（強）：不自由 / Major Maim": 9,
+      "デバフ（強）：侵害 / Major Breach": 6,
+      "デバフ（強）：汚染 / Major Defile": 5,
+      "デバフ（強）：脆弱 / Major Vulnerability": 3,
+      "デバフ（強）：臆病 / Major Cowardice": 8,
+      "バフ（弱）：不屈 / Minor Fortitude": 9,
+      "バフ（弱）：勇壮 / Minor Heroism": 4,
+      "バフ（弱）：勇気 / Minor Courage": 5,
+      "バフ（弱）：回避 / Minor Evasion": 2,
+      "バフ（弱）：強固 / Minor Resolve": 8,
+      "バフ（弱）：残忍 / Minor Brutality": 1,
+      "バフ（弱）：治癒力 / Minor Mending": 2,
+      "バフ（弱）：狂戦士 / Minor Berserk": 6,
+      "バフ（弱）：獰猛 / Minor Savagery": 1,
+      "バフ（弱）：生命力 / Minor Vitality": 2,
+      "バフ（弱）：知力 / Minor Intellect": 9,
+      "バフ（弱）：耐久 / Minor Endurance": 9,
+      "バフ（弱）：迅速 / Minor Expedition": 3,
+      "バフ（弱）：防護 / Minor Protection": 14,
+      "バフ（弱）：頑強 / Minor Toughness": 1,
+      "バフ（強）：不屈 / Major Fortitude": 3,
+      "バフ（強）：勇壮 / Major Heroism": 1,
+      "バフ（強）：回避 / Major Evasion": 4,
+      "バフ（強）：強固 / Major Resolve": 19,
+      "バフ（強）：残忍 / Major Brutality": 19,
+      "バフ（強）：治癒力 / Major Mending": 4,
+      "バフ（強）：狂戦士 / Major Berserk": 5,
+      "バフ（強）：獰猛 / Major Savagery": 16,
+      "バフ（強）：生命力 / Major Vitality": 1,
+      "バフ（強）：耐久 / Major Endurance": 1,
+      "バフ（強）：迅速 / Major Expedition": 12,
+      "バフ（強）：防護 / Major Protection": 13,
+      "ペット": 36,
+      "マイナーデバフ": 36,
+      "マイナーバフ": 50,
+      "メジャーデバフ": 31,
+      "メジャーバフ": 95,
+      "軽攻撃": 17,
+      "重攻撃": 23
+    },
+    "uniqueTags": 46,
+    "groups": [
+      {
+        "label": "メジャーバフ",
+        "individualEffectTypes": 12
+      },
+      {
+        "label": "マイナーバフ",
+        "individualEffectTypes": 15
+      },
+      {
+        "label": "メジャーデバフ",
+        "individualEffectTypes": 5
+      },
+      {
+        "label": "マイナーデバフ",
+        "individualEffectTypes": 7
+      }
+    ],
+    "sourceScope": "既存の参照資料の効果本文を分類。条件付き・自己付与も含む。軽攻撃・重攻撃は強化・発動条件などの明示的な関連、ペットは召喚獣・明示的なペット連動。演出のみの召喚は除外。全ペット関連セットとの相互作用や現行ライブ版の全件一致は未検証。",
+    "aliasSourceUrl": "https://eso.dmm.com/news/detail/15689",
+    "aliasSourceScope": "公式U51事前説明の統合効果名に合わせる。最終ライブ版の効果量・持続時間を検証したものではない。",
+    "officialAliases": {
+      "Major Sorcery": "Major Brutality",
+      "Major Prophecy": "Major Savagery",
+      "Minor Sorcery": "Minor Brutality",
+      "Minor Prophecy": "Minor Savagery"
+    },
+    "excludedAliasPassives": [
+      "sorcerer-exploitation",
+      "templar-illuminate"
+    ],
+    "missingTagsMeaning": "空のbrowseTagsは対象の分類タグを付与していないことを示し、ゲーム内の効果やペット関連が存在しないことを保証しない。"
+  }
 }

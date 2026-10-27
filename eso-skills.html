@@ -8,8 +8,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>クラススキル | ESOデータベース</title>
   <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
-  <link rel="stylesheet" href="./eso-skills.css?v=20261027-skills1">
-  <script src="./eso-skills.js?v=20261027-skills1" defer></script>
+  <link rel="stylesheet" href="./eso-skills.css?v=20261027-skills-effects1">
+  <script src="./eso-skills.js?v=20261027-skills-effects1" defer></script>
 </head>
 <body class="eso-skills-page">
   <a class="skip" href="#main">本文へ</a>
@@ -22,6 +22,14 @@
       <div id="skills-coverage" class="database-note">収録範囲と参照資料の情報を読み込み中…</div>
       <section class="eso-skills-filter-section" aria-labelledby="skills-class-title"><h2 id="skills-class-title"><span>01</span> クラス</h2><nav id="skills-classes" class="eso-skills-chips" aria-label="クラスを選択"></nav></section>
       <section class="eso-skills-filter-section" aria-labelledby="skills-tree-title"><h2 id="skills-tree-title"><span>02</span> スキルツリー</h2><p id="skills-tree-hint" class="eso-skills-muted">クラスを選ぶと、そのクラスのツリーを選べます。</p><nav id="skills-trees" class="eso-skills-chips" aria-label="スキルツリーを選択"></nav><div id="skills-mastery" hidden><p class="eso-skills-muted">Class Mastery（通常の3ツリーとは別枠）</p><nav id="skills-mastery-trees" class="eso-skills-chips" aria-label="Class Masteryを選択"></nav></div></section>
+      <section class="eso-skills-filter-section eso-skills-effects" aria-labelledby="skills-effect-title">
+        <h2 id="skills-effect-title"><span>03</span> 効果・攻撃・ペット</h2>
+        <p id="skills-effect-help" class="eso-skills-muted">効果・軽攻撃・重攻撃・ペットから1つを選べます。クラス・ツリー・種類・検索と組み合わせて、すべての条件に合うスキルを表示します。グループの種類数は全収録データ内の個別効果数です。</p>
+        <p class="eso-skills-muted">確認した参照資料の効果本文に基づく分類で、条件付き・自己付与も含みます。統合効果名は公式U51事前説明に合わせ、魔術は残忍、予言は獰猛として分類しています。軽攻撃・重攻撃は強化や発動条件などの関連効果、ペットは召喚獣と明示的なペット連動です。召喚を演出に使うだけの攻撃は含めません。各召喚獣がすべてのペット関連セットの発動条件を満たすとは限りません。資料は複数版を含み、現行仕様との一致は未確認です。未分類はゲーム内に該当効果がないという意味ではありません。</p>
+        <nav id="skills-combat-effects" class="eso-skills-chips" aria-label="すべての効果・軽攻撃・重攻撃・ペットで絞り込み" aria-describedby="skills-effect-help"></nav>
+        <div id="skills-effect-groups" class="eso-skills-effect-groups"></div>
+        <p id="skills-effect-selection" class="eso-skills-muted"></p>
+      </section>
       <div class="eso-skills-filters">
         <label class="eso-skills-search">スキル検索<input id="skills-search" type="search" placeholder="スキル名・英名・説明で探す" autocomplete="off" disabled></label>
         <label>種類<select id="skills-type" disabled><option value="">すべての種類</option><option value="active">アクティブ</option><option value="ultimate">アルティメット</option><option value="passive">パッシブ</option></select></label>

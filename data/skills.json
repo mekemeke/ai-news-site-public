@@ -3,7 +3,7 @@
   "meta": {
     "version": "2026-10-27.class-skills.v2",
     "verifiedAt": "2026-10-27",
-    "coverageNote": "7クラス・各3系統の基本／変異／アルティメット／パッシブ462件を収録。説明は出典に基づく独自の日本語要約です。ライブ版U51との全件一致は未確認で、過去スナップショットを含みます。公式更新説明・出典内の既知の不一致がある7件は個別に注意を表示しています。",
+    "coverageNote": "7クラス・各3系統の基本／変異／アルティメット／パッシブ462件を収録。説明は出典に基づく独自の日本語要約です。ライブ版U51との全件一致は未確認で、過去スナップショットを含みます。公式更新説明・出典内の既知の不一致がある8件は個別に注意を表示しています。",
     "iconNote": "権利元の非営利ファン利用条件と取得元・対応関係を確認した実物アイコンを462 / 462件掲載。同じサイト内の画像を表示し、未取得・読込不可は明示します。",
     "numericNote": "数値は出典に表示された参考値です。装備・能力値・CPで変動し、実キャラクターの値や最新ライブ版との一致は保証しません。未確認の消費・射程などは補完していません。",
     "localizationNote": "日本語名は公式日本語資料で表記を確認できたもののみ掲載し、各項目に名称の出典を保持しています。旧パッチ資料の表記を含み、現行日本語クライアントとの全件一致は未確認です。未確認の名称は英語のまま表示します。効果説明は独自の日本語要約です。",
@@ -259,7 +259,8 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-shifting-standard",
@@ -293,7 +294,11 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：汚染 / Major Defile"
+      ]
     },
     {
       "id": "dragonknight-standard-of-might",
@@ -327,7 +332,8 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-core-of-flame",
@@ -361,7 +367,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-heart-of-flame",
@@ -395,7 +402,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-soul-of-flame",
@@ -429,7 +437,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-hearthfire",
@@ -461,7 +470,12 @@
       "durationSeconds": 15,
       "target": "ground",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：勇壮 / Minor Heroism"
+      ]
     },
     {
       "id": "dragonknight-fire-keeper",
@@ -493,7 +507,12 @@
       "durationSeconds": 15,
       "target": "ground",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：勇壮 / Minor Heroism"
+      ]
     },
     {
       "id": "dragonknight-hearth-and-home",
@@ -525,7 +544,14 @@
       "durationSeconds": 15,
       "target": "ground",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：勇壮 / Minor Heroism",
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "dragonknight-inferno",
@@ -559,7 +585,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "dragonknight-cauterize",
@@ -593,7 +623,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "dragonknight-incinerate",
@@ -627,7 +661,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "dragonknight-lava-whip",
@@ -660,7 +698,8 @@
         "value": 2295,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-flame-lash",
@@ -692,7 +731,8 @@
       "previousSourceUrl": "https://esodecoded.com/skills/dragonknight-lava-whip",
       "previousSourceDataDate": "2026-10-17",
       "sourceDateNote": "公式U50パッチ記事の公開日。現在のライブ版全効果の確認日ではありません。",
-      "conflictSourceUrl": "https://eso.dmm.com/news/detail/15731?page=1"
+      "conflictSourceUrl": "https://eso.dmm.com/news/detail/15731?page=1",
+      "browseTags": []
     },
     {
       "id": "dragonknight-molten-whip",
@@ -724,7 +764,8 @@
       "previousSourceUrl": "https://esodecoded.com/skills/dragonknight-lava-whip",
       "previousSourceDataDate": "2026-10-17",
       "sourceDateNote": "公式U50パッチ記事の公開日。現在のライブ版全効果の確認日ではありません。",
-      "conflictSourceUrl": "https://eso.dmm.com/news/detail/15731?page=1"
+      "conflictSourceUrl": "https://eso.dmm.com/news/detail/15731?page=1",
+      "browseTags": []
     },
     {
       "id": "dragonknight-searing-strike",
@@ -758,7 +799,8 @@
         "value": 2295,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-burning-embers",
@@ -792,7 +834,8 @@
         "value": 2295,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-searing-claw",
@@ -826,7 +869,8 @@
         "value": 2295,
         "resource": "Stamina"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-a-soul-ablaze",
@@ -853,7 +897,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-combustion",
@@ -880,7 +925,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-fan-the-flames",
@@ -907,7 +953,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-traumatic-burns",
@@ -934,7 +981,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で旧名称・能力変更との対応を確認。U49導入前の公式参考名称であり、現行日本語クライアントのローカライズ未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-dragon-leap",
@@ -968,7 +1016,8 @@
         "value": 125,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-ferocious-leap",
@@ -1002,7 +1051,8 @@
         "value": 125,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-take-flight",
@@ -1036,7 +1086,8 @@
         "value": 125,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-chains-of-flame",
@@ -1069,7 +1120,11 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "dragonknight-chains-of-devastation",
@@ -1102,7 +1157,12 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：狂戦士 / Major Berserk",
+        "バフ（強）：回避 / Major Evasion"
+      ]
     },
     {
       "id": "dragonknight-chains-of-dominance",
@@ -1135,7 +1195,11 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "dragonknight-dark-talons",
@@ -1169,7 +1233,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-burning-talons",
@@ -1203,7 +1268,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-choking-talons",
@@ -1233,7 +1299,11 @@
       "cost": {
         "value": 3240,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "dragonknight-dragon-blood",
@@ -1266,7 +1336,11 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：不屈 / Major Fortitude"
+      ]
     },
     {
       "id": "dragonknight-blood-of-the-elder-dragon",
@@ -1300,7 +1374,13 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：不屈 / Major Fortitude",
+        "マイナーバフ",
+        "バフ（弱）：勇気 / Minor Courage"
+      ]
     },
     {
       "id": "dragonknight-blood-of-the-green-dragon",
@@ -1333,7 +1413,14 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：耐久 / Major Endurance",
+        "マイナーバフ",
+        "バフ（弱）：生命力 / Minor Vitality",
+        "バフ（強）：不屈 / Major Fortitude"
+      ]
     },
     {
       "id": "dragonknight-dragonfire-breath",
@@ -1367,7 +1454,8 @@
         "value": 2984,
         "resource": "Stamina"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-disintegrating-dragonfire",
@@ -1401,7 +1489,11 @@
         "value": 2984,
         "resource": "Stamina"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：侵害 / Major Breach"
+      ]
     },
     {
       "id": "dragonknight-engulfing-dragonfire",
@@ -1434,7 +1526,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-wing-buffet",
@@ -1465,7 +1558,11 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "dragonknight-fleetstep-wings",
@@ -1496,7 +1593,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "dragonknight-protect-the-brood",
@@ -1527,7 +1628,13 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection",
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "dragonknight-burnished-scales",
@@ -1554,7 +1661,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-elder-dragon",
@@ -1582,7 +1690,11 @@
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
       "target": "self",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：残忍 / Minor Brutality"
+      ]
     },
     {
       "id": "dragonknight-the-storm-voice",
@@ -1609,7 +1721,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-world-in-ruin",
@@ -1636,7 +1749,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で旧名称・能力変更との対応を確認。U49導入前の公式参考名称であり、現行日本語クライアントのローカライズ未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-magma-armor",
@@ -1667,7 +1781,8 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-corrosive-armor",
@@ -1701,7 +1816,8 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-magma-shell",
@@ -1732,7 +1848,8 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-earthspike-mantle",
@@ -1763,7 +1880,11 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "dragonknight-earthshield-mantle",
@@ -1792,7 +1913,11 @@
       "cost": {
         "value": 2700,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "dragonknight-shatterspike-mantle",
@@ -1826,7 +1951,11 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "dragonknight-molten-weapons",
@@ -1860,7 +1989,13 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "dragonknight-igneous-weapons",
@@ -1890,7 +2025,13 @@
       "cost": {
         "value": 4320,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "dragonknight-molten-armaments",
@@ -1920,7 +2061,13 @@
       "cost": {
         "value": 4050,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "dragonknight-obsidian-shield",
@@ -1954,7 +2101,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：治癒力 / Major Mending"
+      ]
     },
     {
       "id": "dragonknight-fragmented-shield",
@@ -1988,7 +2139,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：治癒力 / Major Mending"
+      ]
     },
     {
       "id": "dragonknight-igneous-shield",
@@ -2022,7 +2177,11 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：治癒力 / Major Mending"
+      ]
     },
     {
       "id": "dragonknight-petrify",
@@ -2053,7 +2212,11 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach"
+      ]
     },
     {
       "id": "dragonknight-fossilize",
@@ -2084,7 +2247,12 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "dragonknight-shattering-rocks",
@@ -2118,7 +2286,11 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach"
+      ]
     },
     {
       "id": "dragonknight-superheated-ward",
@@ -2146,7 +2318,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で旧名称・能力変更との対応を確認。U49導入前の公式参考名称であり、現行日本語クライアントのローカライズ未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-volcanic-ward",
@@ -2174,7 +2347,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で旧名称・能力変更との対応を確認。U49導入前の公式参考名称であり、現行日本語クライアントのローカライズ未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-magma-fist",
@@ -2208,7 +2382,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で旧名称・能力変更との対応を確認。U49導入前の公式参考名称であり、現行日本語クライアントのローカライズ未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-blessing-at-the-peak",
@@ -2235,7 +2410,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-heart-of-stone",
@@ -2262,7 +2438,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で名称と対応する能力を確認。記事はU49導入前の開発説明であり、現行日本語クライアント未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "dragonknight-landslide",
@@ -2285,7 +2462,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "summaryJa": "ダメージを与えると与ダメージ強化が蓄積。一定時間スタックを得ないと減少する。",
-      "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。"
+      "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。",
+      "browseTags": []
     },
     {
       "id": "dragonknight-mountain-giant",
@@ -2312,7 +2490,10 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15274",
       "nameJaSourceDate": "2026-01-09",
       "nameJaVerificationNote": "日本語公式クラス更新記事で旧名称・能力変更との対応を確認。U49導入前の公式参考名称であり、現行日本語クライアントのローカライズ未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "重攻撃"
+      ]
     },
     {
       "id": "sorcerer-negate-magic",
@@ -2339,7 +2520,8 @@
       },
       "descriptionJa": "12秒間の領域で敵の範囲効果を除去・抑止。敵NPCを気絶、敵プレイヤーを沈黙にする。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-absorption-field",
@@ -2371,7 +2553,8 @@
       "castTimeSeconds": 0,
       "target": "Ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-suppression-field",
@@ -2401,7 +2584,8 @@
       "durationSeconds": 12.0,
       "descriptionJa": "12秒間、領域内の敵の範囲効果を除去・抑止。敵を気絶させ、敵プレイヤーには代わりに沈黙を付与する。さらに敵へ毎秒1038の魔法ダメージ。",
       "castTimeSeconds": 0,
-      "target": "Ground"
+      "target": "Ground",
+      "browseTags": []
     },
     {
       "id": "sorcerer-crystal-shard",
@@ -2431,7 +2615,8 @@
       "castTimeSeconds": 0.8,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-crystal-fragments",
@@ -2461,7 +2646,8 @@
       "castTimeSeconds": 0.8,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-crystal-weapon",
@@ -2491,7 +2677,11 @@
       "castTimeSeconds": 0,
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "sorcerer-daedric-mines",
@@ -2521,7 +2711,8 @@
       "castTimeSeconds": 0,
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-daedric-refuge",
@@ -2551,7 +2742,8 @@
       "castTimeSeconds": 0,
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-daedric-tomb",
@@ -2580,7 +2772,8 @@
       "durationSeconds": 15.0,
       "descriptionJa": "指定位置に即時起動の地雷を3個設置。敵へ魔法ダメージと2秒の移動不能を与える。",
       "castTimeSeconds": 0,
-      "target": "Ground"
+      "target": "Ground",
+      "browseTags": []
     },
     {
       "id": "sorcerer-dark-exchange",
@@ -2607,7 +2800,11 @@
       },
       "descriptionJa": "スタミナを消費し体力8000・マジカ3600を即時回復、さらにマジカを継続回復。20秒間与ダメージ+5%。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：狂戦士 / Minor Berserk"
+      ]
     },
     {
       "id": "sorcerer-dark-conversion",
@@ -2632,7 +2829,11 @@
         "value": 3240,
         "resource": "Stamina"
       },
-      "descriptionJa": "スタミナを体力10000・マジカ4500へ変換し、20秒でマジカ3000を追加回復。与ダメージ+5%。"
+      "descriptionJa": "スタミナを体力10000・マジカ4500へ変換し、20秒でマジカ3000を追加回復。与ダメージ+5%。",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：狂戦士 / Minor Berserk"
+      ]
     },
     {
       "id": "sorcerer-dark-deal",
@@ -2659,7 +2860,11 @@
       },
       "descriptionJa": "マジカを体力8000・スタミナ3600へ変換し、10秒でスタミナ2400を追加回復。20秒間与ダメージ+5%。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：狂戦士 / Minor Berserk"
+      ]
     },
     {
       "id": "sorcerer-encase",
@@ -2686,7 +2891,11 @@
       },
       "descriptionJa": "前方の敵を4秒間移動不能にし、10秒間その与ダメージを10%低下させる。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "sorcerer-shattering-spines",
@@ -2717,7 +2926,11 @@
       "castTimeSeconds": 0,
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "sorcerer-vibrant-shroud",
@@ -2747,7 +2960,13 @@
       "castTimeSeconds": 0,
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：生命力 / Minor Vitality",
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "sorcerer-rune-prison",
@@ -2774,7 +2993,8 @@
       },
       "descriptionJa": "短い遅延後、敵を3秒間気絶させる。防御では防げない。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-defensive-rune",
@@ -2799,7 +3019,8 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "descriptionJa": "2分間の防護ルーンを自身に付与。次に攻撃した敵を遅れて3秒気絶させる。"
+      "descriptionJa": "2分間の防護ルーンを自身に付与。次に攻撃した敵を遅れて3秒気絶させる。",
+      "browseTags": []
     },
     {
       "id": "sorcerer-rune-cage",
@@ -2830,7 +3051,8 @@
       "castTimeSeconds": 0,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-blood-magic",
@@ -2854,7 +3076,8 @@
       "descriptionJa": "消費のある闇魔法使用時、体力不足なら自己回復。満タンなら高い方の最大マジカ／スタミナ+10%。",
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13197",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-exploitation",
@@ -2875,7 +3098,8 @@
       "sourceDataDate": "2026-10-17",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "闇魔法の発動を試みると、自身とグループの貫通力を20秒間2974増やす。"
+      "descriptionJa": "闇魔法の発動を試みると、自身とグループの貫通力を20秒間2974増やす。",
+      "browseTags": []
     },
     {
       "id": "sorcerer-persistence",
@@ -2898,7 +3122,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "攻撃を防御した後、次に使う体力・マジカ・スタミナ消費アビリティの消費を18%軽減する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "sorcerer-unholy-knowledge",
@@ -2919,7 +3144,8 @@
       "sourceDataDate": "2026-10-17",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "基本戦闘アクション以外のアビリティの体力・マジカ・スタミナ消費を6%軽減する。"
+      "descriptionJa": "基本戦闘アクション以外のアビリティの体力・マジカ・スタミナ消費を6%軽減する。",
+      "browseTags": []
     },
     {
       "id": "sorcerer-summon-storm-atronach",
@@ -2949,7 +3175,12 @@
       "durationSeconds": 15.0,
       "descriptionJa": "固定型の雷の精霊を召喚し、着地時に気絶と範囲攻撃。味方のシナジーは周辺の与ダメージを10%高める。",
       "target": "Ground",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：狂戦士 / Major Berserk",
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-greater-storm-atronach",
@@ -2979,7 +3210,12 @@
       "durationSeconds": 15.0,
       "descriptionJa": "固定位置に雷の精霊を15秒間召喚。着地で2249の雷撃ダメージと3秒の気絶、以後近い敵へ毎秒1509の雷撃ダメージ。味方のシナジーは周辺の味方へ10秒間、与ダメージ+10%。",
       "target": "Ground",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：狂戦士 / Major Berserk",
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-summon-charged-atronach",
@@ -3009,7 +3245,12 @@
       "durationSeconds": 15.0,
       "descriptionJa": "召喚した精霊が2秒ごとに範囲雷撃を放ち、脳震とうを付与。味方用の強化シナジーも備える。",
       "target": "Ground",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：狂戦士 / Major Berserk",
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-bound-armor",
@@ -3039,7 +3280,11 @@
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "sorcerer-bound-aegis",
@@ -3067,7 +3312,12 @@
       "durationSeconds": 3.0,
       "descriptionJa": "防御時の軽減率を50%増加。どちらかのバーに装備中は被ダメージ-5%、防御力+2974。",
       "target": "Self",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection",
+        "バフ（弱）：強固 / Minor Resolve"
+      ]
     },
     {
       "id": "sorcerer-bound-armaments",
@@ -3097,7 +3347,13 @@
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "sorcerer-conjured-ward",
@@ -3125,7 +3381,10 @@
       "descriptionJa": "自身とペットへ6秒のシールド。最大体力と最大マジカの高い方で伸び、自身の最大体力55%が上限。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-hardened-ward",
@@ -3153,7 +3412,10 @@
       "descriptionJa": "自身とペットへのシールドを強化。最大体力と最大マジカの高い方で伸び、最大体力72%が上限。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-regenerative-ward",
@@ -3181,7 +3443,13 @@
       "descriptionJa": "10秒のシールドと自己回復。自身と近くの味方へマジカ・スタミナ再生の強化も与える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：知力 / Minor Intellect",
+        "バフ（弱）：耐久 / Minor Endurance",
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-daedric-curse",
@@ -3213,7 +3481,8 @@
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "sorcerer-daedric-prey",
@@ -3245,7 +3514,10 @@
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-haunting-curse",
@@ -3275,7 +3547,8 @@
       "durationSeconds": 12.0,
       "descriptionJa": "3.5秒後に魔法爆発し、その8.5秒後に再爆発する。同時に維持できる呪いは1つ。",
       "target": "Enemy",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "sorcerer-summon-unstable-familiar",
@@ -3303,7 +3576,10 @@
       "descriptionJa": "雷撃ペットを常駐召喚。再発動で周囲に20秒間、2秒ごとの範囲雷撃を行わせる。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-summon-unstable-clannfear",
@@ -3331,7 +3607,10 @@
       "descriptionJa": "物理攻撃を行う常駐ペット。頭突きは358、尾の範囲攻撃は1秒後に358の物理ダメージ。召喚後の特殊使用は4320マジカを消費し、自身5121・ペット2560を回復する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-summon-volatile-familiar",
@@ -3359,7 +3638,10 @@
       "descriptionJa": "雷撃ペットを召喚。再発動の範囲攻撃は、2回目の命中で敵を3秒気絶させる。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-summon-winged-twilight",
@@ -3387,7 +3669,10 @@
       "descriptionJa": "雷撃する黄昏のペットを常駐召喚。再発動で味方1人とペット自身を回復する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-summon-twilight-matriarch",
@@ -3415,7 +3700,10 @@
       "descriptionJa": "回復型の黄昏を召喚。再発動で味方2人とペット自身を回復する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-summon-twilight-tormentor",
@@ -3441,7 +3729,10 @@
         "resource": "Magicka"
       },
       "descriptionJa": "攻撃型の黄昏を召喚。再発動で20秒間、体力50%超の敵へのペットの与ダメージ+60%。",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-daedric-protection",
@@ -3465,7 +3756,8 @@
       "descriptionJa": "デイドラ召喚アビリティの効果が有効な間、自身の被ダメージを5%軽減する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 36
+      "sourceUnlockLevel": 36,
+      "browseTags": []
     },
     {
       "id": "sorcerer-expert-summoner",
@@ -3489,7 +3781,10 @@
       "descriptionJa": "マジカとスタミナ+5%。常駐ペットが活動中なら最大体力も5%増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "sorcerer-power-stone",
@@ -3511,7 +3806,8 @@
       "gameUpdate": null,
       "verificationStatus": "source-checked-older-snapshot",
       "descriptionJa": "アルティメットアビリティの消費を15%軽減する。",
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": []
     },
     {
       "id": "sorcerer-rebate",
@@ -3535,7 +3831,8 @@
       "descriptionJa": "非アルティメットのデイドラ召喚が終了すると、消費資源に応じてマジカかスタミナを371回復する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 18
+      "sourceUnlockLevel": 18,
+      "browseTags": []
     },
     {
       "id": "sorcerer-overload",
@@ -3563,7 +3860,11 @@
       "descriptionJa": "軽・重攻撃を雷撃に変更。軽攻撃は28mまで2323、重攻撃は4×6の範囲へ2090の雷撃ダメージ。攻撃ごとにアルティマを消費し、残量切れか解除まで続く。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "sorcerer-energy-overload",
@@ -3589,7 +3890,11 @@
         "resource": "Ultimate"
       },
       "descriptionJa": "軽・重攻撃を雷撃へ切り替え、攻撃時にマジカとスタミナを各1200回復する。",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "sorcerer-power-overload",
@@ -3617,7 +3922,11 @@
       "descriptionJa": "軽・重攻撃を雷撃に変更。軽攻撃は32mまで2640、重攻撃は6×8の範囲へ2375の雷撃ダメージ。攻撃ごとにアルティマを消費し、残量切れか解除まで続く。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "sorcerer-bolt-escape",
@@ -3645,7 +3954,8 @@
       "descriptionJa": "前方へ瞬間移動し、到着地点付近の敵を3秒気絶。4秒以内の連発はマジカ消費が33%増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "sorcerer-ball-of-lightning",
@@ -3671,7 +3981,8 @@
         "resource": "Magicka"
       },
       "descriptionJa": "前方へ転移し、2秒の減速・移動不能耐性を得る。到着地点の球が敵の投射物を毎秒1発迎撃する。",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "sorcerer-streak",
@@ -3699,7 +4010,8 @@
       "rangeMeters": 15.0,
       "descriptionJa": "前方へ転移し、通過した敵へ雷撃と3秒の気絶。4秒以内の連発は消費増加。",
       "target": "Self",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "sorcerer-lightning-form",
@@ -3727,7 +4039,11 @@
       "descriptionJa": "20秒間、周囲へ継続雷撃。効果中は物理・呪文耐性が5948増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "sorcerer-boundless-storm",
@@ -3755,7 +4071,12 @@
       "descriptionJa": "周囲への雷撃と耐性強化が30秒継続。発動後4秒間は移動速度も30%増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "sorcerer-hurricane",
@@ -3783,7 +4104,13 @@
       "descriptionJa": "周囲への物理攻撃が徐々に広がり強くなる。効果中は耐性+5948、移動速度+15%。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーバフ",
+        "バフ（弱）：迅速 / Minor Expedition"
+      ]
     },
     {
       "id": "sorcerer-lightning-splash",
@@ -3815,7 +4142,8 @@
       "target": "Ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "sorcerer-lightning-flood",
@@ -3845,7 +4173,8 @@
       "durationSeconds": 10.0,
       "descriptionJa": "継続雷撃の半径を8mへ拡大し、毎秒の威力も強化。攻撃シナジー付き。",
       "target": "Ground",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "sorcerer-liquid-lightning",
@@ -3875,7 +4204,8 @@
       "durationSeconds": 15.0,
       "descriptionJa": "指定領域への継続雷撃を15秒に延長。自身または味方の攻撃シナジーも備える。",
       "target": "Ground",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "sorcerer-mages-fury",
@@ -3907,7 +4237,8 @@
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "sorcerer-endless-fury",
@@ -3937,7 +4268,8 @@
       "durationSeconds": 2.0,
       "descriptionJa": "低体力で追加爆発する雷撃。命中後5秒以内に敵が倒されるとマジカ4860を回復する。",
       "target": "Enemy",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "sorcerer-mages-wrath",
@@ -3967,7 +4299,8 @@
       "durationSeconds": 2.0,
       "descriptionJa": "敵へ871の雷撃ダメージ。命中後2秒以内に対象が体力20%以下になると、対象と周囲へ3195の雷撃ダメージを追加する。",
       "target": "Enemy",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "sorcerer-surge",
@@ -3993,7 +4326,11 @@
         "resource": "Magicka"
       },
       "descriptionJa": "33秒間、武器・呪文ダメージ+20%。クリティカルダメージを与えると、毎秒1回まで自己回復する。",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "sorcerer-critical-surge",
@@ -4019,7 +4356,11 @@
         "resource": "Magicka"
       },
       "descriptionJa": "武器・呪文ダメージ強化に加え、クリティカル攻撃時の自己回復が3300に増える。発動間隔は1秒。",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "sorcerer-power-surge",
@@ -4045,7 +4386,11 @@
         "resource": "Magicka"
       },
       "descriptionJa": "攻撃力強化を維持し、回復クリティカルをきっかけに自身と周囲の味方を回復。発動間隔は3秒。",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "sorcerer-amplitude",
@@ -4067,7 +4412,8 @@
       "gameUpdate": null,
       "verificationStatus": "source-checked-older-snapshot",
       "descriptionJa": "敵の現在体力が10%あるごとに、その敵への与ダメージを1%高める。",
-      "sourceUnlockLevel": 36
+      "sourceUnlockLevel": 36,
+      "browseTags": []
     },
     {
       "id": "sorcerer-capacitor",
@@ -4091,7 +4437,8 @@
       "descriptionJa": "体力・マジカ・スタミナ再生が各141増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 18
+      "sourceUnlockLevel": 18,
+      "browseTags": []
     },
     {
       "id": "sorcerer-energized",
@@ -4113,7 +4460,8 @@
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "物理ダメージと雷撃ダメージが5%増える。",
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": []
     },
     {
       "id": "sorcerer-expert-mage",
@@ -4138,7 +4486,8 @@
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": []
     },
     {
       "id": "nightblade-death-stroke",
@@ -4168,7 +4517,8 @@
       "castTimeSeconds": 0.4,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-incapacitating-strike",
@@ -4198,7 +4548,8 @@
       "castTimeSeconds": 0.4,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-soul-harvest",
@@ -4226,7 +4577,11 @@
       },
       "rangeMeters": 7,
       "castTimeSeconds": 0.4,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：汚染 / Major Defile"
+      ]
     },
     {
       "id": "nightblade-assassins-blade",
@@ -4256,7 +4611,8 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-impale",
@@ -4284,7 +4640,8 @@
       },
       "rangeMeters": 28,
       "castTimeSeconds": 0,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": []
     },
     {
       "id": "nightblade-killers-blade",
@@ -4314,7 +4671,8 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-grim-focus",
@@ -4344,7 +4702,13 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "nightblade-merciless-resolve",
@@ -4374,7 +4738,13 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "nightblade-relentless-focus",
@@ -4404,7 +4774,13 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "nightblade-mark-target",
@@ -4431,7 +4807,11 @@
         "resource": "Magicka"
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：侵害 / Major Breach"
+      ]
     },
     {
       "id": "nightblade-piercing-mark",
@@ -4458,7 +4838,11 @@
         "resource": "Magicka"
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：侵害 / Major Breach"
+      ]
     },
     {
       "id": "nightblade-reapers-mark",
@@ -4483,7 +4867,13 @@
       "cost": {
         "value": 2700,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：侵害 / Major Breach",
+        "メジャーバフ",
+        "バフ（強）：狂戦士 / Major Berserk"
+      ]
     },
     {
       "id": "nightblade-teleport-strike",
@@ -4513,7 +4903,11 @@
       "castTimeSeconds": 0.4,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "nightblade-ambush",
@@ -4541,7 +4935,14 @@
       },
       "rangeMeters": 22,
       "castTimeSeconds": 0.4,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability",
+        "マイナーバフ",
+        "バフ（弱）：狂戦士 / Minor Berserk",
+        "重攻撃"
+      ]
     },
     {
       "id": "nightblade-lotus-fan",
@@ -4570,7 +4971,11 @@
       "rangeMeters": 22,
       "radiusMeters": 6,
       "castTimeSeconds": 0.4,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "nightblade-veiled-strike",
@@ -4600,7 +5005,8 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-concealed-weapon",
@@ -4628,7 +5034,11 @@
       },
       "rangeMeters": 7,
       "castTimeSeconds": 0,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：迅速 / Minor Expedition"
+      ]
     },
     {
       "id": "nightblade-surprise-attack",
@@ -4656,7 +5066,8 @@
       },
       "rangeMeters": 7,
       "castTimeSeconds": 0,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": []
     },
     {
       "id": "nightblade-executioner",
@@ -4677,7 +5088,8 @@
       "verifiedAt": "2026-10-27",
       "sourceDataDate": "2026-10-03",
       "verificationStatus": "source-checked-update-unverified",
-      "gameUpdate": null
+      "gameUpdate": null,
+      "browseTags": []
     },
     {
       "id": "nightblade-hemorrhage",
@@ -4698,7 +5110,11 @@
       "verifiedAt": "2026-10-27",
       "sourceDataDate": "2026-10-03",
       "verificationStatus": "source-checked-update-unverified",
-      "gameUpdate": null
+      "gameUpdate": null,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：獰猛 / Minor Savagery"
+      ]
     },
     {
       "id": "nightblade-master-assassin",
@@ -4721,7 +5137,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-pressure-points",
@@ -4745,7 +5162,8 @@
       "gameUpdate": null,
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-consuming-darkness",
@@ -4776,7 +5194,11 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "nightblade-bolstering-darkness",
@@ -4807,7 +5229,11 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "nightblade-veil-of-blades",
@@ -4836,7 +5262,11 @@
       "radiusMeters": 5,
       "durationSeconds": 13,
       "castTimeSeconds": 0,
-      "target": "area"
+      "target": "area",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "nightblade-aspect-of-terror",
@@ -4863,7 +5293,11 @@
         "resource": "Magicka"
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "nightblade-manifestation-of-terror",
@@ -4888,7 +5322,11 @@
       "cost": {
         "value": 3240,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "nightblade-mass-hysteria",
@@ -4913,7 +5351,11 @@
       "cost": {
         "value": 3780,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "nightblade-blur",
@@ -4940,7 +5382,11 @@
         "resource": "Magicka"
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：回避 / Major Evasion"
+      ]
     },
     {
       "id": "nightblade-mirage",
@@ -4965,7 +5411,13 @@
       "cost": {
         "value": 3510,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：回避 / Major Evasion",
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve"
+      ]
     },
     {
       "id": "nightblade-phantasmal-escape",
@@ -4990,7 +5442,11 @@
       "cost": {
         "value": 3780,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：回避 / Major Evasion"
+      ]
     },
     {
       "id": "nightblade-path-of-darkness",
@@ -5017,7 +5473,11 @@
         "resource": "Magicka"
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "nightblade-refreshing-path",
@@ -5048,7 +5508,14 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition",
+        "マイナーバフ",
+        "バフ（弱）：耐久 / Minor Endurance",
+        "バフ（弱）：知力 / Minor Intellect"
+      ]
     },
     {
       "id": "nightblade-twisting-path",
@@ -5079,7 +5546,11 @@
       "castTimeSeconds": 0,
       "target": "cone",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "nightblade-shadow-cloak",
@@ -5103,7 +5574,11 @@
       "gameUpdate": null,
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "nightblade-dark-cloak",
@@ -5133,7 +5608,11 @@
       "castTimeSeconds": 0,
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "nightblade-shadowy-disguise",
@@ -5155,7 +5634,11 @@
       "sourceDataDate": "2026-10-03",
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "nightblade-summon-shade",
@@ -5183,7 +5666,12 @@
       },
       "durationSeconds": 20,
       "castTimeSeconds": 0,
-      "target": "self"
+      "target": "self",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim",
+        "ペット"
+      ]
     },
     {
       "id": "nightblade-dark-shade",
@@ -5211,7 +5699,12 @@
       },
       "durationSeconds": 20,
       "castTimeSeconds": 0,
-      "target": "self"
+      "target": "self",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim",
+        "ペット"
+      ]
     },
     {
       "id": "nightblade-shadow-image",
@@ -5242,7 +5735,12 @@
       "castTimeSeconds": 0,
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim",
+        "ペット"
+      ]
     },
     {
       "id": "nightblade-dark-veil",
@@ -5265,7 +5763,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-dark-vigor",
@@ -5289,7 +5788,8 @@
       "gameUpdate": null,
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-refreshing-shadows",
@@ -5310,7 +5810,8 @@
       "verifiedAt": "2026-10-27",
       "sourceDataDate": "2026-10-03",
       "verificationStatus": "source-checked-update-unverified",
-      "gameUpdate": null
+      "gameUpdate": null,
+      "browseTags": []
     },
     {
       "id": "nightblade-shadow-barrier",
@@ -5334,7 +5835,11 @@
       "gameUpdate": null,
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "nightblade-soul-shred",
@@ -5362,7 +5867,8 @@
       },
       "radiusMeters": 8,
       "castTimeSeconds": 0.5,
-      "target": "area"
+      "target": "area",
+      "browseTags": []
     },
     {
       "id": "nightblade-soul-siphon",
@@ -5391,7 +5897,11 @@
       "radiusMeters": 28,
       "durationSeconds": 4,
       "castTimeSeconds": 0.5,
-      "target": "area"
+      "target": "area",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：生命力 / Major Vitality"
+      ]
     },
     {
       "id": "nightblade-soul-tether",
@@ -5420,7 +5930,8 @@
       "radiusMeters": 8,
       "durationSeconds": 8,
       "castTimeSeconds": 0.5,
-      "target": "area"
+      "target": "area",
+      "browseTags": []
     },
     {
       "id": "nightblade-cripple",
@@ -5451,7 +5962,8 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-crippling-grasp",
@@ -5480,7 +5992,8 @@
       "rangeMeters": 28,
       "durationSeconds": 20,
       "castTimeSeconds": 0,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": []
     },
     {
       "id": "nightblade-debilitate",
@@ -5509,7 +6022,8 @@
       "rangeMeters": 28,
       "durationSeconds": 20,
       "castTimeSeconds": 0,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": []
     },
     {
       "id": "nightblade-drain-power",
@@ -5540,7 +6054,11 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "nightblade-power-extraction",
@@ -5571,7 +6089,15 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "マイナーバフ",
+        "バフ（弱）：勇気 / Minor Courage",
+        "マイナーデバフ",
+        "デバフ（弱）：臆病 / Minor Cowardice"
+      ]
     },
     {
       "id": "nightblade-sap-essence",
@@ -5600,7 +6126,11 @@
       "radiusMeters": 8,
       "durationSeconds": 30,
       "castTimeSeconds": 0,
-      "target": "area"
+      "target": "area",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "nightblade-malevolent-offering",
@@ -5628,7 +6158,8 @@
       },
       "radiusMeters": 28,
       "castTimeSeconds": 0,
-      "target": "cone"
+      "target": "cone",
+      "browseTags": []
     },
     {
       "id": "nightblade-healthy-offering",
@@ -5656,7 +6187,11 @@
       },
       "radiusMeters": 28,
       "castTimeSeconds": 0,
-      "target": "cone"
+      "target": "cone",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：治癒力 / Minor Mending"
+      ]
     },
     {
       "id": "nightblade-shrewd-offering",
@@ -5684,7 +6219,8 @@
       },
       "radiusMeters": 28,
       "castTimeSeconds": 0,
-      "target": "cone"
+      "target": "cone",
+      "browseTags": []
     },
     {
       "id": "nightblade-siphoning-strikes",
@@ -5709,7 +6245,8 @@
       "cost": {
         "value": 2000,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "nightblade-leeching-strikes",
@@ -5734,7 +6271,8 @@
       "cost": {
         "value": 2000,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "nightblade-siphoning-attacks",
@@ -5759,7 +6297,8 @@
       "cost": {
         "value": 2600,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "nightblade-strife",
@@ -5797,7 +6336,8 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-funnel-health",
@@ -5835,7 +6375,8 @@
       "castTimeSeconds": 0,
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-swallow-soul",
@@ -5864,7 +6405,8 @@
       "rangeMeters": 28,
       "durationSeconds": 10,
       "castTimeSeconds": 0,
-      "target": "enemy"
+      "target": "enemy",
+      "browseTags": []
     },
     {
       "id": "nightblade-catalyst",
@@ -5887,7 +6429,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-magicka-flood",
@@ -5910,7 +6453,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-soul-siphoner",
@@ -5934,7 +6478,8 @@
       "gameUpdate": null,
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "nightblade-transfer",
@@ -5955,7 +6500,8 @@
       "verifiedAt": "2026-10-27",
       "sourceDataDate": "2026-10-03",
       "verificationStatus": "source-checked-update-unverified",
-      "gameUpdate": null
+      "gameUpdate": null,
+      "browseTags": []
     },
     {
       "id": "templar-radial-sweep",
@@ -5983,7 +6529,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "templar-crescent-sweep",
@@ -6011,7 +6558,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "templar-everlasting-sweep",
@@ -6037,7 +6585,8 @@
         "value": 75,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "templar-focused-charge",
@@ -6065,7 +6614,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "templar-explosive-charge",
@@ -6093,7 +6646,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "templar-toppling-charge",
@@ -6119,7 +6676,11 @@
         "value": 3510,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "templar-piercing-javelin",
@@ -6147,7 +6708,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "templar-aurora-javelin",
@@ -6173,7 +6735,8 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "templar-binding-javelin",
@@ -6201,7 +6764,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "templar-puncturing-strikes",
@@ -6229,7 +6793,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "templar-biting-jabs",
@@ -6257,7 +6822,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "templar-puncturing-sweep",
@@ -6285,7 +6854,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "templar-spear-shards",
@@ -6317,7 +6887,8 @@
       "target": "ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-blazing-spear",
@@ -6349,7 +6920,8 @@
       "target": "ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-luminous-shards",
@@ -6381,7 +6953,8 @@
       "target": "ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-sun-shield",
@@ -6409,7 +6982,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "templar-blazing-shield",
@@ -6437,7 +7014,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "templar-radiant-ward",
@@ -6465,7 +7046,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "templar-balanced-warrior",
@@ -6488,7 +7073,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "target": "self",
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": []
     },
     {
       "id": "templar-burning-light",
@@ -6513,7 +7099,8 @@
       "sourceEntryKey": "passive-templar-burning-light",
       "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "templar-piercing-spear",
@@ -6538,7 +7125,8 @@
       "sourceEntryKey": "passive-templar-piercing-spear",
       "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "templar-spear-wall",
@@ -6562,7 +7150,12 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：狂戦士 / Minor Berserk",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "templar-nova",
@@ -6587,7 +7180,11 @@
       "sourceEntryKey": "skill-nova",
       "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "templar-solar-disturbance",
@@ -6618,7 +7215,11 @@
       "rangeMeters": 28,
       "radiusMeters": 8,
       "durationSeconds": 8,
-      "target": "Ground"
+      "target": "Ground",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "templar-solar-prison",
@@ -6649,7 +7250,11 @@
       "rangeMeters": 28,
       "radiusMeters": 8,
       "durationSeconds": 8,
-      "target": "Ground"
+      "target": "Ground",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "templar-backlash",
@@ -6677,7 +7282,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "templar-power-of-the-light",
@@ -6703,7 +7309,8 @@
         "value": 1337,
         "resource": "Stamina"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "templar-purifying-light",
@@ -6729,7 +7336,8 @@
         "value": 2160,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "templar-eclipse",
@@ -6757,7 +7365,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-living-dark",
@@ -6785,7 +7394,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-unstable-core",
@@ -6817,7 +7427,8 @@
       "target": "enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-radiant-destruction",
@@ -6844,7 +7455,8 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "templar-radiant-glory",
@@ -6871,7 +7483,8 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "templar-radiant-oppression",
@@ -6898,7 +7511,8 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "templar-solar-flare",
@@ -6926,7 +7540,10 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "重攻撃"
+      ]
     },
     {
       "id": "templar-dark-flare",
@@ -6954,7 +7571,12 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：汚染 / Major Defile",
+        "重攻撃"
+      ]
     },
     {
       "id": "templar-solar-barrage",
@@ -6982,7 +7604,10 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "重攻撃"
+      ]
     },
     {
       "id": "templar-sun-fire",
@@ -7010,7 +7635,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "templar-reflective-light",
@@ -7036,7 +7665,11 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "templar-vampires-bane",
@@ -7062,7 +7695,11 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "templar-enduring-rays",
@@ -7085,7 +7722,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "sourceEntryKey": "passive-templar-enduring-rays",
-      "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。"
+      "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
+      "browseTags": []
     },
     {
       "id": "templar-illuminate",
@@ -7096,20 +7734,26 @@
       "type": "passive",
       "baseSkillId": null,
       "morphIndex": null,
-      "descriptionJa": "暁の憤怒のアビリティを使うと、自身とグループへ20秒間のMinor Sorceryを付与し、呪文ダメージを10%高める。",
+      "descriptionJa": "公式U51事前説明では、魔術（弱）に代えて固有のグループ防御力効果へ変更すると案内されている。現行ライブ版の効果量・持続時間は未確認。旧資料の魔術（弱）付与を現在の確定効果として扱わず、名前付きバフの分類から除外している。",
       "icon": {
         "path": "assets/eso/skills/templar-illuminate.webp",
         "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_templar_012.webp",
         "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie and https://forums.elderscrollsonline.com/en/discussion/167935/who-owns-copyright-on-screenshots-and-images-taken-in-game-is-there-and-where-is-a-zos-policy; retain copyright/trademark notices and comply with conduct rules. Acquired from Hyperioxes public game-icon reference; no site reuse prohibition found 2026-10-27. Not an open license; excluded from repository code/content license."
       },
-      "sourceUrl": "https://esodecoded.com/skills/templar-illuminate",
+      "sourceUrl": "https://eso.dmm.com/news/detail/15689",
       "verifiedAt": "2026-10-27",
-      "sourceDataDate": "2026-09-12",
-      "verificationStatus": "source-checked-older-snapshot",
+      "sourceDataDate": "2026-06-12",
+      "verificationStatus": "source-conflict-update-unverified",
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15731",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 36
+      "sourceUnlockLevel": 36,
+      "previousSourceUrl": "https://esodecoded.com/skills/templar-illuminate",
+      "previousSourceDataDate": "2026-09-12",
+      "verificationNote": "公式U51事前説明と旧参照資料に不一致があるため、旧効果を現行の確定効果から除外。最終ライブ版の効果量・持続時間は未確認。以下は現行効果ではなく旧参照資料の履歴です：暁の憤怒のアビリティを使うと、自身とグループへ20秒間のMinor Sorceryを付与し、呪文ダメージを10%高める。",
+      "sourceDateNote": "公式U51事前説明の公開日。最終ライブ版の効果を確認した日ではない。",
+      "conflictSourceUrl": "https://eso.dmm.com/news/detail/15689",
+      "browseTags": []
     },
     {
       "id": "templar-prism",
@@ -7132,7 +7776,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "sourceEntryKey": "passive-templar-prism",
-      "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。"
+      "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
+      "browseTags": []
     },
     {
       "id": "templar-restoring-spirit",
@@ -7155,7 +7800,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "sourceEntryKey": "passive-templar-restoring-spirit",
-      "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。"
+      "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
+      "browseTags": []
     },
     {
       "id": "templar-rite-of-passage",
@@ -7183,7 +7829,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "templar-practiced-incantation",
@@ -7209,7 +7856,8 @@
         "value": 125,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "templar-remembrance",
@@ -7235,7 +7883,11 @@
         "value": 125,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "templar-cleansing-ritual",
@@ -7261,7 +7913,8 @@
         "value": 4860,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-extended-ritual",
@@ -7287,7 +7940,8 @@
         "value": 4860,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-ritual-of-retribution",
@@ -7315,7 +7969,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "templar-healing-ritual",
@@ -7343,7 +7998,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "templar-hasty-prayer",
@@ -7369,7 +8025,11 @@
         "value": 4995,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：迅速 / Minor Expedition"
+      ]
     },
     {
       "id": "templar-ritual-of-rebirth",
@@ -7397,7 +8057,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "templar-restoring-aura",
@@ -7422,7 +8083,13 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：耐久 / Minor Endurance",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：知力 / Minor Intellect"
+      ]
     },
     {
       "id": "templar-radiant-aura",
@@ -7445,7 +8112,13 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：耐久 / Minor Endurance",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：知力 / Minor Intellect"
+      ]
     },
     {
       "id": "templar-repentance",
@@ -7470,7 +8143,13 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：耐久 / Minor Endurance",
+        "バフ（弱）：知力 / Minor Intellect"
+      ]
     },
     {
       "id": "templar-rune-focus",
@@ -7501,7 +8180,11 @@
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "templar-channeled-focus",
@@ -7532,7 +8215,11 @@
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/3800",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "templar-restoring-focus",
@@ -7563,7 +8250,11 @@
       "target": "area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "templar-rushed-ceremony",
@@ -7589,7 +8280,8 @@
         "value": 4590,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "templar-breath-of-life",
@@ -7615,7 +8307,8 @@
         "value": 4590,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "templar-honor-the-dead",
@@ -7643,7 +8336,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "templar-light-weaver",
@@ -7667,7 +8361,8 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 36
+      "sourceUnlockLevel": 36,
+      "browseTags": []
     },
     {
       "id": "templar-master-ritualist",
@@ -7689,7 +8384,8 @@
       "sourceDataDate": "2026-08-23",
       "verificationStatus": "source-checked-older-snapshot",
       "gameUpdate": null,
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": []
     },
     {
       "id": "templar-mending",
@@ -7713,7 +8409,8 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 18
+      "sourceUnlockLevel": 18,
+      "browseTags": []
     },
     {
       "id": "templar-sacred-ground",
@@ -7737,7 +8434,11 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：治癒力 / Minor Mending"
+      ]
     },
     {
       "id": "warden-feral-guardian",
@@ -7762,7 +8463,10 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "warden-eternal-guardian",
@@ -7785,7 +8489,10 @@
       "verificationStatus": "source-checked-older-snapshot",
       "gameUpdate": null,
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "warden-wild-guardian",
@@ -7808,7 +8515,10 @@
       "verificationStatus": "source-checked-older-snapshot",
       "gameUpdate": null,
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "warden-betty-netch",
@@ -7833,7 +8543,12 @@
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "ペット"
+      ]
     },
     {
       "id": "warden-blue-betty",
@@ -7856,7 +8571,12 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "ペット"
+      ]
     },
     {
       "id": "warden-bull-netch",
@@ -7879,7 +8599,12 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "ペット"
+      ]
     },
     {
       "id": "warden-dive",
@@ -7907,7 +8632,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "warden-cutting-dive",
@@ -7935,7 +8661,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "warden-screaming-cliff-racer",
@@ -7963,7 +8690,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "warden-falcons-swiftness",
@@ -7991,7 +8719,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "warden-bird-of-prey",
@@ -8019,7 +8751,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition",
+        "マイナーバフ",
+        "バフ（弱）：狂戦士 / Minor Berserk"
+      ]
     },
     {
       "id": "warden-deceptive-predator",
@@ -8047,7 +8785,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition",
+        "マイナーバフ",
+        "バフ（弱）：回避 / Minor Evasion"
+      ]
     },
     {
       "id": "warden-scorch",
@@ -8075,7 +8819,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-deep-fissure",
@@ -8103,7 +8848,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：侵害 / Major Breach",
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach"
+      ]
     },
     {
       "id": "warden-subterranean-assault",
@@ -8129,7 +8880,8 @@
         "value": 2066,
         "resource": "Stamina"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-swarm",
@@ -8157,7 +8909,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "warden-fetcher-infection",
@@ -8183,7 +8939,11 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "warden-growing-swarm",
@@ -8211,7 +8971,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "warden-advanced-species",
@@ -8236,7 +9000,8 @@
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": []
     },
     {
       "id": "warden-bond-with-nature",
@@ -8260,7 +9025,8 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 18
+      "sourceUnlockLevel": 18,
+      "browseTags": []
     },
     {
       "id": "warden-flourish",
@@ -8285,7 +9051,8 @@
       "sourceEntryKey": "passive-flourish",
       "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "warden-savage-beast",
@@ -8307,7 +9074,8 @@
       "sourceDataDate": "2026-08-01",
       "verificationStatus": "source-checked-older-snapshot",
       "gameUpdate": null,
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": []
     },
     {
       "id": "warden-secluded-grove",
@@ -8333,7 +9101,8 @@
         "value": 90,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "warden-enchanted-forest",
@@ -8359,7 +9128,8 @@
         "value": 90,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "warden-healing-thicket",
@@ -8385,7 +9155,8 @@
         "value": 90,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": []
     },
     {
       "id": "warden-fungal-growth",
@@ -8415,7 +9186,8 @@
       "target": "cone",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "warden-enchanted-growth",
@@ -8443,7 +9215,12 @@
       },
       "radiusMeters": 20,
       "target": "cone",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：知力 / Minor Intellect",
+        "バフ（弱）：耐久 / Minor Endurance"
+      ]
     },
     {
       "id": "warden-soothing-spores",
@@ -8471,7 +9248,8 @@
       },
       "radiusMeters": 20,
       "target": "cone",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": []
     },
     {
       "id": "warden-healing-seed",
@@ -8499,7 +9277,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-budding-seeds",
@@ -8525,7 +9304,8 @@
         "value": 2430,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-corrupting-pollen",
@@ -8553,7 +9333,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：汚染 / Major Defile",
+        "マイナーデバフ",
+        "デバフ（弱）：臆病 / Minor Cowardice"
+      ]
     },
     {
       "id": "warden-living-vines",
@@ -8579,7 +9365,8 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "warden-leeching-vines",
@@ -8605,7 +9392,11 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：体力吸収 / Minor Lifesteal"
+      ]
     },
     {
       "id": "warden-living-trellis",
@@ -8631,7 +9422,8 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "warden-lotus-flower",
@@ -8659,7 +9451,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "warden-green-lotus",
@@ -8687,7 +9485,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "warden-lotus-blossom",
@@ -8715,7 +9519,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery",
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "warden-natures-grasp",
@@ -8743,7 +9553,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "warden-bursting-vines",
@@ -8771,7 +9582,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "warden-natures-embrace",
@@ -8799,7 +9611,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "warden-accelerated-growth",
@@ -8821,7 +9634,11 @@
       "sourceDataDate": "2026-08-23",
       "verificationStatus": "source-checked-older-snapshot",
       "gameUpdate": null,
-      "sourceUnlockLevel": 18
+      "sourceUnlockLevel": 18,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：治癒力 / Major Mending"
+      ]
     },
     {
       "id": "warden-emerald-moss",
@@ -8846,7 +9663,8 @@
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 36
+      "sourceUnlockLevel": 36,
+      "browseTags": []
     },
     {
       "id": "warden-maturation",
@@ -8870,7 +9688,11 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/4160",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：頑強 / Minor Toughness"
+      ]
     },
     {
       "id": "warden-natures-gift",
@@ -8894,7 +9716,8 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": []
     },
     {
       "id": "warden-sleet-storm",
@@ -8922,7 +9745,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15731",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "warden-northern-storm",
@@ -8950,7 +9777,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15731",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "warden-permafrost",
@@ -8976,7 +9807,11 @@
         "value": 200,
         "resource": "Ultimate"
       },
-      "sourceUnlockLevel": 12
+      "sourceUnlockLevel": 12,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "warden-arctic-wind",
@@ -9006,7 +9841,8 @@
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "warden-arctic-blast",
@@ -9038,7 +9874,8 @@
       "verificationNote": "出典本文では継続20秒、メタデータでは18秒。矛盾を未解決のまま保持し、durationSecondsは掲載メタデータの18秒を転記。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "warden-polar-wind",
@@ -9067,7 +9904,8 @@
       "radiusMeters": 12,
       "durationSeconds": 10,
       "target": "area",
-      "sourceUnlockLevel": 20
+      "sourceUnlockLevel": 20,
+      "browseTags": []
     },
     {
       "id": "warden-crystallized-shield",
@@ -9095,7 +9933,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "warden-crystallized-slab",
@@ -9121,7 +9960,8 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": []
     },
     {
       "id": "warden-shimmering-shield",
@@ -9149,7 +9989,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 30
+      "sourceUnlockLevel": 30,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：勇壮 / Major Heroism"
+      ]
     },
     {
       "id": "warden-frost-cloak",
@@ -9177,7 +10021,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "warden-expansive-frost-cloak",
@@ -9203,7 +10051,11 @@
         "value": 2430,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve"
+      ]
     },
     {
       "id": "warden-ice-fortress",
@@ -9231,7 +10083,13 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/9525",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 1
+      "sourceUnlockLevel": 1,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "warden-frozen-gate",
@@ -9259,7 +10117,8 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": []
     },
     {
       "id": "warden-frozen-device",
@@ -9285,7 +10144,11 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "warden-frozen-retreat",
@@ -9313,7 +10176,11 @@
       },
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 42
+      "sourceUnlockLevel": 42,
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "warden-impaling-shards",
@@ -9339,7 +10206,8 @@
         "value": 3240,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-gripping-shards",
@@ -9365,7 +10233,8 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-winters-revenge",
@@ -9391,7 +10260,8 @@
         "value": 3240,
         "resource": "Magicka"
       },
-      "sourceUnlockLevel": 4
+      "sourceUnlockLevel": 4,
+      "browseTags": []
     },
     {
       "id": "warden-frozen-armor",
@@ -9416,7 +10286,8 @@
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 27
+      "sourceUnlockLevel": 27,
+      "browseTags": []
     },
     {
       "id": "warden-glacial-presence",
@@ -9441,7 +10312,8 @@
       "target": "self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 18
+      "sourceUnlockLevel": 18,
+      "browseTags": []
     },
     {
       "id": "warden-icy-aura",
@@ -9466,7 +10338,11 @@
       "sourceEntryKey": "passive-icy-aura",
       "sourceDateNote": "ツールチップJSON内にスナップショット日・ゲームビルドの明記なし。確認日は2026-10-27。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim"
+      ]
     },
     {
       "id": "warden-piercing-cold",
@@ -9490,7 +10366,8 @@
       "gameUpdate": null,
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "sourceUnlockLevel": 50
+      "sourceUnlockLevel": 50,
+      "browseTags": []
     },
     {
       "id": "necromancer-frozen-colossus",
@@ -9525,7 +10402,11 @@
         "value": 150,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：脆弱 / Major Vulnerability"
+      ]
     },
     {
       "id": "necromancer-glacial-colossus",
@@ -9560,7 +10441,11 @@
         "value": 150,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：脆弱 / Major Vulnerability"
+      ]
     },
     {
       "id": "necromancer-pestilent-colossus",
@@ -9595,7 +10480,11 @@
         "value": 150,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：脆弱 / Major Vulnerability"
+      ]
     },
     {
       "id": "necromancer-boneyard",
@@ -9630,7 +10519,11 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "necromancer-avid-boneyard",
@@ -9662,7 +10555,11 @@
       "cost": {
         "value": 2970,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "necromancer-unnerving-boneyard",
@@ -9697,7 +10594,13 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：侵害 / Major Breach",
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "necromancer-flame-skull",
@@ -9731,7 +10634,8 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-ricochet-skull",
@@ -9762,7 +10666,8 @@
       "cost": {
         "value": 2700,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-venom-skull",
@@ -9796,7 +10701,8 @@
         "value": 2295,
         "resource": "Stamina"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-sacrificial-bones",
@@ -9827,7 +10733,10 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-blighted-blastbones",
@@ -9859,7 +10768,12 @@
       "cost": {
         "value": 1836,
         "resource": "Stamina"
-      }
+      },
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：汚染 / Major Defile",
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-grave-lords-sacrifice",
@@ -9890,7 +10804,10 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-shocking-siphon",
@@ -9921,7 +10838,11 @@
       "durationSeconds": 20,
       "castTimeSeconds": 0,
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "necromancer-detonating-siphon",
@@ -9952,7 +10873,11 @@
       "durationSeconds": 20,
       "castTimeSeconds": 0,
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "necromancer-mystic-siphon",
@@ -9983,7 +10908,11 @@
       "durationSeconds": 20,
       "castTimeSeconds": 0,
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：獰猛 / Major Savagery"
+      ]
     },
     {
       "id": "necromancer-skeletal-mage",
@@ -10017,7 +10946,12 @@
         "value": 2970,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-skeletal-arcanist",
@@ -10048,7 +10982,12 @@
       "cost": {
         "value": 2970,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-skeletal-archer",
@@ -10081,7 +11020,12 @@
         "value": 2525,
         "resource": "Stamina"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality",
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-death-knell",
@@ -10109,7 +11053,8 @@
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
       "target": "self",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-dismember",
@@ -10136,7 +11081,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-rapid-rot",
@@ -10162,7 +11108,8 @@
       "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/5858",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-reusable-parts",
@@ -10189,7 +11136,10 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-bone-goliath-transformation",
@@ -10222,7 +11172,11 @@
         "value": 250,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "necromancer-pummeling-goliath",
@@ -10255,7 +11209,11 @@
         "value": 250,
         "resource": "Ultimate"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "necromancer-ravenous-goliath",
@@ -10285,7 +11243,11 @@
       "cost": {
         "value": 250,
         "resource": "Ultimate"
-      }
+      },
+      "browseTags": [
+        "軽攻撃",
+        "重攻撃"
+      ]
     },
     {
       "id": "necromancer-bitter-harvest",
@@ -10315,7 +11277,8 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "necromancer-deaden-pain",
@@ -10345,7 +11308,11 @@
       "castTimeSeconds": 0,
       "target": "area",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "necromancer-necrotic-potency",
@@ -10372,7 +11339,8 @@
       "radiusMeters": 12,
       "castTimeSeconds": 0,
       "target": "area",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "necromancer-bone-armor",
@@ -10403,7 +11371,13 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve"
+      ]
     },
     {
       "id": "necromancer-beckoning-armor",
@@ -10430,7 +11404,13 @@
       "cost": {
         "value": 2430,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve"
+      ]
     },
     {
       "id": "necromancer-summoners-armor",
@@ -10460,7 +11440,14 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve",
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-bone-totem",
@@ -10490,7 +11477,13 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection",
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "necromancer-agony-totem",
@@ -10524,7 +11517,13 @@
         "value": 4050,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection",
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "necromancer-remote-totem",
@@ -10551,7 +11550,13 @@
       "cost": {
         "value": 3240,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：防護 / Minor Protection",
+        "メジャーデバフ",
+        "デバフ（強）：臆病 / Major Cowardice"
+      ]
     },
     {
       "id": "necromancer-death-scythe",
@@ -10581,7 +11586,8 @@
       "cost": {
         "value": 3240,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-hungry-scythe",
@@ -10611,7 +11617,8 @@
       "cost": {
         "value": 2970,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-ruinous-scythe",
@@ -10641,7 +11648,8 @@
       "cost": {
         "value": 2754,
         "resource": "Stamina"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-grave-grasp",
@@ -10672,7 +11680,11 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "necromancer-empowering-grasp",
@@ -10704,7 +11716,12 @@
         "resource": "Magicka"
       },
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "verificationNote": "出典本文の Empower の増減方向の記載に不整合があるため、重攻撃倍率は転載せず効果名のみ記載。"
+      "verificationNote": "出典本文の Empower の増減方向の記載に不整合があるため、重攻撃倍率は転載せず効果名のみ記載。",
+      "browseTags": [
+        "メジャーデバフ",
+        "デバフ（強）：不自由 / Major Maim",
+        "重攻撃"
+      ]
     },
     {
       "id": "necromancer-ghostly-embrace",
@@ -10737,7 +11754,8 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-death-gleaning",
@@ -10760,7 +11778,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "summaryJa": "戦闘中の近くの敵が死亡すると、マジカとスタミナを回復する。",
-      "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。"
+      "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。",
+      "browseTags": []
     },
     {
       "id": "necromancer-disdain-harm",
@@ -10786,7 +11805,8 @@
       "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/5858",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-health-avarice",
@@ -10814,7 +11834,8 @@
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
       "target": "self",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-last-gasp",
@@ -10841,7 +11862,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-reanimate",
@@ -10868,7 +11890,8 @@
       "cost": {
         "value": 335,
         "resource": "Ultimate"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-animate-blastbones",
@@ -10895,7 +11918,10 @@
       "cost": {
         "value": 320,
         "resource": "Ultimate"
-      }
+      },
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-renewing-animation",
@@ -10922,7 +11948,8 @@
       "cost": {
         "value": 335,
         "resource": "Ultimate"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-expunge",
@@ -10949,7 +11976,8 @@
       "cost": {
         "value": 1940,
         "resource": "Health"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-expunge-and-modify",
@@ -10976,7 +12004,8 @@
       "cost": {
         "value": 1940,
         "resource": "Health"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-hexproof",
@@ -11003,7 +12032,8 @@
       "cost": {
         "value": 1670,
         "resource": "Health"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-life-amid-death",
@@ -11034,7 +12064,8 @@
       "cost": {
         "value": 3510,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-enduring-undeath",
@@ -11065,7 +12096,8 @@
       "cost": {
         "value": 3510,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-renewing-undeath",
@@ -11096,7 +12128,8 @@
       "cost": {
         "value": 3510,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": []
     },
     {
       "id": "necromancer-render-flesh",
@@ -11129,7 +12162,11 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：汚染 / Minor Defile"
+      ]
     },
     {
       "id": "necromancer-blood-sacrifice",
@@ -11159,7 +12196,11 @@
       "cost": {
         "value": 4320,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：汚染 / Minor Defile"
+      ]
     },
     {
       "id": "necromancer-resistant-flesh",
@@ -11189,7 +12230,11 @@
       "cost": {
         "value": 4320,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：汚染 / Minor Defile"
+      ]
     },
     {
       "id": "necromancer-restoring-tether",
@@ -11219,7 +12264,8 @@
       "durationSeconds": 12,
       "castTimeSeconds": 0,
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "necromancer-braided-tether",
@@ -11247,7 +12293,8 @@
       "radiusMeters": 5,
       "durationSeconds": 12,
       "castTimeSeconds": 0,
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "necromancer-mortal-coil",
@@ -11277,7 +12324,8 @@
       "durationSeconds": 12,
       "castTimeSeconds": 0,
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "necromancer-spirit-mender",
@@ -11311,7 +12359,10 @@
         "value": 4320,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-intensive-mender",
@@ -11345,7 +12396,10 @@
         "value": 2160,
         "resource": "Magicka"
       },
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-spirit-guardian",
@@ -11375,7 +12429,10 @@
       "cost": {
         "value": 4320,
         "resource": "Magicka"
-      }
+      },
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "necromancer-corpse-consumption",
@@ -11398,7 +12455,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "gameUpdate": null,
       "summaryJa": "死体を消費すると、再発動待ち時間つきでアルティマを生成する。",
-      "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。"
+      "valueBasisJa": "効果量は出典掲載の基礎参考値。キャラクターの能力値・装備・パッシブ等で変動します。",
+      "browseTags": []
     },
     {
       "id": "necromancer-curative-curse",
@@ -11425,7 +12483,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-near-death-experience",
@@ -11452,7 +12511,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "necromancer-undead-confederate",
@@ -11479,7 +12539,10 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaSourceDate": "2025-06-05",
       "nameJaVerificationNote": "日本語公式パッチノートの名称・所属・能力説明との対応を確認。現行日本語クライアントの表記は未照合。",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "ペット"
+      ]
     },
     {
       "id": "arcanist-the-unblinking-eye",
@@ -11511,7 +12574,8 @@
       "castTimeSeconds": 0,
       "target": "Ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15731?page=1",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-the-languid-eye",
@@ -11543,7 +12607,8 @@
       "castTimeSeconds": 0,
       "target": "Ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/15731?page=1",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-the-tide-kings-gaze",
@@ -11573,7 +12638,8 @@
       "durationSeconds": 8.0,
       "descriptionJa": "8秒間の範囲ビームが標的を自動追尾。標的死亡時は近くの次の敵を探す。",
       "castTimeSeconds": 0,
-      "target": "Enemy"
+      "target": "Enemy",
+      "browseTags": []
     },
     {
       "id": "arcanist-abyssal-impact",
@@ -11603,7 +12669,8 @@
       "castTimeSeconds": 0.3,
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-cephaliarchs-flail",
@@ -11633,7 +12700,8 @@
       "castTimeSeconds": 0.3,
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-tentacular-dread",
@@ -11663,7 +12731,8 @@
       "castTimeSeconds": 0.3,
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13472",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-fatecarver",
@@ -11691,7 +12760,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
       "nameJaVerificationStatus": "official-reference-current-unverified",
       "verificationNote": "出典本文の基本チャネル時間4秒とメタデータ4.5秒が不一致。channelTimeSecondsにはメタデータを保持し、実際のライブ値は未確認。",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "arcanist-exhausting-fatecarver",
@@ -11717,7 +12787,8 @@
       "channelTimeSeconds": 4.5,
       "target": "Area",
       "verificationNote": "出典本文の基本チャネル時間4秒とメタデータ4.5秒が不一致。channelTimeSecondsにはメタデータを保持し、実際のライブ値は未確認。",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "arcanist-pragmatic-fatecarver",
@@ -11745,7 +12816,8 @@
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
       "nameJaVerificationStatus": "official-reference-current-unverified",
       "verificationNote": "出典本文の基本チャネル時間4秒とメタデータ4.5秒が不一致。channelTimeSecondsにはメタデータを保持し、実際のライブ値は未確認。",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "arcanist-runeblades",
@@ -11775,7 +12847,8 @@
       "castTimeSeconds": 0,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/11705",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-escalating-runeblades",
@@ -11803,7 +12876,8 @@
       "rangeMeters": 22.0,
       "descriptionJa": "3発のルーンが段階的に強化され、最後は範囲爆発。クラッツを生成し、保持数による威力補正も得る。",
       "castTimeSeconds": 0,
-      "target": "Enemy"
+      "target": "Enemy",
+      "browseTags": []
     },
     {
       "id": "arcanist-writhing-runeblades",
@@ -11831,7 +12905,8 @@
       "rangeMeters": 22.0,
       "descriptionJa": "クラッツを生成する3連射。保持クラッツに応じた威力補正に加え、この攻撃のクリティカル率を高める。",
       "castTimeSeconds": 0,
-      "target": "Enemy"
+      "target": "Enemy",
+      "browseTags": []
     },
     {
       "id": "arcanist-the-imperfect-ring",
@@ -11863,7 +12938,8 @@
       "castTimeSeconds": 0,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-fulminating-rune",
@@ -11895,7 +12971,8 @@
       "castTimeSeconds": 0,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-rune-of-displacement",
@@ -11927,7 +13004,8 @@
       "castTimeSeconds": 0,
       "target": "Enemy",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-tome-bearers-inspiration",
@@ -11955,7 +13033,11 @@
       "durationSeconds": 30.0,
       "descriptionJa": "5秒ごとにクラス攻撃へ追加魔法ダメージを準備。クラッツ未所持なら生成し、装備中は武器・呪文ダメージ+20%。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "arcanist-inspired-scholarship",
@@ -11983,7 +13065,11 @@
       "durationSeconds": 30.0,
       "descriptionJa": "追加攻撃の準備間隔が3秒になる。クラッツ未所持時の生成と、装備中の武器・呪文ダメージ強化も備える。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "arcanist-recuperative-treatise",
@@ -12011,7 +13097,11 @@
       "durationSeconds": 30.0,
       "descriptionJa": "追加攻撃でマジカとスタミナを各600回復。クラッツ未所持時の生成と、装備中の攻撃力強化も備える。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：残忍 / Major Brutality"
+      ]
     },
     {
       "id": "arcanist-fated-fortune",
@@ -12032,7 +13122,8 @@
       "sourceDataDate": "2026-10-03",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "クラッツを生成または消費すると、7秒間クリティカルダメージとクリティカル回復量+12%。"
+      "descriptionJa": "クラッツを生成または消費すると、7秒間クリティカルダメージとクリティカル回復量+12%。",
+      "browseTags": []
     },
     {
       "id": "arcanist-harnessed-quintessence",
@@ -12055,7 +13146,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "マジカまたはスタミナを回復すると、10秒間武器・呪文ダメージが284増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-psychic-lesion",
@@ -12078,7 +13170,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "ステータス効果の与ダメージ+15%、ステータス効果の発生確率+55%。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-splintered-secrets",
@@ -12102,7 +13195,8 @@
       "descriptionJa": "装備した「書の使者」アビリティ1個につき、物理・呪文貫通力が1240増える。",
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-vitalizing-glyphic",
@@ -12134,7 +13228,8 @@
       "castTimeSeconds": 0,
       "target": "Ground",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-glyphic-of-the-tides",
@@ -12164,7 +13259,11 @@
       "durationSeconds": 15.0,
       "descriptionJa": "体力53%の碑文を召喚して味方を支援。碑文の体力が満タンになると被ダメージを10%軽減する。",
       "castTimeSeconds": 0,
-      "target": "Ground"
+      "target": "Ground",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：防護 / Major Protection"
+      ]
     },
     {
       "id": "arcanist-resonating-glyphic",
@@ -12194,7 +13293,8 @@
       "durationSeconds": 15.0,
       "descriptionJa": "戦闘中、体力70%の碑文を召喚。自身や味方が攻撃して強化する。碑文の体力に連動し、周囲へ最大200の武器・呪文ダメージ増加と毎秒最大958の回復を与える。",
       "castTimeSeconds": 0,
-      "target": "Ground"
+      "target": "Ground",
+      "browseTags": []
     },
     {
       "id": "arcanist-apocryphal-gate",
@@ -12221,7 +13321,8 @@
       },
       "descriptionJa": "自身の前と指定位置を結ぶポータルを生成。通過して転移するたびにクラッツを得る。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-fleet-footed-gate",
@@ -12248,7 +13349,11 @@
       },
       "descriptionJa": "転移用ポータルを生成し、通過時にクラッツを獲得。転移後5秒間、移動速度+30%。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/11688",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：迅速 / Major Expedition"
+      ]
     },
     {
       "id": "arcanist-passage-between-worlds",
@@ -12275,7 +13380,8 @@
       },
       "descriptionJa": "転移でクラッツを生成。味方もポータル内のシナジーを使って反対側へ移動できる。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-arcanists-domain",
@@ -12302,7 +13408,14 @@
       },
       "descriptionJa": "領域内の味方の武器・呪文ダメージ+215、体力・マジカ・スタミナ再生+15%。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：勇気 / Minor Courage",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：知力 / Minor Intellect",
+        "バフ（弱）：耐久 / Minor Endurance"
+      ]
     },
     {
       "id": "arcanist-reconstructive-domain",
@@ -12333,7 +13446,14 @@
       "castTimeSeconds": 0,
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：勇気 / Minor Courage",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：知力 / Minor Intellect",
+        "バフ（弱）：耐久 / Minor Endurance"
+      ]
     },
     {
       "id": "arcanist-zenas-empowering-disc",
@@ -12360,7 +13480,14 @@
       },
       "descriptionJa": "攻撃力と3種の再生を強化。領域を離れた後も、強化効果が最大10秒残る。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12875",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：勇気 / Minor Courage",
+        "バフ（弱）：不屈 / Minor Fortitude",
+        "バフ（弱）：知力 / Minor Intellect",
+        "バフ（弱）：耐久 / Minor Endurance"
+      ]
     },
     {
       "id": "arcanist-chakram-shields",
@@ -12391,7 +13518,8 @@
       "castTimeSeconds": 0,
       "target": "Cone",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-chakram-of-destiny",
@@ -12420,7 +13548,8 @@
       "durationSeconds": 6.0,
       "descriptionJa": "味方へのシールド付与と同時にクラッツを生成。既に防護中の対象へ再使用すると新しいシールドが30%強化。",
       "castTimeSeconds": 0,
-      "target": "Cone"
+      "target": "Cone",
+      "browseTags": []
     },
     {
       "id": "arcanist-tidal-chakram",
@@ -12449,7 +13578,8 @@
       "durationSeconds": 6.0,
       "descriptionJa": "自身または前方の味方最大4人へ、6秒間3169を吸収するシールド。全クラッツを消費し、1個につき残存シールド量の33%相当の回復を毎秒追加する。照準対象か、低体力でシールドのない対象を優先する。",
       "castTimeSeconds": 0,
-      "target": "Cone"
+      "target": "Cone",
+      "browseTags": []
     },
     {
       "id": "arcanist-remedy-cascade",
@@ -12476,7 +13606,8 @@
       "target": "Area",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/11688",
       "nameJaVerificationStatus": "official-reference-current-unverified",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "arcanist-cascading-fortune",
@@ -12501,7 +13632,8 @@
       "descriptionJa": "回復ビームの対象が低体力なほど回復量が増え、最大+50%。クラッツ消費による資源回復も行う。",
       "channelTimeSeconds": 4.5,
       "target": "Area",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "arcanist-curative-surge",
@@ -12526,7 +13658,8 @@
       "descriptionJa": "チャネリング継続に伴い回復ビームを強化し、終盤は最大+192%。クラッツ消費で味方の資源も回復する。",
       "channelTimeSeconds": 4.5,
       "target": "Area",
-      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。"
+      "costNote": "出典の0表記だけでは継続消費や追加使用の消費を確定できないため、消費欄は未確認扱いです。本文で確認できた追加消費は説明に記載しています。",
+      "browseTags": []
     },
     {
       "id": "arcanist-runemend",
@@ -12556,7 +13689,8 @@
       "castTimeSeconds": 0,
       "target": "Cone",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/11688",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-audacious-runemend",
@@ -12584,7 +13718,11 @@
       "radiusMeters": 28.0,
       "descriptionJa": "3回の回復とクラッツ生成。体力50%未満の味方を回復すると、6秒間アルティマを継続獲得させる。",
       "castTimeSeconds": 0,
-      "target": "Cone"
+      "target": "Cone",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：勇壮 / Minor Heroism"
+      ]
     },
     {
       "id": "arcanist-evolving-runemend",
@@ -12612,7 +13750,8 @@
       "radiusMeters": 28.0,
       "descriptionJa": "3回の回復に6秒の継続回復を追加し、クラッツを生成。保持クラッツに応じて消費軽減。",
       "castTimeSeconds": 0,
-      "target": "Cone"
+      "target": "Cone",
+      "browseTags": []
     },
     {
       "id": "arcanist-erudition",
@@ -12633,7 +13772,8 @@
       "sourceDataDate": "2026-10-03",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "マジカ再生とスタミナ再生が18%増える。"
+      "descriptionJa": "マジカ再生とスタミナ再生が18%増える。",
+      "browseTags": []
     },
     {
       "id": "arcanist-healing-tides",
@@ -12656,7 +13796,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "保持しているクラッツ1個につき、与える回復量が4%増える。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-hideous-clarity",
@@ -12679,7 +13820,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "クラッツを生成するたび、マジカとスタミナを各225回復する。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-intricate-runeforms",
@@ -12700,7 +13842,8 @@
       "sourceDataDate": "2026-10-03",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "ダメージシールドの消費を10%軽減し、その強度を10%高める。"
+      "descriptionJa": "ダメージシールドの消費を10%軽減し、その強度を10%高める。",
+      "browseTags": []
     },
     {
       "id": "arcanist-gibbering-shield",
@@ -12730,7 +13873,8 @@
       "castTimeSeconds": 0,
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-gibbering-shelter",
@@ -12760,7 +13904,8 @@
       "castTimeSeconds": 0,
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-sanctum-of-the-abyssal-sea",
@@ -12788,7 +13933,8 @@
       "durationSeconds": 10.0,
       "descriptionJa": "10秒間、被ダメージの60%を最大37697まで吸収するシールド。上限は最大体力で変動。終了時、吸収した合計量を周囲5mの敵へ10秒間の魔法ダメージとして返す。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": []
     },
     {
       "id": "arcanist-fatewoven-armor",
@@ -12813,7 +13959,13 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "descriptionJa": "20秒間、防御力+5948。被弾すると攻撃者の防御力を6秒間2974低下させる。"
+      "descriptionJa": "20秒間、防御力+5948。被弾すると攻撃者の防御力を6秒間2974低下させる。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach"
+      ]
     },
     {
       "id": "arcanist-cruxweaver-armor",
@@ -12838,7 +13990,13 @@
         "value": 2700,
         "resource": "Magicka"
       },
-      "descriptionJa": "防御力強化が30秒続く。被弾で敵の防御力を下げ、5秒に1回までクラッツも生成する。"
+      "descriptionJa": "防御力強化が30秒続く。被弾で敵の防御力を下げ、5秒に1回までクラッツも生成する。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach"
+      ]
     },
     {
       "id": "arcanist-unbreakable-fate",
@@ -12863,7 +14021,13 @@
         "value": 2430,
         "resource": "Magicka"
       },
-      "descriptionJa": "防御力強化と被弾時の敵弱体化に加え、防御軽減率+5%。クラッツ1個消費ごとにさらに+5%。"
+      "descriptionJa": "防御力強化と被弾時の敵弱体化に加え、防御軽減率+5%。クラッツ1個消費ごとにさらに+5%。",
+      "browseTags": [
+        "メジャーバフ",
+        "バフ（強）：強固 / Major Resolve",
+        "マイナーデバフ",
+        "デバフ（弱）：侵害 / Minor Breach"
+      ]
     },
     {
       "id": "arcanist-rune-of-eldritch-horror",
@@ -12890,7 +14054,11 @@
       },
       "descriptionJa": "1秒後に敵を4秒気絶（モンスターは8秒）。10秒間被ダメージ+5%を付与し、回避では防げない。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/12328",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "arcanist-rune-of-the-colorless-pool",
@@ -12915,7 +14083,12 @@
         "value": 3780,
         "resource": "Magicka"
       },
-      "descriptionJa": "遅延気絶に加え、20秒間被ダメージ+5%・被クリティカルダメージ+10%。回避不能。"
+      "descriptionJa": "遅延気絶に加え、20秒間被ダメージ+5%・被クリティカルダメージ+10%。回避不能。",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability",
+        "デバフ（弱）：硬直 / Minor Brittle"
+      ]
     },
     {
       "id": "arcanist-rune-of-uncanny-adoration",
@@ -12942,7 +14115,11 @@
       },
       "descriptionJa": "1秒後に敵を4秒間魅了して自身へ近づかせ、被ダメージ+5%を10秒間付与。モンスターへの魅了は8秒。回避できない。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/13197",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：脆弱 / Minor Vulnerability"
+      ]
     },
     {
       "id": "arcanist-runespite-ward",
@@ -12970,7 +14147,8 @@
       "durationSeconds": 6.0,
       "descriptionJa": "最大体力依存の6秒シールド。最初の直接被弾で反撃し、クラッツ消費数に応じて自己回復する。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": []
     },
     {
       "id": "arcanist-impervious-runeward",
@@ -12998,7 +14176,8 @@
       "durationSeconds": 6.0,
       "descriptionJa": "最初の1秒を強固にしたシールド。残れば弱い防護が5秒続き、反撃とクラッツ消費による回復も備える。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": []
     },
     {
       "id": "arcanist-spiteward-of-the-lucid-mind",
@@ -13026,7 +14205,8 @@
       "durationSeconds": 6.0,
       "descriptionJa": "シールド・反撃・自己回復に加え、消費したクラッツ1個につきアビリティ消費の30%を払い戻す。",
       "castTimeSeconds": 0,
-      "target": "Self"
+      "target": "Self",
+      "browseTags": []
     },
     {
       "id": "arcanist-runic-defense",
@@ -13055,7 +14235,12 @@
       "durationSeconds": 20.0,
       "descriptionJa": "グループの防御力+2974、自身の被ダメージ-5%。体力50%未満で被弾すると軽減を消費して自己回復。",
       "castTimeSeconds": 0,
-      "target": "Area"
+      "target": "Area",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "arcanist-runeguard-of-freedom",
@@ -13083,7 +14268,12 @@
       "radiusMeters": 10.0,
       "descriptionJa": "低体力時の緊急回復に加え、防御力+3300と7秒の行動妨害耐性を得る。耐性発動は30秒に1回。",
       "castTimeSeconds": 0,
-      "target": "Area"
+      "target": "Area",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "arcanist-runeguard-of-still-waters",
@@ -13112,7 +14302,12 @@
       "durationSeconds": 20.0,
       "descriptionJa": "味方の防御力強化と自身の緊急回復に加え、1秒後に近くの敵を3秒間移動不能にする。",
       "castTimeSeconds": 0,
-      "target": "Area"
+      "target": "Area",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：強固 / Minor Resolve",
+        "バフ（弱）：防護 / Minor Protection"
+      ]
     },
     {
       "id": "arcanist-runic-jolt",
@@ -13141,7 +14336,11 @@
       "durationSeconds": 15.0,
       "descriptionJa": "攻撃・15秒の挑発・敵の与ダメージ-5%を与え、クラッツ生成。装備中は保持クラッツごとに被ダメージ-2%。",
       "castTimeSeconds": 0,
-      "target": "Enemy"
+      "target": "Enemy",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "arcanist-runic-embrace",
@@ -13170,7 +14369,12 @@
       "durationSeconds": 15.0,
       "descriptionJa": "挑発・クラッツ生成に自己回復を追加。15秒間、その敵を攻撃する味方にも毎秒600の回復を与える。",
       "castTimeSeconds": 0,
-      "target": "Enemy"
+      "target": "Enemy",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim",
+        "デバフ（弱）：体力吸収 / Minor Lifesteal"
+      ]
     },
     {
       "id": "arcanist-runic-sunder",
@@ -13199,7 +14403,11 @@
       "durationSeconds": 15.0,
       "descriptionJa": "スタミナ消費の物理攻撃で挑発し、防御力2200を奪う。クラッツを生成し、敵の与ダメージも低下。",
       "castTimeSeconds": 0,
-      "target": "Enemy"
+      "target": "Enemy",
+      "browseTags": [
+        "マイナーデバフ",
+        "デバフ（弱）：不自由 / Minor Maim"
+      ]
     },
     {
       "id": "arcanist-aegis-of-the-unseen",
@@ -13222,7 +14430,8 @@
       "verificationStatus": "source-checked-update-unverified",
       "descriptionJa": "「アポクリファの兵士」の有益なアビリティが自身に有効な間、防御力+3271。",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     },
     {
       "id": "arcanist-circumvented-fate",
@@ -13243,7 +14452,11 @@
       "sourceDataDate": "2026-10-03",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "クラスアビリティ使用でグループに20秒間の範囲被ダメージ10%軽減。発動間隔は5秒。"
+      "descriptionJa": "クラスアビリティ使用でグループに20秒間の範囲被ダメージ10%軽減。発動間隔は5秒。",
+      "browseTags": [
+        "マイナーバフ",
+        "バフ（弱）：回避 / Minor Evasion"
+      ]
     },
     {
       "id": "arcanist-implacable-outcome",
@@ -13264,7 +14477,8 @@
       "sourceDataDate": "2026-10-03",
       "gameUpdate": null,
       "verificationStatus": "source-checked-update-unverified",
-      "descriptionJa": "クラッツを消費するとアルティマを4得る。発動間隔は8秒。"
+      "descriptionJa": "クラッツを消費するとアルティマを4得る。発動間隔は8秒。",
+      "browseTags": []
     },
     {
       "id": "arcanist-wellspring-of-the-abyss",
@@ -13288,7 +14502,8 @@
       "descriptionJa": "装備した「アポクリファの兵士」アビリティ1個につき、体力・マジカ・スタミナ再生+81。",
       "target": "Self",
       "nameJaSourceUrl": "https://eso.dmm.com/news/detail/14539",
-      "nameJaVerificationStatus": "official-reference-current-unverified"
+      "nameJaVerificationStatus": "official-reference-current-unverified",
+      "browseTags": []
     }
   ]
 }
