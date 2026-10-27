@@ -302,14 +302,6 @@
       "note": "2022年の利用者実測。上限4875と注入によるクールダウン短縮のみを補助照合。投稿中の割合7.5%は公式U23の3.75%と不一致のため採用しない。"
     },
     {
-      "id": "numeric-arrow-knee-armor",
-      "name": "The Arrow Knee: 製作系列：附魔",
-      "url": "https://www.eso-tw.com/enchanting/",
-      "type": "community-historical",
-      "checkedAt": "2026-10-27",
-      "note": "2021-05-11更新のプレイヤー資料。防具の大/小部位表示954/386・868/351・三色477/193と434/175を照合。最新の全品質実測ではない。旧Shieldingや旧Prismatic Onslaught説明は不採用。"
-    },
-    {
       "id": "numeric-tesonline-health",
       "name": "TESOnline: Glyph of Health（品質別の旧資料）",
       "url": "https://tesonline.org/Глиф_здоровья_(Glyph_of_Health)",
@@ -4809,8 +4801,7 @@
         "official-glyph-basics",
         "hyperioxes-u51-tank",
         "official-glyph-slots",
-        "numeric-tesonline-health",
-        "numeric-arrow-knee-armor"
+        "numeric-tesonline-health"
       ],
       "checkedAt": "2026-10-27",
       "sourceDataDate": "2026-10-14（Hyperioxes U51）",
@@ -4908,24 +4899,21 @@
               },
               {
                 "label": "肩・手・腰・足",
-                "value": "最大体力 +386（旧資料表示）"
+                "value": "数値未確認（公式説明の40%側、正確な表示値未照合）"
               }
             ],
             "sourceIds": [
-              "hyperioxes-u51-tank",
-              "numeric-arrow-knee-armor"
+              "hyperioxes-u51-tank"
             ]
           }
         ],
         "notes": [
-          "大部位と盾はグリフ基準値。小部位の白〜紫は正確な表示値を未確認。金の小部位は2021年資料の値。",
-          "小部位は公式説明で40%側だが、表示値には単純な整数×0.4と差があるため未確認の丸め値を推算しない。",
+          "小部位の白〜金は正確な表示値を未照合。公式説明では40%側だが、旧資料の括弧値はレベル・品質・補正条件を確認できないため採用しない。",
           "白〜紫の数値は品質を明記した旧資料の参考値。現行クライアント全品質の実測確認は未完了。"
         ],
         "sourceIds": [
           "numeric-tesonline-health",
-          "hyperioxes-u51-tank",
-          "numeric-arrow-knee-armor"
+          "hyperioxes-u51-tank"
         ]
       }
     },
@@ -4957,8 +4945,7 @@
         "official-glyph-basics",
         "hyperioxes-u51-tank",
         "official-glyph-slots",
-        "numeric-tesonline-magicka",
-        "numeric-arrow-knee-armor"
+        "numeric-tesonline-magicka"
       ],
       "checkedAt": "2026-10-27",
       "sourceDataDate": "2026-10-14（Hyperioxes U51）",
@@ -5056,24 +5043,21 @@
               },
               {
                 "label": "肩・手・腰・足",
-                "value": "最大マジカ +351（旧資料表示）"
+                "value": "数値未確認（公式説明の40%側、正確な表示値未照合）"
               }
             ],
             "sourceIds": [
-              "hyperioxes-u51-tank",
-              "numeric-arrow-knee-armor"
+              "hyperioxes-u51-tank"
             ]
           }
         ],
         "notes": [
-          "大部位と盾はグリフ基準値。小部位の白〜紫は正確な表示値を未確認。金の小部位は2021年資料の値。",
-          "小部位は公式説明で40%側だが、表示値には単純な整数×0.4と差があるため未確認の丸め値を推算しない。",
+          "小部位の白〜金は正確な表示値を未照合。公式説明では40%側だが、旧資料の括弧値はレベル・品質・補正条件を確認できないため採用しない。",
           "白〜紫の数値は品質を明記した旧資料の参考値。現行クライアント全品質の実測確認は未完了。"
         ],
         "sourceIds": [
           "numeric-tesonline-magicka",
-          "hyperioxes-u51-tank",
-          "numeric-arrow-knee-armor"
+          "hyperioxes-u51-tank"
         ]
       }
     },
@@ -5105,8 +5089,7 @@
         "official-glyph-basics",
         "hyperioxes-u51-tank",
         "official-glyph-slots",
-        "numeric-tesonline-stamina",
-        "numeric-arrow-knee-armor"
+        "numeric-tesonline-stamina"
       ],
       "checkedAt": "2026-10-27",
       "sourceDataDate": "2026-10-14（Hyperioxes U51）",
@@ -5204,24 +5187,21 @@
               },
               {
                 "label": "肩・手・腰・足",
-                "value": "最大スタミナ +351（旧資料表示）"
+                "value": "数値未確認（公式説明の40%側、正確な表示値未照合）"
               }
             ],
             "sourceIds": [
-              "hyperioxes-u51-tank",
-              "numeric-arrow-knee-armor"
+              "hyperioxes-u51-tank"
             ]
           }
         ],
         "notes": [
-          "大部位と盾はグリフ基準値。小部位の白〜紫は正確な表示値を未確認。金の小部位は2021年資料の値。",
-          "小部位は公式説明で40%側だが、表示値には単純な整数×0.4と差があるため未確認の丸め値を推算しない。",
+          "小部位の白〜金は正確な表示値を未照合。公式説明では40%側だが、旧資料の括弧値はレベル・品質・補正条件を確認できないため採用しない。",
           "白〜紫の数値は品質を明記した旧資料の参考値。現行クライアント全品質の実測確認は未完了。"
         ],
         "sourceIds": [
           "numeric-tesonline-stamina",
-          "hyperioxes-u51-tank",
-          "numeric-arrow-knee-armor"
+          "hyperioxes-u51-tank"
         ]
       }
     },
@@ -5253,8 +5233,7 @@
         "official-glyph-basics",
         "hyperioxes-u51-tank",
         "official-glyph-slots",
-        "numeric-tesonline-prismatic-defense",
-        "numeric-arrow-knee-armor"
+        "numeric-tesonline-prismatic-defense"
       ],
       "checkedAt": "2026-10-27",
       "sourceDataDate": "2026-10-14（Hyperioxes U51）",
@@ -5352,24 +5331,22 @@
               },
               {
                 "label": "肩・手・腰・足",
-                "value": "最大体力 +193 / 最大マジカ・スタミナ 各+175（旧資料表示）"
+                "value": "数値未確認（公式説明の40%側、正確な表示値未照合）"
               }
             ],
             "sourceIds": [
-              "hyperioxes-u51-tank",
-              "numeric-arrow-knee-armor"
+              "hyperioxes-u51-tank"
             ]
           }
         ],
         "notes": [
-          "最大リソースの加算。再生値ではない。小部位の白〜紫の正確な表示は未確認。金の小部位は2021年資料による。",
+          "小部位の白〜金は正確な表示値を未照合。公式説明では40%側だが、旧資料の括弧値はレベル・品質・補正条件を確認できないため採用しない。",
           "小部位を単純に0.4倍して整数化した値を実機値として掲載しない。",
           "白〜紫の数値は品質を明記した旧資料の参考値。現行クライアント全品質の実測確認は未完了。"
         ],
         "sourceIds": [
           "numeric-tesonline-prismatic-defense",
-          "hyperioxes-u51-tank",
-          "numeric-arrow-knee-armor"
+          "hyperioxes-u51-tank"
         ]
       }
     },
