@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>クラススキル | ESOデータベース</title>
+  <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
+  <link rel="stylesheet" href="./eso-skills.css?v=20261027-skills1">
+  <script src="./eso-skills.js?v=20261027-skills1" defer></script>
+</head>
+<body class="eso-skills-page">
+  <a class="skip" href="#main">本文へ</a>
+  <header><a class="brand" href="./">AIニュース <span class="preview-badge">仮公開</span></a></header>
+  <nav class="primary-nav" aria-label="メインナビゲーション"><a href="./">ニュース</a><a href="./eso.html" aria-current="page">ESOデータベース</a></nav>
+  <main id="main" tabindex="-1">
+    <nav class="database-nav" aria-label="ESOデータベース"><a href="./eso.html">装備セット</a><a href="./eso-skills.html" aria-current="page">スキル</a></nav>
+    <section id="skills-home" aria-labelledby="skills-title">
+      <div class="eso-skills-heading"><p class="eso-skills-eyebrow">ESO / CLASS SKILLS</p><h1 id="skills-title">クラススキル</h1><p class="lead">クラスを選び、3つのスキルツリーで絞り込む。基本スキルと変異は同じグループに表示。</p></div>
+      <div id="skills-coverage" class="database-note">収録範囲と参照資料の情報を読み込み中…</div>
+      <section class="eso-skills-filter-section" aria-labelledby="skills-class-title"><h2 id="skills-class-title"><span>01</span> クラス</h2><nav id="skills-classes" class="eso-skills-chips" aria-label="クラスを選択"></nav></section>
+      <section class="eso-skills-filter-section" aria-labelledby="skills-tree-title"><h2 id="skills-tree-title"><span>02</span> スキルツリー</h2><p id="skills-tree-hint" class="eso-skills-muted">クラスを選ぶと、そのクラスのツリーを選べます。</p><nav id="skills-trees" class="eso-skills-chips" aria-label="スキルツリーを選択"></nav><div id="skills-mastery" hidden><p class="eso-skills-muted">Class Mastery（通常の3ツリーとは別枠）</p><nav id="skills-mastery-trees" class="eso-skills-chips" aria-label="Class Masteryを選択"></nav></div></section>
+      <div class="eso-skills-filters">
+        <label class="eso-skills-search">スキル検索<input id="skills-search" type="search" placeholder="スキル名・英名・説明で探す" autocomplete="off" disabled></label>
+        <label>種類<select id="skills-type" disabled><option value="">すべての種類</option><option value="active">アクティブ</option><option value="ultimate">アルティメット</option><option value="passive">パッシブ</option></select></label>
+        <label>基本 / 変異<select id="skills-form" disabled><option value="">基本・変異すべて</option><option value="base">基本・パッシブ</option><option value="morph">変異のみ</option></select></label>
+        <button id="skills-reset" type="button" disabled>条件をクリア</button>
+      </div>
+      <p id="skills-count" class="eso-skills-muted" role="status" aria-live="polite"></p>
+      <p id="skills-notice" role="status">データを読み込み中…</p><button id="skills-retry" type="button" hidden>再試行</button>
+      <div id="skills-list" class="eso-skills-groups"></div>
+      <details id="skills-provenance" class="eso-skills-provenance"><summary>出典・データの確認範囲</summary><div id="skills-sources"></div></details>
+    </section>
+    <article id="skill-detail" class="eso-skills-detail" tabindex="-1" hidden></article>
+    <noscript><p class="empty">スキルの一覧・検索・詳細表示にはJavaScriptが必要です。</p></noscript>
+  </main>
+  <footer><p>非公式・非営利ファンサイト。ESOのゲーム画像・アイコンは ZeniMax Media Inc. / Bethesda Softworks / ZeniMax Online Studios に帰属します。権利元による提携・公認を示すものではありません。画像参照元：<a href="https://hyperioxes.com" target="_blank" rel="noopener noreferrer">Hyperioxes</a>。利用条件を確認できた実物アイコンのみ掲載し、未取得の画像は「未掲載」と表示します。</p><small>ESOデータベース · 閲覧専用</small></footer>
+</body>
+</html>
