@@ -246,7 +246,7 @@
     $('reference-retry').hidden = true;
     $('reference-notice').textContent = 'データを読み込み中…';
     try {
-      const response = await fetch('./data/eso-equipment-reference.json?v=20261027-quality1',{credentials:'omit'});
+      const response = await fetch('./data/eso-equipment-reference.json?v=20261027-quality2',{credentials:'omit'});
       if (!response.ok) throw new Error('Data unavailable');
       const value = await response.json(), maps = validate(value);
       data = value; equipment = maps.equipment; sources = maps.sources; entries = maps.entries;
