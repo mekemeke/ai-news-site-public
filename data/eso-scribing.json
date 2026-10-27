@@ -1,0 +1,5090 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-27",
+  "coverage": "初期プレビュー：12グリモアの概要と資料上の候補。現在の全組み合わせ・効果数値は未確認。",
+  "notes": [
+    "グリモア → 主効果（Focus）→ 追加効果（Signature）→ バフ／デバフ等（Affix）の順で見る一覧。",
+    "未確認は使用不可という意味ではない。資料にない選択肢を非対応と断定せず、完成効果や組み合わせ成立を捏造しない。",
+    "英語名は識別用。日本語の短い説明は独自の概要で、公式日本語訳ではない。",
+    "Major／Minorはグリモアで変わり得るため、未検証の候補に一律の強弱タグを付けていない。",
+    "選択中の3種は検討メモであり、ゲーム内の完成スキル・ダメージ計算ではない。",
+    "効果の種類は基本概念の案内。特定グリモア・選択内容でその説明がそのまま成立するという保証ではない。"
+  ],
+  "sources": [
+    {
+      "id": "bethesda",
+      "label": "Bethesda公式：書記の仕組み",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/65808/~/what-is-scribing%3F",
+      "notes": "制度・3段階の説明。初期11種の説明が残るため最新件数の根拠には使わない。"
+    },
+    {
+      "id": "u50",
+      "label": "公式 Update 50 Live パッチ",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/693682",
+      "notes": "Class Flourishへの改名とClass Masteryとの区別を確認。"
+    },
+    {
+      "id": "kozy-overview",
+      "label": "Kozy：グリモアとスクリプト一覧（2026-10-23更新表記）",
+      "url": "https://kozy-eso.com/guides/scribing-grimoires-and-scripts/",
+      "notes": "名称と個別候補の対応を参照。転載ツールチップは採用せず、現在のゲーム内動作は未検証。"
+    },
+    {
+      "id": "alcast-grimoires",
+      "label": "Alcast：グリモア一覧（2025-01-06）",
+      "url": "https://alcasthq.com/eso-grimoires-list-guide/",
+      "notes": "基本動作・系統・解放導線の参照。古い資料のため現在の価格や数値には使わない。"
+    },
+    {
+      "id": "alcast-scripts",
+      "label": "Alcast：スクリプトの仕組みと入手（2025-01-06）",
+      "url": "https://alcasthq.com/eso-focus-signature-affix-scrips-list/",
+      "notes": "3種の役割と入手区分を参照。旧名称・旧数値を現行扱いしない。"
+    },
+    {
+      "id": "u51-notice",
+      "label": "公式 Update 51 Live パッチへの案内",
+      "url": "https://forums.elderscrollsonline.com/en-gb/discussion/699461/update-51-live-patch-notes-all-platforms",
+      "notes": "本文リンク先は年齢確認画面で止まり、U51の全変更との照合は未完了。"
+    },
+    {
+      "id": "alcast-examples",
+      "label": "Alcast：書記の構成例（旧版を含む）",
+      "url": "https://alcasthq.com/eso-scribing-guide/",
+      "notes": "構成例だけ参照。現在の成立・効果・数値は保証しない。"
+    }
+  ],
+  "grimoires": [
+    {
+      "id": "vault",
+      "name": "Vault",
+      "line": "弓",
+      "weapon": "弓",
+      "summary": "後方へ跳んで間合いを変える。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "disease-damage",
+          "name": "Disease Damage",
+          "effect": "病気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "病気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "病気（主効果の種類）"
+        },
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "炎に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "回復系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復（主効果の種類）"
+        },
+        {
+          "id": "immobilize",
+          "name": "Immobilize",
+          "effect": "移動制御に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "移動制御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動制御（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "poison-damage",
+          "name": "Poison Damage",
+          "effect": "毒に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "毒"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "毒（主効果の種類）"
+        },
+        {
+          "id": "taunt",
+          "name": "Taunt",
+          "effect": "挑発系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "挑発"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "挑発（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "crusader-s-defiance",
+          "name": "Crusader’s Defiance",
+          "effect": "効果の種類：行動制限の解除。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "行動制限の解除"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動制限の解除（概要）"
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        },
+        {
+          "id": "thief-s-swiftness",
+          "name": "Thief’s Swiftness",
+          "effect": "効果の種類：移動関連の補助。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動関連の補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動関連の補助（概要）"
+        },
+        {
+          "id": "wayfarer-s-mastery",
+          "name": "Wayfarer’s Mastery",
+          "effect": "効果の種類：スキルラインのパッシブ連携。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "スキルラインのパッシブ連携"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "スキルラインのパッシブ連携（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "berserk",
+          "name": "Berserk",
+          "effect": "効果の種類：与ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ強化（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "evasion",
+          "name": "Evasion",
+          "effect": "効果の種類：範囲攻撃への耐性。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "範囲攻撃への耐性"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "範囲攻撃への耐性（概要）"
+        },
+        {
+          "id": "expedition",
+          "name": "Expedition",
+          "effect": "効果の種類：移動速度上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "移動速度上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度上昇（概要）"
+        },
+        {
+          "id": "force",
+          "name": "Force",
+          "effect": "効果の種類：クリティカルダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ強化（概要）"
+        },
+        {
+          "id": "intellect-and-endurance",
+          "name": "Intellect and Endurance",
+          "effect": "効果の種類：マジカ・スタミナ再生。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "マジカ・スタミナ再生"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "マジカ・スタミナ再生（概要）"
+        },
+        {
+          "id": "lifesteal",
+          "name": "Lifesteal",
+          "effect": "効果の種類：攻撃者の体力回復。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "攻撃者の体力回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃者の体力回復（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "off-balance",
+          "name": "Off Balance",
+          "effect": "効果の種類：オフバランス。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "オフバランス"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "オフバランス（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "vulnerability",
+          "name": "Vulnerability",
+          "effect": "効果の種類：被ダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被ダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ増加（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "wield-soul",
+      "name": "Wield Soul",
+      "line": "ソウルマジック",
+      "weapon": "武器指定なし",
+      "summary": "単体へ魂の力を放つ。",
+      "acquisition": "書記の導入クエストを進めて入手。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "damage-shield",
+          "name": "Damage Shield",
+          "effect": "ダメージシールド系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "シールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "シールド（主効果の種類）"
+        },
+        {
+          "id": "disease-damage",
+          "name": "Disease Damage",
+          "effect": "病気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "病気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "病気（主効果の種類）"
+        },
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "炎に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "回復系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "pull",
+          "name": "Pull",
+          "effect": "引き寄せ系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "引き寄せ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "引き寄せ（主効果の種類）"
+        },
+        {
+          "id": "shock-damage",
+          "name": "Shock Damage",
+          "effect": "雷に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "雷"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "雷（主効果の種類）"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "effect": "気絶系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "anchorite-s-cruelty",
+          "name": "Anchorite’s Cruelty",
+          "effect": "効果の種類：魂石を使うオブリビオンダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "魂石を使うオブリビオンダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魂石を使うオブリビオンダメージ（概要）"
+        },
+        {
+          "id": "anchorite-s-potency",
+          "name": "Anchorite’s Potency",
+          "effect": "効果の種類：魂石を使うアルティマ獲得。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "魂石を使うアルティマ獲得"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魂石を使うアルティマ獲得（概要）"
+        },
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "breach",
+          "name": "Breach",
+          "effect": "効果の種類：物理・呪文耐性低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性低下（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "cowardice",
+          "name": "Cowardice",
+          "effect": "効果の種類：武器・呪文ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ低下（概要）"
+        },
+        {
+          "id": "defile",
+          "name": "Defile",
+          "effect": "効果の種類：被回復低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復低下（概要）"
+        },
+        {
+          "id": "empower",
+          "name": "Empower",
+          "effect": "効果の種類：重攻撃強化。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "重攻撃強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "重攻撃強化（概要）"
+        },
+        {
+          "id": "intellect-and-endurance",
+          "name": "Intellect and Endurance",
+          "effect": "効果の種類：マジカ・スタミナ再生。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "マジカ・スタミナ再生"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "マジカ・スタミナ再生（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "resolve",
+          "name": "Resolve",
+          "effect": "効果の種類：物理・呪文耐性上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性上昇（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "vitality",
+          "name": "Vitality",
+          "effect": "効果の種類：被回復強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復強化（概要）"
+        }
+      ],
+      "historicalExamples": [
+        {
+          "focus": "healing",
+          "signature": "druid-s-resurgence",
+          "affix": "vitality",
+          "summary": "回復・リソース・Vitalityを組み合わせた掲載例。",
+          "status": "unknown",
+          "verificationNote": "旧版を含む攻略記事の掲載例。現行Liveでの同時成立は未確認。",
+          "sourceIds": [
+            "alcast-examples"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shield-throw",
+      "name": "Shield Throw",
+      "line": "片手武器と盾",
+      "weapon": "片手武器と盾",
+      "summary": "盾を投げて対象へ働きかける。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "immobilize",
+          "name": "Immobilize",
+          "effect": "移動制御に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "移動制御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動制御（主効果の種類）"
+        },
+        {
+          "id": "knockback",
+          "name": "Knockback",
+          "effect": "吹き飛ばし系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "multi-target",
+          "name": "Multi-Target",
+          "effect": "複数対象に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "複数対象"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "複数対象（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "pull",
+          "name": "Pull",
+          "effect": "引き寄せ系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "引き寄せ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "引き寄せ（主効果の種類）"
+        },
+        {
+          "id": "taunt",
+          "name": "Taunt",
+          "effect": "挑発系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "挑発"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "挑発（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "fencer-s-parry",
+          "name": "Fencer’s Parry",
+          "effect": "効果の種類：直接攻撃への防御。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "直接攻撃への防御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "直接攻撃への防御（概要）"
+        },
+        {
+          "id": "knight-s-valor",
+          "name": "Knight’s Valor",
+          "effect": "効果の種類：防御・バッシュ関連。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "防御・バッシュ関連"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "防御・バッシュ関連（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        },
+        {
+          "id": "thief-s-swiftness",
+          "name": "Thief’s Swiftness",
+          "effect": "効果の種類：移動関連の補助。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動関連の補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動関連の補助（概要）"
+        },
+        {
+          "id": "wayfarer-s-mastery",
+          "name": "Wayfarer’s Mastery",
+          "effect": "効果の種類：スキルラインのパッシブ連携。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "スキルラインのパッシブ連携"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "スキルラインのパッシブ連携（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "cowardice",
+          "name": "Cowardice",
+          "effect": "効果の種類：武器・呪文ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ低下（概要）"
+        },
+        {
+          "id": "enervation",
+          "name": "Enervation",
+          "effect": "効果の種類：クリティカルダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ低下（概要）"
+        },
+        {
+          "id": "evasion",
+          "name": "Evasion",
+          "effect": "効果の種類：範囲攻撃への耐性。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "範囲攻撃への耐性"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "範囲攻撃への耐性（概要）"
+        },
+        {
+          "id": "interrupt",
+          "name": "Interrupt",
+          "effect": "効果の種類：詠唱妨害。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "詠唱妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "詠唱妨害（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "off-balance",
+          "name": "Off Balance",
+          "effect": "効果の種類：オフバランス。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "オフバランス"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "オフバランス（概要）"
+        },
+        {
+          "id": "resolve",
+          "name": "Resolve",
+          "effect": "効果の種類：物理・呪文耐性上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性上昇（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "vitality",
+          "name": "Vitality",
+          "effect": "効果の種類：被回復強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復強化（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "smash",
+      "name": "Smash",
+      "line": "両手武器",
+      "weapon": "両手武器",
+      "summary": "前方の範囲へ武器を振るう。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "damage-shield",
+          "name": "Damage Shield",
+          "effect": "ダメージシールド系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "シールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "シールド（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "回復系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復（主効果の種類）"
+        },
+        {
+          "id": "knockback",
+          "name": "Knockback",
+          "effect": "吹き飛ばし系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "poison-damage",
+          "name": "Poison Damage",
+          "effect": "毒に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "毒"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "毒（主効果の種類）"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "effect": "気絶系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "taunt",
+          "name": "Taunt",
+          "effect": "挑発系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "挑発"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "挑発（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "crusader-s-defiance",
+          "name": "Crusader’s Defiance",
+          "effect": "効果の種類：行動制限の解除。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "行動制限の解除"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動制限の解除（概要）"
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "fencer-s-parry",
+          "name": "Fencer’s Parry",
+          "effect": "効果の種類：直接攻撃への防御。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "直接攻撃への防御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "直接攻撃への防御（概要）"
+        },
+        {
+          "id": "immobilizing-strike",
+          "name": "Immobilizing Strike",
+          "effect": "効果の種類：移動不能。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動不能"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動不能（概要）"
+        },
+        {
+          "id": "leeching-thirst",
+          "name": "Leeching Thirst",
+          "effect": "効果の種類：与ダメージに応じた回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "与ダメージに応じた回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージに応じた回復（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        },
+        {
+          "id": "wayfarer-s-mastery",
+          "name": "Wayfarer’s Mastery",
+          "effect": "効果の種類：スキルラインのパッシブ連携。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "スキルラインのパッシブ連携"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "スキルラインのパッシブ連携（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "berserk",
+          "name": "Berserk",
+          "effect": "効果の種類：与ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ強化（概要）"
+        },
+        {
+          "id": "breach",
+          "name": "Breach",
+          "effect": "効果の種類：物理・呪文耐性低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性低下（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "expedition",
+          "name": "Expedition",
+          "effect": "効果の種類：移動速度上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "移動速度上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度上昇（概要）"
+        },
+        {
+          "id": "force",
+          "name": "Force",
+          "effect": "効果の種類：クリティカルダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ強化（概要）"
+        },
+        {
+          "id": "interrupt",
+          "name": "Interrupt",
+          "effect": "効果の種類：詠唱妨害。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "詠唱妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "詠唱妨害（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "mangle",
+          "name": "Mangle",
+          "effect": "効果の種類：最大体力低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "最大体力低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "最大体力低下（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "vitality",
+          "name": "Vitality",
+          "effect": "効果の種類：被回復強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復強化（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "elemental-explosion",
+      "name": "Elemental Explosion",
+      "line": "攻撃の杖",
+      "weapon": "攻撃の杖",
+      "summary": "指定地点へ属性の爆発を起こす。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "dispel",
+          "name": "Dispel",
+          "effect": "打ち消しに関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "打ち消し"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "打ち消し（主効果の種類）"
+        },
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "炎に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "knockback",
+          "name": "Knockback",
+          "effect": "吹き飛ばし系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "shock-damage",
+          "name": "Shock Damage",
+          "effect": "雷に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "雷"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "雷（主効果の種類）"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "effect": "気絶系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "trauma",
+          "name": "Trauma",
+          "effect": "回復吸収に関わる主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復吸収"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復吸収（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "assassin-s-misery",
+          "name": "Assassin’s Misery",
+          "effect": "効果の種類：ステータス効果の活用。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "ステータス効果の活用"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ステータス効果の活用（概要）"
+        },
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "immobilizing-strike",
+          "name": "Immobilizing Strike",
+          "effect": "効果の種類：移動不能。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動不能"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動不能（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "warmage-s-defense",
+          "name": "Warmage’s Defense",
+          "effect": "効果の種類：ダメージシールド。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "ダメージシールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ダメージシールド（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "brittle",
+          "name": "Brittle",
+          "effect": "効果の種類：被クリティカルダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被クリティカルダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被クリティカルダメージ増加（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "cowardice",
+          "name": "Cowardice",
+          "effect": "効果の種類：武器・呪文ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ低下（概要）"
+        },
+        {
+          "id": "defile",
+          "name": "Defile",
+          "effect": "効果の種類：被回復低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復低下（概要）"
+        },
+        {
+          "id": "enervation",
+          "name": "Enervation",
+          "effect": "効果の種類：クリティカルダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ低下（概要）"
+        },
+        {
+          "id": "lifesteal",
+          "name": "Lifesteal",
+          "effect": "効果の種類：攻撃者の体力回復。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "攻撃者の体力回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃者の体力回復（概要）"
+        },
+        {
+          "id": "magickasteal",
+          "name": "Magickasteal",
+          "effect": "効果の種類：攻撃者のマジカ回復。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "攻撃者のマジカ回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃者のマジカ回復（概要）"
+        },
+        {
+          "id": "off-balance",
+          "name": "Off Balance",
+          "effect": "効果の種類：オフバランス。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "オフバランス"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "オフバランス（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        }
+      ],
+      "historicalExamples": [
+        {
+          "focus": "stun",
+          "signature": "druid-s-resurgence",
+          "affix": "brittle",
+          "summary": "範囲の行動妨害とBrittleを組み合わせた掲載例。",
+          "status": "unknown",
+          "verificationNote": "旧版を含む攻略記事の掲載例。現行Liveでの同時成立は未確認。",
+          "sourceIds": [
+            "alcast-examples"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mender-s-bond",
+      "name": "Mender’s Bond",
+      "line": "回復の杖",
+      "weapon": "回復の杖",
+      "summary": "味方とつながるリンク型の能力。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "damage-shield",
+          "name": "Damage Shield",
+          "effect": "リンク型での対象・効果・数値は未確認。同名スクリプトの他グリモアの説明を流用しない。",
+          "tags": [],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ]
+        },
+        {
+          "id": "generate-ultimate",
+          "name": "Generate Ultimate",
+          "effect": "アルティマ生成に関わる主効果。受け手・条件・量はグリモアごとに確認が必要。",
+          "tags": [
+            "アルティマ生成"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "アルティマ生成（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "リンク型での対象・効果・数値は未確認。同名スクリプトの他グリモアの説明を流用しない。",
+          "tags": [],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ]
+        },
+        {
+          "id": "immobilize",
+          "name": "Immobilize",
+          "effect": "リンク型での対象・効果・数値は未確認。同名スクリプトの他グリモアの説明を流用しない。",
+          "tags": [
+            "移動制御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "移動制御（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "リンク型での対象・効果・数値は未確認。同名スクリプトの他グリモアの説明を流用しない。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "mitigation",
+          "name": "Mitigation",
+          "effect": "リンク型での対象・効果・数値は未確認。同名スクリプトの他グリモアの説明を流用しない。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "被ダメージ軽減（主効果の種類）"
+        },
+        {
+          "id": "restore-resources",
+          "name": "Restore Resources",
+          "effect": "リソースの回復・消費に関わる候補。回復型と旗の支援型を同一効果と扱わず、対象・方式・数値は未確認。",
+          "tags": [
+            "リソース補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "リソース補助（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "crusader-s-defiance",
+          "name": "Crusader’s Defiance",
+          "effect": "効果の種類：行動制限の解除。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "行動制限の解除"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動制限の解除（概要）"
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "knight-s-valor",
+          "name": "Knight’s Valor",
+          "effect": "効果の種類：防御・バッシュ関連。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "防御・バッシュ関連"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "防御・バッシュ関連（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        },
+        {
+          "id": "warmage-s-defense",
+          "name": "Warmage’s Defense",
+          "effect": "効果の種類：ダメージシールド。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "ダメージシールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ダメージシールド（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "breach",
+          "name": "Breach",
+          "effect": "効果の種類：物理・呪文耐性低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "物理・呪文耐性低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性低下（概要）"
+        },
+        {
+          "id": "brittle",
+          "name": "Brittle",
+          "effect": "効果の種類：被クリティカルダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "被クリティカルダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被クリティカルダメージ増加（概要）"
+        },
+        {
+          "id": "courage",
+          "name": "Courage",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "empower",
+          "name": "Empower",
+          "effect": "効果の種類：重攻撃強化。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "重攻撃強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "重攻撃強化（概要）"
+        },
+        {
+          "id": "evasion",
+          "name": "Evasion",
+          "effect": "効果の種類：範囲攻撃への耐性。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "範囲攻撃への耐性"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "範囲攻撃への耐性（概要）"
+        },
+        {
+          "id": "force",
+          "name": "Force",
+          "effect": "効果の種類：クリティカルダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "クリティカルダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ強化（概要）"
+        },
+        {
+          "id": "heroism",
+          "name": "Heroism",
+          "effect": "効果の種類：アルティマ獲得。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "アルティマ獲得"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "アルティマ獲得（概要）"
+        },
+        {
+          "id": "intellect-and-endurance",
+          "name": "Intellect and Endurance",
+          "effect": "効果の種類：マジカ・スタミナ再生。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "マジカ・スタミナ再生"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "マジカ・スタミナ再生（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "protection",
+          "name": "Protection",
+          "effect": "効果の種類：被ダメージ軽減。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ軽減（概要）"
+        },
+        {
+          "id": "vitality",
+          "name": "Vitality",
+          "effect": "効果の種類：被回復強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "被回復強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復強化（概要）"
+        },
+        {
+          "id": "vulnerability",
+          "name": "Vulnerability",
+          "effect": "効果の種類：被ダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "被ダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ増加（概要）"
+        }
+      ],
+      "historicalExamples": [
+        {
+          "focus": "mitigation",
+          "signature": "sage-s-remedy",
+          "affix": "courage",
+          "summary": "リンクによる支援構成として掲載された例。",
+          "status": "unknown",
+          "verificationNote": "旧版を含む攻略記事の掲載例。現行Liveでの同時成立は未確認。",
+          "sourceIds": [
+            "alcast-examples"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "traveling-knife",
+      "name": "Traveling Knife",
+      "line": "二刀流",
+      "weapon": "二刀流",
+      "summary": "投げた刃が対象から戻る。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "multi-target",
+          "name": "Multi-Target",
+          "effect": "複数対象に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "複数対象"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "複数対象（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "poison-damage",
+          "name": "Poison Damage",
+          "effect": "毒に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "毒"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "毒（主効果の種類）"
+        },
+        {
+          "id": "pull",
+          "name": "Pull",
+          "effect": "引き寄せ系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "引き寄せ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "引き寄せ（主効果の種類）"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "effect": "気絶系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "assassin-s-misery",
+          "name": "Assassin’s Misery",
+          "effect": "効果の種類：ステータス効果の活用。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "ステータス効果の活用"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ステータス効果の活用（概要）"
+        },
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "fencer-s-parry",
+          "name": "Fencer’s Parry",
+          "effect": "効果の種類：直接攻撃への防御。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "直接攻撃への防御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "直接攻撃への防御（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "leeching-thirst",
+          "name": "Leeching Thirst",
+          "effect": "効果の種類：与ダメージに応じた回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "与ダメージに応じた回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージに応じた回復（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "warmage-s-defense",
+          "name": "Warmage’s Defense",
+          "effect": "効果の種類：ダメージシールド。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "ダメージシールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ダメージシールド（概要）"
+        },
+        {
+          "id": "warrior-s-opportunity",
+          "name": "Warrior’s Opportunity",
+          "effect": "効果の種類：攻撃を補助する効果。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "攻撃を補助する効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃を補助する効果（概要）"
+        },
+        {
+          "id": "wayfarer-s-mastery",
+          "name": "Wayfarer’s Mastery",
+          "effect": "効果の種類：スキルラインのパッシブ連携。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "スキルラインのパッシブ連携"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "スキルラインのパッシブ連携（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "berserk",
+          "name": "Berserk",
+          "effect": "効果の種類：与ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ強化（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "expedition",
+          "name": "Expedition",
+          "effect": "効果の種類：移動速度上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "移動速度上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度上昇（概要）"
+        },
+        {
+          "id": "force",
+          "name": "Force",
+          "effect": "効果の種類：クリティカルダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ強化（概要）"
+        },
+        {
+          "id": "lifesteal",
+          "name": "Lifesteal",
+          "effect": "効果の種類：攻撃者の体力回復。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "攻撃者の体力回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃者の体力回復（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "off-balance",
+          "name": "Off Balance",
+          "effect": "効果の種類：オフバランス。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "オフバランス"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "オフバランス（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "uncertainty",
+          "name": "Uncertainty",
+          "effect": "効果の種類：クリティカル関連の弱体。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル関連の弱体"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル関連の弱体（概要）"
+        },
+        {
+          "id": "vulnerability",
+          "name": "Vulnerability",
+          "effect": "効果の種類：被ダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被ダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ増加（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "soul-burst",
+      "name": "Soul Burst",
+      "line": "ソウルマジック",
+      "weapon": "武器指定なし",
+      "summary": "自分の周囲へ魂の力を広げる。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "damage-shield",
+          "name": "Damage Shield",
+          "effect": "ダメージシールド系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "シールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "シールド（主効果の種類）"
+        },
+        {
+          "id": "disease-damage",
+          "name": "Disease Damage",
+          "effect": "病気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "病気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "病気（主効果の種類）"
+        },
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "炎に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "回復系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復（主効果の種類）"
+        },
+        {
+          "id": "immobilize",
+          "name": "Immobilize",
+          "effect": "移動制御に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "移動制御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動制御（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "pull",
+          "name": "Pull",
+          "effect": "引き寄せ系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "引き寄せ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "引き寄せ（主効果の種類）"
+        },
+        {
+          "id": "shock-damage",
+          "name": "Shock Damage",
+          "effect": "雷に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "雷"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "雷（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "anchorite-s-cruelty",
+          "name": "Anchorite’s Cruelty",
+          "effect": "効果の種類：魂石を使うオブリビオンダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "魂石を使うオブリビオンダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魂石を使うオブリビオンダメージ（概要）"
+        },
+        {
+          "id": "anchorite-s-potency",
+          "name": "Anchorite’s Potency",
+          "effect": "効果の種類：魂石を使うアルティマ獲得。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "魂石を使うアルティマ獲得"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魂石を使うアルティマ獲得（概要）"
+        },
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "crusader-s-defiance",
+          "name": "Crusader’s Defiance",
+          "effect": "効果の種類：行動制限の解除。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "行動制限の解除"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動制限の解除（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "breach",
+          "name": "Breach",
+          "effect": "効果の種類：物理・呪文耐性低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性低下（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "courage",
+          "name": "Courage",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "expedition",
+          "name": "Expedition",
+          "effect": "効果の種類：移動速度上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "移動速度上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度上昇（概要）"
+        },
+        {
+          "id": "intellect-and-endurance",
+          "name": "Intellect and Endurance",
+          "effect": "効果の種類：マジカ・スタミナ再生。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "マジカ・スタミナ再生"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "マジカ・スタミナ再生（概要）"
+        },
+        {
+          "id": "interrupt",
+          "name": "Interrupt",
+          "effect": "効果の種類：詠唱妨害。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "詠唱妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "詠唱妨害（概要）"
+        },
+        {
+          "id": "magickasteal",
+          "name": "Magickasteal",
+          "effect": "効果の種類：攻撃者のマジカ回復。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "攻撃者のマジカ回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃者のマジカ回復（概要）"
+        },
+        {
+          "id": "maim",
+          "name": "Maim",
+          "effect": "効果の種類：与ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "与ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ低下（概要）"
+        },
+        {
+          "id": "resolve",
+          "name": "Resolve",
+          "effect": "効果の種類：物理・呪文耐性上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性上昇（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "ulfsild-s-contingency",
+      "name": "Ulfsild’s Contingency",
+      "line": "魔術師ギルド",
+      "weapon": "武器指定なし",
+      "summary": "条件を満たす能力使用で起動するルーン。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "damage-shield",
+          "name": "Damage Shield",
+          "effect": "ダメージシールド系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "シールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "シールド（主効果の種類）"
+        },
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "炎に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "回復系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復（主効果の種類）"
+        },
+        {
+          "id": "immobilize",
+          "name": "Immobilize",
+          "effect": "移動制御に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "移動制御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動制御（主効果の種類）"
+        },
+        {
+          "id": "knockback",
+          "name": "Knockback",
+          "effect": "吹き飛ばし系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "shock-damage",
+          "name": "Shock Damage",
+          "effect": "雷に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "雷"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "雷（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "gladiator-s-tenacity",
+          "name": "Gladiator’s Tenacity",
+          "effect": "効果の種類：被ダメージ軽減。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ軽減（概要）"
+        },
+        {
+          "id": "growing-impact",
+          "name": "Growing Impact",
+          "effect": "効果の種類：バフ・デバフの適用補助。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "バフ・デバフの適用補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "バフ・デバフの適用補助（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        },
+        {
+          "id": "warrior-s-opportunity",
+          "name": "Warrior’s Opportunity",
+          "effect": "効果の種類：攻撃を補助する効果。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "攻撃を補助する効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃を補助する効果（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "breach",
+          "name": "Breach",
+          "effect": "効果の種類：物理・呪文耐性低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性低下（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "enervation",
+          "name": "Enervation",
+          "effect": "効果の種類：クリティカルダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ低下（概要）"
+        },
+        {
+          "id": "force",
+          "name": "Force",
+          "effect": "効果の種類：クリティカルダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカルダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカルダメージ強化（概要）"
+        },
+        {
+          "id": "intellect-and-endurance",
+          "name": "Intellect and Endurance",
+          "effect": "効果の種類：マジカ・スタミナ再生。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "マジカ・スタミナ再生"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "マジカ・スタミナ再生（概要）"
+        },
+        {
+          "id": "magickasteal",
+          "name": "Magickasteal",
+          "effect": "効果の種類：攻撃者のマジカ回復。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "攻撃者のマジカ回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃者のマジカ回復（概要）"
+        },
+        {
+          "id": "protection",
+          "name": "Protection",
+          "effect": "効果の種類：被ダメージ軽減。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ軽減（概要）"
+        },
+        {
+          "id": "resolve",
+          "name": "Resolve",
+          "effect": "効果の種類：物理・呪文耐性上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性上昇（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "vulnerability",
+          "name": "Vulnerability",
+          "effect": "効果の種類：被ダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被ダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ増加（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "torchbearer",
+      "name": "Torchbearer",
+      "line": "戦士ギルド",
+      "weapon": "武器指定なし",
+      "summary": "前方へたいまつを振るう。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "bleed-damage",
+          "name": "Bleed Damage",
+          "effect": "出血に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "出血"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "出血（主効果の種類）"
+        },
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "炎に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "generate-ultimate",
+          "name": "Generate Ultimate",
+          "effect": "アルティマ生成に関わる主効果。受け手・条件・量はグリモアごとに確認が必要。",
+          "tags": [
+            "アルティマ生成"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "アルティマ生成（主効果の種類）"
+        },
+        {
+          "id": "healing",
+          "name": "Healing",
+          "effect": "回復系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復（主効果の種類）"
+        },
+        {
+          "id": "knockback",
+          "name": "Knockback",
+          "effect": "吹き飛ばし系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "effect": "気絶系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "crusader-s-defiance",
+          "name": "Crusader’s Defiance",
+          "effect": "効果の種類：行動制限の解除。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "行動制限の解除"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動制限の解除（概要）"
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "gladiator-s-tenacity",
+          "name": "Gladiator’s Tenacity",
+          "effect": "効果の種類：被ダメージ軽減。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ軽減（概要）"
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "warrior-s-opportunity",
+          "name": "Warrior’s Opportunity",
+          "effect": "効果の種類：攻撃を補助する効果。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "攻撃を補助する効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃を補助する効果（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "breach",
+          "name": "Breach",
+          "effect": "効果の種類：物理・呪文耐性低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性低下（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "cowardice",
+          "name": "Cowardice",
+          "effect": "効果の種類：武器・呪文ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ低下（概要）"
+        },
+        {
+          "id": "evasion",
+          "name": "Evasion",
+          "effect": "効果の種類：範囲攻撃への耐性。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "範囲攻撃への耐性"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "範囲攻撃への耐性（概要）"
+        },
+        {
+          "id": "heroism",
+          "name": "Heroism",
+          "effect": "効果の種類：アルティマ獲得。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "アルティマ獲得"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "アルティマ獲得（概要）"
+        },
+        {
+          "id": "mangle",
+          "name": "Mangle",
+          "effect": "効果の種類：最大体力低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "最大体力低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "最大体力低下（概要）"
+        },
+        {
+          "id": "resolve",
+          "name": "Resolve",
+          "effect": "効果の種類：物理・呪文耐性上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "物理・呪文耐性上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性上昇（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "uncertainty",
+          "name": "Uncertainty",
+          "effect": "効果の種類：クリティカル関連の弱体。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル関連の弱体"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル関連の弱体（概要）"
+        },
+        {
+          "id": "vitality",
+          "name": "Vitality",
+          "effect": "効果の種類：被回復強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復強化（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "trample",
+      "name": "Trample",
+      "line": "襲撃戦術",
+      "weapon": "武器指定なし",
+      "summary": "騎乗動物を前方へ突進させる。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "disease-damage",
+          "name": "Disease Damage",
+          "effect": "病気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "病気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "病気（主効果の種類）"
+        },
+        {
+          "id": "dispel",
+          "name": "Dispel",
+          "effect": "打ち消しに関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "打ち消し"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "打ち消し（主効果の種類）"
+        },
+        {
+          "id": "frost-damage",
+          "name": "Frost Damage",
+          "effect": "冷気に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "冷気"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "冷気（主効果の種類）"
+        },
+        {
+          "id": "knockback",
+          "name": "Knockback",
+          "effect": "吹き飛ばし系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "魔法に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "物理に関する主効果の候補。具体的な対象・数値・併用条件は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "stun",
+          "name": "Stun",
+          "effect": "気絶系の主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "行動妨害"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動妨害（主効果の種類）"
+        },
+        {
+          "id": "trauma",
+          "name": "Trauma",
+          "effect": "回復吸収に関わる主効果。具体値・対象・併用条件は未確認。",
+          "tags": [
+            "回復吸収"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "回復吸収（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "assassin-s-misery",
+          "name": "Assassin’s Misery",
+          "effect": "効果の種類：ステータス効果の活用。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "ステータス効果の活用"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ステータス効果の活用（概要）"
+        },
+        {
+          "id": "cavalier-s-charge",
+          "name": "Cavalier’s Charge",
+          "effect": "効果の種類：動作と連動する強化。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "動作と連動する強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "動作と連動する強化（概要）"
+        },
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "hunter-s-snare",
+          "name": "Hunter’s Snare",
+          "effect": "効果の種類：移動速度低下。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動速度低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度低下（概要）"
+        },
+        {
+          "id": "immobilizing-strike",
+          "name": "Immobilizing Strike",
+          "effect": "効果の種類：移動不能。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動不能"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動不能（概要）"
+        },
+        {
+          "id": "lingering-torment",
+          "name": "Lingering Torment",
+          "effect": "効果の種類：継続ダメージ。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "継続ダメージ"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続ダメージ（概要）"
+        },
+        {
+          "id": "thief-s-swiftness",
+          "name": "Thief’s Swiftness",
+          "effect": "効果の種類：移動関連の補助。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "移動関連の補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動関連の補助（概要）"
+        },
+        {
+          "id": "warrior-s-opportunity",
+          "name": "Warrior’s Opportunity",
+          "effect": "効果の種類：攻撃を補助する効果。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "攻撃を補助する効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "攻撃を補助する効果（概要）"
+        },
+        {
+          "id": "wayfarer-s-mastery",
+          "name": "Wayfarer’s Mastery",
+          "effect": "効果の種類：スキルラインのパッシブ連携。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "スキルラインのパッシブ連携"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "スキルラインのパッシブ連携（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "cowardice",
+          "name": "Cowardice",
+          "effect": "効果の種類：武器・呪文ダメージ低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "武器・呪文ダメージ低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ低下（概要）"
+        },
+        {
+          "id": "defile",
+          "name": "Defile",
+          "effect": "効果の種類：被回復低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被回復低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被回復低下（概要）"
+        },
+        {
+          "id": "expedition",
+          "name": "Expedition",
+          "effect": "効果の種類：移動速度上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "移動速度上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動速度上昇（概要）"
+        },
+        {
+          "id": "heroism",
+          "name": "Heroism",
+          "effect": "効果の種類：アルティマ獲得。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "アルティマ獲得"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "アルティマ獲得（概要）"
+        },
+        {
+          "id": "mangle",
+          "name": "Mangle",
+          "effect": "効果の種類：最大体力低下。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "最大体力低下"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "最大体力低下（概要）"
+        },
+        {
+          "id": "off-balance",
+          "name": "Off Balance",
+          "effect": "効果の種類：オフバランス。このグリモアでの対象・数値・発動条件は未確認。",
+          "tags": [
+            "オフバランス"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "オフバランス（概要）"
+        },
+        {
+          "id": "protection",
+          "name": "Protection",
+          "effect": "効果の種類：被ダメージ軽減。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ軽減（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        },
+        {
+          "id": "vulnerability",
+          "name": "Vulnerability",
+          "effect": "効果の種類：被ダメージ増加。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。",
+          "tags": [
+            "被ダメージ増加"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ増加（概要）"
+        }
+      ],
+      "historicalExamples": []
+    },
+    {
+      "id": "banner-bearer",
+      "name": "Banner Bearer",
+      "line": "後方支援",
+      "weapon": "武器指定なし",
+      "summary": "旗のオーラで自分と周囲のグループを支援する。",
+      "acquisition": "書記クエストを進め、Scholariumの販売・解放条件を確認。価格と現在の必要条件はゲーム内で確認。",
+      "sourceIds": [
+        "alcast-grimoires",
+        "kozy-overview"
+      ],
+      "notes": [
+        "候補は資料上の個別対応。3種を同時に組めることや、現行の数値を保証しない。",
+        "候補の日本語は効果の種類を示す説明ラベル。正式な日本語スクリプト名ではない。"
+      ],
+      "verifiedCombinations": [],
+      "focus": [
+        {
+          "id": "flame-damage",
+          "name": "Flame Damage",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "炎"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "炎（主効果の種類）"
+        },
+        {
+          "id": "immobilize",
+          "name": "Immobilize",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "移動制御"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "移動制御（主効果の種類）"
+        },
+        {
+          "id": "magic-damage",
+          "name": "Magic Damage",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "魔法"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "魔法（主効果の種類）"
+        },
+        {
+          "id": "mitigation",
+          "name": "Mitigation",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "被ダメージ軽減（主効果の種類）"
+        },
+        {
+          "id": "multi-target",
+          "name": "Multi-Target",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "複数対象"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "複数対象（主効果の種類）"
+        },
+        {
+          "id": "physical-damage",
+          "name": "Physical Damage",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "物理"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "物理（主効果の種類）"
+        },
+        {
+          "id": "restore-resources",
+          "name": "Restore Resources",
+          "effect": "リソースの回復・消費に関わる候補。回復型と旗の支援型を同一効果と扱わず、対象・方式・数値は未確認。",
+          "tags": [
+            "リソース補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "リソース補助（主効果の種類）"
+        },
+        {
+          "id": "shock-damage",
+          "name": "Shock Damage",
+          "effect": "旗の支援効果として働く候補。攻撃型グリモアの同名スクリプトと同じ効果だとは扱わない。現在の効果と数値は未確認。",
+          "tags": [
+            "雷"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview"
+          ],
+          "nameJa": "雷（主効果の種類）"
+        }
+      ],
+      "signature": [
+        {
+          "id": "cavalier-s-charge",
+          "name": "Cavalier’s Charge",
+          "effect": "効果の種類：動作と連動する強化。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "動作と連動する強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "動作と連動する強化（概要）"
+        },
+        {
+          "id": "class-flourish",
+          "name": "Class Flourish",
+          "effect": "クラス別の追加効果。旧名Class MasteryからU50で改名。新しいClass Masteryシステムの有効化は不要。クラス別の現行効果は未収録。",
+          "tags": [
+            "クラス別効果"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "u50"
+          ]
+        },
+        {
+          "id": "crusader-s-defiance",
+          "name": "Crusader’s Defiance",
+          "effect": "効果の種類：行動制限の解除。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "行動制限の解除"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "行動制限の解除（概要）"
+        },
+        {
+          "id": "druid-s-resurgence",
+          "name": "Druid’s Resurgence",
+          "effect": "効果の種類：リソース回復。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "リソース回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "リソース回復（概要）"
+        },
+        {
+          "id": "sage-s-remedy",
+          "name": "Sage’s Remedy",
+          "effect": "効果の種類：継続回復。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "継続回復"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "継続回復（概要）"
+        },
+        {
+          "id": "thief-s-swiftness",
+          "name": "Thief’s Swiftness",
+          "effect": "効果の種類：移動関連の補助。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "移動関連の補助"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "移動関連の補助（概要）"
+        },
+        {
+          "id": "warmage-s-defense",
+          "name": "Warmage’s Defense",
+          "effect": "効果の種類：ダメージシールド。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "ダメージシールド"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "ダメージシールド（概要）"
+        },
+        {
+          "id": "wayfarer-s-mastery",
+          "name": "Wayfarer’s Mastery",
+          "effect": "効果の種類：スキルラインのパッシブ連携。このグリモアでの対象・数値・発動条件は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "スキルラインのパッシブ連携"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "スキルラインのパッシブ連携（概要）"
+        }
+      ],
+      "affix": [
+        {
+          "id": "berserk",
+          "name": "Berserk",
+          "effect": "効果の種類：与ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "与ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "与ダメージ強化（概要）"
+        },
+        {
+          "id": "brutality",
+          "name": "Brutality",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "courage",
+          "name": "Courage",
+          "effect": "効果の種類：武器・呪文ダメージ強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "武器・呪文ダメージ強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "武器・呪文ダメージ強化（概要）"
+        },
+        {
+          "id": "heroism",
+          "name": "Heroism",
+          "effect": "効果の種類：アルティマ獲得。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "アルティマ獲得"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "アルティマ獲得（概要）"
+        },
+        {
+          "id": "intellect-and-endurance",
+          "name": "Intellect and Endurance",
+          "effect": "効果の種類：マジカ・スタミナ再生。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "マジカ・スタミナ再生"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "マジカ・スタミナ再生（概要）"
+        },
+        {
+          "id": "protection",
+          "name": "Protection",
+          "effect": "効果の種類：被ダメージ軽減。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "被ダメージ軽減"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "被ダメージ軽減（概要）"
+        },
+        {
+          "id": "resolve",
+          "name": "Resolve",
+          "effect": "効果の種類：物理・呪文耐性上昇。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "物理・呪文耐性上昇"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "物理・呪文耐性上昇（概要）"
+        },
+        {
+          "id": "savagery",
+          "name": "Savagery",
+          "effect": "効果の種類：クリティカル率強化。このグリモアでの対象・数値・発動条件・Major／Minorの区分は未確認。 オーラ／リンク型のため他グリモアの効果は流用しない。",
+          "tags": [
+            "クリティカル率強化"
+          ],
+          "status": "unknown",
+          "reason": "資料に個別候補として掲載。現行の適用条件と3種の同時成立は未検証。",
+          "sourceIds": [
+            "kozy-overview",
+            "alcast-scripts"
+          ],
+          "nameJa": "クリティカル率強化（概要）"
+        }
+      ],
+      "historicalExamples": []
+    }
+  ]
+}

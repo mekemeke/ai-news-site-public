@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>書記 | ESOデータベース</title>
+  <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
+  <link rel="stylesheet" href="./eso-scribing.css?v=20261027-scribing1">
+  <script src="./eso-scribing.js?v=20261027-scribing1" defer></script>
+  <link rel="stylesheet" href="./eso-theme.css?v=20261027-dark1">
+  <script src="./eso-theme.js?v=20261027-dark1" defer></script>
+</head>
+<body class="eso-skills-page eso-scribing-page">
+  <a class="skip" href="#main">本文へ</a>
+  <header><a class="brand" href="./">AIニュース <span class="preview-badge">仮公開</span></a><div class="header-right"><button id="theme" type="button" aria-pressed="false" aria-label="ダークモードに切り替え" hidden><span>ダーク</span></button></div></header>
+  <nav class="primary-nav" aria-label="メインナビゲーション"><a href="./">ニュース</a><a href="./eso.html" aria-current="page">ESOデータベース</a></nav>
+  <main id="main" tabindex="-1">
+    <nav class="database-nav" aria-label="ESOデータベース"><a href="./eso.html">装備セット</a><a href="./eso-skills.html">スキル</a><a href="./eso-traits-enchants.html">特性・付呪</a><a href="./eso-scribing.html" aria-current="page">書記</a></nav>
+    <section id="scribing-home" aria-labelledby="scribing-title">
+      <p class="scribing-eyebrow">ESO / SCRIBING</p><h1 id="scribing-title">書記</h1>
+      <p class="lead">グリモア（技の土台）を選び、3種類のスクリプトで効果を組み立てる。</p>
+      <div id="scribing-coverage" class="scribing-note">収録範囲を読み込み中…</div>
+      <div class="scribing-filters">
+        <label>名前・説明から探す<input id="scribing-search" type="search" autocomplete="off" placeholder="グリモア・スクリプト名" disabled></label>
+        <label>スキルライン<select id="scribing-line" disabled><option value="">すべて</option></select></label>
+        <label>選択候補の効果から逆引き<select id="scribing-effect" aria-describedby="effect-help" disabled><option value="">すべて</option></select></label>
+        <button id="scribing-reset" type="button" disabled>条件をクリア</button>
+      </div>
+      <p id="effect-help" class="scribing-muted">逆引きは各グリモアに記録した選択候補の効果です。複数の効果を同時に付けられることや、現行Live版との一致を保証しません。</p>
+      <p id="scribing-count" role="status" aria-live="polite"></p>
+      <p id="scribing-notice" role="status">データを読み込み中…</p><button id="scribing-retry" type="button" hidden>再試行</button>
+      <div id="scribing-list" class="scribing-grid"></div>
+      <details class="scribing-provenance"><summary>出典・確認範囲</summary><div id="scribing-sources"></div></details>
+    </section>
+    <article id="scribing-detail" tabindex="-1" hidden></article>
+    <noscript><p class="empty">書記の検索・組み合わせ表示にはJavaScriptが必要です。</p></noscript>
+  </main>
+  <footer><p>非公式・非営利ファンサイト。資料に基づく整理であり、ゲーム内の実測や公式シミュレーターではありません。ESOは ZeniMax Media Inc. / Bethesda Softworks / ZeniMax Online Studios の商標です。</p><small>ESOデータベース · 閲覧専用</small></footer>
+</body>
+</html>
