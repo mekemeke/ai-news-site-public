@@ -31,7 +31,7 @@ GitHub コネクタには現在 workflow_dispatch がないため、dot のク�
 
 1. [Public video API workflow](https://github.com/mekemeke/ai-news-site-public/actions/workflows/video-api.yml) を開きます。
 2. **Run workflow** → Branch **main** を選択します。他の ref はジョブが実行されません。
-3. mode、genre と無料枠確認を設定します。`analyze` だけ `video_id` に11文字の ID を入れます。
+3. 通常はまず `mode=channels` と無料枠確認を設定します（genre は無視され全25チャンネルを巡回）。`analyze` だけ `video_id` に11文字の ID を入れます。
    URL、コード、shell、自由検索語は受け付けません。
 4. **Run workflow** を押し、作成された run の完了を確認します。
 5. `collect` と `publish` の両方の成功を確認します。失敗時は固定の失敗コードと試行回数のみ確認します。
@@ -41,7 +41,7 @@ GitHub コネクタには現在 workflow_dispatch がないため、dot のク�
    `run_id` が今回の run と一致し、`created_at` が今回の時刻であることを確認します。
    失敗後に残った以前の成功結果を新しい結果として扱わないでください。
 
-毎朝10時の既存 dot 自動化ではこの手順を使います。自動化自体は今回変更していません。
+毎朝10時の既存 dot 自動化では下記のチャンネル優先手順を使います。自動化プロンプトの更新は別途必要です。
 現時点ではクラウドからの Run workflow → 成功 → コネクタ読取りの実運用は未検証です。
 初回に一連の経路を検証するまでは PC 不要の運用が完成したとは扱いません。
 
@@ -50,17 +50,70 @@ GitHub コネクタには現在 workflow_dispatch がないため、dot のク�
 | mode | YouTube | Gemini | 最大 API 試行数 |
 |---|---|---|---|
 | smoke | 固定ジャンル検索1回、結果1 ID | 短いテキストのみ1回・64出力トークン | 2 |
-| search | 固定検索1回・最大3本、詳細取得1回 | なし | 2 |
-| analyze | 指定 ID の詳細取得1回、公開・非ライブ・5分以下を確認 | 動画1本、最大768出力トークン | 2 |
+| channels | 承認済み25チャンネルの公開 uploads、最大75候補 | なし | 66（下記の時間制限内） |
+| search | 編集者確認後、当日JSTの固定検索1回・最大3本、詳細取得1回 | なし | 2 |
+| analyze | 指定 ID の詳細取得1回、公開・非ライブ・20分以下を確認 | 動画1本、最大768出力トークン | 2 |
 
 ジャンルは AI / 3DCG / terrain（地形生成）/ ESO。検索には動画の長さ制限を設けません。
-search の結果には公開説明文を最大2000文字含めます。5分を超える長尺動画は検索結果に残しますが、
+search の結果には公開説明文を最大2000文字含めます。20分を超える長尺動画は検索結果に残しますが、
 動画解析は未実施です。dot が説明文、または別途正規に取得できる公開字幕を使う代替処理へ渡せます。
 この workflow は字幕を取得せず、説明文だけから動画を視聴・解析したとは扱いません。
-ページ送りなし、リトライなし、HTTP は35秒、収集プロセスは120秒で打切り。
+既存の smoke/search/analyze はページ送りなし、リトライなし、HTTP は35秒、収集プロセスは120秒で打切り。
+channels のページ送り・時間上限は次節の別枠です。
 収集ジョブ4分、保存ジョブ3分。常に同時実行1本。再実行は新たな枠を消費します。
 1日に多数手動実行しないでください。動画の入力トークンは事前に正確な保証ができません。
-analyze は37分などの長尺を拒否します。短い動画も連続解析せず、無料枠の使用量を確認してから判断します。
+analyze は2026-10-27の明示承認により20分（1200秒）まで。1201秒以上は Gemini 呼出し前に拒否します。
+モデル・解像度指定なし（既定）・768出力トークン・1動画/実行は変更しません。
+実際の20分動画の解析所要時間は未検証で、HTTP35秒/プロセス120秒に収まる保証はありません。
+無料枠・使用量を確認し、解析は直列、前回完了後少なくとも60秒あけます。失敗を自動再試行しません。
+
+
+## チャンネル優先の毎朝の編集フロー
+
+1. `data/video-watchlist.json` の承認済み25件を `mode=channels` で先に確認します。
+   いまにゅのAI塾（公式リンク先 `@imanyu_programming`）とチャエンのAI研究所（`@chaen-ai-lab`）を含みます。
+   Houdini は1件だけ保持し、3DCG/terrain の両ジャンルに所属させます。World Machine はWeb情報源であり登録チャンネルではありません。
+2. 当日 **JST 00:00〜収集開始時刻** の公開・非ライブ動画だけを候補にします。
+   `channels.list` で承認済み ID をまとめて照合し、返された uploads playlist を使います（UU接頭辞の推測なし）。
+   uploads の `contentDetails.videoPublishedAt` で絞り、`videos.list` の公開状態・配信状態・所属ID・公開日時でも再検証します。
+3. dot がタイトル・説明文・必要な一次情報を読み、**重要なニュース、実用性、対象ジャンルとの関係**を編集判断します。
+   公式チャンネルでも自動採用しません。Bethesda はESOに関連する内容だけ。解説チャンネルの主張は一次情報で照合します。
+   本数が3未満という理由だけで「不足」とは判定しません。採用記事は各ジャンル最大3件、Houdiniなどの重複ネタはまとめます。
+4. 判断の結果、強いネタが不足するジャンルだけ `mode=search` に進みます。
+   `editor_reviewed=true` は「今回のチャンネル結果を読み、選択ジャンルの強いネタが足りないと判断済み」の明示ゲートです。
+   未確認では API を呼びません。コードが品質判定・キーワード補充・Gemini解析を自動起動することはありません。
+5. 当日の `run_id` と `created_at` を必ず確認します。候補は視聴結果ではなく公開メタデータです。
+   長さに関係なく収集し、説明文は最大2000文字。動画理解が必要な場合だけ別の `analyze` を1本ずつ実行します。
+   Slackの宛先・通知条件は変更しません。
+
+### channels の独立した固定予算と不完全性
+
+- 25チャンネル、uploads は **10件×最大2ページ/チャンネル**。全チャンネルの1ページ目を優先してから2ページ目へ進みます。
+- 観測できた範囲の公開日時で新しい順に最大3候補/チャンネル、全体最大75件。これは公開記事の3件/ジャンル上限とは別です。
+- 呼出しの内訳は channels.list 最大1回、playlistItems.list 最大50回、videos.list 5 ID/回で最大15回、合計最大66回。
+  keyword searchやGeminiは呼びません。[channels.list](https://developers.google.com/youtube/data/reference/rest/v3/channels/list)、
+  [playlistItems.list](https://developers.google.com/youtube/data/reference/rest/v3/playlistItems/list)、
+  [videos.list](https://developers.google.com/youtube/data/reference/rest/v3/videos/list) はそれぞれ1 quota unit/回です。
+  この上限は無料枠保証ではなく、既存の無料確認・7日ゲートは維持します。
+- channelsだけHTTP最大2秒/回、uploads発見は60秒まで（詳細照合用の時間を残す）、API全体100秒。
+  外側120秒/ジョブ4分・同時実行1本は変更しません。全25件を時間内に終えられる保証はありません。
+  403/429/タイムアウト/リダイレクト等で以降のAPI呼出しを停止し、再試行しません。
+- 各レスポンス最大131072 bytes。channelsの出力だけ最大786432 bytes、他モードは従来32768 bytes。
+  出力超過時は末尾候補を取り除き、当該チャンネルの `output_size_limit` と全体 `partial=true` を明示します。
+  未加工レスポンスや未照合IDを候補として保存せず、秘密の一致・パターンは保存前に拒否します。
+- JSONの `channels[]` に取得ページ数・観測数・候補数・返却数・`partial`・固定 `reasons` を記録します。
+  未取得ページは `pagination_limit`、3候補を超える場合は `candidate_limit`、時間切れは `discovery_time_limit`、
+  リクエスト停止は `request_stopped`、非公開等は `candidate_not_eligible`、詳細欠落は `details_unavailable`。
+  これらは「該当動画なし」「全動画を確認済み」ではありません。`partial=false` でも対象は承認済み25チャンネルに限ります。
+
+### channels 結果の読み取り契約
+
+`schema_version=1` のまま `mode=channels`, `genre=all`, `collection_source=watchlist`,
+`editor_review_required=true`, `window={start,end,timezone}`, `partial`, `stop_code`, `channels[]` を追加します。
+各 `videos[]` は既存の id/url/title/channel/description/published_at/duration_seconds に
+`channel_id` と `genres` を追加した検証済み公開メタデータです。解析済みであることを示す `analysis` はありません。
+保存側も固定watchlistのID・名前・ジャンルと厳密照合し、許可していないフィールドやURLを拒否します。
+大きいJSONを読む際はGitHub取得結果の省略・上限に注意し、未読部分を読了扱いせず、必要な範囲を分割して読みます。
 
 ## 公開結果と安全境界
 
@@ -95,3 +148,4 @@ python3 -m unittest discover -s tests -v
 検索1回と短いテキスト疎通1回まで。動画解析は初回試験に含めません。
 成功条件：両ジョブ成功、api_attempts=2、秘密のない usage、結果 JSON の run_id 一致、コネクタ読取り成功。
 403/404/429・タイムアウト・解析形式不一致の場合、失敗コードを報告し、モデル切替や再試行で回避しません。
+

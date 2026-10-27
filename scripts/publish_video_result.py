@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 import urllib.error
 import urllib.request
-from video_api import NoRedirect, SafeError, serialize
+from video_api import NoRedirect, SafeError, serialize, CHANNEL_OUTPUT_BYTES
 
 ROOT = "https://api.github.com/repos/mekemeke/ai-news-site-public"
 BRANCH = "api-results"
@@ -15,7 +15,7 @@ PATH = "results/latest.json"
 def publish():
     token = os.environ["GITHUB_TOKEN"]
     raw = Path("out/result.json").read_bytes()
-    if len(raw) > 32768:
+    if len(raw) > CHANNEL_OUTPUT_BYTES:
         raise SafeError("invalid_artifact")
     result = json.loads(raw)
     if result.get("schema_version") != 1 or result.get("run_id") != os.environ["GITHUB_RUN_ID"]:
@@ -60,3 +60,4 @@ if __name__ == "__main__":
     except Exception:
         print("status=failed code=publish_error")
         sys.exit(1)
+

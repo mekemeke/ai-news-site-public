@@ -19,13 +19,13 @@ def env(mode='smoke'):
     return {'MODE': mode, 'GENRE': 'AI', 'VIDEO_ID': VIDEO if mode == 'analyze' else '',
             'FREE_CONFIRMED': 'true', 'FREE_TIER_VERIFIED_ON': dt.date.today().isoformat(),
             'YOUTUBE_API_KEY': 'fake-youtube-secret-for-test',
-            'GEMINI_API_KEY': 'fake-gemini-secret-for-test', 'GITHUB_RUN_ID': '123'}
+            'GEMINI_API_KEY': 'fake-gemini-secret-for-test', 'GITHUB_RUN_ID': '123', 'EDITOR_REVIEWED': 'true'}
 
 
 def metadata(duration='PT2M', privacy='public', live='none'):
     return {'items': [{'id': VIDEO, 'status': {'privacyStatus': privacy},
         'snippet': {'title': 'Example', 'channelTitle': 'Example channel', 'description': 'Public description',
-                    'publishedAt': '2026-10-25T00:00:00Z', 'liveBroadcastContent': live},
+                    'publishedAt': v.stamp(v.today_window(dt.datetime.now(dt.timezone.utc))[0]), 'liveBroadcastContent': live},
         'contentDetails': {'duration': duration}}]}
 
 
@@ -93,6 +93,19 @@ class Tests(unittest.TestCase):
         self.assertEqual(payload['input'][1]['uri'], 'https://www.youtube.com/watch?v=' + VIDEO)
         self.assertEqual(payload['generation_config']['max_output_tokens'], 768)
 
+    def test_analyze_authorized_20_minute_boundary_only(self):
+        client = Fake(metadata('PT20M'), response())
+        result = v.collect(client, env('analyze'))
+        self.assertEqual(result['videos'][0]['duration_seconds'], 1200)
+        self.assertEqual(client.calls, 2)
+        self.assertEqual(client.requests[1][1]['generation_config']['max_output_tokens'], 768)
+        self.assertNotIn('media_resolution', client.requests[1][1])
+        for duration in ['PT20M1S', 'PT37M']:
+            client = Fake(metadata(duration))
+            with self.assertRaisesRegex(v.SafeError, 'video_exceeds_20_minutes'):
+                v.collect(client, env('analyze'))
+            self.assertEqual(client.calls, 1)
+
     def test_invalid_inputs_no_calls(self):
         for field, value in [('MODE', 'bash'), ('GENRE', '$(echo bad)'),
                              ('VIDEO_ID', 'https://evil.test'), ('VIDEO_ID', '../abcdefghi'),
@@ -159,3 +172,4 @@ class Tests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

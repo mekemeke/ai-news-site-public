@@ -3,19 +3,24 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'smoke: search + text only; search: metadata; analyze: one short video'
+        description: 'channels: watchlist first; search: editorial fallback; analyze: one video <=20min'
         type: choice
-        options: [smoke, search, analyze]
+        options: [smoke, channels, search, analyze]
         default: smoke
         required: true
       genre:
-        description: Topic (terrain = 地形生成)
+        description: Topic (terrain = 地形生成); channels scans all genres regardless of this choice
         type: choice
         options: [AI, 3DCG, terrain, ESO]
         default: AI
         required: true
+      editor_reviewed:
+        description: Search only — reviewed this morning's channel results; selected genre lacks strong topics
+        type: boolean
+        default: false
+        required: true
       video_id:
-        description: Analyze only — public YouTube ID, exactly 11 characters, <= 5 minutes
+        description: Analyze only — public YouTube ID, exactly 11 characters, <= 20 minutes
         type: string
         default: ''
       free_confirmed:
@@ -44,6 +49,7 @@ jobs:
         env:
           MODE: ${{ inputs.mode }}
           GENRE: ${{ inputs.genre }}
+          EDITOR_REVIEWED: ${{ inputs.editor_reviewed }}
           VIDEO_ID: ${{ inputs.video_id }}
           FREE_CONFIRMED: ${{ inputs.free_confirmed }}
           FREE_TIER_VERIFIED_ON: ${{ vars.FREE_TIER_VERIFIED_ON }}
@@ -75,3 +81,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: timeout 110s python3 scripts/publish_video_result.py
+

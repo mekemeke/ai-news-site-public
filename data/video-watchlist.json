@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-27",
+  "uploads_playlist_resolution": "Resolve via channels.list(part=contentDetails,id=<batched channel IDs>,maxResults=50), then use contentDetails.relatedPlaylists.uploads; never infer playlist IDs from channel IDs.",
+  "channels": [
+    {
+      "name": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "handle": "@OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@OpenAI",
+      "source_type": "official",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@OpenAI",
+        "https://www.youtube.com/channel/UCXZCJLdBC09xxGZ6gcdrc6A"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "Claude",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "handle": "@claude",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@claude",
+      "source_type": "official",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@claude",
+        "https://www.youtube.com/channel/UCV03SRZXJEz-hchIAogeJOg"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "Google for Developers",
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "handle": "@GoogleDevelopers",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@GoogleDevelopers",
+      "source_type": "official",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@GoogleDevelopers",
+        "https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "handle": "@mreflow",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@mreflow",
+      "source_type": "commentary",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@mreflow",
+        "https://www.youtube.com/channel/UChpleBmo18P08aKCIgti38g"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "KEITO【AI&WEB ch】",
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "handle": "@keitoaiweb",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@keitoaiweb",
+      "source_type": "commentary",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@keitoaiweb",
+        "https://www.youtube.com/channel/UCfapRkagDtoQEkGeyD3uERQ"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "AI Explained",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "handle": "@aiexplained-official",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@aiexplained-official",
+      "source_type": "commentary",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@aiexplained-official",
+        "https://www.youtube.com/channel/UCNJ1Ymd5yFuUPtn21xtRbbw"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "Anthropic",
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "handle": "@anthropic-ai",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@anthropic-ai",
+      "source_type": "official",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@anthropic-ai",
+        "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "Google DeepMind",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "handle": "@googledeepmind",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@googledeepmind",
+      "source_type": "official",
+      "match_hint": "User-approved exact handle. YouTube public channelMetadataRenderer.externalId and canonical channel URL agree.",
+      "verification_sources": [
+        "https://www.youtube.com/@googledeepmind",
+        "https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL"
+    },
+    {
+      "name": "いまにゅのAIプログラミング塾",
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "handle": "@imanyu_programming",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@imanyu_programming",
+      "source_type": "commentary",
+      "match_hint": "User shorthand いまにゅのAI塾 is interpreted as the official operator-linked いまにゅのAIプログラミング塾 (いまにゅ / 今西航平 / 株式会社ミチガエル). Official michigaeru.co.jp links this exact handle; current public YouTube metadata verifies full name and ID. Targeted searches found no distinct AI塾 channel. Identity of the target channel is verified; shorthand interpretation is disclosed, not an assertion of exact title equality.",
+      "verification_sources": [
+        "https://michigaeru.co.jp/",
+        "https://www.youtube.com/@imanyu_programming",
+        "https://www.youtube.com/channel/UC0xRMqPOyRNPTaL6BxhbCnQ"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL",
+      "requested_name": "いまにゅのAI塾"
+    },
+    {
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "handle": "@chaen-ai-lab",
+      "genres": [
+        "AI"
+      ],
+      "source_url": "https://www.youtube.com/@chaen-ai-lab",
+      "source_type": "commentary",
+      "match_hint": "Requested チャエンのAI研究所 matches current チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ. Official chaen.ai links this exact handle. Separate @chaen-private is excluded.",
+      "verification_sources": [
+        "https://chaen.ai/",
+        "https://www.youtube.com/@chaen-ai-lab",
+        "https://www.youtube.com/channel/UC9buL3Iph_f7AZxdzmiBL8Q"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId and title, vanityChannelUrl, RSS and canonical channel URL",
+      "requested_name": "チャエンのAI研究所"
+    },
+    {
+      "name": "Autodesk Media & Entertainment",
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "handle": "@AutodeskME",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/@AutodeskME",
+      "source_type": "official",
+      "match_hint": "Autodesk Media & Entertainment",
+      "verification_sources": [
+        "https://www.youtube.com/@AutodeskME"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Chaos V-Ray",
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "handle": "@ChaosV-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/user/ChaosGroupTV",
+      "source_type": "official",
+      "match_hint": "Previously approved user/ChaosGroupTV now resolves to Chaos V-Ray / @ChaosV-Ray; same channel ID verified in public metadata.",
+      "verification_sources": [
+        "https://www.youtube.com/user/ChaosGroupTV"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Adobe Substance 3D",
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "handle": "@Substance3D",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/@Substance3D",
+      "source_type": "official",
+      "match_hint": "Adobe Substance 3D",
+      "verification_sources": [
+        "https://www.youtube.com/@Substance3D"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Foundry",
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "handle": "@FoundryTeam",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/@FoundryTeam",
+      "source_type": "official",
+      "match_hint": "Foundry",
+      "verification_sources": [
+        "https://www.youtube.com/@FoundryTeam"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "handle": "@houdini3d",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "source_url": "https://www.youtube.com/@houdini3d",
+      "source_type": "official",
+      "match_hint": "Houdini",
+      "verification_sources": [
+        "https://www.youtube.com/@houdini3d"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Blender",
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "handle": "@BlenderOfficial",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/@BlenderOfficial",
+      "source_type": "official",
+      "match_hint": "Blender",
+      "verification_sources": [
+        "https://www.youtube.com/@BlenderOfficial"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Eloi Andaluz Fullà",
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "handle": "@andvfx",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/channel/UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "source_type": "commentary",
+      "match_hint": "Eloi Andaluz Fullà; 3ds Max; tyFlow",
+      "verification_sources": [
+        "https://www.youtube.com/channel/UCDr8YRM1Xm_TsSYvIpYNZ0A",
+        "https://socialblade.com/youtube/handle/andvfx"
+      ],
+      "verification_status": "prior-verified-id-with-current-corroboration",
+      "verification_method": "Supplied previously verified channel URL; YouTube indexed page title confirms name; Social Blade confirms handle. Direct /channel/ HTML returned HTTP 429; not bypassed."
+    },
+    {
+      "name": "Entagma",
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "handle": "@Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/@entagma",
+      "source_type": "commentary",
+      "match_hint": "Entagma",
+      "verification_sources": [
+        "https://www.youtube.com/@entagma"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "QuadSpinner",
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "handle": "@quadspinner",
+      "genres": [
+        "terrain"
+      ],
+      "source_url": "https://www.youtube.com/quadspinner/videos",
+      "source_type": "official",
+      "match_hint": "QuadSpinner",
+      "verification_sources": [
+        "https://www.youtube.com/quadspinner/videos"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "World Creator",
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "handle": "@worldcreator3d",
+      "genres": [
+        "terrain"
+      ],
+      "source_url": "https://www.youtube.com/@worldcreator3d",
+      "source_type": "official",
+      "match_hint": "World Creator",
+      "verification_sources": [
+        "https://www.youtube.com/@worldcreator3d"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Bethesda Softworks",
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "handle": "@bethesda",
+      "genres": [
+        "ESO"
+      ],
+      "source_url": "https://www.youtube.com/user/BethesdaSoftworks",
+      "source_type": "official",
+      "match_hint": "Previously approved user/BethesdaSoftworks resolves to @bethesda. Mixed-game publisher channel: only ESO-related videos qualify for ESO genre.",
+      "verification_sources": [
+        "https://www.youtube.com/user/BethesdaSoftworks"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Skinny Cheeks",
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "handle": "@skinnycheeks",
+      "genres": [
+        "ESO"
+      ],
+      "source_url": "https://www.youtube.com/@skinnycheeks",
+      "source_type": "commentary",
+      "match_hint": "Skinny Cheeks",
+      "verification_sources": [
+        "https://www.youtube.com/@skinnycheeks"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "ArzyeL Gaming",
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "handle": "@ArzyeLGaming",
+      "genres": [
+        "ESO"
+      ],
+      "source_url": "https://www.youtube.com/@ArzyeLGaming",
+      "source_type": "commentary",
+      "match_hint": "ArzyeL Gaming",
+      "verification_sources": [
+        "https://www.youtube.com/@ArzyeLGaming"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube HTML channelMetadataRenderer.externalId, title and vanityChannelUrl"
+    },
+    {
+      "name": "Hyperioxes",
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "handle": "@Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "source_url": "https://www.youtube.com/channel/UC_cQb7MSv-bq6LKthYiJzvw",
+      "source_type": "commentary",
+      "match_hint": "Hyperioxes; ESO builds and guides",
+      "verification_sources": [
+        "https://www.youtube.com/channel/UC_cQb7MSv-bq6LKthYiJzvw",
+        "https://hyperioxes.com/",
+        "https://vling.net/en/channel/UC_cQb7MSv-bq6LKthYiJzvw/channel-info"
+      ],
+      "verification_status": "prior-verified-id-with-current-corroboration",
+      "verification_method": "Supplied previously verified channel ID; official website links @Hyperioxes; indexed channel analytics corroborates supplied ID. Direct /channel/ HTML returned HTTP 429; not bypassed."
+    },
+    {
+      "name": "Hack The Minotaur",
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "handle": "@HackTheMinotaur",
+      "genres": [
+        "ESO"
+      ],
+      "source_url": "https://www.youtube.com/channel/UCHao6f96jnipzDPxPLaiouQ",
+      "source_type": "commentary",
+      "match_hint": "Hack The Minotaur; ESO builds and guides",
+      "verification_sources": [
+        "https://www.youtube.com/channel/UCHao6f96jnipzDPxPLaiouQ"
+      ],
+      "verification_status": "prior-verified-id-with-current-corroboration",
+      "verification_method": "Supplied previously verified channel URL; YouTube indexed result confirms exact channel title and @HackTheMinotaur handle. Direct /channel/ HTML returned HTTP 429; not bypassed."
+    }
+  ]
+}
