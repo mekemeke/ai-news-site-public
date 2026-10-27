@@ -2,6 +2,7 @@ import datetime as dt
 import io
 import json
 import os
+import socket
 from pathlib import Path
 import sys
 import tempfile
@@ -105,6 +106,124 @@ class Tests(unittest.TestCase):
             with self.assertRaisesRegex(v.SafeError, 'video_exceeds_20_minutes'):
                 v.collect(client, env('analyze'))
             self.assertEqual(client.calls, 1)
+
+    def test_analyze_wait_enabled_only_for_analysis(self):
+        for mode, expected in [('analyze', True), ('smoke', False), ('search', False)]:
+            answers = [metadata(), response()] if mode == 'analyze' else (
+                [{'items': []}, response()] if mode == 'smoke' else [{'items': []}])
+            client = v.Client()
+            with patch.object(client, 'request', side_effect=answers):
+                v.collect(client, env(mode))
+            self.assertEqual(client.analyze_mode, expected)
+
+    def test_timeout_caps_are_mode_and_endpoint_specific(self):
+        gemini = 'https://generativelanguage.googleapis.com/v1beta/interactions'
+        youtube = 'https://www.googleapis.com/youtube/v3/videos'
+        for mode, url, payload, expected in [
+            ('analyze', gemini, {}, 90), ('analyze', youtube, None, 35),
+            ('smoke', gemini, {}, 35), ('search', youtube, None, 35),
+            ('channels', youtube, None, 2), ('analyze', gemini, None, 35),
+            ('analyze', 'https://generativelanguage.googleapis.com/other', {}, 35)]:
+            client = v.Client(); client.started = 0
+            if mode == 'analyze': client.enable_analyze_wait()
+            if mode == 'channels': client.enable_channel_budget()
+            with patch.object(v.time, 'monotonic', return_value=0):
+                with patch.object(client.opener, 'open', return_value=io.BytesIO(b'{}')) as opener:
+                    client.request(url, 'fake', payload)
+            self.assertEqual(opener.call_args.kwargs['timeout'], expected)
+            self.assertEqual(client.calls, 1)
+
+    def test_timeout_is_clamped_to_remaining_100_seconds(self):
+        url = 'https://generativelanguage.googleapis.com/v1beta/interactions'
+        for elapsed, expected in [(30, 70), (99.5, 0.5)]:
+            client = v.Client(); client.started = 0; client.enable_analyze_wait()
+            with patch.object(v.time, 'monotonic', return_value=elapsed):
+                with patch.object(client.opener, 'open', return_value=io.BytesIO(b'{}')) as opener:
+                    client.request(url, 'fake', {})
+            self.assertEqual(opener.call_args.kwargs['timeout'], expected)
+        for mode in ['search', 'channels']:
+            client = v.Client(); client.started = 0
+            if mode == 'channels': client.enable_channel_budget()
+            with patch.object(v.time, 'monotonic', return_value=99.5):
+                with patch.object(client.opener, 'open', return_value=io.BytesIO(b'{}')) as opener:
+                    client.request('https://www.googleapis.com/youtube/v3/videos', 'fake')
+            self.assertEqual(opener.call_args.kwargs['timeout'], 0.5)
+
+    def test_deadline_before_admission_and_after_preparation_makes_no_request(self):
+        for clock in [[100], [101], [99, 100]]:
+            client = v.Client(); client.started = 0; client.enable_analyze_wait()
+            with patch.object(v.time, 'monotonic', side_effect=clock):
+                with patch.object(client.opener, 'open') as opener:
+                    with self.assertRaisesRegex(v.SafeError, '^deadline_exceeded$'):
+                        client.request('https://generativelanguage.googleapis.com/v1beta/interactions', 'fake', {})
+            opener.assert_not_called()
+            self.assertEqual(client.calls, 0)
+
+    def test_response_finishing_after_internal_deadline_is_rejected(self):
+        client = v.Client(); client.started = 0; client.enable_analyze_wait()
+        with patch.object(v.time, 'monotonic', side_effect=[20, 20, 100.1]):
+            with patch.object(client.opener, 'open', return_value=io.BytesIO(b'{}')) as opener:
+                with self.assertRaisesRegex(v.SafeError, '^deadline_exceeded$'):
+                    client.request('https://generativelanguage.googleapis.com/v1beta/interactions', 'fake', {})
+        self.assertEqual(opener.call_count, 1)
+        self.assertEqual(client.calls, 1)
+
+    def test_safe_timeout_json_transport_codes_no_retries_or_error_messages(self):
+        cases = [(TimeoutError('SENSITIVE'), 'request_timeout'),
+                 (socket.timeout('SENSITIVE'), 'request_timeout'),
+                 (urllib.error.URLError(TimeoutError('SENSITIVE')), 'request_timeout'),
+                 (urllib.error.URLError('SENSITIVE'), 'transport_error'),
+                 (OSError('SENSITIVE'), 'transport_error'),
+                 (urllib.error.HTTPError('https://invalid.test', 429, 'SENSITIVE', {}, None), 'http_429')]
+        for error, expected in cases:
+            client = v.Client(); client.enable_analyze_wait()
+            with patch.object(client.opener, 'open', side_effect=error) as opener:
+                with self.assertRaisesRegex(v.SafeError, '^' + expected + '$') as raised:
+                    client.request('https://generativelanguage.googleapis.com/v1beta/interactions', 'fake', {})
+            self.assertNotIn('SENSITIVE', str(raised.exception))
+            self.assertEqual(opener.call_count, 1)
+        for raw in [b'SENSITIVE not json', b'\xffSENSITIVE']:
+            client = v.Client()
+            with patch.object(client.opener, 'open', return_value=io.BytesIO(raw)) as opener:
+                with self.assertRaisesRegex(v.SafeError, '^invalid_json_response$'):
+                    client.request('https://www.googleapis.com/youtube/v3/videos', 'fake')
+            self.assertEqual(opener.call_count, 1)
+
+    def test_body_read_timeout_is_sanitized_and_not_retried(self):
+        class TimedOutBody(io.BytesIO):
+            def read(self, *args):
+                raise TimeoutError('SENSITIVE body')
+        client = v.Client(); client.enable_analyze_wait()
+        with patch.object(client.opener, 'open', return_value=TimedOutBody()) as opener:
+            with self.assertRaisesRegex(v.SafeError, '^request_timeout$'):
+                client.request('https://generativelanguage.googleapis.com/v1beta/interactions', 'fake', {})
+        self.assertEqual(opener.call_count, 1)
+
+    def test_channels_preserve_partial_stop_for_new_safe_transport_codes(self):
+        from test_video_channels import ChannelFake, collect
+        for code in ['request_timeout', 'invalid_json_response', 'transport_error', 'deadline_exceeded']:
+            client = ChannelFake()
+            def failed(*args, **kwargs):
+                client.calls += 1
+                raise v.SafeError(code)
+            client.request = failed
+            result = collect(client)
+            self.assertTrue(result['partial'])
+            self.assertEqual(result['stop_code'], code)
+            self.assertEqual(result['videos'], [])
+            self.assertEqual(client.calls, 1)
+
+    def test_safe_codes_reach_logs_without_provider_details(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[1]) as tmp:
+            target = Path(tmp) / 'result.json'; target.write_text('stale')
+            output = io.StringIO()
+            with patch.object(v, 'OUTPUT', target), patch.dict(os.environ, env('analyze')):
+                with patch.object(v.urllib.request.OpenerDirector, 'open', side_effect=TimeoutError('SENSITIVE secret')):
+                    with patch('sys.stdout', output): self.assertEqual(v.main(), 1)
+            self.assertFalse(target.exists())
+            self.assertIn('code=request_timeout', output.getvalue())
+            self.assertNotIn('SENSITIVE', output.getvalue())
+            self.assertNotIn(env()['YOUTUBE_API_KEY'], output.getvalue())
 
     def test_invalid_inputs_no_calls(self):
         for field, value in [('MODE', 'bash'), ('GENRE', '$(echo bad)'),

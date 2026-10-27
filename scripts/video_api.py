@@ -30,6 +30,8 @@ CHANNEL_REASONS = {"pagination_limit", "candidate_limit", "discovery_time_limit"
                    "request_stopped", "channel_unavailable", "details_unavailable",
                    "candidate_not_eligible", "output_size_limit"}
 CHANNEL_STOP_CODES = {"budget_exceeded", "transport_or_json_error", "response_too_large",
+                      "request_timeout", "invalid_json_response", "transport_error",
+                      "deadline_exceeded",
                       "redirect_blocked", "http_400", "http_401", "http_403", "http_404",
                       "http_408", "http_429", "http_500", "http_502", "http_503", "http_504"}
 
@@ -50,11 +52,17 @@ class Client:
         self.started = time.monotonic()
         self.opener = urllib.request.build_opener(NoRedirect)
         self.channel_mode = False
+        self.analyze_mode = False
 
     def enable_channel_budget(self):
         if self.calls:
             raise SafeError("budget_exceeded")
         self.channel_mode = True
+
+    def enable_analyze_wait(self):
+        if self.calls or self.channel_mode:
+            raise SafeError("budget_exceeded")
+        self.analyze_mode = True
 
     def request(self, url, key, payload=None):
         target = urllib.parse.urlsplit(url)
@@ -65,24 +73,43 @@ class Client:
                 or target.path not in {"/youtube/v3/channels", "/youtube/v3/playlistItems", "/youtube/v3/videos"}):
             raise SafeError("host_blocked")
         elapsed = time.monotonic() - self.started
-        if self.calls >= (CHANNEL_MAX_CALLS if self.channel_mode else 3) or elapsed >= 100:
+        if self.calls >= (CHANNEL_MAX_CALLS if self.channel_mode else 3):
             raise SafeError("budget_exceeded")
-        self.calls += 1
+        if elapsed >= 100:
+            raise SafeError("deadline_exceeded")
         data = None if payload is None else json.dumps(payload).encode()
         req = urllib.request.Request(url, data=data, headers={
             "X-Goog-Api-Key": key, "Content-Type": "application/json"})
+        analyze_request = (self.analyze_mode and target.hostname == "generativelanguage.googleapis.com"
+                           and target.path == "/v1beta/interactions" and payload is not None)
+        timeout_cap = 2 if self.channel_mode else (90 if analyze_request else 35)
+        remaining = 100 - (time.monotonic() - self.started)
+        if remaining <= 0:
+            raise SafeError("deadline_exceeded")
+        self.calls += 1
         try:
-            with self.opener.open(req, timeout=min(2, 100 - elapsed) if self.channel_mode else 35) as response:
+            # urllib's timeout is per blocking operation, not a whole-request wall-clock timer.
+            # Admission/post-checks use 100 s; the workflow's unchanged 120 s timeout is the hard stop.
+            with self.opener.open(req, timeout=min(timeout_cap, remaining)) as response:
                 raw = response.read(MAX_BYTES + 1)
             if len(raw) > MAX_BYTES:
                 raise SafeError("response_too_large")
-            return json.loads(raw)
+            parsed = json.loads(raw)
+            if time.monotonic() - self.started >= 100:
+                raise SafeError("deadline_exceeded")
+            return parsed
         except urllib.error.HTTPError as exc:
             raise SafeError("http_" + str(exc.code)) from None
+        except TimeoutError:
+            raise SafeError("request_timeout") from None
+        except urllib.error.URLError as exc:
+            raise SafeError("request_timeout" if isinstance(exc.reason, TimeoutError) else "transport_error") from None
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            raise SafeError("invalid_json_response") from None
         except SafeError:
             raise
         except Exception:
-            raise SafeError("transport_or_json_error") from None
+            raise SafeError("transport_error") from None
 
 
 def config(env):
@@ -124,6 +151,8 @@ def duration_seconds(value):
 
 def collect(client, env):
     mode, genre, video = config(env)
+    if mode == "analyze" and hasattr(client, "enable_analyze_wait"):
+        client.enable_analyze_wait()
     result = {"schema_version": 1, "mode": mode, "genre": genre,
               "created_at": dt.datetime.now(dt.timezone.utc).isoformat(),
               "run_id": env.get("GITHUB_RUN_ID", "local"), "videos": []}
