@@ -1,0 +1,15 @@
+/* ESO-only theme overrides. News keeps its existing theme implementation. */
+:is(.eso-sets-page,.eso-skills-page,.eso-reference-page) header{gap:12px;flex-wrap:wrap}
+:is(.eso-sets-page,.eso-skills-page,.eso-reference-page) .header-right{margin-left:auto;flex-shrink:0}
+/* The five grade labels and numbers retain their order; brighten them on dark paper. */
+.eso-sets-page.dark .set-quality-values,.eso-sets-page.dark .set-quality-legend,
+.eso-reference-page.dark .eso-ref-quality-inline,.eso-reference-page.dark .eso-ref-quality-legend,
+.eso-reference-page.dark .eso-ref-numeric{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.eso-sets-page.dark .set-quality-normal,.eso-reference-page.dark .eso-ref-quality-normal{color:#edf1e9}
+.eso-sets-page.dark .set-quality-fine,.eso-reference-page.dark .eso-ref-quality-fine{color:#91dda3}
+.eso-sets-page.dark .set-quality-superior,.eso-reference-page.dark .eso-ref-quality-superior{color:#9ecbff}
+.eso-sets-page.dark .set-quality-epic,.eso-reference-page.dark .eso-ref-quality-epic{color:#dfb3f2}
+.eso-sets-page.dark .set-quality-legendary,.eso-reference-page.dark .eso-ref-quality-legendary{color:#f2cf74}
+.eso-sets-page.dark .set-quality-divider,.eso-reference-page.dark .eso-ref-quality-separator,
+.eso-reference-page.dark .eso-ref-numeric-note{color:var(--muted)}
+.eso-reference-page.dark .eso-ref-quality-legend .eso-ref-quality-normal:before{background:#edf1e9;border-color:var(--muted)}
