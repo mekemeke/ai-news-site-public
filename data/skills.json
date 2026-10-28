@@ -4,7 +4,7 @@
     "version": "2026-10-28.normal-skills.v3",
     "verifiedAt": "2026-10-28",
     "coverageNote": "7クラス・各3系統の基本／変異／アルティメット／パッシブ462件を収録。説明は出典に基づく独自の日本語要約です。ライブ版U51との全件一致は未確認で、過去スナップショットを含みます。公式更新説明・出典内の既知の不一致がある8件は個別に注意を表示しています。 非クラス7系統・42スキルラインの500件を追加（基本・パッシブ296、変異168、属性派生36）。非クラスは2026-10-17の系統一覧データを参照し、現行ライブ版との全件一致は未確認。書記・チャンピオンは別一覧。 非クラスの網羅範囲は参照元の42スキルラインで、Vengeance専用構成など参照索引にない特殊構成は含みません。",
-    "iconNote": "既存クラス462件の実物アイコンを保持し、非クラスは名前・系統・種別の対応と利用条件を確認した261 / 500件に実物アイコンを掲載。未取得239件は「未掲載」と表示し、違う画像で代用しません。画像は同じサイト内に保存。",
+    "iconNote": "既存クラス462件の実物アイコンを保持し、非クラスは名前・系統・種別の対応と利用条件を確認した388 / 500件に実物アイコンを掲載。未取得112件は「未掲載」と表示し、違う画像で代用しません。画像は同じサイト内に保存。",
     "numericNote": "数値は出典に表示された参考値です。装備・能力値・CPで変動し、実キャラクターの値や最新ライブ版との一致は保証しません。未確認の消費・射程などは補完していません。",
     "localizationNote": "日本語名は公式日本語資料で表記を確認できたもののみ掲載し、各項目に名称の出典を保持しています。旧パッチ資料の表記を含み、現行日本語クライアントとの全件一致は未確認です。未確認の名称は英語のまま表示します。効果説明は独自の日本語要約です。 非クラスのスキル名は公式日本語表記未照合のため英名、系統名は案内用の日本語。",
     "gameUpdate": null,
@@ -14537,7 +14537,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/rapid-fire.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-rapid-fire.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-ballista",
@@ -14577,7 +14584,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/ballista.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-ballista.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-toxic-barrage",
@@ -14616,7 +14630,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/toxic-barrage.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-toxic-barrage.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-arrow-spray",
@@ -14655,7 +14676,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/arrow-spray.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-arrow-spray.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-acid-spray",
@@ -14694,7 +14722,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/acid-spray.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-acid-spray.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-bombard",
@@ -14734,7 +14769,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/bombard.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-bombard.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-poison-arrow",
@@ -14774,7 +14816,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/poison-arrow.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-poison-arrow.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-poison-injection",
@@ -14864,7 +14913,14 @@
       "browseTags": [
         "バフ（強）：残忍 / Major Brutality",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/venom-arrow.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-venom-arrow.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-scatter-shot",
@@ -14903,7 +14959,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/scatter-shot.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-scatter-shot.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-draining-shot",
@@ -14942,7 +15005,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/draining-shot.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-draining-shot.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-magnum-shot",
@@ -14981,7 +15051,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/magnum-shot.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-magnum-shot.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-snipe",
@@ -15020,7 +15097,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/snipe.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-snipe.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-focused-aim",
@@ -15156,7 +15240,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/volley.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-volley.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-arrow-barrage",
@@ -15197,7 +15288,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/arrow-barrage.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-arrow-barrage.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-endless-hail",
@@ -15238,7 +15336,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/endless-hail.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-endless-hail.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-accuracy",
@@ -15265,7 +15370,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/accuracy.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-accuracy.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-hasty-retreat",
@@ -15366,7 +15478,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/ranger.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-ranger.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-vinedusk-training",
@@ -15434,7 +15553,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/elemental-storm.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-elemental-storm.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-elemental-rage",
@@ -15633,7 +15759,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/eye-of-the-storm.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-eye-of-the-storm.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-fiery-rage",
@@ -15907,7 +16040,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/destructive-touch.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-destructive-touch.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-destructive-clench",
@@ -15996,7 +16136,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/destructive-reach.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-destructive-reach.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-flame-clench",
@@ -16471,7 +16618,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/force-pulse.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-force-pulse.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-impulse",
@@ -16513,7 +16667,14 @@
       "browseTags": [
         "バフ（弱）：防護 / Minor Protection",
         "マイナーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/impulse.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-impulse.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-elemental-ring",
@@ -17508,7 +17669,14 @@
         "デバフ（強）：侵害 / Major Breach",
         "メジャーデバフ"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/weakness-to-elements.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-weakness-to-elements.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-elemental-drain",
@@ -17858,7 +18026,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/rend.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-rend.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-thrive-in-chaos",
@@ -17898,7 +18073,14 @@
           "value": "前方扇状"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/thrive-in-chaos.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-thrive-in-chaos.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-blade-cloak",
@@ -17984,7 +18166,14 @@
       "browseTags": [
         "バフ（強）：回避 / Major Evasion",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/deadly-cloak.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-deadly-cloak.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-quick-cloak",
@@ -18074,7 +18263,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/flurry.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-flurry.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-bloodthirst",
@@ -18208,7 +18404,14 @@
       "browseTags": [
         "バフ（強）：残忍 / Major Brutality",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/hidden-blade.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-hidden-blade.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-flying-blade",
@@ -18250,7 +18453,14 @@
       "browseTags": [
         "バフ（強）：残忍 / Major Brutality",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/flying-blade.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-flying-blade.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-shrouded-daggers",
@@ -18293,7 +18503,14 @@
       "browseTags": [
         "バフ（強）：残忍 / Major Brutality",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shrouded-daggers.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-shrouded-daggers.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-twin-slashes",
@@ -18333,7 +18550,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/twin-slashes.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-twin-slashes.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-blood-craze",
@@ -18512,7 +18736,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/steel-tornado.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-steel-tornado.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-whirling-blades",
@@ -18841,7 +19072,14 @@
         "value": 135.0,
         "resource": "Ultimate"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/spell-wall.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-spell-wall.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-defensive-posture",
@@ -19549,7 +19787,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shielded-assault.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-shielded-assault.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-battlefield-mobility",
@@ -19759,7 +20004,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/panacea.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-panacea.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-life-giver",
@@ -19799,7 +20051,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/life-giver.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-life-giver.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-lights-champion",
@@ -19842,7 +20101,14 @@
       "browseTags": [
         "バフ（強）：Major Force",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/lights-champion.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-lights-champion.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-blessing-of-protection",
@@ -20028,7 +20294,14 @@
         "デバフ（弱）：体力吸収 / Minor Lifesteal",
         "マイナーデバフ"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/force-siphon.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-force-siphon.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-quick-siphon",
@@ -20065,7 +20338,14 @@
         "マイナーデバフ",
         "マイナーバフ"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/quick-siphon.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-quick-siphon.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-siphon-spirit",
@@ -20101,7 +20381,14 @@
         "デバフ（弱）：体力吸収 / Minor Lifesteal",
         "マイナーデバフ"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/siphon-spirit.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-siphon-spirit.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-grand-healing",
@@ -20379,7 +20666,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/rapid-regeneration.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-rapid-regeneration.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-steadfast-ward",
@@ -20466,7 +20760,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/healing-ward.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-healing-ward.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-ward-ally",
@@ -20506,7 +20807,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/ward-ally.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-ward-ally.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-absorb",
@@ -20722,7 +21030,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/berserker-strike.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-berserker-strike.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-berserker-rage",
@@ -20762,7 +21077,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/berserker-rage.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-berserker-rage.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-onslaught",
@@ -20848,7 +21170,14 @@
           "value": "前方扇状"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/cleave.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-cleave.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-brawler",
@@ -20979,7 +21308,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/critical-charge.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-critical-charge.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-critical-rush",
@@ -21018,7 +21354,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/critical-rush.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-critical-rush.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-stampede",
@@ -21102,7 +21445,14 @@
         "バフ（強）：残忍 / Major Brutality",
         "マイナーバフ",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/momentum.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-momentum.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-forward-momentum",
@@ -21138,7 +21488,14 @@
         "バフ（強）：残忍 / Major Brutality",
         "マイナーバフ",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/forward-momentum.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-forward-momentum.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-rally",
@@ -21228,7 +21585,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/reverse-slash.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-reverse-slash.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-executioner",
@@ -21314,7 +21678,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/reverse-slice.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-reverse-slice.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-uppercut",
@@ -21399,7 +21770,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/dizzying-swing.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-weapon-dizzying-swing.png",
+        "mappingSourceUrl": "https://esoacademy.com/weapon-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-weapon-wrecking-blow",
@@ -22089,7 +22467,14 @@
           "value": "自身"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/dampen-magic.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-armor-dampen-magic.png",
+        "mappingSourceUrl": "https://esoacademy.com/armor-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-armor-harness-magicka",
@@ -22128,7 +22513,14 @@
           "value": "自身"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/harness-magicka.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-armor-harness-magicka.png",
+        "mappingSourceUrl": "https://esoacademy.com/armor-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-armor-concentration",
@@ -22473,7 +22865,14 @@
         "バフ（強）：回避 / Major Evasion",
         "バフ（強）：迅速 / Major Expedition",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/elude.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-armor-elude.png",
+        "mappingSourceUrl": "https://esoacademy.com/armor-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-armor-shuffle",
@@ -22507,7 +22906,14 @@
       "browseTags": [
         "バフ（強）：回避 / Major Evasion",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shuffle.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-armor-shuffle.png",
+        "mappingSourceUrl": "https://esoacademy.com/armor-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-armor-agility",
@@ -22950,7 +23356,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/improved-hiding.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-improved-hiding.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-kickback",
@@ -22977,7 +23390,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/kickback.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-kickback.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-light-fingers",
@@ -23004,7 +23424,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/light-fingers.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-light-fingers.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-locksmith",
@@ -23031,7 +23458,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/locksmith.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-locksmith.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-trafficker",
@@ -23058,7 +23492,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/trafficker.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-trafficker.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-antiquarian-insight",
@@ -23313,7 +23754,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-strike.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-strike.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-shatter-soul",
@@ -23353,7 +23801,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shatter-soul.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-shatter-soul.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-soul-assault",
@@ -23392,7 +23847,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-assault.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-assault.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-soul-trap",
@@ -23432,7 +23894,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-trap.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-trap.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-consuming-trap",
@@ -23520,7 +23989,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-splitting-trap.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-splitting-trap.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-soul-lock",
@@ -23547,7 +24023,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-lock.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-lock.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-soul-shatter",
@@ -23580,7 +24063,14 @@
           "value": "自身"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-shatter.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-shatter.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-soul-summons",
@@ -23607,7 +24097,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/soul-summons.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-soul-summons.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-blood-scion",
@@ -24941,7 +25438,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/pounce.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-pounce.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-brutal-pounce",
@@ -24981,7 +25485,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/brutal-pounce.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-brutal-pounce.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-feral-pounce",
@@ -25020,7 +25531,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/feral-pounce.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-world-feral-pounce.png",
+        "mappingSourceUrl": "https://esoacademy.com/world-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-world-rending-claws",
@@ -25522,7 +26040,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/blade-of-woe.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-blade-of-woe.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-padomaic-sprint",
@@ -25552,7 +26077,14 @@
       "browseTags": [
         "バフ（強）：迅速 / Major Expedition",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/padomaic-sprint.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-padomaic-sprint.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-scales-of-pitiless-justice",
@@ -25579,7 +26111,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/scales-of-pitiless-justice.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-scales-of-pitiless-justice.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-shadow-rider",
@@ -25606,7 +26145,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shadow-rider.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-shadow-rider.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-shadowy-supplier",
@@ -25633,7 +26179,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shadowy-supplier.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-shadowy-supplier.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-spectral-assassin",
@@ -25660,7 +26213,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/spectral-assassin.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-spectral-assassin.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-dawnbreaker",
@@ -25700,7 +26260,14 @@
           "value": "前方扇状"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/dawnbreaker.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-dawnbreaker.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-dawnbreaker-of-smiting",
@@ -25740,7 +26307,14 @@
           "value": "前方扇状"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/dawnbreaker-of-smiting.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-dawnbreaker-of-smiting.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-flawless-dawnbreaker",
@@ -25822,7 +26396,14 @@
         "バフ（弱）：耐久 / Minor Endurance",
         "バフ（弱）：防護 / Minor Protection",
         "マイナーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/circle-of-protection.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-circle-of-protection.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-ring-of-preservation",
@@ -26072,7 +26653,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/silver-bolts.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-silver-bolts.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-silver-leash",
@@ -26158,7 +26746,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/silver-shards.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-silver-shards.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-trap-beast",
@@ -26302,7 +26897,14 @@
       "browseTags": [
         "バフ（弱）：Minor Force",
         "マイナーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/lightweight-beast-trap.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-lightweight-beast-trap.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-banish-the-wicked",
@@ -26518,7 +27120,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/meteor.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-meteor.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-ice-comet",
@@ -26652,7 +27261,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/entropy.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-entropy.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-degeneration",
@@ -26742,7 +27358,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/structured-entropy.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-structured-entropy.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-equilibrium",
@@ -26773,7 +27396,14 @@
         "value": 6000.0,
         "resource": "Health"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/equilibrium.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-equilibrium.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-balance",
@@ -26893,7 +27523,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/fire-rune.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-fire-rune.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-scalding-rune",
@@ -26982,7 +27619,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/volcanic-rune.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-volcanic-rune.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-magelight",
@@ -27098,7 +27742,14 @@
       "browseTags": [
         "バフ（強）：獰猛 / Major Savagery",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/radiant-magelight.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-radiant-magelight.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-everlasting-magic",
@@ -28254,7 +28905,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/clemency.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-clemency.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-finders-keepers",
@@ -28281,7 +28939,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/finders-keepers.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-finders-keepers.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-haggling",
@@ -28308,7 +28973,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/haggling.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-haggling.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-swiftly-forgotten",
@@ -28335,7 +29007,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/swiftly-forgotten.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-swiftly-forgotten.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-timely-escape",
@@ -28362,7 +29041,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/timely-escape.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-timely-escape.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-veil-of-shadows",
@@ -28389,7 +29075,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/veil-of-shadows.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-veil-of-shadows.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-blood-altar",
@@ -28423,7 +29116,14 @@
       "browseTags": [
         "デバフ（弱）：体力吸収 / Minor Lifesteal",
         "マイナーデバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/blood-altar.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-blood-altar.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-overflowing-altar",
@@ -28498,7 +29198,14 @@
       "browseTags": [
         "デバフ（弱）：体力吸収 / Minor Lifesteal",
         "マイナーデバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/sanguine-altar.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-sanguine-altar.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-bone-shield",
@@ -28586,7 +29293,14 @@
       "browseTags": [
         "バフ（強）：生命力 / Major Vitality",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/bone-surge.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-bone-surge.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-spiked-bone-shield",
@@ -28625,7 +29339,14 @@
           "value": "自身"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/spiked-bone-shield.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-spiked-bone-shield.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-inner-fire",
@@ -29001,7 +29722,14 @@
       ],
       "browseTags": [
         "ペット"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/shadow-silk.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-shadow-silk.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-tangling-webs",
@@ -29044,7 +29772,14 @@
       ],
       "browseTags": [
         "ペット"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/tangling-webs.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-guild-tangling-webs.png",
+        "mappingSourceUrl": "https://esoacademy.com/guild-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-undaunted-command",
@@ -29155,7 +29890,14 @@
         "value": 250.0,
         "resource": "Ultimate"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/war-horn.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-war-horn.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-aggressive-horn",
@@ -29227,7 +29969,14 @@
         "value": 250.0,
         "resource": "Ultimate"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/sturdy-horn.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-sturdy-horn.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-caltrops",
@@ -29268,7 +30017,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/caltrops.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-caltrops.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-anti-cavalry-caltrops",
@@ -29309,7 +30065,14 @@
           "value": "地点"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/anti-cavalry-caltrops.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-anti-cavalry-caltrops.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-razor-caltrops",
@@ -29401,7 +30164,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/magicka-detonation.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-magicka-detonation.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-inevitable-detonation",
@@ -29442,7 +30212,14 @@
           "value": "敵"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/inevitable-detonation.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-inevitable-detonation.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-proximity-detonation",
@@ -29605,7 +30382,14 @@
       "browseTags": [
         "バフ（強）：迅速 / Major Expedition",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/retreating-maneuver.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-retreating-maneuver.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-vigor",
@@ -29645,7 +30429,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/vigor.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-vigor.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-echoing-vigor",
@@ -29768,7 +30559,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/combat-frenzy.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-combat-frenzy.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-continuous-attack",
@@ -29829,7 +30627,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/reach.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-reach.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-authority",
@@ -30004,7 +30809,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/barrier.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-barrier.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-replenishing-barrier",
@@ -30044,7 +30856,14 @@
           "value": "範囲"
         }
       ],
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/replenishing-barrier.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-replenishing-barrier.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-reviving-barrier",
@@ -30204,7 +31023,14 @@
       "browseTags": [
         "バフ（弱）：Minor Force",
         "マイナーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/stalwart-guard.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-stalwart-guard.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-purge",
@@ -30273,7 +31099,14 @@
         "value": 7830.0,
         "resource": "Magicka"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/cleanse.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-cleanse.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-efficient-purge",
@@ -30420,7 +31253,14 @@
       "browseTags": [
         "バフ（強）：防護 / Major Protection",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/lingering-flare.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-lingering-flare.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-siege-shield",
@@ -30527,7 +31367,14 @@
         "value": 8100.0,
         "resource": "Magicka"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/siege-weapon-shield.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-alliance-siege-weapon-shield.png",
+        "mappingSourceUrl": "https://esoacademy.com/alliance-war-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-alliance-battle-resurrection",
@@ -32399,7 +33246,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/crafting/blacksmithing/Keen-Eye-Ore.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-craft-keen-eye-ore.png",
+        "mappingSourceUrl": "https://esoacademy.com/blacksmithing/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-craft-metal-extraction",
@@ -32426,7 +33280,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/crafting/blacksmithing/Metal-Extraction.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-craft-metal-extraction.png",
+        "mappingSourceUrl": "https://esoacademy.com/blacksmithing/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-craft-metallurgy",
@@ -32453,7 +33314,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/crafting/blacksmithing/Metallurgy.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-craft-metallurgy.png",
+        "mappingSourceUrl": "https://esoacademy.com/blacksmithing/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-craft-metalworking",
@@ -32480,7 +33348,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/crafting/blacksmithing/Metalworking.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-craft-metalworking.png",
+        "mappingSourceUrl": "https://esoacademy.com/blacksmithing/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-craft-miner-hireling",
@@ -32507,7 +33382,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/crafting/blacksmithing/Miner-Hireling.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-craft-miner-hireling.png",
+        "mappingSourceUrl": "https://esoacademy.com/blacksmithing/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-craft-temper-expertise",
@@ -32534,7 +33416,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/crafting/blacksmithing/Temper-Expertise.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public skill reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/academy-nonclass-craft-temper-expertise.png",
+        "mappingSourceUrl": "https://esoacademy.com/blacksmithing/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-craft-keen-eye-cloth",
