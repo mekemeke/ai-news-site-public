@@ -56,8 +56,8 @@ test('49 effect tags form four collapsed groups, escaped labels and encoded URLs
   assert.equal((html.match(/data-effect=/g)||[]).length,53);
   assert.ok(!html.includes('<details open'));
   for(const [group,tag] of groups) {
-    assert.ok(html.includes(`href="#?category=${encodeURIComponent(group)}"`));
-    assert.ok(html.includes(`href="#?category=${encodeURIComponent(tag)}"`));
+    assert.ok(html.includes(`href="#?effect=${encodeURIComponent(group)}"`));
+    assert.ok(html.includes(`href="#?effect=${encodeURIComponent(tag)}"`));
     assert.ok(node('set-category').innerHTML.includes(tag));
   }
   const unsafe='バフ（強）：<img src=x onerror="bad"> & テスト';
@@ -73,15 +73,16 @@ test('effect links preserve search, select synchronization, URL restoration and 
   const link={dataset:{effect:tag}, attrs:{}, setAttribute(k,v){this.attrs[k]=v;}, removeAttribute(k){delete this.attrs[k];},closest(){return detail;}};
   node('effect-filters').links=[link];
   node('set-search').value='Fixture 0'; api.filter();
-  assert.equal(link.attrs.href, '#?category='+encodeURIComponent(tag)+'&q=Fixture%200');
+  assert.equal(new URLSearchParams(link.attrs.href.slice(2)).get('effect'),tag);
+  assert.equal(new URLSearchParams(link.attrs.href.slice(2)).get('q'),'Fixture 0');
   context.location.hash=link.attrs.href; api.route();
-  assert.equal(node('set-category').value,tag); assert.equal(node('set-search').value,'Fixture 0');
+  assert.equal(node('set-effect').value,tag); assert.equal(node('set-search').value,'Fixture 0');
   assert.equal((node('sets').innerHTML.match(/<article /g)||[]).length,1);
   assert.equal(link.attrs['aria-current'],'true'); assert.equal(detail.open,true);
   const back=context.location.hash;
   context.location.hash='#set/fixture-0'; api.route();
-  assert.ok(node('set-detail').innerHTML.includes('category='));
-  context.location.hash=back; api.route(); assert.equal(node('set-category').value,tag);
+  assert.ok(node('set-detail').innerHTML.includes('effect='));
+  context.location.hash=back; api.route(); assert.equal(node('set-effect').value,tag);
   node('set-reset').events.click(); assert.equal(node('set-category').value,''); assert.equal(node('set-search').value,'');
   assert.equal(link.attrs['aria-current'],undefined);
   for(const [group] of groups) {

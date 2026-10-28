@@ -16,7 +16,7 @@
   const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase('ja');
   let data, ready = false, loading = false;
   let categories = new Map(), classes = new Map(), trees = new Map(), skills = new Map();
-  let state = {categoryId:'',classId:'', treeId:'', q:'', type:'', form:'', effect:''};
+  let state = {categoryId:'',classId:'', treeId:'', q:'', type:'', form:'', effect:'', effect2:''};
 
   const ownerId = item => item.classId || item.categoryId;
   const owner = item => item.classId ? classes.get(item.classId) : categories.get(item.categoryId);
@@ -83,7 +83,7 @@
     const classId = (!categoryId || categoryId === 'class') && classes.has(params.get('class')) ? params.get('class') : '';
     const treeOwner = classId ? `class/${classId}` : categories.has(categoryId) ? `category/${categoryId}` : '';
     const treeId = treeOwner && trees.has(`${treeOwner}/${params.get('tree')}`) ? params.get('tree') : '';
-    return {categoryId, classId, treeId, q:params.get('q') || '', type:Object.hasOwn(types, params.get('type')) ? params.get('type') : '', form:['base','morph','variant'].includes(params.get('form')) ? params.get('form') : '', effect:effectTags.has(params.get('effect')) ? params.get('effect') : ''};
+    return {categoryId, classId, treeId, q:params.get('q') || '', type:Object.hasOwn(types, params.get('type')) ? params.get('type') : '', form:['base','morph','variant'].includes(params.get('form')) ? params.get('form') : '', effect:effectTags.has(params.get('effect')) ? params.get('effect') : '', effect2:effectTags.has(params.get('effect2')) ? params.get('effect2') : ''};
   }
   function paramsFor(next = state) {
     const params = new URLSearchParams();
@@ -94,6 +94,7 @@
     if (next.type) params.set('type', next.type);
     if (next.form) params.set('form', next.form);
     if (next.effect) params.set('effect', next.effect);
+    if (next.effect2) params.set('effect2', next.effect2);
     return params.toString();
   }
   function listURL(next = state) { const query = paramsFor(next); return query ? `#?${query}` : '#'; }
@@ -145,13 +146,15 @@
   }
   function renderEffectFilters() {
     const link = (tag, label = tag) => chip(label, listURL({...state,effect:tag}), state.effect === tag);
-    $('skills-combat-effects').innerHTML = link('', 'すべての効果・攻撃・ペット') + combatEffects.map(tag => effectTags.has(tag) ? link(tag, tag === 'ペット' ? 'ペット（召喚獣・関連効果）' : tag) : `<span class="eso-skills-effect-unavailable">${escapeHTML(tag)}（収録なし）</span>`).join('');
+    $('skills-combat-effects').innerHTML = link('', '条件1：すべての効果・攻撃・ペット') + combatEffects.map(tag => effectTags.has(tag) ? link(tag, tag === 'ペット' ? 'ペット（召喚獣・関連効果）' : tag) : `<span class="eso-skills-effect-unavailable">${escapeHTML(tag)}（収録なし）</span>`).join('');
     $('skills-effect-groups').innerHTML = effectGroups.map(([group, prefix]) => {
       const effects = [...effectTags].filter(tag => tag.startsWith(prefix) && tag.length > prefix.length).sort((a,b) => a.localeCompare(b,'ja'));
       const selected = state.effect === group || effects.includes(state.effect);
       return `<details data-effect-group="${escapeHTML(group)}"${selected || openEffectGroups.has(group) ? ' open' : ''}${selected ? ' class="eso-skills-effect-selected"' : ''}><summary>${escapeHTML(group)} <small>（${effects.length}種類）</small></summary><nav class="eso-skills-chips" aria-label="${escapeHTML(group)}で絞り込み">${effectTags.has(group) ? link(group, `${group}すべて`) : '<span class="eso-skills-effect-unavailable">収録なし</span>'}${effects.map(tag => link(tag)).join('')}</nav></details>`;
     }).join('');
-    $('skills-effect-selection').textContent = `選択中：${state.effect || 'すべての効果・攻撃・ペット'}`;
+    $('skills-effect').value = state.effect;
+    $('skills-effect2').value = state.effect2;
+    $('skills-effect-selection').textContent = `効果条件1：${state.effect || 'すべての効果'} ／ 効果条件2：${state.effect2 || 'すべての効果'}（AND）`;
   }
   function renderFilters() {
     $('skills-categories').innerHTML = chip('すべての系統', listURL({...state,categoryId:'',classId:'',treeId:''}), !state.categoryId && !state.classId) + chip('クラス', listURL({...state,categoryId:'class',classId:'',treeId:''}), state.categoryId === 'class' || !!state.classId) + [...categories.values()].map(item => chip(title(item), listURL({...state,categoryId:item.id,classId:'',treeId:''}), state.categoryId === item.id, item.nameEn)).join('');
@@ -173,7 +176,7 @@
     if (state.classId && item.classId !== state.classId) return false;
     if (state.treeId && item.treeId !== state.treeId) return false;
     if (state.type && item.type !== state.type) return false;
-    if (state.effect && !(item.browseTags || []).includes(state.effect)) return false;
+    if (![state.effect,state.effect2].filter(Boolean).every(effect => (item.browseTags || []).includes(effect))) return false;
     if (state.form === 'base' && (item.baseSkillId || item.variantOfSkillId) || state.form === 'morph' && !item.baseSkillId || state.form === 'variant' && !item.variantOfSkillId) return false;
     const base = skills.get(familyId(item));
     const cl = owner(item), tree = trees.get(treeKey(item));
@@ -248,12 +251,21 @@
     history.replaceState(null, '', listURL());
     renderList();
   }
+  function changeEffects() {
+    if (!ready) return;
+    state = {...state,effect:$('skills-effect').value,effect2:$('skills-effect2').value};
+    const url = listURL();
+    if (location.hash !== url) history.pushState(null, '', url);
+    renderList();
+  }
+  $('skills-effect').addEventListener('change', changeEffects);
+  $('skills-effect2').addEventListener('change', changeEffects);
   $('skills-search').addEventListener('input', filter);
   $('skills-type').addEventListener('change', filter);
   $('skills-form').addEventListener('change', filter);
   $('skills-reset').addEventListener('click', () => {
     if (!ready) return;
-    state = {categoryId:'',classId:'',treeId:'',q:'',type:'',form:'',effect:''};
+    state = {categoryId:'',classId:'',treeId:'',q:'',type:'',form:'',effect:'', effect2:''};
     openEffectGroups.clear();
     history.replaceState(null, '', '#');
     renderList();
@@ -266,11 +278,12 @@
   }, true);
   $('skills-retry').addEventListener('click', load);
   window.addEventListener('hashchange', route);
+  window.addEventListener('popstate', route);
   async function load() {
     if (loading) return;
     loading = true;
     ready = false;
-    for (const id of ['skills-search','skills-type','skills-form','skills-reset']) $(id).disabled = true;
+    for (const id of ['skills-search','skills-type','skills-form','skills-effect','skills-effect2','skills-reset']) $(id).disabled = true;
     $('skills-retry').hidden = true;
     $('skills-notice').textContent = 'データを読み込み中…';
     try {
@@ -280,8 +293,11 @@
       const maps = validate(value);
       data = value; categories = maps.categories; classes = maps.classes; trees = maps.trees; skills = maps.skills;
       effectTags = new Set(data.skills.flatMap(item => item.browseTags || []));
+      const effectOptions = '<option value="">すべての効果</option>' + [...effectTags].sort((a,b) => a.localeCompare(b,'ja')).map(tag => `<option value="${escapeHTML(tag)}">${escapeHTML(tag)}</option>`).join('');
+      $('skills-effect').innerHTML = effectOptions;
+      $('skills-effect2').innerHTML = effectOptions;
       renderSources();
-      for (const id of ['skills-search','skills-type','skills-form','skills-reset']) $(id).disabled = false;
+      for (const id of ['skills-search','skills-type','skills-form','skills-effect','skills-effect2','skills-reset']) $(id).disabled = false;
       $('skills-notice').textContent = '';
       ready = true;
       route();

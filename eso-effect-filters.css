@@ -1,0 +1,6 @@
+/* Shared only by the equipment-set and normal-skill filter controls. */
+.eso-sets-page .eso-dual-effects,.eso-skills-page .eso-dual-effects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+.eso-sets-page .eso-dual-effects label,.eso-skills-page .eso-dual-effects label{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:13px;font-weight:700}
+.eso-sets-page .eso-dual-effects select,.eso-skills-page .eso-dual-effects select{width:100%;min-width:0;max-width:100%;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:inherit}
+.eso-sets-page #set-effect-selection{overflow-wrap:anywhere}
+@media(max-width:600px){.eso-sets-page .eso-dual-effects,.eso-skills-page .eso-dual-effects{grid-template-columns:minmax(0,1fr)}.eso-sets-page .eso-dual-effects select,.eso-skills-page .eso-dual-effects select{font-size:16px}}

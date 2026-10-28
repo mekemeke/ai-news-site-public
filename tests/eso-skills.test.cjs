@@ -189,7 +189,7 @@ test('single effect combines with class/tree/search/type/form without inheriting
   for(const effect of [...new Set(value.skills.flatMap(item=>item.browseTags))]) {
     context.location.hash='#?effect='+encodeURIComponent(effect);api.route();
     assert.equal(count(node('skills-list')),value.skills.filter(item=>item.browseTags.includes(effect)).length,effect);
-    assert.equal(node('skills-effect-selection').textContent,'選択中：'+effect);
+    assert.equal(node('skills-effect-selection').textContent,'効果条件1：'+effect+' ／ 効果条件2：すべての効果（AND）');
     assert.match(node('skills-count').textContent,new RegExp('収録データ内：'+count(node('skills-list'))+' / 36 件'));
   }
   const effect='バフ（強）：残忍 / Major Brutality';
@@ -212,11 +212,11 @@ test('effect URLs survive detail/family/back/forward/reload and clear only on ex
   context.location.hash='#skill/class-0-base?'+query;windowEvents.hashchange();
   assert.ok(node('skill-detail').innerHTML.includes('href="#?'+query.replace(/&/g,'&amp;')+'"'));
   assert.ok(node('skill-detail').innerHTML.includes('class-0-morph-a?'+query.replace(/&/g,'&amp;')));
-  context.location.hash='#?'+query;windowEvents.hashchange();assert.equal(count(node('skills-list')),2);assert.equal(node('skills-effect-selection').textContent,'選択中：メジャーバフ');
+  context.location.hash='#?'+query;windowEvents.hashchange();assert.equal(count(node('skills-list')),2);assert.equal(node('skills-effect-selection').textContent,'効果条件1：メジャーバフ ／ 効果条件2：すべての効果（AND）');
   context.location.hash='#skill/class-0-base?'+query;windowEvents.hashchange();assert.equal(node('skills-home').hidden,true);
   const direct=harness(value);direct.context.location.hash=context.location.hash;await direct.api.load();assert.ok(direct.node('skill-detail').innerHTML.includes('effect='+encodeURIComponent('メジャーバフ')));
   context.location.hash='#?'+query;windowEvents.hashchange();node('skills-reset').events.click();
-  assert.equal(count(node('skills-list')),36);assert.equal(context.location.hash,'#');assert.equal(node('skills-effect-selection').textContent,'選択中：すべての効果・攻撃・ペット');
+  assert.equal(count(node('skills-list')),36);assert.equal(context.location.hash,'#');assert.equal(node('skills-effect-selection').textContent,'効果条件1：すべての効果 ／ 効果条件2：すべての効果（AND）');
   context.location.hash='#?effect=not-collected';windowEvents.hashchange();assert.equal(count(node('skills-list')),36);
 });
 test('effect panel retains manual disclosure state and unsafe source tags cannot create HTML or script URLs',async()=>{
@@ -229,7 +229,7 @@ test('effect panel retains manual disclosure state and unsafe source tags cannot
   assert.equal(count(node('skills-list')),1);assert.ok(!node('skills-effect-groups').innerHTML.includes('<img'));
   assert.match(node('skills-effect-groups').innerHTML,/&lt;img src=x onerror=&quot;bad\(\)&quot;&gt;/);
   assert.ok(!node('skills-effect-groups').innerHTML.includes('href="javascript:'));
-  assert.equal(node('skills-effect-selection').textContent,'選択中：'+evil);
+  assert.equal(node('skills-effect-selection').textContent,'効果条件1：'+evil+' ／ 効果条件2：すべての効果（AND）');
   node('skills-reset').events.click();assert.ok(!node('skills-effect-groups').innerHTML.includes(' open'));
 });
 test('malformed effect-tag schemas fail safe and retry accepts a valid tagged dataset',async()=>{

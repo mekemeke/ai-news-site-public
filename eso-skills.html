@@ -9,7 +9,8 @@
   <title>スキル | ESOデータベース</title>
   <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
   <link rel="stylesheet" href="./eso-skills.css?v=20261028-nonclass1">
-  <script src="./eso-skills.js?v=20261028-nonclass1" defer></script>
+  <link rel="stylesheet" href="./eso-effect-filters.css?v=20261028-dual1">
+  <script src="./eso-skills.js?v=20261028-dual1" defer></script>
   <link rel="stylesheet" href="./eso-theme.css?v=20261027-dark1">
   <script src="./eso-theme.js?v=20261027-dark1" defer></script>
 </head>
@@ -27,8 +28,14 @@
       <section class="eso-skills-filter-section" aria-labelledby="skills-tree-title"><h2 id="skills-tree-title"><span>03</span> スキルツリー / ライン</h2><p id="skills-tree-hint" class="eso-skills-muted">クラスまたは系統を選ぶと、スキルツリー / ラインを選べます。</p><nav id="skills-trees" class="eso-skills-chips" aria-label="スキルツリーを選択"></nav><div id="skills-mastery" hidden><p class="eso-skills-muted">Class Mastery（通常の3ツリーとは別枠）</p><nav id="skills-mastery-trees" class="eso-skills-chips" aria-label="Class Masteryを選択"></nav></div></section>
       <section class="eso-skills-filter-section eso-skills-effects" aria-labelledby="skills-effect-title">
         <h2 id="skills-effect-title"><span>04</span> 効果・攻撃・ペット</h2>
-        <p id="skills-effect-help" class="eso-skills-muted">効果・軽攻撃・重攻撃・ペットから1つを選べます。系統・クラス・ツリー / ライン・種類・検索と組み合わせて、すべての条件に合うスキルを表示します。グループの種類数は全収録データ内の個別効果数です。</p>
+        <p id="skills-effect-help" class="eso-skills-muted">効果・軽攻撃・重攻撃・ペットから2つの条件を選べます。系統・クラス・ツリー / ライン・種類・検索と組み合わせて、すべての条件に合うスキルを表示します。グループの種類数は全収録データ内の個別効果数です。</p>
         <p class="eso-skills-muted">確認した参照資料の効果本文に基づく分類で、条件付き・自己付与も含みます。統合効果名は公式U51事前説明に合わせ、魔術は残忍、予言は獰猛として分類しています。軽攻撃・重攻撃は強化や発動条件などの関連効果、ペットは召喚獣と明示的なペット連動です。召喚を演出に使うだけの攻撃は含めません。各召喚獣がすべてのペット関連セットの発動条件を満たすとは限りません。資料は複数版を含み、現行仕様との一致は未確認です。未分類はゲーム内に該当効果がないという意味ではありません。</p>
+      <div class="eso-dual-effects" role="group" aria-label="2つの効果条件" aria-describedby="skills-dual-effect-help">
+        <label>効果条件1<select id="skills-effect" disabled><option value="">すべての効果</option></select></label>
+        <label>効果条件2（さらに絞り込み）<select id="skills-effect2" disabled><option value="">すべての効果</option></select></label>
+      </div>
+      <p id="skills-dual-effect-help" class="database-note">条件1で絞り込んだ結果から、条件2にも合うものだけを表示します（AND）。片方が「すべての効果」なら、もう片方の条件だけで絞り込みます。</p>
+        <p class="eso-skills-muted">下の効果リンクは条件1を変更します。条件2・系統・検索などは維持します。</p>
         <nav id="skills-combat-effects" class="eso-skills-chips" aria-label="すべての効果・軽攻撃・重攻撃・ペットで絞り込み" aria-describedby="skills-effect-help"></nav>
         <div id="skills-effect-groups" class="eso-skills-effect-groups"></div>
         <p id="skills-effect-selection" class="eso-skills-muted"></p>

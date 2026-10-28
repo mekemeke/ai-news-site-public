@@ -2,12 +2,17 @@
 (() => {
   const $ = id => document.getElementById(id);
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
-  let sets = [], ready = false;
+  let sets = [], ready = false, effectTags = new Set();
   const query = () => new URLSearchParams(location.hash.startsWith('#?') ? location.hash.slice(2) : '');
-  const listURL = () => {
+  const listURL = (overrides = {}) => {
     const params = new URLSearchParams();
     if ($('set-search').value) params.set('q', $('set-search').value);
     if ($('set-category').value) params.set('category', $('set-category').value);
+    if ($('set-effect').value) params.set('effect', $('set-effect').value);
+    if ($('set-effect2').value) params.set('effect2', $('set-effect2').value);
+    for (const [key,value] of Object.entries(overrides)) {
+      if (value) params.set(key,value); else params.delete(key);
+    }
     return params.size ? '#?' + params : '#';
   };
   function icon(item) {
@@ -136,12 +141,12 @@
   }
 
   function renderEffectFilters() {
-    const tags = new Set(sets.flatMap(item => item.browseTags || []));
+    const tags = effectTags;
     const groups = [
       ['メジャーバフ', 'バフ（強）：'], ['マイナーバフ', 'バフ（弱）：'],
       ['メジャーデバフ', 'デバフ（強）：'], ['マイナーデバフ', 'デバフ（弱）：']
     ];
-    const link = tag => `<a data-effect="${escapeHTML(tag)}" href="#?category=${encodeURIComponent(tag)}">${escapeHTML(tag)}</a>`;
+    const link = tag => `<a data-effect="${escapeHTML(tag)}" href="#?effect=${encodeURIComponent(tag)}">${escapeHTML(tag)}</a>`;
     $('effect-filters').innerHTML = groups.map(([group, prefix]) => {
       const effects = [...tags].filter(tag => tag.startsWith(prefix) && tag.length > prefix.length).sort((a,b) => a.localeCompare(b,'ja'));
       if (!tags.has(group) && !effects.length) return '';
@@ -150,10 +155,13 @@
     $('effect-filter-section').hidden = !$('effect-filters').innerHTML;
   }
   function syncEffectFilters() {
+    for (const link of $('sets-home').querySelectorAll('a[data-set-category], a[data-set-effect]')) {
+      link.setAttribute('href', link.dataset.setEffect ? listURL({effect:link.dataset.setEffect}) : listURL({category:link.dataset.setCategory}));
+    }
     for (const link of $('effect-filters').querySelectorAll('a[data-effect]')) {
       const tag = link.dataset.effect;
-      link.setAttribute('href', '#?category=' + encodeURIComponent(tag) + ($('set-search').value ? '&q=' + encodeURIComponent($('set-search').value) : ''));
-      if (tag === $('set-category').value) {
+      link.setAttribute('href', listURL({effect:tag}));
+      if (tag === $('set-effect').value) {
         link.setAttribute('aria-current', 'true');
         link.closest('details').open = true;
       } else link.removeAttribute('aria-current');
@@ -162,20 +170,25 @@
   function renderList() {
     const term = $('set-search').value.trim().toLocaleLowerCase('ja');
     const category = $('set-category').value;
+    const effects = [$('set-effect').value, $('set-effect2').value].filter(Boolean);
+    $('set-effect-selection').textContent = `効果条件1：${$('set-effect').value || 'すべての効果'} ／ 効果条件2：${$('set-effect2').value || 'すべての効果'}（AND）`;
     syncEffectFilters();
-    const filtered = sets.filter(item => (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
+    const filtered = sets.filter(item => effects.every(effect => (item.browseTags || []).includes(effect)) && (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
     $('set-count').textContent = `収録データ内：${filtered.length} / ${sets.length} セット系列`;
-    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${renderEffects(item)}</div>${qualityBlock(item)}${verification(item)}</article>`).join('') || `<p class="empty">${term || category ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
+    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}${escapeHTML(listURL().slice(1))}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${renderEffects(item)}</div>${qualityBlock(item)}${verification(item)}</article>`).join('') || `<p class="empty">${term || category || effects.length ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
   }
   function route() {
     if (!ready) return;
-    const match = location.hash.match(/^#set\/(.*)$/);
+    const match = location.hash.match(/^#set\/([^?]*)(?:\?(.*))?$/);
     $('sets-home').hidden = !!match;
     $('set-detail').hidden = !match;
-    if (!match) {
-      const params = query();
+    if (!match || match[2] !== undefined) {
+      const params = match ? new URLSearchParams(match[2]) : query();
       $('set-search').value = params.get('q') || '';
       $('set-category').value = params.get('category') || '';
+      for (const key of ['effect','effect2']) $('set-' + key).value = effectTags.has(params.get(key)) ? params.get(key) : '';
+    }
+    if (!match) {
       document.title = '装備セット | ESOデータベース';
       renderList();
       return;
@@ -202,15 +215,26 @@
     history.replaceState(null, '', listURL());
     renderList();
   }
+  function changeEffects() {
+    if (!ready) return;
+    const url = listURL();
+    if (location.hash !== url) history.pushState(null, '', url);
+    renderList();
+  }
+  $('set-effect').addEventListener('change', changeEffects);
+  $('set-effect2').addEventListener('change', changeEffects);
   $('set-search').addEventListener('input', filter);
   $('set-category').addEventListener('change', filter);
   $('set-reset').addEventListener('click', () => {
     $('set-search').value = '';
     $('set-category').value = '';
+    $('set-effect').value = '';
+    $('set-effect2').value = '';
     filter();
     $('set-search').focus();
   });
   window.addEventListener('hashchange', route);
+  window.addEventListener('popstate', route);
   async function load() {
     $('set-notice').textContent = 'データを読み込み中…';
     try {
@@ -224,12 +248,16 @@
         ids.add(item.id);
       }
       sets = data.sets;
+      effectTags = new Set(sets.flatMap(item => item.browseTags || []).filter(tag => ['軽攻撃','重攻撃','ペット','メジャーバフ','マイナーバフ','メジャーデバフ','マイナーデバフ'].includes(tag) || /^(?:バフ|デバフ)（(?:強|弱)）：/.test(tag)));
+      const effectOptions = '<option value="">すべての効果</option>' + [...effectTags].sort((a,b) => a.localeCompare(b,'ja')).map(tag => `<option value="${escapeHTML(tag)}">${escapeHTML(tag)}</option>`).join('');
+      $('set-effect').innerHTML = effectOptions;
+      $('set-effect2').innerHTML = effectOptions;
       const qualityCount = sets.filter(item => item.numericValue?.rows.length).length;
       $('set-quality-coverage').textContent = `${qualityCount} / ${sets.length}系列で品質付き数値を掲載。白・緑・青・紫・金を色とラベルで区別。全効果・全品質の検証完了を意味しない。`;
       const categories = [...new Set([...['軽装','中装','重装','モンスター','秘術','武器セット','フィールド','ダンジョン','試練','アリーナ','クラフト','PvP','古遺物'], ...sets.flatMap(item => [item.category, ...(item.browseTags || [])])])].sort((a,b) => a.localeCompare(b,'ja'));
       $('set-category').innerHTML = '<option value="">すべての分類</option>' + categories.map(category => `<option value="${escapeHTML(category)}">${escapeHTML(category)}</option>`).join('');
       renderEffectFilters();
-      for (const id of ['set-search','set-category','set-reset']) $(id).disabled = false;
+      for (const id of ['set-search','set-category','set-effect','set-effect2','set-reset']) $(id).disabled = false;
       $('set-notice').textContent = '';
       ready = true;
       route();
