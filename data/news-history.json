@@ -25,6 +25,22 @@
       "sourceItemCount": 63,
       "uniqueXPostCount": 49,
       "notes": "Reddit freshness not verified; video metadata only; no Gemini analysis."
+    },
+    {
+      "runDate": "2026-10-28",
+      "publishedAt": "2026-10-28T10:10:49+09:00",
+      "newCount": 15,
+      "updatedCount": 3,
+      "deletedCount": 0,
+      "counts": {
+        "standalone": 9,
+        "tipsRoundup": 3,
+        "newsRoundup": 3
+      },
+      "sourceItemCount": 63,
+      "selectedYouTubeCount": 6,
+      "videoAnalysisSucceeded": 0,
+      "notes": "All 63 Slack items mapped; duplicates merged including 3 existing article updates. YouTube metadata only; Gemini 90s request timeout, no retry, token usage unknown. Reddit current timestamps incomplete. ESO PTS not applied to Live data; Live patch body unreadable. New private Slack identifiers omitted from public metadata; 9 Facebook permalinks withheld because public scope unverified; all anonymous summaries retained. Legacy Slack timestamp metadata also removed from public JSON; exact mappings retained privately for reconciliation."
     }
   ],
   "articles": [
@@ -35,7 +51,6 @@
       "sourceUrls": [
         "https://www.youtube.com/watch?v=UOz90g4ZUAA"
       ],
-      "sourceMessageIds": [],
       "forumEvidence": []
     },
     {
@@ -45,7 +60,6 @@
       "sourceUrls": [
         "https://www.youtube.com/watch?v=DcteH2TE36I"
       ],
-      "sourceMessageIds": [],
       "forumEvidence": []
     },
     {
@@ -54,10 +68,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/elonmusk/status/2114365361068138990"
-      ],
-      "sourceMessageIds": [
-        "1792974196.943509",
-        "1792974084.006979"
       ],
       "forumEvidence": []
     },
@@ -68,9 +78,6 @@
       "sourceUrls": [
         "https://x.com/nanbeige/status/2114328933181333798"
       ],
-      "sourceMessageIds": [
-        "1792974199.676449"
-      ],
       "forumEvidence": []
     },
     {
@@ -80,9 +87,6 @@
       "sourceUrls": [
         "https://x.com/testingcatalog/status/2114389254927220845",
         "https://x.com/testingcatalog/status/2114362756153430406"
-      ],
-      "sourceMessageIds": [
-        "1792974199.676449"
       ],
       "forumEvidence": []
     },
@@ -100,14 +104,6 @@
         "https://facebook.com/groups/runlocalai/permalink/1523135759614133/",
         "https://facebook.com/groups/runlocalai/permalink/1519084413352601/"
       ],
-      "sourceMessageIds": [
-        "1792974198.337769",
-        "1792974204.986349",
-        "1792974085.234439",
-        "1792974086.458959",
-        "1792974084.006979",
-        "1792974149.008849"
-      ],
       "forumEvidence": []
     },
     {
@@ -116,9 +112,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/Blender/status/2112882920100679859"
-      ],
-      "sourceMessageIds": [
-        "1792973379.560219"
       ],
       "forumEvidence": []
     },
@@ -129,9 +122,6 @@
       "sourceUrls": [
         "https://x.com/Hi3D_AI/status/2113456796715319591",
         "https://github.com/hi3d-official/Hi3Dv1.0"
-      ],
-      "sourceMessageIds": [
-        "1792973379.560219"
       ],
       "forumEvidence": []
     },
@@ -144,10 +134,6 @@
         "https://x.com/ianiluvr/status/2113925819437638082",
         "https://x.com/BunchoCG/status/2113844598925918341",
         "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/"
-      ],
-      "sourceMessageIds": [
-        "1792973379.560219",
-        "1792974150.423899"
       ],
       "forumEvidence": []
     },
@@ -163,11 +149,6 @@
         "https://x.com/oTTeuMsTudio/status/2114183814868005136",
         "https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/"
       ],
-      "sourceMessageIds": [
-        "1792973746.974769",
-        "1792973748.237009",
-        "1792974153.330269"
-      ],
       "forumEvidence": []
     },
     {
@@ -179,9 +160,6 @@
         "https://www.elderscrollsonline.com/en-us/news/post/70487",
         "https://x.com/TESOnline/status/2113328339964268564",
         "https://forums.elderscrollsonline.com/en/discussion/comment/8543948"
-      ],
-      "sourceMessageIds": [
-        "1792973753.073739"
       ],
       "forumEvidence": [
         {
@@ -205,9 +183,6 @@
         "https://x.com/Green_tea_rider/status/2114181476883497429",
         "https://forums.elderscrollsonline.com/en/discussion/700494/solo-dungeons-misconception-of-difficulty",
         "https://x.com/tokino_werewolf/status/2114382626794664325"
-      ],
-      "sourceMessageIds": [
-        "1792973753.073739"
       ],
       "forumEvidence": [
         {
@@ -242,18 +217,6 @@
         "https://x.com/poteto/status/2114626630429913383",
         "https://x.com/tetumemo/status/2114858363511341527"
       ],
-      "sourceMessageIds": [
-        "1793059270.848099",
-        "1793059271.618399",
-        "1793060675.325979",
-        "1793060680.662159",
-        "1793060681.907499",
-        "1793060683.206129",
-        "1793060684.475199",
-        "1793061073.747409",
-        "1793061086.818779",
-        "1793061088.142219"
-      ],
       "forumEvidence": []
     },
     {
@@ -276,21 +239,11 @@
         "https://x.com/masahirochaen/status/2114742027107897760",
         "https://x.com/The_Cyber_News/status/2114771540352893196",
         "https://www.anthropic.com/news/s1-sec",
-        "https://www.youtube.com/watch?v=CsHeAGf1Dw4"
+        "https://www.youtube.com/watch?v=CsHeAGf1Dw4",
+        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
       ],
-      "sourceMessageIds": [
-        "1793060675.325979",
-        "1793060680.662159",
-        "1793060681.907499",
-        "1793060683.206129",
-        "1793061073.747409",
-        "1793061079.730119",
-        "1793061081.215729",
-        "1793061082.647439",
-        "1793061083.987829",
-        "1793061088.142219"
-      ],
-      "forumEvidence": []
+      "forumEvidence": [],
+      "lastUpdatedAt": "2026-10-28T10:10:49+09:00"
     },
     {
       "id": "20261027-cg-tips",
@@ -309,18 +262,6 @@
         "https://x.com/KanaWorks_AI/status/2114603112464044163",
         "https://x.com/CharaspowerAI/status/2114794232229609496"
       ],
-      "sourceMessageIds": [
-        "1793059272.490719",
-        "1793059273.358879",
-        "1793060084.947829",
-        "1793060090.590579",
-        "1793060483.253989",
-        "1793060490.540449",
-        "1793061073.747409",
-        "1793061085.347399",
-        "1793061088.142219",
-        "1793061089.631239"
-      ],
       "forumEvidence": []
     },
     {
@@ -329,12 +270,6 @@
       "kind": "roundup",
       "sourceUrls": [
         "https://x.com/UnrealEngine/status/2114703767941898408"
-      ],
-      "sourceMessageIds": [
-        "1793060084.947829",
-        "1793060090.590579",
-        "1793060483.253989",
-        "1793060489.210629"
       ],
       "forumEvidence": []
     },
@@ -348,12 +283,6 @@
         "https://x.com/tokumei_0000/status/2114649762226192828",
         "https://x.com/tomi_0508/status/2114527456166314392"
       ],
-      "sourceMessageIds": [
-        "1793059274.266059",
-        "1793059274.969679",
-        "1793060287.744249",
-        "1793060293.129479"
-      ],
       "forumEvidence": []
     },
     {
@@ -362,10 +291,6 @@
       "kind": "roundup",
       "sourceUrls": [
         "https://facebook.com/groups/esoeu/permalink/40365204629744689/"
-      ],
-      "sourceMessageIds": [
-        "1793059274.266059",
-        "1793059274.969679"
       ],
       "forumEvidence": []
     },
@@ -376,10 +301,6 @@
       "sourceUrls": [
         "https://facebook.com/groups/QuadSpinnerGaea/permalink/2067418763979727/"
       ],
-      "sourceMessageIds": [
-        "1793059275.674349",
-        "1793059276.640889"
-      ],
       "forumEvidence": []
     },
     {
@@ -388,10 +309,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://facebook.com/groups/QuadSpinnerGaea/permalink/2075572816497655/"
-      ],
-      "sourceMessageIds": [
-        "1793059275.674349",
-        "1793059276.640889"
       ],
       "forumEvidence": []
     },
@@ -402,10 +319,6 @@
       "sourceUrls": [
         "https://x.com/HamdiAmer16/status/2114372918733873396"
       ],
-      "sourceMessageIds": [
-        "1793060084.947829",
-        "1793060090.590579"
-      ],
       "forumEvidence": []
     },
     {
@@ -414,10 +327,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/KimiAI_Japan/status/2114735970109075855"
-      ],
-      "sourceMessageIds": [
-        "1793060084.947829",
-        "1793060090.590579"
       ],
       "forumEvidence": []
     },
@@ -430,11 +339,9 @@
         "https://x.com/JHartEllis/status/2114848349392445871",
         "https://forums.elderscrollsonline.com/en/discussion/700551/pts-patch-notes-v12-2-0",
         "https://www.youtube.com/watch?v=mNT05afaNzA",
-        "https://www.youtube.com/watch?v=fxac-QZ-lKQ"
-      ],
-      "sourceMessageIds": [
-        "1793060287.744249",
-        "1793060293.129479"
+        "https://www.youtube.com/watch?v=fxac-QZ-lKQ",
+        "https://x.com/TESOnline/status/2115133935579512870",
+        "https://www.youtube.com/watch?v=YTtOpvvpa0U"
       ],
       "forumEvidence": [
         {
@@ -445,7 +352,8 @@
           ],
           "previousCheckedAt": null
         }
-      ]
+      ],
+      "lastUpdatedAt": "2026-10-28T10:10:49+09:00"
     },
     {
       "id": "20261027-eso-tesoctober",
@@ -453,10 +361,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/TESOnline/status/2114763991838773657"
-      ],
-      "sourceMessageIds": [
-        "1793060287.744249",
-        "1793060293.129479"
       ],
       "forumEvidence": []
     },
@@ -467,10 +371,6 @@
       "sourceUrls": [
         "https://x.com/redcamel15/status/2114606572165046472"
       ],
-      "sourceMessageIds": [
-        "1793060483.253989",
-        "1793060489.210629"
-      ],
       "forumEvidence": []
     },
     {
@@ -479,10 +379,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/carlosedubarret/status/2114753196329488736"
-      ],
-      "sourceMessageIds": [
-        "1793060483.253989",
-        "1793060489.210629"
       ],
       "forumEvidence": []
     },
@@ -497,13 +393,6 @@
         "https://x.com/thsottiaux/status/2114800277677092936",
         "https://x.com/tetumemo/status/2114836949500653890"
       ],
-      "sourceMessageIds": [
-        "1793061073.747409",
-        "1793061079.730119",
-        "1793061083.987829",
-        "1793061085.347399",
-        "1793061086.818779"
-      ],
       "forumEvidence": []
     },
     {
@@ -512,10 +401,6 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/cursor_ai/status/2114839997568405608"
-      ],
-      "sourceMessageIds": [
-        "1793061073.747409",
-        "1793061082.647439"
       ],
       "forumEvidence": []
     },
@@ -526,10 +411,6 @@
       "sourceUrls": [
         "https://x.com/krea_ai/status/2114741513867395527"
       ],
-      "sourceMessageIds": [
-        "1793061073.747409",
-        "1793061085.347399"
-      ],
       "forumEvidence": []
     },
     {
@@ -539,11 +420,243 @@
       "sourceUrls": [
         "https://x.com/runwayml/status/2114805465658036425"
       ],
-      "sourceMessageIds": [
-        "1793061073.747409",
-        "1793061085.347399"
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-ai-news",
+      "runDate": "2026-10-28",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/mattyp/status/2115111897397628974",
+        "https://x.com/testingcatalog/status/2115219403428221185",
+        "https://x.com/ChatGPT/status/2115139248458191070",
+        "https://x.com/victornunez/status/2115141493170282907",
+        "https://x.com/AndrewCurran_/status/2115202368518451262",
+        "https://www.anthropic.com/research/early-progress-drug-development",
+        "https://x.com/GeminiApp/status/2115171788812669225",
+        "https://deepmind.google/models/synthid/",
+        "https://x.com/cursor_ai/status/2115159585548021814",
+        "https://x.com/gdb/status/2114860693585563907",
+        "https://www.claymath.org/millennium/p-vs-np/",
+        "https://x.com/alexmichael/status/2115210638234435764",
+        "https://obsidian.md/help/Home",
+        "https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt",
+        "https://developers.google.com/machine-learning/glossary",
+        "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
       ],
       "forumEvidence": []
+    },
+    {
+      "id": "20261028-ai-tips",
+      "runDate": "2026-10-28",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/OpenAIDevs/status/2114837274550747603",
+        "https://x.com/higgsfield_ai/status/2115094837796257917",
+        "https://x.com/HaileyAILabs/status/2114940685082337561",
+        "https://x.com/imagine/status/2115214583983935517",
+        "https://x.com/ComfyUI/status/2115089830585704602",
+        "https://x.com/hawkymisc/status/2115138007179415686",
+        "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues",
+        "https://x.com/Claude_Digest/status/2115102088585990525",
+        "https://x.com/masahirochaen/status/2115215983849968050",
+        "https://github.com/dscripka/openWakeWord",
+        "https://x.com/cu30rry_/status/2115038737755431252",
+        "https://x.com/tetumemo/status/2115084858305433902",
+        "https://x.com/alx/status/2114935735430119764",
+        "https://x.com/poteto/status/2115205951649423585",
+        "https://x.com/trending_repos/status/2115052997134741743",
+        "https://github.com/nutlope/hallmark",
+        "https://x.com/CharaspowerAI/status/2115156611245191377",
+        "https://x.com/techhalla/status/2115233504472486179",
+        "https://x.com/super_bonochin/status/2115199166439882876",
+        "https://x.com/bot/status/2115130760009273501",
+        "https://x.com/tetumemo/status/2114998052599820752",
+        "https://x.com/SahilPunamia/status/2115173406262038765",
+        "https://x.com/afscott/status/2114990576877891588",
+        "https://www.anthropic.com/news/claude-for-small-business",
+        "https://www.youtube.com/watch?v=lPZQrVFcz3c"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-claude-government",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/AnthropicAI/status/2115207004293853358",
+        "https://www.anthropic.com/news/expanding-partnership-gsa"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-genie4",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/sundarpichai/status/2115115252690145519",
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "https://deepmind.google/models/genie/",
+        "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
+        "https://www.youtube.com/watch?v=LOP8ul3KqQI"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-unlimited-ocr2",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/Baidu_Inc/status/2114910381311512987",
+        "https://github.com/baidu/Unlimited-OCR"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-world-creator-4",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/worldcreator3d/status/2115139374241534135"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-fpom-rvt",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://dev.epicgames.com/documentation/unreal-engine/virtual-texturing-in-unreal-engine",
+        "https://x.com/toreler/status/2114747103570469021"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-sandstone-cliffs",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.sidefx.com/docs/houdini/",
+        "https://x.com/JohnLogostini/status/2115147319725502485",
+        "https://www.sidefx.com/gallery/project-sandstone-cliff-generator/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-gracia-relighting",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/gracia_hq/status/2115096187732668745",
+        "https://gracia.ai/4dgs"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-cg-tips",
+      "runDate": "2026-10-28",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/procedural-content-generation-framework-in-unreal-engine",
+        "https://x.com/SouranyPhomhome/status/2114810945658880178",
+        "https://x.com/chris_wallura/status/2115193726196740290",
+        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+        "https://x.com/mizuki_0hno/status/2114968700319326387",
+        "https://x.com/AversionReality/status/2114877594231509494",
+        "https://x.com/UnrealEngineJP/status/2114870570542350348",
+        "https://x.com/pafuhana1213/status/2114730992300949548",
+        "https://docs.gaea.app/reference/nodes/modify/autolevel.html",
+        "https://www.threads.com/@thegnomonworkshop/post/DfAZw9GDgQ3",
+        "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer?lang=ja"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-cg-news",
+      "runDate": "2026-10-28",
+      "kind": "roundup",
+      "sourceUrls": [],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-eso-tips",
+      "runDate": "2026-10-28",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/gaobon114514/status/2115019945377681846",
+        "https://x.com/Green_tea_rider/status/2114996621713056158",
+        "https://x.com/Casual_Ranger/status/2114929123537613307"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-eso-news",
+      "runDate": "2026-10-28",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/esomodelviewer/status/2114937222252175681",
+        "https://forums.elderscrollsonline.com/en/discussion/700533/u52-feedback-thread-for-jerall-pass",
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8545306/"
+      ],
+      "forumEvidence": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/700533/u52-feedback-thread-for-jerall-pass",
+          "checkedAt": "2026-10-28T10:10:49+09:00",
+          "topic": "PTS Jerall Pass player feedback and staff acknowledgement; no promised fix; absolute staff reply time and reply growth unverified"
+        }
+      ]
+    },
+    {
+      "id": "20261028-terrainforge-preview",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=CfemxyIAgSA",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/procedural-content-generation-framework-in-unreal-engine",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261028-aura32-gaea-linux",
+      "runDate": "2026-10-28",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=FGaePXpchUE",
+        "https://github.com/doitsujin/dxvk",
+        "https://developer.nvidia.com/cuda"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261026-cg-tips",
+      "runDate": "2026-10-26",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/andkalysh/status/2112495844448448549",
+        "https://x.com/TJGM_/status/2112919590582038824",
+        "https://x.com/indyzone/status/2113548484523765764",
+        "https://x.com/zackontopx/status/2113413680075583645",
+        "https://facebook.com/groups/blendertutorials/permalink/1449761743703971/",
+        "https://facebook.com/groups/282909453705941/permalink/1479462364050638/",
+        "https://facebook.com/groups/282909453705941/permalink/1480243007305907/",
+        "https://x.com/ianiluvr/status/2113925819437638082",
+        "https://x.com/BunchoCG/status/2113844598925918341",
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4677970812486323/",
+        "https://x.com/sai0xgen/status/2114394053932458297",
+        "https://x.com/itsfazley/status/2114341216045425010",
+        "https://x.com/rewind02/status/2114371572043489425",
+        "https://x.com/xbquan/status/2114262710452203896",
+        "https://x.com/oTTeuMsTudio/status/2114183814868005136",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2094160424638894/",
+        "https://www.youtube.com/watch?v=DcteH2TE36I",
+        "https://www.usgs.gov/faqs/what-a-digital-elevation-model-dem",
+        "https://www.sidefx.com/products/houdini/",
+        "https://www.quadspinner.com/",
+        "https://guanjunwu.github.io/4dgs/"
+      ],
+      "forumEvidence": [],
+      "lastUpdatedAt": "2026-10-28T10:10:49+09:00"
     }
   ]
 }
