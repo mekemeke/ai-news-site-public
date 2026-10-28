@@ -15,8 +15,13 @@
   const title = item => item.nameJa || item.nameEn;
   const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase('ja');
   let data, ready = false, loading = false;
-  let classes = new Map(), trees = new Map(), skills = new Map();
-  let state = {classId:'', treeId:'', q:'', type:'', form:'', effect:''};
+  let categories = new Map(), classes = new Map(), trees = new Map(), skills = new Map();
+  let state = {categoryId:'',classId:'', treeId:'', q:'', type:'', form:'', effect:''};
+
+  const ownerId = item => item.classId || item.categoryId;
+  const owner = item => item.classId ? classes.get(item.classId) : categories.get(item.categoryId);
+  const familyId = item => { const actual = item.variantOfSkillId ? skills.get(item.variantOfSkillId) : item; return actual.baseSkillId || actual.id; };
+  const treeKey = item => `${item.classId ? 'class' : 'category'}/${ownerId(item)}/${item.treeId}`;
 
   function safeURL(value) {
     if (typeof value !== 'string' || !/^https:\/\//i.test(value) || /[\s\\]/.test(value)) return '';
@@ -34,37 +39,55 @@
   }
   function validate(value) {
     if (!value || value.schemaVersion !== 1 || !value.meta || !Array.isArray(value.classes) || !value.classes.length || !Array.isArray(value.skills)) throw new Error('Invalid database');
-    const cm = new Map(), tm = new Map(), sm = new Map();
+    const cats = new Map(), cm = new Map(), tm = new Map(), sm = new Map();
     const named = item => item && validId(item.id) && typeof item.nameEn === 'string' && item.nameEn.trim() && (item.nameJa == null || typeof item.nameJa === 'string');
     for (const item of value.classes) {
       if (!named(item) || cm.has(item.id) || !Array.isArray(item.trees) || !item.trees.length) throw new Error('Invalid class');
       cm.set(item.id, item);
       for (const tree of item.trees) {
-        const key = `${item.id}/${tree.id}`;
+        const key = `class/${item.id}/${tree.id}`;
         if (!named(tree) || tm.has(key) || (tree.category != null && tree.category !== 'class-mastery')) throw new Error('Invalid tree');
         tm.set(key, tree);
       }
     }
+    if (value.categories != null && !Array.isArray(value.categories)) throw new Error('Invalid categories');
+    for (const category of value.categories || []) {
+      if (!named(category) || !['weapon','world','armor','guild','alliance','racial','craft'].includes(category.id) || cats.has(category.id) || !Array.isArray(category.trees) || !category.trees.length) throw new Error('Invalid category');
+      cats.set(category.id, category);
+      for (const tree of category.trees) {
+        const key = `category/${category.id}/${tree.id}`;
+        if (!named(tree) || tm.has(key) || tree.category != null) throw new Error('Invalid skill line');
+        tm.set(key, tree);
+      }
+    }
     for (const item of value.skills) {
-      if (!named(item) || sm.has(item.id) || !cm.has(item.classId) || !tm.has(`${item.classId}/${item.treeId}`) || !Object.hasOwn(types, item.type) || (item.baseSkillId != null && !validId(item.baseSkillId))) throw new Error('Invalid skill');
-      for (const key of ['descriptionJa','descriptionEn','sourceUrl','verifiedAt','verificationStatus','verificationNote','sourceNoteJa','conflictSourceUrl','sourceDataDate','gameUpdate','costNote','valueBasisJa','target','nameJaSourceUrl','nameJaSourceDate','nameJaVerificationStatus','nameJaVerificationNote']) if (item[key] != null && typeof item[key] !== 'string') throw new Error('Invalid skill text');
+      if (!named(item) || sm.has(item.id) || (item.classId ? (!cm.has(item.classId) || item.categoryId != null) : (item.classId != null || !cats.has(item.categoryId))) || !tm.has(treeKey(item)) || !Object.hasOwn(types, item.type) || (item.baseSkillId != null && !validId(item.baseSkillId))) throw new Error('Invalid skill');
+      for (const key of ['descriptionJa','descriptionEn','sourceUrl','verifiedAt','verificationStatus','verificationNote','sourceNoteJa','conflictSourceUrl','sourceDataDate','gameUpdate','costNote','valueBasisJa','target','nameJaSourceUrl','nameJaSourceDate','nameJaVerificationStatus','nameJaVerificationNote','variantOfSkillId','variantNote']) if (item[key] != null && typeof item[key] !== 'string') throw new Error('Invalid skill text');
       if (item.browseTags != null && (!Array.isArray(item.browseTags) || !item.browseTags.every(tag => typeof tag === 'string' && tag.trim()) || new Set(item.browseTags).size !== item.browseTags.length)) throw new Error('Invalid skill effect tags');
       sm.set(item.id, item);
     }
     for (const item of sm.values()) {
+      if (item.variantOfSkillId) {
+        const parent = sm.get(item.variantOfSkillId);
+        if (!validId(item.variantOfSkillId) || item.baseSkillId || !parent || parent.variantOfSkillId || parent.id === item.id || parent.classId !== item.classId || parent.categoryId !== item.categoryId || parent.treeId !== item.treeId || parent.type !== item.type || item.type === 'passive') throw new Error('Invalid skill variant');
+      }
       if (!item.baseSkillId) continue;
       const base = sm.get(item.baseSkillId);
-      if (!base || base.baseSkillId || base.id === item.id || base.classId !== item.classId || base.treeId !== item.treeId || base.type !== item.type || item.type === 'passive') throw new Error('Invalid morph relationship');
+      if (!base || base.baseSkillId || base.variantOfSkillId || base.id === item.id || base.classId !== item.classId || base.categoryId !== item.categoryId || base.treeId !== item.treeId || base.type !== item.type || item.type === 'passive') throw new Error('Invalid morph relationship');
     }
-    return {classes:cm, trees:tm, skills:sm};
+    return {categories:cats, classes:cm, trees:tm, skills:sm};
   }
   function readState(params) {
-    const classId = classes.has(params.get('class')) ? params.get('class') : '';
-    const treeId = classId && trees.has(`${classId}/${params.get('tree')}`) ? params.get('tree') : '';
-    return {classId, treeId, q:params.get('q') || '', type:Object.hasOwn(types, params.get('type')) ? params.get('type') : '', form:['base','morph'].includes(params.get('form')) ? params.get('form') : '', effect:effectTags.has(params.get('effect')) ? params.get('effect') : ''};
+    const requested = params.get('category');
+    const categoryId = requested === 'class' || categories.has(requested) ? requested : '';
+    const classId = (!categoryId || categoryId === 'class') && classes.has(params.get('class')) ? params.get('class') : '';
+    const treeOwner = classId ? `class/${classId}` : categories.has(categoryId) ? `category/${categoryId}` : '';
+    const treeId = treeOwner && trees.has(`${treeOwner}/${params.get('tree')}`) ? params.get('tree') : '';
+    return {categoryId, classId, treeId, q:params.get('q') || '', type:Object.hasOwn(types, params.get('type')) ? params.get('type') : '', form:['base','morph','variant'].includes(params.get('form')) ? params.get('form') : '', effect:effectTags.has(params.get('effect')) ? params.get('effect') : ''};
   }
   function paramsFor(next = state) {
     const params = new URLSearchParams();
+    if (next.categoryId) params.set('category', next.categoryId);
     if (next.classId) params.set('class', next.classId);
     if (next.treeId) params.set('tree', next.treeId);
     if (next.q) params.set('q', next.q);
@@ -75,7 +98,7 @@
   }
   function listURL(next = state) { const query = paramsFor(next); return query ? `#?${query}` : '#'; }
   function detailURL(item) { const query = paramsFor(); return `#skill/${encodeURIComponent(item.id)}${query ? '?' + query : ''}`; }
-  function formLabel(item) { return item.baseSkillId ? '変異' : item.type === 'passive' ? 'パッシブ' : '基本'; }
+  function formLabel(item) { return item.variantOfSkillId ? '属性派生' : item.baseSkillId ? '変異' : item.type === 'passive' ? 'パッシブ' : '基本'; }
   function icon(item) {
     const value = item.icon;
     if (!value || !/^assets\/eso\/skills\/[a-z0-9][a-z0-9_-]*\.(?:png|jpe?g|webp)$/i.test(value.path || '') || !safeURL(value.sourceUrl) || !text(value.permissionNote).trim()) return '<span class="eso-skill-icon-pending">画像\n未掲載</span>';
@@ -89,7 +112,7 @@
     event.target.replaceWith(fallback);
   }, true);
   function verification(item) {
-    const labels = {'source-checked':'資料照合済み・ゲーム内では未検証', 'source-checked-update-unverified':'資料照合済み・現行アップデートとの一致は未確認', 'source-checked-older-snapshot':'過去版の資料を参照・現行仕様との一致は未確認', 'source-conflict-update-unverified':'出典に不一致・現行版未照合', 'name-only':'名称のみ確認・効果や数値は未確認'};
+    const labels = {'source-conflict':'出典に不一致・現行版との照合は未確認', 'reference-snapshot':'資料の参照値・現行版との一致は未確認', 'source-checked':'資料照合済み・ゲーム内では未検証', 'source-checked-update-unverified':'資料照合済み・現行アップデートとの一致は未確認', 'source-checked-older-snapshot':'過去版の資料を参照・現行仕様との一致は未確認', 'source-conflict-update-unverified':'出典に不一致・現行版未照合', 'name-only':'名称のみ確認・効果や数値は未確認'};
     const notes = [...new Set([item.verificationNote,item.sourceNoteJa].filter(Boolean))];
     return `<p class="eso-skill-verification">資料確認：${escapeHTML(item.verifiedAt || '未確認')} · 対応版：${escapeHTML(item.gameUpdate || '未確認')}</p>${item.verificationStatus ? `<p class="eso-skill-verification">${escapeHTML(labels[item.verificationStatus] || item.verificationStatus)}</p>` : ''}${notes.map(note => `<p class="eso-skill-verification"><strong>${escapeHTML(note)}</strong></p>`).join('')}`;
   }
@@ -110,7 +133,7 @@
   }
   function description(item) {
     const value = item.descriptionJa || item.descriptionEn;
-    return `<p class="eso-skill-description"${!item.descriptionJa && item.descriptionEn ? ' lang="en"' : ''}>${escapeHTML(value || '効果・数値の説明は未収録です。参照資料で確認してください。')}</p>${item.valueBasisJa ? `<p class="eso-skill-verification">${escapeHTML(item.valueBasisJa)}</p>` : ''}`;
+    return `<p class="eso-skill-description"${!item.descriptionJa && item.descriptionEn ? ' lang="en"' : ''}>${escapeHTML(value || '効果・数値の説明は未収録です。参照資料で確認してください。')}</p>${item.variantNote ? `<p class="eso-skill-verification">${escapeHTML(item.variantNote)}</p>` : ''}${item.valueBasisJa ? `<p class="eso-skill-verification">${escapeHTML(item.valueBasisJa)}</p>` : ''}`;
   }
   function nameProvenance(item) {
     if (!item.nameJa) return '';
@@ -131,8 +154,10 @@
     $('skills-effect-selection').textContent = `選択中：${state.effect || 'すべての効果・攻撃・ペット'}`;
   }
   function renderFilters() {
-    $('skills-classes').innerHTML = chip('すべてのクラス', listURL({...state,classId:'',treeId:''}), !state.classId) + data.classes.map(item => chip(title(item), listURL({...state,classId:item.id,treeId:''}), state.classId === item.id, item.nameEn)).join('');
-    const selected = classes.get(state.classId);
+    $('skills-categories').innerHTML = chip('すべての系統', listURL({...state,categoryId:'',classId:'',treeId:''}), !state.categoryId && !state.classId) + chip('クラス', listURL({...state,categoryId:'class',classId:'',treeId:''}), state.categoryId === 'class' || !!state.classId) + [...categories.values()].map(item => chip(title(item), listURL({...state,categoryId:item.id,classId:'',treeId:''}), state.categoryId === item.id, item.nameEn)).join('');
+    $('skills-class-section').hidden = !!state.categoryId && state.categoryId !== 'class';
+    $('skills-classes').innerHTML = chip('すべてのクラス', listURL({...state,categoryId:'class',classId:'',treeId:''}), state.categoryId === 'class' && !state.classId) + data.classes.map(item => chip(title(item), listURL({...state,categoryId:state.categoryId === 'class' ? 'class' : '',classId:item.id,treeId:''}), state.classId === item.id, item.nameEn)).join('');
+    const selected = classes.get(state.classId) || categories.get(state.categoryId);
     $('skills-tree-hint').hidden = !!selected;
     $('skills-trees').innerHTML = selected ? chip('すべてのツリー', listURL({...state,treeId:''}), !state.treeId) + selected.trees.filter(tree => tree.category !== 'class-mastery').map(tree => chip(title(tree), listURL({...state,treeId:tree.id}), state.treeId === tree.id, tree.nameEn)).join('') : '';
     const mastery = selected ? selected.trees.filter(tree => tree.category === 'class-mastery') : [];
@@ -144,13 +169,14 @@
     renderEffectFilters();
   }
   function matches(item) {
+    if (state.categoryId && (item.classId ? 'class' : item.categoryId) !== state.categoryId) return false;
     if (state.classId && item.classId !== state.classId) return false;
     if (state.treeId && item.treeId !== state.treeId) return false;
     if (state.type && item.type !== state.type) return false;
     if (state.effect && !(item.browseTags || []).includes(state.effect)) return false;
-    if (state.form === 'base' && item.baseSkillId || state.form === 'morph' && !item.baseSkillId) return false;
-    const base = item.baseSkillId ? skills.get(item.baseSkillId) : item;
-    const cl = classes.get(item.classId), tree = trees.get(`${item.classId}/${item.treeId}`);
+    if (state.form === 'base' && (item.baseSkillId || item.variantOfSkillId) || state.form === 'morph' && !item.baseSkillId || state.form === 'variant' && !item.variantOfSkillId) return false;
+    const base = skills.get(familyId(item));
+    const cl = owner(item), tree = trees.get(treeKey(item));
     const haystack = normalize([item.nameJa,item.nameEn,item.descriptionJa,item.descriptionEn,base.nameJa,base.nameEn,cl.nameJa,cl.nameEn,tree.nameJa,tree.nameEn].join(' '));
     return normalize(state.q).trim().split(/\s+/).every(term => haystack.includes(term));
   }
@@ -161,21 +187,21 @@
     renderFilters();
     const filtered = data.skills.filter(matches), groups = new Map();
     for (const item of filtered) {
-      const key = item.baseSkillId || item.id;
+      const key = familyId(item);
       if (!groups.has(key)) groups.set(key, []);
       groups.get(key).push(item);
     }
-    $('skills-count').textContent = `収録データ内：${filtered.length} / ${data.skills.length} 件（基本・変異・パッシブを個別に計数） · ${groups.size} グループ`;
+    $('skills-count').textContent = `収録データ内：${filtered.length} / ${data.skills.length} 件（基本・変異・属性派生・パッシブを個別に計数） · ${groups.size} グループ`;
     $('skills-list').innerHTML = [...groups].map(([id, members]) => {
-      const base = skills.get(id), cl = classes.get(base.classId), tree = trees.get(`${base.classId}/${base.treeId}`);
-      members.sort((a,b) => Number(!!a.baseSkillId) - Number(!!b.baseSkillId) || (a.morphIndex || 0) - (b.morphIndex || 0));
+      const base = skills.get(id), cl = owner(base), tree = trees.get(treeKey(base));
+      members.sort((a,b) => Number(!!a.variantOfSkillId) - Number(!!b.variantOfSkillId) || Number(!!a.baseSkillId) - Number(!!b.baseSkillId) || (a.morphIndex || 0) - (b.morphIndex || 0));
       return `<section class="eso-skills-group"><div class="eso-skills-group-heading"><p>${escapeHTML(title(cl))} / ${escapeHTML(title(tree))}${tree.category === 'class-mastery' ? ' · Class Mastery' : ''}</p><h2>${escapeHTML(title(base))}${base.type !== 'passive' ? ' 系列' : ''}</h2></div>${members.map(renderCard).join('')}</section>`;
     }).join('') || '<p class="eso-skills-empty">この条件に一致する収録データはありません。ゲーム内に存在しないという意味ではありません。検索語を変えるか、条件をクリアしてください。</p>';
   }
   function renderSources() {
     const meta = data.meta;
     const standardTrees = data.classes.reduce((total,item) => total + item.trees.filter(tree => tree.category !== 'class-mastery').length, 0);
-    $('skills-coverage').innerHTML = `<p><strong>${data.classes.length}クラス / ${standardTrees}ツリー · ${data.skills.length}件を収録。</strong> 基本・変異・パッシブを別々に数えています。${data.classes.some(item => item.trees.some(tree => tree.category === 'class-mastery')) ? ' Class Masteryは通常ツリーと分けて表示します。' : ''}</p><p>${escapeHTML(text(meta.coverageNote) || '収録範囲は参照資料で確認できた項目に限ります。全スキル・現行のゲーム内仕様を保証するものではありません。')}</p><p class="eso-skills-muted">${escapeHTML(text(meta.iconNote) || '利用条件を確認できた画像のみ掲載します。未取得の画像は「未掲載」です。')} 資料確認日：${escapeHTML(text(meta.verifiedAt) || '未確認')}</p>`;
+    $('skills-coverage').innerHTML = `<p><strong>${data.classes.length}クラス / ${standardTrees}クラスツリー${categories.size ? ` ＋ ${categories.size}系統 / ${[...categories.values()].reduce((n,c) => n + c.trees.length,0)}スキルライン` : ''} · ${data.skills.length}件を収録。</strong> 基本・変異・属性派生・パッシブを別々に数えています。属性派生は装備した杖の属性による表示差で、独立した変異ではありません。${data.classes.some(item => item.trees.some(tree => tree.category === 'class-mastery')) ? ' Class Masteryは通常ツリーと分けて表示します。' : ''}</p><p>${escapeHTML(text(meta.coverageNote) || '収録範囲は参照資料で確認できた項目に限ります。全スキル・現行のゲーム内仕様を保証するものではありません。')}</p><p class="eso-skills-muted">${escapeHTML(text(meta.iconNote) || '利用条件を確認できた画像のみ掲載します。未取得の画像は「未掲載」です。')} 資料確認日：${escapeHTML(text(meta.verifiedAt) || '未確認')}</p>`;
     const sources = Array.isArray(meta.sources) ? meta.sources : [];
     const notes = [meta.versionNote,meta.localizationNote,meta.numericNote].filter(note => typeof note === 'string' && note);
     const excluded = Array.isArray(meta.excludedCategories) ? meta.excludedCategories.filter(item => typeof item === 'string') : [];
@@ -188,12 +214,12 @@
       document.title = 'スキルが見つからない | ESOデータベース';
       $('skill-detail').innerHTML = `${back}<h1>スキルが見つかりません</h1><p>指定したスキルは未収録、またはURLが正しくありません。スキル一覧から選び直してください。</p>`;
     } else {
-      const cl = classes.get(item.classId), tree = trees.get(`${item.classId}/${item.treeId}`), baseId = item.baseSkillId || item.id;
-      const family = data.skills.filter(other => other.id === baseId || other.baseSkillId === baseId).sort((a,b) => Number(!!a.baseSkillId) - Number(!!b.baseSkillId) || (a.morphIndex || 0) - (b.morphIndex || 0));
+      const cl = owner(item), tree = trees.get(treeKey(item)), baseId = familyId(item);
+      const family = data.skills.filter(other => familyId(other) === baseId).sort((a,b) => Number(!!a.variantOfSkillId) - Number(!!b.variantOfSkillId) || Number(!!a.baseSkillId) - Number(!!b.baseSkillId) || (a.morphIndex || 0) - (b.morphIndex || 0));
       const sources = Array.isArray(item.sources) ? item.sources : item.sourceUrl ? [{label:'スキルの参照資料',url:item.sourceUrl}] : [];
       const mechanics = numericFacts(item);
       document.title = `${title(item)} | ESOデータベース`;
-      $('skill-detail').innerHTML = `${back}<div class="eso-skill-card-head">${icon(item)}<div><h1>${escapeHTML(title(item))}</h1>${item.nameJa ? `<p class="eso-skill-english" lang="en">${escapeHTML(item.nameEn)}</p>` : '<p class="eso-skill-english">日本語名は未確認のため英語で表示</p>'}</div></div><dl class="eso-skills-facts"><dt>クラス</dt><dd>${escapeHTML(title(cl))}</dd><dt>ツリー</dt><dd>${escapeHTML(title(tree))}${tree.category === 'class-mastery' ? '（別枠）' : ''}</dd><dt>種類</dt><dd>${escapeHTML(types[item.type])} / ${escapeHTML(formLabel(item))}</dd><dt>対応アップデート</dt><dd>${escapeHTML(item.gameUpdate || '未確認')}</dd>${mechanics.map(fact => `<dt>${escapeHTML(fact.label)}</dt><dd>${escapeHTML(fact.value)}</dd>`).join('')}</dl><h2>スキルの説明</h2>${description(item)}${item.costNote ? `<p class="eso-skills-muted"><strong>消費の確認範囲：</strong>${escapeHTML(item.costNote)}</p>` : ''}${mechanics.length ? `<p class="eso-skills-muted">${escapeHTML(text(data.meta.numericNote) || '数値は参照資料の掲載値です。ランク・装備・キャラクター条件による差は未検証です。')}</p>` : ''}${verification(item)}${family.length > 1 ? `<h2>基本スキルと変異</h2><ul class="eso-skills-family">${family.map(other => `<li><a href="${escapeHTML(detailURL(other))}"${other.id === item.id ? ' aria-current="page"' : ''}>${escapeHTML(title(other))}</a> <small>— ${escapeHTML(formLabel(other))}</small></li>`).join('')}</ul>` : ''}<div class="source-box"><strong>出典・確認範囲</strong>${nameProvenance(item)}${item.conflictSourceUrl ? `<p>${sourceLink({label:'比較資料（不一致の確認）',url:item.conflictSourceUrl})}</p>` : ''}${sources.length ? `<ul>${sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul>` : '<p>個別出典は未登録です。全体の出典・収録範囲を確認してください。</p>'}<p>参照資料のデータ日：${escapeHTML(item.sourceDataDate || '未確認')} · 資料確認日：${escapeHTML(item.verifiedAt || '未確認')}</p><p>ゲーム内の実測・動作検証はしていません。未記載の数値・ランク差・条件を推定して補ってはいません。</p>${item.icon && safeURL(item.icon.sourceUrl) && text(item.icon.permissionNote) ? `<p>画像出典：${sourceLink({label:'アイコン参照元',url:item.icon.sourceUrl})}<br>${escapeHTML(item.icon.permissionNote)}</p>` : ''}</div>${back}`;
+      $('skill-detail').innerHTML = `${back}<div class="eso-skill-card-head">${icon(item)}<div><h1>${escapeHTML(title(item))}</h1>${item.nameJa ? `<p class="eso-skill-english" lang="en">${escapeHTML(item.nameEn)}</p>` : '<p class="eso-skill-english">日本語名は未確認のため英語で表示</p>'}</div></div><dl class="eso-skills-facts"><dt>${item.classId ? 'クラス' : '系統'}</dt><dd>${escapeHTML(title(cl))}</dd><dt>ツリー</dt><dd>${escapeHTML(title(tree))}${tree.category === 'class-mastery' ? '（別枠）' : ''}</dd><dt>種類</dt><dd>${escapeHTML(types[item.type])} / ${escapeHTML(formLabel(item))}</dd><dt>対応アップデート</dt><dd>${escapeHTML(item.gameUpdate || '未確認')}</dd>${mechanics.map(fact => `<dt>${escapeHTML(fact.label)}</dt><dd>${escapeHTML(fact.value)}</dd>`).join('')}</dl><h2>スキルの説明</h2>${description(item)}${item.costNote ? `<p class="eso-skills-muted"><strong>消費の確認範囲：</strong>${escapeHTML(item.costNote)}</p>` : ''}${mechanics.length ? `<p class="eso-skills-muted">${escapeHTML(text(data.meta.numericNote) || '数値は参照資料の掲載値です。ランク・装備・キャラクター条件による差は未検証です。')}</p>` : ''}${verification(item)}${family.length > 1 ? `<h2>基本スキル・変異・属性派生</h2><ul class="eso-skills-family">${family.map(other => `<li><a href="${escapeHTML(detailURL(other))}"${other.id === item.id ? ' aria-current="page"' : ''}>${escapeHTML(title(other))}</a> <small>— ${escapeHTML(formLabel(other))}</small></li>`).join('')}</ul>` : ''}<div class="source-box"><strong>出典・確認範囲</strong>${nameProvenance(item)}${item.conflictSourceUrl ? `<p>${sourceLink({label:'比較資料（不一致の確認）',url:item.conflictSourceUrl})}</p>` : ''}${sources.length ? `<ul>${sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul>` : '<p>個別出典は未登録です。全体の出典・収録範囲を確認してください。</p>'}<p>参照資料のデータ日：${escapeHTML(item.sourceDataDate || '未確認')} · 資料確認日：${escapeHTML(item.verifiedAt || '未確認')}</p><p>ゲーム内の実測・動作検証はしていません。未記載の数値・ランク差・条件を推定して補ってはいません。</p>${item.icon && safeURL(item.icon.sourceUrl) && text(item.icon.permissionNote) ? `<p>画像出典：${sourceLink({label:'アイコン参照元',url:item.icon.sourceUrl})}<br>${escapeHTML(item.icon.permissionNote)}</p>` : ''}</div>${back}`;
     }
     window.scrollTo(0, 0);
     $('skill-detail').focus({preventScroll:true});
@@ -211,7 +237,7 @@
       try { id = decodeURIComponent(match[1]); } catch {}
       renderDetail(id);
     } else {
-      document.title = 'クラススキル | ESOデータベース';
+      document.title = 'スキル | ESOデータベース';
       renderList();
       if (wasDetail) $('skills-search').focus({preventScroll:true});
     }
@@ -227,7 +253,7 @@
   $('skills-form').addEventListener('change', filter);
   $('skills-reset').addEventListener('click', () => {
     if (!ready) return;
-    state = {classId:'',treeId:'',q:'',type:'',form:'',effect:''};
+    state = {categoryId:'',classId:'',treeId:'',q:'',type:'',form:'',effect:''};
     openEffectGroups.clear();
     history.replaceState(null, '', '#');
     renderList();
@@ -248,11 +274,11 @@
     $('skills-retry').hidden = true;
     $('skills-notice').textContent = 'データを読み込み中…';
     try {
-      const response = await fetch('./data/skills.json?v=20261027-skills-effects1', {credentials:'omit'});
+      const response = await fetch('./data/skills.json?v=20261028-nonclass1', {credentials:'omit'});
       if (!response.ok) throw new Error('Data unavailable');
       const value = await response.json();
       const maps = validate(value);
-      data = value; classes = maps.classes; trees = maps.trees; skills = maps.skills;
+      data = value; categories = maps.categories; classes = maps.classes; trees = maps.trees; skills = maps.skills;
       effectTags = new Set(data.skills.flatMap(item => item.browseTags || []));
       renderSources();
       for (const id of ['skills-search','skills-type','skills-form','skills-reset']) $(id).disabled = false;

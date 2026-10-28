@@ -6,10 +6,10 @@
   <meta name="robots" content="noindex">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <title>クラススキル | ESOデータベース</title>
+  <title>スキル | ESOデータベース</title>
   <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
-  <link rel="stylesheet" href="./eso-skills.css?v=20261027-skills-effects1">
-  <script src="./eso-skills.js?v=20261027-skills-effects1" defer></script>
+  <link rel="stylesheet" href="./eso-skills.css?v=20261028-nonclass1">
+  <script src="./eso-skills.js?v=20261028-nonclass1" defer></script>
   <link rel="stylesheet" href="./eso-theme.css?v=20261027-dark1">
   <script src="./eso-theme.js?v=20261027-dark1" defer></script>
 </head>
@@ -20,13 +20,14 @@
   <main id="main" tabindex="-1">
     <nav class="database-nav" aria-label="ESOデータベース"><a href="./eso.html">装備セット</a><a href="./eso-skills.html" aria-current="page">スキル</a><a href="./eso-traits-enchants.html">特性・付呪</a><a href="./eso-scribing.html">書記</a><a href="./eso-mundus.html">ムンダス</a><a href="./eso-champion.html">チャンピオン</a></nav>
     <section id="skills-home" aria-labelledby="skills-title">
-      <div class="eso-skills-heading"><p class="eso-skills-eyebrow">ESO / CLASS SKILLS</p><h1 id="skills-title">クラススキル</h1><p class="lead">クラスを選び、3つのスキルツリーで絞り込む。基本スキルと変異は同じグループに表示。</p></div>
+      <div class="eso-skills-heading"><p class="eso-skills-eyebrow">ESO / SKILLS</p><h1 id="skills-title">スキル</h1><p class="lead">クラス・武器・ワールドなどの系統とスキルラインで絞り込む。基本スキルと変異は同じグループに表示。</p></div>
       <div id="skills-coverage" class="database-note">収録範囲と参照資料の情報を読み込み中…</div>
-      <section class="eso-skills-filter-section" aria-labelledby="skills-class-title"><h2 id="skills-class-title"><span>01</span> クラス</h2><nav id="skills-classes" class="eso-skills-chips" aria-label="クラスを選択"></nav></section>
-      <section class="eso-skills-filter-section" aria-labelledby="skills-tree-title"><h2 id="skills-tree-title"><span>02</span> スキルツリー</h2><p id="skills-tree-hint" class="eso-skills-muted">クラスを選ぶと、そのクラスのツリーを選べます。</p><nav id="skills-trees" class="eso-skills-chips" aria-label="スキルツリーを選択"></nav><div id="skills-mastery" hidden><p class="eso-skills-muted">Class Mastery（通常の3ツリーとは別枠）</p><nav id="skills-mastery-trees" class="eso-skills-chips" aria-label="Class Masteryを選択"></nav></div></section>
+      <section class="eso-skills-filter-section" aria-labelledby="skills-category-title"><h2 id="skills-category-title"><span>01</span> 系統</h2><nav id="skills-categories" class="eso-skills-chips" aria-label="スキル系統を選択"></nav></section>
+      <section id="skills-class-section" class="eso-skills-filter-section" aria-labelledby="skills-class-title"><h2 id="skills-class-title"><span>02</span> クラス</h2><nav id="skills-classes" class="eso-skills-chips" aria-label="クラスを選択"></nav></section>
+      <section class="eso-skills-filter-section" aria-labelledby="skills-tree-title"><h2 id="skills-tree-title"><span>03</span> スキルツリー / ライン</h2><p id="skills-tree-hint" class="eso-skills-muted">クラスまたは系統を選ぶと、スキルツリー / ラインを選べます。</p><nav id="skills-trees" class="eso-skills-chips" aria-label="スキルツリーを選択"></nav><div id="skills-mastery" hidden><p class="eso-skills-muted">Class Mastery（通常の3ツリーとは別枠）</p><nav id="skills-mastery-trees" class="eso-skills-chips" aria-label="Class Masteryを選択"></nav></div></section>
       <section class="eso-skills-filter-section eso-skills-effects" aria-labelledby="skills-effect-title">
-        <h2 id="skills-effect-title"><span>03</span> 効果・攻撃・ペット</h2>
-        <p id="skills-effect-help" class="eso-skills-muted">効果・軽攻撃・重攻撃・ペットから1つを選べます。クラス・ツリー・種類・検索と組み合わせて、すべての条件に合うスキルを表示します。グループの種類数は全収録データ内の個別効果数です。</p>
+        <h2 id="skills-effect-title"><span>04</span> 効果・攻撃・ペット</h2>
+        <p id="skills-effect-help" class="eso-skills-muted">効果・軽攻撃・重攻撃・ペットから1つを選べます。系統・クラス・ツリー / ライン・種類・検索と組み合わせて、すべての条件に合うスキルを表示します。グループの種類数は全収録データ内の個別効果数です。</p>
         <p class="eso-skills-muted">確認した参照資料の効果本文に基づく分類で、条件付き・自己付与も含みます。統合効果名は公式U51事前説明に合わせ、魔術は残忍、予言は獰猛として分類しています。軽攻撃・重攻撃は強化や発動条件などの関連効果、ペットは召喚獣と明示的なペット連動です。召喚を演出に使うだけの攻撃は含めません。各召喚獣がすべてのペット関連セットの発動条件を満たすとは限りません。資料は複数版を含み、現行仕様との一致は未確認です。未分類はゲーム内に該当効果がないという意味ではありません。</p>
         <nav id="skills-combat-effects" class="eso-skills-chips" aria-label="すべての効果・軽攻撃・重攻撃・ペットで絞り込み" aria-describedby="skills-effect-help"></nav>
         <div id="skills-effect-groups" class="eso-skills-effect-groups"></div>
@@ -35,7 +36,7 @@
       <div class="eso-skills-filters">
         <label class="eso-skills-search">スキル検索<input id="skills-search" type="search" placeholder="スキル名・英名・説明で探す" autocomplete="off" disabled></label>
         <label>種類<select id="skills-type" disabled><option value="">すべての種類</option><option value="active">アクティブ</option><option value="ultimate">アルティメット</option><option value="passive">パッシブ</option></select></label>
-        <label>基本 / 変異<select id="skills-form" disabled><option value="">基本・変異すべて</option><option value="base">基本・パッシブ</option><option value="morph">変異のみ</option></select></label>
+        <label>基本 / 変異<select id="skills-form" disabled><option value="">基本・変異・属性派生すべて</option><option value="base">基本・パッシブ</option><option value="morph">変異のみ</option><option value="variant">属性派生のみ</option></select></label>
         <button id="skills-reset" type="button" disabled>条件をクリア</button>
       </div>
       <p id="skills-count" class="eso-skills-muted" role="status" aria-live="polite"></p>

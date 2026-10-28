@@ -103,3 +103,7 @@ ESOデータベースの6入口を共通ナビで移動できる。`eso-mundus.h
 - CSPはニュース入口 index.html の script-src と frame-src に `https://www.threads.com` だけを追加。ワイルドカード・unsafe-inline・unsafe-evalは追加しない。SDKのiframeサイズ用CSSは既存外部style.cssへ置く。他のHTML入口のCSPやnoindexは変更しない。
 - 投稿画像・動画・本文を独自に取得・保存しない。生HTMLを記事データへ入れない。ログインや非公開範囲を回避しない。FacebookのOGPカードは実装しない。既存記事への自動後付けはしない。
 - 公式資料: https://github.com/facebook/meta-embeds-for-wordpress （対応URLと公式スクリプト）／ https://www.threads.com/embed.js （2026-10-28に取得したSDKでmarkup、共有process API、動的再走査を確認）。
+
+### 通常スキル：クラス以外の系統（2026-10-28）
+
+`eso-skills.html` はクラスに加えて武器・ワールド・防具・ギルド・同盟戦争・種族・生産を、系統 → スキルラインで絞り込む。`data/skills.json` の既存 `classes` とクラス462件は保持し、非クラスは `categories` と `categoryId` を使用する。書記・チャンピオンは別入口のまま。旧 `class` / `tree` / 詳細URLと効果フィルターは互換を維持。属性杖による派生表示は変異と区別する。出典の掲載値はキャラクター条件による差や現行版との一致を保証せず、資料日と未確認範囲を併記する。詳細は `ESO-SKILLS.md`。

@@ -1,4 +1,4 @@
-# ESO class skills interface
+# ESO normal skills interface
 
 - Entry point: `eso-skills.html`; navigation is linked from `eso.html`.
 - Data: `data/skills.json`, schema version 1. Classes contain ordered trees. `category: "class-mastery"` renders a tree in a separate section, not among the three classic trees.
@@ -20,3 +20,33 @@ python3 -m unittest discover -s tests -v
 ```
 
 `tests/eso-skills.test.cjs` includes test-only fixtures plus a required production-data compatibility check. Test fixtures are not included in the public skills JSON. Runtime source URLs are HTTPS-only; editors must also verify source access and reuse rights. Metadata is evidence, not automatic permission to redistribute a source.
+
+
+## Non-class expansion (2026-10-28)
+
+The ordinary catalog now accepts optional `categories` alongside unchanged `classes`.
+Category IDs are `weapon`, `world`, `armor`, `guild`, `alliance`, `racial`, `craft`.
+Each category has ordered `trees` (skill lines). Non-class skill records use
+`categoryId` and `treeId`, **not** a synthetic `classId`; records may not use both.
+The schema remains version 1 and legacy class-only documents remain valid.
+
+`#?category=weapon&tree=…` adds the category filter. `category=class` selects all
+classes. Existing `#?class=…&tree=…`, `#skill/<id>` and search/type/form/effect
+routes remain valid. Category changes reset class and line while preserving
+search and effect conditions. Invalid category/line values are safely ignored;
+non-class category takes precedence over a conflicting `class` query parameter.
+
+Destruction Staff elemental variants can use `variantOfSkillId` and `variantNote`.
+A variant references the real base or morph in the same owner/line/type, not another
+variant, and cannot have `baseSkillId`. It is grouped with that real skill family
+and labeled 属性派生, never counted as an independently selectable morph.
+`form=variant` selects variants; `form=base` excludes variants and morphs.
+Counts include separately documented variants and explain that distinction.
+
+Class records, including translations, icons and existing effect tags, must be
+preserved field-for-field. Scribing and Champion are separate databases and must
+not be merged here. Unknown icon permissions/paths leave an explicit placeholder.
+Source snapshot dates and rank/build-dependent numeric caveats remain visible.
+
+Regression checks additionally include:
+`node --test tests/eso-nonclass-skills.test.cjs tests/eso-skills.test.cjs`.
