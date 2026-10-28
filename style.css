@@ -32,3 +32,10 @@
 .threads-embed{margin:20px 0;max-width:100%;overflow-wrap:anywhere}.threads-embed blockquote{margin:0;padding:16px;border:1px solid var(--line);border-radius:8px}.threads-embed iframe{max-width:100%!important}.threads-embed figcaption{font-size:12px;color:var(--muted);margin-top:8px}.threads-embed figcaption a{text-decoration:underline}.threads-embed figcaption span{display:inline}
 
 .threads-embed iframe.text-post-media{display:block;min-width:0;width:calc(100% - 2px);padding:0;border:0;border-radius:12px;background:var(--paper)}
+
+/* News-only reading aids: no ESO layout or CSP changes. */
+.news-new{display:inline-block;margin-left:.55em;padding:2px 6px;border-radius:4px;background:#bf1733;color:#fff;font-size:12px;font-weight:800;line-height:1.4;letter-spacing:.04em;vertical-align:middle;white-space:nowrap}
+.article-body .glossary-trigger{display:inline;min-height:0;padding:0 1px;border:0;border-bottom:1px dotted currentColor;border-radius:0;font:inherit;line-height:inherit;color:var(--green);cursor:help;white-space:normal;text-align:inherit}
+.article-body .glossary-info{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:24px;margin:0 2px;border:1px solid var(--line);border-radius:50%;font-size:12px;font-weight:800;line-height:1;vertical-align:middle;cursor:pointer;background:var(--chip)}
+.news-glossary-popup{position:fixed;z-index:1000;width:320px;padding:12px 16px;border:1px solid var(--green);border-radius:8px;background:var(--paper);color:var(--ink);box-shadow:0 5px 20px #0003;font-size:14px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;overflow-y:auto}
+@media(pointer:coarse){.article-body .glossary-trigger{padding:2px 1px}.article-body .glossary-info{min-width:32px;min-height:32px}}

@@ -236,6 +236,20 @@
               "text": "ハーネス",
               "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
             }
+          ],
+          "terms": [
+            {
+              "text": "MoE",
+              "definition": "入力に応じて、モデル内の複数の専門部分から一部を選んで使う方式。"
+            },
+            {
+              "text": "重み",
+              "definition": "AIモデルの計算に使う数値で、学習によって調整される。"
+            },
+            {
+              "text": "ハーネス",
+              "definition": "AIに道具や実行環境を渡し、作業の進行や文脈を管理する周辺の仕組み。"
+            }
           ]
         },
         {
@@ -254,6 +268,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "機能が増えるほど、できることと任せてよいことを分けておくと使いやすそう。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "AIがメール・ノート・研究の段取りに広がる一方、利用者には連携権限と情報の扱いを見極める必要がある。"
         }
       ],
       "sources": [
@@ -328,6 +347,14 @@
         {
           "label": "用語解説：Anthropicの実行環境設計",
           "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
+        },
+        {
+          "label": "用語解説：MoE",
+          "url": "https://developers.google.com/machine-learning/glossary#mixture-of-experts"
+        },
+        {
+          "label": "用語解説：重み",
+          "url": "https://developers.google.com/machine-learning/glossary#weight"
         }
       ],
       "sourceUrls": [
@@ -455,6 +482,12 @@
               "text": "Issue",
               "url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
             }
+          ],
+          "terms": [
+            {
+              "text": "Issue",
+              "definition": "不具合、アイデア、作業などを記録し、対応状況を追うための項目。"
+            }
           ]
         },
         {
@@ -475,7 +508,13 @@
         },
         {
           "type": "paragraph",
-          "text": "@Claude_Digest は、v2.1.311からultrathinkと入力すると、そのターンだけ推論の強さがxhighになると説明した。5.5系の標準mediumから2段階上げるという報告で、対象としてターミナルの対話利用・Anthropic API経由、Opus／Sonnet／Haiku 5.5とFable 5.1を挙げる。入力欄の虹色表示が目印で、引用符やファイルパス内では無効、進行中の入力ならそのターンの残りへ適用されるという。バージョン・対象モデル・条件は公式資料で未照合。"
+          "text": "@Claude_Digest は、v2.1.311からultrathinkと入力すると、そのターンだけ推論の強さがxhighになると説明した。5.5系の標準mediumから2段階上げるという報告で、対象としてターミナルの対話利用・Anthropic API経由、Opus／Sonnet／Haiku 5.5とFable 5.1を挙げる。入力欄の虹色表示が目印で、引用符やファイルパス内では無効、進行中の入力ならそのターンの残りへ適用されるという。バージョン・対象モデル・条件は公式資料で未照合。",
+          "terms": [
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -749,6 +788,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "完成品だけでなく、下書きで止める場所や人が確かめる点まで共有されると試しやすいね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "AIへの下準備の分担と人の確認点を分ける工夫は、仕事や映像制作で任せる範囲を考える手掛かりになる。"
         }
       ],
       "sources": [
@@ -855,6 +899,10 @@
         {
           "label": "OpenAI：Getting a Head Start with Codex | Mitchell Hashimoto（タイトル・説明欄を確認）",
           "url": "https://www.youtube.com/watch?v=lPZQrVFcz3c"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
         }
       ],
       "sourceUrls": [
@@ -913,6 +961,12 @@
               "text": "API",
               "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
             }
+          ],
+          "terms": [
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
+            }
           ]
         },
         {
@@ -957,6 +1011,10 @@
         {
           "label": "Anthropic公式発表（2026-10-27）",
           "url": "https://www.anthropic.com/news/expanding-partnership-gsa"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
         }
       ],
       "sourceUrls": [
@@ -1001,6 +1059,12 @@
             {
               "text": "API",
               "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+            }
+          ],
+          "terms": [
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
             }
           ]
         },
@@ -1068,6 +1132,10 @@
         {
           "label": "Google for Developers：Genie 4紹介（47分26秒、説明欄のみ確認）",
           "url": "https://www.youtube.com/watch?v=LOP8ul3KqQI"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
         }
       ],
       "sourceUrls": [
@@ -1106,6 +1174,12 @@
             {
               "text": "OCR",
               "url": "https://github.com/baidu/Unlimited-OCR"
+            }
+          ],
+          "terms": [
+            {
+              "text": "OCR",
+              "definition": "画像やスキャン文書の文字を読み取り、ソフトで扱える文字データにする技術。"
             }
           ]
         },
@@ -1151,6 +1225,10 @@
         {
           "label": "Baidu公式リポジトリ・10月27日リリース記録",
           "url": "https://github.com/baidu/Unlimited-OCR"
+        },
+        {
+          "label": "用語解説：OCR",
+          "url": "https://www.ibm.com/think/topics/optical-character-recognition"
         }
       ],
       "sourceUrls": [
@@ -1229,6 +1307,12 @@
             {
               "text": "RVT",
               "url": "https://dev.epicgames.com/documentation/unreal-engine/virtual-texturing-in-unreal-engine"
+            }
+          ],
+          "terms": [
+            {
+              "text": "RVT",
+              "definition": "実行中に生成した材質などの画像を、必要な部分ごとに保存して再利用するUnreal Engineの仕組み。"
             }
           ]
         },
@@ -1361,6 +1445,12 @@
               "text": "4D Gaussian Splatting",
               "url": "https://gracia.ai/4dgs"
             }
+          ],
+          "terms": [
+            {
+              "text": "4D Gaussian Splatting",
+              "definition": "広がりを持つ立体の点で、時間とともに動く被写体や場面を表現・描画する手法。"
+            }
           ]
         },
         {
@@ -1385,6 +1475,10 @@
         {
           "label": "用語・提供元：Graciaの4DGS紹介（見出しのみ取得、デモ仕様の裏付けではない）",
           "url": "https://gracia.ai/4dgs"
+        },
+        {
+          "label": "用語解説：4D Gaussian Splatting",
+          "url": "https://guanjunwu.github.io/4dgs/"
         }
       ],
       "sourceUrls": [
@@ -1417,6 +1511,12 @@
             {
               "text": "PCG",
               "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
+            }
+          ],
+          "terms": [
+            {
+              "text": "PCG",
+              "definition": "ここでは、規則に沿って建物や植生などを生成・配置するUnreal Engineの道具群。"
             }
           ]
         },
@@ -1456,6 +1556,12 @@
               "text": "MCP",
               "url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
             }
+          ],
+          "terms": [
+            {
+              "text": "MCP",
+              "definition": "AIアプリと外部の道具・データをつなぐための共通規格。"
+            }
           ]
         },
         {
@@ -1472,7 +1578,17 @@
         },
         {
           "type": "paragraph",
-          "text": "@AversionRealityは、Geometry Nodes（処理をつないで形状を作るBlenderの機能）で一部を「Geometry to Instance」に通し、参照形式のインスタンスにしておく使い方を紹介。スカートに貼ったメッシュの装飾へ、後ろのサブディビジョンサーフェスによる細分化を重ねたくない例だ。すべての後段処理から無条件に保護されるという意味ではなく、後で実体化する処理や使うモディファイア、Blenderの版によって確認が必要。今回、投稿のノード構成そのものは実機検証していない。"
+          "text": "@AversionRealityは、Geometry Nodes（処理をつないで形状を作るBlenderの機能）で一部を「Geometry to Instance」に通し、参照形式のインスタンスにしておく使い方を紹介。スカートに貼ったメッシュの装飾へ、後ろのサブディビジョンサーフェスによる細分化を重ねたくない例だ。すべての後段処理から無条件に保護されるという意味ではなく、後で実体化する処理や使うモディファイア、Blenderの版によって確認が必要。今回、投稿のノード構成そのものは実機検証していない。",
+          "terms": [
+            {
+              "text": "インスタンス",
+              "definition": "元の形状データを参照して使う複製で、形状を一つずつ別に持つ複製とは異なる。"
+            },
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1542,7 +1658,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Blender Tipsの投稿要約で、ブールツールの扱いを改善する短い動画が紹介された。ブール演算は、重なった立体を足す・引く・共通部分だけ残す処理。素材には個々の設定値や詳しい手順がないため、紹介の存在と目的だけを記す。動画全体を視聴・解析したものではなく、具体的な操作を補ってはいない。"
+          "text": "Blender Tipsの投稿要約で、ブールツールの扱いを改善する短い動画が紹介された。ブール演算は、重なった立体を足す・引く・共通部分だけ残す処理。素材には個々の設定値や詳しい手順がないため、紹介の存在と目的だけを記す。動画全体を視聴・解析したものではなく、具体的な操作を補ってはいない。",
+          "terms": [
+            {
+              "text": "ブール",
+              "definition": "重なった立体を足す・引く・共通部分だけ残す、といった形状の演算。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1576,6 +1698,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "ソフトを増やすより、受け渡しや作り方を少し整えるだけでも楽になりそうだね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "素材の受け渡しと形状・ノード操作の工夫が、複数ソフトを使う制作者の手作業を減らすヒントになる。"
         }
       ],
       "sources": [
@@ -1634,6 +1761,18 @@
         {
           "label": "Epic公式：めっちゃカメレオン制作インタビュー（2026-10-26）",
           "url": "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer?lang=ja"
+        },
+        {
+          "label": "用語解説：インスタンス",
+          "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/instanced-static-mesh-component-in-unreal-engine"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
+        },
+        {
+          "label": "用語解説：ブール",
+          "url": "https://www.sidefx.com/docs/houdini/nodes/sop/boolean.html"
         }
       ],
       "sourceUrls": [
@@ -1678,6 +1817,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "ボタンが消えたように見えるだけのケースなら、知っているだけで戸惑いが減りそう。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "Gaea2UE利用者には、ボタンが見えないだけの可能性を切り分ける手掛かりになるが、再現条件は未確認。"
         }
       ],
       "sources": [
@@ -1766,6 +1910,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "攻略も家づくりも、ほかの人の工夫から試せそうな部分を拾っていきたいね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "装備効果の重なりや攻略・家づくりの作例は、ESOプレイヤーが自分に合う準備と遊び方を選ぶ材料になる。"
         }
       ],
       "sources": [
@@ -1831,7 +1980,13 @@
         },
         {
           "type": "paragraph",
-          "text": "日時の確認範囲：スレッドは10月26日作成、10月27日付の参加者の投稿・編集を確認した。運営返信は時刻表示のみで、絶対日時と時間帯は未確認。前日の記事はU52のテスト公開を扱っており、今回は寄せられた意見と運営の応答を区別して紹介する。直近の返信増加率は確認していない。PTSの議論なので、本番の装備・スキル効果には反映しない。"
+          "text": "日時の確認範囲：スレッドは10月26日作成、10月27日付の参加者の投稿・編集を確認した。運営返信は時刻表示のみで、絶対日時と時間帯は未確認。前日の記事はU52のテスト公開を扱っており、今回は寄せられた意見と運営の応答を区別して紹介する。直近の返信増加率は確認していない。PTSの議論なので、本番の装備・スキル効果には反映しない。",
+          "terms": [
+            {
+              "text": "PTS",
+              "definition": "新しい内容を試す公開テストサーバーで、普段遊ぶ本番サーバーとは別の環境。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1845,6 +2000,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "気になる品は覚えておきつつ、使い道を決めるのは公式の案内を見てからでよさそう。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "将来の品やテスト内容はまだ確定ではなく、ESOプレイヤーは購入や遊ぶ予定を公式案内に照らして考えたい。"
         }
       ],
       "sources": [
@@ -1859,6 +2019,10 @@
         {
           "label": "ZOS_Kevin：意見を確認中との回答（絶対日時未確認）",
           "url": "https://forums.elderscrollsonline.com/en/discussion/comment/8545306/"
+        },
+        {
+          "label": "用語解説：PTS",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/20662/~/what-is-the-public-test-server-(pts)%3F"
         }
       ],
       "sourceUrls": [
@@ -1881,7 +2045,13 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "AutomationForge by Kovatiが日本時間10月28日1時33分に、開発中の地形制作プラグインTerrainForgeを紹介した。Gaeaのように処理をノード（機能をつないで手順を組む部品）で編集しながら、Unreal Engine内で完結させるという。公開動画は6分48秒。本記事で読んだのはタイトルと説明欄で、映像全編を確認したものではない。"
+          "text": "AutomationForge by Kovatiが日本時間10月28日1時33分に、開発中の地形制作プラグインTerrainForgeを紹介した。Gaeaのように処理をノード（機能をつないで手順を組む部品）で編集しながら、Unreal Engine内で完結させるという。公開動画は6分48秒。本記事で読んだのはタイトルと説明欄で、映像全編を確認したものではない。",
+          "terms": [
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
+          ]
         },
         {
           "type": "feature",
@@ -1896,6 +2066,12 @@
             {
               "text": "World Partition",
               "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine"
+            }
+          ],
+          "terms": [
+            {
+              "text": "World Partition",
+              "definition": "広いマップを区画に分け、プレイヤーなどからの距離に応じて読み込むUnreal Engineの仕組み。"
             }
           ]
         },
@@ -1917,6 +2093,12 @@
               "text": "PCG",
               "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/procedural-content-generation-framework-in-unreal-engine"
             }
+          ],
+          "terms": [
+            {
+              "text": "PCG",
+              "definition": "ここでは、規則に沿って建物や植生などを生成・配置するUnreal Engineの道具群。"
+            }
           ]
         },
         {
@@ -1937,6 +2119,10 @@
         {
           "label": "用語解説：World Partition（公式資料。紹介動画の動作検証ではない）",
           "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-partition-in-unreal-engine"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
         }
       ],
       "sourceUrls": [
@@ -1977,6 +2163,16 @@
               "text": "CUDA",
               "url": "https://developer.nvidia.com/cuda"
             }
+          ],
+          "terms": [
+            {
+              "text": "CUDA",
+              "definition": "NVIDIAのGPUを、描画以外も含む計算に使うための開発基盤。"
+            },
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
+            }
           ]
         },
         {
@@ -2007,6 +2203,10 @@
         {
           "label": "用語解説：CUDA（公式資料。紹介動画の動作検証ではない）",
           "url": "https://developer.nvidia.com/cuda"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
         }
       ],
       "sourceUrls": [
@@ -2036,7 +2236,13 @@
         },
         {
           "type": "paragraph",
-          "text": "Qwen3-Coder 30BをQ5_K_Mという圧縮設定で動かし、450W時は約85トークン/秒、300W時は約78トークン/秒だったという比較。トークンはAIが処理する文字列の単位だ。設定上の電力を3分の1下げても、速度低下は約8％に収まったと報告している。消費電力の実測値、周辺機器や冷却条件をそろえた独立検証はしていない。"
+          "text": "Qwen3-Coder 30BをQ5_K_Mという圧縮設定で動かし、450W時は約85トークン/秒、300W時は約78トークン/秒だったという比較。トークンはAIが処理する文字列の単位だ。設定上の電力を3分の1下げても、速度低下は約8％に収まったと報告している。消費電力の実測値、周辺機器や冷却条件をそろえた独立検証はしていない。",
+          "terms": [
+            {
+              "text": "トークン",
+              "definition": "AIが文章を処理するときの区切りで、単語・単語の一部・文字などが単位になる。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -2242,6 +2448,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "便利そうな例ほど、まず小さく試して自分の環境との差を見たいね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "仕事の任せ方と処理頻度を見直す工夫は、AI利用者が無駄な実行を抑え、人の確認を残す設計の参考になる。"
         }
       ],
       "sources": [
@@ -2300,6 +2511,10 @@
         {
           "label": "@tetumemo",
           "url": "https://x.com/tetumemo/status/2114858363511341527"
+        },
+        {
+          "label": "用語解説：トークン",
+          "url": "https://developers.google.com/machine-learning/glossary#token"
         }
       ],
       "sourceUrls": [
@@ -2374,6 +2589,12 @@
             {
               "text": "API",
               "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+            }
+          ],
+          "terms": [
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
             }
           ]
         },
@@ -2487,7 +2708,13 @@
         },
         {
           "type": "paragraph",
-          "text": "DeepMindのPhilipp Schmid氏が、文字で命令を入力する道具であるCLIを紹介したという。Claude Code、Codex、Cursorなどから画像・動画・音声・音楽生成、PDFやYouTube解析、文字起こし、Deep Researchを呼ぶ用途で、計画や会話記憶は呼び出すエージェント側が持つ。新しいAIモデルの発表ではなく、料金や利用条件は別途確認が必要だ。"
+          "text": "DeepMindのPhilipp Schmid氏が、文字で命令を入力する道具であるCLIを紹介したという。Claude Code、Codex、Cursorなどから画像・動画・音声・音楽生成、PDFやYouTube解析、文字起こし、Deep Researchを呼ぶ用途で、計画や会話記憶は呼び出すエージェント側が持つ。新しいAIモデルの発表ではなく、料金や利用条件は別途確認が必要だ。",
+          "terms": [
+            {
+              "text": "CLI",
+              "definition": "文字の命令を入力して、ソフトやコンピューターを操作する仕組み。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -2508,6 +2735,12 @@
             {
               "text": "TypeScript",
               "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+            }
+          ],
+          "terms": [
+            {
+              "text": "SDK",
+              "definition": "特定の製品や環境向けのソフトを作るための、部品・道具・説明書のセット。"
             }
           ]
         },
@@ -2583,6 +2816,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "新機能だけでなく、何を任せてよいか考える材料も増えてきたね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "AIの利用窓口や用途が広がるほど、使う人には提供条件の確認と、なりすまし・外部指示への警戒が重要になる。"
         }
       ],
       "sources": [
@@ -2657,6 +2895,18 @@
         {
           "label": "Facebook：Open Source, Local LLM & AI Agent",
           "url": "https://facebook.com/groups/runlocalai/permalink/1524844656109910/"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+        },
+        {
+          "label": "用語解説：CLI",
+          "url": "https://aws.amazon.com/what-is/cli/"
+        },
+        {
+          "label": "用語解説：SDK",
+          "url": "https://aws.amazon.com/what-is/sdk/"
         }
       ],
       "sourceUrls": [
@@ -2764,7 +3014,13 @@
         },
         {
           "type": "paragraph",
-          "text": "80 LevelがRadu Sircu氏による、ひび割れた地面、タイル、コケ、ノートなど5つの表現を紹介したという。処理をつなぐ部品であるノードのうち、見た目を決める箇所を中心に説明し、UE5での見せ方にも触れている。各素材2〜4時間という制作時間は本人の報告で、誰でも同じ時間で再現できる保証ではない。"
+          "text": "80 LevelがRadu Sircu氏による、ひび割れた地面、タイル、コケ、ノートなど5つの表現を紹介したという。処理をつなぐ部品であるノードのうち、見た目を決める箇所を中心に説明し、UE5での見せ方にも触れている。各素材2〜4時間という制作時間は本人の報告で、誰でも同じ時間で再現できる保証ではない。",
+          "terms": [
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -2864,6 +3120,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "小さな手順の違いで作業が楽になりそう。気になるものから試したくなるね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "配置・寸法・地形・映像のつなぎ方を見直す作例は、CG制作者が自分の作業手順を改善するヒントになる。"
         }
       ],
       "sources": [
@@ -2910,6 +3171,10 @@
         {
           "label": "@CharaspowerAI",
           "url": "https://x.com/CharaspowerAI/status/2114794232229609496"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
         }
       ],
       "sourceUrls": [
@@ -2958,6 +3223,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "制作の途中を見られる配信なら、完成画像だけでは分からない工夫も拾えそう。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "地形制作者には、完成画だけでは分からない加工手順を学べる配信候補だが、開催時刻や録画の有無は要確認。"
         }
       ],
       "sources": [
@@ -3042,6 +3312,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "遊び方の参考にはなるけれど、報酬や入手条件はゲーム内でも確かめたいね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "報酬の集め方や宝箱の見落とし例は、ESOプレイヤーが周回前に確認する場所と条件を整理する助けになる。"
         }
       ],
       "sources": [
@@ -3097,6 +3372,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "家づくりの自由が増えるならうれしい話。対象の家や条件がはっきりするのを待ちたいね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "家具上限の拡大は家づくりの自由度に関わる話だが、配置計画を変える前に公式の対象住宅と適用条件を確認したい。"
         }
       ],
       "sources": [
@@ -3263,6 +3543,16 @@
               "text": "Godot",
               "url": "https://docs.godotengine.org/en/stable/"
             }
+          ],
+          "terms": [
+            {
+              "text": "重み",
+              "definition": "AIモデルの計算に使う数値で、学習によって調整される。"
+            },
+            {
+              "text": "トークン",
+              "definition": "AIが文章を処理するときの区切りで、単語・単語の一部・文字などが単位になる。"
+            }
           ]
         },
         {
@@ -3283,6 +3573,14 @@
         {
           "label": "@KimiAI_Japan",
           "url": "https://x.com/KimiAI_Japan/status/2114735970109075855"
+        },
+        {
+          "label": "用語解説：重み",
+          "url": "https://developers.google.com/machine-learning/glossary#weight"
+        },
+        {
+          "label": "用語解説：トークン",
+          "url": "https://developers.google.com/machine-learning/glossary#token"
         }
       ],
       "sourceUrls": [
@@ -3305,7 +3603,13 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "公式フォーラムのZOS_Kevinによる10月26日付投稿で、Update 52のテスト用更新PTS v12.2.0が利用可能になったことを確認した。以下の細かな変更点や提供予定は朝刊が紹介した内容で、公式の詳細本文とは未照合。PTSは公開テスト用サーバーで、本番への実装を意味しない。"
+          "text": "公式フォーラムのZOS_Kevinによる10月26日付投稿で、Update 52のテスト用更新PTS v12.2.0が利用可能になったことを確認した。以下の細かな変更点や提供予定は朝刊が紹介した内容で、公式の詳細本文とは未照合。PTSは公開テスト用サーバーで、本番への実装を意味しない。",
+          "terms": [
+            {
+              "text": "PTS",
+              "definition": "新しい内容を試す公開テストサーバーで、普段遊ぶ本番サーバーとは別の環境。"
+            }
+          ]
         },
         {
           "type": "heading",
@@ -3411,6 +3715,10 @@
         {
           "label": "Hullo! It's Icy ^_^：U52家具プレビュー（タイトル・説明欄のみ確認）",
           "url": "https://www.youtube.com/watch?v=YTtOpvvpa0U"
+        },
+        {
+          "label": "用語解説：PTS",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/20662/~/what-is-the-public-test-server-(pts)%3F"
         }
       ],
       "sourceUrls": [
@@ -3497,6 +3805,12 @@
               "text": "WebGPU",
               "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
             }
+          ],
+          "terms": [
+            {
+              "text": "WebGPU",
+              "definition": "WebページからGPUを利用して、描画や計算を行うための仕組み。"
+            }
           ]
         },
         {
@@ -3517,6 +3831,10 @@
         {
           "label": "@redcamel15",
           "url": "https://x.com/redcamel15/status/2114606572165046472"
+        },
+        {
+          "label": "用語解説：WebGPU",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
         }
       ],
       "sourceUrls": [
@@ -3594,6 +3912,12 @@
             {
               "text": "API",
               "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+            }
+          ],
+          "terms": [
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
             }
           ]
         },
@@ -3707,6 +4031,10 @@
         {
           "label": "@tetumemo",
           "url": "https://x.com/tetumemo/status/2114836949500653890"
+        },
+        {
+          "label": "用語解説：API",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
         }
       ],
       "sourceUrls": [
@@ -4142,6 +4470,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "便利な新機能は気になるけど、まだ予告や利用者の報告も多いね。使える条件と、実際に確認できたことを分けて追っていきたい。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "AIの連携や代行機能を使う人にとって、便利さだけでなく権限・料金・安全性の未確認点を見分けることが重要。"
         }
       ],
       "sources": [
@@ -4364,6 +4697,16 @@
               "text": "API",
               "url": "https://developer.mozilla.org/en-US/docs/Glossary/API"
             }
+          ],
+          "terms": [
+            {
+              "text": "CLI",
+              "definition": "文字の命令を入力して、ソフトやコンピューターを操作する仕組み。"
+            },
+            {
+              "text": "API",
+              "definition": "ソフト同士が機能やデータをやり取りするための窓口と決まり。"
+            }
           ]
         },
         {
@@ -4396,7 +4739,13 @@
         },
         {
           "type": "paragraph",
-          "text": "@tetumemo は、Googleの無料講座として紹介されている約2時間の教材を取り上げた。ハーネス（AIに道具や手順を渡し、動作を管理する仕組み）の組み立て、最初のエージェント、評価、反復ループ、継続的に改善するグラフを扱うという。公開状況や無料条件は未確認で、動画全編を視聴・解析した紹介ではない。単発の成功例だけでなく評価の仕組みを学ぶ教材候補として読む。"
+          "text": "@tetumemo は、Googleの無料講座として紹介されている約2時間の教材を取り上げた。ハーネス（AIに道具や手順を渡し、動作を管理する仕組み）の組み立て、最初のエージェント、評価、反復ループ、継続的に改善するグラフを扱うという。公開状況や無料条件は未確認で、動画全編を視聴・解析した紹介ではない。単発の成功例だけでなく評価の仕組みを学ぶ教材候補として読む。",
+          "terms": [
+            {
+              "text": "ハーネス",
+              "definition": "AIに道具や実行環境を渡し、作業の進行や文脈を管理する周辺の仕組み。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -4623,6 +4972,16 @@
               "text": "LLM",
               "url": "https://aws.amazon.com/what-is/large-language-model/"
             }
+          ],
+          "terms": [
+            {
+              "text": "量子化",
+              "definition": "モデルの数値を少ないビット数で表し、主に必要なメモリーを減らす方法で、精度が変わる場合がある。"
+            },
+            {
+              "text": "LLM",
+              "definition": "大量の文章などで学習し、文章の理解や生成を行う大規模なAIモデル。"
+            }
           ]
         },
         {
@@ -4637,6 +4996,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "音声で好みを伝えたり、仕事を分けたり。派手な設定より、こういう小さな工夫のほうが効くこともありそう。気になったものから無理なく試したいね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "仕事を分担し、任せる範囲と止める条件を先に決める工夫は、AI利用者の確認の行き違いを減らすヒントになる。"
         }
       ],
       "sources": [
@@ -4763,6 +5127,18 @@
         {
           "label": "用語解説：Tailscale",
           "url": "https://tailscale.com/docs/concepts/what-is-tailscale"
+        },
+        {
+          "label": "用語解説：ハーネス",
+          "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
+        },
+        {
+          "label": "用語解説：量子化",
+          "url": "https://developers.google.com/machine-learning/glossary#quantization"
+        },
+        {
+          "label": "用語解説：LLM",
+          "url": "https://developers.google.com/machine-learning/glossary#large-language-model"
         }
       ],
       "sourceUrls": [
@@ -4928,6 +5304,12 @@
               "text": "4Dガウシアンスプラッティング",
               "url": "https://guanjunwu.github.io/4dgs/"
             }
+          ],
+          "terms": [
+            {
+              "text": "4Dガウシアンスプラッティング",
+              "definition": "広がりを持つ立体の点で、時間とともに動く被写体や場面を表現・描画する手法。"
+            }
           ]
         },
         {
@@ -4960,7 +5342,13 @@
         },
         {
           "type": "paragraph",
-          "text": "FacebookのBlender Artists Community由来の要約では、ClearとDirtyのガラスシェーダーを紹介。シェーダーは材質の光り方や透明感を決める仕組み。縁に向かううねりや汚れを規則で作り、CyclesとEeveeに対応するという投稿者の説明だ。10月28日受信の同じ投稿の追加要約では、Clear版は見る角度で反射の強さが変わるフレネル効果を使い、屈折や特別なシーン設定を使わず、両面から見ても黒くならないとされる。専用ノード群で縁の幅・うねりの強さ・中心部の強さを調整し、Dirty版は下側ほど汚れが多い雨だれ風の表現を加えるという。正式な製品名・配布先・仕様は未確認で、ノード構成や実際の描画結果はこちらで検証していない。"
+          "text": "FacebookのBlender Artists Community由来の要約では、ClearとDirtyのガラスシェーダーを紹介。シェーダーは材質の光り方や透明感を決める仕組み。縁に向かううねりや汚れを規則で作り、CyclesとEeveeに対応するという投稿者の説明だ。10月28日受信の同じ投稿の追加要約では、Clear版は見る角度で反射の強さが変わるフレネル効果を使い、屈折や特別なシーン設定を使わず、両面から見ても黒くならないとされる。専用ノード群で縁の幅・うねりの強さ・中心部の強さを調整し、Dirty版は下側ほど汚れが多い雨だれ風の表現を加えるという。正式な製品名・配布先・仕様は未確認で、ノード構成や実際の描画結果はこちらで検証していない。",
+          "terms": [
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -4988,7 +5376,13 @@
         },
         {
           "type": "paragraph",
-          "text": "@itsfazleyは、コード主体で高架橋・地形・煙を組んだ機関車シーンを紹介。@rewind02の紹介では、AIをMCP経由でUnreal Engineにつなぎ、地形や植生、戦闘演出を組み合わせた試作が取り上げられている。いずれも制作例であり、一般的な制作時間や品質を保証する比較試験ではない。"
+          "text": "@itsfazleyは、コード主体で高架橋・地形・煙を組んだ機関車シーンを紹介。@rewind02の紹介では、AIをMCP経由でUnreal Engineにつなぎ、地形や植生、戦闘演出を組み合わせた試作が取り上げられている。いずれも制作例であり、一般的な制作時間や品質を保証する比較試験ではない。",
+          "terms": [
+            {
+              "text": "MCP",
+              "definition": "AIアプリと外部の道具・データをつなぐための共通規格。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -5050,6 +5444,12 @@
               "text": "DEM",
               "url": "https://www.usgs.gov/faqs/what-a-digital-elevation-model-dem"
             }
+          ],
+          "terms": [
+            {
+              "text": "DEM",
+              "definition": "地表の標高を数値で表したデータで、地形の形を再現する手掛かりになる。"
+            }
           ]
         },
         {
@@ -5078,6 +5478,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "モデルを作り直す前に、表示や粒の大きさを少し変えるだけでも違いが出そう。地形づくりの話も一緒に置いたので、自分の作業に使えそうなコツを拾ってみてね。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "形状・表示・素材の受け渡しを分けて調整する作例は、CGや地形の制作者が作り直しを減らす手掛かりになる。"
         }
       ],
       "sources": [
@@ -5164,6 +5569,18 @@
         {
           "label": "用語解説：4Dガウシアンスプラッティング",
           "url": "https://guanjunwu.github.io/4dgs/"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
+        },
+        {
+          "label": "用語解説：MCP",
+          "url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
+        },
+        {
+          "label": "用語解説：DEM",
+          "url": "https://www.usgs.gov/faqs/what-a-digital-elevation-model-dem?qt-news_science_products=0"
         }
       ],
       "sourceUrls": [
@@ -5298,6 +5715,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "日課をまとめて済ませられるコツは助かるね。時刻変更と報酬の条件は勘違いしやすいから、遊ぶ直前にゲーム内の案内も見ておこう。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "日課をまとめる案と報酬・時刻の注意点は、ESOプレイヤーが遊ぶ前に確認事項を整理する助けになる。"
         }
       ],
       "sources": [
@@ -5366,6 +5788,11 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "難しさの好みも、機種をまたいで遊べることへの期待も人それぞれだね。今ある仕様への感想と、まだ決まっていない将来の話を分けて読んでおきたい。"
+        },
+        {
+          "type": "feature",
+          "label": "この記事のポイント",
+          "text": "ソロ攻略の難しさとクロスプレイへの期待を分けることで、ESOプレイヤーは今の遊び方と未定の将来像を混同せずに読める。"
         }
       ],
       "sources": [
@@ -5460,6 +5887,12 @@
               "text": "World Creator",
               "url": "https://www.world-creator.com/en/index.phtml"
             }
+          ],
+          "terms": [
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
           ]
         },
         {
@@ -5485,6 +5918,16 @@
             {
               "text": "SDK",
               "url": "https://aws.amazon.com/what-is/sdk/"
+            }
+          ],
+          "terms": [
+            {
+              "text": "SDK",
+              "definition": "特定の製品や環境向けのソフトを作るための、部品・道具・説明書のセット。"
+            },
+            {
+              "text": "DLSS",
+              "definition": "AIを使って描画の速度や画質を高めるNVIDIAの技術群で、機能ごとに対応条件が異なる。"
             }
           ]
         },
@@ -5514,6 +5957,10 @@
         {
           "label": "用語解説：DLSS",
           "url": "https://www.nvidia.com/en-us/geforce/technologies/dlss/"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
         }
       ],
       "sourceUrls": [
@@ -5638,7 +6085,13 @@
         {
           "type": "feature",
           "label": "公開範囲",
-          "text": "推論コードとモデル重みが対象で、学習コードや論文の評価一式は含まれない。独自のHi3D Open License Agreementに従うため、商用組み込みや再配布は適用条件を確認する必要がある。"
+          "text": "推論コードとモデル重みが対象で、学習コードや論文の評価一式は含まれない。独自のHi3D Open License Agreementに従うため、商用組み込みや再配布は適用条件を確認する必要がある。",
+          "terms": [
+            {
+              "text": "重み",
+              "definition": "AIモデルの計算に使う数値で、学習によって調整される。"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -5662,6 +6115,10 @@
         {
           "label": "発表：@Hi3D_AI",
           "url": "https://x.com/Hi3D_AI/status/2113456796715319591"
+        },
+        {
+          "label": "用語解説：重み",
+          "url": "https://developers.google.com/machine-learning/glossary#weight"
         }
       ],
       "sourceUrls": [
@@ -5694,6 +6151,12 @@
             {
               "text": "IK/FK",
               "url": "https://help.autodesk.com/cloudhelp/2027/ENU/Maya-CharacterAnimation/files/GUID-390788DB-527D-4EE5-A8DC-B99BE2D4861F.htm"
+            }
+          ],
+          "terms": [
+            {
+              "text": "IK/FK",
+              "definition": "骨格の動かし方で、IKは手足の先などの位置から関節を調整し、FKは各関節を回転させて姿勢を作る。"
             }
           ]
         },
@@ -5758,6 +6221,20 @@
             {
               "text": "Vulkan",
               "url": "https://www.vulkan.org/"
+            }
+          ],
+          "terms": [
+            {
+              "text": "Structure-from-Motion",
+              "definition": "複数の写真から、カメラの位置や向きと、被写体の立体的な点の配置を推定する手法。"
+            },
+            {
+              "text": "WebGPU",
+              "definition": "WebページからGPUを利用して、描画や計算を行うための仕組み。"
+            },
+            {
+              "text": "Vulkan",
+              "definition": "さまざまな機器やOSでGPUの描画機能を使うための共通規格。"
             }
           ]
         },
@@ -5937,7 +6414,13 @@
         {
           "type": "feature",
           "label": "Geometry Nodesの物理",
-          "text": "髪と布の動きをノードで構築し、手続き的な形状生成と組み合わせられる。初期の実験的機能であり、既存の物理システムを全面的に置き換えるものではない。"
+          "text": "髪と布の動きをノードで構築し、手続き的な形状生成と組み合わせられる。初期の実験的機能であり、既存の物理システムを全面的に置き換えるものではない。",
+          "terms": [
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
+          ]
         },
         {
           "type": "feature",
@@ -5991,6 +6474,10 @@
         {
           "label": "Video Sequencer：公式リリースノート",
           "url": "https://developer.blender.org/docs/release_notes/5.2/sequencer/"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
         }
       ],
       "sourceNote": "YouTube Data APIで動画情報を取得し、Gemini APIによる動画解析をもとにdotが編集。主要事項をBlender公式資料と照合しました。実機での性能比較・全機能の検証は行っていません。"

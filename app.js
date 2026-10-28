@@ -26,6 +26,45 @@
   const categoryName = id => categories.find(item => item.id === id)?.name || '';
   const dateLabel = value => dateFormat.format(new Date(value));
   const dayLabel = value => new Intl.DateTimeFormat('sv-SE', {timeZone: 'Asia/Tokyo'}).format(new Date(value));
+  const DAY_MS = 86400000, JST_OFFSET_MS = 9 * 60 * 60 * 1000;
+  function isNewArticle(article, now = Date.now()) {
+    // Require an explicit timezone so malformed or local-time dates cannot be marked NEW.
+    const value = article.publishedAt;
+    if (typeof value !== 'string') return false;
+    const match = value.match(/^(\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])T([01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,3})?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)$/);
+    if (!match) return false;
+    const year = Number(match[1]), month = Number(match[2]), day = Number(match[3]);
+    const monthDays = [31, year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    if (day > monthDays[month - 1]) return false;
+    const published = Date.parse(value);
+    return Number.isFinite(published) && Number.isFinite(now) && published <= now &&
+      Math.floor((published + JST_OFFSET_MS) / DAY_MS) === Math.floor((now + JST_OFFSET_MS) / DAY_MS);
+  }
+  function newBadge(article, now = Date.now()) {
+    return `<span class="news-new" data-published-at="${escapeHTML(article.publishedAt)}" aria-label="今日公開された新着記事（日本時間）"${isNewArticle(article, now) ? '' : ' hidden'}>NEW</span>`;
+  }
+  function refreshNewBadges(now = Date.now()) {
+    document.querySelectorAll('.news-new[data-published-at]').forEach(badge => {
+      badge.hidden = !isNewArticle({publishedAt: badge.dataset.publishedAt}, now);
+    });
+  }
+  function untilNextJSTDay(now = Date.now()) {
+    return DAY_MS - ((now + JST_OFFSET_MS) % DAY_MS) + 20;
+  }
+  let newBadgeTimer;
+  function scheduleNewBadges() {
+    if (typeof window.setTimeout !== 'function') return;
+    window.clearTimeout(newBadgeTimer);
+    // Minute checks also pick up clock changes; midnight is refreshed immediately.
+    newBadgeTimer = window.setTimeout(() => {
+      refreshNewBadges();
+      scheduleNewBadges();
+    }, Math.min(60000, untilNextJSTDay()));
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) { refreshNewBadges(); scheduleNewBadges(); }
+  });
+  window.addEventListener('focus', () => { refreshNewBadges(); scheduleNewBadges(); });
   function sourceLink(source) {
     let url;
     try { url = new URL(source.url); } catch { return escapeHTML(source.label || '参考リンクなし'); }
@@ -45,26 +84,145 @@
         /(^|\.)(localhost|local|localdomain|internal|intranet|lan|home|corp|private|test|invalid|example|onion|arpa)(\.|$)/.test(host)) return null;
     return url.href;
   }
+  function glossaryTerms(block) {
+    const seen = new Set();
+    return (Array.isArray(block.terms) ? block.terms : []).filter(term => {
+      if (!term || typeof term.text !== 'string' || !term.text.trim() || term.text.length > 80 ||
+          typeof term.definition !== 'string' || !term.definition.trim() || term.definition.length > 240 || seen.has(term.text)) return false;
+      seen.add(term.text);
+      return true;
+    });
+  }
+  function glossaryMarkup(term, link = '') {
+    const text = escapeHTML(term.text), definition = escapeHTML(term.definition.trim());
+    const button = link ? `<button type="button" class="glossary-trigger glossary-info" aria-label="${text}の用語解説" aria-expanded="false">?</button>` :
+      `<button type="button" class="glossary-trigger" aria-label="${text}の用語解説" aria-expanded="false">${text}</button>`;
+    return `<span class="glossary-term" data-term="${text}" data-definition="${definition}">${link}${button}</span>`;
+  }
+  function termText(text, terms) {
+    let result = '', offset = 0;
+    while (offset < text.length) {
+      let next = null;
+      for (const term of terms) {
+        const index = text.indexOf(term.text, offset);
+        if (index !== -1 && (!next || index < next.index || (index === next.index && term.text.length > next.text.length))) next = {...term, index};
+      }
+      if (!next) return result + escapeHTML(text.slice(offset));
+      result += escapeHTML(text.slice(offset, next.index)) + glossaryMarkup(next);
+      offset = next.index + next.text.length;
+    }
+    return result;
+  }
   function linkedText(block) {
-    const text = String(block.text ?? '');
+    const text = String(block.text ?? ''), terms = glossaryTerms(block);
     const links = (Array.isArray(block.links) ? block.links : []).flatMap(link => {
       if (!link || typeof link.text !== 'string' || !link.text) return [];
       const href = explanationURL(link.url);
       return href ? [{text: link.text, href}] : [];
     });
     let result = '', offset = 0;
+    // Resolve existing links first. Terms never split a link or create nested controls.
     while (offset < text.length) {
       let next = null;
       for (const link of links) {
         const index = text.indexOf(link.text, offset);
         if (index !== -1 && (!next || index < next.index || (index === next.index && link.text.length > next.text.length))) next = {...link, index};
       }
-      if (!next) return result + escapeHTML(text.slice(offset));
-      result += escapeHTML(text.slice(offset, next.index)) + `<a href="${escapeHTML(next.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(next.text)}</a>`;
+      if (!next) return result + termText(text.slice(offset), terms);
+      const anchor = `<a href="${escapeHTML(next.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(next.text)}</a>`;
+      const term = terms.find(item => item.text === next.text);
+      result += termText(text.slice(offset, next.index), terms) + (term ? glossaryMarkup(term, anchor) : anchor);
       offset = next.index + next.text.length;
     }
     return result;
   }
+  // One text-only tooltip lives under body, outside article/card overflow containers.
+  let glossaryPopup = null, activeTerm = null, glossaryPinned = false, glossaryHideTimer;
+  function glossaryOwner(target) { return target?.closest?.('.glossary-term') || null; }
+  function positionGlossary() {
+    if (!activeTerm || !glossaryPopup) return;
+    const rect = activeTerm.getBoundingClientRect();
+    const viewport = window.visualViewport;
+    const left = viewport?.offsetLeft || 0, top = viewport?.offsetTop || 0;
+    const width = viewport?.width || document.documentElement.clientWidth;
+    const height = viewport?.height || window.innerHeight;
+    const gap = 8, edge = 12;
+    glossaryPopup.style.maxWidth = `${Math.max(1, width - edge * 2)}px`;
+    glossaryPopup.style.maxHeight = `${Math.max(1, height - edge * 2)}px`;
+    // Measure after applying the current viewport constraints (rotation / zoom).
+    const size = glossaryPopup.getBoundingClientRect();
+    const x = Math.max(left + edge, Math.min(rect.left, left + width - size.width - edge));
+    const below = rect.bottom + gap;
+    const y = below + size.height <= top + height - edge ? below : rect.top - size.height - gap;
+    glossaryPopup.style.left = `${x}px`;
+    glossaryPopup.style.top = `${Math.max(top + edge, Math.min(y, top + height - size.height - edge))}px`;
+  }
+  function closeGlossary() {
+    if (typeof window.clearTimeout === 'function') window.clearTimeout(glossaryHideTimer);
+    if (activeTerm) {
+      activeTerm.querySelectorAll('button, a').forEach(control => control.removeAttribute('aria-describedby'));
+      activeTerm.querySelector('button').setAttribute('aria-expanded', 'false');
+    }
+    if (glossaryPopup) glossaryPopup.hidden = true;
+    activeTerm = null;
+    glossaryPinned = false;
+  }
+  function openGlossary(term, pinned = false) {
+    if (!term?.dataset.definition) return;
+    if (typeof window.clearTimeout === 'function') window.clearTimeout(glossaryHideTimer);
+    if (activeTerm !== term) closeGlossary();
+    if (!glossaryPopup) {
+      glossaryPopup = document.createElement('div');
+      glossaryPopup.id = 'news-glossary-popup';
+      glossaryPopup.className = 'news-glossary-popup';
+      glossaryPopup.setAttribute('role', 'tooltip');
+      document.body.append(glossaryPopup);
+    }
+    activeTerm = term;
+    glossaryPinned = glossaryPinned || pinned;
+    glossaryPopup.textContent = `${term.dataset.term}：${term.dataset.definition}`;
+    glossaryPopup.hidden = false;
+    term.querySelectorAll('button, a').forEach(control => control.setAttribute('aria-describedby', glossaryPopup.id));
+    term.querySelector('button').setAttribute('aria-expanded', 'true');
+    positionGlossary();
+  }
+  function deferGlossaryClose() {
+    if (!activeTerm || glossaryPinned || activeTerm.contains(document.activeElement)) return;
+    glossaryHideTimer = window.setTimeout(closeGlossary, 180);
+  }
+  document.addEventListener('pointerover', event => {
+    if (event.pointerType === 'touch') return;
+    if (glossaryPopup?.contains(event.target)) { window.clearTimeout(glossaryHideTimer); return; }
+    const term = glossaryOwner(event.target);
+    if (term && !term.contains(event.relatedTarget)) openGlossary(term);
+  });
+  document.addEventListener('pointerout', event => {
+    const term = glossaryOwner(event.target);
+    if ((term && !term.contains(event.relatedTarget)) ||
+        (glossaryPopup?.contains(event.target) && !glossaryPopup.contains(event.relatedTarget))) deferGlossaryClose();
+  });
+  document.addEventListener('focusin', event => {
+    const term = glossaryOwner(event.target);
+    if (term) openGlossary(term);
+    else closeGlossary();
+  });
+  document.addEventListener('focusout', event => {
+    if (activeTerm && !activeTerm.contains(event.relatedTarget)) closeGlossary();
+  });
+  document.addEventListener('click', event => {
+    const button = event.target.closest?.('.glossary-trigger');
+    if (button) {
+      const term = glossaryOwner(button);
+      if (activeTerm === term && glossaryPinned) closeGlossary(); else openGlossary(term, true);
+    } else if (!activeTerm?.contains(event.target) && !glossaryPopup?.contains(event.target)) closeGlossary();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && activeTerm) { closeGlossary(); event.preventDefault(); }
+  });
+  window.addEventListener('resize', positionGlossary);
+  window.addEventListener('scroll', positionGlossary, {passive: true});
+  window.visualViewport?.addEventListener('resize', positionGlossary);
+  window.visualViewport?.addEventListener('scroll', positionGlossary);
   function thumbnail(article, detail = false) {
     const field = article.category === 'eso' ? 'eso' : ['3dcg', 'terrain', 'cg'].includes(article.category) ? 'cg' : 'ai';
     const kind = ['roundup', 'tips', 'tip', 'digest', '小ネタ'].includes(article.kind) ? 'tips' : 'news';
@@ -186,7 +344,7 @@
     page = Math.min(Math.max(1, page), pageCount);
     const start = (page - 1) * PAGE_SIZE;
     const visible = filtered.slice(start, start + PAGE_SIZE);
-    $('articles').innerHTML = visible.map(article => `<article class="news-card">${thumbnail(article)}<div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a></h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
+    $('articles').innerHTML = visible.map(article => `<article class="news-card">${thumbnail(article)}<div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a>${newBadge(article)}</h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
     $('count').textContent = `${filtered.length} / ${articles.length} 件の記事${filtered.length ? `（${start + 1}〜${start + visible.length}件目）` : ''}`;
     $('pagination').hidden = pageCount <= 1;
     $('page-status').textContent = `${page} / ${pageCount} ページ`;
@@ -208,6 +366,7 @@
   }
   function route() {
     if (!ready) return;
+    closeGlossary();
     xRenderToken++;
     const match = location.hash.match(/^#article\/(.*)$/);
     const isDetail = !!match;
@@ -233,7 +392,7 @@
       $('detail').innerHTML = '<a class="back" href="#">← 一覧に戻る</a><h1>記事が見つかりません</h1><p>指定された記事は見つかりませんでした。一覧から記事を選んでください。</p>';
     } else {
       document.title = article.title + ' | ' + title;
-      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}</h1>${thumbnail(article, true)}${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks, article.sources)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
+      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}${newBadge(article)}</h1>${thumbnail(article, true)}${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks, article.sources)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
     }
     window.scrollTo(0, 0);
     $('detail').focus({preventScroll: true});
@@ -266,7 +425,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261026-xembed1', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261028-reading1', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
@@ -280,6 +439,7 @@
       $('date').disabled = false;
       $('notice').textContent = '';
       ready = true;
+      scheduleNewBadges();
       route();
     } catch {
       $('notice').textContent = '記事データを読み込めませんでした。接続を確認して再試行してください。';
