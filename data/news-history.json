@@ -40,7 +40,7 @@
       "sourceItemCount": 63,
       "selectedYouTubeCount": 6,
       "videoAnalysisSucceeded": 0,
-      "notes": "All 63 Slack items mapped; duplicates merged including 3 existing article updates. YouTube metadata only; Gemini 90s request timeout, no retry, token usage unknown. Reddit current timestamps incomplete. ESO PTS not applied to Live data; Live patch body unreadable. New private Slack identifiers omitted from public metadata; 9 Facebook permalinks withheld because public scope unverified; all anonymous summaries retained. Legacy Slack timestamp metadata also removed from public JSON; exact mappings retained privately for reconciliation."
+      "notes": "All 63 Slack items mapped; duplicates merged including 3 existing article updates. YouTube metadata only; Gemini 90s request timeout, no retry, token usage unknown. Reddit current timestamps incomplete. ESO PTS not applied to Live data; Live patch body unreadable. New private Slack identifiers omitted from public metadata; 9 Facebook permalinks withheld because public scope unverified; all anonymous summaries retained. Legacy Slack timestamp metadata also removed from public JSON; exact mappings retained privately for reconciliation. Correction 2026-10-28: the 9 previously withheld Facebook original-post links were restored under the owner-approved source-link policy, including private-group links. Poster names/images and private Slack identifiers remain excluded."
     }
   ],
   "articles": [
@@ -240,7 +240,8 @@
         "https://x.com/The_Cyber_News/status/2114771540352893196",
         "https://www.anthropic.com/news/s1-sec",
         "https://www.youtube.com/watch?v=CsHeAGf1Dw4",
-        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "https://facebook.com/groups/runlocalai/permalink/1524844656109910/"
       ],
       "forumEvidence": [],
       "lastUpdatedAt": "2026-10-28T10:10:49+09:00"
@@ -442,7 +443,9 @@
         "https://obsidian.md/help/Home",
         "https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt",
         "https://developers.google.com/machine-learning/glossary",
-        "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
+        "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
+        "https://facebook.com/groups/aiusers/permalink/1651826213315390/",
+        "https://facebook.com/groups/runlocalai/permalink/1525306969397012/"
       ],
       "forumEvidence": []
     },
@@ -475,7 +478,8 @@
         "https://x.com/SahilPunamia/status/2115173406262038765",
         "https://x.com/afscott/status/2114990576877891588",
         "https://www.anthropic.com/news/claude-for-small-business",
-        "https://www.youtube.com/watch?v=lPZQrVFcz3c"
+        "https://www.youtube.com/watch?v=lPZQrVFcz3c",
+        "https://facebook.com/groups/runlocalai/permalink/1524145009513208/"
       ],
       "forumEvidence": []
     },
@@ -567,7 +571,10 @@
         "https://x.com/pafuhana1213/status/2114730992300949548",
         "https://docs.gaea.app/reference/nodes/modify/autolevel.html",
         "https://www.threads.com/@thegnomonworkshop/post/DfAZw9GDgQ3",
-        "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer?lang=ja"
+        "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer?lang=ja",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2031289400925997/",
+        "https://facebook.com/groups/282909453705941/permalink/1482086110454930/",
+        "https://facebook.com/groups/282909453705941/permalink/1481160520547489/"
       ],
       "forumEvidence": []
     },
@@ -575,7 +582,9 @@
       "id": "20261028-cg-news",
       "runDate": "2026-10-28",
       "kind": "roundup",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/1938014370253501/"
+      ],
       "forumEvidence": []
     },
     {
@@ -585,7 +594,8 @@
       "sourceUrls": [
         "https://x.com/gaobon114514/status/2115019945377681846",
         "https://x.com/Green_tea_rider/status/2114996621713056158",
-        "https://x.com/Casual_Ranger/status/2114929123537613307"
+        "https://x.com/Casual_Ranger/status/2114929123537613307",
+        "https://facebook.com/groups/esoeu/permalink/40550857121179438/"
       ],
       "forumEvidence": []
     },

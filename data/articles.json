@@ -210,7 +210,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook：ChatGPT & AI Tools for Work （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook：ChatGPT & AI Tools for Work https://facebook.com/groups/aiusers/permalink/1651826213315390/"
         },
         {
           "type": "paragraph",
@@ -240,7 +240,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook：Open Source, Local LLM & AI Agent （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1525306969397012/"
         },
         {
           "type": "paragraph",
@@ -310,8 +310,16 @@
           "url": "https://obsidian.md/help/Home"
         },
         {
+          "label": "Facebook：ChatGPT & AI Tools for Work",
+          "url": "https://facebook.com/groups/aiusers/permalink/1651826213315390/"
+        },
+        {
           "label": "OpenAI公式：ロックしたチャットの説明",
           "url": "https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt"
+        },
+        {
+          "label": "Facebook：Open Source, Local LLM & AI Agent",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1525306969397012/"
         },
         {
           "label": "用語解説：Googleの機械学習用語集",
@@ -336,12 +344,14 @@
         "https://www.claymath.org/millennium/p-vs-np/",
         "https://x.com/alexmichael/status/2115210638234435764",
         "https://obsidian.md/help/Home",
+        "https://facebook.com/groups/aiusers/permalink/1651826213315390/",
         "https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt",
+        "https://facebook.com/groups/runlocalai/permalink/1525306969397012/",
         "https://developers.google.com/machine-learning/glossary",
         "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
       ],
       "thumbnailKey": "ai-news",
-      "sourceNote": "2026年10月28日0時〜10時（日本時間）に届いたSlack原稿を内容別に整理。一次資料を確認した部分は出典を添え、それ以外は提供された要約・利用者の報告として扱う。動画全編の解析や実機再現を行ったとはしていない。 Facebook由来の項目は提供された匿名の要約を使用。グループ名は示すが、元投稿の公開範囲を確認できていないため、新しい個別投稿リンクと画像は掲載していない。"
+      "sourceNote": "2026年10月28日0時〜10時（日本時間）に届いたSlack原稿を内容別に整理。一次資料を確認した部分は出典を添え、それ以外は提供された要約・利用者の報告として扱う。動画全編の解析や実機再現を行ったとはしていない。 Facebook由来の項目は素材提供者の匿名要約として掲載し、元投稿へのリンクを出典に示す。投稿者の個人名や画像は掲載していない。"
     },
     {
       "id": "20261028-ai-tips",
@@ -713,7 +723,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook：Open Source, Local LLM & AI Agent （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1524145009513208/"
         },
         {
           "type": "paragraph",
@@ -835,6 +845,10 @@
           "url": "https://x.com/afscott/status/2114990576877891588"
         },
         {
+          "label": "Facebook：Open Source, Local LLM & AI Agent",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1524145009513208/"
+        },
+        {
           "label": "Anthropic公式：2026年5月13日の開始発表",
           "url": "https://www.anthropic.com/news/claude-for-small-business"
         },
@@ -867,11 +881,12 @@
         "https://x.com/tetumemo/status/2114998052599820752",
         "https://x.com/SahilPunamia/status/2115173406262038765",
         "https://x.com/afscott/status/2114990576877891588",
+        "https://facebook.com/groups/runlocalai/permalink/1524145009513208/",
         "https://www.anthropic.com/news/claude-for-small-business",
         "https://www.youtube.com/watch?v=lPZQrVFcz3c"
       ],
       "thumbnailKey": "ai-tips",
-      "sourceNote": "2026年10月28日0時〜10時（日本時間）に届いたSlack原稿を内容別に整理。一次資料を確認した部分は出典を添え、それ以外は提供された要約・利用者の報告として扱う。動画全編の解析や実機再現を行ったとはしていない。 追加のOpenAI動画はYouTube Data APIでタイトル・説明欄を確認し、動画全体は解析していない。 Facebook由来の項目は提供された匿名の要約を使用。グループ名は示すが、元投稿の公開範囲を確認できていないため、新しい個別投稿リンクと画像は掲載していない。",
+      "sourceNote": "2026年10月28日0時〜10時（日本時間）に届いたSlack原稿を内容別に整理。一次資料を確認した部分は出典を添え、それ以外は提供された要約・利用者の報告として扱う。動画全編の解析や実機再現を行ったとはしていない。 追加のOpenAI動画はYouTube Data APIでタイトル・説明欄を確認し、動画全体は解析していない。 Facebook由来の項目は素材提供者の匿名要約として掲載し、元投稿へのリンクを出典に示す。投稿者の個人名や画像は掲載していない。",
       "videoId": "lPZQrVFcz3c",
       "videoTitle": "Getting a Head Start with Codex | Mitchell Hashimoto"
     },
@@ -1519,7 +1534,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook／QuadSpinner Gaea （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook／QuadSpinner Gaea https://facebook.com/groups/QuadSpinnerGaea/permalink/2031289400925997/"
         },
         {
           "type": "heading",
@@ -1531,7 +1546,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook／Blender Tips （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook／Blender Tips https://facebook.com/groups/282909453705941/permalink/1482086110454930/"
         },
         {
           "type": "heading",
@@ -1543,7 +1558,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook／Blender Tips （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook／Blender Tips https://facebook.com/groups/282909453705941/permalink/1481160520547489/"
         },
         {
           "type": "heading",
@@ -1601,6 +1616,18 @@
           "url": "https://docs.gaea.app/reference/nodes/modify/autolevel.html"
         },
         {
+          "label": "Facebook／QuadSpinner Gaea",
+          "url": "https://facebook.com/groups/QuadSpinnerGaea/permalink/2031289400925997/"
+        },
+        {
+          "label": "Facebook／Blender Tips",
+          "url": "https://facebook.com/groups/282909453705941/permalink/1482086110454930/"
+        },
+        {
+          "label": "Facebook／Blender Tips",
+          "url": "https://facebook.com/groups/282909453705941/permalink/1481160520547489/"
+        },
+        {
           "label": "Threads／The Gnomon Workshop（@thegnomonworkshop）",
           "url": "https://www.threads.com/@thegnomonworkshop/post/DfAZw9GDgQ3"
         },
@@ -1616,10 +1643,13 @@
         "https://x.com/AversionReality/status/2114877594231509494",
         "https://x.com/UnrealEngineJP/status/2114870570542350348",
         "https://x.com/pafuhana1213/status/2114730992300949548",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2031289400925997/",
+        "https://facebook.com/groups/282909453705941/permalink/1482086110454930/",
+        "https://facebook.com/groups/282909453705941/permalink/1481160520547489/",
         "https://www.threads.com/@thegnomonworkshop/post/DfAZw9GDgQ3",
         "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer?lang=ja"
       ],
-      "sourceNote": "2026年10月28日0時〜10時（日本時間）のSlack原稿を内容別に整理。元投稿の要約を基に、実際に確認した一次資料は本文で区別した。投稿の実機検証、動画全編の視聴・解析は行っていない。転載権限を確認できない投稿画像は使用せず、既存の文字カードまたは汎用イラストを使用。 Facebook由来の項目は提供された匿名の要約を使用。グループ名は示すが、元投稿の公開範囲を確認できていないため、新しい個別投稿リンクと画像は掲載していない。",
+      "sourceNote": "2026年10月28日0時〜10時（日本時間）のSlack原稿を内容別に整理。元投稿の要約を基に、実際に確認した一次資料は本文で区別した。投稿の実機検証、動画全編の視聴・解析は行っていない。転載権限を確認できない投稿画像は使用せず、既存の文字カードまたは汎用イラストを使用。 Facebook由来の項目は素材提供者の匿名要約として掲載し、元投稿へのリンクを出典に示す。投稿者の個人名や画像は掲載していない。",
       "thumbnailKey": "cg-tips"
     },
     {
@@ -1642,7 +1672,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook／QuadSpinner Gaea （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook／QuadSpinner Gaea https://facebook.com/groups/QuadSpinnerGaea/permalink/1938014370253501/"
         },
         {
           "type": "feature",
@@ -1650,9 +1680,16 @@
           "text": "ボタンが消えたように見えるだけのケースなら、知っているだけで戸惑いが減りそう。"
         }
       ],
-      "sources": [],
-      "sourceUrls": [],
-      "sourceNote": "2026年10月28日0時〜10時（日本時間）のSlack原稿を内容別に整理。元投稿の要約を基に、実際に確認した一次資料は本文で区別した。投稿の実機検証、動画全編の視聴・解析は行っていない。転載権限を確認できない投稿画像は使用せず、既存の文字カードまたは汎用イラストを使用。 Facebook由来の項目は提供された匿名の要約を使用。グループ名は示すが、元投稿の公開範囲を確認できていないため、新しい個別投稿リンクと画像は掲載していない。",
+      "sources": [
+        {
+          "label": "Facebook／QuadSpinner Gaea",
+          "url": "https://facebook.com/groups/QuadSpinnerGaea/permalink/1938014370253501/"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/1938014370253501/"
+      ],
+      "sourceNote": "2026年10月28日0時〜10時（日本時間）のSlack原稿を内容別に整理。元投稿の要約を基に、実際に確認した一次資料は本文で区別した。投稿の実機検証、動画全編の視聴・解析は行っていない。転載権限を確認できない投稿画像は使用せず、既存の文字カードまたは汎用イラストを使用。 Facebook由来の項目は素材提供者の匿名要約として掲載し、元投稿へのリンクを出典に示す。投稿者の個人名や画像は掲載していない。",
       "thumbnailKey": "cg-news"
     },
     {
@@ -1723,7 +1760,7 @@
         },
         {
           "type": "paragraph",
-          "text": "出典：Facebook／Elder Scrolls Online（素材提供者の紹介） （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "出典：Facebook／Elder Scrolls Online（素材提供者の紹介） https://facebook.com/groups/esoeu/permalink/40550857121179438/"
         },
         {
           "type": "feature",
@@ -1743,14 +1780,19 @@
         {
           "label": "@Casual_Ranger",
           "url": "https://x.com/Casual_Ranger/status/2114929123537613307"
+        },
+        {
+          "label": "Facebook／Elder Scrolls Online（素材提供者の紹介）",
+          "url": "https://facebook.com/groups/esoeu/permalink/40550857121179438/"
         }
       ],
       "sourceUrls": [
         "https://x.com/gaobon114514/status/2115019945377681846",
         "https://x.com/Green_tea_rider/status/2114996621713056158",
-        "https://x.com/Casual_Ranger/status/2114929123537613307"
+        "https://x.com/Casual_Ranger/status/2114929123537613307",
+        "https://facebook.com/groups/esoeu/permalink/40550857121179438/"
       ],
-      "sourceNote": "2026年10月28日0時〜10時（日本時間）のSlack原稿を内容別に整理。元投稿の要約を基に、実際に確認した一次資料は本文で区別した。投稿の実機検証、動画全編の視聴・解析は行っていない。転載権限を確認できない投稿画像は使用せず、既存の文字カードまたは汎用イラストを使用。 Facebook由来の項目は提供された匿名の要約を使用。グループ名は示すが、元投稿の公開範囲を確認できていないため、新しい個別投稿リンクと画像は掲載していない。",
+      "sourceNote": "2026年10月28日0時〜10時（日本時間）のSlack原稿を内容別に整理。元投稿の要約を基に、実際に確認した一次資料は本文で区別した。投稿の実機検証、動画全編の視聴・解析は行っていない。転載権限を確認できない投稿画像は使用せず、既存の文字カードまたは汎用イラストを使用。 Facebook由来の項目は素材提供者の匿名要約として掲載し、元投稿へのリンクを出典に示す。投稿者の個人名や画像は掲載していない。",
       "thumbnailKey": "eso-tips"
     },
     {
@@ -2499,7 +2541,7 @@
         },
         {
           "type": "paragraph",
-          "text": "追加出典：Facebook：Open Source, Local LLM & AI Agent （個別リンクは非掲載：元投稿の公開範囲を確認できていないため）"
+          "text": "追加出典：Facebook：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1524844656109910/"
         },
         {
           "type": "heading",
@@ -2611,6 +2653,10 @@
         {
           "label": "Cohere公式調査本文（2026-10-26）",
           "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+        },
+        {
+          "label": "Facebook：Open Source, Local LLM & AI Agent",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1524844656109910/"
         }
       ],
       "sourceUrls": [
@@ -2630,10 +2676,11 @@
         "https://x.com/The_Cyber_News/status/2114771540352893196",
         "https://www.anthropic.com/news/s1-sec",
         "https://www.youtube.com/watch?v=CsHeAGf1Dw4",
-        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+        "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "https://facebook.com/groups/runlocalai/permalink/1524844656109910/"
       ],
       "thumbnailKey": "ai-news",
-      "sourceNote": "2026年10月27日0時〜10時（日本時間）のSlack原稿を内容別に整理。本文は提供された要約に基づき、未照合の主張は注記した。汎用サムネイルは実物の製品画面・公式画像ではない。 関連動画はYouTube Data APIのメタデータ・説明文のみ確認し、全編未解析。 Facebook由来の項目は提供された匿名の要約を使用。グループ名は示すが、元投稿の公開範囲を確認できていないため、新しい個別投稿リンクと画像は掲載していない。",
+      "sourceNote": "2026年10月27日0時〜10時（日本時間）のSlack原稿を内容別に整理。本文は提供された要約に基づき、未照合の主張は注記した。汎用サムネイルは実物の製品画面・公式画像ではない。 関連動画はYouTube Data APIのメタデータ・説明文のみ確認し、全編未解析。 Facebook由来の項目は素材提供者の匿名要約として掲載し、元投稿へのリンクを出典に示す。投稿者の個人名や画像は掲載していない。",
       "videoId": "CsHeAGf1Dw4",
       "updatedAt": "2026-10-28T10:10:49+09:00"
     },
