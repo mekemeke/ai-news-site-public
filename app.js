@@ -8,6 +8,7 @@
   const PAGE_SIZE = 15;
   let page = 1, pageCount = 1;
   let xRenderToken = 0, xScript = null;
+  let threadsScript = null;
   let dark = false;
   try { dark = localStorage.getItem('ai-news-preview-theme') === 'dark'; } catch {}
   function setTheme() {
@@ -127,6 +128,49 @@
       if (window.twttr?.ready) window.twttr.ready(run); else run();
     }, {once: true});
   }
+  const threadsHosts = ['threads.com', 'www.threads.com', 'threads.net', 'www.threads.net'];
+  function threadsPost(value) {
+    if (typeof value !== 'string' || !/^https:\/\//i.test(value) || /[\s\\]/.test(value)) return null;
+    let url;
+    try { url = new URL(value); } catch { return null; }
+    if (url.protocol !== 'https:' || url.username || url.password || url.port || !threadsHosts.includes(url.hostname)) return null;
+    const match = url.pathname.match(/^\/(?:@([A-Za-z0-9_.]{1,30})\/post|t)\/([A-Za-z0-9_-]{1,64})\/?$/);
+    if (!match) return null;
+    const path = match[1] ? `@${match[1]}/post` : 't';
+    return {id: match[2], href: `https://www.threads.com/${path}/${match[2]}`};
+  }
+  function threadsPostEmbed(block, seen, sources) {
+    const post = threadsPost(block.url);
+    // Bind every embed to an explicitly recorded source, not arbitrary block HTML.
+    if (!post || seen.has(post.id) || !sources.some(source => threadsPost(source?.url)?.href === post.href)) return '';
+    seen.add(post.id);
+    const href = escapeHTML(post.href);
+    return `<figure class="threads-embed"><blockquote id="threads-post-${post.id}" class="text-post-media" data-text-post-permalink="${href}"${dark ? ' data-theme="dark"' : ''}><p>Threadsの元投稿</p><a href="${href}" target="_blank" rel="noopener noreferrer">Threadsで元投稿を見る ↗</a></blockquote><figcaption><a href="${href}" target="_blank" rel="noopener noreferrer">Threadsで元投稿を見る ↗</a><span>（表示できない場合はリンク先で確認できます）</span></figcaption></figure>`;
+  }
+  function loadThreadsWidgets(container) {
+    const token = xRenderToken;
+    if (!container || !container.querySelector('blockquote.text-post-media')) return;
+    const run = () => {
+      if (token !== xRenderToken || !container.isConnected) return;
+      // Meta's official embed.js registers its Threads scanner on this shared API.
+      try { window.instgrm?.Embeds?.process(); } catch {}
+    };
+    if (threadsScript) {
+      if (threadsScript.dataset.loaded === 'true') run();
+      else threadsScript.addEventListener('load', run, {once: true});
+      return;
+    }
+    threadsScript = document.createElement('script');
+    threadsScript.id = 'threads-wjs';
+    threadsScript.src = 'https://www.threads.com/embed.js';
+    threadsScript.async = true;
+    threadsScript.addEventListener('load', () => {
+      threadsScript.dataset.loaded = 'true';
+      run();
+    }, {once: true});
+    // A denied/failed script leaves both source links intact; never retry-loop.
+    document.head.append(threadsScript);
+  }
   function metadata(article) {
     const sample = isSample(article);
     return `<div class="meta"><span class="category">${escapeHTML(categoryName(article.category))}</span><span class="status">${sample ? '架空サンプル' : 'ニュース・動画紹介'}</span><time datetime="${escapeHTML(article.publishedAt)}">${sample ? 'サンプル日時' : '記事掲載'} ${escapeHTML(dateLabel(article.publishedAt))} JST</time></div>`;
@@ -150,10 +194,11 @@
     $('page-next').disabled = page >= pageCount;
     $('end-note').hidden = filtered.length === 0 || page < pageCount;
   }
-  function renderBlocks(blocks) {
-    const seenPosts = new Set();
+  function renderBlocks(blocks, sources = []) {
+    const seenPosts = new Set(), seenThreads = new Set();
     return blocks.map(block => {
       if (block.type === 'xpost') return xPostEmbed(block, seenPosts);
+      if (block.type === 'threadspost') return threadsPostEmbed(block, seenThreads, sources);
       if (block.type === 'feature') {
         return `<p class="feature"><strong>${escapeHTML(block.label)}</strong>：${linkedText(block)}</p>`;
       }
@@ -188,11 +233,12 @@
       $('detail').innerHTML = '<a class="back" href="#">← 一覧に戻る</a><h1>記事が見つかりません</h1><p>指定された記事は見つかりませんでした。一覧から記事を選んでください。</p>';
     } else {
       document.title = article.title + ' | ' + title;
-      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}</h1>${thumbnail(article, true)}${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
+      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}</h1>${thumbnail(article, true)}${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks, article.sources)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
     }
     window.scrollTo(0, 0);
     $('detail').focus({preventScroll: true});
     loadXWidgets($('detail').querySelector('.article-body'));
+    loadThreadsWidgets($('detail').querySelector('.article-body'));
   }
   $('categories').addEventListener('click', event => {
     const button = event.target.closest('[data-category]');
@@ -246,4 +292,5 @@
   }
   loadArticles();
 })();
+
 

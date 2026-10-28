@@ -26,3 +26,9 @@
 
 /* News list only: preserve ESO layouts and keep controls usable on phones. */
 .news-pagination{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0}.news-pagination button{flex:0 0 auto}.news-pagination [role=status]{font-size:13px;white-space:nowrap}#list-title{scroll-margin-top:16px}
+
+
+/* Official Threads embeds: the original-post link remains outside the widget. */
+.threads-embed{margin:20px 0;max-width:100%;overflow-wrap:anywhere}.threads-embed blockquote{margin:0;padding:16px;border:1px solid var(--line);border-radius:8px}.threads-embed iframe{max-width:100%!important}.threads-embed figcaption{font-size:12px;color:var(--muted);margin-top:8px}.threads-embed figcaption a{text-decoration:underline}.threads-embed figcaption span{display:inline}
+
+.threads-embed iframe.text-post-media{display:block;min-width:0;width:calc(100% - 2px);padding:0;border:0;border-radius:12px;background:var(--paper)}

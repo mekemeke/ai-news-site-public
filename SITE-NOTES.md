@@ -93,3 +93,13 @@ ESOデータベースの6入口を共通ナビで移動できる。`eso-mundus.h
 書記は正確な対応を確認できた11グリモアの既存アイコンをリポジトリ内から表示する。Mender's Bond は対応画像を未確認のため従来の文字表示を維持。画像の権利元・取得元・非公式表示は `ESO-SCRIBING-ICONS.md` と `assets/eso/scribing/icon-manifest.json` に記録。画像追加によって未確認のスクリプト組み合わせを確認済みに変更しない。
 
 検証: `node --test tests/eso-catalog.test.cjs tests/eso-scribing.test.cjs`。noindex・no-referrer・CSP・ダークモードを維持。
+
+
+
+## Threads投稿の埋め込み（2026-10-28）
+- 公開・公式埋め込みが許される元投稿だけを、該当する出典段落の直後に `{ "type": "threadspost", "url": "https://www.threads.com/@threads/post/DWjTI0cgH5O" }` の構造化ブロックで配置する。例の投稿をニュースとして追加しない。
+- 同じ記事の `sources` にある正規URLだけを表示。HTTPSの threads.com/www.threads.com/threads.net/www.threads.net、`/@ユーザー/post/投稿ID` または `/t/投稿ID` だけを受け付け、www.threads.comへ統一しクエリ・フラグメントを除く。認証情報、非標準ポート、空白、バックスラッシュ、別ホスト・別パスは拒否。同一記事内の同一投稿IDは一度だけ。
+- Meta公式 `blockquote.text-post-media` と `https://www.threads.com/embed.js` を使用。スクリプトは必要な詳細画面で一度だけ読み込み、公式SDKの `window.instgrm.Embeds.process()` で画面切替後も再処理する。古い画面の読み込みコールバックは無効化する。表示失敗・削除・非公開化・閲覧制限でも、ウィジェット外の元投稿リンクを残す。
+- CSPはニュース入口 index.html の script-src と frame-src に `https://www.threads.com` だけを追加。ワイルドカード・unsafe-inline・unsafe-evalは追加しない。SDKのiframeサイズ用CSSは既存外部style.cssへ置く。他のHTML入口のCSPやnoindexは変更しない。
+- 投稿画像・動画・本文を独自に取得・保存しない。生HTMLを記事データへ入れない。ログインや非公開範囲を回避しない。FacebookのOGPカードは実装しない。既存記事への自動後付けはしない。
+- 公式資料: https://github.com/facebook/meta-embeds-for-wordpress （対応URLと公式スクリプト）／ https://www.threads.com/embed.js （2026-10-28に取得したSDKでmarkup、共有process API、動的再走査を確認）。
