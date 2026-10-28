@@ -1,28 +1,531 @@
 {
   "schema_version": 1,
-  "mode": "analyze",
-  "genre": "ESO",
-  "created_at": "2026-10-27T08:31:18.503411+00:00",
-  "run_id": "40474065595",
+  "mode": "channels",
+  "genre": "all",
+  "created_at": "2026-10-28T01:00:23.849563+00:00",
+  "run_id": "40612349553",
   "videos": [
     {
-      "id": "8uaizmlo3bA",
-      "url": "https://www.youtube.com/watch?v=8uaizmlo3bA",
-      "title": "Pure Class Heavy Attack Sorcerer Solo Build | ESO Update 51",
+      "id": "Yim7JrVzSkk",
+      "url": "https://www.youtube.com/watch?v=Yim7JrVzSkk",
+      "title": "Lawyers Stay in Control | AT&T + OpenAI",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "AT&T’s David McAtee and Bill Ryan discuss how AI can support legal work while lawyers remain responsible for strategy, judgment and decisions.",
+      "published_at": "2026-10-27T15:40:48Z",
+      "duration_seconds": 26
+    },
+    {
+      "id": "lPZQrVFcz3c",
+      "url": "https://www.youtube.com/watch?v=lPZQrVFcz3c",
+      "title": "Getting a Head Start with Codex | Mitchell Hashimoto",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "“The whole point is I want to hit the ground running.” HashiCorp co-founder Mitchell Hashimoto wraps up his day by putting Codex agents to work. They research the competition, compare tools and prototype features he’s still working out—giving him a head start on the next day’s work.\n\nBuilding with Codex? Share your story: https://openai.com/form/codex-originals/",
+      "published_at": "2026-10-27T15:04:57Z",
+      "duration_seconds": 46
+    },
+    {
+      "id": "cflbzHRvGvg",
+      "url": "https://www.youtube.com/watch?v=cflbzHRvGvg",
+      "title": "From Ideas to Prototypes with Codex | Shopify’s Mikhail Parakhin",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "“If you have an idea, bring a prototype right away.” For Shopify CTO Mikhail Parakhin, Codex is changing what his team brings to the meeting. From delegating tasks to exploring architectural options, he’s using Codex to take on work he couldn’t before. Meet Mikhail, one of the builders in Codex Originals.\n\nBuilding with Codex? Share your story: https://openai.com/form/codex-originals/",
+      "published_at": "2026-10-27T15:03:41Z",
+      "duration_seconds": 66
+    },
+    {
+      "id": "LOP8ul3KqQI",
+      "url": "https://www.youtube.com/watch?v=LOP8ul3KqQI",
+      "title": "Introducing Genie 4",
+      "channel": "Google for Developers",
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "genres": [
+        "AI"
+      ],
+      "description": "Raia Hadsell, Diego Rivas, and Hang Qi from Google DeepMind join host Logan Kilpatrick to introduce Genie 4, the latest world model from Google DeepMind. \n\nTheir conversation covers:\n*What world models are\n*The arc from Genie 1 to Genie 4\n*Live demos showcasing the model’s biggest leaps forward\n*The role of Gemini in the loop\n*The path to robotics and education applications\n*What it means to make Genie available in the API for the first time\n\nChapters\n0:00 — Welcome and Genie 4 introduction\n1:02 — What are world models?\n2:10 — The arc from Genie 1 to Genie 4\n5:10 — Live demos, audio, photorealism, and real-time interaction\n11:03 — Egocentric first-person view\n11:53 — Dialogue with characters in the world\n15:10 — Gemini in the loop\n17:10 — Fantastical world simulation\n19:01 — Genie 4 and robotics\n24:11 — What makes Genie 4 shine vs. previous models\n25:55 — Scaling and future directions\n34:42 — API availability\n35:04 — Safety and SynthID in real time\n41:36 — Go-to prompts from the team\n45:36 — Evaluating world model quality\n\n\n🔗 Resources:\nGenie 4 Blog? → https://goo.gle/4ipGTNa\n\n\nSubscribe to Google for Developers → https://goo.gle/developers    \n\n\n\nSpeakers: Raia Hadsell, Diego Rivas, Hang Qi, Logan Kilpatrick\nProducts Mentioned: Gemini",
+      "published_at": "2026-10-27T16:18:01Z",
+      "duration_seconds": 2846
+    },
+    {
+      "id": "EUjd_UBApoA",
+      "url": "https://www.youtube.com/watch?v=EUjd_UBApoA",
+      "title": "Crazy Spy Tech You Can Use For Free!",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "Sharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #AITools #ArtificialIntelligence",
+      "published_at": "2026-10-27T16:43:52Z",
+      "duration_seconds": 68
+    },
+    {
+      "id": "sFfPkUJd_Jk",
+      "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
+      "title": "Genie 4: A new generation of world simulation",
+      "channel": "Google DeepMind",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "genres": [
+        "AI"
+      ],
+      "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next: how the world responds, how it sounds, and how the people in it move, react, and speak.\n\nWe have started rolling out Genie 4 as a research preview for trusted testers, and it's coming soon to Google AI Ultra subscribers in Project Genie and early access partners of the Gemini API and Google AI Studio. \n\nAll Genie 4 recordings in this video show real-time interactions from Genie 4, where users use standard keyboard controls for navigation and camera control, and text prompts to steer the scene as it evolves.\n\nLearn more: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation\nJoin the waitlist for Project Genie: https://forms.gle/WQnSNEM3omF7Uruu7\n\n___\n\nSubscribe to our channel https://www.youtube.com/@googledeepmind \nFind us on X https://x.com/GoogleDeepMind\nFollow us on Instagram https://instagram.com/googledeepmind \nAdd us on Linkedin https://www.linkedin.com/company/deepmind/",
+      "published_at": "2026-10-27T16:00:41Z",
+      "duration_seconds": 148
+    },
+    {
+      "id": "yoCUMvkCEw0",
+      "url": "https://www.youtube.com/watch?v=yoCUMvkCEw0",
+      "title": "The Character Design is all in the details. 👌 Explore our Signature Collections today.",
+      "channel": "Adobe Substance 3D",
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "🎨: Anatomy of Rust - Loic Anquetil & Welcome to Mireland - Sherif Dawoud",
+      "published_at": "2026-10-27T17:00:37Z",
+      "duration_seconds": 30
+    },
+    {
+      "id": "zMs2wtb2Yug",
+      "url": "https://www.youtube.com/watch?v=zMs2wtb2Yug",
+      "title": "😮 Giveaways 🥳 Subathon Day 54",
+      "channel": "Skinny Cheeks",
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Support the stream: https://streamlabs.com/skinnycheeks/tip\nhttp://twitch.tv/skinnycheeks\n\nMY LINKS\n\n► Website - https://www.skinnycheeks.gg\n► Support Via Patreon - https://www.patreon.com/skinnycheeks\n► Discord - https://discord.gg/dpsnerds\n► Twitch - http://www.twitch.tv/skinnycheeks\n► Twitter - http://www.twitter.com/skinnycheeks\n► Instagram - http://www.instagram.com/skinnycheeks\n► Soundcloud - http://www.soundcloud.com/skinnycheeks\n\nGREAT RESOURCES\n\n► Status Effect Calc - https://www.skinnycheeks.gg/status-effect-calculator\n► Damage Increase Calc - https://www.skinnycheeks.gg/simple-damage-calculator\n► ESO Add-Ons Currently Used - https://tinyurl.com/y8zhz4m3\n► UESP - https://en.uesp.net/wiki/Main_Page\n► ESO-Hub - https://eso-hub.com/\n► ESO Gear Information - http://www.eso-sets.com\n► ESO Skill Information - http://www.eso-skillbook.com\n\n#arpg #mmorpg #gamingnews",
+      "published_at": "2026-10-27T15:00:53Z",
+      "duration_seconds": 27643
+    },
+    {
+      "id": "XPjQzskqn1E",
+      "url": "https://www.youtube.com/watch?v=XPjQzskqn1E",
+      "title": "PTS Testing - Tank Modifiers, Rimegales, Solo Builds | ESO Livestream",
       "channel": "Hyperioxes",
-      "description": "Pure Class Heavy Attack Sorcerer Solo Build for ESO Update 51. It has access to a strong damage shield with Hardened Ward, gets constant damage shields from the Calculated Defense Class Mastery, and is very easy to play. It's on the lower end of DPS though.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 56.1k DPS on the 6 million dummy.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/heavy-attack-sorcerer-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/zIeVBnUGNBU\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/St6RWOLX1Ls\nLog - https://www.esologs.com/reports/G7JAmZkLTNKyQ3hY\n\n56.1k DPS Parse\nRecording - https://youtu.be/sSDoCPpzU8w\n\n=============  Timestamps =============\n\n0:00 Intro\n0:22 Skill Setups\n3:42 Situational Skills\n5:00 Final Setups\n5:19 Rotation\n5:57 Passives\n6:16 Vampirism\n6:39 Gear\n7:10 Champion Points\n7:48 Class Mastery\n8:24 Race\n8:44 Mundus\n8:50 Attributes\n9:21 Food\n10:06 Potions\n10:31 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
-      "published_at": "2026-10-26T16:17:22Z",
-      "duration_seconds": 662
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "",
+      "published_at": "2026-10-28T00:34:35Z",
+      "duration_seconds": 13345
+    },
+    {
+      "id": "IqS3WM8e2so",
+      "url": "https://www.youtube.com/watch?v=IqS3WM8e2so",
+      "title": "Why The Witcher 3 Is More Popular Now Than EVER. #PVGD",
+      "channel": "Hack The Minotaur",
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Powered by Polish Video Game Days. Polish Video Game Days runs October 12–31. Find out more at https://videogamesfrompoland.com/en\n\n#PVGD #PolishVideoGameDays #Ad\n\n➖ Stay Updated!➖\n🔥 Weekly ESO News, Builds & Guides: https://hacktheminotaur.kit.com/news\n\n➖ JOIN Zero To Hero Academy! ➖\n⭐ My System For PERFECT ESO Builds!\n⭐ Online Courses: https://htm.podia.com/\n⭐ Ultimate Build Guide: https://htm.podia.com/eso-zero-to-hero-build-guide\n\n➖ Help Slay The Algorithm! ➖\n👍 CRUSH That Like!\n👊 SUBSCRIBE! https://bit.ly/subscribeHTM\n🔔 Ding that Notification BELL!\n\n➖ My Socials! ➖\n🐦 Twitter: https://twitter.com/HackMinotaur\n\n➖ Show Your Support! ➖\nUnlock Exclusive Videos & More!\n💪 Become A Channel Member! https://bit.ly/joinHTM\n❤️ Member Content: https://bit.ly/HTM-members\n🗡 CHANNEL MEMBERS - THANK YOU!! 🛡\n\n➖ My ESO Website! ➖\nHome: https://www.hacktheminotaur.com/\nBuilds: https://www.hacktheminotaur.com/builds\nGuides: https://www.hacktheminotaur.com/all-eso-guides\nCompanions: https://www.hacktheminotaur.com/eso-companions",
+      "published_at": "2026-10-27T16:07:01Z",
+      "duration_seconds": 1028
     }
   ],
-  "usage": {
-    "total_input_tokens": 60303,
-    "total_output_tokens": 59,
-    "total_thought_tokens": 0
+  "collection_source": "watchlist",
+  "editor_review_required": true,
+  "window": {
+    "start": "2026-10-27T15:00:00Z",
+    "end": "2026-10-28T01:00:23.849563Z",
+    "timezone": "Asia/Tokyo"
   },
-  "analysis": {
-    "summary": "Elder Scrolls Onlineでソーサラーのビルドを紹介している。ソーサラーの強いところやビルド構成について画面を用いて解説している。解説を聞きながら実際にボスキャラを倒していく。強力なアビリティを複数紹介している。",
-    "model": "gemini-3.5-flash-lite"
-  },
-  "api_attempts": 2
+  "selection_limit_per_genre": 3,
+  "candidate_limit_per_channel": 3,
+  "partial": true,
+  "stop_code": "",
+  "channels": [
+    {
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 4,
+      "candidates_returned": 3,
+      "partial": true,
+      "reasons": [
+        "candidate_limit",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "name": "Claude",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "name": "Matt Wolfe",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "name": "KEITO【AI&WEB ch】",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "name": "いまにゅのAIプログラミング塾",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "name": "Autodesk Media & Entertainment",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "name": "Chaos V-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "name": "Adobe Substance 3D",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "name": "Foundry",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "name": "Houdini",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "name": "Blender",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "name": "Eloi Andaluz Fullà",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "name": "Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "name": "QuadSpinner",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "name": "World Creator",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit",
+        "candidate_not_eligible"
+      ]
+    },
+    {
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "name": "Bethesda Softworks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "name": "Skinny Cheeks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "name": "ArzyeL Gaming",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "name": "Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "name": "Hack The Minotaur",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    }
+  ],
+  "api_attempts": 53
 }
