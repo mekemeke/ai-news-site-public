@@ -1,15 +1,34 @@
 {
   "schema_version": 1,
   "mode": "search",
-  "genre": "3DCG",
-  "created_at": "2026-10-28T01:02:07.256991+00:00",
-  "run_id": "40612539037",
-  "videos": [],
+  "genre": "terrain",
+  "created_at": "2026-10-28T01:03:23.363146+00:00",
+  "run_id": "40612674478",
+  "videos": [
+    {
+      "id": "CfemxyIAgSA",
+      "url": "https://www.youtube.com/watch?v=CfemxyIAgSA",
+      "title": "I Made Unreal Engine Generate Any Terrain, Real or Imaginary",
+      "channel": "AutomationForge by Kovati",
+      "description": "Discord, early access: https://kovati.dev/discord\nDownload the Automation Forge Hub: https://kovati.dev/download\nSite: https://kovati.dev\n\nNode-based terrain, like Gaea, but it lives inside Unreal Engine. Build any terrain from nodes, or start from a real place on Earth, and it lands as a playable World Partition level. No export, no round trip.\n\nTerrainForge is in preview. It will be a paid plugin, with its agent toolset open source.\n\nIn this video:\n- How terrain generation works: uplift first, then ice, rain and erosion cut it down\n- 18 presets as starting points: volcanic island, canyon, desert dunes, alpine and more, each one an editable graph\n- Live preview in under a tenth of a second, and every node stays editable\n- Real places: search anywhere on Earth, drag the square, and the real elevation arrives as a node you keep shaping\n- Builds up to 16K. A full 4K alpine build takes about a minute on a laptop GPU, under three minutes on the CPU alone\n- Scored against 79 real elevation scans, not against other tools\n- Import to a level with landscape, eight paint layers and real Unreal water bodies, ready for your PCG graphs\n- 45 tools an AI agent can call, plus skills for whole flows, so an agent can build a valley while you keep the final say\n- How it was built: AI agents worked through 91 small work packages, and today 630 tests pass\n\nChapters\n0:00 Intro\n0:46 The usual way vs. inside Unreal\n1:25 Nodes 101\n2:17 Any terrain\n2:55 Real places, then make them yours\n3:44 Build big, and check it\n4:30 Into a level (with PCG)\n4:57 Agents drive the flow\n5:39 How AI agents built it\n6:23 Takeaway\n\nIt doesn't do everything Gaea does yet. But it lives where your game lives.\n\nElevation data: IGN LiDAR HD (France), swissALTI3D by swisstopo (Switzerland), USGS 3DEP (USA), AHN (Netherlands), Kartverket (Norway), Copernicus DEM (rest of the world).\n\nMusic:\n\"2020-03-18 Synthwave\" by Doctor_Dreamchip, CC BY 4.0, https://freesound.org/people/Doctor_Dreamchip/sounds/511278\n\"Circuit Synt",
+      "published_at": "2026-10-27T16:33:31Z",
+      "duration_seconds": 408
+    },
+    {
+      "id": "FGaePXpchUE",
+      "url": "https://www.youtube.com/watch?v=FGaePXpchUE",
+      "title": "This is Aura32: Gaea on Linux, Aura32 vs Wine 11 (same PC, same files)",
+      "channel": "Aura32 HQ",
+      "description": "This is Aura32: a Windows compatibility layer for Linux, written from scratch. Windows programs run directly on your CPU, with no emulator, no virtual machine and no copy of Windows. It is not released yet.\n\nHere is where it stands, with a real professional app: Gaea 2.0.6, the Windows terrain generator, under Aura32 and the same copy under Wine 11.19, on our test PC (an RTX 4080), with the same files.\n\nWhat you see:\n- Wine 11: Gaea's window opens, but the terrain named on its command line never opens (\"Untitled\" after 3 minutes), the Welcome window is never drawn, and the Unity viewport never attaches. Proton 11 and GE-Proton don't open the terrain either.\n- Aura32: the terrain opens in seconds and the viewport renders through DXVK on Vulkan on our test PC's RTX 4080; Gaea's build engine uses that GPU through CUDA.\n\nThe numbers (medians of three runs on our test PC with an RTX 4080, same files, measured 2026-10-19):\n- Mesa build 2048x2048, CPU: 23.1 s vs 110.6 s on Wine\n- Mesa build 4096x4096: 71.8 s on the CPU and 34.1 s on the GPU, vs 241.4 s on Wine (no CUDA for Gaea on Wine)\n- One graph per node type: 2.7 s vs 20.4 s\n- Idle CPU: 13 % vs 140 % of one core\n\nLimits: no Windows kernel drivers (so no kernel anti-cheat, no Store or Game Pass games); not a sandbox; x86-64 Linux only.\n\nJoin the Discord for early access: https://discord.gg/PZDgTcPqNY\nWhen Aura32 is released there will be a paid Pro edition; the first 100 members of the Discord get it free, for life.\nSite: https://aura32.ai · X: https://x.com/i/user/2114771587475931138\n\nGaea is a product of QuadSpinner. Aura32 is not affiliated with QuadSpinner, Microsoft or the Wine project.\n\nChapters:\n0:00 What Aura32 is\n0:29 Gaea under Wine 11\n1:02 Gaea under Aura32\n1:22 The live viewport\n1:38 GPU builds through CUDA\n1:56 The numbers\n2:22 What Aura32 doesn't do\n2:41 Join the Discord",
+      "published_at": "2026-10-27T16:00:22Z",
+      "duration_seconds": 186
+    }
+  ],
   "window": {
     "start": "2026-10-27T15:00:00Z",
-    "end": "2026-10-28T01:02:07.256991Z",
+    "end": "2026-10-28T01:03:23.363146Z",
     "timezone": "Asia/Tokyo"
   },
   "editor_reviewed": true,
-  "api_attempts": 1
+  "api_attempts": 2
 }
