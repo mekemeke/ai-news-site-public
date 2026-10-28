@@ -4,7 +4,7 @@
     "version": "2026-10-28.normal-skills.v3",
     "verifiedAt": "2026-10-28",
     "coverageNote": "7クラス・各3系統の基本／変異／アルティメット／パッシブ462件を収録。説明は出典に基づく独自の日本語要約です。ライブ版U51との全件一致は未確認で、過去スナップショットを含みます。公式更新説明・出典内の既知の不一致がある8件は個別に注意を表示しています。 非クラス7系統・42スキルラインの500件を追加（基本・パッシブ296、変異168、属性派生36）。非クラスは2026-10-17の系統一覧データを参照し、現行ライブ版との全件一致は未確認。書記・チャンピオンは別一覧。 非クラスの網羅範囲は参照元の42スキルラインで、Vengeance専用構成など参照索引にない特殊構成は含みません。",
-    "iconNote": "既存クラス462件の実物アイコンを保持し、非クラスは名前・系統・種別の対応と利用条件を確認した249 / 500件に実物アイコンを掲載。未取得251件は「未掲載」と表示し、違う画像で代用しません。画像は同じサイト内に保存。",
+    "iconNote": "既存クラス462件の実物アイコンを保持し、非クラスは名前・系統・種別の対応と利用条件を確認した261 / 500件に実物アイコンを掲載。未取得239件は「未掲載」と表示し、違う画像で代用しません。画像は同じサイト内に保存。",
     "numericNote": "数値は出典に表示された参考値です。装備・能力値・CPで変動し、実キャラクターの値や最新ライブ版との一致は保証しません。未確認の消費・射程などは補完していません。",
     "localizationNote": "日本語名は公式日本語資料で表記を確認できたもののみ掲載し、各項目に名称の出典を保持しています。旧パッチ資料の表記を含み、現行日本語クライアントとの全件一致は未確認です。未確認の名称は英語のまま表示します。効果説明は独自の日本語要約です。 非クラスのスキル名は公式日本語表記未照合のため英名、系統名は案内用の日本語。",
     "gameUpdate": null,
@@ -27307,7 +27307,14 @@
         "value": 165.0,
         "resource": "Ultimate"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/undo.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-undo.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-precognition",
@@ -27422,7 +27429,14 @@
         "バフ（強）：迅速 / Major Expedition",
         "マイナーバフ",
         "メジャーバフ"
-      ]
+      ],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/accelerate.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-accelerate.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-channeled-acceleration",
@@ -27689,7 +27703,14 @@
         "resource": "Magicka"
       },
       "browseTags": [],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/meditate.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-meditate.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-deep-thoughts",
@@ -27721,7 +27742,14 @@
         "resource": "Magicka"
       },
       "browseTags": [],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/deep-thoughts.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-deep-thoughts.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-introspection",
@@ -27753,7 +27781,14 @@
         "resource": "Magicka"
       },
       "browseTags": [],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/introspection.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-introspection.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-mend-wounds",
@@ -27795,7 +27830,14 @@
         "軽攻撃",
         "重攻撃"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/mend-wounds.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-mend-wounds.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-mend-spirit",
@@ -27839,7 +27881,14 @@
         "軽攻撃",
         "重攻撃"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/mend-spirit.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-mend-spirit.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-symbiosis",
@@ -27881,7 +27930,14 @@
         "軽攻撃",
         "重攻撃"
       ],
-      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。"
+      "costNote": "参照元の消費欄は0表示。維持・派生効果などを含めて無条件に消費なしと保証するものではない。",
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/symbiosis.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-symbiosis.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-time-stop",
@@ -27912,7 +27968,14 @@
         "value": 7830.0,
         "resource": "Magicka"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/time-stop.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-time-stop.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-borrowed-time",
@@ -27943,7 +28006,14 @@
         "value": 7830.0,
         "resource": "Magicka"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/borrowed-time.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-borrowed-time.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-time-freeze",
@@ -27974,7 +28044,14 @@
         "value": 7560.0,
         "resource": "Magicka"
       },
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/time-freeze.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-time-freeze.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-clairvoyance",
@@ -28103,7 +28180,14 @@
       ],
       "valueBasisJa": "実読した系統一覧ページの2026-10-17データにある参照値。個別スキルページのデータ日とは異なる場合がある。能力値・装備・CPで変動する値を含む。ランク別の全値や現行ライブ版との全件一致は未確認。",
       "verificationNote": "確認日は資料を読んだ日で、ゲーム適用日ではない。PTSの変更をライブ値として補完していない。",
-      "browseTags": []
+      "browseTags": [],
+      "icon": {
+        "sourceUrl": "https://esoacademy.com/wp-content/uploads/img/skills/individual/see-the-unseen.png",
+        "permissionNote": "Conditional noncommercial game-asset fan use: official ZOS staff guidance at https://forums.elderscrollsonline.com/de/discussion/472433/erlaubnis-fuer-screenshot-gallerie; retain copyright/trademark notices and comply with conduct rules. Acquired from ESO Academy public Psijic Order reference; no site reuse prohibition found in About/Privacy/robots on 2026-10-28. Not an open license; excluded from repository code/content license. Image only: old effect values from this site were not imported.",
+        "path": "assets/eso/skills/nonclass-psijic-see-the-unseen.png",
+        "mappingSourceUrl": "https://esoacademy.com/psijic-order-skills/",
+        "mappingVerifiedAt": "2026-10-28"
+      }
     },
     {
       "id": "nonclass-guild-spell-orb",

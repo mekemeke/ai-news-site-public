@@ -85,7 +85,7 @@
     "castTimeSeconds": 330,
     "channelTimeSeconds": 18
   },
-  "iconCount": 711,
+  "iconCount": 723,
   "sourceGraphValidation": {
     "uniqueIds": true,
     "allMorphParentsExist": true,
@@ -943,7 +943,7 @@
       "scope": "Attributed factual guide reference and independently authored concise Japanese summaries. No English catalog prose republished. Underlying game IP remains its owners."
     }
   },
-  "nonclassIconCount": 249,
+  "nonclassIconCount": 261,
   "missingNonclassIcons": [
     "nonclass-weapon-rapid-fire",
     "nonclass-weapon-ballista",
@@ -1109,18 +1109,6 @@
     "nonclass-guild-fire-rune",
     "nonclass-guild-volcanic-rune",
     "nonclass-guild-radiant-magelight",
-    "nonclass-guild-undo",
-    "nonclass-guild-accelerate",
-    "nonclass-guild-meditate",
-    "nonclass-guild-deep-thoughts",
-    "nonclass-guild-introspection",
-    "nonclass-guild-mend-wounds",
-    "nonclass-guild-mend-spirit",
-    "nonclass-guild-symbiosis",
-    "nonclass-guild-time-stop",
-    "nonclass-guild-borrowed-time",
-    "nonclass-guild-time-freeze",
-    "nonclass-guild-see-the-unseen",
     "nonclass-guild-clemency",
     "nonclass-guild-finders-keepers",
     "nonclass-guild-haggling",
