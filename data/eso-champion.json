@@ -1,0 +1,2226 @@
+{
+  "checkedAt": "2026-10-28",
+  "versionScope": "ESO Decoded の2026-10-24取得データを参照。各効果の本番パッチ番号との全件照合・実ゲーム確認は未実施。PTS変更の先行適用はしていない。",
+  "notes": [
+    "名称は英名。公式日本語名を全件確認できていないため独自の訳名を正式名として付けていない。",
+    "最大ポイントはその星自身への投資上限。途中の星に必要なポイントを含む解放総コストではない。",
+    "スロットが必要な星とパッシブを区別。各段階の必要ポイント・接続条件は未収録。",
+    "数値と条件を日本語で要約。参照時点の資料値であり、最新本番への完全対応を保証しない。"
+  ],
+  "sources": [
+    {
+      "label": "ESO Decoded / Champion Points（2026-10-24取得データ）",
+      "url": "https://esodecoded.com/champion-points"
+    },
+    {
+      "label": "Bethesda Support / Champion System",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/27053/~/champion-points---character---the-elder-scrolls-online"
+    },
+    {
+      "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+      "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+    },
+    {
+      "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+      "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+    }
+  ],
+  "items": [
+    {
+      "id": "angler-s-instincts",
+      "name": "Angler's Instincts",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 25,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/angler-s-instincts"
+        }
+      ],
+      "notes": [],
+      "effectJa": "高品質の魚を釣れる確率を上げる。他の同種ボーナスと併用できる。具体的な確率は資料に記載なし。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "fade-away",
+      "name": "Fade Away",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/fade-away"
+        }
+      ],
+      "notes": [],
+      "effectJa": "衛兵から逃げ切ると警戒度を25%下げる。賞金額は下がらない。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "friends-in-low-places",
+      "name": "Friends in Low Places",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 25,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/friends-in-low-places"
+        }
+      ],
+      "notes": [],
+      "effectJa": "賞金が付く犯罪時に1日1回、賞金を1000ゴールド減らす。レベル50かつ現在の賞金1000以上が条件。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "gifted-rider",
+      "name": "Gifted Rider",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/gifted-rider"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        }
+      ],
+      "notes": [],
+      "effectJa": "騎乗速度を段階ごとに2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "master-gatherer",
+      "name": "Master Gatherer",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 75,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/master-gatherer"
+        }
+      ],
+      "notes": [],
+      "effectJa": "資源採集にかかる時間を段階ごとに10%、最大50%短縮する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "reel-technique",
+      "name": "Reel Technique",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/reel-technique"
+        }
+      ],
+      "notes": [],
+      "effectJa": "釣りで魚が食いつくまでの時間を25%短縮する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "shadowstrike",
+      "name": "Shadowstrike",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 75,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/shadowstrike"
+        }
+      ],
+      "notes": [],
+      "effectJa": "悲痛の短剣で敵を倒すと、少し遅れて5秒間透明になる。周囲の敵や目撃者の注意をそらし、透明中も悲痛の短剣を使える。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "steed-s-blessing",
+      "name": "Steed's Blessing",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/steed-s-blessing"
+        }
+      ],
+      "notes": [],
+      "effectJa": "非戦闘中の移動速度を1段階0.4%、最大20%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "sustaining-shadows",
+      "name": "Sustaining Shadows",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/sustaining-shadows"
+        }
+      ],
+      "notes": [],
+      "effectJa": "隠密の消費を1段階1%、最大50%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "war-mount",
+      "name": "War Mount",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": true,
+      "maxPoints": 75,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/war-mount"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        }
+      ],
+      "notes": [],
+      "effectJa": "非戦闘中は騎乗時のスタミナ消費がなくなる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "breakfall",
+      "name": "Breakfall",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/breakfall"
+        }
+      ],
+      "notes": [],
+      "effectJa": "落下ダメージを1段階7%、最大35%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "cutpurse-s-art",
+      "name": "Cutpurse's Art",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 25,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/cutpurse-s-art"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "スリで高品質の品を得やすくなる。具体的な確率は資料に記載なし。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "discipline-artisan",
+      "name": "Discipline Artisan",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/discipline-artisan"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        }
+      ],
+      "notes": [],
+      "effectJa": "セット中のスキルとそのスキルラインの獲得経験値を1段階3%、最大15%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "fleet-phantom",
+      "name": "Fleet Phantom",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 40,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/fleet-phantom"
+        }
+      ],
+      "notes": [],
+      "effectJa": "隠密による移動速度の低下を1段階5%、最大25%軽減する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "fortune-s-favor",
+      "name": "Fortune's Favor",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/fortune-s-favor"
+        }
+      ],
+      "notes": [],
+      "effectJa": "宝箱と金庫から得るゴールドを1段階10%、最大50%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "gilded-fingers",
+      "name": "Gilded Fingers",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/gilded-fingers"
+        }
+      ],
+      "notes": [],
+      "effectJa": "獲得ゴールドを1段階2%、最大10%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "homemaker",
+      "name": "Homemaker",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 25,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/homemaker"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "家具の設計図を発見したとき、10%の確率で追加の設計図を得る。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "infamous",
+      "name": "Infamous",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 25,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/infamous"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "盗品の売却額を25%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "inspiration-boost",
+      "name": "Inspiration Boost",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 45,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/inspiration-boost"
+        }
+      ],
+      "notes": [],
+      "effectJa": "クラフトの獲得インスピレーションを1段階10%、最大30%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "liquid-efficiency",
+      "name": "Liquid Efficiency",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/liquid-efficiency"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "薬または毒の使用時、10%の確率でそのアイテムを消費しない。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "meticulous-disassembly",
+      "name": "Meticulous Disassembly",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/meticulous-disassembly"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "木工・鍛冶・縫製・宝飾の解体と精製で素材を回収しやすくなる。具体的な上昇率は資料に記載なし。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "out-of-sight",
+      "name": "Out of Sight",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/out-of-sight"
+        }
+      ],
+      "notes": [],
+      "effectJa": "隠密中に発見される範囲を1段階1m、最大3m狭める。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "plentiful-harvest",
+      "name": "Plentiful Harvest",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/plentiful-harvest"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "通常の資源採集で収量が倍になる確率を1段階10%、最大50%にする。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "professional-upkeep",
+      "name": "Professional Upkeep",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/professional-upkeep"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "防具の修理費を1段階1%、最大50%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "rationer",
+      "name": "Rationer",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/rationer"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "能力値を上げる食べ物・飲み物の持続時間を1段階10分、最大30分延長する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "soul-reservoir",
+      "name": "Soul Reservoir",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/soul-reservoir"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        }
+      ],
+      "notes": [],
+      "effectJa": "自分または他プレイヤーを蘇生するとき、33%の確率で魂石を消費しない。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "steadfast-enchantment",
+      "name": "Steadfast Enchantment",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/steadfast-enchantment"
+        }
+      ],
+      "notes": [],
+      "effectJa": "武器付呪が発動時にチャージを消費しない確率を1段階10%、最大50%にする。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "treasure-hunter",
+      "name": "Treasure Hunter",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/treasure-hunter"
+        },
+        {
+          "label": "公式 Update 45 パッチノート（緑9星のスロット不要化）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/674341/pc-mac-patch-notes-v10-3-5-fallen-banners-dlc-update-45"
+        }
+      ],
+      "notes": [],
+      "effectJa": "宝箱から得られるアイテムの品質を上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "wanderer",
+      "name": "Wanderer",
+      "nameJa": null,
+      "tree": "craft",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/wanderer"
+        },
+        {
+          "label": "公式 Update 46 パッチノート（対象6星の必要ポイント・Discipline Artisan追加）",
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46"
+        }
+      ],
+      "notes": [],
+      "effectJa": "旅の祠への移動費を1段階10%、最大50%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "arcane-supremacy",
+      "name": "Arcane Supremacy",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/arcane-supremacy"
+        }
+      ],
+      "notes": [],
+      "effectJa": "最大マジカを1段階26、最大1300増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "backstabber",
+      "name": "Backstabber",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/backstabber"
+        }
+      ],
+      "notes": [],
+      "effectJa": "敵の側面・背面から攻撃するとき、クリティカルダメージを1段階2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "biting-aura",
+      "name": "Biting Aura",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/biting-aura"
+        }
+      ],
+      "notes": [],
+      "effectJa": "範囲攻撃のダメージを1段階3%、最大6%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "bulwark",
+      "name": "Bulwark",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/bulwark"
+        }
+      ],
+      "notes": [],
+      "effectJa": "盾または氷の杖を装備している間、物理耐性と呪文耐性を1900上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "cleansing-revival",
+      "name": "Cleansing Revival",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/cleansing-revival"
+        }
+      ],
+      "notes": [],
+      "effectJa": "体力25%未満の対象を回復すると、その対象の有害効果をすべて取り除く。再発動は24秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "cutting-defense",
+      "name": "Cutting Defense",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/cutting-defense"
+        }
+      ],
+      "notes": [
+        "ダメージは耐性依存。参照ページの0という表示は固定効果値として採用していない。"
+      ],
+      "effectJa": "7m以内から直接攻撃を受けると攻撃者へ魔法ダメージを返す。物理・呪文耐性の高い方で威力が変動し、武器付呪や毒も発動可能。固定ダメージ値は未確認。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "deadly-aim",
+      "name": "Deadly Aim",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/deadly-aim"
+        }
+      ],
+      "notes": [],
+      "effectJa": "単体攻撃のダメージを1段階3%、最大6%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "duelist-s-rebuff",
+      "name": "Duelist's Rebuff",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/duelist-s-rebuff"
+        }
+      ],
+      "notes": [],
+      "effectJa": "単体攻撃から受けるダメージを1段階3%、最大6%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "endless-endurance",
+      "name": "Endless Endurance",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/endless-endurance"
+        }
+      ],
+      "notes": [],
+      "effectJa": "最大スタミナを1段階26、最大1300増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "enduring-resolve",
+      "name": "Enduring Resolve",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/enduring-resolve"
+        }
+      ],
+      "notes": [],
+      "effectJa": "継続ダメージ攻撃から受けるダメージを1段階3%、最大6%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "enlivening-overflow",
+      "name": "Enlivening Overflow",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/enlivening-overflow"
+        }
+      ],
+      "notes": [
+        "参照ページのキャラクター依存の現在値ではなく計算条件を記載。"
+      ],
+      "effectJa": "自分か味方を過剰回復すると、最大マジカの0.5%分（上限150）の体力・マジカ・スタミナ再生を6秒間与える。同じ対象への再発動は12秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "exploiter",
+      "name": "Exploiter",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/exploiter"
+        }
+      ],
+      "notes": [],
+      "effectJa": "オフバランス状態の敵へのダメージを1段階2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "fighting-finesse",
+      "name": "Fighting Finesse",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/fighting-finesse"
+        }
+      ],
+      "notes": [],
+      "effectJa": "クリティカルダメージとクリティカル回復量を1段階4%、最大8%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "focused-mending",
+      "name": "Focused Mending",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/focused-mending"
+        }
+      ],
+      "notes": [],
+      "effectJa": "単体回復の回復量を1段階2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "force-of-nature",
+      "name": "Force of Nature",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/force-of-nature"
+        }
+      ],
+      "notes": [],
+      "effectJa": "対象に付いているステータス効果1種類ごとに攻撃貫通力を660増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "foresight",
+      "name": "Foresight",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/foresight"
+        }
+      ],
+      "notes": [],
+      "effectJa": "薬を飲んでから6秒以内に使う、マジカ・スタミナを消費する回復アビリティの消費を75%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "from-the-brink",
+      "name": "From the Brink",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/from-the-brink"
+        }
+      ],
+      "notes": [],
+      "effectJa": "体力25%未満の自分か味方を回復すると、6秒間のシールドを与える。吸収量は1段階2200、最大11000。同じ対象への再発動は30秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "hope-infusion",
+      "name": "Hope Infusion",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/hope-infusion"
+        }
+      ],
+      "notes": [
+        "参照ページのキャラクター依存の現在値ではなく計算条件を記載。"
+      ],
+      "effectJa": "体力50%未満の自分か味方を回復すると勇壮（弱）を与える。持続時間は自身のマジカ再生300につき1秒。同じ対象への再発動は10秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "ironclad",
+      "name": "Ironclad",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/ironclad"
+        }
+      ],
+      "notes": [],
+      "effectJa": "直接攻撃から受けるダメージを1段階3%、最大6%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "last-stand",
+      "name": "Last Stand",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/last-stand"
+        }
+      ],
+      "notes": [],
+      "effectJa": "体力20%未満でダメージを受けると9秒間の勇壮（強）を得て、1.5秒ごとにアルティマ3を獲得する。再発動は9秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "master-at-arms",
+      "name": "Master-at-Arms",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/master-at-arms"
+        }
+      ],
+      "notes": [],
+      "effectJa": "直接攻撃のダメージを1段階3%、最大6%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "occult-overload",
+      "name": "Occult Overload",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/occult-overload"
+        }
+      ],
+      "notes": [],
+      "effectJa": "ステータス効果が付いた敵を倒すと、周囲4mの他の敵にオブリビオンダメージを与え、ランダムなステータス効果を付ける。1段階1037、最大5185。再発動は1秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "reaving-blows",
+      "name": "Reaving Blows",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/reaving-blows"
+        }
+      ],
+      "notes": [],
+      "effectJa": "直接ダメージを与えたとき、その7%分を自身の体力として回復する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "reinforced",
+      "name": "Reinforced",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/reinforced"
+        }
+      ],
+      "notes": [],
+      "effectJa": "防御を開始すると5140を吸収するシールドを3秒間得る。再発動は10秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "rejuvenator",
+      "name": "Rejuvenator",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/rejuvenator"
+        }
+      ],
+      "notes": [],
+      "effectJa": "回復アビリティの武器・呪文ダメージを1段階41、最大205増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "resilience",
+      "name": "Resilience",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/resilience"
+        }
+      ],
+      "notes": [],
+      "effectJa": "クリティカル耐性を1段階132、最大660増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "riposte",
+      "name": "Riposte",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/riposte"
+        }
+      ],
+      "notes": [],
+      "effectJa": "7m以内の敵の攻撃を防御すると、5秒以内の次の直接攻撃が33%強くなる。再発動は5秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "salve-of-renewal",
+      "name": "Salve of Renewal",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/salve-of-renewal"
+        }
+      ],
+      "notes": [],
+      "effectJa": "自分か味方の有害効果を除去すると、その対象と周囲8mの味方を回復する。1段階1280、最大6400。再発動は10秒ごと。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "soothing-tide",
+      "name": "Soothing Tide",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/soothing-tide"
+        }
+      ],
+      "notes": [],
+      "effectJa": "範囲回復の回復量を1段階2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "swift-renewal",
+      "name": "Swift Renewal",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/swift-renewal"
+        }
+      ],
+      "notes": [],
+      "effectJa": "継続回復の回復量を1段階2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "thaumaturge",
+      "name": "Thaumaturge",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/thaumaturge"
+        }
+      ],
+      "notes": [],
+      "effectJa": "継続ダメージの威力を1段階3%、最大6%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "unassailable",
+      "name": "Unassailable",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/unassailable"
+        }
+      ],
+      "notes": [],
+      "effectJa": "範囲攻撃から受けるダメージを1段階3%、最大6%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "untamed-aggression",
+      "name": "Untamed Aggression",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/untamed-aggression"
+        }
+      ],
+      "notes": [],
+      "effectJa": "武器・呪文ダメージを1段階3、最大150増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "weapons-expert",
+      "name": "Weapons Expert",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/weapons-expert"
+        }
+      ],
+      "notes": [],
+      "effectJa": "軽攻撃と重攻撃のダメージを1段階4%、最大20%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "wrathful-strikes",
+      "name": "Wrathful Strikes",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/wrathful-strikes"
+        }
+      ],
+      "notes": [],
+      "effectJa": "攻撃アビリティの武器・呪文ダメージを1段階41、最大205増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "battle-mastery",
+      "name": "Battle Mastery",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 40,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/battle-mastery"
+        }
+      ],
+      "notes": [],
+      "effectJa": "物理系ステータス効果を与える確率を1段階30%、最大60%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "blessed",
+      "name": "Blessed",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/blessed"
+        }
+      ],
+      "notes": [],
+      "effectJa": "与える回復量を1段階1%、最大2%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "eldritch-insight",
+      "name": "Eldritch Insight",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/eldritch-insight"
+        }
+      ],
+      "notes": [],
+      "effectJa": "最大マジカを1段階260、最大520増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "elemental-aegis",
+      "name": "Elemental Aegis",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/elemental-aegis"
+        }
+      ],
+      "notes": [],
+      "effectJa": "魔法・炎・氷・雷属性の攻撃から受けるダメージを1段階1%、最大2%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "flawless-ritual",
+      "name": "Flawless Ritual",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 40,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/flawless-ritual"
+        }
+      ],
+      "notes": [],
+      "effectJa": "魔法系ステータス効果を与える確率を1段階30%、最大60%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "hardy",
+      "name": "Hardy",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/hardy"
+        }
+      ],
+      "notes": [],
+      "effectJa": "物理・毒・病気・出血属性の攻撃から受けるダメージを1段階1%、最大2%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "mighty",
+      "name": "Mighty",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/mighty"
+        }
+      ],
+      "notes": [],
+      "effectJa": "物理・毒・病気・出血属性の攻撃に適用する武器・呪文ダメージを100増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "piercing",
+      "name": "Piercing",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/piercing"
+        }
+      ],
+      "notes": [],
+      "effectJa": "攻撃貫通力を1段階350、最大700増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "precision",
+      "name": "Precision",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/precision"
+        }
+      ],
+      "notes": [],
+      "effectJa": "クリティカル率のレーティングを1段階160、最大320増やす。百分率ではない。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "preparation",
+      "name": "Preparation",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/preparation"
+        }
+      ],
+      "notes": [],
+      "effectJa": "プレイヤー以外の攻撃から受けるダメージを1段階5%、最大10%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "quick-recovery",
+      "name": "Quick Recovery",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/quick-recovery"
+        }
+      ],
+      "notes": [],
+      "effectJa": "受ける回復量を1段階1%、最大2%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "tireless-discipline",
+      "name": "Tireless Discipline",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/tireless-discipline"
+        }
+      ],
+      "notes": [],
+      "effectJa": "最大スタミナを1段階260、最大520増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "war-mage",
+      "name": "War Mage",
+      "nameJa": null,
+      "tree": "warfare",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/war-mage"
+        }
+      ],
+      "notes": [],
+      "effectJa": "魔法・炎・氷・雷属性の攻撃に適用する武器・呪文ダメージを100増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "arcane-alacrity",
+      "name": "Arcane Alacrity",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/arcane-alacrity"
+        }
+      ],
+      "notes": [],
+      "effectJa": "シールドがある間、回避ロールのスタミナ消費を1段階160、最大800減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "bastion",
+      "name": "Bastion",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/bastion"
+        }
+      ],
+      "notes": [],
+      "effectJa": "自身のシールドの有効量と、シールドを持つ敵へのダメージを1段階3%、最大15%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "bloody-renewal",
+      "name": "Bloody Renewal",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/bloody-renewal"
+        }
+      ],
+      "notes": [],
+      "effectJa": "敵を倒すとスタミナを1段階300、最大1500回復する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "boundless-vitality",
+      "name": "Boundless Vitality",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/boundless-vitality"
+        }
+      ],
+      "notes": [],
+      "effectJa": "最大体力を1段階28、最大1400増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "bracing-anchor",
+      "name": "Bracing Anchor",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/bracing-anchor"
+        }
+      ],
+      "notes": [],
+      "effectJa": "戦闘中の防御による軽減量を1段階4%、最大20%増やす。移動速度は段階に関係なく16%下がる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "celerity",
+      "name": "Celerity",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/celerity"
+        }
+      ],
+      "notes": [],
+      "effectJa": "移動速度を1段階2%、最大10%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "expert-evasion",
+      "name": "Expert Evasion",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/expert-evasion"
+        }
+      ],
+      "notes": [],
+      "effectJa": "次の回避ロールの消費をなくす。使用後30秒間は再獲得できない。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "fortified",
+      "name": "Fortified",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/fortified"
+        }
+      ],
+      "notes": [
+        "端数処理の差があるため最大表示1731を参照値として記載。"
+      ],
+      "effectJa": "防御力を1段階あたり約34.6増やす。参照データの最大表示は1731で、丸め値から単純計算した1730とは異なる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "hardened",
+      "name": "Hardened",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/hardened"
+        }
+      ],
+      "notes": [],
+      "effectJa": "行動制限への耐性時間を1段階3%、最大15%延長する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/juggernaut"
+        }
+      ],
+      "notes": [],
+      "effectJa": "行動制限への耐性中、被ダメージを1段階1%、最大5%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "on-guard",
+      "name": "On Guard",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/on-guard"
+        }
+      ],
+      "notes": [],
+      "effectJa": "行動制限への耐性中、防御による軽減量を1段階2%、最大10%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "pain-s-refuge",
+      "name": "Pain's Refuge",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/pain-s-refuge"
+        }
+      ],
+      "notes": [],
+      "effectJa": "有害効果2個につき被ダメージを2%減らす。軽減は最大20%。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "peace-of-mind",
+      "name": "Peace of Mind",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/peace-of-mind"
+        }
+      ],
+      "notes": [],
+      "effectJa": "行動制限への耐性中、体力・マジカ再生を1段階40、最大200増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "refreshing-stride",
+      "name": "Refreshing Stride",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/refreshing-stride"
+        }
+      ],
+      "notes": [],
+      "effectJa": "ダッシュ中、体力・マジカ再生を1段階100、最大500増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "rejuvenation",
+      "name": "Rejuvenation",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/rejuvenation"
+        }
+      ],
+      "notes": [],
+      "effectJa": "体力・マジカ・スタミナ再生を1段階1.8、最大90増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "relentlessness",
+      "name": "Relentlessness",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/relentlessness"
+        }
+      ],
+      "notes": [],
+      "effectJa": "気絶または恐怖を受けると3秒間の防護（強）を得て、被ダメージを10%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "rousing-speed",
+      "name": "Rousing Speed",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/rousing-speed"
+        }
+      ],
+      "notes": [],
+      "effectJa": "行動制限への耐性中、ダッシュのスタミナ消費を1段階50、最大250減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "shield-master",
+      "name": "Shield Master",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/shield-master"
+        }
+      ],
+      "notes": [],
+      "effectJa": "シールドアビリティの消費を1段階2%、最大10%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "siphoning-spells",
+      "name": "Siphoning Spells",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/siphoning-spells"
+        }
+      ],
+      "notes": [],
+      "effectJa": "敵を倒すとマジカを1段階300、最大1500回復する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "slippery",
+      "name": "Slippery",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/slippery"
+        }
+      ],
+      "notes": [],
+      "effectJa": "行動不能効果を受けると、消費なしで自動的に打破する。発動後21秒間はこの効果と同種の効果を再発動できない。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "soothing-shield",
+      "name": "Soothing Shield",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/soothing-shield"
+        }
+      ],
+      "notes": [],
+      "effectJa": "攻撃の防御に成功すると15%の確率で体力を回復する。回復量は1段階147、最大735。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "spirit-mastery",
+      "name": "Spirit Mastery",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/spirit-mastery"
+        }
+      ],
+      "notes": [],
+      "effectJa": "味方を蘇生する時間を33%短縮する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "strategic-reserve",
+      "name": "Strategic Reserve",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/strategic-reserve"
+        }
+      ],
+      "notes": [],
+      "effectJa": "所持アルティマ10ごとに体力再生を30増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "survival-instincts",
+      "name": "Survival Instincts",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/survival-instincts"
+        }
+      ],
+      "notes": [],
+      "effectJa": "ステータス効果を受けている間、基本戦闘行動の消費を1段階5%、最大25%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "sustained-by-suffering",
+      "name": "Sustained by Suffering",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/sustained-by-suffering"
+        }
+      ],
+      "notes": [],
+      "effectJa": "有害効果を受けている間、体力・マジカ・スタミナ再生を1段階30、最大150増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "thrill-of-the-hunt",
+      "name": "Thrill of the Hunt",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/thrill-of-the-hunt"
+        }
+      ],
+      "notes": [],
+      "effectJa": "敵を倒すと迅速（強）を1段階3秒、最大6秒得て、移動速度が30%上がる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "unchained",
+      "name": "Unchained",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/unchained"
+        }
+      ],
+      "notes": [],
+      "effectJa": "打破後5秒以内に使う次のスタミナアビリティの消費を1段階11%、最大55%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "ward-master",
+      "name": "Ward Master",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": true,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/ward-master"
+        }
+      ],
+      "notes": [],
+      "effectJa": "シールドがあり防御中のとき、被ダメージを1段階2%、最大10%減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "bashing-brutality",
+      "name": "Bashing Brutality",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/bashing-brutality"
+        }
+      ],
+      "notes": [],
+      "effectJa": "強撃ダメージを1段階60、最大120増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "defiance",
+      "name": "Defiance",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/defiance"
+        }
+      ],
+      "notes": [],
+      "effectJa": "打破のスタミナ消費を1段階110、最大220減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "fortification",
+      "name": "Fortification",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/fortification"
+        }
+      ],
+      "notes": [],
+      "effectJa": "防御による軽減量を1段階2%、最大4%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "hasty",
+      "name": "Hasty",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 16,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/hasty"
+        }
+      ],
+      "notes": [],
+      "effectJa": "ダッシュ中の移動速度を1段階2%、最大4%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "hero-s-vigor",
+      "name": "Hero's Vigor",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/hero-s-vigor"
+        }
+      ],
+      "notes": [],
+      "effectJa": "最大体力を1段階280、最大560増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "mystic-tenacity",
+      "name": "Mystic Tenacity",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/mystic-tenacity"
+        }
+      ],
+      "notes": [],
+      "effectJa": "自身に付く属性ステータス効果の持続時間を1段階5%、最大25%短縮する。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "nimble-protector",
+      "name": "Nimble Protector",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 6,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/nimble-protector"
+        }
+      ],
+      "notes": [],
+      "effectJa": "防御中の移動速度を1段階3%、最大6%上げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "piercing-gaze",
+      "name": "Piercing Gaze",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/piercing-gaze"
+        }
+      ],
+      "notes": [],
+      "effectJa": "隠密を見破る範囲を1段階1m、最大3m広げる。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "savage-defense",
+      "name": "Savage Defense",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/savage-defense"
+        }
+      ],
+      "notes": [],
+      "effectJa": "強撃のスタミナ消費を1段階45、最大90減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "sprinter",
+      "name": "Sprinter",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/sprinter"
+        }
+      ],
+      "notes": [],
+      "effectJa": "ダッシュのスタミナ消費を1段階20、最大40減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "tempered-soul",
+      "name": "Tempered Soul",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 50,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/tempered-soul"
+        }
+      ],
+      "notes": [],
+      "effectJa": "蘇生時のリソース量を1段階5%、最大10%増やす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "tireless-guardian",
+      "name": "Tireless Guardian",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 20,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/tireless-guardian"
+        }
+      ],
+      "notes": [],
+      "effectJa": "防御のスタミナ消費を1段階20、最大40減らす。",
+      "status": "reference-currentness-unverified"
+    },
+    {
+      "id": "tumbling",
+      "name": "Tumbling",
+      "nameJa": null,
+      "tree": "fitness",
+      "slottable": false,
+      "maxPoints": 30,
+      "stages": null,
+      "sources": [
+        {
+          "label": "ESO Decoded（2026-10-24取得データ）",
+          "url": "https://esodecoded.com/champion-points/tumbling"
+        }
+      ],
+      "notes": [],
+      "effectJa": "回避ロールのスタミナ消費を1段階120、最大240減らす。",
+      "status": "reference-currentness-unverified"
+    }
+  ]
+}

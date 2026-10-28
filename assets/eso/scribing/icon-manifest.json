@@ -1,0 +1,151 @@
+{
+  "icons": [
+    {
+      "id": "wield-soul",
+      "name": "Wield Soul",
+      "path": "assets/eso/scribing/wield-soul.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_soulmagic1.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2084,
+      "sha256": "c6d9c55a5b20e5b1bf662da2133f95a7c9a95c54d2b1b199e88bef9b637befb5",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "shield-throw",
+      "name": "Shield Throw",
+      "path": "assets/eso/scribing/shield-throw.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_1handed.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2028,
+      "sha256": "522dcadd11effb5cb80b2071b9e937824446b3b4209c153e155fe572832d423b",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "smash",
+      "name": "Smash",
+      "path": "assets/eso/scribing/smash.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_2handed.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2376,
+      "sha256": "18eedf76ef293eca7b9f9a1b5392c37c8cb206713c70096f2054444b118d0749",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "elemental-explosion",
+      "name": "Elemental Explosion",
+      "path": "assets/eso/scribing/elemental-explosion.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_staffdestro.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 1994,
+      "sha256": "ef081bb52f93bdb060c0859e5cecb301418088e5b4928940644a87b672b8dd99",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "traveling-knife",
+      "name": "Traveling Knife",
+      "path": "assets/eso/scribing/traveling-knife.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_dualwield.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 1990,
+      "sha256": "1fba0d538bdd4c8792a3efc114fda98ebc7b400b95f5465ee0093326f615ab4e",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "soul-burst",
+      "name": "Soul Burst",
+      "path": "assets/eso/scribing/soul-burst.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_soulmagic2.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2024,
+      "sha256": "a0721fa805f87b0a4d1723e0bf4b0e6ee6f95a4857d8743ea424a6d44b4feddc",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "ulfsild-s-contingency",
+      "name": "Ulfsild’s Contingency",
+      "path": "assets/eso/scribing/ulfsild-s-contingency.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_magesguild.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2702,
+      "sha256": "8fa29a26ce566556445666253227b36a9a6deb90b9bf956d7483497166040796",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "torchbearer",
+      "name": "Torchbearer",
+      "path": "assets/eso/scribing/torchbearer.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_fightersguild.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2102,
+      "sha256": "1a5c2fc598e2247b32b8379dbdd8531052b4f7f660c1263d8adb160d4866332e",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "trample",
+      "name": "Trample",
+      "path": "assets/eso/scribing/trample.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_assault.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2004,
+      "sha256": "140156b80139e8c96db2c332833ada418afa381605a9cb2bd9e85241c6432ce0",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "banner-bearer",
+      "name": "Banner Bearer",
+      "path": "assets/eso/scribing/banner-bearer.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_support.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "width": 64,
+      "height": 64,
+      "bytes": 2608,
+      "sha256": "e15293a6619c5e773847939ef12601b4a93b3f6c15aa0104db864496a8f39ec0",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "vault",
+      "name": "Vault",
+      "path": "assets/eso/scribing/vault.webp",
+      "sourceUrl": "https://static.hyperioxes.com/images/icons/ability_grimoire_bow.webp",
+      "mappingUrl": "https://hyperioxes.com/tooltips/skills.388a6afcd876.json",
+      "sourcePage": "https://hyperioxes.com/eso/healer/templar-build",
+      "mappingNote": "Vault exact name / base grimoire icon mapping observed 2026-10-27; current Goading Vault entry reuses same exact ability_grimoire_bow.webp, checked 2026-10-28. Original versioned JSON is now 404, no bypass/retry.",
+      "width": 64,
+      "height": 64,
+      "bytes": 2934,
+      "sha256": "7a008148bdb6ea01483f6983fd25c193171f7fdeaf79f3b90b9b99b935f12077",
+      "checkedAt": "2026-10-28"
+    }
+  ],
+  "unresolved": [
+    "mender-s-bond"
+  ]
+}

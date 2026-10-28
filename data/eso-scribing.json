@@ -52,6 +52,12 @@
       "label": "Alcast：書記の構成例（旧版を含む）",
       "url": "https://alcasthq.com/eso-scribing-guide/",
       "notes": "構成例だけ参照。現在の成立・効果・数値は保証しない。"
+    },
+    {
+      "id": "hyperioxes-scribing-icons",
+      "label": "Hyperioxes：グリモア画像の参照元",
+      "url": "https://hyperioxes.com/eso/healer/templar-build",
+      "notes": "ゲーム内グリモアの小型画像のみ。効果・組み合わせの確認根拠としては使用していません。ESOのゲーム画像・アイコンは ZeniMax Media Inc. / Bethesda Softworks / ZeniMax Online Studios に帰属。非公式・非営利ファンサイトでの条件付き利用で、提携・公認を示しません。"
     }
   ],
   "grimoires": [
@@ -481,7 +487,13 @@
           "nameJa": "被ダメージ増加（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。",
+      "icon": "assets/eso/scribing/vault.webp",
+      "iconAlt": "Vault のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ]
     },
     {
       "id": "wield-soul",
@@ -921,7 +933,13 @@
             "alcast-examples"
           ]
         }
-      ]
+      ],
+      "icon": "assets/eso/scribing/wield-soul.webp",
+      "iconAlt": "Wield Soul のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "shield-throw",
@@ -1334,7 +1352,13 @@
           "nameJa": "被回復強化（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/shield-throw.webp",
+      "iconAlt": "Shield Throw のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "smash",
@@ -1777,7 +1801,13 @@
           "nameJa": "被回復強化（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/smash.webp",
+      "iconAlt": "Smash のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "elemental-explosion",
@@ -2187,7 +2217,13 @@
             "alcast-examples"
           ]
         }
-      ]
+      ],
+      "icon": "assets/eso/scribing/elemental-explosion.webp",
+      "iconAlt": "Elemental Explosion のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "mender-s-bond",
@@ -2599,7 +2635,8 @@
             "alcast-examples"
           ]
         }
-      ]
+      ],
+      "iconNote": "対応する既存アイコンの取得元を確認できないため未掲載。別スキルの画像で代用していません。"
     },
     {
       "id": "traveling-knife",
@@ -3027,7 +3064,13 @@
           "nameJa": "被ダメージ増加（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/traveling-knife.webp",
+      "iconAlt": "Traveling Knife のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "soul-burst",
@@ -3470,7 +3513,13 @@
           "nameJa": "クリティカル率強化（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/soul-burst.webp",
+      "iconAlt": "Soul Burst のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "ulfsild-s-contingency",
@@ -3883,7 +3932,13 @@
           "nameJa": "被ダメージ増加（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/ulfsild-s-contingency.webp",
+      "iconAlt": "Ulfsild’s Contingency のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "torchbearer",
@@ -4281,7 +4336,13 @@
           "nameJa": "被回復強化（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/torchbearer.webp",
+      "iconAlt": "Torchbearer のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "trample",
@@ -4709,7 +4770,13 @@
           "nameJa": "被ダメージ増加（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/trample.webp",
+      "iconAlt": "Trample のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     },
     {
       "id": "banner-bearer",
@@ -5084,7 +5151,13 @@
           "nameJa": "クリティカル率強化（概要）"
         }
       ],
-      "historicalExamples": []
+      "historicalExamples": [],
+      "icon": "assets/eso/scribing/banner-bearer.webp",
+      "iconAlt": "Banner Bearer のグリモアアイコン",
+      "iconSourceIds": [
+        "hyperioxes-scribing-icons"
+      ],
+      "iconNote": "グリモアの基本アイコン。選択したスクリプトの組み合わせに応じた最終アイコンではありません。"
     }
   ]
 }

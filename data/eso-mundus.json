@@ -1,0 +1,326 @@
+{
+  "checkedAt": "2026-10-28",
+  "versionScope": "CP160の基本効果参考一覧。U51の変更を区別して整理。全項目の現行クライアント実測ではありません。",
+  "notes": [
+    "基本値は神々特性なし。神々適用後の値は資料間の不一致があるため掲載していません。",
+    "基本値の参考表はU50表にU51注記を加えた資料です。全項目を最新版確定とは扱っていません。",
+    "見習い・戦士のU51変更は公式予告・公式PTSとリリース後解説を照合。公式Live本文は年齢確認画面のため未確認です。",
+    "日本語名は公式の過去パッチで確認し、その過去の効果数値は採用していません。"
+  ],
+  "sources": [
+    {
+      "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+      "url": "https://esodecoded.com/tools/mundus-stones"
+    },
+    {
+      "label": "ESO日本語公式：名称確認（過去パッチ）",
+      "url": "https://eso.dmm.com/news/detail/2114"
+    },
+    {
+      "label": "ESO日本語公式：v9.0.7 盗賊の変更",
+      "url": "https://eso.dmm.com/news/detail/11774"
+    },
+    {
+      "label": "ESO公式：U51 PTS v12.1.0",
+      "url": "https://forums.elderscrollsonline.com/en/discussion/697154/pts-patch-notes-v12-1-0"
+    },
+    {
+      "label": "Hyperioxes：U51リリース後の変更整理（2026-09-29）",
+      "url": "https://hyperioxes.com/eso/news/update-51-pts-patch-notes"
+    },
+    {
+      "label": "ESO日本語公式：U51ムンダス変更予告",
+      "url": "https://eso.dmm.com/news/detail/15689"
+    }
+  ],
+  "items": [
+    {
+      "id": "apprentice",
+      "name": "The Apprentice",
+      "nameJa": "見習い",
+      "category": "育成",
+      "effectJa": "獲得経験値とインスピレーションを増やす。",
+      "baseValue": 8,
+      "unit": "%",
+      "notes": [
+        "U51の8%は公式PTSとリリース後解説で確認。公式Live本文は未確認。旧呪文ダメージ効果とは異なります。"
+      ],
+      "sources": [
+        {
+          "label": "ESO日本語公式：U51ムンダス変更予告",
+          "url": "https://eso.dmm.com/news/detail/15689"
+        },
+        {
+          "label": "ESO公式：U51 PTS v12.1.0",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/697154/pts-patch-notes-v12-1-0"
+        },
+        {
+          "label": "Hyperioxes：U51リリース後の変更整理（2026-09-29）",
+          "url": "https://hyperioxes.com/eso/news/update-51-pts-patch-notes"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "atronach",
+      "name": "The Atronach",
+      "nameJa": "精霊",
+      "category": "再生",
+      "effectJa": "マジカ再生を増やす。",
+      "baseValue": 310,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "lady",
+      "name": "The Lady",
+      "nameJa": "淑女",
+      "category": "防御",
+      "effectJa": "物理耐性と呪文耐性を増やす。",
+      "baseValue": 2744,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "lord",
+      "name": "The Lord",
+      "nameJa": "大公",
+      "category": "最大資源",
+      "effectJa": "最大体力を増やす。",
+      "baseValue": 2225,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "lover",
+      "name": "The Lover",
+      "nameJa": "恋人",
+      "category": "攻撃",
+      "effectJa": "物理貫通力と呪文貫通力を増やす。",
+      "baseValue": 2744,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "mage",
+      "name": "The Mage",
+      "nameJa": "魔術師",
+      "category": "最大資源",
+      "effectJa": "最大マジカを増やす。",
+      "baseValue": 2023,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "ritual",
+      "name": "The Ritual",
+      "nameJa": "儀式",
+      "category": "回復",
+      "effectJa": "与える回復量を増やす。",
+      "baseValue": 8,
+      "unit": "%",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "serpent",
+      "name": "The Serpent",
+      "nameJa": "大蛇",
+      "category": "再生",
+      "effectJa": "スタミナ再生を増やす。",
+      "baseValue": 310,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "shadow",
+      "name": "The Shadow",
+      "nameJa": "影",
+      "category": "クリティカル",
+      "effectJa": "クリティカル時のダメージと回復量を増やす。",
+      "baseValue": 11,
+      "unit": "%",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "steed",
+      "name": "The Steed",
+      "nameJa": "駿馬",
+      "category": "移動",
+      "effectJa": "移動速度と体力再生を増やす。",
+      "baseValue": "10% / 238",
+      "unit": "移動速度 / 体力再生",
+      "notes": [
+        "基本移動速度10%・体力再生238。神々適用後の移動速度は資料不一致につき未掲載。"
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "thief",
+      "name": "The Thief",
+      "nameJa": "盗賊",
+      "category": "クリティカル",
+      "effectJa": "武器と呪文のクリティカル率の基礎となる値を増やす。",
+      "baseValue": 1212,
+      "unit": "",
+      "notes": [
+        "公式v9.0.7で1333から1212へ変更。1333の古い表と区別しています。"
+      ],
+      "sources": [
+        {
+          "label": "ESO日本語公式：v9.0.7 盗賊の変更",
+          "url": "https://eso.dmm.com/news/detail/11774"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "The Tower",
+      "nameJa": "塔",
+      "category": "最大資源",
+      "effectJa": "最大スタミナを増やす。",
+      "baseValue": 2023,
+      "unit": "",
+      "notes": [],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    },
+    {
+      "id": "warrior",
+      "name": "The Warrior",
+      "nameJa": "戦士",
+      "category": "攻撃",
+      "effectJa": "武器ダメージと呪文ダメージを増やす。",
+      "baseValue": 238,
+      "unit": "",
+      "notes": [
+        "U51で武器・呪文の両方を対象に変更。238は変更前からの参考値で、公式Live本文の直接数値確認ではありません。"
+      ],
+      "sources": [
+        {
+          "label": "ESO Decoded：CP160基本値参考表（U50表・U51変更注記あり）",
+          "url": "https://esodecoded.com/tools/mundus-stones"
+        },
+        {
+          "label": "ESO日本語公式：U51ムンダス変更予告",
+          "url": "https://eso.dmm.com/news/detail/15689"
+        },
+        {
+          "label": "ESO公式：U51 PTS v12.1.0",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/697154/pts-patch-notes-v12-1-0"
+        },
+        {
+          "label": "Hyperioxes：U51リリース後の変更整理（2026-09-29）",
+          "url": "https://hyperioxes.com/eso/news/update-51-pts-patch-notes"
+        },
+        {
+          "label": "ESO日本語公式：名称確認（過去パッチ）",
+          "url": "https://eso.dmm.com/news/detail/2114"
+        }
+      ]
+    }
+  ]
+}

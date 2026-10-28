@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>チャンピオンスキル | ESOデータベース</title>
+  <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
+  <link rel="stylesheet" href="./eso-catalog.css?v=20261028-catalog1">
+  <script src="./eso-catalog.js?v=20261028-catalog1" defer></script>
+  <link rel="stylesheet" href="./eso-theme.css?v=20261027-dark1">
+  <script src="./eso-theme.js?v=20261027-dark1" defer></script>
+</head>
+<body class="eso-reference-page eso-catalog-page" data-catalog="champion">
+  <a class="skip" href="#main">本文へ</a>
+  <header><a class="brand" href="./">AIニュース <span class="preview-badge">仮公開</span></a><div class="header-right"><button id="theme" type="button" aria-pressed="false" aria-label="ダークモードに切り替え" hidden><span>ダーク</span></button></div></header>
+  <nav class="primary-nav" aria-label="メインナビゲーション"><a href="./">ニュース</a><a href="./eso.html" aria-current="page">ESOデータベース</a></nav>
+  <main id="main" tabindex="-1">
+    <nav class="database-nav" aria-label="ESOデータベース"><a href="./eso.html">装備セット</a><a href="./eso-skills.html">スキル</a><a href="./eso-traits-enchants.html">特性・付呪</a><a href="./eso-scribing.html">書記</a><a href="./eso-mundus.html">ムンダス</a><a href="./eso-champion.html" aria-current="page">チャンピオン</a></nav>
+    <section aria-labelledby="catalog-title">
+      <p class="catalog-eyebrow">ESO / CHAMPION</p><h1 id="catalog-title">チャンピオンスキル</h1>
+      <p class="lead">3つの星座から、装備が必要な星と常時効果の星を探す。</p>
+      <div id="catalog-coverage" class="catalog-note">収録範囲を読み込み中…</div>
+      <div class="catalog-filters">
+        <label>名前・効果を検索<input id="catalog-search" type="search" maxlength="200" autocomplete="off" placeholder="英名・日本語・効果で探す" disabled></label>
+        <label><span id="catalog-group-label">分類</span><select id="catalog-group" disabled><option value="">すべて</option></select></label>
+        <label id="catalog-kind-label">発動方法<select id="catalog-kind" disabled><option value="">すべて</option><option value="slottable">装備する星</option><option value="passive">常時効果</option><option value="unknown">未確認</option></select></label>
+        <button id="catalog-reset" type="button" disabled>条件をクリア</button>
+      </div>
+      <p id="catalog-help" class="catalog-muted"></p>
+      <p id="catalog-count" role="status" aria-live="polite"></p>
+      <p id="catalog-notice" role="status">データを読み込み中…</p><button id="catalog-retry" type="button" hidden>再試行</button>
+      <div id="catalog-list" class="catalog-grid"></div>
+      <details class="catalog-provenance"><summary>出典・確認範囲</summary><div id="catalog-sources"></div></details>
+    </section>
+    <noscript><p class="empty">一覧・絞り込みにはJavaScriptが必要です。</p></noscript>
+  </main>
+  <footer><p>非公式・非営利ファンサイト。参照資料に基づく整理であり、ゲーム内の実測・公式シミュレーターではありません。ESOは ZeniMax Media Inc. / Bethesda Softworks / ZeniMax Online Studios の商標です。</p><small>ESOデータベース · 閲覧専用</small></footer>
+</body>
+</html>

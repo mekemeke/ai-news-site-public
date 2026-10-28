@@ -19,6 +19,13 @@
       return u.href;
     } catch { return null; }
   }
+  function safeIcon(value) {
+    return typeof value === 'string' && /^assets\/eso\/scribing\/[a-z0-9-]+\.webp$/.test(value) ? value : null;
+  }
+  function iconMarkup(g) {
+    const path = safeIcon(g.icon);
+    return path && text(g.iconAlt).trim() ? `<span class="scribing-icon-wrap"><img class="scribing-icon" src="${escape(path)}" alt="${escape(g.iconAlt)}" width="56" height="56" loading="lazy"><span class="scribing-icon-fallback" hidden>画像未掲載</span></span>` : '<span class="scribing-icon-fallback">画像未掲載</span>';
+  }
   function filterGrimoires(grimoires, query = '', line = '', effect = '') {
     const q = query.trim().toLocaleLowerCase('ja');
     return grimoires.filter(g => (!line || g.line === line) && (!effect || tags(g).includes(effect)) && (!q || [g.name, g.nameJa, g.line, g.weapon, g.summary, ...slots.flatMap(slot => options(g, slot).flatMap(o => [o.name, o.nameJa, o.effect, ...array(o.tags)]))].join(' ').toLocaleLowerCase('ja').includes(q)));
@@ -60,7 +67,7 @@
     }
     return data;
   }
-  const api = {slots, escape, safeURL, tags, filterGrimoires, selectedOptions, combination, validate};
+  const api = {slots, escape, safeURL, tags, filterGrimoires, selectedOptions, combination, validate, safeIcon, iconMarkup};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (typeof document === 'undefined') return;
   const $ = id => document.getElementById(id);
@@ -74,7 +81,7 @@
   function renderList() {
     const filtered = filterGrimoires(data.grimoires, $('scribing-search').value, $('scribing-line').value, $('scribing-effect').value);
     $('scribing-count').textContent = `${filtered.length} / ${data.grimoires.length} グリモア`;
-    $('scribing-list').innerHTML = filtered.map(g => `<article class="scribing-card"><p class="scribing-meta">${escape(g.line)}${g.weapon ? ` · ${escape(g.weapon)}` : ''}</p><h2><a href="#grimoire/${encodeURIComponent(g.id)}">${escape(name(g))}</a></h2>${g.nameJa ? `<p class="scribing-meta">${escape(g.name)}</p>` : ''}<p>${escape(g.summary)}</p><div class="scribing-tags">${tags(g).map(t => `<span class="scribing-tag">${escape(t)}</span>`).join('')}</div></article>`).join('') || '<p class="empty">条件に合うグリモアがありません。検索条件を変更してください。</p>';
+    $('scribing-list').innerHTML = filtered.map(g => `<article class="scribing-card">${iconMarkup(g)}<p class="scribing-meta">${escape(g.line)}${g.weapon ? ` · ${escape(g.weapon)}` : ''}</p><h2><a href="#grimoire/${encodeURIComponent(g.id)}">${escape(name(g))}</a></h2>${g.nameJa ? `<p class="scribing-meta">${escape(g.name)}</p>` : ''}<p>${escape(g.summary)}</p><div class="scribing-tags">${tags(g).map(t => `<span class="scribing-tag">${escape(t)}</span>`).join('')}</div></article>`).join('') || '<p class="empty">条件に合うグリモアがありません。検索条件を変更してください。</p>';
   }
   function renderResult() {
     const result = combination(current, selection);
@@ -89,7 +96,7 @@
   }
   function renderDetail() {
     const g = current;
-    $('scribing-detail').innerHTML = `<a class="scribing-back" href="#">← 一覧に戻る</a><p class="scribing-meta">${escape(g.line)}${g.weapon ? ` · ${escape(g.weapon)}` : ''}</p><h1>${escape(name(g))}</h1>${g.nameJa ? `<p class="scribing-muted">${escape(g.name)}</p>` : ''}<p class="lead">${escape(g.summary)}</p><p class="scribing-note">まず主効果、次に追加効果とバフ・デバフを選びます。「未確認」は「不可」と異なります。資料が不足する候補も確認用に選べますが、有効な組み合わせとは表示しません。</p><div class="scribing-choices">${slots.map((slot,i) => `<section class="scribing-choice"><h2>${i+1}. ${labels[slot]}</h2><p class="scribing-muted">${descriptions[slot]}</p><label for="select-${slot}" class="scribing-muted">${labels[slot]}を選択</label><select id="select-${slot}" data-slot="${slot}"><option value="">未選択</option>${options(g,slot).map(o => `<option value="${escape(o.id)}"${o.status === 'unavailable' ? ' disabled' : ''}>${escape(optionName(o))}${o.status === 'unknown' ? '（未確認）' : o.status === 'unavailable' ? '（不可）' : ''}</option>`).join('')}</select>${options(g,slot).filter(o=>o.status === 'unavailable').map(o=>`<p class="scribing-muted">${escape(optionName(o))}：${escape(o.reason || '参照資料では対応しない候補です。')}</p>`).join('')}${options(g,slot).length ? '' : '<p class="scribing-muted">この区分の選択候補は未収録です。</p>'}</section>`).join('')}</div><div id="scribing-result" class="scribing-result" aria-live="polite"></div><details class="scribing-provenance"><summary>入手方法・出典・注意点</summary><p>${escape(g.acquisition || '入手方法は未確認です。')}</p>${array(g.notes).map(n=>`<p>${escape(n)}</p>`).join('')}<p class="scribing-sources">${sourceLinks(g.sourceIds)}</p></details>${array(g.historicalExamples).length ? `<details class="scribing-provenance"><summary>旧資料の構成例（現行の動作は未確認）</summary><p class="scribing-muted">過去の資料に掲載された例です。有効な組み合わせとして認定せず、候補を比較するための参考に限ります。</p>${array(g.historicalExamples).map(example=>`<section><h2>${escape(example.summary || '資料掲載例')}</h2><p>${slots.map(slot=>`${labels[slot]}：${escape(optionName(options(g,slot).find(o=>o.id===example[slot])) || example[slot])}`).join(' / ')}</p><p>${escape(example.verificationNote)}</p><p class="scribing-sources">${sourceLinks(example.sourceIds)}</p></section>`).join('')}</details>` : ''}<a class="scribing-back" href="#">← 一覧に戻る</a>`;
+    $('scribing-detail').innerHTML = `<a class="scribing-back" href="#">← 一覧に戻る</a>${iconMarkup(g)}<p class="scribing-meta">${escape(g.line)}${g.weapon ? ` · ${escape(g.weapon)}` : ''}</p><h1>${escape(name(g))}</h1>${g.nameJa ? `<p class="scribing-muted">${escape(g.name)}</p>` : ''}<p class="lead">${escape(g.summary)}</p><p class="scribing-note">まず主効果、次に追加効果とバフ・デバフを選びます。「未確認」は「不可」と異なります。資料が不足する候補も確認用に選べますが、有効な組み合わせとは表示しません。</p><div class="scribing-choices">${slots.map((slot,i) => `<section class="scribing-choice"><h2>${i+1}. ${labels[slot]}</h2><p class="scribing-muted">${descriptions[slot]}</p><label for="select-${slot}" class="scribing-muted">${labels[slot]}を選択</label><select id="select-${slot}" data-slot="${slot}"><option value="">未選択</option>${options(g,slot).map(o => `<option value="${escape(o.id)}"${o.status === 'unavailable' ? ' disabled' : ''}>${escape(optionName(o))}${o.status === 'unknown' ? '（未確認）' : o.status === 'unavailable' ? '（不可）' : ''}</option>`).join('')}</select>${options(g,slot).filter(o=>o.status === 'unavailable').map(o=>`<p class="scribing-muted">${escape(optionName(o))}：${escape(o.reason || '参照資料では対応しない候補です。')}</p>`).join('')}${options(g,slot).length ? '' : '<p class="scribing-muted">この区分の選択候補は未収録です。</p>'}</section>`).join('')}</div><div id="scribing-result" class="scribing-result" aria-live="polite"></div><details class="scribing-provenance"><summary>入手方法・出典・注意点</summary><p>${escape(g.acquisition || '入手方法は未確認です。')}</p><p class="scribing-muted">${escape(g.iconNote || '')}</p>${g.iconSourceIds ? `<p class="scribing-sources">アイコン：${sourceLinks(g.iconSourceIds)}</p>` : ''}${array(g.notes).map(n=>`<p>${escape(n)}</p>`).join('')}<p class="scribing-sources">${sourceLinks(g.sourceIds)}</p></details>${array(g.historicalExamples).length ? `<details class="scribing-provenance"><summary>旧資料の構成例（現行の動作は未確認）</summary><p class="scribing-muted">過去の資料に掲載された例です。有効な組み合わせとして認定せず、候補を比較するための参考に限ります。</p>${array(g.historicalExamples).map(example=>`<section><h2>${escape(example.summary || '資料掲載例')}</h2><p>${slots.map(slot=>`${labels[slot]}：${escape(optionName(options(g,slot).find(o=>o.id===example[slot])) || example[slot])}`).join(' / ')}</p><p>${escape(example.verificationNote)}</p><p class="scribing-sources">${sourceLinks(example.sourceIds)}</p></section>`).join('')}</details>` : ''}<a class="scribing-back" href="#">← 一覧に戻る</a>`;
     renderResult();
   }
   function route() {
@@ -111,6 +118,13 @@
     else { current=g; selection={}; renderDetail(); document.title=name(g)+' | 書記'; }
     window.scrollTo(0,0); $('scribing-detail').focus({preventScroll:true});
   }
+  document.addEventListener('error', event => {
+    const image = event.target;
+    if (!image || !image.classList?.contains('scribing-icon')) return;
+    image.hidden = true;
+    const fallback = image.nextElementSibling;
+    if (fallback?.classList.contains('scribing-icon-fallback')) fallback.hidden = false;
+  }, true);
   $('scribing-detail').addEventListener('change', event => {
     const slot=event.target.dataset?.slot;
     if (!current || !slots.includes(slot)) return;
@@ -123,7 +137,7 @@
   async function load() {
     $('scribing-notice').textContent='データを読み込み中…'; $('scribing-retry').hidden=true;
     try {
-      const response=await fetch('./data/eso-scribing.json?v=20261027-scribing1',{credentials:'omit'});
+      const response=await fetch('./data/eso-scribing.json?v=20261028-scribing-icons1',{credentials:'omit'});
       if (!response.ok) throw new Error('Unavailable'); data=validate(await response.json());
       $('scribing-coverage').innerHTML=`<p><strong>${escape(data.coverage || '参照資料で確認できた範囲を収録しています。')}</strong></p><p>資料確認日：${escape(data.checkedAt || '未確認')}</p>${array(data.notes).map(n=>`<p>${escape(n)}</p>`).join('')}`;
       $('scribing-line').innerHTML='<option value="">すべて</option>'+[...new Set(data.grimoires.map(g=>g.line).filter(Boolean))].map(v=>`<option value="${escape(v)}">${escape(v)}</option>`).join('');
@@ -135,3 +149,4 @@
   }
   $('scribing-retry').addEventListener('click',load);load();
 })();
+
