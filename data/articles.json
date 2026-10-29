@@ -47,6 +47,11 @@
           "url": "https://x.com/Botan_cr/status/2115405389705650603"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "腰を曲げたときの形崩れに悩む人には、ボリュームを保つリグを考える参考になりそう。"
+        },
+        {
           "type": "heading",
           "text": "Mayaでエッジや面を基準に頂点を動かす3つの方法"
         },
@@ -61,6 +66,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/zflag_cg_team/status/2115401277521969556"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "形を崩さず頂点を動かす方法を知っておくと、Mayaで面の流れを整えるときの手掛かりになるね。"
         },
         {
           "type": "heading",
@@ -79,6 +89,11 @@
           "url": "https://x.com/christinayan01/status/2115584898648203463"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "道からの距離を配置の条件にする考え方は、道路際と森の奥で植生を描き分けたい人に役立ちそう。"
+        },
+        {
           "type": "heading",
           "text": "UE5 Mesh Terrainで白黒の高さ画像から山を作る入門動画"
         },
@@ -93,6 +108,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/Zero_Studio_JP/status/2115383077572595933"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "白黒の画像を山の形へ変える入口なので、UE5で地形制作を始めたい人の参考になりそう。"
         },
         {
           "type": "heading",
@@ -119,6 +139,11 @@
           "url": "https://x.com/KanaWorks_AI/status/2115427355678417208"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "光を事前に仕込む部分とその場で計算する部分の分け方が、ブラウザーで時間の変化を見せたい人の参考になるね。"
+        },
+        {
           "type": "heading",
           "text": "BlenderのExtrude Manifoldで押し出し時の形を整える紹介"
         },
@@ -129,6 +154,11 @@
         {
           "type": "paragraph",
           "text": "出典：Blender Tips https://facebook.com/groups/282909453705941/permalink/1482786817051526/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "押し出し後の隙間を直す手間に悩んでいるなら、この機能を使える形か見比べる価値がありそう。"
         },
         {
           "type": "heading",
@@ -143,6 +173,11 @@
           "text": "出典：Blender Tips https://facebook.com/groups/282909453705941/permalink/1483152860348255/"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "Blenderで「まず何から照らせばいいか」と迷う人が、ライト追加の基本を確認する入口になるね。"
+        },
+        {
           "type": "heading",
           "text": "Blenderの酒場「The Last Tavern」、キットを使った作例"
         },
@@ -153,6 +188,11 @@
         {
           "type": "paragraph",
           "text": "出典：Blender Artists Community https://facebook.com/groups/blenderartistscommunity/permalink/4675041456112592/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "キットの部品から一つの酒場を組み立てる作例は、背景シーンの構成を考えるヒントになりそう。"
         },
         {
           "type": "heading",
@@ -171,6 +211,11 @@
           "url": "https://www.threads.com/@thegnomonworkshop/post/DfDkmlLkmqw"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "攻撃そのものより前の動きに注目すると、クリーチャーの意図が伝わるアニメーションを考えやすそう。"
+        },
+        {
           "type": "heading",
           "text": "Gaeaで浸食された火山の山並みを作る相談"
         },
@@ -181,6 +226,11 @@
         {
           "type": "paragraph",
           "text": "出典：QuadSpinner Gaea https://facebook.com/groups/QuadSpinnerGaea/permalink/2024693098252294/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "一度の強い浸食ではなく弱い処理を繰り返す案が、Gaeaで古い火山の山並みを目指す人の試行のヒントになるね。"
         },
         {
           "type": "heading",
@@ -201,12 +251,7 @@
         {
           "type": "feature",
           "label": "dotの所感",
-          "text": "完成画面だけでなく、形や光をどう作ったかの話が参考になるね。"
-        },
-        {
-          "type": "feature",
-          "label": "この記事のポイント",
-          "text": "形の変形・配置・光の仕込みを分けて考える工夫が、CGや地形を作る人の調整作業のヒントになる。"
+          "text": "地形を見せるだけでなく掘れるようにする開発例なので、塹壕やクレーターを遊びに組み込みたい人には気になる仕組みだね。"
         }
       ],
       "sources": [
@@ -504,6 +549,11 @@
           "url": "https://x.com/tokino_werewolf/status/2115453862333255744"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "覚えたはずのモチーフでマスター依頼が進まないとき、自分の操作以外にも原因があり得ると気づく手掛かりになるね。"
+        },
+        {
           "type": "heading",
           "text": "Nowhere Vaultの最後の部屋、ジャンプとやり直しに不満の声"
         },
@@ -518,12 +568,7 @@
         {
           "type": "feature",
           "label": "dotの所感",
-          "text": "困りごとは条件をそろえて見ると、仕様なのか不具合なのか整理しやすそう。"
-        },
-        {
-          "type": "feature",
-          "label": "この記事のポイント",
-          "text": "個別の不具合報告や操作への不満を確定仕様と分けて読むことが、ESOでの無駄な試行を避ける手掛かりになる。"
+          "text": "最後の部屋では謎解きだけでなくジャンプ操作とやり直しの負担もある、という一人の体験として挑戦前の参考になるね。"
         }
       ],
       "sources": [
@@ -662,6 +707,11 @@
           "url": "https://x.com/ericzakariasson/status/2115586309096083730"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "紹介どおりなら、買い物や購読の候補をカードやひな型で見比べられる点が、依頼内容を整理したい人には便利そう。"
+        },
+        {
           "type": "heading",
           "text": "Grok BotのSlack連携はチームBotから、対応拡大は予告"
         },
@@ -676,6 +726,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/poteto/status/2115492618931151002"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "今使える連携方法と今後の予告を分けておくと、SlackでBotを使いたい人が現時点でできる範囲を判断しやすいね。"
         },
         {
           "type": "heading",
@@ -694,6 +749,11 @@
           "url": "https://x.com/cu30rry_/status/2115354883486269449"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "好みの引き継ぎから注文後の追跡まで扱うという紹介で、AIへ毎回背景を説明し直す負担を減らす方向が見えるね。"
+        },
+        {
           "type": "heading",
           "text": "Grok Botの学習利用設定がCursor側にあるという紹介"
         },
@@ -710,6 +770,11 @@
           "url": "https://x.com/kinopee_ai/status/2115431894137635200"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "AIへ仕事の情報を渡す前に、どのアカウントの設定が学習利用を左右するのか確認すべき場所を知る手掛かりになるね。"
+        },
+        {
           "type": "heading",
           "text": "Linkのエージェント用カード、米国・カナダと米ドルの条件が紹介"
         },
@@ -724,6 +789,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/kinopee_ai/status/2115388832527102403"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "日本で使いたい人にとっては、便利さの紹介より先に地域と通貨の条件を確認する必要がある話だね。"
         },
         {
           "type": "heading",
@@ -758,6 +828,11 @@
           "url": "https://x.com/nickbaumann_/status/2115496973734457387"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "提供対象なら、専用アプリを開かず普段のメッセージから写真や音声で用件を渡せる点が、外出中には便利そう。"
+        },
+        {
           "type": "heading",
           "text": "Claude for Legalに契約レビューなどのひな型ギャラリーとの案内"
         },
@@ -772,6 +847,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/claudeai/status/2115467192276025500"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "契約レビューなどの依頼を一から組み立てずに済むひな型として、法務担当者の作業の出発点になりそう。"
         },
         {
           "type": "heading",
@@ -802,6 +882,11 @@
           "url": "https://x.com/grok/status/2115584612122718296"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "紹介どおりなら、AIを組み込む開発者が用途に合う応答方針を追加指定する手段になるね。"
+        },
+        {
           "type": "heading",
           "text": "OpenAI担当者がChatとWorkの統合を進行中と説明したとの報告"
         },
@@ -818,6 +903,11 @@
           "url": "https://x.com/thsottiaux/status/2115588390414581916"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "会話と作業を行き来する利用者には接続がどう変わるか気になる計画だけれど、今使える機能の発表とは分けて見たいね。"
+        },
+        {
           "type": "heading",
           "text": "ユタ州のClaude Code試験で導入時間と作業時間の報告"
         },
@@ -832,6 +922,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/bcherny/status/2115491259381072269"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "職場へ導入を考える人には、生成結果だけでなく準備にかかる時間と作業時間も測るという比較の視点が参考になるね。"
         },
         {
           "type": "heading",
@@ -862,6 +957,11 @@
           "url": "https://x.com/sundarpichai/status/2115535455156642066"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "報告どおりなら、AIの利用拡大をモデルの評判だけでなく事業と処理量の両方から見る材料になるね。"
+        },
+        {
           "type": "heading",
           "text": "Mistral Responses APIが公開プレビューとの案内"
         },
@@ -876,6 +976,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/MistralAI/status/2115443720371814478"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "回答文と道具への指示を分けて受け取れるなら、AIアプリを作る人が応答の各部分を処理しやすくなりそう。"
         },
         {
           "type": "heading",
@@ -894,6 +999,11 @@
           "url": "https://x.com/masahirochaen/status/2115563790972637191"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "AI開発の責任者が変化をどれほど速く見ているかを知る話で、予測の日付を製品の提供予定と取り違えないのが大事だね。"
+        },
+        {
           "type": "heading",
           "text": "Klingが長編アニメ「Minibots」の技術パートナーになるとの案内"
         },
@@ -908,6 +1018,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/Kling_ai/status/2115437409382932937"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "短い生成動画の作例から長編映画の制作提携へ進むという話なので、映像制作のどの工程にAIが入るのか注目したいね。"
         },
         {
           "type": "heading",
@@ -926,6 +1041,11 @@
           "url": "https://x.com/bcherny/status/2115592371224346734"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "使用量が急増して困る人には、全体の不具合と決めつけず重い作業や設定ごとの内訳を見直す手掛かりになるね。"
+        },
+        {
           "type": "heading",
           "text": "Gemini Notebookのアプリで最大1時間の録音を資料にできるとの案内"
         },
@@ -942,6 +1062,11 @@
           "url": "https://x.com/Gemini_Notebook/status/2115199172836302964"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "紹介どおりなら、録音を別途移し替えず資料にできる点が、講義や打ち合わせを後で整理したい人には便利そう。"
+        },
+        {
           "type": "heading",
           "text": "Metaが米5大学の医学・科学研究へ計200万ドルの支援を発表"
         },
@@ -956,12 +1081,7 @@
         {
           "type": "feature",
           "label": "dotの所感",
-          "text": "便利な入口が増えても、対象地域や情報の扱いは別に確かめたいね。"
-        },
-        {
-          "type": "feature",
-          "label": "この記事のポイント",
-          "text": "AIの連携や作業範囲が広がる中、利用者が判断したいのは、機能の有無だけでなく対象条件・権限・費用だ。"
+          "text": "モデルの性能を競うだけでなく、医療現場の具体的な困りごとに役立つかを研究で確かめるための支援だね。"
         }
       ],
       "sources": [
@@ -1103,6 +1223,11 @@
           "url": "https://x.com/SamSokolin/status/2115463327044264193"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "カードを選ぶ基準をあらかじめ伝える発想は、買い物のたびに同じ条件を説明する手間を減らすヒントになりそう。"
+        },
+        {
           "type": "heading",
           "text": "Grok Botをチームの仕事に組み込んだという利用例"
         },
@@ -1117,6 +1242,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/elonmusk/status/2115346748730380385"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "単発の質問だけでなく調査や連絡を一連の仕事として任せる例なので、チームのどこをAIに手伝わせるか考える参考になるね。"
         },
         {
           "type": "heading",
@@ -1135,6 +1265,11 @@
           "url": "https://x.com/simonw/status/2115444742595260551"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "コードが動くだけでなく遊んで楽しいかへ評価が移っている、というゲーム制作側の視点が面白いね。"
+        },
+        {
           "type": "heading",
           "text": "Claude Codeの指示ファイルを点検する方法が紹介された"
         },
@@ -1149,6 +1284,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/plusxbt/status/2115419930065609182"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "指示が増えてAIの動きがちぐはぐになった人には、古い参照や矛盾を点検する方法として気になるね。"
         },
         {
           "type": "heading",
@@ -1167,6 +1307,11 @@
           "url": "https://x.com/santtiagom_/status/2115450361020317934"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "複数のAIに同時に作らせる前に調査の役割を分ける考え方は、変更の衝突や手戻りを減らすヒントになりそう。"
+        },
+        {
           "type": "heading",
           "text": "動画の字幕を学習用の要約・問題へ整理するプロンプト例"
         },
@@ -1181,6 +1326,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/RoundtableSpace/status/2115409493345325122"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "使える字幕を要約と問題へ整理する発想は、長い動画講座を復習したい人の学び直しに役立ちそう。"
         },
         {
           "type": "heading",
@@ -1219,6 +1369,11 @@
           "url": "https://x.com/tetumemo/status/2115571824042131881"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "AIへ全部の説明やログを渡す前に必要な部分へ絞る考え方が、入力の多さに悩む人の見直しポイントになるね。"
+        },
+        {
           "type": "heading",
           "text": "V100を使った自作機でQwenの処理速度を報告"
         },
@@ -1233,6 +1388,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/umiyuki_ai/status/2115466880010138056"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "特定の機材で動いた具体例として、V100を使ったローカルAI環境を検討する人の比較材料になりそう。"
         },
         {
           "type": "heading",
@@ -1251,6 +1411,11 @@
           "url": "https://x.com/umiyuki_ai/status/2115576187036770427"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "手持ちのRTX 3070でも候補になるか気になる話だけれど、伝聞の速度値なので購入前には同じ条件の実測を確かめたいね。"
+        },
+        {
           "type": "heading",
           "text": "Stravaの運動履歴からGeminiに練習計画を作らせる例"
         },
@@ -1265,6 +1430,11 @@
         {
           "type": "xpost",
           "url": "https://x.com/joshwoodward/status/2115580552170627080"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "毎回の記録入力ではなく蓄積した運動履歴を計画作りに使う発想が、自分の練習を振り返るヒントになりそう。"
         },
         {
           "type": "heading",
@@ -1283,6 +1453,11 @@
           "url": "https://x.com/Eris_Create_Lab/status/2115571740940407283"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "キャラクターの見た目と動きの指示を画像ごとに分ける考え方が、動画の狙いをAIへ伝える参考になるね。"
+        },
+        {
           "type": "heading",
           "text": "RTX 3090と128GBメモリで大型モデルを動かしたという計測"
         },
@@ -1293,6 +1468,11 @@
         {
           "type": "paragraph",
           "text": "出典：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1525962849331424/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "大きなモデルを手元で試したい人には、動くかだけでなく速度とメモリの両方を見る必要があると分かる報告だね。"
         },
         {
           "type": "heading",
@@ -1307,6 +1487,11 @@
           "text": "出典：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1525766176017758/"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "古いGPUでも用途をコード補完に絞るという例なので、手持ちの機材を生かしたい人の検討材料になりそう。"
+        },
+        {
           "type": "heading",
           "text": "4,000ドル以下のローカルAI機について、メモリと消費電力を比べる相談"
         },
@@ -1317,6 +1502,11 @@
         {
           "type": "paragraph",
           "text": "出典：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1525713289356380/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "ローカルAI用のPCはGPUの速さだけでなく、載せられるモデルの大きさや消費電力から考えるのがよさそうだね。"
         },
         {
           "type": "heading",
@@ -1335,6 +1525,11 @@
           "url": "https://www.threads.com/@claudeai/post/DfC2DntGobp"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "一度で終わる依頼と条件を満たすまで繰り返す作業を分けて考えると、AIへ任せる仕事を整理しやすそう。"
+        },
+        {
           "type": "heading",
           "text": "Geminiで植物のロボットを動かす「Sprout」の紹介"
         },
@@ -1345,6 +1540,11 @@
         {
           "type": "paragraph",
           "text": "出典：YouTube／Google for Developers：Sprout https://www.youtube.com/watch?v=ID6vEy94j7c"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "会話するだけのAIから周囲を見て動くロボットへつなぐ作例として、植物の世話をどう助けるのか気になるね。"
         },
         {
           "type": "heading",
@@ -1361,12 +1561,7 @@
         {
           "type": "feature",
           "label": "dotの所感",
-          "text": "人の工夫を小さく試すと、自分の作業に合う使い方を探しやすそう。"
-        },
-        {
-          "type": "feature",
-          "label": "この記事のポイント",
-          "text": "作業の分担や手元の機材の使い方を見直す例が、AIを使う人の試行錯誤のヒントになる。"
+          "text": "見た目のデザイン、3D部品、組み込みソフトをつなぐ試作例なので、小さな実物を作りたい人の工程整理の参考になりそう。"
         }
       ],
       "sources": [
@@ -1923,12 +2118,7 @@
         {
           "type": "feature",
           "label": "dotの所感",
-          "text": "映像で見える操作と、手元で使える機能は分けて確かめたいね。"
-        },
-        {
-          "type": "feature",
-          "label": "この記事のポイント",
-          "text": "新しいMacBook Proの画面・構成は公式で確認できる一方、CG制作者が選ぶ際には各制作ソフトの対応範囲も確かめたい。"
+          "text": "CG制作向けのMacを選ぶ人には新しい画面やメモリ構成が比較材料になる一方、紹介映像だけで各ソフトの使い勝手まで判断しないのが大事だね。"
         }
       ],
       "sources": [
@@ -1971,6 +2161,11 @@
           "text": "出典：Elder Scrolls Online Players https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29077880588490437/"
         },
         {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "報酬が出ず同じ場所を周回し続けている人には、開始条件と周回先を分けて見直すヒントになるね。"
+        },
+        {
           "type": "heading",
           "text": "Reaper’s Marchのロード画面を描き直したファンアート"
         },
@@ -1981,6 +2176,11 @@
         {
           "type": "paragraph",
           "text": "出典：Elder Scrolls Online Players https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29135245086087320/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "見慣れたロード画面を別の描き方で楽しむ作品なので、攻略以外にもESOの風景を味わうきっかけになりそう。"
         },
         {
           "type": "heading",
@@ -1997,12 +2197,7 @@
         {
           "type": "feature",
           "label": "dotの所感",
-          "text": "周回の工夫も風景の楽しみ方も、遊び方を広げるきっかけになりそう。"
-        },
-        {
-          "type": "feature",
-          "label": "この記事のポイント",
-          "text": "報酬集めやテスト環境の構成例は試すヒントになるが、助言・個人の計測・本番の確定仕様を分けて読むことが大切だ。"
+          "text": "支援役のタンクがどこまで攻撃にも参加できるかを見るテスト例として、役割を両立する構成を考える参考になりそう。"
         }
       ],
       "sources": [
