@@ -1,43 +1,543 @@
 {
   "schema_version": 1,
-  "mode": "search",
-  "genre": "ESO",
-  "created_at": "2026-10-28T01:06:05.176186+00:00",
-  "run_id": "40612951824",
+  "mode": "channels",
+  "genre": "all",
+  "created_at": "2026-10-29T01:04:02.872544+00:00",
+  "run_id": "40798083189",
   "videos": [
     {
-      "id": "oP6VyBOTVpM",
-      "url": "https://www.youtube.com/watch?v=oP6VyBOTVpM",
-      "title": "Ob das was wird? | Verlies Run",
-      "channel": "Makka ESO",
-      "description": "",
-      "published_at": "2026-10-27T21:43:44Z",
-      "duration_seconds": 921
+      "id": "ujmyzWSj8IU",
+      "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
+      "title": "API credits, now in ChatGPT Pro and Business plans",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents.\n\nCredit amounts depend on the plan.  Pro plans get $100, $200 or $500 per month by tier.  Business plans get $20 per paid Standard seat or $100 per paid Premium seat, pooled up to $500 per workspace.\n\nhttps://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions",
+      "published_at": "2026-10-28T23:45:26Z",
+      "duration_seconds": 146
     },
     {
-      "id": "YTtOpvvpa0U",
-      "url": "https://www.youtube.com/watch?v=YTtOpvvpa0U",
-      "title": "New Furniture previews!🔮 Update 52 🔮 ESO 2026/2027 #ESO",
-      "channel": "Hullo! It's Icy ^_^",
-      "description": "New structural furnishing!! New pretties! LADDERS!!!\n\n🔮https://www.elderscrollsonline.com/news/post/70503\n_________________________________________________________________\nHullo, it's Icy! ^_^\n\nHello and welcome! It's lovely to have you here ^_^ Please do stay and say hi!\n\nI've been a gamer since I was a wee little girl, playing on my family's Commodore64. I graduated to an early PC (with four whole gig of ram!) and I was a PC gamer from then on.\n\nI believe that gaming is more than just a hobby; it's somewhere that everyone can build a place, just for themselves, and I'd like to share the place I've built with you. ^_^\n\nI love playing The Elder Scrolls Online (especially veteran Solo Arenas and housing), and I'm a member of the official ESO Stream Team (which means I have giveaways, thanks to Zenimax Online and Bethesda ANZ). \n\nThank you for joining me, and I'll see you next time. ^_^\n\n💜 Icy 💜\n_________________________________________________________________\nFIND ME\n❄ Sydney, Australia\n❄ Twitch: https://twitch.tv/IcyIC (Live 3-4 days a week, 6.4K+ follows. Come say hello!)\n❄ Stream Schedule: https://www.twitch.tv/IcyIC/schedule\n❄ ESO Stream Team: https://www.elderscrollsonline.com/en-us/streamers\n❄ Site: https://www.IndividualChic.com https://www.HulloItsIcy.com\n❄ YouTube: https://youtube.com/HulloItsIcy https://youtube.com/@HulloItsIcySews \n❄ Instagram: https://instagram.com/HulloItsIcy \n❄ Mastodon: https://mstdn.games/@HulloItsIcy\n❄ Threads: https://threads.net/HulloItsIcy\n❄ BlueSky: https://bsky.app/profile/hulloitsicy.com\n\n#ESO #ElderScrolsOnline",
-      "published_at": "2026-10-27T18:00:35Z",
-      "duration_seconds": 1733
+      "id": "cv8tEbKtEvk",
+      "url": "https://www.youtube.com/watch?v=cv8tEbKtEvk",
+      "title": "🪴 Building an autonomous plant rover with Gemini Live",
+      "channel": "Google for Developers",
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "genres": [
+        "AI"
+      ],
+      "description": "Meet Sprout: an semi-autonomous plant rover built with Gemini Live and Robotics ER 2.0 that navigates office spaces to hunt for sunlight and care for greenery.\n\n🔗 Explore the build → https://goo.gle/3UCdUOa \n\n\nSubscribe to Google for Developers → https://goo.gle/developers   \n\n\nProducts Mentioned: Gemini, Google AI Studio\nSpeaker:  Xavier Plantaz",
+      "published_at": "2026-10-29T01:00:36Z",
+      "duration_seconds": 126
     },
     {
-      "id": "e3D1svnz_JQ",
-      "url": "https://www.youtube.com/watch?v=e3D1svnz_JQ",
-      "title": "Es geht weiter | Ausgrabung",
-      "channel": "Makka ESO",
+      "id": "ID6vEy94j7c",
+      "url": "https://www.youtube.com/watch?v=ID6vEy94j7c",
+      "title": "Building real-time vision & edge navigation with Gemini Live",
+      "channel": "Google for Developers",
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "genres": [
+        "AI"
+      ],
+      "description": "Meet Sprout, a semi-autonomous plant robot powered by Gemini. Watch as it navigates the office in search of sunlight, pings for help, and uses Gemini Live and Robotics ER 2.0 for vision to care for fellow office plants.\n\nTry building today → https://goo.gle/4BmThG6\n\n\nSubscribe to Google for Developers → https://goo.gle/developers   \n\n\nProducts Mentioned: Gemini, Google AI Studio\nSpeaker: Xavier Plantaz",
+      "published_at": "2026-10-28T21:00:32Z",
+      "duration_seconds": 123
+    },
+    {
+      "id": "pQ_Dnr9Q4k8",
+      "url": "https://www.youtube.com/watch?v=pQ_Dnr9Q4k8",
+      "title": "Functional smart devices using Gemini 4 Argon and Google Antigravity",
+      "channel": "Google for Developers",
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "genres": [
+        "AI"
+      ],
+      "description": "What happens when you have a wild hardware idea and zero clue how to build it? Watch to see how these makers used Gemini 4 Argon and Google Antigravity to take a custom \"Surf Clock\" from a rough sketch to a working prototype.\n\nThe models explored: \n*Initial concepts to lock in a retro 60s design\n*Ran Python scripts to control Blender and model 3D parts\n*Wrote custom firmware to pull live ocean data\n*Built an interactive assembly guide to wire it all together\n\nLearn more on how to get started today → https://goo.gle/3UmeYWb \n\n\nSubscribe to Google for Developers → https://goo.gle/developers   \n\n\nProducts Mentioned: Gemini, Google Antigravity\nSpeaker: Jack Colley",
+      "published_at": "2026-10-28T15:08:11Z",
+      "duration_seconds": 152
+    },
+    {
+      "id": "AtjFk9f44HE",
+      "url": "https://www.youtube.com/watch?v=AtjFk9f44HE",
+      "title": "His AI Made 20 Reels Before Breakfast",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "What if you could automate your video editing, get a panel of AI experts to debate your ideas, and run your social media almost entirely on autopilot?\n\nI sat down with Nate Herk to explore three of his favorite AI workflows that he actually uses every day. He walks me through how he's using Claude Code to automatically edit videos, an AI expert panel called The Roast Room to make better decisions, and an AI social media manager that researches, creates, and publishes Instagram content.\n\nWe dive into how he built these workflows, the tools and AI skills behind them, and how you can set them up yourself. Nate also shares how he's using AI to replicate his editing style, automate content creation, and build systems that keep improving over time.\n\nSharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #AITools #ArtificialIntelligence\n\nTime Stamps:\n00:00 Show Me Your Workflow with Nate Herk\n01:03 Teaching AI to Edit Videos in Your Style\n06:33 How the AI Editing Workflow Works\n13:50 The Roast Room: Build Your Own AI Expert Panel\n20:37 Testing the Roast Room on Matt’s Newsletter Strategy\n26:49 Automating Instagram Research, Content, and Posting\n36:24 How to Try Nate’s AI Workflows",
+      "published_at": "2026-10-28T19:25:38Z",
+      "duration_seconds": 2290
+    },
+    {
+      "id": "DZbCL56oz3M",
+      "url": "https://www.youtube.com/watch?v=DZbCL56oz3M",
+      "title": "Insane Interactive World Creator (Genie 4)",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "Sharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #AITools #ArtificialIntelligence",
+      "published_at": "2026-10-28T18:25:36Z",
+      "duration_seconds": 104
+    },
+    {
+      "id": "H5TGt-susIY",
+      "url": "https://www.youtube.com/watch?v=H5TGt-susIY",
+      "title": "TOUCH your Blender 👀 Blender Today LIVE #292",
+      "channel": "Blender",
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "Hola Community! Pablo here. Let's see what's new in Blender.\n\nThis is all possible thanks to your donations. If you like what you see, keep it going at fund.blender.org 🧡\n\nWhat's New Changelog and Q&A: https://devtalk.blender.org/t/touch-your-blender-blender-today-live-292/46170?sort=old\n\n--\n\nBlenderToday is a live show highlighting the latest news in Blender development, the community, and Q&A. Streaming from the Blender HQ in Amsterdam since 2018, hosted by Pablo Vazquez (Senior Product Designer at Blender).\n\nStreaming at 17:00 CEST (UTC+2) every other week. Amsterdam: 17:00, Buenos Aires: 12:00, Dubai: 19:00, London: 16:00, Los Angeles: 08:00, New York: 11:00, São Paulo: 12:00, Shanghai: 23:00, Sydney: 01:00, Tokyo: 00:00. See other time: https://www.timeanddate.com/worldclock/fixedtime.html?msg=Blender+Today+LIVE&iso=20260825T17&p1=16\n\n#b3d #blendertoday\n\n\n---\n\n0:00:00 Intro\n0:00:25 Hola!\n0:03:30 Animation\n0:05:19 Compositor\n0:09:52 Core\n0:13:44 Cycles\n0:18:30 EEVEE\n0:20:38 Extensions\n0:21:59 I/O\n0:23:43 macOS\n0:29:01 Modeling\n0:29:49 Nodes\n0:31:41 Projects\n0:35:41 Python\n0:36:33 Render\n0:38:36 Sculpt\n0:41:01 Subdiv\n0:43:50 User Interface\n0:50:49 Video Sequencer\n0:54:07 Q&A\n1:04:27 Outro",
+      "published_at": "2026-10-28T20:22:59Z",
+      "duration_seconds": 4063
+    },
+    {
+      "id": "OqCGBeiQkfo",
+      "url": "https://www.youtube.com/watch?v=OqCGBeiQkfo",
+      "title": "How Rimegales Dynamic Encounters Work in ESO Update 52!",
+      "channel": "ArzyeL Gaming",
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Follow me on Twitch: https://www.twitch.tv/arzyel_gaming\nMusic by Epidemic Sound! Try it for free: https://share.epidemicsound.com/vy3jpw\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nLinktree: https://linktr.ee/arzyel\nIf you like the video please consider buying me a Coffee!\nhttps://www.buymeacoffee.com/ArzyeL\n\nRimegales is a new type of Dynamic Encounters in ESO Update 52!\nESO Update 52: https://arzyelbuilds.com/eso-update-52/\nESO Dynamic Encounters: https://arzyelbuilds.com/eso-dynamic-encounters/\nESO Rimegales: https://arzyelbuilds.com/eso-rimegales/\n\nSoulframe Builds: https://arzyelbuilds.com/soulframe-builds/\nESO Best Subclassing Builds: https://arzyelbuilds.com/eso-subclassing-builds/\nESO Best Pure Class Builds: https://arzyelbuilds.com/eso-pure-class-builds/\nFarever Builds: https://arzyelbuilds.com/farever-builds/\nThrone and Liberty Builds: https://arzyelbuilds.com/throne-and-liberty-builds/\n\nFollow me on Twitch: https://www.twitch.tv/arzyel_gaming\nSubscribe to my Newsletter: https://arzyelbuilds.com/subscribe-to-arzyelbuilds/\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nCheck my Linktree: https://linktr.ee/arzyel\nBuilds & Guides: https://arzyelbuilds.com/\n#arzyelbuilds #esobuilds #elderscrollsonline",
+      "published_at": "2026-10-28T18:05:47Z",
+      "duration_seconds": 114
+    },
+    {
+      "id": "gA_zbs2MY78",
+      "url": "https://www.youtube.com/watch?v=gA_zbs2MY78",
+      "title": "Tanking Random Veteran Dungeons and then Guild Wars 2 #ad",
+      "channel": "Hyperioxes",
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "genres": [
+        "ESO"
+      ],
       "description": "",
-      "published_at": "2026-10-27T17:48:22Z",
-      "duration_seconds": 310
+      "published_at": "2026-10-28T18:58:15Z",
+      "duration_seconds": 13363
+    },
+    {
+      "id": "MWt-ytgfo0Q",
+      "url": "https://www.youtube.com/watch?v=MWt-ytgfo0Q",
+      "title": "DPS Tanking on Update 52 - 91k DPS Dragonknight Tank | ESO PTS",
+      "channel": "Hyperioxes",
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "On Update 52, a tank can do 91k DPS on the Iron Atronach dummy, on a setup that isn't troll, and gives up very little group support. In this video I'll go over the DPS tank changes, and then add a tiny bit more info about the new AoE taunts and pulls.\n\nUpdate 52 PTS patch notes - https://hyperioxes.com/eso/news/update-52-pts-patch-notes\nDragonknight Tank build (the setup I started from) - https://hyperioxes.com/eso/tank/dragonknight-build\nMy last video, AoE taunts and Jerall Pass - https://youtu.be/guQVbrc68Z0\n\n=============  Timestamps =============\n\n0:00 Intro\n0:24 Tank Damage Passives\n2:00 Default DK Tank Setup on Update 52\n2:44 Building for Damage\n6:19 AoE Taunts and Pulls\n7:15 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-10-28T18:40:28Z",
+      "duration_seconds": 475
+    },
+    {
+      "id": "21BIzVkegbs",
+      "url": "https://www.youtube.com/watch?v=21BIzVkegbs",
+      "title": "This New MMO-Lite RPG Surprised Me!",
+      "channel": "Hack The Minotaur",
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Make sure to check out Everlast: Undying Tale now using https://store.steampowered.com/app/3818450/Everlast_Undying_Tale/?utm_source=HackTheMinotaur\nJoin the discord server: https://discord.gg/wMrdng3rFz \nThanks to Everlast: Undying Tale for sponsoring the video! \n\n➖ Stay Updated!➖\n🔥 Weekly ESO News, Builds & Guides: https://hacktheminotaur.kit.com/news\n\n➖ JOIN Zero To Hero Academy! ➖\n⭐ My System For PERFECT ESO Builds!\n⭐ Online Courses: https://htm.podia.com/\n⭐ Ultimate Build Guide: https://htm.podia.com/eso-zero-to-hero-build-guide\n\n➖ Help Slay The Algorithm! ➖\n👍 CRUSH That Like!\n👊 SUBSCRIBE! https://bit.ly/subscribeHTM\n🔔 Ding that Notification BELL!\n\n➖ My Socials! ➖\n🐦 Twitter: https://twitter.com/HackMinotaur\n\n➖ Show Your Support! ➖\nUnlock Exclusive Videos & More!\n💪 Become A Channel Member! https://bit.ly/joinHTM\n❤️ Member Content: https://bit.ly/HTM-members\n🗡 CHANNEL MEMBERS - THANK YOU!! 🛡\n\n➖ My ESO Website! ➖\nHome: https://www.hacktheminotaur.com/\nBuilds: https://www.hacktheminotaur.com/builds\nGuides: https://www.hacktheminotaur.com/all-eso-guides\nCompanions: https://www.hacktheminotaur.com/eso-companions",
+      "published_at": "2026-10-28T15:43:15Z",
+      "duration_seconds": 794
     }
   ],
+  "collection_source": "watchlist",
+  "editor_review_required": true,
   "window": {
-    "start": "2026-10-27T15:00:00Z",
-    "end": "2026-10-28T01:06:05.176186Z",
+    "start": "2026-10-28T15:00:00Z",
+    "end": "2026-10-29T01:04:02.872544Z",
     "timezone": "Asia/Tokyo"
   },
-  "editor_reviewed": true,
-  "api_attempts": 2
+  "selection_limit_per_genre": 3,
+  "candidate_limit_per_channel": 3,
+  "partial": true,
+  "stop_code": "",
+  "channels": [
+    {
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "name": "Claude",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 3,
+      "candidates_returned": 3,
+      "partial": true,
+      "reasons": [
+        "pagination_limit",
+        "candidate_limit"
+      ]
+    },
+    {
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "name": "Matt Wolfe",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 2,
+      "candidates_returned": 2,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "name": "KEITO【AI&WEB ch】",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "name": "いまにゅのAIプログラミング塾",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "name": "Autodesk Media & Entertainment",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "name": "Chaos V-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "name": "Adobe Substance 3D",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "name": "Foundry",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "name": "Houdini",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "name": "Blender",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "name": "Eloi Andaluz Fullà",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "name": "Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "name": "QuadSpinner",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "name": "World Creator",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "name": "Bethesda Softworks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "name": "Skinny Cheeks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "name": "ArzyeL Gaming",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "name": "Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 2,
+      "candidates_returned": 2,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "name": "Hack The Minotaur",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    }
+  ],
+  "api_attempts": 53
 }
