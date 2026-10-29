@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "mode": "search",
-  "genre": "terrain",
-  "created_at": "2026-10-29T01:06:09.031080+00:00",
-  "run_id": "40798310181",
+  "genre": "3DCG",
+  "created_at": "2026-10-29T01:08:30.089589+00:00",
+  "run_id": "40798559139",
   "videos": [],
   "window": {
     "start": "2026-10-28T15:00:00Z",
-    "end": "2026-10-29T01:06:09.031080Z",
+    "end": "2026-10-29T01:08:30.089589Z",
     "timezone": "Asia/Tokyo"
   },
   "editor_reviewed": true,
