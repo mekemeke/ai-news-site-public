@@ -151,3 +151,20 @@ AI・CG・ESOのニュース／小ネタまとめでは、記事全体に一つ�
 ```
 
 検証: `node --test tests/news-reading.test.cjs tests/news-display.test.cjs tests/news-pagination.test.cjs tests/threads-embed.test.cjs`。タイムゾーン差は `TZ=UTC` / `TZ=America/Los_Angeles` / `TZ=Asia/Tokyo` で新規テストを実行する。全体は従来どおり `node --test tests/*.test.cjs` と `python3 -m unittest discover -s tests -v`。X／Threads／YouTube、全HTMLのnoindex・CSP、ESOデータと画面、API・Secrets・workflowは変更しない。
+
+## 話題ごとのYouTube動画（2026-10-29）
+
+まとめ記事などで、動画を対応する話題の中に置くときは、その話題の「出典」段落の直後、`dotの所感` の直前に次の構造化ブロックを置く。
+
+```json
+{"type": "youtube", "videoId": "ID6vEy94j7c", "url": "https://www.youtube.com/watch?v=ID6vEy94j7c", "title": "動画の公開タイトル"}
+```
+
+- 表示するのは `videoId`（英数字・`_`・`-` の11文字）、`url` から取り出したID、記事の `sources` に記録した YouTube URL の3つが同じ動画を指す場合だけ。一つでも違えば何も表示しない（出典段落・出典欄はそのまま残る）。
+- `url` はHTTPSの `www.youtube.com` / `youtube.com` / `m.youtube.com` の `/watch?v=<ID>`、または `youtu.be/<ID>` だけ受理する。認証情報・ポート付き・他ホスト・埋め込み用パスは不可。生HTMLは入れない。`title` は iframe の説明用（空なら「YouTube動画」）。
+- 表示は既存の `video-embed`（`www.youtube-nocookie.com/embed/<ID>`、`loading="lazy"`）と、その下の「YouTubeで元動画を見る ↗」リンク。CSS・CSPは追加していない。
+- 同じ動画は1記事の本文で1回だけ表示する。本文に有効な `youtube` ブロックがある動画は、記事冒頭の `videoId` 表示を出さない（二重表示防止）。動画を話題へ移すときは、記事トップの `videoId` / `videoTitle` を外して本文ブロックへ移す。
+- 記事トップの `videoId` だけの既存記事・単体記事は従来どおり冒頭に表示する。既存記事への自動後付けはしない。
+- 2026-10-29: `20261029-ai-tips` の Sprout（ID6vEy94j7c）と Surf Clock（pQ_Dnr9Q4k8）、`20261029-eso-tips` の PTSタンク（MWt-ytgfo0Q）を各話題へ移した。
+
+検証: `node --test tests/youtube-blocks.test.cjs`（URL検証、ID・出典の一致、二重表示、配置位置、既存のトップ動画・CSP・noindex）。

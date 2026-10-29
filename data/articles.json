@@ -1542,6 +1542,12 @@
           "text": "出典：YouTube／Google for Developers：Sprout https://www.youtube.com/watch?v=ID6vEy94j7c"
         },
         {
+          "type": "youtube",
+          "videoId": "ID6vEy94j7c",
+          "url": "https://www.youtube.com/watch?v=ID6vEy94j7c",
+          "title": "Building real-time vision & edge navigation with Gemini Live"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "会話するだけのAIから周囲を見て動くロボットへつなぐ作例として、植物の世話をどう助けるのか気になるね。"
@@ -1552,11 +1558,17 @@
         },
         {
           "type": "paragraph",
-          "text": "Google for Developersの日本時間10月29日0時08分公開動画の説明欄は、Gemini 4 ArgonとGoogle AntigravityでSurf Clockを構想から試作へ進めたと説明する。1960年代風のデザイン検討、PythonによるBlenderの3D部品作り、海のデータを取る組み込みソフト、対話型の配線手引きを挙げる。タイトル・説明欄のみの要約で、全体の制作を解析したものではない。この動画は元リンクで掲載する。"
+          "text": "Google for Developersの日本時間10月29日0時08分公開動画の説明欄は、Gemini 4 ArgonとGoogle AntigravityでSurf Clockを構想から試作へ進めたと説明する。1960年代風のデザイン検討、PythonによるBlenderの3D部品作り、海のデータを取る組み込みソフト、対話型の配線手引きを挙げる。タイトル・説明欄のみの要約で、全体の制作を解析したものではない。"
         },
         {
           "type": "paragraph",
           "text": "出典：YouTube／Google for Developers：Surf Clock https://www.youtube.com/watch?v=pQ_Dnr9Q4k8"
+        },
+        {
+          "type": "youtube",
+          "videoId": "pQ_Dnr9Q4k8",
+          "url": "https://www.youtube.com/watch?v=pQ_Dnr9Q4k8",
+          "title": "Google for Developers：Surf Clock"
         },
         {
           "type": "feature",
@@ -1664,9 +1676,7 @@
         "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
       ],
       "thumbnailKey": "ai-tips",
-      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。",
-      "videoId": "ID6vEy94j7c",
-      "videoTitle": "Building real-time vision & edge navigation with Gemini Live"
+      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。"
     },
     {
       "id": "20261029-grok-referral",
@@ -2195,6 +2205,12 @@
           "text": "出典：YouTube／Hyperioxes：Update 52 PTSタンク https://www.youtube.com/watch?v=MWt-ytgfo0Q"
         },
         {
+          "type": "youtube",
+          "videoId": "MWt-ytgfo0Q",
+          "url": "https://www.youtube.com/watch?v=MWt-ytgfo0Q",
+          "title": "DPS Tanking on Update 52 - 91k DPS Dragonknight Tank | ESO PTS"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "支援役のタンクがどこまで攻撃にも参加できるかを見るテスト例として、役割を両立する構成を考える参考になりそう。"
@@ -2220,9 +2236,7 @@
         "https://www.youtube.com/watch?v=MWt-ytgfo0Q"
       ],
       "thumbnailKey": "eso-tips",
-      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。",
-      "videoId": "MWt-ytgfo0Q",
-      "videoTitle": "DPS Tanking on Update 52 - 91k DPS Dragonknight Tank | ESO PTS"
+      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。"
     },
     {
       "id": "20261029-eso-oct28-hotfix",

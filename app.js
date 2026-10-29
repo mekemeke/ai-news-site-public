@@ -243,10 +243,41 @@
     image.alt = image.dataset.fallbackAlt;
     if (image.getAttribute('src') !== fallback) image.src = fallback;
   }, true);
-  function videoEmbed(article) {
+  const isVideoId = id => typeof id === 'string' && /^[A-Za-z0-9_-]{11}$/.test(id);
+  function videoFrame(id, label, loading) {
+    return `<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${escapeHTML(label)}" loading="${loading}" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+  }
+  function videoEmbed(article, bodyVideos = new Set()) {
     const id = article.videoId;
-    if (typeof id !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(id)) return '';
-    return `<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${escapeHTML(article.videoTitle || article.title)}" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+    // A video placed inside the body is shown there only, never again at the top.
+    if (!isVideoId(id) || bodyVideos.has(id)) return '';
+    return videoFrame(id, article.videoTitle || article.title, 'eager');
+  }
+  const youtubeHosts = ['youtube.com', 'www.youtube.com', 'm.youtube.com', 'youtu.be'];
+  function youtubeVideo(value) {
+    if (typeof value !== 'string' || !/^https:\/\//i.test(value) || /[\s\\]/.test(value)) return null;
+    let url;
+    try { url = new URL(value); } catch { return null; }
+    if (url.protocol !== 'https:' || url.username || url.password || url.port || !youtubeHosts.includes(url.hostname)) return null;
+    const id = url.hostname === 'youtu.be' ? url.pathname.match(/^\/([A-Za-z0-9_-]{11})\/?$/)?.[1] :
+      url.pathname === '/watch' ? url.searchParams.get('v') : null;
+    return isVideoId(id) ? {id, href: `https://www.youtube.com/watch?v=${id}`} : null;
+  }
+  function youtubeBlockVideo(block, sources) {
+    // The ID, the original URL and a recorded source must all name the same video.
+    const video = youtubeVideo(block?.url);
+    if (!video || block.videoId !== video.id || !sources.some(source => youtubeVideo(source?.url)?.id === video.id)) return null;
+    return video;
+  }
+  function bodyVideoIds(blocks, sources = []) {
+    return new Set(blocks.filter(block => block?.type === 'youtube').map(block => youtubeBlockVideo(block, sources)?.id).filter(Boolean));
+  }
+  function youtubeBlockEmbed(block, seen, sources) {
+    const video = youtubeBlockVideo(block, sources);
+    if (!video || seen.has(video.id)) return '';
+    seen.add(video.id);
+    const label = typeof block.title === 'string' && block.title.trim() ? block.title : 'YouTube動画';
+    return `${videoFrame(video.id, label, 'lazy')}<p class="video-link"><a href="${video.href}" target="_blank" rel="noopener noreferrer">YouTubeで元動画を見る ↗</a></p>`;
   }
   const xHosts = ['x.com', 'www.x.com', 'twitter.com', 'www.twitter.com'];
   function xPost(value) {
@@ -353,9 +384,10 @@
     $('end-note').hidden = filtered.length === 0 || page < pageCount;
   }
   function renderBlocks(blocks, sources = []) {
-    const seenPosts = new Set(), seenThreads = new Set();
+    const seenPosts = new Set(), seenThreads = new Set(), seenVideos = new Set();
     return blocks.map(block => {
       if (block.type === 'xpost') return xPostEmbed(block, seenPosts);
+      if (block.type === 'youtube') return youtubeBlockEmbed(block, seenVideos, sources);
       if (block.type === 'threadspost') return threadsPostEmbed(block, seenThreads, sources);
       if (block.type === 'feature') {
         return `<p class="feature"><strong>${escapeHTML(block.label)}</strong>：${linkedText(block)}</p>`;
@@ -392,7 +424,7 @@
       $('detail').innerHTML = '<a class="back" href="#">← 一覧に戻る</a><h1>記事が見つかりません</h1><p>指定された記事は見つかりませんでした。一覧から記事を選んでください。</p>';
     } else {
       document.title = article.title + ' | ' + title;
-      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}${newBadge(article)}</h1>${thumbnail(article, true)}${videoEmbed(article)}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks, article.sources)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
+      $('detail').innerHTML = `<a class="back" href="#">← 一覧に戻る</a>${metadata(article)}<h1>${escapeHTML(article.title)}${newBadge(article)}</h1>${thumbnail(article, true)}${videoEmbed(article, bodyVideoIds(article.blocks, article.sources))}<p class="lead">${escapeHTML(article.summary)}</p><div class="article-body">${renderBlocks(article.blocks, article.sources)}</div><div class="source-box"><strong>${isSample(article) ? 'サンプルの参考リンク' : '出典・参考リンク'}</strong><ul>${article.sources.map(source => `<li>${sourceLink(source)}</li>`).join('')}</ul><p>${escapeHTML(isSample(article) ? 'リンクは表示例です。この記事の内容を裏付ける出典ではありません。' : article.sourceNote || '出典は各リンク先をご確認ください。')}</p></div><a class="return-link" href="#">← 一覧に戻る</a>`;
     }
     window.scrollTo(0, 0);
     $('detail').focus({preventScroll: true});
@@ -425,7 +457,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261028-reading1', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261029-video-blocks1', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
