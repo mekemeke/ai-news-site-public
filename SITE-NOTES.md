@@ -168,3 +168,10 @@ AI・CG・ESOのニュース／小ネタまとめでは、記事全体に一つ�
 - 2026-10-29: `20261029-ai-tips` の Sprout（ID6vEy94j7c）と Surf Clock（pQ_Dnr9Q4k8）、`20261029-eso-tips` の PTSタンク（MWt-ytgfo0Q）を各話題へ移した。
 
 検証: `node --test tests/youtube-blocks.test.cjs`（URL検証、ID・出典の一致、二重表示、配置位置、既存のトップ動画・CSP・noindex）。
+
+## 一覧サムネイルから記事を開く（2026-10-29）
+
+記事一覧の各サムネイルを、タイトルと同じ `#article/<記事ID>` への通常のリンク（`a.news-card-thumb`）で包む。`aria-label` は「記事タイトル（記事を開く）」。キーボード操作・既存のフォーカス枠・長押し／Ctrl+クリックでの別タブ表示がそのまま使える。`target` 指定やクリック用スクリプトは追加していない。画像の読み込み失敗時は従来どおり共通文字カードに切り替わり、リンクは維持される。詳細ページの画像はリンクにしない。一覧へ戻ると、従来どおりタイトルのリンクにフォーカスし、スクロール位置を戻す。
+キャッシュ番号: `style.css` / `app.js` / `articles.json` を `20261029-thumb-link1` に更新（`index.html` のみ。ESOページの `style.css` 番号は変更なし）。
+
+検証: `node --test tests/news-thumb-link.test.cjs`（全カードのサムネイルとタイトルのリンク先一致、ラベル、エスケープ、キャッシュ番号、CSP・noindex）。

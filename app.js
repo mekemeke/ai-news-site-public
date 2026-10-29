@@ -375,7 +375,7 @@
     page = Math.min(Math.max(1, page), pageCount);
     const start = (page - 1) * PAGE_SIZE;
     const visible = filtered.slice(start, start + PAGE_SIZE);
-    $('articles').innerHTML = visible.map(article => `<article class="news-card">${thumbnail(article)}<div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a>${newBadge(article)}</h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
+    $('articles').innerHTML = visible.map(article => `<article class="news-card"><a class="news-card-thumb" href="#article/${encodeURIComponent(article.id)}" aria-label="${escapeHTML(article.title)}（記事を開く）">${thumbnail(article)}</a><div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a>${newBadge(article)}</h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
     $('count').textContent = `${filtered.length} / ${articles.length} 件の記事${filtered.length ? `（${start + 1}〜${start + visible.length}件目）` : ''}`;
     $('pagination').hidden = pageCount <= 1;
     $('page-status').textContent = `${page} / ${pageCount} ページ`;
@@ -457,7 +457,7 @@
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261029-video-blocks1', {credentials: 'omit'});
+      const response = await fetch('./data/articles.json?v=20261029-thumb-link1', {credentials: 'omit'});
       if (!response.ok) throw new Error('Article data unavailable');
       const data = await response.json();
       if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
