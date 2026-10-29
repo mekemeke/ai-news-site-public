@@ -41,6 +41,22 @@
       "selectedYouTubeCount": 6,
       "videoAnalysisSucceeded": 0,
       "notes": "All 63 Slack items mapped; duplicates merged including 3 existing article updates. YouTube metadata only; Gemini 90s request timeout, no retry, token usage unknown. Reddit current timestamps incomplete. ESO PTS not applied to Live data; Live patch body unreadable. New private Slack identifiers omitted from public metadata; 9 Facebook permalinks withheld because public scope unverified; all anonymous summaries retained. Legacy Slack timestamp metadata also removed from public JSON; exact mappings retained privately for reconciliation. Correction 2026-10-28: the 9 previously withheld Facebook original-post links were restored under the owner-approved source-link policy, including private-group links. Poster names/images and private Slack identifiers remain excluded."
+    },
+    {
+      "runDate": "2026-10-29",
+      "publishedAt": "2026-10-29T10:14:30+09:00",
+      "newCount": 20,
+      "updatedCount": 2,
+      "deletedCount": 0,
+      "counts": {
+        "standalone": 14,
+        "tipsRoundup": 3,
+        "newsRoundup": 3
+      },
+      "sourceItemCount": 68,
+      "selectedYouTubeCount": 5,
+      "videoAnalysisSucceeded": 0,
+      "notes": "All 68 Slack news items mapped, with duplicate topics integrated and two existing articles updated. YouTube public titles/descriptions only; no Gemini analysis because current video daily quota was not verified. Two supplementary videos linked without an additional player under existing renderer. Reddit absolute publication times unconfirmed. ESO applied hotfix reported; no numeric database change justified. No private Slack identifiers published."
     }
   ],
   "articles": [
@@ -327,7 +343,8 @@
       "runDate": "2026-10-27",
       "kind": "headline",
       "sourceUrls": [
-        "https://x.com/KimiAI_Japan/status/2114735970109075855"
+        "https://x.com/KimiAI_Japan/status/2114735970109075855",
+        "https://facebook.com/groups/runlocalai/permalink/1522414793019563/"
       ],
       "forumEvidence": []
     },
@@ -342,19 +359,13 @@
         "https://www.youtube.com/watch?v=mNT05afaNzA",
         "https://www.youtube.com/watch?v=fxac-QZ-lKQ",
         "https://x.com/TESOnline/status/2115133935579512870",
-        "https://www.youtube.com/watch?v=YTtOpvvpa0U"
+        "https://www.youtube.com/watch?v=YTtOpvvpa0U",
+        "https://x.com/Bethesda_jpn/status/2115231584538284068",
+        "https://x.com/futerko_profi/status/2115067186645467230",
+        "https://x.com/Marinparu/status/2114920347493646704",
+        "https://www.youtube.com/watch?v=OqCGBeiQkfo"
       ],
-      "forumEvidence": [
-        {
-          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700551/pts-patch-notes-v12-2-0",
-          "checkedAt": "2026-10-27T10:19:02+09:00",
-          "points": [
-            "ZOS_Kevin October26 official Update52 PTS v12.2.0 available announcement; detailed patch body not read"
-          ],
-          "previousCheckedAt": null
-        }
-      ],
-      "lastUpdatedAt": "2026-10-28T10:10:49+09:00"
+      "forumEvidence": []
     },
     {
       "id": "20261027-eso-tesoctober",
@@ -667,6 +678,252 @@
       ],
       "forumEvidence": [],
       "lastUpdatedAt": "2026-10-28T10:10:49+09:00"
+    },
+    {
+      "id": "20261029-cg-tips",
+      "runDate": "2026-10-29",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/Botan_cr/status/2115405389705650603",
+        "https://x.com/zflag_cg_team/status/2115401277521969556",
+        "https://x.com/christinayan01/status/2115584898648203463",
+        "https://x.com/Zero_Studio_JP/status/2115383077572595933",
+        "https://x.com/KanaWorks_AI/status/2115427188732555401",
+        "https://x.com/KanaWorks_AI/status/2115427355678417208",
+        "https://facebook.com/groups/282909453705941/permalink/1482786817051526/",
+        "https://facebook.com/groups/282909453705941/permalink/1483152860348255/",
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4675041456112592/",
+        "https://www.threads.com/@thegnomonworkshop/post/DfDkmlLkmqw",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2024693098252294/",
+        "https://x.com/SmeeperDev/status/2115217667112247701"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-unreal-mutable",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/UnrealEngine/status/2115141693268017405"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-blender-image-to-3d",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/MiladKambari/status/2115400657242849535"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-3dgs-cuda",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/gkopanas/status/2115546904683807026",
+        "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-eso-snow-teaser",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/TESOnline/status/2115443467249680583"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-eso-news",
+      "runDate": "2026-10-29",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/tokino_werewolf/status/2115453862333255744",
+        "https://facebook.com/groups/esoeu/permalink/40129070790024742/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-threejs-mud-lab",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/derfcz/status/2115415840350785671"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-hyperreal-landscape",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/PashaIGooD/status/2115531392092377382"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-ai-news",
+      "runDate": "2026-10-29",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/ericzakariasson/status/2115586309096083730",
+        "https://x.com/poteto/status/2115492618931151002",
+        "https://x.com/cu30rry_/status/2115354883486269449",
+        "https://x.com/kinopee_ai/status/2115431894137635200",
+        "https://x.com/kinopee_ai/status/2115388832527102403",
+        "https://x.com/ChatGPT/status/2115496387613786374",
+        "https://x.com/ChatGPT/status/2115497827845476525",
+        "https://x.com/nickbaumann_/status/2115496973734457387",
+        "https://x.com/claudeai/status/2115467192276025500",
+        "https://x.com/grok/status/2115584612122718296",
+        "https://x.com/thsottiaux/status/2115588390414581916",
+        "https://x.com/bcherny/status/2115491259381072269",
+        "https://x.com/sundarpichai/status/2115535455156642066",
+        "https://x.com/MistralAI/status/2115443720371814478",
+        "https://x.com/masahirochaen/status/2115563790972637191",
+        "https://x.com/Kling_ai/status/2115437409382932937",
+        "https://x.com/bcherny/status/2115592371224346734",
+        "https://x.com/Gemini_Notebook/status/2115199172836302964",
+        "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API",
+        "https://developers.google.com/machine-learning/glossary#token"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-ai-tips",
+      "runDate": "2026-10-29",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/SamSokolin/status/2115463327044264193",
+        "https://x.com/elonmusk/status/2115346748730380385",
+        "https://x.com/simonw/status/2115444742595260551",
+        "https://x.com/plusxbt/status/2115419930065609182",
+        "https://x.com/santtiagom_/status/2115450361020317934",
+        "https://x.com/RoundtableSpace/status/2115409493345325122",
+        "https://x.com/tetumemo/status/2115571824042131881",
+        "https://x.com/umiyuki_ai/status/2115466880010138056",
+        "https://x.com/umiyuki_ai/status/2115576187036770427",
+        "https://x.com/joshwoodward/status/2115580552170627080",
+        "https://x.com/Eris_Create_Lab/status/2115571740940407283",
+        "https://facebook.com/groups/runlocalai/permalink/1525962849331424/",
+        "https://facebook.com/groups/runlocalai/permalink/1525766176017758/",
+        "https://facebook.com/groups/runlocalai/permalink/1525713289356380/",
+        "https://www.threads.com/@claudeai/post/DfC2DntGobp",
+        "https://www.youtube.com/watch?v=ID6vEy94j7c",
+        "https://www.youtube.com/watch?v=pQ_Dnr9Q4k8",
+        "https://developers.google.com/machine-learning/glossary#token",
+        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-grok-referral",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/SawyerMerritt/status/2115531772351951079"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-gemini-carbon",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/sundarpichai/status/2115489219804352921"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-chatgpt-api-credits",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/OpenAIDevs/status/2115583698074755078",
+        "https://www.youtube.com/watch?v=ujmyzWSj8IU",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-copilot-fusion-sale",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/github/status/2115480207469560109",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-sunra-api",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/sunra_ai/status/2115475466257596516",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-magnific-move",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/magnific/status/2115474379044016540"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-runway-codex-plugin",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/runwayml/status/2115510886144282927",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-cg-news",
+      "runDate": "2026-10-29",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://www.threads.com/@maxonvfx/post/DfDbb_1lSz7",
+        "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-eso-tips",
+      "runDate": "2026-10-29",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29077880588490437/",
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29135245086087320/",
+        "https://www.youtube.com/watch?v=MWt-ytgfo0Q"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261029-eso-oct28-hotfix",
+      "runDate": "2026-10-29",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://forums.elderscrollsonline.com/en/discussion/700640/hotfix-oct-28-all-servers"
+      ],
+      "forumEvidence": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/700640/hotfix-oct-28-all-servers",
+          "checkedAt": "2026-10-29T01:06:30Z",
+          "sourceDate": "2026-10-28T19:39:59+00:00",
+          "summary": "Official all-server applied hotfix: Evil Hunter self-stacking, Healing Springs excessive Magicka Recovery duration, Solo March of Sacrifices death-related effect accumulation preventing ability use."
+        }
+      ]
     }
   ]
 }
