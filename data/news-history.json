@@ -346,7 +346,8 @@
         "https://x.com/KimiAI_Japan/status/2114735970109075855",
         "https://facebook.com/groups/runlocalai/permalink/1522414793019563/"
       ],
-      "forumEvidence": []
+      "forumEvidence": [],
+      "lastUpdatedAt": "2026-10-29T10:14:30+09:00"
     },
     {
       "id": "20261027-eso-u52",
@@ -365,7 +366,17 @@
         "https://x.com/Marinparu/status/2114920347493646704",
         "https://www.youtube.com/watch?v=OqCGBeiQkfo"
       ],
-      "forumEvidence": []
+      "forumEvidence": [
+        {
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700551/pts-patch-notes-v12-2-0",
+          "checkedAt": "2026-10-27T10:19:02+09:00",
+          "points": [
+            "ZOS_Kevin October26 official Update52 PTS v12.2.0 available announcement; detailed patch body not read"
+          ],
+          "previousCheckedAt": null
+        }
+      ],
+      "lastUpdatedAt": "2026-10-29T10:14:30+09:00"
     },
     {
       "id": "20261027-eso-tesoctober",
