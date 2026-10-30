@@ -19,12 +19,12 @@ OUTPUT = Path("out/result.json")
 WATCHLIST = Path(__file__).resolve().parents[1] / "data/video-watchlist.json"
 CHANNEL_ID = re.compile(r"UC[A-Za-z0-9_-]{22}\Z")
 PLAYLIST_ID = re.compile(r"[A-Za-z0-9_-]{10,80}\Z")
-CHANNEL_MAX = 25
+CHANNEL_MAX = 26
 CHANNEL_CANDIDATES = 3
 CHANNEL_PAGES = 2
 CHANNEL_PAGE_SIZE = 10
 CHANNEL_DETAIL_BATCH = 5
-CHANNEL_MAX_CALLS = 66  # 1 channels + 25*2 uploads pages + ceil(75/5) details
+CHANNEL_MAX_CALLS = 66  # Fixed request budget; 26 channels may produce partial results.
 CHANNEL_OUTPUT_BYTES = 786432
 CHANNEL_REASONS = {"pagination_limit", "candidate_limit", "discovery_time_limit",
                    "request_stopped", "channel_unavailable", "details_unavailable",
@@ -294,7 +294,7 @@ def collect_channels(client, env, result):
     start, end = today_window(parse_time(result["created_at"]))
     result.update(genre="all", collection_source="watchlist", editor_review_required=True,
                   window={"start": stamp(start), "end": stamp(end), "timezone": "Asia/Tokyo"},
-                  selection_limit_per_genre=3, candidate_limit_per_channel=CHANNEL_CANDIDATES,
+                  selection_limit_per_genre=4, candidate_limit_per_channel=CHANNEL_CANDIDATES,
                   partial=False, stop_code="", channels=[])
     by_id = {e["channel_id"]: e for e in entries}
     scans = {}
@@ -358,7 +358,7 @@ def collect_channels(client, env, result):
                 continue
             if time.monotonic() - started >= 60:
                 mark(cid, "discovery_time_limit")
-                continue  # Reserve the remaining 40 s for up to 15 detail requests.
+                continue  # Reserve the remaining 40 s for detail requests within the fixed call budget.
             state = pending[cid]
             params = {"part": "contentDetails", "playlistId": state["playlist"], "maxResults": CHANNEL_PAGE_SIZE,
                       "fields": "nextPageToken,items(contentDetails(videoId,videoPublishedAt))"}
@@ -469,7 +469,7 @@ def validate_channel_result(result):
             "partial", "stop_code", "channels", "api_attempts"}
     if (set(result) != keys or result["schema_version"] != 1 or result["mode"] != "channels"
             or result["genre"] != "all" or result["collection_source"] != "watchlist"
-            or result["editor_review_required"] is not True or result["selection_limit_per_genre"] != 3
+            or result["editor_review_required"] is not True or result["selection_limit_per_genre"] != 4
             or result["candidate_limit_per_channel"] != CHANNEL_CANDIDATES
             or type(result["partial"]) is not bool or result["stop_code"] not in CHANNEL_STOP_CODES | {""}
             or type(result["api_attempts"]) is not int or not 0 <= result["api_attempts"] <= CHANNEL_MAX_CALLS

@@ -22,7 +22,7 @@ START = v.today_window(NOW)[0]
 
 def entries():
     return [{'channel_id': 'UC' + str(i).zfill(22), 'name': 'Test ' + str(i),
-             'genres': ['3DCG', 'terrain'] if i == 0 else ['AI']} for i in range(25)]
+             'genres': ['3DCG', 'terrain'] if i == 0 else ['AI']} for i in range(26)]
 
 
 def vid(channel, index):
@@ -88,33 +88,37 @@ def collect(client=None):
 
 class ChannelTests(unittest.TestCase):
     def setUp(self):
-        if self._testMethodName not in {'test_real_watchlist_25_unique_and_shared_houdini',
+        if self._testMethodName not in {'test_real_watchlist_26_unique_and_shared_houdini',
                                        'test_missing_or_stale_free_gate_and_invalid_watchlist_before_network'}:
             patcher = patch.object(v, 'load_watchlist', return_value=entries())
             patcher.start()
             self.addCleanup(patcher.stop)
 
-    def test_real_watchlist_25_unique_and_shared_houdini(self):
+    def test_real_watchlist_26_unique_and_shared_houdini(self):
         actual = v.load_watchlist()
-        self.assertEqual(len(actual), 25)
-        self.assertEqual(len({e['channel_id'] for e in actual}), 25)
+        self.assertEqual(len(actual), 26)
+        self.assertEqual(len({e['channel_id'] for e in actual}), 26)
         houdini = [e for e in actual if e['handle'].lower() == '@houdini3d']
         self.assertEqual(len(houdini), 1)
         self.assertEqual(set(houdini[0]['genres']), {'3DCG', 'terrain'})
         self.assertIn('@imanyu_programming', [e['handle'] for e in actual])
         self.assertIn('@chaen-ai-lab', [e['handle'] for e in actual])
+        olli = [e for e in actual if e['channel_id'] == 'UCYIL1m3Tfa04IgwteS9EnYA']
+        self.assertEqual(len(olli), 1)
+        self.assertEqual(olli[0]['handle'], '@OlliHuttunen78')
+        self.assertEqual(olli[0]['genres'], ['3DCG'])
 
-    def test_25_channels_one_batch_metadata_only_long_video_retained(self):
+    def test_26_channels_one_batch_metadata_only_long_video_retained(self):
         client = ChannelFake()
         result = collect(client)
-        self.assertEqual(client.calls, 31)  # 1 channels + 25 uploads + 5 detail batches
-        self.assertEqual(len(result['videos']), 25)
+        self.assertEqual(client.calls, 33)  # 1 channels + 26 uploads + 6 detail batches
+        self.assertEqual(len(result['videos']), 26)
         self.assertFalse(result['partial'])
         self.assertTrue(result['editor_review_required'])
         self.assertEqual(result['videos'][0]['genres'], ['3DCG', 'terrain'])
         self.assertEqual(result['videos'][0]['duration_seconds'], 1200)
         self.assertNotIn('analysis', result)
-        self.assertEqual(result['selection_limit_per_genre'], 3)
+        self.assertEqual(result['selection_limit_per_genre'], 4)
         self.assertTrue(all('generativelanguage' not in url and '/search?' not in url for url, _ in client.requests))
         self.assertTrue(all(payload is None for _, payload in client.requests))
         self.assertEqual(result['window']['timezone'], 'Asia/Tokyo')
@@ -123,28 +127,30 @@ class ChannelTests(unittest.TestCase):
     def test_candidate_cap_and_unread_pages_explicit(self):
         client = ChannelFake(count=10, pages=3)
         result = collect(client)
-        self.assertEqual(len(result['videos']), 75)
-        self.assertEqual(client.calls, 41)
+        self.assertEqual(len(result['videos']), 78)
+        self.assertEqual(client.calls, 43)
         self.assertTrue(result['partial'])
         self.assertTrue(all(s['candidates_found'] == 10 and s['candidates_returned'] == 3 for s in result['channels']))
         self.assertTrue(all('candidate_limit' in s['reasons'] and 'pagination_limit' in s['reasons'] for s in result['channels']))
 
-    def test_maximum_66_attempts_for_25_channels_two_pages_75_details(self):
+    def test_maximum_66_attempts_for_26_channels_reports_remaining_details(self):
         client = ChannelFake(count=2, pages=3)
         result = collect(client)
         self.assertEqual(client.calls, 66)
-        self.assertEqual(len(result['videos']), 75)
+        self.assertEqual(len(result['videos']), 65)
+        self.assertEqual(result['stop_code'], 'budget_exceeded')
+        self.assertTrue(any('details_unavailable' in s['reasons'] for s in result['channels']))
         self.assertTrue(result['partial'])
 
     def test_two_page_bound_and_first_pass_fairness(self):
         client = ChannelFake(count=1, pages=3)
         result = collect(client)
-        self.assertEqual(client.calls, 61)
+        self.assertEqual(client.calls, 64)
         self.assertTrue(all(s['pages_fetched'] == 2 for s in result['channels']))
         self.assertTrue(all('pagination_limit' in s['reasons'] for s in result['channels']))
-        first_pass = client.requests[1:26]
+        first_pass = client.requests[1:27]
         self.assertTrue(all('pageToken' not in url for url, _ in first_pass))
-        self.assertTrue(all('pageToken=page2' in url for url, _ in client.requests[26:51]))
+        self.assertTrue(all('pageToken=page2' in url for url, _ in client.requests[27:53]))
 
     def test_403_429_timeout_stop_without_retry_and_report_unchecked(self):
         for code in ['http_403', 'http_429', 'transport_or_json_error', 'redirect_blocked']:
@@ -187,8 +193,8 @@ class ChannelTests(unittest.TestCase):
             client = ChannelFake(); client.when = when
             result = collect(client)
             self.assertEqual(result['videos'], [])
-            self.assertEqual(client.calls, 26)
-        self.assertEqual(len(collect()['videos']), 25)  # exactly JST midnight accepted
+            self.assertEqual(client.calls, 27)
+        self.assertEqual(len(collect()['videos']), 26)  # exactly JST midnight accepted
 
     def test_detail_time_rechecked_and_missing_ids_disclosed(self):
         client = ChannelFake(); original = client.request
@@ -230,7 +236,7 @@ class ChannelTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / 'watchlist.json'
             for data in [{}, {'schema_version': 1, 'channels': entries()[:-1]},
-                         {'schema_version': 1, 'channels': [entries()[0]] * 25}]:
+                         {'schema_version': 1, 'channels': [entries()[0]] * 26}]:
                 path.write_text(json.dumps(data))
                 client = ChannelFake()
                 with patch.object(v, 'WATCHLIST', path):
@@ -239,11 +245,11 @@ class ChannelTests(unittest.TestCase):
 
     def test_maximum_utf8_and_overflow_are_bounded_not_silent(self):
         result = collect(ChannelFake(count=10, description='😀' * 2500))
-        self.assertEqual(len(result['videos']), 75)
+        self.assertEqual(len(result['videos']), 78)
         self.assertTrue(all(len(vd['description']) == 2000 for vd in result['videos']))
         self.assertLessEqual(len(v.serialize(result, env('channels')).encode()), v.CHANNEL_OUTPUT_BYTES)
         result = collect(ChannelFake(count=10, description='\x01' * 2500))
-        self.assertLess(len(result['videos']), 75)
+        self.assertLess(len(result['videos']), 78)
         self.assertTrue(any('output_size_limit' in s['reasons'] for s in result['channels']))
         self.assertLessEqual(len(v.serialize(result, env('channels')).encode()), v.CHANNEL_OUTPUT_BYTES)
 

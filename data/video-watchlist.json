@@ -420,6 +420,25 @@
       ],
       "verification_status": "prior-verified-id-with-current-corroboration",
       "verification_method": "Supplied previously verified channel URL; YouTube indexed result confirms exact channel title and @HackTheMinotaur handle. Direct /channel/ HTML returned HTTP 429; not bypassed."
+    },
+    {
+      "name": "Olli Huttunen",
+      "channel_id": "UCYIL1m3Tfa04IgwteS9EnYA",
+      "handle": "@OlliHuttunen78",
+      "genres": [
+        "3DCG"
+      ],
+      "source_url": "https://www.youtube.com/@OlliHuttunen78",
+      "source_type": "commentary",
+      "match_hint": "Owner-approved additional channel for Gaussian Splatting, 3D scanning, photogrammetry and production tools. Personal site ToppiNappi links this exact personal channel; separate company channel is not added.",
+      "verification_sources": [
+        "https://www.toppinappi.fi/",
+        "https://www.youtube.com/@OlliHuttunen78",
+        "https://www.youtube.com/channel/UCYIL1m3Tfa04IgwteS9EnYA"
+      ],
+      "verification_status": "verified-public-youtube-metadata",
+      "verification_method": "Public YouTube page title Olli Huttunen, canonical channel URL and rendered channel posts link agree with the personal-site linked handle.",
+      "verified_at": "2026-10-30T15:31:15Z"
     }
   ]
 }
