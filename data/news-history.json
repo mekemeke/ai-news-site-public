@@ -57,6 +57,22 @@
       "selectedYouTubeCount": 5,
       "videoAnalysisSucceeded": 0,
       "notes": "All 68 Slack news items mapped, with duplicate topics integrated and two existing articles updated. YouTube public titles/descriptions only; no Gemini analysis because current video daily quota was not verified. Two supplementary videos linked without an additional player under existing renderer. Reddit absolute publication times unconfirmed. ESO applied hotfix reported; no numeric database change justified. No private Slack identifiers published."
+    },
+    {
+      "runDate": "2026-10-30",
+      "publishedAt": "2026-10-30T10:05:06+09:00",
+      "newCount": 24,
+      "updatedCount": 4,
+      "deletedCount": 0,
+      "counts": {
+        "standalone": 18,
+        "tipsRoundup": 3,
+        "newsRoundup": 3
+      },
+      "sourceItemCount": 74,
+      "selectedYouTubeCount": 0,
+      "videoAnalysisSucceeded": 0,
+      "notes": "All 74 Slack items mapped including duplicate integrations. YouTube watchlist run40983205973 stopped with request_timeout after18 API attempts: incomplete collection, no further search or Gemini analysis. Reddit current absolute dates unconfirmed and browser blocked; no extra Web item with confirmed today freshness. ESO forum official PTS clarification reported, not applied to Live database. Existing generic illustrations reused; no source image URL supplied. No private Slack identifiers published."
     }
   ],
   "articles": [
@@ -364,7 +380,11 @@
         "https://x.com/Bethesda_jpn/status/2115231584538284068",
         "https://x.com/futerko_profi/status/2115067186645467230",
         "https://x.com/Marinparu/status/2114920347493646704",
-        "https://www.youtube.com/watch?v=OqCGBeiQkfo"
+        "https://www.youtube.com/watch?v=OqCGBeiQkfo",
+        "https://help.bethesda.net/app/answers/detail/a_id/20662/~/what-is-the-public-test-server-(pts)%3F",
+        "https://x.com/ESO_suru_tokage/status/2115784465746371056",
+        "https://x.com/mu_mu_360/status/2115597851002884142",
+        "https://x.com/mu_mu_360/status/2115616417315979553"
       ],
       "forumEvidence": [
         {
@@ -501,7 +521,9 @@
         "https://x.com/afscott/status/2114990576877891588",
         "https://www.anthropic.com/news/claude-for-small-business",
         "https://www.youtube.com/watch?v=lPZQrVFcz3c",
-        "https://facebook.com/groups/runlocalai/permalink/1524145009513208/"
+        "https://facebook.com/groups/runlocalai/permalink/1524145009513208/",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API",
+        "https://x.com/OpenAIDevs/status/2115855036437897344"
       ],
       "forumEvidence": []
     },
@@ -800,7 +822,8 @@
         "https://x.com/Gemini_Notebook/status/2115199172836302964",
         "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
         "https://developer.mozilla.org/en-US/docs/Glossary/API",
-        "https://developers.google.com/machine-learning/glossary#token"
+        "https://developers.google.com/machine-learning/glossary#token",
+        "https://x.com/nickbaumann_/status/2115834071112954217"
       ],
       "forumEvidence": []
     },
@@ -933,6 +956,288 @@
           "checkedAt": "2026-10-29T01:06:30Z",
           "sourceDate": "2026-10-28T19:39:59+00:00",
           "summary": "Official all-server applied hotfix: Evil Hunter self-stacking, Healing Springs excessive Magicka Recovery duration, Solo March of Sacrifices death-related effect accumulation preventing ability use."
+        }
+      ]
+    },
+    {
+      "id": "20261030-chatgpt-limits",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/thsottiaux/status/2115850175868727621"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-mistral-le-chonk",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/MistralAI/status/2115811242556137820"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-canva-brush",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/canva/status/2115885750013321704"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-qwenputer",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/studio_yebisu/status/2115834193704071636",
+        "https://riscv.org/about/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-krea-ad-studio",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/krea_ai/status/2115881363413008611"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-runway-character-swap",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/runwayml/status/2115810393972949108"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-google-xr-blocks",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/GoogleAIStudio/status/2115902765780328883"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-qwen38-flash-next",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1468773831716993/",
+        "https://huggingface.co/blog/moe"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-ai-news",
+      "runDate": "2026-10-30",
+      "kind": "news",
+      "sourceUrls": [
+        "https://x.com/elonmusk/status/2115921600658735169",
+        "https://x.com/OpenAI/status/2115896329645723836",
+        "https://x.com/AnthropicAI/status/2115871889549865429",
+        "https://x.com/claudeai/status/2115859388191912193",
+        "https://x.com/Gemini_Notebook/status/2115887660489462091",
+        "https://x.com/GeminiApp/status/2115885244805251519",
+        "https://x.com/julesagent/status/2115883717705261283",
+        "https://x.com/yoland_yan/status/2115923819001192794",
+        "https://x.com/claudeai/status/2115859380143030507",
+        "https://x.com/claudeai/status/2115859386224832956",
+        "https://x.com/umiyuki_ai/status/2115914092674478226",
+        "https://x.com/matheusgobbidev/status/2115838961608212537",
+        "https://x.com/aakashgupta/status/2115791266810323297"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-ai-tips",
+      "runDate": "2026-10-30",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/bcherny/status/2115859487068422226",
+        "https://x.com/amethyst2keys/status/2115786538206552553",
+        "https://x.com/sora_biz/status/2115732370875973762",
+        "https://x.com/connect24h/status/2115944793293627584",
+        "https://x.com/thisguyknowsai/status/2115754546018566471",
+        "https://x.com/Voxyz_ai/status/2115901485422661798",
+        "https://x.com/helloiamleonie/status/2115836065416094054",
+        "https://x.com/simonmeyer_/status/2115877819255226438",
+        "https://x.com/ducksays/status/2115812323872944430",
+        "https://x.com/Mahaximus_/status/2115822798975201473",
+        "https://x.com/Michael_Fenech_/status/2115774649598705774",
+        "https://x.com/whemohere/status/2115836615595635041",
+        "https://x.com/guilippert_v4/status/2115923247707627523",
+        "https://x.com/fatih/status/2115844807889166526",
+        "https://x.com/shannonma/status/2115530684576174552",
+        "https://x.com/angelbrodin/status/2115808922950881574",
+        "https://facebook.com/groups/runlocalai/permalink/1520237053237337/",
+        "https://huggingface.co/docs/transformers/quantization/overview",
+        "https://facebook.com/groups/runlocalai/permalink/1525658062695236/",
+        "https://www.threads.com/@olga.builds/post/DXdsr8CDAU5"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-blender-wrinkle-prototype",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/CalappaL69172/status/2115787558647111993"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-spark-radix",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/sparkjsdev/status/2115852543708536881",
+        "https://www.w3.org/TR/webgpu/",
+        "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-metawrap",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/theCGchannel/status/2115774456060666197"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-mapgen-rust-water",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/shamanic_arts/status/2115621414443037088"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-gaea-blender-bridge",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.threads.com/@cebstudios/post/DdPfyzMCNlO"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-tripo-smart-mesh",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://facebook.com/reel/4640918036139612/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-blender-camera-controller",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.threads.com/@3d.wanderson/post/DXzioGGD2KN"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-cg-tips",
+      "runDate": "2026-10-30",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/80Level/status/2115459608441430387",
+        "https://x.com/80Level/status/2115172082182918239",
+        "https://x.com/80Level/status/2115504256316768371",
+        "https://x.com/jurlycat/status/2115408256436953348",
+        "https://www.threads.com/@simgesoylemez_art/post/Dcl8T7ljg-F",
+        "https://www.threads.com/@3dbimops1/post/DeGY4duEXAo",
+        "https://facebook.com/groups/282909453705941/permalink/1484046540258887/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-cg-news",
+      "runDate": "2026-10-30",
+      "kind": "news",
+      "sourceUrls": [
+        "https://x.com/MaxonVFX/status/2115461132102074880",
+        "https://x.com/80Level/status/2115482025159241792"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-eso-november-schedule",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/TESOnline/status/2115877580477743112",
+        "https://forums.elderscrollsonline.com/en/discussion/700667/official-discussion-thread-for-eso-s-november-2026-survival-guide",
+        "https://www.elderscrollsonline.com/en-us/news/post/70525"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-eso-november-crown-store",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/TESOnline/status/2115836063272911100",
+        "https://forums.elderscrollsonline.com/en/discussion/700666/crown-store-showcase-november-2026",
+        "https://www.elderscrollsonline.com/en-us/news/post/70533"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-eso-tips",
+      "runDate": "2026-10-30",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29078465911765238/",
+        "https://facebook.com/groups/esoeu/permalink/40478869981711486/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-eso-news",
+      "runDate": "2026-10-30",
+      "kind": "news",
+      "sourceUrls": [
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29166013739677121/",
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29164057786539383/",
+        "https://apnews.com/article/patrick-stewart-dies-8b38054ff74d4187a32158d78e345ad7",
+        "https://www.investing.com/news/world-news/patrick-stewart-shakespearean-actor-turned-star-trek-and-xmen-star-dies-at-86-4984989"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261030-eso-aoe-taunt-clarification",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8545979",
+        "https://forums.elderscrollsonline.com/en/discussion/700538/u52-feedback-thread-for-aoe-taunt-pull"
+      ],
+      "forumEvidence": [
+        {
+          "articleId": "20261030-eso-aoe-taunt-clarification",
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700538/u52-feedback-thread-for-aoe-taunt-pull",
+          "threadId": "700538",
+          "officialCommentUrl": "https://forums.elderscrollsonline.com/en/discussion/comment/8545979",
+          "checkedAt": "2026-10-30T00:58:00Z",
+          "priorCoverage": "Existing U52 overview did not include this thread or comment.",
+          "points": [
+            "10月29日公式補足：挑発は他プレイヤーの操作対象を強制しない",
+            "最近挑発された条件とVanguard’s Challengeの相互作用を内部テストで認識",
+            "PTS第3週に条件の時間に関わる調整を予告。本番未適用"
+          ],
+          "recentEvidence": "10月29日付6投稿、公式回答を含む。29返信・約1100閲覧。"
         }
       ]
     }
