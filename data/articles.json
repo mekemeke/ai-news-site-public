@@ -21,6 +21,58 @@
   ],
   "articles": [
     {
+      "id": "20261030-houdini22-shot-sculpt",
+      "title": "SideFXがHoudini 22のShot Sculpt新機能を紹介、形状と髪を画面上で調整",
+      "summary": "SideFXが公式動画でHoudini 22のShot Sculptを紹介。モデルや髪を直接調整する新機能と3つのモードを案内している。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-30T10:47:56+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-10-30",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SideFXがHoudini 22のShot Sculpt新機能を紹介、形状と髪を画面上で調整"
+        },
+        {
+          "type": "paragraph",
+          "text": "SideFXの公式動画の説明欄は、Houdini 22のShot Sculptの新機能として、モデルの形状や髪のガイド曲線を画面上から直接調整する機能を紹介している。髪のガイドを下地の皮膚へ付けたまま、時間に沿った変形を管理する内容。Sculpt・Attribute・Blend Shapeという新しいモードで、形状の彫り込み、属性の塗り、異なる形状の混合を扱うとしている。 確認範囲は公式動画のタイトル・説明欄で、動画全編や操作の再現は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "動画の公開は2026年10月30日0時29分（日本時間）。Houdini 22や各機能の発売日・初回提供日を確認したものではなく、本日のリリース発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Houdini https://www.youtube.com/watch?v=tnEHrFAG4bA"
+        },
+        {
+          "type": "youtube",
+          "videoId": "tnEHrFAG4bA",
+          "url": "https://www.youtube.com/watch?v=tnEHrFAG4bA",
+          "title": "Houdini 22 | How to Utilize Shotsculpt"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "動きの途中で気になる形や髪を調整する手順なので、キャラクターの最後の仕上げに使う発想が参考になりそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Houdini／YouTube（タイトル・説明欄）",
+          "url": "https://www.youtube.com/watch?v=tnEHrFAG4bA"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=tnEHrFAG4bA"
+      ],
+      "sourceNote": "YouTubeのタイトル・説明欄・公開日時を確認して追記。動画の再生、字幕の読取、Geminiによる全編解析、実機検証は行っていない。動画は日本時間2026年10月30日0時〜10時の公開分で、製品自体が同日発売されたという意味ではない。",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。",
+      "thumbnailKey": "cg-news"
+    },
+    {
       "id": "20261030-chatgpt-limits",
       "title": "ChatGPTの対象Pro・Business Premiumで利用上限2倍との案内",
       "summary": "@thsottiauxの投稿として、Proの100・200・500ドルの各プランとBusiness Premiumの使用上限を2倍にする案内が届いた。",
@@ -501,11 +553,25 @@
         },
         {
           "type": "paragraph",
+          "text": "追加確認：Claude公式YouTubeの説明欄にも、iPhoneでのCarPlay対応と音声応答の改善が記載されている。同じ更新紹介では、複数アカウントへの同時ログイン、Chromebook・折りたたみ端末での画面の改善、24言語追加で合計33言語となることを案内。iPhone・iPadで下へ引いて検索する操作は「近日提供」とされ、提供済みの機能とは区別する。ここで確認したのはタイトル・説明欄で、動画全編・利用条件・実機動作は未確認。"
+        },
+        {
+          "type": "paragraph",
           "text": "出典：@claudeai https://x.com/claudeai/status/2115859388191912193"
         },
         {
           "type": "xpost",
           "url": "https://x.com/claudeai/status/2115859388191912193"
+        },
+        {
+          "type": "paragraph",
+          "text": "追加出典：Claude公式動画 https://www.youtube.com/watch?v=SkpwzfR4A1E"
+        },
+        {
+          "type": "youtube",
+          "videoId": "SkpwzfR4A1E",
+          "url": "https://www.youtube.com/watch?v=SkpwzfR4A1E",
+          "title": "Claude's new mobile app updates are here"
         },
         {
           "type": "feature",
@@ -606,6 +672,10 @@
         },
         {
           "type": "paragraph",
+          "text": "追加確認：同じClaude公式動画の説明欄でも、iOS・Androidで複数アカウントへ同時にログインできることを確認した。動画は上のCarPlayの話題に掲載している。"
+        },
+        {
+          "type": "paragraph",
           "text": "出典：@claudeai https://x.com/claudeai/status/2115859380143030507"
         },
         {
@@ -624,6 +694,10 @@
         {
           "type": "paragraph",
           "text": "@claudeaiの投稿として、iOS・Androidの音声モードの応答が速くなり、騒がしい場所や小さい声を拾いやすくなったとの説明が紹介された。英語以外の話し方の自然さと、対応Android端末の拡大にも言及している。改善幅、言語別の結果、対応機種は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "追加確認：同じ公式動画の説明欄は応答開始が早くなることを案内している。ただし、騒音下や小声の聞き取り改善の詳細はこの説明欄だけでは確認できない。動画は上のCarPlayの話題に掲載している。"
         },
         {
           "type": "paragraph",
@@ -754,6 +828,10 @@
         {
           "label": "@aakashgupta",
           "url": "https://x.com/aakashgupta/status/2115791266810323297"
+        },
+        {
+          "label": "Claude／YouTube（タイトル・説明欄）",
+          "url": "https://www.youtube.com/watch?v=SkpwzfR4A1E"
         }
       ],
       "sourceUrls": [
@@ -769,10 +847,12 @@
         "https://x.com/claudeai/status/2115859386224832956",
         "https://x.com/umiyuki_ai/status/2115914092674478226",
         "https://x.com/matheusgobbidev/status/2115838961608212537",
-        "https://x.com/aakashgupta/status/2115791266810323297"
+        "https://x.com/aakashgupta/status/2115791266810323297",
+        "https://www.youtube.com/watch?v=SkpwzfR4A1E"
       ],
-      "sourceNote": "2026年10月30日0時〜10時（日本時間）に受信した素材を内容別に整理。一次資料を実際に確認した部分以外は素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿全文、動画全編、実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名や画像を転載しない。",
-      "thumbnailKey": "ai-news"
+      "sourceNote": "2026年10月30日0時〜10時（日本時間）に受信した素材を内容別に整理。一次資料を実際に確認した部分以外は素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿全文、動画全編、実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名や画像を転載しない。 YouTubeのタイトル・説明欄・公開日時を確認して追記。動画の再生、字幕の読取、Geminiによる全編解析、実機検証は行っていない。動画は日本時間2026年10月30日0時〜10時の公開分で、製品自体が同日発売されたという意味ではない。",
+      "thumbnailKey": "ai-news",
+      "updatedAt": "2026-10-30T10:47:56+09:00"
     },
     {
       "id": "20261030-ai-tips",
@@ -1186,6 +1266,29 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "手元に大きなGPUがなくても試す入口になり得るけれど、無料の範囲を確かめてから使いたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "OpenAIがZendeskの社内データ活用事例を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "公式説明欄ではZendeskの営業・マーケティング・業務部門によるChatGPT Enterpriseの活用を紹介。営業向けアプリは製品の使用状況と担当者ごとの問い合わせ件数を結び付け、追加提案候補と顧客側の利点を示すという。約600アプリを作り、営業向けアプリを約1000人が毎日使うとの数字は出演する同社担当者の説明で、独立検証した実績ではない。 確認範囲は公式動画のタイトル・説明欄で、動画全編や操作の再現は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：OpenAI https://www.youtube.com/watch?v=L6pzlo1QvoM"
+        },
+        {
+          "type": "youtube",
+          "videoId": "L6pzlo1QvoM",
+          "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM",
+          "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "社内データをただ要約するだけでなく、営業担当が次に確認する候補へつなぐ使い方が参考になるね。"
         }
       ],
       "sources": [
@@ -1268,6 +1371,10 @@
         {
           "label": "Threads／@olga.builds",
           "url": "https://www.threads.com/@olga.builds/post/DXdsr8CDAU5"
+        },
+        {
+          "label": "OpenAI／YouTube（タイトル・説明欄）",
+          "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM"
         }
       ],
       "sourceUrls": [
@@ -1290,10 +1397,12 @@
         "https://facebook.com/groups/runlocalai/permalink/1520237053237337/",
         "https://huggingface.co/docs/transformers/quantization/overview",
         "https://facebook.com/groups/runlocalai/permalink/1525658062695236/",
-        "https://www.threads.com/@olga.builds/post/DXdsr8CDAU5"
+        "https://www.threads.com/@olga.builds/post/DXdsr8CDAU5",
+        "https://www.youtube.com/watch?v=L6pzlo1QvoM"
       ],
-      "sourceNote": "2026年10月30日0時〜10時（日本時間）に受信した素材を内容別に整理。一次資料を実際に確認した部分以外は素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿全文、動画全編、実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名や画像を転載しない。",
-      "thumbnailKey": "ai-tips"
+      "sourceNote": "2026年10月30日0時〜10時（日本時間）に受信した素材を内容別に整理。一次資料を実際に確認した部分以外は素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿全文、動画全編、実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名や画像を転載しない。 YouTubeのタイトル・説明欄・公開日時を確認して追記。動画の再生、字幕の読取、Geminiによる全編解析、実機検証は行っていない。動画は日本時間2026年10月30日0時〜10時の公開分で、製品自体が同日発売されたという意味ではない。",
+      "thumbnailKey": "ai-tips",
+      "updatedAt": "2026-10-30T10:47:56+09:00"
     },
     {
       "id": "20261030-blender-wrinkle-prototype",
@@ -1795,6 +1904,52 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "移動量より「どの向きを基準に動かすか」を見直すことが、意図しない方向へ動く原因を探す入口になるね。"
+        },
+        {
+          "type": "heading",
+          "text": "Autodeskが3ds Maxで細部をテクスチャへ移す制作手順を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "公式説明欄ではJames Brady氏がSF風の消火栓をゲーム向けに仕上げる手順を紹介。Mayaで表面の展開図を整えたモデルを3ds Maxへ戻し、細かい形状を軽量モデル用の画像へ焼き込む。投影範囲を調整し、凹凸や陰影、金属らしさ、粗さの画像を適用して確認する流れ。新製品の発売発表ではなく制作チュートリアル。 確認範囲は公式動画のタイトル・説明欄で、動画全編や操作の再現は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Autodesk Media & Entertainment https://www.youtube.com/watch?v=_sbZscCe4DQ"
+        },
+        {
+          "type": "youtube",
+          "videoId": "_sbZscCe4DQ",
+          "url": "https://www.youtube.com/watch?v=_sbZscCe4DQ",
+          "title": "Model a Game Asset From Concept to Engine | Part 4: Texture Baking in 3ds Max"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "モデルを軽くしながら見た目の細部を残す工程なので、ゲーム用小物の仕上げを見直す参考になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "AdobeがPainter 12.1でサイロを仕上げHoudiniへ渡す例を公開"
+        },
+        {
+          "type": "paragraph",
+          "text": "公式説明欄と章立てでは、部品を組み合わせたサイロをPainter 12.1で塗り、HoudiniのKarma XPUで描画するまでを紹介。設定変更に合わせ画像を更新するAuto Bake、色の変化や屋根の塗り分け、USD形式での書き出しを扱う。実機動作は検証していない。 確認範囲は公式動画のタイトル・説明欄で、動画全編や操作の再現は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Adobe Substance 3D https://www.youtube.com/watch?v=kweM6qEQgKI"
+        },
+        {
+          "type": "youtube",
+          "videoId": "kweM6qEQgKI",
+          "url": "https://www.youtube.com/watch?v=kweM6qEQgKI",
+          "title": "From Raw Kitbash to Textured Silo | Painter 12.1 Mesh Processing and USD Export | Adobe Substance 3D"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "塗装だけで終わらず別ソフトでの描画までつながるので、データの受け渡しを考える人にも役立つ制作例だね。"
         }
       ],
       "sources": [
@@ -1825,6 +1980,14 @@
         {
           "label": "Blender Tips",
           "url": "https://facebook.com/groups/282909453705941/permalink/1484046540258887/"
+        },
+        {
+          "label": "Autodesk Media & Entertainment／YouTube（タイトル・説明欄）",
+          "url": "https://www.youtube.com/watch?v=_sbZscCe4DQ"
+        },
+        {
+          "label": "Adobe Substance 3D／YouTube（タイトル・説明欄）",
+          "url": "https://www.youtube.com/watch?v=kweM6qEQgKI"
         }
       ],
       "sourceUrls": [
@@ -1834,10 +1997,13 @@
         "https://x.com/jurlycat/status/2115408256436953348",
         "https://www.threads.com/@simgesoylemez_art/post/Dcl8T7ljg-F",
         "https://www.threads.com/@3dbimops1/post/DeGY4duEXAo",
-        "https://facebook.com/groups/282909453705941/permalink/1484046540258887/"
+        "https://facebook.com/groups/282909453705941/permalink/1484046540258887/",
+        "https://www.youtube.com/watch?v=_sbZscCe4DQ",
+        "https://www.youtube.com/watch?v=kweM6qEQgKI"
       ],
-      "sourceNote": "2026年10月30日0時〜10時（日本時間）に届いたニュース素材を整理。確認した一次資料以外は素材提供者による紹介・利用者の報告として扱い、元動画全編や実機動作は未検証。Facebook由来は匿名要約と元リンクを掲載し、投稿者名・画像は転載しない。過去の公開物を今日紹介する場合があり、本日の新発表とは限らない。",
-      "thumbnailKey": "cg-tips"
+      "sourceNote": "2026年10月30日0時〜10時（日本時間）に届いたニュース素材を整理。確認した一次資料以外は素材提供者による紹介・利用者の報告として扱い、元動画全編や実機動作は未検証。Facebook由来は匿名要約と元リンクを掲載し、投稿者名・画像は転載しない。過去の公開物を今日紹介する場合があり、本日の新発表とは限らない。 YouTubeのタイトル・説明欄・公開日時を確認して追記。動画の再生、字幕の読取、Geminiによる全編解析、実機検証は行っていない。動画は日本時間2026年10月30日0時〜10時の公開分で、製品自体が同日発売されたという意味ではない。",
+      "thumbnailKey": "cg-tips",
+      "updatedAt": "2026-10-30T10:47:56+09:00"
     },
     {
       "id": "20261030-cg-news",

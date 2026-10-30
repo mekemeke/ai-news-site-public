@@ -61,18 +61,30 @@
     {
       "runDate": "2026-10-30",
       "publishedAt": "2026-10-30T10:05:06+09:00",
-      "newCount": 24,
+      "newCount": 25,
       "updatedCount": 4,
       "deletedCount": 0,
       "counts": {
-        "standalone": 18,
+        "standalone": 19,
         "tipsRoundup": 3,
         "newsRoundup": 3
       },
       "sourceItemCount": 74,
-      "selectedYouTubeCount": 0,
+      "selectedYouTubeCount": 5,
       "videoAnalysisSucceeded": 0,
-      "notes": "All 74 Slack items mapped including duplicate integrations. YouTube watchlist run40983205973 stopped with request_timeout after18 API attempts: incomplete collection, no further search or Gemini analysis. Reddit current absolute dates unconfirmed and browser blocked; no extra Web item with confirmed today freshness. ESO forum official PTS clarification reported, not applied to Live database. Existing generic illustrations reused; no source image URL supplied. No private Slack identifiers published."
+      "notes": "All 74 Slack items mapped including duplicate integrations. YouTube watchlist run40983205973 stopped with request_timeout after18 API attempts: incomplete collection, no further search or Gemini analysis. Reddit current absolute dates unconfirmed and browser blocked; no extra Web item with confirmed today freshness. ESO forum official PTS clarification reported, not applied to Live database. Existing generic illustrations reused; no source image URL supplied. No private Slack identifiers published. Follow-up: owner approved up to two channel collection attempts. Second run40987086749 succeeded with53 API attempts (71 total observed today); pagination safety caps remain partial. Five videos selected (AI2/3DCG3), public titles/descriptions only, no Gemini analysis. Added one standalone article and supplemented three already-published articles; original publishedAt retained.",
+      "followUp": {
+        "completedAt": "2026-10-30T10:47:56+09:00",
+        "videoRunId": "40987086749",
+        "newArticleCount": 1,
+        "updatedArticleIds": [
+          "20261030-ai-news",
+          "20261030-ai-tips",
+          "20261030-cg-tips"
+        ],
+        "selectedVideoCount": 5,
+        "metadataOnly": true
+      }
     }
   ],
   "articles": [
@@ -1050,7 +1062,8 @@
         "https://x.com/claudeai/status/2115859386224832956",
         "https://x.com/umiyuki_ai/status/2115914092674478226",
         "https://x.com/matheusgobbidev/status/2115838961608212537",
-        "https://x.com/aakashgupta/status/2115791266810323297"
+        "https://x.com/aakashgupta/status/2115791266810323297",
+        "https://www.youtube.com/watch?v=SkpwzfR4A1E"
       ],
       "forumEvidence": []
     },
@@ -1078,7 +1091,8 @@
         "https://facebook.com/groups/runlocalai/permalink/1520237053237337/",
         "https://huggingface.co/docs/transformers/quantization/overview",
         "https://facebook.com/groups/runlocalai/permalink/1525658062695236/",
-        "https://www.threads.com/@olga.builds/post/DXdsr8CDAU5"
+        "https://www.threads.com/@olga.builds/post/DXdsr8CDAU5",
+        "https://www.youtube.com/watch?v=L6pzlo1QvoM"
       ],
       "forumEvidence": []
     },
@@ -1158,7 +1172,9 @@
         "https://x.com/jurlycat/status/2115408256436953348",
         "https://www.threads.com/@simgesoylemez_art/post/Dcl8T7ljg-F",
         "https://www.threads.com/@3dbimops1/post/DeGY4duEXAo",
-        "https://facebook.com/groups/282909453705941/permalink/1484046540258887/"
+        "https://facebook.com/groups/282909453705941/permalink/1484046540258887/",
+        "https://www.youtube.com/watch?v=_sbZscCe4DQ",
+        "https://www.youtube.com/watch?v=kweM6qEQgKI"
       ],
       "forumEvidence": []
     },
@@ -1240,6 +1256,15 @@
           "recentEvidence": "10月29日付6投稿、公式回答を含む。29返信・約1100閲覧。"
         }
       ]
+    },
+    {
+      "id": "20261030-houdini22-shot-sculpt",
+      "runDate": "2026-10-30",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=tnEHrFAG4bA"
+      ],
+      "forumEvidence": []
     }
   ]
 }
