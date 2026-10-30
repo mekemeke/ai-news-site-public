@@ -264,7 +264,7 @@ class ChannelTests(unittest.TestCase):
         client = v.Client(); client.enable_channel_budget()
         with patch.object(client.opener, 'open', return_value=io.BytesIO(b'{"items":[]}')) as opener:
             client.request('https://www.googleapis.com/youtube/v3/videos', 'fake')
-            self.assertLessEqual(opener.call_args.kwargs['timeout'], 2)
+            self.assertLessEqual(opener.call_args.kwargs['timeout'], 5)
 
     def test_channel_publisher_validates_before_network(self):
         good = collect()

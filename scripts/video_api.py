@@ -82,7 +82,7 @@ class Client:
             "X-Goog-Api-Key": key, "Content-Type": "application/json"})
         analyze_request = (self.analyze_mode and target.hostname == "generativelanguage.googleapis.com"
                            and target.path == "/v1beta/interactions" and payload is not None)
-        timeout_cap = 2 if self.channel_mode else (90 if analyze_request else 35)
+        timeout_cap = 5 if self.channel_mode else (90 if analyze_request else 35)
         remaining = 100 - (time.monotonic() - self.started)
         if remaining <= 0:
             raise SafeError("deadline_exceeded")

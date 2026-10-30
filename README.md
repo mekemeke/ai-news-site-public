@@ -104,9 +104,9 @@ HTTPステータスコードは従来どおり、本文・例外メッセージ�
   [playlistItems.list](https://developers.google.com/youtube/data/reference/rest/v3/playlistItems/list)、
   [videos.list](https://developers.google.com/youtube/data/reference/rest/v3/videos/list) はそれぞれ1 quota unit/回です。
   この上限は無料枠保証ではなく、既存の無料確認・7日ゲートは維持します。
-- channelsだけHTTP最大2秒/回、uploads発見は60秒まで（詳細照合用の時間を残す）、API受付/事後確認は100秒。
+- channelsだけHTTP最大5秒/回、uploads発見は60秒まで（詳細照合用の時間を残す）、API受付/事後確認は100秒。
   外側120秒/ジョブ4分・同時実行1本は変更しません。全25件を時間内に終えられる保証はありません。
-  403/429/タイムアウト/リダイレクト等で以降のAPI呼出しを停止し、再試行しません。
+  403/429/タイムアウト/リダイレクト等で以降のAPI呼出しを停止し、同一run内では再試行しません。運用では一時的な通信エラー時に5分以上待ち、channelsを初回含め最大2回まで実行します（401/403/429・認証/クォータ障害・結果不明は再試行対象外）。
 - 各レスポンス最大131072 bytes。channelsの出力だけ最大786432 bytes、他モードは従来32768 bytes。
   出力超過時は末尾候補を取り除き、当該チャンネルの `output_size_limit` と全体 `partial=true` を明示します。
   未加工レスポンスや未照合IDを候補として保存せず、秘密の一致・パターンは保存前に拒否します。

@@ -122,7 +122,7 @@ class Tests(unittest.TestCase):
         for mode, url, payload, expected in [
             ('analyze', gemini, {}, 90), ('analyze', youtube, None, 35),
             ('smoke', gemini, {}, 35), ('search', youtube, None, 35),
-            ('channels', youtube, None, 2), ('analyze', gemini, None, 35),
+            ('channels', youtube, None, 5), ('analyze', gemini, None, 35),
             ('analyze', 'https://generativelanguage.googleapis.com/other', {}, 35)]:
             client = v.Client(); client.started = 0
             if mode == 'analyze': client.enable_analyze_wait()
