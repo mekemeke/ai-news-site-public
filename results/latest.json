@@ -1,15 +1,421 @@
 {
   "schema_version": 1,
-  "mode": "search",
-  "genre": "3DCG",
-  "created_at": "2026-10-29T01:08:30.089589+00:00",
-  "run_id": "40798559139",
+  "mode": "channels",
+  "genre": "all",
+  "created_at": "2026-10-30T01:00:33.467844+00:00",
+  "run_id": "40983205973",
   "videos": [],
+  "collection_source": "watchlist",
+  "editor_review_required": true,
   "window": {
-    "start": "2026-10-28T15:00:00Z",
-    "end": "2026-10-29T01:08:30.089589Z",
+    "start": "2026-10-29T15:00:00Z",
+    "end": "2026-10-30T01:00:33.467844Z",
     "timezone": "Asia/Tokyo"
   },
-  "editor_reviewed": true,
-  "api_attempts": 1
+  "selection_limit_per_genre": 3,
+  "candidate_limit_per_channel": 3,
+  "partial": true,
+  "stop_code": "request_timeout",
+  "channels": [
+    {
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 2,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "details_unavailable",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "name": "Claude",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "details_unavailable",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "details_unavailable",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "name": "Matt Wolfe",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "details_unavailable",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "name": "KEITO【AI&WEB ch】",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "name": "いまにゅのAIプログラミング塾",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "name": "Autodesk Media & Entertainment",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 2,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "details_unavailable",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "name": "Chaos V-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "name": "Adobe Substance 3D",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "details_unavailable",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "name": "Foundry",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "name": "Houdini",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 3,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit",
+        "candidate_limit",
+        "details_unavailable"
+      ]
+    },
+    {
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "name": "Blender",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "name": "Eloi Andaluz Fullà",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "name": "Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "name": "QuadSpinner",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "name": "World Creator",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "name": "Bethesda Softworks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "name": "Skinny Cheeks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "name": "ArzyeL Gaming",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "name": "Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    },
+    {
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "name": "Hack The Minotaur",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 0,
+      "items_examined": 0,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "request_stopped"
+      ]
+    }
+  ],
+  "api_attempts": 18
 }
