@@ -2,20 +2,219 @@
   "schema_version": 1,
   "mode": "channels",
   "genre": "all",
-  "created_at": "2026-10-30T01:00:33.467844+00:00",
-  "run_id": "40983205973",
-  "videos": [],
+  "created_at": "2026-10-30T01:39:06.687841+00:00",
+  "run_id": "40987086749",
+  "videos": [
+    {
+      "id": "GNYHDltnwZQ",
+      "url": "https://www.youtube.com/watch?v=GNYHDltnwZQ",
+      "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every employee, and business users are asking questions about their data directly.\n\nIn sales, an AI agent connects product usage and tickets per agent to surface expansion opportunities—and helps salespeople explain how the customer could benefit. About 1,000 people use the application every day.\n\nWatch Daniel Humble, VP of Enterprise Data and Analytics at Zendesk, share what teams are building and putting to work.",
+      "published_at": "2026-10-29T22:48:11Z",
+      "duration_seconds": 33
+    },
+    {
+      "id": "L6pzlo1QvoM",
+      "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM",
+      "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every employee, and business users are asking questions about their data directly.\n\nIn sales, an AI agent connects product usage and tickets per agent to surface expansion opportunities—and helps salespeople explain how the customer could benefit. About 1,000 people use the application every day.\n\nWatch Daniel Humble, VP of Enterprise Data and Analytics at Zendesk, share what teams are building and putting to work.",
+      "published_at": "2026-10-29T16:23:43Z",
+      "duration_seconds": 56
+    },
+    {
+      "id": "SkpwzfR4A1E",
+      "url": "https://www.youtube.com/watch?v=SkpwzfR4A1E",
+      "title": "Claude's new mobile app updates are here",
+      "channel": "Claude",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "genres": [
+        "AI"
+      ],
+      "description": "A few upgrades to the Claude mobile apps this week.\n\n• On iPad and iPhone Duo, what Claude makes opens beside the chat\n• You can stay signed into more than one account on iOS and Android\n• On Chromebooks and foldables, Claude on Android works like a laptop app\n• Voice mode answers sooner, and on iPhone it works with Apple CarPlay\n• The app is now available in 24 more languages, 33 in all\n• Pull down to search is coming soon to iPhone and iPad\n\nWhat would you like to see next?",
+      "published_at": "2026-10-29T18:02:37Z",
+      "duration_seconds": 153
+    },
+    {
+      "id": "rsOiZE19RVo",
+      "url": "https://www.youtube.com/watch?v=rsOiZE19RVo",
+      "title": "Accelerate shipping to scale with Google Antigravity",
+      "channel": "Google for Developers",
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "genres": [
+        "AI"
+      ],
+      "description": "Building software to move tens of millions of vehicles requires massive infrastructure. Using Google Antigravity, Move Cars delivers fully tested production features in a single day, letting a small team scale complex logistics while staying in total control. \n\nDiscover what changes when agents run autonomously while developers maintain full control. Check out the video to learn more!\n\n\nTry building today → https://goo.gle/4zmpGvq\n\n\nSubscribe to Google for Developers → https://goo.gle/developers   \n\n\nProducts Mentioned: Google Antigravity\nSpeaker: Nick Padgett",
+      "published_at": "2026-10-29T20:00:20Z",
+      "duration_seconds": 155
+    },
+    {
+      "id": "evXFML_Rnc0",
+      "url": "https://www.youtube.com/watch?v=evXFML_Rnc0",
+      "title": "3 Critical Tasks AI Can Automate For You",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "Here are 3 things EVERY business owner should automate with AI:\n\n1️⃣ Checking failed email deliveries. \n2️⃣ Sending appointment reminders\n3️⃣ Getting new customers set up\n\nAll of these small tasks add up, so don't waste your time doing them manually.\n\nBird lets you build workflows where AI agents handle more of that repetitive work, while you decide what still needs your review.\n\nIf you’re figuring out where to start with AI in your business, start with the stuff you’re tired of doing yourself every day.\n\nAnd to check out Bird, head to bird.com or the link in the pinned comment.\n\n#BirdPartner #customerservice #aitools",
+      "published_at": "2026-10-29T15:28:47Z",
+      "duration_seconds": 62
+    },
+    {
+      "id": "7TyS2BeUg44",
+      "url": "https://www.youtube.com/watch?v=7TyS2BeUg44",
+      "title": "Watch Part 4! Model a Game Asset from Concept to Engine",
+      "channel": "Autodesk Media & Entertainment",
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "🚀 From high-poly details to a game-ready asset! 🎮\n\nIn Part 4 of our From Concept to Engine series, 3D artist James Brady takes his sci-fi fire hydrant back into Autodesk 3ds Max to bake textures, transfer details, and bring his optimized low-poly model one step closer to final.\n\n#3dsmax #lowpoly #highpoly #texture #textures #gameready #gameassets #modeling #3dmodel #3dmodeling #tutorial",
+      "published_at": "2026-10-29T20:00:26Z",
+      "duration_seconds": 15
+    },
+    {
+      "id": "_sbZscCe4DQ",
+      "url": "https://www.youtube.com/watch?v=_sbZscCe4DQ",
+      "title": "Model a Game Asset From Concept to Engine | Part 4: Texture Baking in 3ds Max",
+      "channel": "Autodesk Media & Entertainment",
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "Every game world is built one asset at a time! 🔥 Join 3D artist James Brady as he brings his sci-fi fire hydrant one step closer to game-ready by baking high-res textures onto his optimized low-poly model using Autodesk 3ds Max.\n\n🚀 In Part 4, James brings his UV-unwrapped model from Maya back into 3ds Max to begin the texture baking process. Follow along as he sets up texture maps, adjusts the projection cage, and transfers details from the high-poly model to the low-poly asset. See how he applies and previews the baked textures, including normal, ambient occlusion, metallic, and roughness maps, to preserve visual detail while keeping the geometry optimized for game performance.\n\n🎮 What's next? With the textures baked and applied, follow along as James takes the next steps toward bringing his sci-fi fire hydrant into Unreal Engine 5. Whether you're building props, environments, or your next sci-fi game world, discover how using different tools available in the Autodesk Media & Entertainment Collection can help you bring your assets from concept to engine.\n\n👉 Learn about Autodesk solutions for games: https://www.autodesk.com/campaigns/game-development \n👉 Explore the Autodesk Media & Entertainment Collection: https://www.autodesk.com/collections/media-entertainment/overview \n🎨 Learn more about James and his portfolio: https://bradyart.xyz/ \n\n#3dsMax #TextureBaking #3DModeling #GameAssets #GameDev #GameArt #Autodesk #GameReady",
+      "published_at": "2026-10-29T15:12:24Z",
+      "duration_seconds": 708
+    },
+    {
+      "id": "kweM6qEQgKI",
+      "url": "https://www.youtube.com/watch?v=kweM6qEQgKI",
+      "title": "From Raw Kitbash to Textured Silo | Painter 12.1 Mesh Processing and USD Export | Adobe Substance 3D",
+      "channel": "Adobe Substance 3D",
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "In this tutorial, @arvidurs shows you can take a kitbashed silo and transform it from raw mesh to a textured, render-ready asset in Adobe Substance 3D Painter 12.1. From using Auto Bake to keep the mesh maps updated while settings are modified to texturing tips, Arvid takes us from project to USD export and all the way to render in Houdini with Karma XPU. \n\nChapters: \n00:00 – Intro  \n00:57 - Auto Unwrap \n01:51 - Mesh Map Baking: Auto Bake \n04:28 - Skew Correction using Polygon Fill in object mode \n05:32 - Base Material \n07:45 - Color Variation \n08:17 - Concrete from Substance 3D Assets \n09:17 - Roof Panels and Masking  \n10:34 - Export Textures and Into Houdini  \n\nSoftware used: Adobe Substance 3D Painter 12.1, Adobe Substance 3D Assets, SideFX Houdini (Karma XPU)\n\nSubscribe to Adobe Substance 3D: https://adobe.ly/3Um7q3t\n\nLearn more about Adobe Substance 3D: https://adobe.ly/3NW3GSo\n\nAbout Substance 3D:\nAdobe Substance 3D is a complete suite of smart creative apps and high-end content that gives artists everything they need to create 3D digital content. With Substance 3D, set up the perfect shot, explore the high-end 3D asset library, give life to your 3D art, build complex models, and more. Get the Adobe Substance 3D Collection. \n\nThis channel will showcase what’s possible with Substance 3D, from inspiration to in-depth tutorials. Make sure to subscribe to the channel for videos on all things Substance 3D related, including content around Designer, Painter, Modeler, Stager, and Sampler.\n\nConnect with Adobe Substance 3D:\nTwitter: https://Twitter.com/substance3d\nFacebook: https://facebook.com/adobesubstance3d\nInstagram: https://instagram.com/substance3dart\nLinkedIn: https://linkedin.com/company/substance3d\nDiscord: https://discord.com/channels/179919948569640960/179930830955610112\n\n#Adobe #AdobeSubstance3D #AdobeYouTube",
+      "published_at": "2026-10-29T18:16:43Z",
+      "duration_seconds": 704
+    },
+    {
+      "id": "K3CuZ4dUGVY",
+      "url": "https://www.youtube.com/watch?v=K3CuZ4dUGVY",
+      "title": "Houdini 22 | How to Deform Crowds with ML",
+      "channel": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "description": "Lesson Files: \n\nLearn how to apply a trained ML Deformer to crowd agents in Houdini to create more realistic skin deformation. You’ll explore the trained machine learning model and its supporting data, then use them to enhance character deformation during crowd animation.\n\nYou’ll also explore how ML Deformer improves upon traditional linear blend skinning, helping artists achieve more natural character movement and higher quality deformations across animated crowds.",
+      "published_at": "2026-10-29T15:29:20Z",
+      "duration_seconds": 978
+    },
+    {
+      "id": "tnEHrFAG4bA",
+      "url": "https://www.youtube.com/watch?v=tnEHrFAG4bA",
+      "title": "Houdini 22 | How to Utilize Shotsculpt",
+      "channel": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "description": "Lesson FIles: https://www.sidefx.com/tutorials/how-to-utilize-shotsculpt/\n\nLearn how to use the new Shot Sculpt features in Houdini 22 to deform both polygonal geometry and hair guide curves directly in the viewport. You’ll explore how to sculpt and manage deformations over time while keeping hair guides attached to the underlying skin.\n\nYou’ll also explore the new Sculpt, Attribute, and Blend Shape modes for creating animated deformations, painting attributes, and blending between different shapes. These improvements give artists greater flexibility when refining character animation, adding secondary motion, and managing time dependent changes to geometry and grooms.",
+      "published_at": "2026-10-29T15:29:19Z",
+      "duration_seconds": 481
+    },
+    {
+      "id": "-mnPIZsmwmI",
+      "url": "https://www.youtube.com/watch?v=-mnPIZsmwmI",
+      "title": "Houdini 22 | How to Set a Following Camera",
+      "channel": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "description": "Project Files: https://www.sidefx.com/tutorials/how-to-set-a-following-camera/\n\nLearn how to create a tracking camera in Houdini 22 using the new camera primitives. You’ll attach a camera to a selected point on an animated character and adjust its position and viewing angle while keeping it connected to the character’s movement.\n\nYou’ll also explore how to use Camera from Points and Camera Edit to create a follow camera for inspecting character details, reviewing Shot Sculpt edits, and identifying hair intersections during animation. This workflow gives artists a simple and flexible way to closely examine moving characters and refine their work.",
+      "published_at": "2026-10-29T15:29:19Z",
+      "duration_seconds": 136
+    },
+    {
+      "id": "bF12FNSEMvk",
+      "url": "https://www.youtube.com/watch?v=bF12FNSEMvk",
+      "title": "3DLSS Max News",
+      "channel": "Eloi Andaluz Fullà",
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "We got DLSS support on Arnold this month, plus a new cloth simulation for characters, a new muscle simulation for characters, a sculpting tool, and crazy new plugins and scripts!\n\nExclusive content on my patreon: https://www.patreon.com/EloiAndaluz\nMy webpage: https://www.andvfx.com/\n\nLinks:\n\nArnold: https://bit.ly/3VYNwhY\nTenpix: https://bit.ly/3VZl6V5\nHezFX: https://bit.ly/4ijzZsG\nvalterra: https://getvalterra.com/\nuv unfoldr: https://bit.ly/4inLOyc\nmax teapot: https://maxteapot.com/\nXcavity: https://bit.ly/4k2VWin\nSculpt mesh: https://bit.ly/4zp5Dw0\nO_Vmaps: https://www.youtube.com/watch?v=RPlzZdEK4g0\nAksara: https://www.youtube.com/watch?v=Y4Swn7ooNxc\ngeometry nodes: https://bit.ly/4yMHYEP\nAccelskin: https://www.youtube.com/watch?v=lgFMdRyrtI4\nautocad style: https://bit.ly/4yMI0MX\ncurvenet: https://bit.ly/4i9vWAm\ntoon shaded: \nhttps://bit.ly/4A1c34I\n\nTyflow madness\nmpm: https://bit.ly/4BAmuha\nPBD: https://www.youtube.com/watch?v=S6PpMMR8-PY\nMusic: https://bit.ly/4ibQ30L\nvfx dvs: https://tinyurl.com/5xvbxu67\nMartin: https://tinyurl.com/yms537cy\n\n\nMaxitout!\nZiv: https://www.youtube.com/watch?v=5d5iKQNhH_I\nEunKyong: https://tinyurl.com/3y6xxsu9\nAion:https://www.youtube.com/watch?v=YYelxy0eEsA\n\n-------------------------------------------------------------------\n\nTimes\n00:00 Arnold MaxtoA 5.9.5.0\n02:53 Eloi Patreon\n04:50 New Plugins\n17:18 Tyflow Madness\n18:57 MaxitOut!\n\n-------------------------------------------------------------------\n\n\nOther interesting links:  (AL means Affiliate Links):\n\nPatreon top tier links:\nSiNi Software:  https://www.sinisoftware.com/\n\nAssets\n4D People:  https://bit.ly/3Bq8SVx\nTyflow tools(AL): https://bit.ly/3blEwc4\nWParallax (AL):   https://bit.ly/3jLGWW4\nGeometryy (Use coupon:  \"eloi50\"  for 10$ off)\nbenches/bycilcles stands/planters /windows:https://bit.ly/3PwbtFy\nFigment Caustics (AL):  https://bit.ly/3oUOZ4K\n\nTools\nFormCutter 2.5 (AL):https://bit.ly/3BiZ6nW\nLayama 1.5 (AL): https://bit.ly/3vXNRAq\nArchviztools Roads (AL):  https://bit.",
+      "published_at": "2026-10-29T16:04:20Z",
+      "duration_seconds": 1260
+    },
+    {
+      "id": "AkRul3u6e8M",
+      "url": "https://www.youtube.com/watch?v=AkRul3u6e8M",
+      "title": "Fight The Slasher",
+      "channel": "Bethesda Softworks",
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "The Reborn Pint-Sized Slasher has been causing mayhem in Head Hunts. \n\nFight him for a chance to earn great rewards, but know it won't be easy. #Fallout76",
+      "published_at": "2026-10-29T17:00:21Z",
+      "duration_seconds": 17
+    },
+    {
+      "id": "Ho1Fl-v4uUs",
+      "url": "https://www.youtube.com/watch?v=Ho1Fl-v4uUs",
+      "title": "Slayers Club Live | DOOM: The Dark Ages | Revelations w/ Hugo Martin - Ch. 35 Endgame: Hell's Core!",
+      "channel": "Bethesda Softworks",
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Slayers Club Live | DOOM: The Dark Ages | Revelations w/ Hugo Martin - Ch. 35 Endgame: Hell's Core!\n\nJoin us as DOOM: The Dark Ages' Game Director Hugo Martin starts his first on-stream playthrough of Revelations!\n\nFor more information on all things DOOM: The Dark Ages and id Software, follow these channels and join the Slayers Club.  \n\nBluesky: https://bsky.app/profile/doom.com\nTwitter: https://x.com/DOOM/\nInstagram: https://www.instagram.com/doom/ \nThreads: https://www.threads.net/@doom\nFacebook: https://www.facebook.com/DOOM\nWebsite: https://doom.bethesda.net/\nSlayers Club: https://slayersclub.bethesda.net/\n\nESRB RATING: Mature for Blood and Gore and Intense Violence",
+      "published_at": "2026-10-29T16:23:03Z",
+      "duration_seconds": 8125
+    },
+    {
+      "id": "FyqrkPvF65I",
+      "url": "https://www.youtube.com/watch?v=FyqrkPvF65I",
+      "title": "gathering specimens (tanking random veteran dungeons) | ESO Livestream",
+      "channel": "Hyperioxes",
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "",
+      "published_at": "2026-10-29T22:29:27Z",
+      "duration_seconds": 14176
+    }
+  ],
   "collection_source": "watchlist",
   "editor_review_required": true,
   "window": {
     "start": "2026-10-29T15:00:00Z",
-    "end": "2026-10-30T01:00:33.467844Z",
+    "end": "2026-10-30T01:39:06.687841Z",
     "timezone": "Asia/Tokyo"
   },
   "selection_limit_per_genre": 3,
   "candidate_limit_per_channel": 3,
   "partial": true,
-  "stop_code": "request_timeout",
+  "stop_code": "",
   "channels": [
     {
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -23,14 +222,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 2,
-      "candidates_returned": 0,
+      "candidates_returned": 2,
       "partial": true,
       "reasons": [
-        "request_stopped",
-        "details_unavailable",
         "pagination_limit"
       ]
     },
@@ -40,14 +237,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 1,
-      "candidates_returned": 0,
+      "candidates_returned": 1,
       "partial": true,
       "reasons": [
-        "request_stopped",
-        "details_unavailable",
         "pagination_limit"
       ]
     },
@@ -57,14 +252,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 1,
-      "candidates_returned": 0,
+      "candidates_returned": 1,
       "partial": true,
       "reasons": [
-        "request_stopped",
-        "details_unavailable",
         "pagination_limit"
       ]
     },
@@ -74,14 +267,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 1,
-      "candidates_returned": 0,
+      "candidates_returned": 1,
       "partial": true,
       "reasons": [
-        "request_stopped",
-        "details_unavailable",
         "pagination_limit"
       ]
     },
@@ -91,13 +282,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -107,13 +297,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -123,13 +312,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -139,13 +327,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -155,13 +342,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -171,13 +357,12 @@
       "genres": [
         "AI"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -187,14 +372,12 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 2,
-      "candidates_returned": 0,
+      "candidates_returned": 2,
       "partial": true,
       "reasons": [
-        "request_stopped",
-        "details_unavailable",
         "pagination_limit"
       ]
     },
@@ -204,13 +387,12 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -220,14 +402,12 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 1,
-      "candidates_returned": 0,
+      "candidates_returned": 1,
       "partial": true,
       "reasons": [
-        "request_stopped",
-        "details_unavailable",
         "pagination_limit"
       ]
     },
@@ -237,13 +417,12 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -257,12 +436,11 @@
       "pages_fetched": 1,
       "items_examined": 10,
       "candidates_found": 3,
-      "candidates_returned": 0,
+      "candidates_returned": 3,
       "partial": true,
       "reasons": [
         "pagination_limit",
-        "candidate_limit",
-        "details_unavailable"
+        "candidate_limit"
       ]
     },
     {
@@ -271,13 +449,12 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 1,
-      "items_examined": 10,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped",
         "pagination_limit"
       ]
     },
@@ -287,13 +464,13 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
-      "candidates_found": 0,
-      "candidates_returned": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -302,13 +479,13 @@
       "genres": [
         "3DCG"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -317,13 +494,13 @@
       "genres": [
         "terrain"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -332,13 +509,13 @@
       "genres": [
         "terrain"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -347,13 +524,13 @@
       "genres": [
         "ESO"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
-      "candidates_found": 0,
-      "candidates_returned": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 2,
+      "candidates_returned": 2,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -362,13 +539,13 @@
       "genres": [
         "ESO"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -377,13 +554,13 @@
       "genres": [
         "ESO"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -392,13 +569,13 @@
       "genres": [
         "ESO"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
-      "candidates_found": 0,
-      "candidates_returned": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     },
     {
@@ -407,15 +584,15 @@
       "genres": [
         "ESO"
       ],
-      "pages_fetched": 0,
-      "items_examined": 0,
+      "pages_fetched": 2,
+      "items_examined": 20,
       "candidates_found": 0,
       "candidates_returned": 0,
       "partial": true,
       "reasons": [
-        "request_stopped"
+        "pagination_limit"
       ]
     }
   ],
-  "api_attempts": 18
+  "api_attempts": 53
 }
