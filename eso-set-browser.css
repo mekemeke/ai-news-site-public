@@ -1,0 +1,17 @@
+/* Scoped to equipment browsing; effects are never clipped. */
+.eso-sets-page .set-grid{align-items:start}
+@media(min-width:701px){.eso-sets-page .set-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.eso-sets-page .set-card{padding:12px 14px}
+.eso-sets-page .set-card-heading{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.eso-sets-page .set-card-heading>div{min-width:0;flex:1}
+.eso-sets-page .set-card-heading h2{font-size:17px;line-height:1.4;margin:3px 0}
+.eso-sets-page .set-card-heading p{font-size:12px;margin:0;line-height:1.4}
+.eso-sets-page .set-card-heading .set-icon{width:44px;height:44px;flex:none;margin:0}
+.eso-sets-page .set-card-heading .image-pending{max-width:56px;font-size:10px}
+.eso-sets-page .set-card .category,.eso-sets-page .set-release{font-size:11px}
+.eso-sets-page .set-release{color:var(--muted);margin-left:6px}
+.eso-sets-page .set-card .set-effects p{font-size:14px;line-height:1.55;margin:0 0 5px;color:var(--ink)}
+.eso-sets-page .set-card .set-quality-meta{margin:6px 0 0}
+.eso-sets-page .set-card .set-card-link{display:inline-flex;align-items:center;min-height:44px;font-size:12px;text-decoration:underline}
+.eso-sets-page .set-card .set-quality-details{font-size:12px}
+.eso-sets-page .set-card .set-card-caution{font-size:11px;line-height:1.4;margin:5px 0 0}

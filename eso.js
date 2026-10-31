@@ -2,6 +2,7 @@
 (() => {
   const $ = id => document.getElementById(id);
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[char]));
+  let releases = new Map(), updates = new Map();
   let sets = [], ready = false, effectTags = new Set();
   const query = () => new URLSearchParams(location.hash.startsWith('#?') ? location.hash.slice(2) : '');
   const listURL = (overrides = {}) => {
@@ -10,6 +11,8 @@
     if ($('set-category').value) params.set('category', $('set-category').value);
     if ($('set-effect').value) params.set('effect', $('set-effect').value);
     if ($('set-effect2').value) params.set('effect2', $('set-effect2').value);
+    if ($('set-update').value) params.set('update', $('set-update').value);
+    if ($('set-sort').value === 'newest') params.set('sort', 'newest');
     for (const [key,value] of Object.entries(overrides)) {
       if (value) params.set(key,value); else params.delete(key);
     }
@@ -167,15 +170,47 @@
       } else link.removeAttribute('aria-current');
     }
   }
+
+  function readReleases(data) {
+    if (data?.version !== 1 || !data.bySetId || typeof data.bySetId !== 'object' || Array.isArray(data.bySetId)) throw new Error('Invalid introductions');
+    const catalog = new Map(), records = new Map();
+    for (const [id, record] of Object.entries(data.bySetId)) {
+      if (!sets.some(item => item.id === id) || !record || !['verified','unknown'].includes(record.status) || typeof record.label !== 'string' || !Array.isArray(record.sources)) throw new Error('Invalid introduction');
+      if (record.status === 'unknown') {
+        if (record.update !== null) throw new Error('Unknown update must be null');
+        continue;
+      }
+      if (!Number.isInteger(record.update) || record.update < 0 || !record.label.trim() || !record.sources.length) throw new Error('Invalid verified update');
+      for (const source of record.sources) {
+        let url; try { url = new URL(source?.url); } catch {}
+        if (url?.protocol !== 'https:' || url.username || url.password || typeof source.label !== 'string' || !source.label.trim()) throw new Error('Invalid introduction source');
+      }
+      const key = String(record.update);
+      // One update number has one display name, regardless of the source set.
+      if (catalog.has(key) && catalog.get(key).label !== record.label) throw new Error('Conflicting update labels');
+      catalog.set(key, {id:key, label:record.label, order:record.update});
+      records.set(id, {...record, updateId:key});
+    }
+    updates = catalog; releases = records;
+  }
+  function releaseLabel(item) {
+    return updates.get(releases.get(item.id)?.updateId)?.label || '追加時期不明';
+  }
+  function renderCard(item) {
+    const href = '#set/' + encodeURIComponent(item.id) + escapeHTML(listURL().slice(1));
+    return `<article class="news-card set-card" data-set-id="${escapeHTML(item.id)}"><div class="set-card-heading">${icon(item)}<div><span class="category">${escapeHTML(item.category)}</span><span class="set-release">${escapeHTML(releaseLabel(item))}</span><h2><a href="${href}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}</div></div><div class="article-body set-effects">${renderEffects(item)}</div>${qualityBlock(item)}<p class="set-card-caution">資料参照値・ゲーム内未検証。通常／完璧版は効果欄で区別。</p><a class="set-card-link" href="${href}">入手先・出典・詳しい情報 →</a></article>`;
+  }
+
   function renderList() {
     const term = $('set-search').value.trim().toLocaleLowerCase('ja');
     const category = $('set-category').value;
     const effects = [$('set-effect').value, $('set-effect2').value].filter(Boolean);
     $('set-effect-selection').textContent = `効果条件1：${$('set-effect').value || 'すべての効果'} ／ 効果条件2：${$('set-effect2').value || 'すべての効果'}（AND）`;
     syncEffectFilters();
-    const filtered = sets.filter(item => effects.every(effect => (item.browseTags || []).includes(effect)) && (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
+    const filtered = sets.filter(item => (!$('set-update').value || ($('set-update').value === 'unknown' ? !releases.has(item.id) : releases.get(item.id)?.updateId === $('set-update').value)) && effects.every(effect => (item.browseTags || []).includes(effect)) && (!category || item.category === category || (item.browseTags || []).includes(category)) && [item.name, item.englishName, item.summary, item.location, item.category, ...item.effects.map(effect => effect.text)].join(' ').toLocaleLowerCase('ja').includes(term));
+    if ($('set-sort').value === 'newest') filtered.sort((a,b) => (updates.get(releases.get(b.id)?.updateId)?.order ?? -1) - (updates.get(releases.get(a.id)?.updateId)?.order ?? -1));
     $('set-count').textContent = `収録データ内：${filtered.length} / ${sets.length} セット系列`;
-    $('sets').innerHTML = filtered.map(item => `<article class="news-card"><span class="category">${escapeHTML(item.category)}</span><h2><a href="#set/${encodeURIComponent(item.id)}${escapeHTML(listURL().slice(1))}">${escapeHTML(item.name)}</a></h2>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<p>${escapeHTML(item.summary)}</p>${icon(item)}<div class="article-body set-effects"><h3>セットボーナス・発動条件</h3>${renderEffects(item)}</div>${qualityBlock(item)}${verification(item)}</article>`).join('') || `<p class="empty">${term || category || effects.length ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
+    $('sets').innerHTML = filtered.map(renderCard).join('') || `<p class="empty">${term || category || effects.length || $('set-update').value ? 'この分類・検索条件に合うセットはまだ収録していない。ゲーム内に存在しないという意味ではない。条件をクリアして一覧に戻れる。' : '装備セットはまだ収録していない。確認済みの情報を追加するまで待ってほしい。'}</p>`;
   }
   function route() {
     if (!ready) return;
@@ -186,6 +221,8 @@
       const params = match ? new URLSearchParams(match[2]) : query();
       $('set-search').value = params.get('q') || '';
       $('set-category').value = params.get('category') || '';
+      $('set-update').value = updates.has(params.get('update')) || params.get('update') === 'unknown' ? params.get('update') : '';
+      $('set-sort').value = params.get('sort') === 'newest' ? 'newest' : '';
       for (const key of ['effect','effect2']) $('set-' + key).value = effectTags.has(params.get(key)) ? params.get(key) : '';
     }
     if (!match) {
@@ -202,7 +239,7 @@
       $('set-detail').innerHTML = `${back}<h1>セットが見つからない</h1><p>指定されたセットは未収録、またはURLが正しくない。装備セット一覧から確認できる。</p>`;
     } else {
       document.title = item.name + ' | ESOデータベース';
-      $('set-detail').innerHTML = `${back}<h1>${escapeHTML(item.name)}</h1>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<span class="category">${escapeHTML(item.category)}</span><p class="lead">${escapeHTML(item.summary)}</p>${verification(item)}${icon(item)}<p class="image-pending">アイコンは代表頭部の参考画像。全部位の外見、通常版・完璧版の差やライブ性能を示すものではない。</p><div class="article-body"><h2>セットボーナス・発動条件</h2><p>装備数ごとの効果と条件を記載。品質別に照合した数値を文中に表示。元の単一値・範囲は「出典・条件・元の掲載値」で確認できる。</p>${item.effects.length ? '' : '<p>効果データは未収録。</p>'}${renderEffects(item)}${qualityBlock(item, true)}<h2>入手先</h2><p>${escapeHTML(item.location || '未確認')}</p></div><div class="source-box"><strong>出典</strong><ul>${item.sources.map(source => {
+      $('set-detail').innerHTML = `${back}<h1>${escapeHTML(item.name)}</h1>${item.englishName ? `<p lang="en">${escapeHTML(item.englishName)}</p>` : ''}<span class="category">${escapeHTML(item.category)}</span><p class="lead">${escapeHTML(item.summary)}</p><p class="set-release">${escapeHTML(releaseLabel(item))}</p>${releases.has(item.id) ? `<p class="source">系列の初追加（完璧版の追加時期とは限りません）：${releases.get(item.id).sources.map(source => `<a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label)}</a>`).join(' ・ ')}</p>` : ''}${verification(item)}${icon(item)}<p class="image-pending">アイコンは代表頭部の参考画像。全部位の外見、通常版・完璧版の差やライブ性能を示すものではない。</p><div class="article-body"><h2>セットボーナス・発動条件</h2><p>装備数ごとの効果と条件を記載。品質別に照合した数値を文中に表示。元の単一値・範囲は「出典・条件・元の掲載値」で確認できる。</p>${item.effects.length ? '' : '<p>効果データは未収録。</p>'}${renderEffects(item)}${qualityBlock(item, true)}<h2>入手先</h2><p>${escapeHTML(item.location || '未確認')}</p></div><div class="source-box"><strong>出典</strong><ul>${item.sources.map(source => {
         let url;
         try { url = new URL(source.url); } catch {}
         return `<li>${url?.protocol === 'https:' ? `<a href="${escapeHTML(url.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.label)}</a>` : escapeHTML(source.label)}</li>`;
@@ -221,11 +258,15 @@
     if (location.hash !== url) history.pushState(null, '', url);
     renderList();
   }
+  $('set-update').addEventListener('change', changeEffects);
+  $('set-sort').addEventListener('change', changeEffects);
   $('set-effect').addEventListener('change', changeEffects);
   $('set-effect2').addEventListener('change', changeEffects);
   $('set-search').addEventListener('input', filter);
   $('set-category').addEventListener('change', filter);
   $('set-reset').addEventListener('click', () => {
+    $('set-update').value = '';
+    $('set-sort').value = '';
     $('set-search').value = '';
     $('set-category').value = '';
     $('set-effect').value = '';
@@ -248,6 +289,16 @@
         ids.add(item.id);
       }
       sets = data.sets;
+      releases = new Map(); updates = new Map();
+      try {
+        const response = await fetch('./data/set-introductions.json?v=20261101-1', {credentials:'omit'});
+        if (!response.ok) throw new Error('Release data unavailable');
+        readReleases(await response.json());
+        $('set-release-status').textContent = '追加時期：確認済み ' + releases.size + '系列／未確認 ' + (sets.length - releases.size) + '系列。新しい順は更新番号順（不明は末尾）。更新初日の入手可否を示すものではありません。効果調整では追加順を変更しません。';
+      } catch {
+        $('set-release-status').textContent = '追加時期データを読み込めませんでした。追加時期は不明として表示します。装備データは引き続き閲覧できます。';
+      }
+      $('set-update').innerHTML = '<option value="">すべてのアップデート</option>' + [...updates.values()].sort((a,b) => b.order-a.order).map(update => '<option value="' + escapeHTML(update.id) + '">' + escapeHTML(update.label) + '</option>').join('') + '<option value="unknown">追加時期不明</option>';
       effectTags = new Set(sets.flatMap(item => item.browseTags || []).filter(tag => ['軽攻撃','重攻撃','ペット','メジャーバフ','マイナーバフ','メジャーデバフ','マイナーデバフ'].includes(tag) || /^(?:バフ|デバフ)（(?:強|弱)）：/.test(tag)));
       const effectOptions = '<option value="">すべての効果</option>' + [...effectTags].sort((a,b) => a.localeCompare(b,'ja')).map(tag => `<option value="${escapeHTML(tag)}">${escapeHTML(tag)}</option>`).join('');
       $('set-effect').innerHTML = effectOptions;
@@ -257,7 +308,7 @@
       const categories = [...new Set([...['軽装','中装','重装','モンスター','秘術','武器セット','フィールド','ダンジョン','試練','アリーナ','クラフト','PvP','古遺物'], ...sets.flatMap(item => [item.category, ...(item.browseTags || [])])])].sort((a,b) => a.localeCompare(b,'ja'));
       $('set-category').innerHTML = '<option value="">すべての分類</option>' + categories.map(category => `<option value="${escapeHTML(category)}">${escapeHTML(category)}</option>`).join('');
       renderEffectFilters();
-      for (const id of ['set-search','set-category','set-effect','set-effect2','set-reset']) $(id).disabled = false;
+      for (const id of ['set-search','set-category','set-effect','set-effect2','set-reset','set-update','set-sort']) $(id).disabled = false;
       $('set-notice').textContent = '';
       ready = true;
       route();

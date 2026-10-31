@@ -1,0 +1,6372 @@
+{
+  "version": 1,
+  "basis": "セット系列が本番に初めて追加されたUpdate。効果変更やPerfected版追加では系列の順序を変更しない。未確認は推定しない。",
+  "coverage": {
+    "total": 650,
+    "verified": 352,
+    "unknown": 298
+  },
+  "bySetId": {
+    "powerful-assault": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nazaray": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "lucent-echoes": {
+      "englishName": "Lucent Echoes",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 42,
+        "label": "Update 42 / Gold Road",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+            "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+          }
+        ]
+      }
+    },
+    "oakensoul-ring": {
+      "englishName": "Oakensoul Ring",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "ring-of-the-pale-order": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "velothi-ur-mages-amulet": {
+      "englishName": "Velothi Ur-Mage's Amulet",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "orders-wrath": {
+      "englishName": "Order's Wrath",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "hundings-rage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "law-of-julianos": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mothers-sorrow": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "briarheart": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "plague-doctor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ring-of-the-wild-hunt": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "markyn-ring-of-majesty": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "sea-serpents-coil": {
+      "englishName": "Sea-Serpent's Coil",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "torugs-pact": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hist-bark": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "night-mothers-gaze": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spell-power-cure": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "pillar-of-nirn": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "turning-tide": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "crushing-wall": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "merciless-charge": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "thunderous-volley": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "grand-rejuvenation": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "puncturing-remedy": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "destructive-impact": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "bloodspawn": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "engine-guardian": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "iceheart": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "slimecraw": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "zaan": {
+      "englishName": "Zaan",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "symphony-of-blades": {
+      "englishName": "Symphony of Blades",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "belharzas-band": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "bloodlords-embrace": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "cryptcanon-vestments": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "death-dealers-fete": {
+      "englishName": "Death Dealer's Fete",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "dov-rha-sabatons": {
+      "englishName": "Dov-rha Sabatons",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "esoteric-environment-greaves": {
+      "englishName": "Esoteric Environment Greaves",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "fauns-lark-cladding": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "gaze-of-sithis": {
+      "englishName": "Gaze of Sithis",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "harpooners-wading-kilt": {
+      "englishName": "Harpooner's Wading Kilt",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "huntsmans-warmask": {
+      "status": "verified",
+      "update": 48,
+      "label": "Update 48 / Seasons of the Worm Cult Part 2",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/684527/pc-mac-patch-notes-v11-2-6-update-48-and-seasons-of-the-worm-cult-part-2",
+          "label": "ESO公式：Update 48 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "lefthanders-aegis-belt": {
+      "englishName": "Lefthander's Aegis Belt",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        },
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/603795/pts-patch-notes-v8-0-1",
+          "label": "ESO公式：PTS v8.0.1（名称変更の同一性照合のみ）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Live U34 list uses old name Lefthander’s War Girdle. Official PTS v8.0.1 explicitly documents rename to Lefthander's Aegis Belt; PTS source used only for name equivalence, not release attribution."
+    },
+    "malacaths-band-of-brutality": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "moras-whispers": {
+      "englishName": "Mora's Whispers",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "pearls-of-ehlnofey": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "prowlers-talisman": {
+      "status": "verified",
+      "update": 50,
+      "label": "Update 50",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/693682/update-50-live-patch-notes-all-platforms",
+          "label": "ESO公式：Update 50 本番パッチノート・新規セット"
+        }
+      ],
+      "note": "Update 50に含まれる追加。Thieves Guild新ストーリーはUpdate 50配信日ではなくSeason One開始後に有効化される旨が公式に明記。導入日そのものは未設定。"
+    },
+    "rourken-steamguards": {
+      "englishName": "Rourken Steamguards",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "shapeshifters-chain": {
+      "englishName": "Shapeshifter's Chain",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "shattered-paths-signet": {
+      "status": "verified",
+      "update": 49,
+      "label": "Update 49",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/689473/update-49-live-patch-notes-all-platforms",
+          "label": "ESO公式：Update 49 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "snow-treaders": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "spaulder-of-ruin": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "stormweavers-cavort": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "syrabanes-ward": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "the-saint-and-the-seducer": {
+      "englishName": "The Saint and the Seducer",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "the-shadow-queens-cowl": {
+      "englishName": "The Shadow Queen's Cowl",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "thrassian-stranglers": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "torc-of-the-last-ayleid-king": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "torc-of-tonal-constancy": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "adept-rider": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "aetherial-ascension": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "alessias-bulwark": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ancient-dragonguard": {
+      "status": "verified",
+      "update": 24,
+      "label": "Update 24 / Dragonhold",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+          "label": "ESO公式：Update 24 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "armor-master": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "armor-of-the-seducer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ashen-grip": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "assassins-guile": {
+      "englishName": "Assassin's Guile",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "chimeras-rebuke": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "claw-of-the-forest-wraith": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "clever-alchemist": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "coldharbours-favorite": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "critical-riposte": {
+      "englishName": "Critical Riposte",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "daedric-trickery": {
+      "englishName": "Daedric Trickery",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "daring-corsair": {
+      "status": "verified",
+      "update": 24,
+      "label": "Update 24 / Dragonhold",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+          "label": "ESO公式：Update 24 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "dauntless-combatant": {
+      "englishName": "Dauntless Combatant",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "deadlands-demolisher": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "deaths-wind": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "diamonds-victory": {
+      "englishName": "Diamond's Victory",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "dragons-appetite": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "druids-braid": {
+      "englishName": "Druid's Braid",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "eternal-hunt": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "eyes-of-mara": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "fellowships-fortitude": {
+      "status": "verified",
+      "update": 48,
+      "label": "Update 48 / Seasons of the Worm Cult Part 2",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/684527/pc-mac-patch-notes-v11-2-6-update-48-and-seasons-of-the-worm-cult-part-2",
+          "label": "ESO公式：Update 48 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "fortified-brass": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "grave-stake-collector": {
+      "englishName": "Grave-Stake Collector",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "heartland-conqueror": {
+      "englishName": "Heartland Conqueror",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "highland-sentinel": {
+      "englishName": "Highland Sentinel",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "hist-whisperer": {
+      "englishName": "Hist Whisperer",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "innate-axiom": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "iron-flask": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "kagrenacs-hope": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "kvatch-gladiator": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "legacy-of-karth": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "magnus-gift": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mechanical-acuity": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "might-of-the-lost-legion": {
+      "englishName": "Might of the Lost Legion",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "morkuldin": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "naga-shaman": {
+      "englishName": "Naga Shaman",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "new-moon-acolyte": {
+      "status": "verified",
+      "update": 24,
+      "label": "Update 24 / Dragonhold",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+          "label": "ESO公式：Update 24 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "nights-silence": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nobles-conquest": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nocturnals-favor": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "oblivions-foe": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "old-growth-brewer": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "orgnums-scales": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "pelinals-wrath": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "red-eagles-fury": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "redistributor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "seeker-synthesis": {
+      "englishName": "Seeker Synthesis",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "senche-rahts-grit": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "serpents-disdain": {
+      "englishName": "Serpent's Disdain",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "shacklebreaker": {
+      "englishName": "Shacklebreaker",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "shalidors-curse": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shared-burden": {
+      "status": "verified",
+      "update": 48,
+      "label": "Update 48 / Seasons of the Worm Cult Part 2",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/684527/pc-mac-patch-notes-v11-2-6-update-48-and-seasons-of-the-worm-cult-part-2",
+          "label": "ESO公式：Update 48 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "shattered-fate": {
+      "englishName": "Shattered Fate",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "sloads-semblance": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "song-of-lamae": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spectres-eye": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spell-parasite": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "stuhns-favor": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "tavas-favor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "telvanni-efficiency": {
+      "englishName": "Telvanni Efficiency",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "tharrikers-strike": {
+      "englishName": "Tharriker's Strike",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "threads-of-war": {
+      "englishName": "Threads of War",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "tide-born-wildstalker": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "trial-by-fire": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "twice-born-star": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "twilights-embrace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "unchained-aggressor": {
+      "englishName": "Unchained Aggressor",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "vampires-kiss": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "varens-legacy": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vastaries-tutelage": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "way-of-the-arena": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "whitestrakes-retribution": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "willows-path": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "wretched-vitality": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "adamant-lurker": {
+      "englishName": "Adamant Lurker",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "akaviri-dragonguard": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "armor-of-the-trainee": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "armor-of-the-veiled-heritance": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ayleid-refuge": {
+      "englishName": "Ayleid Refuge",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Official English launch notes spell this Ayleid Rufuge (apparent typo); mapped to existing Ayleid Refuge record."
+    },
+    "back-alley-gourmand": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "bahrahas-curse": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "bastion-of-the-draoife": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Bastion of Draoife",
+        "existingName": "Bastion of the Draoife",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "防御時Inflection獲得、持続・上限・獲得頻度・再生量と2〜4部位値が一致。"
+      }
+    },
+    "beekeepers-gear": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "blessing-of-high-isle": {
+      "englishName": "Blessing of High Isle",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "bloodthorns-touch": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "bog-raider": {
+      "englishName": "Bog Raider",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "bright-throats-boast": {
+      "englishName": "Bright-Throat's Boast",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "call-of-the-undertaker": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "camonna-tong": {
+      "englishName": "Camonna Tong",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "champion-of-the-hist": {
+      "englishName": "Champion of the Hist",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "crafty-alfiq": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "darkstride": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "dead-waters-guile": {
+      "englishName": "Dead-Water's Guile",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "deadlands-assassin": {
+      "englishName": "Deadlands Assassin",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "death-dancer": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "defiler": {
+      "englishName": "Defiler",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "dragonguard-elite": {
+      "status": "verified",
+      "update": 24,
+      "label": "Update 24 / Dragonhold",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+          "label": "ESO公式：Update 24 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "draugrs-heritage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "dreamers-mantle": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "eternal-vigor": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "eye-of-the-grasp": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "fiords-legacy": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "flanking-strategist": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "frostbite": {
+      "englishName": "Frostbite",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "full-belly-barricade": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "grace-of-gloom": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "green-pact": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "gryphons-ferocity": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "hatchlings-shell": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hexos-ward": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "hide-of-morihaus": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hide-of-the-werewolf": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "kynmarchers-cruelty": {
+      "status": "verified",
+      "update": 32,
+      "label": "Update 32",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/590109/pc-mac-patch-notes-v7-2-5-deadlands-update-32",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 32（新規セット掲載区分）"
+        }
+      ]
+    },
+    "livewire": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "macabre-vintage": {
+      "englishName": "Macabre Vintage",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "mad-tinkerer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "marauders-haste": {
+      "status": "verified",
+      "update": 24,
+      "label": "Update 24 / Dragonhold",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+          "label": "ESO公式：Update 24 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "mark-of-the-pariah": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "meridias-blessed-armor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "necropotence": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "night-mothers-embrace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "night-terror": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "order-of-diagna": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "phoenix-moth-theurge": {
+      "status": "verified",
+      "update": 36,
+      "label": "Update 36",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/620696/pc-mac-patch-notes-v8-2-5-firesong-update-36",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 36（新規セット掲載区分）"
+        }
+      ]
+    },
+    "prisoners-rags": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "queens-elegance": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "radiant-bastion": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "rangers-gait": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "robes-of-the-hist": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "robes-of-the-withered-hand": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "salvation": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "senchal-defender": {
+      "status": "verified",
+      "update": 24,
+      "label": "Update 24 / Dragonhold",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/497974/pc-mac-patch-notes-v5-2-5-dragonhold-update-24",
+          "label": "ESO公式：Update 24 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "senches-bite": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "seventh-legion-brute": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shadow-dancers-raiment": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shadow-of-the-red-mountain": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shalk-exoskeleton": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "silks-of-the-sun": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sithis-touch": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "skooma-smuggler": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "soulshine": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spinners-garments": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spriggans-thorns": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "steadfasts-mettle": {
+      "englishName": "Steadfast's Mettle",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "stendarrs-embrace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "storm-knights-plate": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "stygian": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "swamp-raider": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sword-singer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "symmetry-of-the-weald": {
+      "englishName": "Symmetry of the Weald",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified"
+    },
+    "syrabanes-grip": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "systres-scowl": {
+      "englishName": "Systres' Scowl",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "syvarras-scales": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "three-queens-wellspring": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "thunderbugs-carapace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "trinimacs-valor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "twin-sisters": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "unfathomable-darkness": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vampire-cloak": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vampire-lord": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "venomous-smite": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "vesture-of-darloc-brae": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "vivecs-duality": {
+      "englishName": "Vivec's Duality",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "voidcaller": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "war-maiden": {
+      "englishName": "War Maiden",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "warrior-poet": {
+      "englishName": "Warrior-Poet",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "way-of-air": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "way-of-fire": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "way-of-martial-knowledge": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "wilderqueens-arch": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "winters-respite": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "wisdom-of-vanus": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "witch-knights-defiance": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "witchman-armor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "wyrd-trees-blessing": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "xanmeer-genesis": {
+      "status": "verified",
+      "update": 48,
+      "label": "Update 48 / Seasons of the Worm Cult Part 2",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/684527/pc-mac-patch-notes-v11-2-6-update-48-and-seasons-of-the-worm-cult-part-2",
+          "label": "ESO公式：Update 48 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "ysgramors-birthright": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "affliction": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "agility": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "alessian-order": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "almalexias-mercy": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "arkays-charity": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "baan-dars-blessing": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "bastion-of-the-heartland": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "battalion-defender": {
+      "englishName": "Battalion Defender",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "battlefield-acrobat": {
+      "englishName": "Battlefield Acrobat",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "beckoning-steel": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "black-rose": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "blackfeather-flight": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "blessing-of-the-potentates": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "blunted-blades": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "buffer-of-the-swift": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "bulwark-ruination": {
+      "status": "verified",
+      "update": 44,
+      "label": "Update 44",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/667797/pc-mac-patch-notes-v10-02-5-update-44",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 44（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Bulwark of Ruination",
+        "existingName": "Bulwark Ruination",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "敵の防御時にブロック軽減量を低下させる固有条件・持続・累積上限・再発動間隔と2〜4部位値が一致。"
+      }
+    },
+    "colovian-highlands-general": {
+      "status": "verified",
+      "update": 39,
+      "label": "Update 39",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/641025/pc-mac-patch-notes-v9-1-5-update-39",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 39（新規セット掲載区分）"
+        }
+      ]
+    },
+    "coup-de-grace": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "cowards-gear": {
+      "englishName": "Coward's Gear",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "crest-of-cyrodiil": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "curse-eater": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "dark-convergence": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "deadly-strike": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "desert-rose": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "eagle-eye": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "elf-bane": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "endurance": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "enervating-aura": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "farstrider": {
+      "status": "verified",
+      "update": 44,
+      "label": "Update 44",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/667797/pc-mac-patch-notes-v10-02-5-update-44",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 44（新規セット掲載区分）"
+        }
+      ]
+    },
+    "fasallas-guile": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "galerions-revenge": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "gorethief": {
+      "status": "verified",
+      "update": 49,
+      "label": "Update 49",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/689473/update-49-live-patch-notes-all-platforms",
+          "label": "ESO公式：Update 49 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "grace-of-the-ancients": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hawks-eye": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hew-and-sunder": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "hrothgars-chill": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "imperial-physique": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "impregnable-armor": {
+      "englishName": "Impregnable Armor",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "indomitable-fury": {
+      "englishName": "Indomitable Fury",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "jerall-mountains-warchief": {
+      "status": "verified",
+      "update": 39,
+      "label": "Update 39",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/641025/pc-mac-patch-notes-v9-1-5-update-39",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 39（新規セット掲載区分）"
+        }
+      ]
+    },
+    "judgment-of-akatosh": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Judgement of Akatosh",
+        "existingName": "Judgment of Akatosh",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "固有の移動系直接攻撃条件・遅延爆発・減速・気絶・範囲・再発動間隔および2〜5部位固定値が一致。"
+      }
+    },
+    "knight-slayer": {
+      "englishName": "Knight Slayer",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "kynes-kiss": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "lamp-knights-art": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "languor-of-peryite": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Langour of Peryite",
+        "existingName": "Languor of Peryite",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "防御プレイヤーへの追加ダメージ・CC無効対象への軽攻撃条件・再生低下・持続と再発動間隔・2〜4部位値が一致。"
+      }
+    },
+    "lekis-focus": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "light-of-cyrodiil": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "maras-balm": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "marksmans-crest": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "meritorious-service": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "netch-oil": {
+      "status": "verified",
+      "update": 44,
+      "label": "Update 44",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/667797/pc-mac-patch-notes-v10-02-5-update-44",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 44（新規セット掲載区分）"
+        }
+      ]
+    },
+    "nibenay-bay-battlereeve": {
+      "status": "verified",
+      "update": 39,
+      "label": "Update 39",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/641025/pc-mac-patch-notes-v9-1-5-update-39",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 39（新規セット掲載区分）"
+        }
+      ]
+    },
+    "nocturnals-ploy": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "oakfathers-retribution": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "phoenix": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "plaguebreak": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "rallying-cry": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "ravager": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "reactive-armor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "robes-of-alteration-mastery": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "robes-of-transmutation": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sentry": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shadow-walker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shared-pain": {
+      "status": "verified",
+      "update": 44,
+      "label": "Update 44",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/667797/pc-mac-patch-notes-v10-02-5-update-44",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 44（新規セット掲載区分）"
+        }
+      ]
+    },
+    "shell-splitter": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "shield-breaker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shield-of-the-valiant": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "siegemasters-focus": {
+      "status": "verified",
+      "update": 44,
+      "label": "Update 44",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/667797/pc-mac-patch-notes-v10-02-5-update-44",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 44（新規セット掲載区分）"
+        }
+      ]
+    },
+    "snake-in-the-stars": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "soldier-of-anguish": {
+      "englishName": "Soldier of Anguish",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "spell-strategist": {
+      "englishName": "Spell Strategist",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "spellshredder": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "steadfast-hero": {
+      "englishName": "Steadfast Hero",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "the-arch-mage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "the-juggernaut": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "the-morag-tong": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "thews-of-the-harbinger": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "trackers-lash": {
+      "status": "verified",
+      "update": 44,
+      "label": "Update 44",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/667797/pc-mac-patch-notes-v10-02-5-update-44",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 44（新規セット掲載区分）"
+        }
+      ]
+    },
+    "unflinching-ultimate": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "vanguards-challenge": {
+      "englishName": "Vanguard's Challenge",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "vengeance-leech": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vicecanon-of-venom": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vicious-death": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ward-of-cyrodiil": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "warriors-fury": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "willpower": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "wizards-riposte": {
+      "englishName": "Wizard's Riposte",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "wrath-of-the-imperium": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "anthelmirs-construct": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "archdruid-devyric": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "balorgh": {
+      "englishName": "Balorgh",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "bar-sakka": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "baron-thirsk": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "baron-zaudrus": {
+      "englishName": "Baron Zaudrus",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "black-gem-monstrosity": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "chokethorn": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "domihaus": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "earthgore": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "encratiss-behemoth": {
+      "englishName": "Encratis's Behemoth",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "euphotic-gatekeeper": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "glittering-goad": {
+      "status": "verified",
+      "update": 49,
+      "label": "Update 49",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/689473/update-49-live-patch-notes-all-platforms",
+          "label": "ESO公式：Update 49 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "glorgoloch-the-destroyer": {
+      "englishName": "Glorgoloch the Destroyer",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "grothdarr": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "grundwulf": {
+      "englishName": "Grundwulf",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "ilambris": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "immolator-charr": {
+      "englishName": "Immolator Charr",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "infernal-guardian": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "kargaeda": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "kjalnars-nightmare": {
+      "englishName": "Kjalnar's Nightmare",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "kragh": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "lady-malygda": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Lady Malydga",
+        "existingName": "Lady Malygda",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "固有の往復移動範囲・発動距離・Minor Enervation・持続時間・再発動間隔と1部位値を照合し一致。"
+      }
+    },
+    "lady-thorn": {
+      "englishName": "Lady Thorn",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "lord-warden": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "maarselok": {
+      "englishName": "Maarselok",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "magma-incarnate": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "maw-of-the-infernal": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mighty-chudan": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "molag-kena": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mother-ciannait": {
+      "englishName": "Mother Ciannait",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "nerieneth": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nightflame": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nunatak": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "ozezan-the-inferno": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "pirate-skeleton": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "prior-thierric": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "roksa-the-warped": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "scourge-harvester": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "selene": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sellistrix": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sentinel-of-rkugamz": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shadowrend": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spawn-of-mephala": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "stone-husk": {
+      "englishName": "Stone Husk",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "stonekeeper": {
+      "englishName": "Stonekeeper",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "stormfist": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "swarm-mother": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "the-blind": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "the-ruckus": {
+      "status": "verified",
+      "update": 49,
+      "label": "Update 49",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/689473/update-49-live-patch-notes-all-platforms",
+          "label": "ESO公式：Update 49 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "the-troll-king": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "thousand-eyes": {
+      "status": "verified",
+      "update": 49,
+      "label": "Update 49",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/689473/update-49-live-patch-notes-all-platforms",
+          "label": "ESO公式：Update 49 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "thurvokun": {
+      "englishName": "Thurvokun",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "tremorscale": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "valkyn-skoria": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "velidreth": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vykosa": {
+      "englishName": "Vykosa",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "zoal-the-ever-wakeful": {
+      "englishName": "Zoal the Ever-Wakeful",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "aegis-of-galenwe": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 18,
+        "label": "Update 18 / Summerset",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+            "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+          }
+        ]
+      },
+      "identityVerification": {
+        "officialName": "Aegis of Galanwe",
+        "method": "既存英名の綴り差・冠詞差と固有効果を照合。公式本番新規区分の同一セットと確認。現行効果の変更には使用しない。"
+      }
+    },
+    "ansuuls-torment": {
+      "englishName": "Ansuul's Torment",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 38,
+        "label": "Update 38 / Necrom",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+            "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "arms-of-relequen": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 18,
+        "label": "Update 18 / Summerset",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+            "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "automated-defense": {
+      "englishName": "Automated Defense",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "bahseis-mania": {
+      "englishName": "Bahsei's Mania",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 30,
+        "label": "Update 30 / Blackwood",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+            "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "berserking-warrior": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "chaotic-whirlwind": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "claw-of-yolnahkriin": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 22,
+        "label": "Update 22 / Elsweyr",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+            "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+          }
+        ]
+      },
+      "identityVerification": {
+        "officialName": "Claw of Yolnakhriin",
+        "method": "既存英名の綴り差・冠詞差と固有効果を照合。公式本番新規区分の同一セットと確認。現行効果の変更には使用しない。"
+      }
+    },
+    "concentrated-force": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "coral-riptide": {
+      "englishName": "Coral Riptide",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 34,
+        "label": "Update 34 / High Isle",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+            "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "defending-warrior": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "defensive-position": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "destructive-mage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "disciplined-slash": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "eternal-warrior": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "eye-of-nahviintaas": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 22,
+        "label": "Update 22 / Elsweyr",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+            "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "false-gods-devotion": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 22,
+        "label": "Update 22 / Elsweyr",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+            "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "healing-mage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "immortal-warrior": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "infallible-mage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "inventors-guard": {
+      "englishName": "Inventor's Guard",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "kynes-wind": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 26,
+        "label": "Update 26 / Greymoor",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+            "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "lunar-bastion": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mantle-of-siroria": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 18,
+        "label": "Update 18 / Summerset",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+            "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "master-architect": {
+      "englishName": "Master Architect",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "moondancer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mora-scribes-thesis": {
+      "englishName": "Mora Scribe's Thesis",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 42,
+        "label": "Update 42 / Gold Road",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+            "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+          }
+        ]
+      }
+    },
+    "peace-and-serenity": {
+      "englishName": "Peace and Serenity",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 38,
+        "label": "Update 38 / Necrom",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+            "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "pearlescent-ward": {
+      "englishName": "Pearlescent Ward",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 34,
+        "label": "Update 34 / High Isle",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+            "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "piercing-spray": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "pillagers-profit": {
+      "englishName": "Pillager's Profit",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 34,
+        "label": "Update 34 / High Isle",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+            "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "poisonous-serpent": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "quick-serpent": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "roar-of-alkosh": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "roaring-opportunist": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 26,
+        "label": "Update 26 / Greymoor",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+            "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "saxhleel-champion": {
+      "englishName": "Saxhleel Champion",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 30,
+        "label": "Update 30 / Blackwood",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+            "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "slivers-of-the-null-arca": {
+      "englishName": "Slivers of the Null Arca",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 42,
+        "label": "Update 42 / Gold Road",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+            "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+          }
+        ]
+      }
+    },
+    "stone-talkers-oath": {
+      "englishName": "Stone-Talker's Oath",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 30,
+        "label": "Update 30 / Blackwood",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+            "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "sul-xans-torment": {
+      "englishName": "Sul-Xan's Torment",
+      "update": 30,
+      "label": "Update 30 / Blackwood",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+          "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 30,
+        "label": "Update 30 / Blackwood",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/575323/pc-mac-patch-notes-v7-0-5-blackwood-update-30",
+            "label": "ESO公式：Blackwood & Update 30 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "test-of-resolve": {
+      "englishName": "Test of Resolve",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 38,
+        "label": "Update 38 / Necrom",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+            "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "timeless-blessing": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "tooth-of-lokkestiiz": {
+      "status": "verified",
+      "update": 22,
+      "label": "Update 22 / Elsweyr",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+          "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 22,
+        "label": "Update 22 / Elsweyr",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/474422/pc-mac-patch-notes-v5-0-5-elsweyr-update-22",
+            "label": "ESO公式：Update 22 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "transformative-hope": {
+      "englishName": "Transformative Hope",
+      "update": 38,
+      "label": "Update 38 / Necrom",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+          "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 38,
+        "label": "Update 38 / Necrom",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/635069/pc-mac-patch-notes-v9-0-5-necrom-update-38",
+            "label": "ESO公式：Necrom & Update 38 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "twice-fanged-serpent": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "twilight-remedy": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vestment-of-olorime": {
+      "status": "verified",
+      "update": 18,
+      "label": "Update 18 / Summerset",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+          "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 18,
+        "label": "Update 18 / Summerset",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/413283/pc-mac-patch-notes-v4-0-5-summerset-update-18",
+            "label": "ESO公式：Update 18 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "vicious-serpent": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vrols-command": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 26,
+        "label": "Update 26 / Greymoor",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+            "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "war-machine": {
+      "englishName": "War Machine",
+      "update": 14,
+      "label": "Update 14 / Morrowind",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/345258/pc-mac-patch-notes-v3-0-5-morrowind-amp-update-14",
+          "label": "ESO公式：Morrowind & Update 14 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified"
+    },
+    "whorl-of-the-depths": {
+      "englishName": "Whorl of the Depths",
+      "update": 34,
+      "label": "Update 34 / High Isle",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+          "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 34,
+        "label": "Update 34 / High Isle",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/606776/pc-mac-patch-notes-v8-0-5-high-isle-update-34",
+            "label": "ESO公式：High Isle & Update 34 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "wise-mage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "xoryns-masterpiece": {
+      "englishName": "Xoryn's Masterpiece",
+      "update": 42,
+      "label": "Update 42 / Gold Road",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+          "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+        }
+      ],
+      "status": "verified",
+      "perfected": {
+        "status": "verified",
+        "update": 42,
+        "label": "Update 42 / Gold Road",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/659550/pc-mac-patch-notes-v10-0-5-gold-road-update-42",
+            "label": "ESO公式：PC/Mac v10.0.5 / Gold Road & Update 42（New Item Sets / New Mythic Items）"
+          }
+        ]
+      }
+    },
+    "yandirs-might": {
+      "status": "verified",
+      "update": 26,
+      "label": "Update 26 / Greymoor",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+          "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 26,
+        "label": "Update 26 / Greymoor",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en-gb/discussion/528633/pc-mac-patch-notes-v6-0-5-greymoor-update-26",
+            "label": "ESO公式：Update 26 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "archers-mind": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "caustic-arrow": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "cruel-flurry": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "elemental-succession": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "executioners-blade": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 28,
+        "label": "Update 28 / Markarth",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+            "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "explosive-rebuke": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "footmans-fortune": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "force-overflow": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 28,
+        "label": "Update 28 / Markarth",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+            "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "frenzied-momentum": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 28,
+        "label": "Update 28 / Markarth",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+            "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "gallant-charge": {
+      "englishName": "Gallant Charge",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Launch notes explicitly list base and Perfect versions of this Blackrose Prison set; the launch wording is Perfect, not Perfected.",
+      "perfected": {
+        "status": "verified",
+        "update": 20,
+        "label": "Update 20 / Murkmire",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+            "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "glorious-defender": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "healers-habit": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hex-siphon": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "hunt-leader": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "menders-ward": {
+      "englishName": "Mender's Ward",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Launch notes explicitly list base and Perfect versions of this Blackrose Prison set; the launch wording is Perfect, not Perfected.",
+      "perfected": {
+        "status": "verified",
+        "update": 20,
+        "label": "Update 20 / Murkmire",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+            "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "para-bellum": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "permafrost": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "pestilent-host": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "point-blank-snipe": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 28,
+        "label": "Update 28 / Markarth",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+            "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "precise-regeneration": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "radial-uppercut": {
+      "englishName": "Radial Uppercut",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Launch notes explicitly list base and Perfect versions of this Blackrose Prison set; the launch wording is Perfect, not Perfected.",
+      "perfected": {
+        "status": "verified",
+        "update": 20,
+        "label": "Update 20 / Murkmire",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+            "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "abyssal-brace": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "aegis-caller": {
+      "englishName": "Aegis Caller",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "amber-plasm": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "apocryphal-inspiration": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "arkasiss-genius": {
+      "englishName": "Arkasis's Genius",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "armor-of-truth": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "aspect-of-mazzatun": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "aurorans-thunder": {
+      "englishName": "Auroran's Thunder",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "azureblight-reaper": {
+      "englishName": "Azureblight Reaper",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "banis-torment": {
+      "englishName": "Bani's Torment",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "barkskin": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "black-foundry-steel": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "black-glove-grounding": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Black-Grove Grounding",
+        "existingName": "Black-Glove Grounding",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "5秒内3回被直接ダメージ条件・5m範囲・持続・Grounding効果・再発動間隔および2〜4部位値が一致。"
+      }
+    },
+    "blind-path-induction": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "blood-moon": {
+      "englishName": "Blood Moon",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "blooddrinker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "bone-pirates-tatters": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "brands-of-imperium": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "burning-spellweave": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "caluurions-legacy": {
+      "englishName": "Caluurion's Legacy",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "cinders-of-anthelmir": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "combat-physician": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "crimson-oaths-rive": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "crimson-twilight": {
+      "englishName": "Crimson Twilight",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "crusader": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "curse-of-doylemish": {
+      "englishName": "Curse of Doylemish",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "dagons-dominion": {
+      "englishName": "Dagon's Dominion",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "deeproot-zeal": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "dolorous-arena": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 46,
+        "label": "Update 46 / Seasons of the Worm Cult Part 1",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+            "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "dragons-defilement": {
+      "englishName": "Dragon's Defilement",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "drakes-rush": {
+      "englishName": "Drake's Rush",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "draugr-hulk": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "draugrs-rest": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "draugrkins-grip": {
+      "englishName": "Draugrkin's Grip",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "dreugh-king-slayer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "drozakars-claws": {
+      "englishName": "Dro'Zakar's Claws",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "dunerippers-scales": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "duroks-bane": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ebon-armory": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "elemental-catalyst": {
+      "englishName": "Elemental Catalyst",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "embershield": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "essence-thief": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "flame-blossom": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "fledglings-nest": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "foolkillers-ward": {
+      "englishName": "Foolkiller's Ward",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "frozen-watcher": {
+      "englishName": "Frozen Watcher",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "glacial-guardian": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "gossamer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "grave-guardian": {
+      "englishName": "Grave Guardian",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "grave-inevitability": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "grisly-gourmet": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "gryphons-reprisal": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "hagravens-garden": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hand-of-mephala": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hanus-compassion": {
+      "englishName": "Hanu's Compassion",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "harmony-in-chaos": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 46,
+        "label": "Update 46 / Seasons of the Worm Cult Part 1",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+            "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "haven-of-ursus": {
+      "englishName": "Haven of Ursus",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "heem-jas-retribution": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "heroic-unity": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "hircines-veneer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "hitis-hearth": {
+      "englishName": "Hiti's Hearth",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "hollowfang-thirst": {
+      "englishName": "Hollowfang Thirst",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "icy-conjurer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "ironblood": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "jailbreaker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "jailers-tenacity": {
+      "englishName": "Jailer's Tenacity",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "jerensis-bladestorm": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "jolting-arms": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "jorvulds-guidance": {
+      "englishName": "Jorvuld's Guidance",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "kazpians-cruel-signet": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 46,
+        "label": "Update 46 / Seasons of the Worm Cult Part 1",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+            "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "kinrass-wrath": {
+      "englishName": "Kinras's Wrath",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "knight-errants-mail": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "knightmare": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "kraglens-howl": {
+      "englishName": "Kraglen's Howl",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "lamias-song": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "leeching-plate": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "leviathan": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "light-speaker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "lucillas-windshield": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "lustrous-soulwell": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "magicka-furnace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "maligaligs-maelstrom": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "medusa": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mighty-glacier": {
+      "englishName": "Mighty Glacier",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "moon-hunter": {
+      "englishName": "Moon Hunter",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "netchs-touch": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nikulas-heavy-armor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "nix-hounds-howl": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "noble-duelists-silks": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "noxious-boulder": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "oblivions-edge": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "orpheon-the-tactician": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "overwhelming-surge": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "pangrit-denmother": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "phylacterys-grasp": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "plague-slinger": {
+      "englishName": "Plague Slinger",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "prayer-shawl": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "rage-of-the-ursauk": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "rattlecage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "recovery-convergence": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 46,
+        "label": "Update 46 / Seasons of the Worm Cult Part 1",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+            "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "reflected-fury": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "renalds-resolve": {
+      "englishName": "Renald's Resolve",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "ritemasters-bond": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "runecarvers-blaze": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "rush-of-agony": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "sanctuary": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "savage-werewolf": {
+      "englishName": "Savage Werewolf",
+      "update": 19,
+      "label": "Update 19 / Wolfhunter",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en-gb/discussion/comment/5372955",
+          "label": "ESO公式：Wolfhunter & Update 19 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "scathing-mage": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "scavenging-demise": {
+      "englishName": "Scavenging Demise",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "scorions-feast": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "sergeants-mail": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sheer-venom": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "shroud-of-the-lich": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "silver-rose-vigil": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "sluthrugs-hunger": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "spelunker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spider-cultist-cowl": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spriggans-vigor": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "squall-of-retribution": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "stones-accord": {
+      "status": "verified",
+      "update": 35,
+      "label": "Update 35",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/615315/pc-mac-patch-notes-v8-1-5-lost-depths-dlc-update-35",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 35（新規セット掲載区分）"
+        }
+      ]
+    },
+    "stonehulk-domination": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "storm-master": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "storm-curseds-revenge": {
+      "status": "verified",
+      "update": 33,
+      "label": "Update 33",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/599843/pc-mac-patch-notes-v7-3-5-ascending-tide-dlc-update-33",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 33（新規セット掲載区分）"
+        }
+      ]
+    },
+    "strength-of-the-automaton": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sunderflame": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "sword-dancer": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "talfygs-treachery": {
+      "englishName": "Talfyg's Treachery",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "tarnished-nightmare": {
+      "status": "verified",
+      "update": 41,
+      "label": "Update 41",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/654002/pc-mac-patch-notes-v9-3-5-scions-of-ithelia-dlc-update-41",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 41（新規セット掲載区分）"
+        }
+      ]
+    },
+    "telvanni-enforcer": {
+      "status": "verified",
+      "update": 37,
+      "label": "Update 37",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/629071/pc-mac-patch-notes-v8-3-5",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 37（新規セット掲載区分）"
+        }
+      ]
+    },
+    "the-ice-furnace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "the-worms-raiment": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "thunder-caller": {
+      "status": "verified",
+      "update": 31,
+      "label": "Update 31",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/584299/pc-mac-patch-notes-v7-1-5-waking-flame-update-31/p1",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 31（新規セット掲載区分）"
+        }
+      ]
+    },
+    "titanborn-strength": {
+      "englishName": "Titanborn Strength",
+      "update": 25,
+      "label": "Update 25 / Harrowstorm",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/513128/pc-mac-patch-notes-v5-3-4-harrowstorm-update-25",
+          "label": "ESO公式：Harrowstorm & Update 25 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "tools-of-the-trapmaster": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "toothrow": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "tormentor": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "trappings-of-invigoration": {
+      "englishName": "Trappings of Invigoration",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "treasure-hunter": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "true-sworn-fury": {
+      "englishName": "True-Sworn Fury",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "tzogvins-warband": {
+      "englishName": "Tzogvin's Warband",
+      "update": 21,
+      "label": "Update 21 / Wrathstone",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/460633/pc-mac-patch-notes-v4-3-5-wrathstone-update-21",
+          "label": "ESO公式：Wrathstone & Update 21 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "ulfnors-favor": {
+      "englishName": "Ulfnor's Favor",
+      "update": 17,
+      "label": "Update 17 / Dragon Bones",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/394810/pc-mac-patch-notes-v3-3-5-dragon-bones-update-17",
+          "label": "ESO公式：Dragon Bones & Update 17 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "undaunted-bastion": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "undaunted-infiltrator": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "undaunted-unweaver": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "unleashed-ritualist": {
+      "englishName": "Unleashed Ritualist",
+      "update": 29,
+      "label": "Update 29 / Flames of Ambition",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/564242/pc-mac-patch-notes-v6-3-5-flames-of-ambition-dlc-update-29/p1",
+          "label": "ESO公式：Flames of Ambition & Update 29 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "unleashed-terror": {
+      "englishName": "Unleashed Terror",
+      "update": 27,
+      "label": "Update 27 / Stonethorn",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/542612/",
+          "label": "ESO公式：Stonethorn & Update 27 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "vandorallens-resonance": {
+      "status": "verified",
+      "update": 45,
+      "label": "Update 45",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/674341/pc-mac-patch-notes-v10-3-5-update-45",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 45（新規セット掲載区分）"
+        }
+      ]
+    },
+    "vestments-of-the-warlock": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vipers-sting": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "vykands-soulfury": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "widowmaker": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "xanmeer-spellweaver": {
+      "status": "verified",
+      "update": 47,
+      "label": "Update 47 / Feast of Shadows",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/681998/pc-mac-patch-notes-v11-1-5-update-47",
+          "label": "ESO公式：Update 47 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "zens-redress": {
+      "englishName": "Z'en's Redress",
+      "update": 23,
+      "label": "Update 23 / Scalebreaker",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/488626/pc-mac-patch-notes-v5-1-5-scalebreaker-update-23",
+          "label": "ESO公式：Scalebreaker & Update 23 本番パッチノート（New Item Sets）"
+        }
+      ],
+      "status": "verified"
+    },
+    "rampaging-slash": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "robes-of-destruction-mastery": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "spectral-cloak": {
+      "englishName": "Spectral Cloak",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Launch notes explicitly list base and Perfect versions of this Blackrose Prison set; the launch wording is Perfect, not Perfected.",
+      "perfected": {
+        "status": "verified",
+        "update": 20,
+        "label": "Update 20 / Murkmire",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+            "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "stinging-slashes": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "titanic-cleave": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "virulent-shot": {
+      "englishName": "Virulent Shot",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Launch notes explicitly list base and Perfect versions of this Blackrose Prison set; the launch wording is Perfect, not Perfected.",
+      "perfected": {
+        "status": "verified",
+        "update": 20,
+        "label": "Update 20 / Murkmire",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+            "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "void-bash": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 28,
+        "label": "Update 28 / Markarth",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+            "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "wild-impulse": {
+      "englishName": "Wild Impulse",
+      "update": 20,
+      "label": "Update 20 / Murkmire",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+          "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+        }
+      ],
+      "status": "verified",
+      "verificationNote": "Launch notes explicitly list base and Perfect versions of this Blackrose Prison set; the launch wording is Perfect, not Perfected.",
+      "perfected": {
+        "status": "verified",
+        "update": 20,
+        "label": "Update 20 / Murkmire",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/441713/pc-mac-patch-notes-v4-2-5",
+            "label": "ESO公式：Murkmire & Update 20 本番パッチノート（新規セット一覧）"
+          }
+        ]
+      }
+    },
+    "winterborn": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "wrath-of-elements": {
+      "status": "verified",
+      "update": 28,
+      "label": "Update 28 / Markarth",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+          "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+        }
+      ],
+      "perfected": {
+        "status": "verified",
+        "update": 28,
+        "label": "Update 28 / Markarth",
+        "sources": [
+          {
+            "url": "https://forums.elderscrollsonline.com/en/discussion/550927/pc-mac-patch-notes-v6-2-5-markarth-update-28",
+            "label": "ESO公式：Update 28 本番パッチノート・新規セット"
+          }
+        ]
+      }
+    },
+    "aeries-cry": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ]
+    },
+    "aetheric-lancer": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Aetheric Lance",
+        "existingName": "Aetheric Lancer",
+        "method": "既存effectsと公式初出パッチの固有効果・条件・部位ボーナス照合（所在地による推測なし）",
+        "note": "Burning Lightの30秒内2回条件→5m範囲→Aedric Spearによる槍とSundered・攻撃力300増加、および2〜4部位値が一致。持続時間等に現行記載との差があるため同一性の照合のみで、効果更新には使用しない。"
+      }
+    },
+    "basalt-blooded-warrior": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "beacon-of-oblivion": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ]
+    },
+    "corpseburster": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ]
+    },
+    "gardener-of-seasons": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ],
+      "identityVerification": {
+        "officialName": "Gardener of the Seasons",
+        "method": "既存英名の綴り差・冠詞差と固有効果を照合。公式本番新規区分の同一セットと確認。現行効果の変更には使用しない。"
+      }
+    },
+    "monolith-of-storms": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "nobility-in-decay": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "pyrebrand": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ]
+    },
+    "reawakened-hierophant": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "soulcleaver": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "spattering-disjunction": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ]
+    },
+    "umbral-edge": {
+      "status": "verified",
+      "update": 43,
+      "label": "Update 43",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/664131/pc-mac-patch-notes-v10-1-5-update-43",
+          "label": "ESO公式 PC/Mac Liveパッチノート：Update 43（新規セット掲載区分）"
+        }
+      ]
+    },
+    "wrathsun": {
+      "status": "verified",
+      "update": 40,
+      "label": "Update 40 / Infinite Archive",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/645725/pc-mac-patch-notes-v9-2-5-update-40",
+          "label": "ESO公式：Update 40 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "arms-of-infernace": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "arms-of-the-ancestors": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "broken-soul": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "prophets": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "relics-of-the-physician-ansur": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "relics-of-the-rebellion": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "the-destruction-suite": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "treasures-of-the-earthforge": {
+      "status": "unknown",
+      "update": null,
+      "label": "追加時期未確認",
+      "sources": []
+    },
+    "mad-gods-dancing-shoes": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "monomyth-reforged": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "rakkhats-voidmantle": {
+      "status": "verified",
+      "update": 46,
+      "label": "Update 46 / Seasons of the Worm Cult Part 1",
+      "sources": [
+        {
+          "url": "https://forums.elderscrollsonline.com/en/discussion/678310/pc-mac-patch-notes-v11-0-5-update-46",
+          "label": "ESO公式：Update 46 本番パッチノート・新規セット"
+        }
+      ]
+    },
+    "mylenne-moon-caller": {
+      "status": "verified",
+      "update": 51,
+      "label": "Update 51",
+      "sources": [
+        {
+          "url": "https://www.elderscrollsonline.com/en-us/news/post/70379",
+          "label": "ESO公式：Update 51 本番パッチノート・新規セット"
+        }
+      ],
+      "note": "公式本文の新セット箇所はMylene表記。同じ公式本文の対応する頭部・肩・実績はMylenne Moon-Caller表記。 Solo DungeonsはUpdate 51配信日ではなく同Update期間内の後日解放予定と公式に明記。導入日そのものは未設定。"
+    },
+    "tarcyr": {
+      "status": "verified",
+      "update": 51,
+      "label": "Update 51",
+      "sources": [
+        {
+          "url": "https://www.elderscrollsonline.com/en-us/news/post/70379",
+          "label": "ESO公式：Update 51 本番パッチノート・新規セット"
+        }
+      ],
+      "note": "Solo DungeonsはUpdate 51配信日ではなく同Update期間内の後日解放予定と公式に明記。導入日そのものは未設定。"
+    }
+  }
+}

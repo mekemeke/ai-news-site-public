@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="./style.css?v=20261027-eso-filters1">
   <link rel="stylesheet" href="./eso-quality.css?v=20261027-inline1">
   <link rel="stylesheet" href="./eso-effect-filters.css?v=20261028-dual1">
-  <script src="./eso.js?v=20261028-dual1" defer></script>
+  <link rel="stylesheet" href="./eso-set-browser.css?v=20261101-1">
+  <script src="./eso.js?v=20261101-browser1" defer></script>
   <link rel="stylesheet" href="./eso-theme.css?v=20261027-dark1">
   <script src="./eso-theme.js?v=20261027-dark1" defer></script>
 </head>
@@ -43,10 +44,13 @@
       </section>
       <p><a href="#">すべての収録セットを見る</a></p>
       <div class="set-filters">
+        <label>追加アップデート<select id="set-update" disabled><option value="">すべてのアップデート</option></select></label>
+        <label>表示順<select id="set-sort" disabled><option value="">標準</option><option value="newest">追加が新しい順</option></select></label>
         <label>セット検索<input id="set-search" type="search" placeholder="日本語名・英名・入手先で探す" disabled></label>
         <label>分類<select id="set-category" disabled><option value="">すべての分類</option></select></label>
         <button id="set-reset" type="button" disabled>条件をクリア</button>
       </div>
+      <p id="set-release-status" class="source" role="status"></p>
       <p id="set-effect-selection" class="database-note" role="status"></p>
       <p id="set-count" role="status"></p>
       <div id="set-notice" role="status">データを読み込み中…</div>
