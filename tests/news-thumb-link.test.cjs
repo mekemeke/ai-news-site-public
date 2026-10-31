@@ -36,8 +36,9 @@ test('titles are escaped inside the thumbnail label',async()=>{
 });
 test('cache numbers updated; CSP and noindex unchanged',()=>{
  const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
- assert.match(html,/style\.css\?v=20261029-thumb-link1/);assert.match(html,/app\.js\?v=20261029-thumb-link1/);
+ assert.match(html,/style\.css\?v=20261031-pagination-top1/);assert.match(html,/app\.js\?v=20261031-pagination-top1/);
  assert.ok(fs.readFileSync(path.join(root,'app.js'),'utf8').includes("articles.json?v=20261029-thumb-link1"));
  assert.match(html,/name="robots" content="noindex"/);
  assert.match(html,/script-src 'self' https:\/\/platform.twitter.com https:\/\/www.threads.com; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-src https:\/\/www.youtube-nocookie.com https:\/\/platform.twitter.com https:\/\/www.threads.com;/);
 });
+

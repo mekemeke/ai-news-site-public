@@ -10,8 +10,8 @@
   <meta name="twitter:widgets:csp" content="on">
   <meta name="twitter:dnt" content="on">
   <title>AIニュース | 仮公開プレビュー</title>
-  <link rel="stylesheet" href="./style.css?v=20261029-thumb-link1">
-  <script src="./app.js?v=20261029-thumb-link1" defer></script>
+  <link rel="stylesheet" href="./style.css?v=20261031-pagination-top1">
+  <script src="./app.js?v=20261031-pagination-top1" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">本文へ</a>
@@ -31,10 +31,15 @@
       <div class="content-grid"><section aria-labelledby="list-title">
         <div class="section-head"><h1 id="list-title" tabindex="-1">ニュース一覧</h1><span id="count" aria-live="polite"></span></div>
         <div id="notice" role="status">記事を読み込み中…</div>
+        <nav id="pagination-top" class="news-pagination" aria-label="記事一覧のページ切り替え（上部）" hidden>
+          <button id="page-prev-top" type="button" aria-controls="articles">← 前へ</button>
+          <span id="page-status-top" class="page-status"></span>
+          <button id="page-next-top" type="button" aria-controls="articles">次へ →</button>
+        </nav>
         <div id="articles"></div>
-        <nav id="pagination" class="news-pagination" aria-label="記事一覧のページ切り替え" hidden>
+        <nav id="pagination" class="news-pagination" aria-label="記事一覧のページ切り替え（下部）" hidden>
           <button id="page-prev" type="button" aria-controls="articles">← 前へ</button>
-          <span id="page-status" role="status" aria-live="polite" aria-atomic="true"></span>
+          <span id="page-status" class="page-status" role="status" aria-live="polite" aria-atomic="true"></span>
           <button id="page-next" type="button" aria-controls="articles">次へ →</button>
         </nav>
         <p class="end-note" id="end-note" hidden>記事はここまでです。</p>
@@ -46,5 +51,6 @@
   <footer><small>AIニュース · 仮公開プレビュー · 閲覧専用</small></footer>
 </body>
 </html>
+
 
 

@@ -175,3 +175,8 @@ AI・CG・ESOのニュース／小ネタまとめでは、記事全体に一つ�
 キャッシュ番号: `style.css` / `app.js` / `articles.json` を `20261029-thumb-link1` に更新（`index.html` のみ。ESOページの `style.css` 番号は変更なし）。
 
 検証: `node --test tests/news-thumb-link.test.cjs`（全カードのサムネイルとタイトルのリンク先一致、ラベル、エスケープ、キャッシュ番号、CSP・noindex）。
+
+
+## ニュース一覧の上部ページ操作（2026-10-31）
+ニュース一覧の上部にも「前へ／次へ」と現在ページを表示する。上下の操作は同じページ状態に同期し、15件表示・絞り込み時の1ページ目への復帰・記事詳細から戻った際のページとスクロール位置の保持は従来どおり。1ページだけの場合は上下とも非表示。読み上げ通知は下部の既存statusだけにし、重複通知を避ける。記事データ・ESO画面・noindex・CSPは変更しない。
+検証: node --test tests/news-pagination.test.cjs tests/news-display.test.cjs tests/news-reading.test.cjs tests/news-thumb-link.test.cjs tests/threads-embed.test.cjs tests/youtube-blocks.test.cjs。

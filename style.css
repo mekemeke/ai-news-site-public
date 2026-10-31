@@ -25,7 +25,7 @@
 
 
 /* News list only: preserve ESO layouts and keep controls usable on phones. */
-.news-pagination{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0}.news-pagination button{flex:0 0 auto}.news-pagination [role=status]{font-size:13px;white-space:nowrap}#list-title{scroll-margin-top:16px}
+.news-pagination{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0}.news-pagination button{flex:0 0 auto}.news-pagination .page-status{font-size:13px;white-space:nowrap}#list-title{scroll-margin-top:16px}
 
 
 /* Official Threads embeds: the original-post link remains outside the widget. */
@@ -39,3 +39,4 @@
 .article-body .glossary-info{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:24px;margin:0 2px;border:1px solid var(--line);border-radius:50%;font-size:12px;font-weight:800;line-height:1;vertical-align:middle;cursor:pointer;background:var(--chip)}
 .news-glossary-popup{position:fixed;z-index:1000;width:320px;padding:12px 16px;border:1px solid var(--green);border-radius:8px;background:var(--paper);color:var(--ink);box-shadow:0 5px 20px #0003;font-size:14px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;overflow-y:auto}
 @media(pointer:coarse){.article-body .glossary-trigger{padding:2px 1px}.article-body .glossary-info{min-width:32px;min-height:32px}}
+

@@ -53,3 +53,34 @@ test('skip hash after leaving detail does not restore stale scroll',async()=>{
   h.click('page-next');const scrollCalls=h.scrolls.length;
   h.location.hash='#main';h.api.route();assert.equal(h.scrolls.length,scrollCalls);assert.equal(h.node('page-status').textContent,'3 / 3 ページ');
 });
+
+
+function assertSynced(h) {
+  for (const id of ['pagination','page-status','page-prev','page-next']) {
+    for (const key of ['hidden','textContent','disabled']) assert.equal(h.node(id+'-top')[key],h.node(id)[key],`${id}.${key}`);
+  }
+}
+test('upper and lower controls share state across boundaries, filters and detail history',async()=>{
+  const h=harness(33); await h.api.loadArticles(); assertSynced(h);
+  h.click('page-prev-top'); assert.equal(h.node('page-status').textContent,'1 / 3 ページ'); assertSynced(h);
+  h.click('page-next-top'); assert.equal(h.cards(),15); assertSynced(h);
+  h.click('page-next'); assert.equal(h.cards(),3); assertSynced(h);
+  h.click('page-next-top'); assert.equal(h.cards(),3); assertSynced(h);
+  h.location.hash='#article/a1'; h.api.route(); h.location.hash=''; h.api.route(); assertSynced(h);
+  h.location.hash='#article/a1'; h.api.route(); h.location.hash=''; h.api.route(); assertSynced(h);
+  h.click('page-prev-top'); assert.equal(h.node('page-status').textContent,'2 / 3 ページ'); assertSynced(h);
+  h.node('search').value='Item 32'; h.node('search').events.input(); assert.equal(h.node('pagination-top').hidden,true); assertSynced(h);
+  h.node('search').value='no-match'; h.node('search').events.input(); assert.equal(h.cards(),0); assertSynced(h);
+  h.node('search').value=''; h.node('search').events.input(); h.click('page-next-top');
+  h.node('date').value='2026-10-26'; h.node('date').events.change(); assert.equal(h.node('page-status-top').textContent,'1 / 2 ページ'); assertSynced(h);
+  h.node('date').value=''; h.node('date').events.change(); h.click('page-next-top');
+  h.node('categories').events.click({target:{closest:()=>({dataset:{category:'ai'}})}}); assert.equal(h.node('page-status-top').textContent,'1 / 2 ページ'); assertSynced(h);
+});
+test('upper controls precede articles, lower remain, unique IDs and one live page status',()=>{
+  const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]); assert.equal(ids.length,new Set(ids).size);
+  assert.ok(html.indexOf('id="pagination-top"')<html.indexOf('id="articles"')); assert.ok(html.indexOf('id="articles"')<html.indexOf('id="pagination"'));
+  for (const dir of ['prev','next']) assert.match(html,new RegExp(`id="page-${dir}-top" type="button" aria-controls="articles"`));
+  assert.match(html,/<span id="page-status-top" class="page-status"><\/span>/);
+  assert.match(html,/<span id="page-status" class="page-status" role="status" aria-live="polite" aria-atomic="true">/);
+});

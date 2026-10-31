@@ -377,10 +377,12 @@
     const visible = filtered.slice(start, start + PAGE_SIZE);
     $('articles').innerHTML = visible.map(article => `<article class="news-card"><a class="news-card-thumb" href="#article/${encodeURIComponent(article.id)}" aria-label="${escapeHTML(article.title)}（記事を開く）">${thumbnail(article)}</a><div class="news-card-copy">${metadata(article)}<h2><a href="#article/${encodeURIComponent(article.id)}">${escapeHTML(article.title)}</a>${newBadge(article)}</h2><p>${escapeHTML(article.summary)}</p><div class="source">${article.sources.map(sourceLink).join(' · ')}</div></div></article>`).join('') || '<div class="empty">該当する記事はない。検索語・ジャンル・掲載日付を変更すると、別の条件で探せる。</div>';
     $('count').textContent = `${filtered.length} / ${articles.length} 件の記事${filtered.length ? `（${start + 1}〜${start + visible.length}件目）` : ''}`;
-    $('pagination').hidden = pageCount <= 1;
-    $('page-status').textContent = `${page} / ${pageCount} ページ`;
-    $('page-prev').disabled = page <= 1;
-    $('page-next').disabled = page >= pageCount;
+    for (const suffix of ['', '-top']) {
+      $('pagination' + suffix).hidden = pageCount <= 1;
+      $('page-status' + suffix).textContent = `${page} / ${pageCount} ページ`;
+      $('page-prev' + suffix).disabled = page <= 1;
+      $('page-next' + suffix).disabled = page >= pageCount;
+    }
     $('end-note').hidden = filtered.length === 0 || page < pageCount;
   }
   function renderBlocks(blocks, sources = []) {
@@ -451,8 +453,10 @@
     $('list-title').focus({preventScroll: true});
     $('list-title').scrollIntoView({block: 'start'});
   }
-  $('page-prev').addEventListener('click', () => changePage(-1));
-  $('page-next').addEventListener('click', () => changePage(1));
+  for (const suffix of ['', '-top']) {
+    $('page-prev' + suffix).addEventListener('click', () => changePage(-1));
+    $('page-next' + suffix).addEventListener('click', () => changePage(1));
+  }
   window.addEventListener('hashchange', route);
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
@@ -484,5 +488,6 @@
   }
   loadArticles();
 })();
+
 
 
