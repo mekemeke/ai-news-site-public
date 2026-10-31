@@ -2,26 +2,26 @@
   "schema_version": 1,
   "mode": "analyze",
   "genre": "ESO",
-  "created_at": "2026-10-31T03:01:59.745797+00:00",
-  "run_id": "41162564338",
+  "created_at": "2026-10-31T03:04:04.172309+00:00",
+  "run_id": "41162720128",
   "videos": [
     {
-      "id": "KqHvxFBKvnk",
-      "url": "https://www.youtube.com/watch?v=KqHvxFBKvnk",
-      "title": "MORE Tank and Gear Changes in the Works!",
-      "channel": "Skinny Cheeks",
-      "description": "Thanks for watching my video covering the Week 1 Summary for the Update 52 PTS Patch Notes for the Elder Scrolls Online!\n\nhttps://forums.elderscrollsonline.com/en/discussion/700671/update-52-pts-week-1-summary\n\nBuilds are updated for U51 at https://www.skinnycheeks.gg!\n\nMY LINKS\n\n► Website - https://www.skinnycheeks.gg\n► Support Via Patreon - https://www.patreon.com/skinnycheeks\n► Discord - https://discord.gg/dpsnerds\n► Twitch - http://www.twitch.tv/skinnycheeks\n► Twitter - http://www.twitter.com/skinnycheeks\n► Instagram - http://www.instagram.com/skinnycheeks\n► Soundcloud - http://www.soundcloud.com/skinnycheeks\n\nGREAT RESOURCES\n\n► Status Effect Calc - https://www.skinnycheeks.gg/status-effect-calculator\n► Damage Increase Calc - https://www.skinnycheeks.gg/simple-damage-calculator\n► ESO Add-Ons Currently Used - https://tinyurl.com/y8zhz4m3\n► UESP - https://en.uesp.net/wiki/Main_Page\n► ESO-Hub - https://eso-hub.com/\n► ESO Gear Information - http://www.eso-sets.com\n► ESO Skill Information - http://www.eso-skillbook.com\n\n#elderscrollsonline #mmorpg #mmonews",
-      "published_at": "2026-10-30T17:56:07Z",
-      "duration_seconds": 769
+      "id": "SxmQc7d_rR8",
+      "url": "https://www.youtube.com/watch?v=SxmQc7d_rR8",
+      "title": "ESO Update 52 PTS Patch Notes - AoE Taunts, Tank Damage & Templar Changes",
+      "channel": "Hyperioxes",
+      "description": "ESO Update 52 PTS Patch Notes breakdown. Update 52 brings AoE taunts, damage bonuses for tanks, a lot of Templar changes, a new PvP zone called Jerall Pass, and a new World Event called Rimegales.\n\nI also found several changes that ZOS didn't mention in the patch notes, such as the Nightblade Cowardice changes. I'm showing the full live and PTS tooltips, so you can see exactly what changed.\n\nWritten breakdown - https://hyperioxes.com/eso/news/update-52-pts-patch-notes\nTank damage changes pushed to the limit - https://youtu.be/MWt-ytgfo0Q\n\n=============  Timestamps =============\n\n0:00 Intro\n0:31 General Combat\n1:13 Class Changes\n4:55 One Hand and Shield & Heavy Armor\n7:28 Champion Points\n7:48 Item Traits\n8:14 Item Sets\n11:24 PvP & Jerall Pass\n13:18 Rimegales\n13:51 Housing\n14:36 Player Experience\n15:21 Base Game Fixes\n15:46 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-10-30T19:20:41Z",
+      "duration_seconds": 969
     }
   ],
   "usage": {
-    "total_input_tokens": 69959,
-    "total_output_tokens": 78,
+    "total_input_tokens": 88238,
+    "total_output_tokens": 88,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "The video shows a player reviewing the Update 52 PTS Week 1 Summary for The Elder Scrolls Online. The speaker discusses various changes including ability interactions, tank damage improvements, and templar adjustments. He also covers companion customization and Jerall Pass updates. The video provides insights into the developers' reasoning behind these changes and highlights areas of concern.",
+    "summary": "動画では『The Elder Scrolls Online』のアップデート52のPTSパッチノートについて詳しく解説されています。新しいPvPゾーンや新ワールドイベント、クラスや装備のバランス調整が含まれています。全体として、ゲームプレイの改善や新要素の追加が多くのバランス調整と共に行われています。視聴者にはアップデート52に対する感想をコメント欄に残すよう呼びかけています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
