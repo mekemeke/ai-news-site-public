@@ -1,43 +1,28 @@
 {
   "schema_version": 1,
-  "mode": "search",
-  "genre": "ESO",
-  "created_at": "2026-11-01T01:12:19.835687+00:00",
-  "run_id": "41260077339",
+  "mode": "analyze",
+  "genre": "AI",
+  "created_at": "2026-11-01T01:13:01.387500+00:00",
+  "run_id": "41260126263",
   "videos": [
     {
-      "id": "UOppic_tWtA",
-      "url": "https://www.youtube.com/watch?v=UOppic_tWtA",
-      "title": "Da kommen die Ziele | Material Farm",
-      "channel": "Makka ESO",
-      "description": "",
-      "published_at": "2026-10-31T21:54:30Z",
-      "duration_seconds": 2036
-    },
-    {
-      "id": "gv-qze9dw1o",
-      "url": "https://www.youtube.com/watch?v=gv-qze9dw1o",
-      "title": "Mechaniken haben Prio | Verlies Run",
-      "channel": "Makka ESO",
-      "description": "",
-      "published_at": "2026-10-31T20:27:47Z",
-      "duration_seconds": 953
-    },
-    {
-      "id": "G6eXSfbwj4s",
-      "url": "https://www.youtube.com/watch?v=G6eXSfbwj4s",
-      "title": "More New Furniture previews!🔮 Update 52 🔮 ESO 2026/2027 #ESO",
-      "channel": "Hullo! It's Icy ^_^",
-      "description": "OMG!!! At last!\n\n🔮https://www.elderscrollsonline.com/news/post/70503\n_________________________________________________________________\nHullo, it's Icy! ^_^\n\nHello and welcome! It's lovely to have you here ^_^ Please do stay and say hi!\n\nI've been a gamer since I was a wee little girl, playing on my family's Commodore64. I graduated to an early PC (with four whole gig of ram!) and I was a PC gamer from then on.\n\nI believe that gaming is more than just a hobby; it's somewhere that everyone can build a place, just for themselves, and I'd like to share the place I've built with you. ^_^\n\nI love playing The Elder Scrolls Online (especially veteran Solo Arenas and housing), and I'm a member of the official ESO Stream Team (which means I have giveaways, thanks to Zenimax Online and Bethesda ANZ). \n\nThank you for joining me, and I'll see you next time. ^_^\n\n💜 Icy 💜\n_________________________________________________________________\nFIND ME\n❄ Sydney, Australia\n❄ Twitch: https://twitch.tv/IcyIC (Live 3-4 days a week, 6.4K+ follows. Come say hello!)\n❄ Stream Schedule: https://www.twitch.tv/IcyIC/schedule\n❄ ESO Stream Team: https://www.elderscrollsonline.com/en-us/streamers\n❄ Site: https://www.IndividualChic.com https://www.HulloItsIcy.com\n❄ YouTube: https://youtube.com/HulloItsIcy https://youtube.com/@HulloItsIcySews \n❄ Instagram: https://instagram.com/HulloItsIcy \n❄ Mastodon: https://mstdn.games/@HulloItsIcy\n❄ Threads: https://threads.net/HulloItsIcy\n❄ BlueSky: https://bsky.app/profile/hulloitsicy.com\n\n#ESO #ElderScrolsOnline",
-      "published_at": "2026-10-31T18:00:31Z",
-      "duration_seconds": 879
+      "id": "_9R7QOhJh-o",
+      "url": "https://www.youtube.com/watch?v=_9R7QOhJh-o",
+      "title": "Glasses That Make You Telepathic",
+      "channel": "Matt Wolfe",
+      "description": "Sharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #AITools #ArtificialIntelligence",
+      "published_at": "2026-10-31T18:16:57Z",
+      "duration_seconds": 76
     }
   ],
-  "window": {
-    "start": "2026-10-31T15:00:00Z",
-    "end": "2026-11-01T01:12:19.835687Z",
-    "timezone": "Asia/Tokyo"
+  "usage": {
+    "total_input_tokens": 6903,
+    "total_output_tokens": 91,
+    "total_thought_tokens": 0
   },
-  "editor_reviewed": true,
+  "analysis": {
+    "summary": "この動画では、AIがユーザーの口やあごの微小な動きを読み取り、タイピングに変換するメガネを紹介しています。このメガネを使うことで、声を出さずにAIへ指示を出したり、テレパシーのように周囲に気づかれずに会話したりすることが可能になります。スタートアップによって開発されたこの革新的な技術は、将来のコミュニケーションツールとして注目を集めています。",
+    "model": "gemini-3.5-flash-lite"
+  },
   "api_attempts": 2
 }
