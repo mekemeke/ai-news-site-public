@@ -2,26 +2,26 @@
   "schema_version": 1,
   "mode": "analyze",
   "genre": "ESO",
-  "created_at": "2026-11-02T01:20:41.496284+00:00",
-  "run_id": "41371986907",
+  "created_at": "2026-11-02T01:22:42.922570+00:00",
+  "run_id": "41372168408",
   "videos": [
     {
-      "id": "f_p8IWQYGkA",
-      "url": "https://www.youtube.com/watch?v=f_p8IWQYGkA",
-      "title": "Jerall Pass PvP Zone Explained! – ESO Update 52!",
-      "channel": "ArzyeL Gaming",
-      "description": "Follow me on Twitch: https://www.twitch.tv/arzyel_gaming\nMusic by Epidemic Sound! Try it for free: https://share.epidemicsound.com/vy3jpw\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nLinktree: https://linktr.ee/arzyel\nIf you like the video please consider buying me a Coffee!\nhttps://www.buymeacoffee.com/ArzyeL\n\nJerall Pass is a new PVP Zone in ESO Update 52!\nJerall Pass: https://arzyelbuilds.com/eso-jerall-pass/\nESO Update 52: https://arzyelbuilds.com/eso-update-52/\n\nSoulframe Builds: https://arzyelbuilds.com/soulframe-builds/\nESO Best Subclassing Builds: https://arzyelbuilds.com/eso-subclassing-builds/\nESO Best Pure Class Builds: https://arzyelbuilds.com/eso-pure-class-builds/\nFarever Builds: https://arzyelbuilds.com/farever-builds/\nThrone and Liberty Builds: https://arzyelbuilds.com/throne-and-liberty-builds/\n\nFollow me on Twitch: https://www.twitch.tv/arzyel_gaming\nSubscribe to my Newsletter: https://arzyelbuilds.com/subscribe-to-arzyelbuilds/\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nCheck my Linktree: https://linktr.ee/arzyel\nBuilds & Guides: https://arzyelbuilds.com/\n#arzyelbuilds #esobuilds #elderscrollsonline",
-      "published_at": "2026-11-01T17:47:30Z",
-      "duration_seconds": 149
+      "id": "44yJe9H1xV8",
+      "url": "https://www.youtube.com/watch?v=44yJe9H1xV8",
+      "title": "Pure Class Heavy Attack Nightblade Solo Build | ESO Update 51",
+      "channel": "Hyperioxes",
+      "description": "Pure Class Heavy Attack Nightblade Solo Build for ESO Update 51. It deals the highest damage out of all Heavy Attack builds, while still having great survivability and being very easy to play.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 67.8k DPS on the 6 million dummy.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/heavy-attack-nightblade-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/Ka8L8iEHYXY\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/39xAl8dKF2g\nLog - https://www.esologs.com/reports/4aAQBpLk6jfvhPct\n\n67.8k DPS Parse\nRecording - https://youtu.be/0DIp0xKbSvk\n\n=============  Timestamps =============\n\n0:00 Intro\n0:22 Skill Setups\n3:44 Situational Skills\n4:56 Final Setups\n5:17 Rotation\n5:48 Passives\n6:06 Vampirism\n6:41 Gear\n7:11 Champion Points\n7:49 Class Mastery\n8:23 Race\n8:43 Mundus\n9:00 Attributes\n9:26 Food\n10:11 Potions\n10:35 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-11-01T18:30:29Z",
+      "duration_seconds": 667
     }
   ],
   "usage": {
-    "total_input_tokens": 13543,
-    "total_output_tokens": 110,
+    "total_input_tokens": 60683,
+    "total_output_tokens": 84,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "日本語によるビデオの概要：ビデオでは、エルダー・スクロールズ・オンライン（ESO）アップデート52の新要素である「ジェラル・パス（Jerall Pass）」という3陣営によるPvPゾーンについて紹介しています。新ゾーンではシロディールや帝都の要素を取り入れつつ、ジェラル・マーク（Jerall Marks）などの新通貨やNPCとの戦闘、新アイテムの購入、そして強力な「パイア・ロード」をテイムするゲームモードなどが楽しめます。",
+    "summary": "Elder Scrolls Onlineでソロプレイを好むプレイヤー向けに、アップデート51に向けた強力なナイトブレイドビルドを解説しています。様々なスキルや装備の選択肢、チャンピオンポイントの割り振り、戦闘時のローテーションについて詳しく紹介しています。動画では、敵の攻撃への耐久性と火力を両立させるための戦略的なアドバイスも提供されています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
