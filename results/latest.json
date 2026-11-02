@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "ESO",
-  "created_at": "2026-11-02T01:22:42.922570+00:00",
-  "run_id": "41372168408",
+  "genre": "3DCG",
+  "created_at": "2026-11-02T01:24:23.811461+00:00",
+  "run_id": "41372310016",
   "videos": [
     {
-      "id": "44yJe9H1xV8",
-      "url": "https://www.youtube.com/watch?v=44yJe9H1xV8",
-      "title": "Pure Class Heavy Attack Nightblade Solo Build | ESO Update 51",
-      "channel": "Hyperioxes",
-      "description": "Pure Class Heavy Attack Nightblade Solo Build for ESO Update 51. It deals the highest damage out of all Heavy Attack builds, while still having great survivability and being very easy to play.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 67.8k DPS on the 6 million dummy.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/heavy-attack-nightblade-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/Ka8L8iEHYXY\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/39xAl8dKF2g\nLog - https://www.esologs.com/reports/4aAQBpLk6jfvhPct\n\n67.8k DPS Parse\nRecording - https://youtu.be/0DIp0xKbSvk\n\n=============  Timestamps =============\n\n0:00 Intro\n0:22 Skill Setups\n3:44 Situational Skills\n4:56 Final Setups\n5:17 Rotation\n5:48 Passives\n6:06 Vampirism\n6:41 Gear\n7:11 Champion Points\n7:49 Class Mastery\n8:23 Race\n8:43 Mundus\n9:00 Attributes\n9:26 Food\n10:11 Potions\n10:35 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
-      "published_at": "2026-11-01T18:30:29Z",
-      "duration_seconds": 667
+      "id": "WkJSZWy0EW4",
+      "url": "https://www.youtube.com/watch?v=WkJSZWy0EW4",
+      "title": "The Ring | 3D Product Animation | Blender 5.1",
+      "channel": "Hannan Ali",
+      "description": "3D Product Animation of a diamond cluster ring (non-commercial).\nComment below what you think and I'll be back with some more cool stuff soon! Your support is really appreciated!\n\nProduct: Diamond Cluster Ring\nType: Full CGI\nSoftware: Blender 3D & Davinci Resolve Studio\n\nFollow me:\nBehance: https://www.behance.net/imhannanali\nArtStation: https://www.artstation.com/imhannanali\nInstagram: https://www.instagram.com/imhannan.ali  \n\nModelling, Texturing, Lighting, Camera, Animations, Simulations, Rendering & Compositing.\n______________________________\nMusic: Bunker Hillr\nArtist: https://pixabay.com/users/saavane-32312792/\nLink:  https://pixabay.com/music/upbeat-bunker-hill-302922/ \n\n#blender #blender3d #3danimation #motion #ring #DiamondRing #motiondesign #3dmotion #GoldRing",
+      "published_at": "2026-10-19T12:16:27Z",
+      "duration_seconds": 69
     }
   ],
   "usage": {
-    "total_input_tokens": 60683,
-    "total_output_tokens": 84,
+    "total_input_tokens": 6257,
+    "total_output_tokens": 60,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "Elder Scrolls Onlineでソロプレイを好むプレイヤー向けに、アップデート51に向けた強力なナイトブレイドビルドを解説しています。様々なスキルや装備の選択肢、チャンピオンポイントの割り振り、戦闘時のローテーションについて詳しく紹介しています。動画では、敵の攻撃への耐久性と火力を両立させるための戦略的なアドバイスも提供されています。",
+    "summary": "金とダイアモンドの輝きを表現した動画です。岩石からゴールドが抽出される様子が映し出されます。無数のダイアモンドが画面に現れます。最後に美しいダイアモンドの指輪が完成します。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
