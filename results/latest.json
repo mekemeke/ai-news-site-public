@@ -1,15 +1,28 @@
 {
   "schema_version": 1,
-  "mode": "search",
-  "genre": "terrain",
-  "created_at": "2026-11-02T01:17:08.634862+00:00",
-  "run_id": "41371659817",
-  "videos": [],
-  "window": {
-    "start": "2026-11-01T15:00:00Z",
-    "end": "2026-11-02T01:17:08.634862Z",
-    "timezone": "Asia/Tokyo"
+  "mode": "analyze",
+  "genre": "ESO",
+  "created_at": "2026-11-02T01:20:41.496284+00:00",
+  "run_id": "41371986907",
+  "videos": [
+    {
+      "id": "f_p8IWQYGkA",
+      "url": "https://www.youtube.com/watch?v=f_p8IWQYGkA",
+      "title": "Jerall Pass PvP Zone Explained! – ESO Update 52!",
+      "channel": "ArzyeL Gaming",
+      "description": "Follow me on Twitch: https://www.twitch.tv/arzyel_gaming\nMusic by Epidemic Sound! Try it for free: https://share.epidemicsound.com/vy3jpw\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nLinktree: https://linktr.ee/arzyel\nIf you like the video please consider buying me a Coffee!\nhttps://www.buymeacoffee.com/ArzyeL\n\nJerall Pass is a new PVP Zone in ESO Update 52!\nJerall Pass: https://arzyelbuilds.com/eso-jerall-pass/\nESO Update 52: https://arzyelbuilds.com/eso-update-52/\n\nSoulframe Builds: https://arzyelbuilds.com/soulframe-builds/\nESO Best Subclassing Builds: https://arzyelbuilds.com/eso-subclassing-builds/\nESO Best Pure Class Builds: https://arzyelbuilds.com/eso-pure-class-builds/\nFarever Builds: https://arzyelbuilds.com/farever-builds/\nThrone and Liberty Builds: https://arzyelbuilds.com/throne-and-liberty-builds/\n\nFollow me on Twitch: https://www.twitch.tv/arzyel_gaming\nSubscribe to my Newsletter: https://arzyelbuilds.com/subscribe-to-arzyelbuilds/\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nCheck my Linktree: https://linktr.ee/arzyel\nBuilds & Guides: https://arzyelbuilds.com/\n#arzyelbuilds #esobuilds #elderscrollsonline",
+      "published_at": "2026-11-01T17:47:30Z",
+      "duration_seconds": 149
+    }
+  ],
+  "usage": {
+    "total_input_tokens": 13543,
+    "total_output_tokens": 110,
+    "total_thought_tokens": 0
   },
-  "editor_reviewed": true,
-  "api_attempts": 1
+  "analysis": {
+    "summary": "日本語によるビデオの概要：ビデオでは、エルダー・スクロールズ・オンライン（ESO）アップデート52の新要素である「ジェラル・パス（Jerall Pass）」という3陣営によるPvPゾーンについて紹介しています。新ゾーンではシロディールや帝都の要素を取り入れつつ、ジェラル・マーク（Jerall Marks）などの新通貨やNPCとの戦闘、新アイテムの購入、そして強力な「パイア・ロード」をテイムするゲームモードなどが楽しめます。",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "api_attempts": 2
 }
