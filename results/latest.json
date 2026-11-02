@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "3DCG",
-  "created_at": "2026-11-02T01:24:23.811461+00:00",
-  "run_id": "41372310016",
+  "genre": "ESO",
+  "created_at": "2026-11-02T01:26:35.901226+00:00",
+  "run_id": "41372501888",
   "videos": [
     {
-      "id": "WkJSZWy0EW4",
-      "url": "https://www.youtube.com/watch?v=WkJSZWy0EW4",
-      "title": "The Ring | 3D Product Animation | Blender 5.1",
-      "channel": "Hannan Ali",
-      "description": "3D Product Animation of a diamond cluster ring (non-commercial).\nComment below what you think and I'll be back with some more cool stuff soon! Your support is really appreciated!\n\nProduct: Diamond Cluster Ring\nType: Full CGI\nSoftware: Blender 3D & Davinci Resolve Studio\n\nFollow me:\nBehance: https://www.behance.net/imhannanali\nArtStation: https://www.artstation.com/imhannanali\nInstagram: https://www.instagram.com/imhannan.ali  \n\nModelling, Texturing, Lighting, Camera, Animations, Simulations, Rendering & Compositing.\n______________________________\nMusic: Bunker Hillr\nArtist: https://pixabay.com/users/saavane-32312792/\nLink:  https://pixabay.com/music/upbeat-bunker-hill-302922/ \n\n#blender #blender3d #3danimation #motion #ring #DiamondRing #motiondesign #3dmotion #GoldRing",
-      "published_at": "2026-10-19T12:16:27Z",
-      "duration_seconds": 69
+      "id": "NPaTFRWygk4",
+      "url": "https://www.youtube.com/watch?v=NPaTFRWygk4",
+      "title": "ESO All Events and New Things Coming In November 2026",
+      "channel": "Jakeclips",
+      "description": "Game Worker Hardship Fund: Hardship Fund: https://uvw-cwa.org/hardship-fund-2026\nBe Heard here: https://feedbackportal.microsoft.com/feedback/idea/69b8ec0b-7479-f111-9b47-6045bdbd0989\n\nReferenced Articles: https://www.elderscrollsonline.com/en-us/news/post/70417\nhttps://www.elderscrollsonline.com/en-us/news/post/70525\nhttps://eso-hub.com/en/events/whitestrakes-mayhem\n\nWebsite: http://esohelper.com/\nDiscord: https://discord.gg/uj3WWrX5w\nTwitch: https://www.twitch.tv/jakeclipseso\nTwitter: https://x.com/JakeclipsESO\nXbox Price Checker: https://tamrielsavings.com\nPc price check: https://us.tamrieltradecentre.com/pc/Trade/PriceCheck\nXp Guide: https://youtu.be/T7x6KuOIFxY?si=iyFtu0yc1Omaef5i\nMap leads: https://alcasthq.com/eso-gold-road-west-weald-antiquities/\n\nIntro Music by Karl Casey    / @https://www.youtube.com/channel/UC_6hQy4elsyHhCOskZo0U5g\nSong: https://www.youtube.com/watch?v=NZ4Of3lID84\n\n\n\n\n\n #elderscrollsonline  #eso  #esofam",
+      "published_at": "2026-11-01T15:33:26Z",
+      "duration_seconds": 873
     }
   ],
   "usage": {
-    "total_input_tokens": 6257,
-    "total_output_tokens": 60,
+    "total_input_tokens": 79502,
+    "total_output_tokens": 122,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "金とダイアモンドの輝きを表現した動画です。岩石からゴールドが抽出される様子が映し出されます。無数のダイアモンドが画面に現れます。最後に美しいダイアモンドの指輪が完成します。",
+    "summary": "動画では、MMORPG「The Elder Scrolls Online」（ESO）の11月に予定されている最新アップデートやイベントについて解説されています。具体的には、10月21日から11月4日までの「Witches Festival」イベント、アップデート52のPTSサイクル、そして「Markarth」DLCのベースゲームへの追加などが紹介されています。また、11月9日から12月2日までの「Golden Pursuits」や、11月12日から23日までの「Whitestrake's Mayhem」イベントの詳細も説明されています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
