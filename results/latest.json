@@ -1,43 +1,15 @@
 {
   "schema_version": 1,
   "mode": "search",
-  "genre": "AI",
-  "created_at": "2026-11-02T01:12:10.915663+00:00",
-  "run_id": "41371202214",
-  "videos": [
-    {
-      "id": "BvOpwzYuO10",
-      "url": "https://www.youtube.com/watch?v=BvOpwzYuO10",
-      "title": "AI News 2 Nov 2026: OpenAI trims funding target #shorts",
-      "channel": "The NextGen Ai Frontier",
-      "description": "OpenAI just lowered its fundraising goal. Here is why.\n\nWatch the full video: https://youtu.be/Z2Yw1f7TDrg\n\n#AINews #ArtificialIntelligence #TechNews #shorts",
-      "published_at": "2026-11-02T01:08:19Z",
-      "duration_seconds": 43
-    },
-    {
-      "id": "nYAOWZ3UmJE",
-      "url": "https://www.youtube.com/watch?v=nYAOWZ3UmJE",
-      "title": "AI News 2 Nov 2026: Google DeepMind unveils Genie 4 #shorts",
-      "channel": "The NextGen Ai Frontier",
-      "description": "Google's new model generates worlds, and now it has sound.\n\nWatch the full video: https://youtu.be/Z2Yw1f7TDrg\n\n#AINews #ArtificialIntelligence #TechNews #shorts",
-      "published_at": "2026-11-02T01:08:24Z",
-      "duration_seconds": 39
-    },
-    {
-      "id": "Z2Yw1f7TDrg",
-      "url": "https://www.youtube.com/watch?v=Z2Yw1f7TDrg",
-      "title": "Top AI News 2 Nov 2026: OpenAI trims funding target",
-      "channel": "The NextGen Ai Frontier",
-      "description": "What's new in AI today? Five top stories from 2 November 2026, explained in under five minutes. This video covers OpenAI's funding cut, Gemini 4 Carbon, Genie 4, a Claude Code backdoor and more.\n\n📌 In this video\nThis daily AI news roundup covers the top stories from 2 November 2026 in under five minutes. The first story is OpenAI's funding target. According to CNBC, OpenAI has trimmed its target to $20 billion, down from an earlier goal of up to $30 billion, as investor interest cools. The Wall Street Journal also reports on the company's fundraising. Next, Google DeepMind unveiled Genie 4 on October 27. It is a world model that creates the next scene in response to what a person does, and it generates ambient sound, music and dialogue alongside the world.\n\nGoogle then released Gemini 4 Carbon, its most advanced, or frontier, model. It arrives two weeks after Gemini 4 Argon. Model prices are quoted per million tokens, and the list price is $4 per million tokens. On the security side, a modified, malicious build of Anthropic's Claude Code extension installed a hidden backdoor, a secret way in for attackers. Wired reports that the malicious extensions reached thousands of devices.\n\nFinally, the UK Competition and Markets Authority, or CMA, has opened an antitrust probe into Meta's content terms. Antitrust rules stop companies from abusing their market power. Each story is explained in plain language, with its source credited, so you can stay up to date on AI news in the time it takes to drink a coffee.\n\n✅ Key takeaways\n• OpenAI cut its funding target to $20 billion, from up to $30 billion\n• Google DeepMind unveiled Genie 4, a world model, on October 27\n• Genie 4 generates scenes plus ambient sound, music and dialogue\n• Google released Gemini 4 Carbon, two weeks after Gemini 4 Argon\n• A malicious Claude Code extension build installed a hidden backdoor\n• The UK CMA opened an antitrust probe into Meta's content terms\n\n⏱ Chapters\n0:00 Intro: Top AI Stories Today\n0:14 Open",
-      "published_at": "2026-11-02T01:08:25Z",
-      "duration_seconds": 227
-    }
-  ],
+  "genre": "3DCG",
+  "created_at": "2026-11-02T01:14:25.460278+00:00",
+  "run_id": "41371414119",
+  "videos": [],
   "window": {
     "start": "2026-11-01T15:00:00Z",
-    "end": "2026-11-02T01:12:10.915663Z",
+    "end": "2026-11-02T01:14:25.460278Z",
     "timezone": "Asia/Tokyo"
   },
   "editor_reviewed": true,
-  "api_attempts": 2
+  "api_attempts": 1
 }
