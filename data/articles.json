@@ -21,6 +21,229 @@
   ],
   "articles": [
     {
+      "id": "20261103-insydium-fused",
+      "title": "MaxonがCinema 4D向けINSYDIUM Fusedを紹介",
+      "summary": "パーティクルやシミュレーションなどをまとめたツール群の紹介。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-03T05:38:08.672502Z",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-03",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Cinema 4D向けINSYDIUM Fused、パーティクルから地形・植物まで1コレクションに"
+        },
+        {
+          "type": "paragraph",
+          "text": "MaxonのThreads投稿として、Cinema 4D向けINSYDIUM Fusedの紹介が共有された。投稿要約によれば、パーティクル、シミュレーション、地形・植生などを含むツール群。具体的な製品仕様、価格や新規更新の有無は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／Maxon（@maxonvfx） https://www.threads.com/@maxonvfx/post/DfP4Yh3gKac"
+        },
+        {
+          "type": "threadspost",
+          "url": "https://www.threads.com/@maxonvfx/post/DfP4Yh3gKac"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "複数の制作工程を同じツール群で扱えるか、仕様を確認したくなるね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Threads／Maxon（@maxonvfx）",
+          "url": "https://www.threads.com/@maxonvfx/post/DfP4Yh3gKac"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.threads.com/@maxonvfx/post/DfP4Yh3gKac"
+      ],
+      "sourceNote": "Museが共有した素材。元投稿の公開範囲と内容は確認できていない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す汎用イラスト。公式画像や実際の製品画面ではありません。"
+    },
+    {
+      "id": "20261103-blender-lighting",
+      "title": "Blenderの光を受ける設定とEmission Proを比較する紹介",
+      "summary": "Blenderの照明関連機能とアドオンを比較したコミュニティの紹介。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-03T05:38:08.672520Z",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-03",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Blender 5.3のMaterial Lightingは「受ける側」、Emission Proは「出す側」の光制御"
+        },
+        {
+          "type": "paragraph",
+          "text": "コミュニティ投稿では、Blender 5.3のMaterial Lightingを光を受ける側、Emission Proを発光側からの制御として比較している。Cyclesへの展開は投稿内の可能性にとどまる。各機能の仕様、対応版、提供状況は公式確認できていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Blender Artists Community https://facebook.com/groups/blenderartistscommunity/permalink/4653026781647393/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "受ける光と出す光の役割を分けて考えると、照明の調整点を整理しやすいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Blender Artists Community",
+          "url": "https://facebook.com/groups/blenderartistscommunity/permalink/4653026781647393/"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4653026781647393/"
+      ],
+      "sourceNote": "Museが共有した素材。元投稿の公開範囲と内容は確認できていない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す汎用イラスト。公式画像や実際の製品画面ではありません。"
+    },
+    {
+      "id": "20261103-eso-tips",
+      "title": "ESO小ネタ:2026年11月3日",
+      "summary": "イベント攻略や染料、プレイスタイルに関するコミュニティの投稿を紹介。",
+      "category": "eso",
+      "publishedAt": "2026-11-03T05:38:08.672523Z",
+      "sample": false,
+      "kind": "roundup",
+      "runDate": "2026-11-03",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "ウィッチズ・フェスティバルのガイド動画、2倍XPや新報酬・ファームをまとめて解説"
+        },
+        {
+          "type": "paragraph",
+          "text": "ウィッチズ・フェスティバルのガイド動画について、経験値や報酬、周回のポイントをまとめたというコミュニティの紹介。動画は未視聴で、詳細や適用期間は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online Players https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29054746994137130/"
+        },
+        {
+          "type": "youtube",
+          "videoId": "GQL5PiGRncA",
+          "url": "https://youtu.be/GQL5PiGRncA",
+          "title": "ウィッチズ・フェスティバルのガイド動画（紹介名、未視聴）"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "イベント中に何を優先するか考える入口になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "光沢のある青みがかった金色の染料はどれ？候補はTransliminal VioletとBlademaster's Mauve"
+        },
+        {
+          "type": "paragraph",
+          "text": "青みのある金色の染料を探す質問に、Transliminal VioletとBlademaster's Mauveが候補として挙がったという。素材や照明で見え方が変わるため、画像だけでは特定できない。入手条件は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online https://facebook.com/groups/esoeu/permalink/40712425495022599/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "染料は照明でも印象が変わるので、候補を実際に見比べたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "上級ヴァンパイア、維持する価値はある？ステージ4の便利さと火弱点の代償"
+        },
+        {
+          "type": "paragraph",
+          "text": "ヴァンパイアの高いステージを維持する価値について、移動時の利点と火への弱点を挙げるプレイヤーの意見が紹介された。実際の効果値や現在のゲーム版への適用は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online https://facebook.com/groups/esoeu/permalink/40709058882025927/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "便利さと弱点が場面で変わるため、普段の遊び方に合わせて考えたいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Elder Scrolls Online Players",
+          "url": "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29054746994137130/"
+        },
+        {
+          "label": "紹介された動画（未視聴）",
+          "url": "https://youtu.be/GQL5PiGRncA"
+        },
+        {
+          "label": "Elder Scrolls Online",
+          "url": "https://facebook.com/groups/esoeu/permalink/40712425495022599/"
+        },
+        {
+          "label": "Elder Scrolls Online",
+          "url": "https://facebook.com/groups/esoeu/permalink/40709058882025927/"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29054746994137130/",
+        "https://youtu.be/GQL5PiGRncA",
+        "https://facebook.com/groups/esoeu/permalink/40712425495022599/",
+        "https://facebook.com/groups/esoeu/permalink/40709058882025927/"
+      ],
+      "sourceNote": "Museが共有した素材。元投稿の公開範囲と内容は確認できていない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
+      "thumbnailKey": "eso-tips"
+    },
+    {
+      "id": "20261103-cg-news",
+      "title": "CGニュース:2026年11月3日",
+      "summary": "アニメーション作家ドン・ブルースのドキュメンタリー予告について、コミュニティの紹介を伝える。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-03T05:38:08.672524Z",
+      "sample": false,
+      "kind": "news-roundup",
+      "runDate": "2026-11-03",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "ドン・ブルースのドキュメンタリー「Don Bluth: Somewhere Out There」、最初の予告編が共有される"
+        },
+        {
+          "type": "paragraph",
+          "text": "アニメーターのドキュメンタリー「Don Bluth: Somewhere Out There」の最初の予告編が共有されたというコミュニティの紹介。作品の公開日や配信先は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：The Art of Animation https://facebook.com/groups/ArtofAnimation/permalink/4475529186042301/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "作品づくりの背景に関心がある人には、予告が入口になりそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Art of Animation",
+          "url": "https://facebook.com/groups/ArtofAnimation/permalink/4475529186042301/"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/ArtofAnimation/permalink/4475529186042301/"
+      ],
+      "sourceNote": "Museが共有した素材。元投稿の公開範囲と内容は確認できていない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
+      "thumbnailKey": "cg-news"
+    },
+    {
       "id": "20261103-ai-tips",
       "title": "AI小ネタ:2026年11月3日",
       "summary": "ボットの使用量管理、仕事の分担、制作・開発の具体例を、確認できた範囲とともに紹介する。",
@@ -581,6 +804,57 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "服の名前だけでなく、丈や輪郭、配色の関係まで指定する書き方が参考になるね。"
+        },
+        {
+          "type": "heading",
+          "text": "17枚のRTX 3060と旧Xeonボードで、並列コーディングエージェントをどこまで速くできるか"
+        },
+        {
+          "type": "paragraph",
+          "text": "複数のRTX 3060や旧型Xeonを使い、コーディング向けAIを並列実行する個人の試みが紹介された。HP Z440で2つのエージェントを動かし、CPUコアの割り当てによって速度が改善したという報告。測定条件や結果は独立確認していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1531032775491098/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "手元の資源を分けて動かす工夫として、測定条件を確かめながら参考にしたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "実測でQwen3.8-Flashが27Bを上回る、投稿者独自のローカルLLMコーディング比較"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿者独自の指示セットを使ったローカルAIのコーディング比較。Qwen3.8-Flashが比較対象の27Bモデルより良かったとの本人の採点で、一般的なベンチマーク結果ではない。モデルの名称・比較条件・性能は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1482760500318326/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "個人の採点は使い道に合うか考えるヒントになるけれど、一般的な優劣とは分けたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "3枚のRTX 3090に3モデルを分けて走らせる、並列エージェント重視のローカル構成"
+        },
+        {
+          "type": "paragraph",
+          "text": "3枚のRTX 3090にモデルを分け、リード役が仕事を複数モデルへ渡すローカル構成が紹介された。利用の大部分をオープンウェイトのモデルでまかなうという投稿者の説明で、性能や比率は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent https://facebook.com/groups/runlocalai/permalink/1503517198242656/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "大きなモデル一つに頼らない構成を考える参考になるね。"
         }
       ],
       "sources": [
@@ -699,6 +973,18 @@
         {
           "label": "用語解説：SCF",
           "url": "https://pyscf.org/user/scf.html"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1531032775491098/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1482760500318326/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1503517198242656/"
         }
       ],
       "sourceUrls": [
@@ -730,9 +1016,12 @@
         "https://x.com/AliceLavli/status/2117361104728858713",
         "https://developers.google.com/machine-learning/glossary#weight",
         "https://developers.google.com/machine-learning/glossary#token",
-        "https://pyscf.org/user/scf.html"
+        "https://pyscf.org/user/scf.html",
+        "https://facebook.com/groups/runlocalai/permalink/1531032775491098/",
+        "https://facebook.com/groups/runlocalai/permalink/1482760500318326/",
+        "https://facebook.com/groups/runlocalai/permalink/1503517198242656/"
       ],
-      "sourceNote": "2026年11月3日0時〜10時（日本時間）に届いた指定送信者のニュース素材を整理。公式資料で確認と明記した内容以外は、元投稿を紹介する原稿に基づく未確認の報告・本人の主張。元投稿全文、動画全編、実機動作を確認したものではない。投稿内の指示例は紹介であり、設定変更等を実行するものではない。",
+      "sourceNote": "2026年11月3日0時〜10時（日本時間）に届いた指定送信者のニュース素材を整理。公式資料で確認と明記した内容以外は、元投稿を紹介する原稿に基づく未確認の報告・本人の主張。元投稿全文、動画全編、実機動作を確認したものではない。投稿内の指示例は紹介であり、設定変更等を実行するものではない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
       "thumbnailKey": "ai-tips"
     },
     {
@@ -1709,6 +1998,23 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "形の高さ・向き・色を別の症状として切り分けて見ると、書き出しと読み込みのどちらを調べるか整理しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Blender 5の新モディファイア「Curve to Tube」の使い方チュートリアル"
+        },
+        {
+          "type": "paragraph",
+          "text": "Blender Artists Communityの投稿として、カーブからチューブを作るCurve to Tubeのチュートリアルが紹介された。機能の対象バージョンや動画内容は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Blender Artists Community https://facebook.com/groups/blenderartistscommunity/permalink/4624624787820926/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "カーブから管を作る作業を学ぶ入口として参考になりそう。"
         }
       ],
       "sources": [
@@ -1795,6 +2101,10 @@
         {
           "label": "用語解説：インスタンス化スタティックメッシュ",
           "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/instanced-static-mesh-component-in-unreal-engine"
+        },
+        {
+          "label": "Blender Artists Community",
+          "url": "https://facebook.com/groups/blenderartistscommunity/permalink/4624624787820926/"
         }
       ],
       "sourceUrls": [
@@ -1818,9 +2128,10 @@
         "https://x.com/Kalysteon/status/2116074719850135719",
         "https://www.openvdb.org/",
         "https://dev.epicgames.com/documentation/en-us/fortnite/scene-graph-in-unreal-editor-for-fortnite",
-        "https://dev.epicgames.com/documentation/en-us/unreal-engine/instanced-static-mesh-component-in-unreal-engine"
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/instanced-static-mesh-component-in-unreal-engine",
+        "https://facebook.com/groups/blenderartistscommunity/permalink/4624624787820926/"
       ],
-      "sourceNote": "2026年11月3日0時〜10時（日本時間）に指定送信者から届いたニュース素材を整理。公式資料で確認したと明記する部分以外は原稿が紹介する投稿者の報告で、元投稿全文・映像全編・実機動作を独立に確認したものではない。過去の作品・告知を本日の新発表とみなさない。",
+      "sourceNote": "2026年11月3日0時〜10時（日本時間）に指定送信者から届いたニュース素材を整理。公式資料で確認したと明記する部分以外は原稿が紹介する投稿者の報告で、元投稿全文・映像全編・実機動作を独立に確認したものではない。過去の作品・告知を本日の新発表とみなさない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
       "thumbnailKey": "cg-tips"
     },
     {
@@ -1857,6 +2168,23 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "見た目を変える楽しさと、仲間の設定そのものを変える要望は別の話として読むと、期待する内容を整理しやすいね。"
+        },
+        {
+          "type": "heading",
+          "text": "議論が活発化：「このゲームに何が起きたのか」ゾーンの静けさやPvP、PUGのスピードラン化"
+        },
+        {
+          "type": "paragraph",
+          "text": "ゾーン内の交流、PvPのバランス、野良グループの進行速度をめぐるプレイヤーの意見が紹介された。これはコミュニティでの議論であり、ゲーム全体の状態を代表するとは限らない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online https://facebook.com/groups/esoeu/permalink/40714489091482906/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "野良での遊び方の違いを知るきっかけになりそう。"
         }
       ],
       "sources": [
@@ -1867,13 +2195,18 @@
         {
           "label": "ESO公式：Update52 PTS第1週まとめ",
           "url": "https://forums.elderscrollsonline.com/en/discussion/comment/8546313"
+        },
+        {
+          "label": "Elder Scrolls Online",
+          "url": "https://facebook.com/groups/esoeu/permalink/40714489091482906/"
         }
       ],
       "sourceUrls": [
         "https://x.com/DarkRictor/status/2117006995181961220",
-        "https://forums.elderscrollsonline.com/en/discussion/comment/8546313"
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8546313",
+        "https://facebook.com/groups/esoeu/permalink/40714489091482906/"
       ],
-      "sourceNote": "2026年11月3日0時〜10時（日本時間）に指定送信者から届いたニュース素材を整理。公式資料で確認したと明記する部分以外は原稿が紹介する投稿者の報告で、元投稿全文・映像全編・実機動作を独立に確認したものではない。過去の作品・告知を本日の新発表とみなさない。",
+      "sourceNote": "2026年11月3日0時〜10時（日本時間）に指定送信者から届いたニュース素材を整理。公式資料で確認したと明記する部分以外は原稿が紹介する投稿者の報告で、元投稿全文・映像全編・実機動作を独立に確認したものではない。過去の作品・告知を本日の新発表とみなさない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
       "thumbnailKey": "eso-news"
     },
     {
@@ -2834,6 +3167,27 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "できたかどうかだけでなく、本人が行うべき確認をどこに残すかが重要な話だね。"
+        },
+        {
+          "type": "heading",
+          "text": "Claude Duetは「Claudeがこちらへ来る」使い方、米国のPro・Max向け研究プレビュー"
+        },
+        {
+          "type": "paragraph",
+          "text": "追加資料として、ThreadsのClaude by Anthropicの投稿が紹介された。Museの要約では、Claude Duetはユーザーに先回りして連絡する米国Pro・Max向け研究プレビューとされ、送信・支払い・署名前に確認を求めるという。元投稿の本文と提供条件は今回確認できていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／Claude by Anthropic（@claudeai） https://www.threads.com/@claudeai/post/DfQEROqIB9x"
+        },
+        {
+          "type": "threadspost",
+          "url": "https://www.threads.com/@claudeai/post/DfQEROqIB9x"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "自分から尋ねるだけでなく、必要な時に支援を受ける使い方が気になるね。"
         }
       ],
       "sources": [
@@ -2868,6 +3222,10 @@
         {
           "label": "OpenAI公式／カードと端末の制限",
           "url": "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt"
+        },
+        {
+          "label": "Threads／Claude by Anthropic（@claudeai）",
+          "url": "https://www.threads.com/@claudeai/post/DfQEROqIB9x"
         }
       ],
       "sourceUrls": [
@@ -2878,9 +3236,10 @@
         "https://x.com/denfaminicogame/status/2117022730264752447",
         "https://x.com/umiyuki_ai/status/2117008030453919817",
         "https://x.com/aliceisplaying/status/2116935890111259135",
-        "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt"
+        "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt",
+        "https://www.threads.com/@claudeai/post/DfQEROqIB9x"
       ],
-      "sourceNote": "2026年11月2日0時〜10時（日本時間）に指定送信者から届いたニュース素材を整理。公式資料で確認と明記した部分以外は投稿の紹介・本人の主張で、元投稿の全内容、実機動作、動画全編を確認したものではない。Facebookはグループ名・元URLと匿名の要約のみとし、個人名や画像は転載しない。",
+      "sourceNote": "2026年11月2日0時〜10時（日本時間）に指定送信者から届いたニュース素材を整理。公式資料で確認と明記した部分以外は投稿の紹介・本人の主張で、元投稿の全内容、実機動作、動画全編を確認したものではない。Facebookはグループ名・元URLと匿名の要約のみとし、個人名や画像は転載しない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
       "thumbnailKey": "ai-news",
       "publishedAt": "2026-11-02T03:18:52Z"
     },
@@ -16475,21 +16834,43 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "開発が続いているならひと安心。ただ、発売日や移行予定は正式な案内で確かめたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "Gaea 3はどうなったのか、遅れをめぐる議論に開発状況の手がかり"
+        },
+        {
+          "type": "paragraph",
+          "text": "追加資料としてFacebookグループで発売時期をめぐる議論が紹介された。Museの要約では現行2.0向け更新を先に予定するというコメントもあるが、公式の最新計画・発売日・料金は今回確認できていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：QuadSpinner Gaea https://facebook.com/groups/QuadSpinnerGaea/permalink/2031385867583017/"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "次期版を待つ人にとっては、現行版の更新計画も気になるところだね。"
         }
       ],
       "sources": [
         {
           "label": "QuadSpinner Gaea",
           "url": "https://facebook.com/groups/QuadSpinnerGaea/permalink/2067418763979727/"
+        },
+        {
+          "label": "QuadSpinner Gaea",
+          "url": "https://facebook.com/groups/QuadSpinnerGaea/permalink/2031385867583017/"
         }
       ],
       "sourceUrls": [
-        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2067418763979727/"
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2067418763979727/",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2031385867583017/"
       ],
       "thumbnailKey": "terrain-product",
       "thumbnail": "assets/news/library-terrain-create-v1.webp",
       "thumbnailAlt": "地形制作を表す青色の汎用イラスト。実際のソフトの出力例ではありません。",
-      "sourceNote": "2026年10月27日0時〜10時（日本時間）のSlack原稿を内容別に整理。本文は提供された要約に基づき、未照合の主張は注記した。汎用サムネイルは実物の製品画面・公式画像ではない。",
+      "sourceNote": "2026年10月27日0時〜10時（日本時間）のSlack原稿を内容別に整理。本文は提供された要約に基づき、未照合の主張は注記した。汎用サムネイルは実物の製品画面・公式画像ではない。 追記：Muse Agentが11月3日10:03ごろSlackへ投稿した資料を追加。元投稿の内容・公開範囲が読めない部分は未確認。",
       "updatedAt": "2026-10-30T10:05:06+09:00"
     },
     {
