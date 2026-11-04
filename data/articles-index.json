@@ -1,0 +1,92 @@
+{
+  "sample": false,
+  "description": "AI / 3DCG / 地形生成CG / ESOのニュースと動画紹介。",
+  "categories": [
+    {
+      "id": "ai",
+      "name": "AI"
+    },
+    {
+      "id": "3dcg",
+      "name": "3DCG"
+    },
+    {
+      "id": "terrain",
+      "name": "地形生成CG"
+    },
+    {
+      "id": "eso",
+      "name": "ESO"
+    }
+  ],
+  "schemaVersion": 1,
+  "articleCount": 156,
+  "days": [
+    {
+      "date": "2026-11-04",
+      "path": "data/articles/2026-11-04.json",
+      "count": 15,
+      "sha256": "f5f22db26a38a6101df7a4d976fc75e207904c9babd67b82733fb101fbe2a149"
+    },
+    {
+      "date": "2026-11-03",
+      "path": "data/articles/2026-11-03.json",
+      "count": 12,
+      "sha256": "204c778a217ac3429ef6422339d3240a15b84e8c7f2098346f605b0ebbaf67d7"
+    },
+    {
+      "date": "2026-11-02",
+      "path": "data/articles/2026-11-02.json",
+      "count": 8,
+      "sha256": "58f16edad21b7a1a583833d536208403ab8113b57b514546a6da8de6b6ba00a2"
+    },
+    {
+      "date": "2026-11-01",
+      "path": "data/articles/2026-11-01.json",
+      "count": 10,
+      "sha256": "4ebc286552f41c73d9d9139d1f4940957e878afbdee1b2ab6b66310ea08b6bcb"
+    },
+    {
+      "date": "2026-10-31",
+      "path": "data/articles/2026-10-31.json",
+      "count": 18,
+      "sha256": "c731f4c3e6826e7e780a190d981c6c483dfea83f06bf6afd709bdb6adb7ac4e2"
+    },
+    {
+      "date": "2026-10-30",
+      "path": "data/articles/2026-10-30.json",
+      "count": 25,
+      "sha256": "ffc92fb18904454d32abc3be2509b487ca02825700d835c3f758ba6f950e943b"
+    },
+    {
+      "date": "2026-10-29",
+      "path": "data/articles/2026-10-29.json",
+      "count": 20,
+      "sha256": "b33eba9265bca14169be111fc689bc486723df9bbf4455b37770ed9f062fcabe"
+    },
+    {
+      "date": "2026-10-28",
+      "path": "data/articles/2026-10-28.json",
+      "count": 15,
+      "sha256": "07d3a6d9c157e0299783d3f96102617213dce8fff1d5307da809e7fcaacc436c"
+    },
+    {
+      "date": "2026-10-27",
+      "path": "data/articles/2026-10-27.json",
+      "count": 18,
+      "sha256": "b3b4a74430388c83c70f50c93bd86319dbde87e14bbef4fb0bb38246a1bef19f"
+    },
+    {
+      "date": "2026-10-26",
+      "path": "data/articles/2026-10-26.json",
+      "count": 14,
+      "sha256": "111cbe714256c8600559b4d67547a05a92453d77722b323154fd637e2743a4fe"
+    },
+    {
+      "date": "2026-10-25",
+      "path": "data/articles/2026-10-25.json",
+      "count": 1,
+      "sha256": "fb72c341f0606a96b8610959c6e91e9becaf8ae816885acbe6ff813af3183477"
+    }
+  ]
+}

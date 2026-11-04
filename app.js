@@ -31,7 +31,7 @@
     // Require an explicit timezone so malformed or local-time dates cannot be marked NEW.
     const value = article.publishedAt;
     if (typeof value !== 'string') return false;
-    const match = value.match(/^(\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])T([01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,3})?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)$/);
+    const match = value.match(/^(\d{4})-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])T([01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,9})?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)$/);
     if (!match) return false;
     const year = Number(match[1]), month = Number(match[2]), day = Number(match[3]);
     const monthDays = [31, year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -458,13 +458,53 @@
     $('page-next' + suffix).addEventListener('click', () => changePage(1));
   }
   window.addEventListener('hashchange', route);
+  async function fetchArticleCollection() {
+    // Never fall back to the frozen migration snapshot: that could revive retired articles.
+    const response = await fetch('./data/articles-index.json', {credentials: 'omit', cache: 'no-store'});
+    if (!response.ok) throw new Error('Article index unavailable');
+    const index = await response.json();
+    if (index.schemaVersion !== 1 || !Array.isArray(index.categories) || !Array.isArray(index.days) ||
+        !Number.isSafeInteger(index.articleCount) || index.articleCount < 0) throw new Error('Invalid article index');
+    const days = new Set();
+    for (const entry of index.days) {
+      if (!entry || !/^\d{4}-\d{2}-\d{2}$/.test(entry.date) || days.has(entry.date) ||
+          entry.path !== `data/articles/${entry.date}.json` || !Number.isSafeInteger(entry.count) || entry.count < 1 ||
+          !/^[a-f0-9]{64}$/.test(entry.sha256)) throw new Error('Invalid article day');
+      days.add(entry.date);
+    }
+    if (index.days.reduce((sum, entry) => sum + entry.count, 0) !== index.articleCount) throw new Error('Article count mismatch');
+    const combined = [], ids = new Set();
+    // Bounded requests; the full collection must validate before any article is displayed.
+    for (let offset = 0; offset < index.days.length; offset += 4) {
+      const batches = await Promise.all(index.days.slice(offset, offset + 4).map(async entry => {
+        const response = await fetch(`./${entry.path}?v=${entry.sha256}`, {credentials: 'omit', cache: 'no-store'});
+        if (!response.ok) throw new Error('Article day unavailable');
+        const bytes = await response.arrayBuffer();
+        const digest = await crypto.subtle.digest('SHA-256', bytes);
+        const hash = [...new Uint8Array(digest)].map(value => value.toString(16).padStart(2, '0')).join('');
+        if (hash !== entry.sha256) throw new Error('Article day version mismatch');
+        const data = JSON.parse(new TextDecoder('utf-8', {fatal: true}).decode(bytes));
+        if (!Array.isArray(data.articles) || data.articles.length !== entry.count) throw new Error('Invalid article day data');
+        for (const article of data.articles) {
+          if (!article || typeof article.id !== 'string' || !article.id ||
+              typeof article.publishedAt !== 'string' || !/(?:Z|[+-]\d{2}:\d{2})$/.test(article.publishedAt) ||
+              !Number.isFinite(Date.parse(article.publishedAt)) || dayLabel(article.publishedAt) !== entry.date ||
+              !Array.isArray(article.blocks) || !Array.isArray(article.sources)) throw new Error('Invalid article');
+        }
+        return data.articles;
+      }));
+      for (const batch of batches) for (const article of batch) {
+        if (ids.has(article.id)) throw new Error('Duplicate article ID');
+        ids.add(article.id);
+        combined.push(article);
+      }
+    }
+    return {...index, articles: combined};
+  }
   async function loadArticles() {
     $('notice').textContent = '記事を読み込み中…';
     try {
-      const response = await fetch('./data/articles.json?v=20261029-thumb-link1', {credentials: 'omit'});
-      if (!response.ok) throw new Error('Article data unavailable');
-      const data = await response.json();
-      if (!Array.isArray(data.categories) || !Array.isArray(data.articles)) throw new Error('Invalid article data');
+      const data = await fetchArticleCollection();
       categories = data.categories;
       articles = data.articles.filter(article => !isSample(article)).sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
       const dates = [...new Set(articles.map(article => dayLabel(article.publishedAt)))].sort().reverse();
@@ -478,7 +518,7 @@
       scheduleNewBadges();
       route();
     } catch {
-      $('notice').textContent = '記事データを読み込めませんでした。接続を確認して再試行してください。';
+      $('notice').textContent = '記事データをすべて読み込めませんでした。更新中または接続の問題の可能性があります。少し待って再試行してください。';
       const retry = document.createElement('button');
       retry.type = 'button';
       retry.textContent = '再試行';
@@ -488,6 +528,7 @@
   }
   loadArticles();
 })();
+
 
 
 

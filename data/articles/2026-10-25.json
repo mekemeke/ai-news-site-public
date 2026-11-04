@@ -1,0 +1,89 @@
+{
+  "articles": [
+    {
+      "id": "blender-52-lts-video-review",
+      "title": "Blender 5.2 LTSの変更点を短く整理：物理・テクスチャ・合成はどう変わる？",
+      "summary": "Blender 5.2 LTSは、髪・布のノード物理、重いテクスチャの処理、合成・素材管理を改善。2026年7月14日公開の公式動画を振り返ります（本日の新発表ではありません）。",
+      "category": "3dcg",
+      "publishedAt": "2026-10-25T03:05:00+09:00",
+      "sample": false,
+      "videoId": "g4OXlrxqIx0",
+      "videoTitle": "Blender 5.2 LTS 公式紹介動画",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "主な変更点"
+        },
+        {
+          "type": "feature",
+          "label": "Geometry Nodesの物理",
+          "text": "髪と布の動きをノードで構築し、手続き的な形状生成と組み合わせられる。初期の実験的機能であり、既存の物理システムを全面的に置き換えるものではない。",
+          "terms": [
+            {
+              "text": "ノード",
+              "definition": "処理や入力を表す部品で、線でつないで作業の流れを組み立てる。"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "Cycles Texture Cache",
+          "text": "画像をキャッシュ化し、必要な領域・解像度だけを読み込む仕組み。画像の多いシーンでメモリ使用量や起動時間を抑える狙いがあるが、描画が一律に高速化する保証はない。"
+        },
+        {
+          "type": "feature",
+          "label": "合成と映像編集",
+          "text": "コンポジターの操作応答が改善。Video Sequencerからノードツリーをエフェクトとして使え、編集と色・効果の調整をBlender内でつなぎやすくなった。"
+        },
+        {
+          "type": "feature",
+          "label": "リモートアセット",
+          "text": "Blender Online Essentialsの素材を必要に応じて取得でき、自前のアセットライブラリも配信できる。"
+        },
+        {
+          "type": "paragraph",
+          "text": "導入時は、実案件のコピーで物理・合成・アドオンの互換性を検証。レンダーファームではテクスチャキャッシュの保存・共有先も確認したい。"
+        },
+        {
+          "type": "heading",
+          "text": "ひとこと"
+        },
+        {
+          "type": "paragraph",
+          "text": "dotの見立て：派手な新機能だけでなく、重い素材の扱いや編集・合成のつながりを整える点が実用的。制作中の「重い・待つ・行き来する」を減らせるかに注目したい。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Blender公式動画",
+          "url": "https://www.youtube.com/watch?v=g4OXlrxqIx0"
+        },
+        {
+          "label": "Blender 5.2 LTS 公式リリース",
+          "url": "https://www.blender.org/press/blender-5-2-lts-release/"
+        },
+        {
+          "label": "Geometry Nodesの物理：公式解説",
+          "url": "https://code.blender.org/2026/07/geometry-nodes-physics/"
+        },
+        {
+          "label": "Cycles Texture Cache：公式解説",
+          "url": "https://code.blender.org/2026/05/cycles-texture-cache/"
+        },
+        {
+          "label": "コンポジター：公式リリースノート",
+          "url": "https://developer.blender.org/docs/release_notes/5.2/compositor/"
+        },
+        {
+          "label": "Video Sequencer：公式リリースノート",
+          "url": "https://developer.blender.org/docs/release_notes/5.2/sequencer/"
+        },
+        {
+          "label": "用語解説：ノード",
+          "url": "https://www.sidefx.com/docs/houdini/network/nodes.html"
+        }
+      ],
+      "sourceNote": "YouTube Data APIで動画情報を取得し、Gemini APIによる動画解析をもとにdotが編集。主要事項をBlender公式資料と照合しました。実機での性能比較・全機能の検証は行っていません。"
+    }
+  ]
+}
