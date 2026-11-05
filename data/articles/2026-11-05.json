@@ -865,6 +865,41 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "必須の条件と任せてよい部分を分けると、比較用の案に違いを出しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Claudeの成果物をチームで編集し、コメントを修正につなげる"
+        },
+        {
+          "type": "paragraph",
+          "text": "Claudeの公式動画の説明文は、文書や作業トラッカー、ダッシュボードを共有して共同作業する方法を紹介している。公式Academy資料でも、共有した成果物の同じページで編集し、コメントや会話を変更につなげる使い方を確認した。閲覧・コメント・編集などの役割や共有方法は、成果物の種類とプランによって異なる。すべての共有相手がClaudeにコメント経由で変更を頼めるとは限らず、外部の招待者はその操作の対象外。新機能の発表ではなく使い方の紹介。"
+        },
+        {
+          "type": "paragraph",
+          "text": "動画は11月5日3:18（日本時間）公開、2分40秒。解析はサービス側のエラー（HTTP 503）で失敗し、再試行していない。以下は公開説明文と公式資料に基づき、動画全編の内容確認や操作検証を行ったものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Claude Academy：成果物の共同編集 https://academy.claude.com/tutorials/intro-to-artifacts"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Claude Help：成果物の共有条件 https://support.claude.com/en/articles/9547008-share-artifacts"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Claude公式動画：Collaborate on artifacts in Claude https://www.youtube.com/watch?v=kJA3fQnntpY"
+        },
+        {
+          "type": "youtube",
+          "videoId": "kJA3fQnntpY",
+          "url": "https://www.youtube.com/watch?v=kJA3fQnntpY",
+          "title": "Collaborate on artifacts in Claude"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "見る人と直す人の役割を分けておくと、意見を集めながら元の内容を守りやすそうだね。"
         }
       ],
       "sources": [
@@ -943,6 +978,18 @@
         {
           "label": "X／@zin257856782",
           "url": "https://x.com/zin257856782/status/2117824716182519859"
+        },
+        {
+          "label": "Claude Academy：成果物の共同編集",
+          "url": "https://academy.claude.com/tutorials/intro-to-artifacts"
+        },
+        {
+          "label": "Claude Help：成果物の共有条件",
+          "url": "https://support.claude.com/en/articles/9547008-share-artifacts"
+        },
+        {
+          "label": "Claude公式動画：Collaborate on artifacts in Claude",
+          "url": "https://www.youtube.com/watch?v=kJA3fQnntpY"
         }
       ],
       "sourceUrls": [
@@ -964,10 +1011,14 @@
         "https://x.com/tetumemo/status/2118108553361883443",
         "https://x.com/tetumemo/status/2118093442328965622",
         "https://x.com/kajikent/status/2118127621162893819",
-        "https://x.com/zin257856782/status/2117824716182519859"
+        "https://x.com/zin257856782/status/2117824716182519859",
+        "https://academy.claude.com/tutorials/intro-to-artifacts",
+        "https://support.claude.com/en/articles/9547008-share-artifacts",
+        "https://www.youtube.com/watch?v=kJA3fQnntpY"
       ],
-      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。",
-      "thumbnailKey": "ai-tips"
+      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。 11月5日追記：動画の公開日時が当初の0時〜10時（日本時間）に入るものを補完。Claude動画の解析はHTTP 503で失敗し、再試行していない。公開説明文と公式Academy・ヘルプ資料だけに基づき、全編の内容確認・操作検証は未実施。",
+      "thumbnailKey": "ai-tips",
+      "updatedAt": "2026-11-05T12:02:55.590805+09:00"
     },
     {
       "id": "20261105-cg-tips",
@@ -1256,6 +1307,69 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "先に空間の配置を決めておく発想は、生成映像の構図をそろえる手掛かりになりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "HoudiniのCopernicus入門、レイヤー合成・ベイク・高さマップを学ぶ"
+        },
+        {
+          "type": "paragraph",
+          "text": "SideFXの公式入門講座から、画像レイヤーの混合、テクスチャへのベイク、高さマップを扱う3本を紹介。公式講座ページは11月3日付で、Houdini 22を使用している。各動画は日本時間11月5日1:21に公開されており、講座ページの掲載日とは区別する。Houdini自体の新機能発表ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ここでの説明は公開説明文と公式講座ページに基づく。先行する動画解析がサービス側のエラー（HTTP 503）で失敗した後に解析を停止したため、この3本は動画解析・全編の内容確認・操作検証を行っていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：SideFX公式：Intro to Copernicus Concepts https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/"
+        },
+        {
+          "type": "paragraph",
+          "text": "レイヤーの混合：公開説明文では、マスクや合成方法を使って画像レイヤーを組み合わせる内容を案内している。動画は4分52秒。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：SideFX公式動画：H22 | Intro to COPs Concepts 10 | Mixing Layers https://www.youtube.com/watch?v=UBRLl2vkkrk"
+        },
+        {
+          "type": "youtube",
+          "videoId": "UBRLl2vkkrk",
+          "url": "https://www.youtube.com/watch?v=UBRLl2vkkrk",
+          "title": "H22 | Intro to COPs Concepts 10 | Mixing Layers"
+        },
+        {
+          "type": "paragraph",
+          "text": "テクスチャベイク：細かな形状の情報を軽いモデルのテクスチャへ記録し、法線・AO・高さなどのマップを出力する内容が案内されている。動画は6分41秒。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：SideFX公式動画：H22 | Intro to COPs Concepts 29 | Texture Baking https://www.youtube.com/watch?v=s0axECp1xtQ"
+        },
+        {
+          "type": "youtube",
+          "videoId": "s0axECp1xtQ",
+          "url": "https://www.youtube.com/watch?v=s0axECp1xtQ",
+          "title": "H22 | Intro to COPs Concepts 29 | Texture Baking"
+        },
+        {
+          "type": "paragraph",
+          "text": "高さマップ：グレースケールの値を使って起伏を表す内容が案内されている。動画は4分14秒。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：SideFX公式動画：H22 | Intro to COPs Concepts 22 | Height Maps https://www.youtube.com/watch?v=pNa_Sbhsl-Q"
+        },
+        {
+          "type": "youtube",
+          "videoId": "pNa_Sbhsl-Q",
+          "url": "https://www.youtube.com/watch?v=pNa_Sbhsl-Q",
+          "title": "H22 | Intro to COPs Concepts 22 | Height Maps"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "質感作りと地形の起伏を同じ仕組みで学べるので、小さなサンプルから試す入口になりそう。"
         }
       ],
       "sources": [
@@ -1318,6 +1432,22 @@
         {
           "label": "X／@ComfyUI",
           "url": "https://x.com/ComfyUI/status/2118017992084893785"
+        },
+        {
+          "label": "SideFX公式：Intro to Copernicus Concepts",
+          "url": "https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/"
+        },
+        {
+          "label": "SideFX公式動画：H22 | Intro to COPs Concepts 10 | Mixing Layers",
+          "url": "https://www.youtube.com/watch?v=UBRLl2vkkrk"
+        },
+        {
+          "label": "SideFX公式動画：H22 | Intro to COPs Concepts 29 | Texture Baking",
+          "url": "https://www.youtube.com/watch?v=s0axECp1xtQ"
+        },
+        {
+          "label": "SideFX公式動画：H22 | Intro to COPs Concepts 22 | Height Maps",
+          "url": "https://www.youtube.com/watch?v=pNa_Sbhsl-Q"
         }
       ],
       "sourceUrls": [
@@ -1335,10 +1465,15 @@
         "https://x.com/L_go_mrk/status/2117889476160786781",
         "https://x.com/magnific/status/2118056460848673103",
         "https://x.com/techhalla/status/2118018432515903926",
-        "https://x.com/ComfyUI/status/2118017992084893785"
+        "https://x.com/ComfyUI/status/2118017992084893785",
+        "https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/",
+        "https://www.youtube.com/watch?v=UBRLl2vkkrk",
+        "https://www.youtube.com/watch?v=s0axECp1xtQ",
+        "https://www.youtube.com/watch?v=pNa_Sbhsl-Q"
       ],
-      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。",
-      "thumbnailKey": "cg-tips"
+      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。 11月5日追記：動画の公開日時が当初の0時〜10時（日本時間）に入るものを補完。SideFXの3本は公開説明文と公式講座ページに基づく。前の動画解析が503で失敗した後に処理を止めたため、この3本の動画解析・操作検証は行っていない。",
+      "thumbnailKey": "cg-tips",
+      "updatedAt": "2026-11-05T12:02:55.590805+09:00"
     },
     {
       "id": "20261105-ucupaint3",
@@ -1970,6 +2105,20 @@
           "text": "出典：OpenAI：Images 2.6 system card（11月4日） https://deploymentsafety.openai.com/chatgpt-images-2-6"
         },
         {
+          "type": "paragraph",
+          "text": "関連する公式動画は11月5日8:42（日本時間）公開、1分28秒。FlareとSunburstによる画像生成を紹介している。動画の短い自動要約は取得できたが、逐語録や全発言・手順を検証したものではない。性能や利用条件の確認範囲は上記の公式記事による説明と同じ。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：OpenAI公式動画：GPT-Image-2.6のFlareとSunburst https://www.youtube.com/watch?v=9ZxCOHkfn_8"
+        },
+        {
+          "type": "youtube",
+          "videoId": "9ZxCOHkfn_8",
+          "url": "https://www.youtube.com/watch?v=9ZxCOHkfn_8",
+          "title": "GPT-Image-2.6: Faster image generation with Flare and Sunburst"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "生成だけでなく編集を繰り返す作業で、どの程度形や細部を保てるかが注目点だね。"
@@ -1995,6 +2144,10 @@
         {
           "label": "OpenAI：Images 2.6 system card（11月4日）",
           "url": "https://deploymentsafety.openai.com/chatgpt-images-2-6"
+        },
+        {
+          "label": "OpenAI公式動画：GPT-Image-2.6のFlareとSunburst",
+          "url": "https://www.youtube.com/watch?v=9ZxCOHkfn_8"
         }
       ],
       "sourceUrls": [
@@ -2002,12 +2155,14 @@
         "https://openai.com/index/introducing-images-2-6/",
         "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
         "https://x.com/OpenAIDevs/status/2118124753340756055",
-        "https://deploymentsafety.openai.com/chatgpt-images-2-6"
+        "https://deploymentsafety.openai.com/chatgpt-images-2-6",
+        "https://www.youtube.com/watch?v=9ZxCOHkfn_8"
       ],
-      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。",
+      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。 11月5日追記：動画の公開日時が当初の0時〜10時（日本時間）に入るものを補完。OpenAI公式動画は短い自動要約を取得。逐語録や全手順の検証、性能の実測は行っていない。",
       "thumbnailKey": "ai-news",
       "thumbnail": "assets/news/library-ai-model-v1.webp",
-      "thumbnailAlt": "AIモデルを表す汎用イラスト。実際の製品画像ではありません。"
+      "thumbnailAlt": "AIモデルを表す汎用イラスト。実際の製品画像ではありません。",
+      "updatedAt": "2026-11-05T12:02:55.590805+09:00"
     },
     {
       "id": "20261105-gemini-voice-remixing",
