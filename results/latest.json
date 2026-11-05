@@ -1,28 +1,524 @@
 {
   "schema_version": 1,
-  "mode": "analyze",
-  "genre": "ESO",
-  "created_at": "2026-11-02T01:26:35.901226+00:00",
-  "run_id": "41372501888",
+  "mode": "channels",
+  "genre": "all",
+  "created_at": "2026-11-05T02:49:24.933104+00:00",
+  "run_id": "41957655741",
   "videos": [
     {
-      "id": "NPaTFRWygk4",
-      "url": "https://www.youtube.com/watch?v=NPaTFRWygk4",
-      "title": "ESO All Events and New Things Coming In November 2026",
-      "channel": "Jakeclips",
-      "description": "Game Worker Hardship Fund: Hardship Fund: https://uvw-cwa.org/hardship-fund-2026\nBe Heard here: https://feedbackportal.microsoft.com/feedback/idea/69b8ec0b-7479-f111-9b47-6045bdbd0989\n\nReferenced Articles: https://www.elderscrollsonline.com/en-us/news/post/70417\nhttps://www.elderscrollsonline.com/en-us/news/post/70525\nhttps://eso-hub.com/en/events/whitestrakes-mayhem\n\nWebsite: http://esohelper.com/\nDiscord: https://discord.gg/uj3WWrX5w\nTwitch: https://www.twitch.tv/jakeclipseso\nTwitter: https://x.com/JakeclipsESO\nXbox Price Checker: https://tamrielsavings.com\nPc price check: https://us.tamrieltradecentre.com/pc/Trade/PriceCheck\nXp Guide: https://youtu.be/T7x6KuOIFxY?si=iyFtu0yc1Omaef5i\nMap leads: https://alcasthq.com/eso-gold-road-west-weald-antiquities/\n\nIntro Music by Karl Casey    / @https://www.youtube.com/channel/UC_6hQy4elsyHhCOskZo0U5g\nSong: https://www.youtube.com/watch?v=NZ4Of3lID84\n\n\n\n\n\n #elderscrollsonline  #eso  #esofam",
-      "published_at": "2026-11-01T15:33:26Z",
-      "duration_seconds": 873
+      "id": "bJldMYfRvMQ",
+      "url": "https://www.youtube.com/watch?v=bJldMYfRvMQ",
+      "title": "Introducing ChatGPT Images 2.6",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "Images, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation.\n\nImages, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation. https://openai.com/index/introducing-images-2-6/",
+      "published_at": "2026-11-05T02:32:21Z",
+      "duration_seconds": 35
+    },
+    {
+      "id": "9ZxCOHkfn_8",
+      "url": "https://www.youtube.com/watch?v=9ZxCOHkfn_8",
+      "title": "GPT-Image-2.6: Faster image generation with Flare and Sunburst",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "We’re bringing GPT-Image-2.6 to Codex and the API. In the API, the 2.6 versions of Flare and Sunburst generate images 50% faster than before.\n\nUse Flare for a quick first pass on a poster or product shot. At low image quality, it can generate an image in as little as six seconds. When you need details to stay consistent across edits, use Sunburst at medium or high quality. Try changing a product’s backdrop while keeping its shape and texture, or bring a mascot to life as a looping GIF.\n\nhttp://openai.com/index/introducing-images-2-6/",
+      "published_at": "2026-11-04T23:42:40Z",
+      "duration_seconds": 88
+    },
+    {
+      "id": "6IttBmI4P9M",
+      "url": "https://www.youtube.com/watch?v=6IttBmI4P9M",
+      "title": "Messi asks ChatGPT to reimagine his room",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "Messi wanted this empty room to feel a little more like him, but wasn’t sure where to start. So he asked ChatGPT for some ideas.\n\nTry it yourself: “Reimagine this room in my style. Surprise me.”",
+      "published_at": "2026-11-04T19:25:46Z",
+      "duration_seconds": 18
+    },
+    {
+      "id": "kJA3fQnntpY",
+      "url": "https://www.youtube.com/watch?v=kJA3fQnntpY",
+      "title": "Collaborate on artifacts in Claude",
+      "channel": "Claude",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "genres": [
+        "AI"
+      ],
+      "description": "Create and share artifacts in Claude so your team can edit docs, trackers, and dashboards together, right from a chat.\n\nThis walkthrough shows how to set access levels for each teammate, from viewer to editor, and how commenter and contributor roles work on shared trackers. When someone leaves a comment, ask Claude to make the update for you, whether it's content or styling.",
+      "published_at": "2026-11-04T18:18:25Z",
+      "duration_seconds": 160
+    },
+    {
+      "id": "ep4psgAFOqc",
+      "url": "https://www.youtube.com/watch?v=ep4psgAFOqc",
+      "title": "How I Get Claude To Edit My Videos (No Code Needed)",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "Try vidIQ for only $1 https://vidiq.com/mattwolfe/\n\nLearn how to edit videos with Claude AI, work with Premiere Pro, and turn your footage into short-form content.\n\nIn this guide, I walk through how to use Claude to help with video editing, from working with your existing footage to creating clips for Shorts and Reels. We’ll explore how Claude fits into an Adobe Premiere Pro workflow and where AI can help with the editing process.\n\nThe focus is on making useful content from your own videos, with creative control over the results. Less repetitive work, without filling your feed with AI slop.\n\nSharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #AITools #ArtificialIntelligence\n\nTime Stamps:\n\nLearn how I use claude video editing to automate my production workflow. This process generates scripts and handles B-roll selection.\n\nI demonstrate the full setup using Claude Opus 5.5, VidIQ, and 11 Labs to build a specialized system. By connecting these tools, I created a pipeline for claude ai video editing that turns raw A-roll into finished content. We explore how to configure these capabilities to refine audio and pacing without manual intervention.\n\nThis workflow is perfect for anyone looking to master claude code video editing by building an iterative feedback loop. I also cover troubleshooting API errors and how to use data-driven insights to improve future output. Whether you want to streamline your production or understand the potential for youtube automation, this guide breaks down the entire technical process.\n\nSubscr",
+      "published_at": "2026-11-04T16:40:16Z",
+      "duration_seconds": 1965
+    },
+    {
+      "id": "UBRLl2vkkrk",
+      "url": "https://www.youtube.com/watch?v=UBRLl2vkkrk",
+      "title": "H22 | Intro to COPs Concepts 10 | Mixing Layers",
+      "channel": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to combine and blend image layers in Houdini’s Copernicus using different compositing techniques. You’ll explore common blending modes, masking, image transitions, and the Layer Merge node to mix multiple layers within a procedural network.\n\nYou’ll also explore how to use cables and Sequence Blend to organize and transition between multiple image layers. These techniques give artists greater flexibility when creating procedural textures, combining visual elements, and managing complex image processing workflows in Copernicus.",
+      "published_at": "2026-11-04T16:21:36Z",
+      "duration_seconds": 292
+    },
+    {
+      "id": "s0axECp1xtQ",
+      "url": "https://www.youtube.com/watch?v=s0axECp1xtQ",
+      "title": "H22 | Intro to COPs Concepts 29 | Texture Baking",
+      "channel": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to bake high resolution geometry details onto a low resolution mesh using the texture baking tools in Houdini’s Copernicus. You’ll explore how to adjust the baking cage, control texture resolution, and generate useful maps such as normals, ambient occlusion, curvature, and height.\n\nYou’ll also explore how to preview the baked textures on the low resolution model and export the resulting maps for use in other applications. This workflow gives artists a practical way to preserve detailed surface information while keeping geometry optimized for rendering and real time production.",
+      "published_at": "2026-11-04T16:21:34Z",
+      "duration_seconds": 401
+    },
+    {
+      "id": "pNa_Sbhsl-Q",
+      "url": "https://www.youtube.com/watch?v=pNa_Sbhsl-Q",
+      "title": "H22 | Intro to COPs Concepts 22 | Height Maps",
+      "channel": "Houdini",
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to create and manipulate height maps in Houdini’s Copernicus using procedural patterns and grayscale values. You’ll explore how to assign height information to image layers, adjust displacement, and introduce variations using randomized values.\n\nYou’ll also explore how to combine and remap height data to create more interesting surface patterns while maintaining control over the results. These techniques provide a practical foundation for creating procedural height fields and terrains in Copernicus.",
+      "published_at": "2026-11-04T16:21:34Z",
+      "duration_seconds": 254
     }
   ],
-  "usage": {
-    "total_input_tokens": 79502,
-    "total_output_tokens": 122,
-    "total_thought_tokens": 0
+  "collection_source": "watchlist",
+  "editor_review_required": true,
+  "window": {
+    "start": "2026-11-04T15:00:00Z",
+    "end": "2026-11-05T02:49:24.933104Z",
+    "timezone": "Asia/Tokyo"
   },
-  "analysis": {
-    "summary": "動画では、MMORPG「The Elder Scrolls Online」（ESO）の11月に予定されている最新アップデートやイベントについて解説されています。具体的には、10月21日から11月4日までの「Witches Festival」イベント、アップデート52のPTSサイクル、そして「Markarth」DLCのベースゲームへの追加などが紹介されています。また、11月9日から12月2日までの「Golden Pursuits」や、11月12日から23日までの「Whitestrake's Mayhem」イベントの詳細も説明されています。",
-    "model": "gemini-3.5-flash-lite"
-  },
-  "api_attempts": 2
+  "selection_limit_per_genre": 4,
+  "candidate_limit_per_channel": 3,
+  "partial": true,
+  "stop_code": "",
+  "channels": [
+    {
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 5,
+      "candidates_returned": 3,
+      "partial": true,
+      "reasons": [
+        "candidate_limit",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "name": "Claude",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "name": "Matt Wolfe",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "name": "KEITO【AI&WEB ch】",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "name": "いまにゅのAIプログラミング塾",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "name": "Autodesk Media & Entertainment",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "name": "Chaos V-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "name": "Adobe Substance 3D",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "name": "Foundry",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "name": "Houdini",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "pages_fetched": 1,
+      "items_examined": 10,
+      "candidates_found": 10,
+      "candidates_returned": 3,
+      "partial": true,
+      "reasons": [
+        "candidate_limit",
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "name": "Blender",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "name": "Eloi Andaluz Fullà",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "name": "Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "name": "QuadSpinner",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "name": "World Creator",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "name": "Bethesda Softworks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "name": "Skinny Cheeks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit",
+        "candidate_not_eligible"
+      ]
+    },
+    {
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "name": "ArzyeL Gaming",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "name": "Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "name": "Hack The Minotaur",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCYIL1m3Tfa04IgwteS9EnYA",
+      "name": "Olli Huttunen",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    }
+  ],
+  "api_attempts": 53
 }
