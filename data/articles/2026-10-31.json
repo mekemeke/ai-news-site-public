@@ -1055,6 +1055,14 @@
           "text": "出典：Blender公式5.3 Rendering（検索取得情報） https://developer.blender.org/docs/release_notes/5.3/rendering/"
         },
         {
+          "type": "paragraph",
+          "text": "出典：X／@BENA_Develop https://x.com/BENA_Develop/status/2117763607736041554"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/BENA_Develop/status/2117763607736041554"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "スキャン由来の背景を普段の3Dシーンへ持ち込む入口が増える一方、本番案件では開発版の制約を確認したいね。"
@@ -1076,18 +1084,24 @@
         {
           "label": "用語解説：3D Gaussian Splatting（原著）",
           "url": "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+        },
+        {
+          "label": "X／@BENA_Develop",
+          "url": "https://x.com/BENA_Develop/status/2117763607736041554"
         }
       ],
       "sourceUrls": [
         "https://x.com/BlenderDev/status/2116161896533389617",
         "https://www.blender.org/releases/5-3/",
         "https://developer.blender.org/docs/release_notes/5.3/rendering/",
-        "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+        "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/",
+        "https://x.com/BENA_Develop/status/2117763607736041554"
       ],
-      "sourceNote": "2026年10月31日0時〜10時（日本時間）に受信したニュース素材を整理。一次資料を個別に確認した部分を除き、元投稿全文・映像全編・実機動作は未確認。Facebookグループ由来は投稿者名・画像を載せず匿名で要約し、元投稿へのリンクを掲載している。",
+      "sourceNote": "2026年10月31日0時〜10時（日本時間）に受信したニュース素材を整理。一次資料を個別に確認した部分を除き、元投稿全文・映像全編・実機動作は未確認。Facebookグループ由来は投稿者名・画像を載せず匿名で要約し、元投稿へのリンクを掲載している。 2026年11月5日追記分：既報に対応する追加出典・利用者報告を補い、当初の掲載日時は維持。本文に示す確認範囲を超えて仕様を確定していない。",
       "thumbnailKey": "cg-news",
       "thumbnail": "assets/news/library-cg-edit-v1.webp",
-      "thumbnailAlt": "内容を表す汎用イラスト。実際の製品画面やゲーム場面ではありません。"
+      "thumbnailAlt": "内容を表す汎用イラスト。実際の製品画面やゲーム場面ではありません。",
+      "updatedAt": "2026-11-05T10:36:14.087656+09:00"
     },
     {
       "id": "20261031-kimi-3d-make",

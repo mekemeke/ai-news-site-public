@@ -247,6 +247,18 @@
           "url": "https://x.com/ClaudeDevs/status/2117680635561312732"
         },
         {
+          "type": "paragraph",
+          "text": "Team・Enterpriseの管理者が設定すると、メンバーの初回利用時にプラグインへ自動接続できるという利用者紹介が加わった。接続先がClaudeを信頼できる発行元として扱う必要があるという説明だが、対象プランと認可条件は公式に未確認。既報のログイン時接続と同じ仕組みの補足として扱う。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@tetumemo https://x.com/tetumemo/status/2118104759244915062"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/tetumemo/status/2118104759244915062"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "手間を減らす仕組みでも、何への権限を与えたか見えることは大切だね。"
@@ -511,6 +523,10 @@
         {
           "label": "用語解説：EDR",
           "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-edr-endpoint-detection-response"
+        },
+        {
+          "label": "X／@tetumemo",
+          "url": "https://x.com/tetumemo/status/2118104759244915062"
         }
       ],
       "sourceUrls": [
@@ -538,10 +554,12 @@
         "https://github.com/ollama/ollama/releases/tag/v0.40.15-rc0",
         "https://docs.cloud.google.com/tpu/docs/bfloat16",
         "https://scikit-image.org/docs/stable/api/skimage.metrics.html#skimage.metrics.structural_similarity",
-        "https://www.microsoft.com/en-us/security/business/security-101/what-is-edr-endpoint-detection-response"
+        "https://www.microsoft.com/en-us/security/business/security-101/what-is-edr-endpoint-detection-response",
+        "https://x.com/tetumemo/status/2118104759244915062"
       ],
-      "sourceNote": "2026年11月4日0時〜10時（日本時間）にSlackで受信したニュース素材。公式資料を確認したと明記した箇所以外は提供者の要約に基づき、元投稿本文・実動作・性能は未確認。",
-      "thumbnailKey": "ai-news"
+      "sourceNote": "2026年11月4日0時〜10時（日本時間）にSlackで受信したニュース素材。公式資料を確認したと明記した箇所以外は提供者の要約に基づき、元投稿本文・実動作・性能は未確認。 2026年11月5日追記分：既報に対応する追加出典・利用者報告を補い、当初の掲載日時は維持。本文に示す確認範囲を超えて仕様を確定していない。",
+      "thumbnailKey": "ai-news",
+      "updatedAt": "2026-11-05T10:36:14.087656+09:00"
     },
     {
       "id": "20261104-ai-tips",
@@ -2165,6 +2183,30 @@
           "url": "https://x.com/mu_mu_360/status/2117737182861693268"
         },
         {
+          "type": "paragraph",
+          "text": "出典：X／@TESOnline https://x.com/TESOnline/status/2117995283254477168"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/TESOnline/status/2117995283254477168"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：ESO公式ニュース（年齢確認画面のため本文未取得） https://elderscrollsonline.com/en-us/news/post/70517"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Bethesda公式ニュース一覧（11月3日付） https://elderscrolls.bethesda.net/en-US"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@OtterInSpace https://x.com/OtterInSpace/status/2117919996693328221"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/OtterInSpace/status/2117919996693328221"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "報酬の数だけでなく、達成条件と終了時刻が確認できれば遊ぶ予定を立てやすいね。"
@@ -2178,16 +2220,37 @@
         {
           "label": "ESO公式フォーラム：Golden Pursuits—Alik’r Awaits",
           "url": "https://forums.elderscrollsonline.com/en/discussion/700791/official-discussion-thread-for-golden-pursuits-alik-r-awaits"
+        },
+        {
+          "label": "X／@TESOnline",
+          "url": "https://x.com/TESOnline/status/2117995283254477168"
+        },
+        {
+          "label": "ESO公式ニュース（年齢確認画面のため本文未取得）",
+          "url": "https://elderscrollsonline.com/en-us/news/post/70517"
+        },
+        {
+          "label": "Bethesda公式ニュース一覧（11月3日付）",
+          "url": "https://elderscrolls.bethesda.net/en-US"
+        },
+        {
+          "label": "X／@OtterInSpace",
+          "url": "https://x.com/OtterInSpace/status/2117919996693328221"
         }
       ],
       "sourceUrls": [
         "https://x.com/mu_mu_360/status/2117737182861693268",
-        "https://forums.elderscrollsonline.com/en/discussion/700791/official-discussion-thread-for-golden-pursuits-alik-r-awaits"
+        "https://forums.elderscrollsonline.com/en/discussion/700791/official-discussion-thread-for-golden-pursuits-alik-r-awaits",
+        "https://x.com/TESOnline/status/2117995283254477168",
+        "https://elderscrollsonline.com/en-us/news/post/70517",
+        "https://elderscrolls.bethesda.net/en-US",
+        "https://x.com/OtterInSpace/status/2117919996693328221"
       ],
-      "sourceNote": "2026年11月4日のSlack朝刊素材を編集。投稿の主張と確認済み事項を区別し、未確認の性能・提供条件は断定していない。",
+      "sourceNote": "2026年11月4日のSlack朝刊素材を編集。投稿の主張と確認済み事項を区別し、未確認の性能・提供条件は断定していない。 2026年11月5日追記分：既報に対応する追加出典・利用者報告を補い、当初の掲載日時は維持。本文に示す確認範囲を超えて仕様を確定していない。",
       "thumbnailKey": "eso-news",
       "thumbnail": "assets/news/library-game-official-v1.webp",
-      "thumbnailAlt": "ゲーム公式情報を表す汎用イラスト。実際のゲーム画面ではありません。"
+      "thumbnailAlt": "ゲーム公式情報を表す汎用イラスト。実際のゲーム画面ではありません。",
+      "updatedAt": "2026-11-05T10:36:14.087656+09:00"
     }
   ]
 }

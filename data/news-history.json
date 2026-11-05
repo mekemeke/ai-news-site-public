@@ -85,6 +85,20 @@
         "selectedVideoCount": 5,
         "metadataOnly": true
       }
+    },
+    {
+      "runDate": "2026-11-05",
+      "publishedAt": "2026-11-05T10:36:14.087656+09:00",
+      "newCount": 17,
+      "updatedCount": 4,
+      "deletedCount": 0,
+      "counts": {
+        "standalone": 11,
+        "tipsRoundup": 3,
+        "newsRoundup": 3
+      },
+      "sourceItemCount": 71,
+      "notes": "All 71 source items are accounted for. Duplicate announcements supplement existing articles without changing their original publication dates. Confirmed source facts and unverified reports remain distinguished; existing artwork is reused."
     }
   ],
   "articles": [
@@ -930,9 +944,13 @@
       "kind": "headline",
       "sourceUrls": [
         "https://x.com/runwayml/status/2115510886144282927",
-        "https://developer.mozilla.org/en-US/docs/Glossary/API"
+        "https://developer.mozilla.org/en-US/docs/Glossary/API",
+        "https://x.com/runwayml/status/2117341561759629709",
+        "https://docs.dev.runwayml.com/guides/plugin/",
+        "https://x.com/runwayml/status/2118011084955353212"
       ],
-      "forumEvidence": []
+      "forumEvidence": [],
+      "updatedAt": "2026-11-05T10:36:14.087656+09:00"
     },
     {
       "id": "20261029-cg-news",
@@ -1263,6 +1281,289 @@
       "kind": "headline",
       "sourceUrls": [
         "https://www.youtube.com/watch?v=tnEHrFAG4bA"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261031-blender53-gaussian",
+      "runDate": "2026-10-31",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/BlenderDev/status/2116161896533389617",
+        "https://www.blender.org/releases/5-3/",
+        "https://developer.blender.org/docs/release_notes/5.3/rendering/",
+        "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/",
+        "https://x.com/BENA_Develop/status/2117763607736041554"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261104-eso-golden-pursuits",
+      "runDate": "2026-11-04",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/mu_mu_360/status/2117737182861693268",
+        "https://forums.elderscrollsonline.com/en/discussion/700791/official-discussion-thread-for-golden-pursuits-alik-r-awaits",
+        "https://x.com/TESOnline/status/2117995283254477168",
+        "https://elderscrollsonline.com/en-us/news/post/70517",
+        "https://elderscrolls.bethesda.net/en-US",
+        "https://x.com/OtterInSpace/status/2117919996693328221"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261104-ai-news",
+      "runDate": "2026-11-04",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/aiusers/permalink/1658850925946252/",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "https://www.threads.com/@claudeai/post/DfSNaXxoOmw",
+        "https://x.com/bot/status/2117736249444507834",
+        "https://x.com/MathiasChu/status/2117679832255385866",
+        "https://x.com/DavidPawlan/status/2117717043026047322",
+        "https://x.com/elonmusk/status/2117649850644705591",
+        "https://x.com/OpenAI/status/2117692475775258785",
+        "https://x.com/OpenAI/status/2117444048227123277",
+        "https://x.com/thsottiaux/status/2117489367417803042",
+        "https://x.com/AnthropicAI/status/2117710942826123294",
+        "https://x.com/ClaudeDevs/status/2117680635561312732",
+        "https://x.com/ClaudeDevs/status/2117670658113155075",
+        "https://x.com/dummerspast39/status/2117416640132366570",
+        "https://x.com/emollick/status/2117445039211086096",
+        "https://x.com/masahirochaen/status/2117738869445865560",
+        "https://x.com/krea_ai/status/2117666342979711409",
+        "https://x.com/yousukezan/status/2117527613396877682",
+        "https://x.com/testingcatalog/status/2117737809994035531",
+        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+        "https://github.com/ollama/ollama/releases",
+        "https://github.com/ollama/ollama/releases/tag/v0.40.15-rc0",
+        "https://docs.cloud.google.com/tpu/docs/bfloat16",
+        "https://scikit-image.org/docs/stable/api/skimage.metrics.html#skimage.metrics.structural_similarity",
+        "https://www.microsoft.com/en-us/security/business/security-101/what-is-edr-endpoint-detection-response",
+        "https://x.com/tetumemo/status/2118104759244915062"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-ai-news",
+      "runDate": "2026-11-05",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/aiusers/permalink/1659747329189945/",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "https://x.com/witcheer/status/2117708643407634813",
+        "https://x.com/OpenAI/status/2118119451401048497",
+        "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+        "https://x.com/AnthropicAI/status/2118073665296228863",
+        "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+        "https://x.com/GoogleAIStudio/status/2118025709146829218",
+        "https://aistudio.google.com/docs/changelog",
+        "https://x.com/MistralAI/status/2117925908572991748",
+        "https://x.com/thsottiaux/status/2118024169762029594",
+        "https://x.com/sama/status/2117794005165748448",
+        "https://x.com/thesupermannx/status/2117998875994898806",
+        "https://www.emergence.ai/blog/emergence-world-a-laboratory-for-evaluating-long-horizon-agent-autonomy",
+        "https://x.com/levelsio/status/2118117357172191242",
+        "https://x.com/emollick/status/2118012530215854477",
+        "https://x.com/perplexity_ai/status/2118035494898704781",
+        "https://cp.linkedin.com/company/perplexity-ai",
+        "https://www.perplexity.ai/hub/customers/get-maine-lobster",
+        "https://x.com/minchoi/status/2118123578382053726",
+        "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
+        "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-ai-tips",
+      "runDate": "2026-11-05",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1532346465359729/",
+        "https://facebook.com/groups/runlocalai/permalink/1531720455422330/",
+        "https://facebook.com/groups/runlocalai/permalink/1532610891999953/",
+        "https://www.threads.com/@mato_11234/post/DfURb3LoHRt",
+        "https://x.com/choopyplug1/status/2117375227130765563",
+        "https://x.com/Michael_Fenech_/status/2118068514523062666",
+        "https://x.com/Sokichi_Hoshino/status/2117759226223161540",
+        "https://x.com/seiichi_satoweb/status/2117816452434809266",
+        "https://x.com/luismeta/status/2117674417522143562",
+        "https://x.com/BkashJosi/status/2117421030004469860",
+        "https://x.com/HermesWatcher/status/2117405511364808902",
+        "https://x.com/EHuanglu/status/2117944888599994477",
+        "https://x.com/tetumemo/status/2118129204449697985",
+        "https://x.com/Voxyz_ai/status/2117965095406063781",
+        "https://x.com/k0dzilla/status/2118090176543031528",
+        "https://x.com/tetumemo/status/2118108553361883443",
+        "https://x.com/tetumemo/status/2118093442328965622",
+        "https://x.com/kajikent/status/2118127621162893819",
+        "https://x.com/zin257856782/status/2117824716182519859"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-cg-tips",
+      "runDate": "2026-11-05",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/282909453705941/permalink/1489522266377981/",
+        "https://facebook.com/groups/7687336457980081/permalink/29130276036592813/",
+        "https://docs.blender.org/manual/en/4.0/addons/mesh/f2.html",
+        "https://www.threads.com/@thegnomonworkshop/post/DfU86uSjoqE",
+        "https://www.threads.com/@punk_bit/post/DfVmq0oDBjJ",
+        "https://facebook.com/groups/QuadSpinnerGaea/permalink/2105497710171832/",
+        "https://x.com/AvnerEngler/status/2117931864488841304",
+        "https://x.com/alexaiworks/status/2117571018956931340",
+        "https://x.com/80Level/status/2117678200805609475",
+        "https://x.com/80Level/status/2118081653553684567",
+        "https://x.com/shi3z/status/2118031501652897841",
+        "https://x.com/L_go_mrk/status/2117889476160786781",
+        "https://x.com/magnific/status/2118056460848673103",
+        "https://x.com/techhalla/status/2118018432515903926",
+        "https://x.com/ComfyUI/status/2118017992084893785"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-ucupaint3",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://facebook.com/reel/3054760271531392/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-eso-tips",
+      "runDate": "2026-11-05",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/esoeu/permalink/40773238988941249/",
+        "https://facebook.com/groups/esoeu/permalink/40768107116121103/",
+        "https://facebook.com/groups/esoeu/permalink/40744478745150607/",
+        "https://x.com/ohluchia2019/status/2117952367580868980",
+        "https://x.com/peko_TES/status/2117950558447571279"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-eso-news",
+      "runDate": "2026-11-05",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://www.threads.com/@gamesradar/post/DfVlsBXj7_l",
+        "https://gear.bethesda.net/products/the-elder-scrolls-6-sentinel-tee",
+        "https://x.com/itsfrostytdm/status/2117939894194421999",
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8547477",
+        "https://forums.elderscrollsonline.com/en/discussion/comment/8547220"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-world-creator4-early-access",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/theCGchannel/status/2117948748479320369",
+        "https://www.bitethebytes.com/products/world-creator"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-unreal-iitsec-terrain",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/UnrealEngine/status/2118055950913617973"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-cg-news",
+      "runDate": "2026-11-05",
+      "kind": "roundup",
+      "sourceUrls": [
+        "https://x.com/geoign/status/2118001706869133514",
+        "https://x.com/djnyaaan/status/2118020205347746104",
+        "https://x.com/UnrealEngine/status/2117634854800224451"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-zzz-shader2",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/80Level/status/2118017933662462347"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-images26",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/OpenAI/status/2118124944928432327",
+        "https://openai.com/index/introducing-images-2-6/",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "https://x.com/OpenAIDevs/status/2118124753340756055",
+        "https://deploymentsafety.openai.com/chatgpt-images-2-6"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-gemini-voice-remixing",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/Google/status/2118027058794148099",
+        "https://aistudio.google.com/docs/changelog"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-kimi-ollama-cloud",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/ollama/status/2118068379378651192"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-kling4-flash",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/Kling_ai/status/2117995299591319932"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-comfy-chatgpt",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/ComfyUI/status/2118104527228583982"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-octane-mcp",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/SpenserFX/status/2118092253537386861"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261105-cuda-13-5",
+      "runDate": "2026-11-05",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
       ],
       "forumEvidence": []
     }

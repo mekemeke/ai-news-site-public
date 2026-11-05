@@ -2203,6 +2203,27 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "接続方法と実装の知識がまとまると試作を始めやすそうだが、生成の費用は別に確認したいね。"
+        },
+        {
+          "type": "heading",
+          "text": "11月5日追記：Claude Code向けRunway Devも紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Runwayの投稿として、Claude Code向けRunway Devプラグインが、作りたい生成機能の説明からRunway APIの組み込みを助けると紹介された。既報のCodex・Cursor連携と同じ製品の対応先追加として整理する。公式な対応版、生成コードの範囲、API料金は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@runwayml https://x.com/runwayml/status/2118011084955353212"
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/runwayml/status/2118011084955353212"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "使う開発環境が違っても同じAPIを組み込めるなら、試作の入口が増えるね。"
         }
       ],
       "sources": [
@@ -2221,19 +2242,24 @@
         {
           "label": "Runway公式：プラグイン導入資料",
           "url": "https://docs.dev.runwayml.com/guides/plugin/"
+        },
+        {
+          "label": "X／@runwayml",
+          "url": "https://x.com/runwayml/status/2118011084955353212"
         }
       ],
       "sourceUrls": [
         "https://x.com/runwayml/status/2115510886144282927",
         "https://developer.mozilla.org/en-US/docs/Glossary/API",
         "https://x.com/runwayml/status/2117341561759629709",
-        "https://docs.dev.runwayml.com/guides/plugin/"
+        "https://docs.dev.runwayml.com/guides/plugin/",
+        "https://x.com/runwayml/status/2118011084955353212"
       ],
       "thumbnailKey": "cg-news",
-      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。 2026年11月3日にCursor対応の紹介と現行公式資料を追記。元の掲載日時は維持。",
+      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。 2026年11月3日にCursor対応の紹介と現行公式資料を追記。元の掲載日時は維持。 2026年11月5日追記分：既報に対応する追加出典・利用者報告を補い、当初の掲載日時は維持。本文に示す確認範囲を超えて仕様を確定していない。",
       "thumbnail": "assets/news/library-cg-edit-v1.webp",
       "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際の製品画面ではありません。",
-      "updatedAt": "2026-11-03T01:09:57.780Z"
+      "updatedAt": "2026-11-05T10:36:14.087656+09:00"
     },
     {
       "id": "20261029-cg-news",

@@ -20,13 +20,19 @@
     }
   ],
   "schemaVersion": 1,
-  "articleCount": 156,
+  "articleCount": 173,
   "days": [
+    {
+      "date": "2026-11-05",
+      "path": "data/articles/2026-11-05.json",
+      "count": 17,
+      "sha256": "0aaf4c78555d4bcc9942f27ecf9037ca67d34530e31df3dea0c18091013cd77c"
+    },
     {
       "date": "2026-11-04",
       "path": "data/articles/2026-11-04.json",
       "count": 15,
-      "sha256": "f5f22db26a38a6101df7a4d976fc75e207904c9babd67b82733fb101fbe2a149"
+      "sha256": "7c670b3144d3ffaa09dcc0692123c75d0dd370fa02eceed256ea68dbe59d5bc3"
     },
     {
       "date": "2026-11-03",
@@ -50,7 +56,7 @@
       "date": "2026-10-31",
       "path": "data/articles/2026-10-31.json",
       "count": 18,
-      "sha256": "c731f4c3e6826e7e780a190d981c6c483dfea83f06bf6afd709bdb6adb7ac4e2"
+      "sha256": "c00c9c5223bcdbd1e3ac99ffb1ab982642a5d0d9c09edf36459de4e67d027167"
     },
     {
       "date": "2026-10-30",
@@ -62,7 +68,7 @@
       "date": "2026-10-29",
       "path": "data/articles/2026-10-29.json",
       "count": 20,
-      "sha256": "b33eba9265bca14169be111fc689bc486723df9bbf4455b37770ed9f062fcabe"
+      "sha256": "b15120cd1a058c7f920523c3e1afc9a11997f45c910fda72b19c734d04d6f732"
     },
     {
       "date": "2026-10-28",
