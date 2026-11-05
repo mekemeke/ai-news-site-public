@@ -2210,7 +2210,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Runwayの投稿として、Claude Code向けRunway Devプラグインが、作りたい生成機能の説明からRunway APIの組み込みを助けると紹介された。既報のCodex・Cursor連携と同じ製品の対応先追加として整理する。公式な対応版、生成コードの範囲、API料金は未確認。"
+          "text": "Runwayの投稿として、Claude Code向けRunway Devプラグインが、作りたい生成機能の説明からRunway APIの組み込みを助けると紹介された。11月3日の追記で公式資料のClaude Code対応をすでに確認しており、今回はその紹介投稿を追加した。新たに対応したことを示す告知とは扱わない。公式な対応版、生成コードの範囲、API料金は未確認。"
         },
         {
           "type": "paragraph",
