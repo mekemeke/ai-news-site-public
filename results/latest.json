@@ -2,26 +2,26 @@
   "schema_version": 1,
   "mode": "analyze",
   "genre": "3DCG",
-  "created_at": "2026-11-06T01:49:09.088114+00:00",
-  "run_id": "42146314327",
+  "created_at": "2026-11-06T01:51:04.166106+00:00",
+  "run_id": "42146516835",
   "videos": [
     {
-      "id": "s0axECp1xtQ",
-      "url": "https://www.youtube.com/watch?v=s0axECp1xtQ",
-      "title": "H22 | Intro to COPs Concepts 29 | Texture Baking",
+      "id": "pNa_Sbhsl-Q",
+      "url": "https://www.youtube.com/watch?v=pNa_Sbhsl-Q",
+      "title": "H22 | Intro to COPs Concepts 22 | Height Maps",
       "channel": "Houdini",
-      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to bake high resolution geometry details onto a low resolution mesh using the texture baking tools in Houdini’s Copernicus. You’ll explore how to adjust the baking cage, control texture resolution, and generate useful maps such as normals, ambient occlusion, curvature, and height.\n\nYou’ll also explore how to preview the baked textures on the low resolution model and export the resulting maps for use in other applications. This workflow gives artists a practical way to preserve detailed surface information while keeping geometry optimized for rendering and real time production.",
+      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to create and manipulate height maps in Houdini’s Copernicus using procedural patterns and grayscale values. You’ll explore how to assign height information to image layers, adjust displacement, and introduce variations using randomized values.\n\nYou’ll also explore how to combine and remap height data to create more interesting surface patterns while maintaining control over the results. These techniques provide a practical foundation for creating procedural height fields and terrains in Copernicus.",
       "published_at": "2026-11-04T16:21:34Z",
-      "duration_seconds": 401
+      "duration_seconds": 254
     }
   ],
   "usage": {
-    "total_input_tokens": 36552,
-    "total_output_tokens": 77,
+    "total_input_tokens": 23179,
+    "total_output_tokens": 80,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "この動画ではSideFXのCopernicusにおけるテクスチャベイクの手順と機能について解説しています。高解像度メッシュと低解像度メッシュ、ケージメッシュを用いたノーマルマップなどのベイク処理の実演が含まれています。デフォルトのレシピノードから各パラメータの調整方法を確認できます。",
+    "summary": "コペルニクスにおけるハイトマップの作成と操作方法について解説しています。セルラーノイズを用いたモノクロ画像からハイトマップを生成し、タイプ情報の変更やリマップ、乗算による変位の調整を行います。ノードベースのワークフローを活用して柔軟なマテリアル編集を行う手法を学べます。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
