@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "3DCG",
-  "created_at": "2026-11-06T01:13:31.004366+00:00",
-  "run_id": "42142356302",
+  "genre": "AI",
+  "created_at": "2026-11-06T01:15:35.457539+00:00",
+  "run_id": "42142599513",
   "videos": [
     {
-      "id": "kyh3rkb5N2k",
-      "url": "https://www.youtube.com/watch?v=kyh3rkb5N2k",
-      "title": "So Much Is Coming to V-Ray",
-      "channel": "Chaos V-Ray",
-      "description": "So much is coming to V-Ray. Here is a quick peek at what’s new.\nV-Ray 7, Update 5 brings AI deeper into your visualization workflow, and you still make every creative decision. Get context-aware help from the new AI Assistant. Find or generate 3D assets from a single reference image in Chaos Cosmos. Connect AI agents like Claude and ChatGPT to your scenes through the new MCP servers.\n\nOn the rendering side, there’s a new Cylinder Light and an upgraded Spot Light, new volumetrics with TyFlow Inferno support, and GPU rendering on AMD graphics cards. Vantage, Anima and Veras also get major updates.\n------------------------------------------------------------------------------------\n🔗 Follow us:\n👉 LinkedIn: https://bit.ly/VrayLI\n👉 Instagram: https://bit.ly/V-RayIG\n👉 Facebook: https://bit.ly/ChaosVray_FB\n\n--------------------------------------------------------------------------------------\n🔗 Resources & links: \n\nDownload a free trial → https://bit.ly/V-Rayfreetrial\nEnroll in Chaos Academy → https://bit.ly/vray-chaos-academy\nJoin the Chaos forums → https://forums.chaos.com/",
-      "published_at": "2026-11-05T16:23:16Z",
-      "duration_seconds": 31
+      "id": "UTubvRLX2j4",
+      "url": "https://www.youtube.com/watch?v=UTubvRLX2j4",
+      "title": "Introducing Personal Finance in Claude",
+      "channel": "Claude",
+      "description": "Get clear answers to the money questions you’ve never felt comfortable asking. Connect your accounts, and Claude explains your spending, bills, and balances in a way that makes sense.\n\nClaude’s access is read-only. You pick the accounts and can unlink anytime.\n\nNow in beta and rolling out gradually to Pro, Max and Ultra plans in the US:\nhttps://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "published_at": "2026-11-05T18:00:30Z",
+      "duration_seconds": 92
     }
   ],
   "usage": {
-    "total_input_tokens": 2884,
-    "total_output_tokens": 33,
+    "total_input_tokens": 8354,
+    "total_output_tokens": 36,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "動画では、リアルタイムレンダリングや新しいAIツールを紹介しています。全体として作業の高速化が図られていることがわかります。",
+    "summary": "AI音声アシスタント機能を用いて、Claudeとの対話形式で個人の銀行口座などの資産管理を行う様子が映されています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
