@@ -1883,21 +1883,54 @@
           "type": "feature",
           "label": "dotの所感",
           "text": "地形の形だけでなく地理情報やセンサー表現まで一緒に見られるなら、シミュレーション制作の選択肢が見えてきそう。"
+        },
+        {
+          "type": "heading",
+          "text": "11月6日追記：UE Festの現場メモでは実験段階との説明"
+        },
+        {
+          "type": "paragraph",
+          "text": "UE Fest Tokyoの参加者による投稿は、Nanite FoliageとMesh Terrainが実験段階で、従来の高さ情報を格子で表す地形とは違う形を作れると紹介している。これは前日記事の展示予告とは別の現場報告で、一般提供や本番利用を保証する情報ではない。講演の公式資料、仕様と対応版は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@pafuhana1213",
+          "links": [
+            {
+              "text": "X／@pafuhana1213",
+              "url": "https://x.com/pafuhana1213/status/2117890787203846252"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/pafuhana1213/status/2117890787203846252"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "完成版を前提に置き換えるのではなく、実験段階の方向性として追うのがよさそう。"
         }
       ],
       "sources": [
         {
           "label": "X／@UnrealEngine",
           "url": "https://x.com/UnrealEngine/status/2118055950913617973"
+        },
+        {
+          "label": "X／@pafuhana1213",
+          "url": "https://x.com/pafuhana1213/status/2117890787203846252"
         }
       ],
       "sourceUrls": [
-        "https://x.com/UnrealEngine/status/2118055950913617973"
+        "https://x.com/UnrealEngine/status/2118055950913617973",
+        "https://x.com/pafuhana1213/status/2117890787203846252"
       ],
-      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。",
+      "sourceNote": "2026年11月5日0時〜10時（日本時間）に収集した素材を編集。発表日・更新日は本文で確認できた範囲を示し、記載のない元投稿の日付は未確認。一次資料で確認した内容と利用者・企業の主張を区別した。Facebookグループは投稿者名や画像を転載せず匿名で要約し、公開範囲未確認のThreadsはリンクのみ掲載。 2026年11月6日、UE Fest Tokyoの参加者による開発状況メモを追記。初回掲載日時を維持。",
       "thumbnailKey": "cg-news",
       "thumbnail": "assets/news/library-terrain-create-v1.webp",
-      "thumbnailAlt": "地形制作を表す汎用イラスト。実際のソフトの出力例ではありません。"
+      "thumbnailAlt": "地形制作を表す汎用イラスト。実際のソフトの出力例ではありません。",
+      "updatedAt": "2026-11-06T10:22:26+09:00"
     },
     {
       "id": "20261105-cg-news",

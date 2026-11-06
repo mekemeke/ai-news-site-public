@@ -20,13 +20,19 @@
     }
   ],
   "schemaVersion": 1,
-  "articleCount": 173,
+  "articleCount": 194,
   "days": [
+    {
+      "date": "2026-11-06",
+      "path": "data/articles/2026-11-06.json",
+      "count": 21,
+      "sha256": "9ce61f145824a869bf6ac4a36c2a74536bb4dbc7283427845e22dac3622bfc85"
+    },
     {
       "date": "2026-11-05",
       "path": "data/articles/2026-11-05.json",
       "count": 17,
-      "sha256": "66210b4c830ca03c354384a716b6151ca4ff0e0df00e2e07f0fa0efbc244a264"
+      "sha256": "a67c1de178174eec4be5e411abd65a3d1a446a17aba57e12ae6d7701c88e5eec"
     },
     {
       "date": "2026-11-04",
