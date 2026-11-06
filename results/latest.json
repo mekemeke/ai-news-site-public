@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "AI",
-  "created_at": "2026-11-06T01:15:35.457539+00:00",
-  "run_id": "42142599513",
+  "genre": "ESO",
+  "created_at": "2026-11-06T01:17:03.667158+00:00",
+  "run_id": "42142769964",
   "videos": [
     {
-      "id": "UTubvRLX2j4",
-      "url": "https://www.youtube.com/watch?v=UTubvRLX2j4",
-      "title": "Introducing Personal Finance in Claude",
-      "channel": "Claude",
-      "description": "Get clear answers to the money questions you’ve never felt comfortable asking. Connect your accounts, and Claude explains your spending, bills, and balances in a way that makes sense.\n\nClaude’s access is read-only. You pick the accounts and can unlink anytime.\n\nNow in beta and rolling out gradually to Pro, Max and Ultra plans in the US:\nhttps://claude.com/resources/articles/introducing-personal-finance-in-claude",
-      "published_at": "2026-11-05T18:00:30Z",
-      "duration_seconds": 92
+      "id": "d9EAuegp64I",
+      "url": "https://www.youtube.com/watch?v=d9EAuegp64I",
+      "title": "Heavy Attack Dragonknight Solo Build | ESO Update 51",
+      "channel": "Hyperioxes",
+      "description": "Pure Class Heavy Attack Dragonknight Solo Build for ESO Update 51. Molten Armaments gives you Empower for 30 seconds, so you don't have to recast a Mages Guild ability every 10 seconds to keep it up like other Heavy Attack builds do. That leaves room to keep up more abilities. It's very easy to play, but damage is only a bit higher than Heavy Attack Sorcerer and a lot lower than Heavy Attack Nightblade.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 59.4k DPS on the 6 million dummy.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/heavy-attack-dragonknight-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/3K80zz7TMSs\nLog - https://www.esologs.com/reports/tCJQvZYGr7Lkfy4M\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/m2eRoVDofF8\nLog - https://www.esologs.com/reports/zkY4xwcPgmFn96Ay\n\n59.4k DPS Parse\nRecording - https://youtu.be/uOC3oOeWDmg\n\n=============  Timestamps =============\n\n0:00 Intro\n0:21 Skill Setups\n3:26 Situational Skills\n6:57 Final Setups\n7:23 Rotation\n8:10 Passives\n8:21 Vampirism\n8:45 Gear\n9:15 Champion Points\n9:58 Class Mastery\n10:36 Race and Mundus\n11:03 Attributes\n11:41 Food\n12:26 Potions\n12:50 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-11-05T16:47:56Z",
+      "duration_seconds": 802
     }
   ],
   "usage": {
-    "total_input_tokens": 8354,
-    "total_output_tokens": 36,
+    "total_input_tokens": 72963,
+    "total_output_tokens": 74,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "AI音声アシスタント機能を用いて、Claudeとの対話形式で個人の銀行口座などの資産管理を行う様子が映されています。",
+    "summary": "Elder Scrolls Onlineのゲームプレイ映像を通じて、ソロ向けの強力なビルドの構築方法が紹介されています。プレイヤーは様々な状況におけるスキル、装備、パッシブスキルの組み合わせや立ち回りを詳しく解説しています。特に難易度の高いエリアでの生存と効率的なダメージ出力に重点が置かれています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
