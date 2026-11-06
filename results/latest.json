@@ -2,26 +2,26 @@
   "schema_version": 1,
   "mode": "analyze",
   "genre": "3DCG",
-  "created_at": "2026-11-06T01:46:32.995364+00:00",
-  "run_id": "42146033182",
+  "created_at": "2026-11-06T01:49:09.088114+00:00",
+  "run_id": "42146314327",
   "videos": [
     {
-      "id": "UBRLl2vkkrk",
-      "url": "https://www.youtube.com/watch?v=UBRLl2vkkrk",
-      "title": "H22 | Intro to COPs Concepts 10 | Mixing Layers",
+      "id": "s0axECp1xtQ",
+      "url": "https://www.youtube.com/watch?v=s0axECp1xtQ",
+      "title": "H22 | Intro to COPs Concepts 29 | Texture Baking",
       "channel": "Houdini",
-      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to combine and blend image layers in Houdini’s Copernicus using different compositing techniques. You’ll explore common blending modes, masking, image transitions, and the Layer Merge node to mix multiple layers within a procedural network.\n\nYou’ll also explore how to use cables and Sequence Blend to organize and transition between multiple image layers. These techniques give artists greater flexibility when creating procedural textures, combining visual elements, and managing complex image processing workflows in Copernicus.",
-      "published_at": "2026-11-04T16:21:36Z",
-      "duration_seconds": 292
+      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to bake high resolution geometry details onto a low resolution mesh using the texture baking tools in Houdini’s Copernicus. You’ll explore how to adjust the baking cage, control texture resolution, and generate useful maps such as normals, ambient occlusion, curvature, and height.\n\nYou’ll also explore how to preview the baked textures on the low resolution model and export the resulting maps for use in other applications. This workflow gives artists a practical way to preserve detailed surface information while keeping geometry optimized for rendering and real time production.",
+      "published_at": "2026-11-04T16:21:34Z",
+      "duration_seconds": 401
     }
   ],
   "usage": {
-    "total_input_tokens": 26629,
-    "total_output_tokens": 75,
+    "total_input_tokens": 36552,
+    "total_output_tokens": 77,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "このビデオでは、SideFX Houdiniのコペルニクスコンテキストにおけるイメージレイヤーの混合手法について解説しています。ブレンドノード、ワイプ機能、レイヤーマージ、ケーブルパック、シーケンスブレンドなどの機能を使用して、複数のレイヤーを効果的に結合して操作する方法を紹介しています。",
+    "summary": "この動画ではSideFXのCopernicusにおけるテクスチャベイクの手順と機能について解説しています。高解像度メッシュと低解像度メッシュ、ケージメッシュを用いたノーマルマップなどのベイク処理の実演が含まれています。デフォルトのレシピノードから各パラメータの調整方法を確認できます。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
