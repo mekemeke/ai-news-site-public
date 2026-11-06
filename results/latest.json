@@ -1,15 +1,28 @@
 {
   "schema_version": 1,
-  "mode": "search",
-  "genre": "terrain",
-  "created_at": "2026-11-06T01:04:04.686461+00:00",
-  "run_id": "42141256602",
-  "videos": [],
-  "window": {
-    "start": "2026-11-05T15:00:00Z",
-    "end": "2026-11-06T01:04:04.686461Z",
-    "timezone": "Asia/Tokyo"
+  "mode": "analyze",
+  "genre": "AI",
+  "created_at": "2026-11-06T01:06:38.106865+00:00",
+  "run_id": "42141563380",
+  "videos": [
+    {
+      "id": "pXRZyOxbDL4",
+      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
+      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
+      "channel": "OpenAI",
+      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depend on the software.\n\nHear Brian Grinstead, Distinguished Engineer for Firefox, share Mozilla’s experience and what stronger AI can mean for software defense.\n\nhttps://openai.com/index/introducing-gpt-6-cyber/",
+      "published_at": "2026-11-05T17:14:11Z",
+      "duration_seconds": 54
+    }
+  ],
+  "usage": {
+    "total_input_tokens": 4892,
+    "total_output_tokens": 89,
+    "total_thought_tokens": 0
   },
-  "editor_reviewed": true,
-  "api_attempts": 1
+  "analysis": {
+    "summary": "動画では、モジラ社のエンジニアがAIを活用したセキュリティの向上について語っています。GPT-6サイバーを導入して脆弱性の特定と修正を行った結果、安全性が高まったそうです。ツールを用いた迅速な修正は、ユーザーへ素早くパッチを届ける上で重要視されています。モジラはオープンなインターネットの実現に向けてAIによる改善を続けています。",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "api_attempts": 2
 }
