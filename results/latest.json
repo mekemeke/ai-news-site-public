@@ -2,26 +2,26 @@
   "schema_version": 1,
   "mode": "analyze",
   "genre": "3DCG",
-  "created_at": "2026-11-06T01:10:24.458094+00:00",
-  "run_id": "42142004890",
+  "created_at": "2026-11-06T01:13:31.004366+00:00",
+  "run_id": "42142356302",
   "videos": [
     {
-      "id": "3zVlujUzXes",
-      "url": "https://www.youtube.com/watch?v=3zVlujUzXes",
-      "title": "Made to Make: The Cat in the Hat | Extended Cut",
-      "channel": "Autodesk Media & Entertainment",
-      "description": "The Cat’s out of the bag, and the bag is full of filmmaking secrets.  \n\nIn this extended cut of Autodesk’s series \"Made to Make\", go behind the scenes at Warner Bros. Pictures Animation to meet the artists and filmmakers with a gift for the wonderfully absurd. They tell us:\n\nHow do you turn a short book into a feature film?\nHow do you create a look that’s new but still Dr. Seuss?\nWhat tools are shaping a new era of animation at the studio? \n\nSee #TheCatintheHat only in theaters November 6.  \n\nRead more: https://autode.sk/tcith-extended-cut-blog \n\n00:00 Making a short book feature-length\n01:56 Animating a performance worthy of the hat\n03:25 Keeping The Cat on track and in the bag\n04:51 Designing a look that’s new but still Seuss\n07:29 Reflecting on the journey\n\n#Animation #AutodeskMaya",
-      "published_at": "2026-11-05T15:58:35Z",
-      "duration_seconds": 516
+      "id": "kyh3rkb5N2k",
+      "url": "https://www.youtube.com/watch?v=kyh3rkb5N2k",
+      "title": "So Much Is Coming to V-Ray",
+      "channel": "Chaos V-Ray",
+      "description": "So much is coming to V-Ray. Here is a quick peek at what’s new.\nV-Ray 7, Update 5 brings AI deeper into your visualization workflow, and you still make every creative decision. Get context-aware help from the new AI Assistant. Find or generate 3D assets from a single reference image in Chaos Cosmos. Connect AI agents like Claude and ChatGPT to your scenes through the new MCP servers.\n\nOn the rendering side, there’s a new Cylinder Light and an upgraded Spot Light, new volumetrics with TyFlow Inferno support, and GPU rendering on AMD graphics cards. Vantage, Anima and Veras also get major updates.\n------------------------------------------------------------------------------------\n🔗 Follow us:\n👉 LinkedIn: https://bit.ly/VrayLI\n👉 Instagram: https://bit.ly/V-RayIG\n👉 Facebook: https://bit.ly/ChaosVray_FB\n\n--------------------------------------------------------------------------------------\n🔗 Resources & links: \n\nDownload a free trial → https://bit.ly/V-Rayfreetrial\nEnroll in Chaos Academy → https://bit.ly/vray-chaos-academy\nJoin the Chaos forums → https://forums.chaos.com/",
+      "published_at": "2026-11-05T16:23:16Z",
+      "duration_seconds": 31
     }
   ],
   "usage": {
-    "total_input_tokens": 47020,
-    "total_output_tokens": 130,
+    "total_input_tokens": 2884,
+    "total_output_tokens": 33,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "動画では、ワーナーブラザース・ピクチャーズのアニメーション映画「ハットいらずの不思議な旅」の制作裏側が紹介されています。監督やプロデューサー、アニメーターらがインタビューに答え、キャラクターの制作プロセスや、スースの独特な世界観を現代のアニメーションとして表現する苦労を語っています。Autodeskのツール（Mayaなど）を活用した、綿密で協調的な制作チームの様子が描かれています。また、登場人物のバックストーリーの構築や、コミカルで心温まるストーリーの展開が強調されています。",
+    "summary": "動画では、リアルタイムレンダリングや新しいAIツールを紹介しています。全体として作業の高速化が図られていることがわかります。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
