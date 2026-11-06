@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "AI",
-  "created_at": "2026-11-06T01:06:38.106865+00:00",
-  "run_id": "42141563380",
+  "genre": "3DCG",
+  "created_at": "2026-11-06T01:10:24.458094+00:00",
+  "run_id": "42142004890",
   "videos": [
     {
-      "id": "pXRZyOxbDL4",
-      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
-      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
-      "channel": "OpenAI",
-      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depend on the software.\n\nHear Brian Grinstead, Distinguished Engineer for Firefox, share Mozilla’s experience and what stronger AI can mean for software defense.\n\nhttps://openai.com/index/introducing-gpt-6-cyber/",
-      "published_at": "2026-11-05T17:14:11Z",
-      "duration_seconds": 54
+      "id": "3zVlujUzXes",
+      "url": "https://www.youtube.com/watch?v=3zVlujUzXes",
+      "title": "Made to Make: The Cat in the Hat | Extended Cut",
+      "channel": "Autodesk Media & Entertainment",
+      "description": "The Cat’s out of the bag, and the bag is full of filmmaking secrets.  \n\nIn this extended cut of Autodesk’s series \"Made to Make\", go behind the scenes at Warner Bros. Pictures Animation to meet the artists and filmmakers with a gift for the wonderfully absurd. They tell us:\n\nHow do you turn a short book into a feature film?\nHow do you create a look that’s new but still Dr. Seuss?\nWhat tools are shaping a new era of animation at the studio? \n\nSee #TheCatintheHat only in theaters November 6.  \n\nRead more: https://autode.sk/tcith-extended-cut-blog \n\n00:00 Making a short book feature-length\n01:56 Animating a performance worthy of the hat\n03:25 Keeping The Cat on track and in the bag\n04:51 Designing a look that’s new but still Seuss\n07:29 Reflecting on the journey\n\n#Animation #AutodeskMaya",
+      "published_at": "2026-11-05T15:58:35Z",
+      "duration_seconds": 516
     }
   ],
   "usage": {
-    "total_input_tokens": 4892,
-    "total_output_tokens": 89,
+    "total_input_tokens": 47020,
+    "total_output_tokens": 130,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "動画では、モジラ社のエンジニアがAIを活用したセキュリティの向上について語っています。GPT-6サイバーを導入して脆弱性の特定と修正を行った結果、安全性が高まったそうです。ツールを用いた迅速な修正は、ユーザーへ素早くパッチを届ける上で重要視されています。モジラはオープンなインターネットの実現に向けてAIによる改善を続けています。",
+    "summary": "動画では、ワーナーブラザース・ピクチャーズのアニメーション映画「ハットいらずの不思議な旅」の制作裏側が紹介されています。監督やプロデューサー、アニメーターらがインタビューに答え、キャラクターの制作プロセスや、スースの独特な世界観を現代のアニメーションとして表現する苦労を語っています。Autodeskのツール（Mayaなど）を活用した、綿密で協調的な制作チームの様子が描かれています。また、登場人物のバックストーリーの構築や、コミカルで心温まるストーリーの展開が強調されています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
