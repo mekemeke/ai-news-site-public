@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "ESO",
-  "created_at": "2026-11-06T01:17:03.667158+00:00",
-  "run_id": "42142769964",
+  "genre": "AI",
+  "created_at": "2026-11-06T01:44:47.883867+00:00",
+  "run_id": "42145844248",
   "videos": [
     {
-      "id": "d9EAuegp64I",
-      "url": "https://www.youtube.com/watch?v=d9EAuegp64I",
-      "title": "Heavy Attack Dragonknight Solo Build | ESO Update 51",
-      "channel": "Hyperioxes",
-      "description": "Pure Class Heavy Attack Dragonknight Solo Build for ESO Update 51. Molten Armaments gives you Empower for 30 seconds, so you don't have to recast a Mages Guild ability every 10 seconds to keep it up like other Heavy Attack builds do. That leaves room to keep up more abilities. It's very easy to play, but damage is only a bit higher than Heavy Attack Sorcerer and a lot lower than Heavy Attack Nightblade.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 59.4k DPS on the 6 million dummy.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/heavy-attack-dragonknight-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/3K80zz7TMSs\nLog - https://www.esologs.com/reports/tCJQvZYGr7Lkfy4M\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/m2eRoVDofF8\nLog - https://www.esologs.com/reports/zkY4xwcPgmFn96Ay\n\n59.4k DPS Parse\nRecording - https://youtu.be/uOC3oOeWDmg\n\n=============  Timestamps =============\n\n0:00 Intro\n0:21 Skill Setups\n3:26 Situational Skills\n6:57 Final Setups\n7:23 Rotation\n8:10 Passives\n8:21 Vampirism\n8:45 Gear\n9:15 Champion Points\n9:58 Class Mastery\n10:36 Race and Mundus\n11:03 Attributes\n11:41 Food\n12:26 Potions\n12:50 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
-      "published_at": "2026-11-05T16:47:56Z",
-      "duration_seconds": 802
+      "id": "kJA3fQnntpY",
+      "url": "https://www.youtube.com/watch?v=kJA3fQnntpY",
+      "title": "Collaborate on artifacts in Claude",
+      "channel": "Claude",
+      "description": "Create and share artifacts in Claude so your team can edit docs, trackers, and dashboards together, right from a chat.\n\nThis walkthrough shows how to set access levels for each teammate, from viewer to editor, and how commenter and contributor roles work on shared trackers. When someone leaves a comment, ask Claude to make the update for you, whether it's content or styling.",
+      "published_at": "2026-11-04T18:18:25Z",
+      "duration_seconds": 160
     }
   ],
   "usage": {
-    "total_input_tokens": 72963,
-    "total_output_tokens": 74,
+    "total_input_tokens": 14625,
+    "total_output_tokens": 64,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "Elder Scrolls Onlineのゲームプレイ映像を通じて、ソロ向けの強力なビルドの構築方法が紹介されています。プレイヤーは様々な状況におけるスキル、装備、パッシブスキルの組み合わせや立ち回りを詳しく解説しています。特に難易度の高いエリアでの生存と効率的なダメージ出力に重点が置かれています。",
+    "summary": "動画ではAIを活用した共同作業ツールの使用方法を紹介しています。ユーザーはチャットでAIに指示を出し、さまざまな文書や資料を作成・編集させることができます。また、チームメンバーとファイルを共有してリアルタイムで共同作業を進める様子が示されています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
