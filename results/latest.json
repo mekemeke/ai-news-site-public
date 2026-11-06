@@ -1,43 +1,506 @@
 {
   "schema_version": 1,
-  "mode": "search",
-  "genre": "ESO",
-  "created_at": "2026-11-05T02:52:58.739067+00:00",
-  "run_id": "41958027909",
+  "mode": "channels",
+  "genre": "all",
+  "created_at": "2026-11-06T01:02:04.466626+00:00",
+  "run_id": "42141017344",
   "videos": [
     {
-      "id": "uhuQNCqQWKQ",
-      "url": "https://www.youtube.com/watch?v=uhuQNCqQWKQ",
-      "title": "🛡️You Can Visit Sentinel NOW Before Elder Scrolls VI Arrives!",
-      "channel": "Tooniversal",
-      "description": "Elder Scrolls fans can visit the city of Sentinel before Elder Scrolls VI launches!\n\n⚔️Daggerfall Unity: https://www.dfworkshop.net\n\n🐪Follow for Elder Scrolls & Fallout news, tips, & gaming clips\n🔴LIVE on Twitch 🗡️ /tooniversal\n\n#ElderScrolls6 #Sentinel #Skyrim #Gaming #Bethesda #ElderScrollsSentinel #ElderScrollsLore #Sentinel #ElderScrolls #SkyrimShorts #SkyrimClips #Skyrimmemes #Hammerfell #Daggerfall #daggerfallunity #eso #elderscrollsonline #esofam #shorts #youtubeshorts #gamingshorts",
-      "published_at": "2026-11-05T01:30:01Z",
-      "duration_seconds": 64
+      "id": "pXRZyOxbDL4",
+      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
+      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depend on the software.\n\nHear Brian Grinstead, Distinguished Engineer for Firefox, share Mozilla’s experience and what stronger AI can mean for software defense.\n\nhttps://openai.com/index/introducing-gpt-6-cyber/",
+      "published_at": "2026-11-05T17:14:11Z",
+      "duration_seconds": 54
     },
     {
-      "id": "MuSsoNzNzhE",
-      "url": "https://www.youtube.com/watch?v=MuSsoNzNzhE",
-      "title": "Wieder was gesammelt | Material Farm",
-      "channel": "Makka ESO",
-      "description": "",
-      "published_at": "2026-11-04T20:46:52Z",
-      "duration_seconds": 1264
+      "id": "UTubvRLX2j4",
+      "url": "https://www.youtube.com/watch?v=UTubvRLX2j4",
+      "title": "Introducing Personal Finance in Claude",
+      "channel": "Claude",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "genres": [
+        "AI"
+      ],
+      "description": "Get clear answers to the money questions you’ve never felt comfortable asking. Connect your accounts, and Claude explains your spending, bills, and balances in a way that makes sense.\n\nClaude’s access is read-only. You pick the accounts and can unlink anytime.\n\nNow in beta and rolling out gradually to Pro, Max and Ultra plans in the US:\nhttps://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "published_at": "2026-11-05T18:00:30Z",
+      "duration_seconds": 92
     },
     {
-      "id": "8NO3tAKL_0w",
-      "url": "https://www.youtube.com/watch?v=8NO3tAKL_0w",
-      "title": "Ein Typischer Fake Tank | Verlies Run",
-      "channel": "Makka ESO",
-      "description": "",
-      "published_at": "2026-11-04T20:35:20Z",
-      "duration_seconds": 1274
+      "id": "hniPlxcQ7X4",
+      "url": "https://www.youtube.com/watch?v=hniPlxcQ7X4",
+      "title": "What will people REALLY use these for?",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "Sharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #AITools #ArtificialIntelligence",
+      "published_at": "2026-11-05T19:07:54Z",
+      "duration_seconds": 79
+    },
+    {
+      "id": "3zVlujUzXes",
+      "url": "https://www.youtube.com/watch?v=3zVlujUzXes",
+      "title": "Made to Make: The Cat in the Hat | Extended Cut",
+      "channel": "Autodesk Media & Entertainment",
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "The Cat’s out of the bag, and the bag is full of filmmaking secrets.  \n\nIn this extended cut of Autodesk’s series \"Made to Make\", go behind the scenes at Warner Bros. Pictures Animation to meet the artists and filmmakers with a gift for the wonderfully absurd. They tell us:\n\nHow do you turn a short book into a feature film?\nHow do you create a look that’s new but still Dr. Seuss?\nWhat tools are shaping a new era of animation at the studio? \n\nSee #TheCatintheHat only in theaters November 6.  \n\nRead more: https://autode.sk/tcith-extended-cut-blog \n\n00:00 Making a short book feature-length\n01:56 Animating a performance worthy of the hat\n03:25 Keeping The Cat on track and in the bag\n04:51 Designing a look that’s new but still Seuss\n07:29 Reflecting on the journey\n\n#Animation #AutodeskMaya",
+      "published_at": "2026-11-05T15:58:35Z",
+      "duration_seconds": 516
+    },
+    {
+      "id": "kyh3rkb5N2k",
+      "url": "https://www.youtube.com/watch?v=kyh3rkb5N2k",
+      "title": "So Much Is Coming to V-Ray",
+      "channel": "Chaos V-Ray",
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "genres": [
+        "3DCG"
+      ],
+      "description": "So much is coming to V-Ray. Here is a quick peek at what’s new.\nV-Ray 7, Update 5 brings AI deeper into your visualization workflow, and you still make every creative decision. Get context-aware help from the new AI Assistant. Find or generate 3D assets from a single reference image in Chaos Cosmos. Connect AI agents like Claude and ChatGPT to your scenes through the new MCP servers.\n\nOn the rendering side, there’s a new Cylinder Light and an upgraded Spot Light, new volumetrics with TyFlow Inferno support, and GPU rendering on AMD graphics cards. Vantage, Anima and Veras also get major updates.\n------------------------------------------------------------------------------------\n🔗 Follow us:\n👉 LinkedIn: https://bit.ly/VrayLI\n👉 Instagram: https://bit.ly/V-RayIG\n👉 Facebook: https://bit.ly/ChaosVray_FB\n\n--------------------------------------------------------------------------------------\n🔗 Resources & links: \n\nDownload a free trial → https://bit.ly/V-Rayfreetrial\nEnroll in Chaos Academy → https://bit.ly/vray-chaos-academy\nJoin the Chaos forums → https://forums.chaos.com/",
+      "published_at": "2026-11-05T16:23:16Z",
+      "duration_seconds": 31
+    },
+    {
+      "id": "pforEUoQEL4",
+      "url": "https://www.youtube.com/watch?v=pforEUoQEL4",
+      "title": "😮 DROPS 🧙‍♂️ Mage Noob 🥳 Subathon Day 60",
+      "channel": "Skinny Cheeks",
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Support the stream: https://streamlabs.com/skinnycheeks/tip\nhttp://twitch.tv/skinnycheeks\n\nMY LINKS\n\n► Website - https://www.skinnycheeks.gg\n► Support Via Patreon - https://www.patreon.com/skinnycheeks\n► Discord - https://discord.gg/dpsnerds\n► Twitch - http://www.twitch.tv/skinnycheeks\n► Twitter - http://www.twitter.com/skinnycheeks\n► Instagram - http://www.instagram.com/skinnycheeks\n► Soundcloud - http://www.soundcloud.com/skinnycheeks\n\nGREAT RESOURCES\n\n► Status Effect Calc - https://www.skinnycheeks.gg/status-effect-calculator\n► Damage Increase Calc - https://www.skinnycheeks.gg/simple-damage-calculator\n► ESO Add-Ons Currently Used - https://tinyurl.com/y8zhz4m3\n► UESP - https://en.uesp.net/wiki/Main_Page\n► ESO-Hub - https://eso-hub.com/\n► ESO Gear Information - http://www.eso-sets.com\n► ESO Skill Information - http://www.eso-skillbook.com\n\n#arpg #mmorpg #gamingnews",
+      "published_at": "2026-11-06T00:12:09Z",
+      "duration_seconds": 27019
+    },
+    {
+      "id": "d9EAuegp64I",
+      "url": "https://www.youtube.com/watch?v=d9EAuegp64I",
+      "title": "Heavy Attack Dragonknight Solo Build | ESO Update 51",
+      "channel": "Hyperioxes",
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Pure Class Heavy Attack Dragonknight Solo Build for ESO Update 51. Molten Armaments gives you Empower for 30 seconds, so you don't have to recast a Mages Guild ability every 10 seconds to keep it up like other Heavy Attack builds do. That leaves room to keep up more abilities. It's very easy to play, but damage is only a bit higher than Heavy Attack Sorcerer and a lot lower than Heavy Attack Nightblade.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 59.4k DPS on the 6 million dummy.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/heavy-attack-dragonknight-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/3K80zz7TMSs\nLog - https://www.esologs.com/reports/tCJQvZYGr7Lkfy4M\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/m2eRoVDofF8\nLog - https://www.esologs.com/reports/zkY4xwcPgmFn96Ay\n\n59.4k DPS Parse\nRecording - https://youtu.be/uOC3oOeWDmg\n\n=============  Timestamps =============\n\n0:00 Intro\n0:21 Skill Setups\n3:26 Situational Skills\n6:57 Final Setups\n7:23 Rotation\n8:10 Passives\n8:21 Vampirism\n8:45 Gear\n9:15 Champion Points\n9:58 Class Mastery\n10:36 Race and Mundus\n11:03 Attributes\n11:41 Food\n12:26 Potions\n12:50 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-11-05T16:47:56Z",
+      "duration_seconds": 802
     }
   ],
+  "collection_source": "watchlist",
+  "editor_review_required": true,
   "window": {
-    "start": "2026-11-04T15:00:00Z",
-    "end": "2026-11-05T02:52:58.739067Z",
+    "start": "2026-11-05T15:00:00Z",
+    "end": "2026-11-06T01:02:04.466626Z",
     "timezone": "Asia/Tokyo"
   },
-  "editor_reviewed": true,
-  "api_attempts": 2
+  "selection_limit_per_genre": 4,
+  "candidate_limit_per_channel": 3,
+  "partial": true,
+  "stop_code": "",
+  "channels": [
+    {
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "name": "Claude",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "name": "Matt Wolfe",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "name": "KEITO【AI&WEB ch】",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "name": "いまにゅのAIプログラミング塾",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "name": "Autodesk Media & Entertainment",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "name": "Chaos V-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "name": "Adobe Substance 3D",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "name": "Foundry",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "name": "Houdini",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "name": "Blender",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "name": "Eloi Andaluz Fullà",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "name": "Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "name": "QuadSpinner",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "name": "World Creator",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "name": "Bethesda Softworks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit",
+        "candidate_not_eligible"
+      ]
+    },
+    {
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "name": "Skinny Cheeks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "name": "ArzyeL Gaming",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "name": "Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "name": "Hack The Minotaur",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCYIL1m3Tfa04IgwteS9EnYA",
+      "name": "Olli Huttunen",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    }
+  ],
+  "api_attempts": 55
 }
