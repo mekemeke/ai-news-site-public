@@ -1,28 +1,505 @@
 {
   "schema_version": 1,
-  "mode": "analyze",
-  "genre": "3DCG",
-  "created_at": "2026-11-06T01:51:04.166106+00:00",
-  "run_id": "42146516835",
+  "mode": "channels",
+  "genre": "all",
+  "created_at": "2026-11-07T01:07:53.945949+00:00",
+  "run_id": "42322325223",
   "videos": [
     {
-      "id": "pNa_Sbhsl-Q",
-      "url": "https://www.youtube.com/watch?v=pNa_Sbhsl-Q",
-      "title": "H22 | Intro to COPs Concepts 22 | Height Maps",
-      "channel": "Houdini",
-      "description": "All Lessons and Project Files: https://www.sidefx.com/tutorials/intro-to-copernicus-concepts/\n\nLearn how to create and manipulate height maps in Houdini’s Copernicus using procedural patterns and grayscale values. You’ll explore how to assign height information to image layers, adjust displacement, and introduce variations using randomized values.\n\nYou’ll also explore how to combine and remap height data to create more interesting surface patterns while maintaining control over the results. These techniques provide a practical foundation for creating procedural height fields and terrains in Copernicus.",
-      "published_at": "2026-11-04T16:21:34Z",
-      "duration_seconds": 254
+      "id": "hJOwOkLHRN0",
+      "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
+      "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life.",
+      "channel": "OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "genres": [
+        "AI"
+      ],
+      "description": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. \n\nSo we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services and managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\n\nhttps://openai.com/index/lifeval/",
+      "published_at": "2026-11-06T21:11:34Z",
+      "duration_seconds": 65
+    },
+    {
+      "id": "4ZsVR-6YOzs",
+      "url": "https://www.youtube.com/watch?v=4ZsVR-6YOzs",
+      "title": "How Salesforce uses Claude Code",
+      "channel": "Claude",
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "genres": [
+        "AI"
+      ],
+      "description": "Salesforce scaled Claude Code to thousands of engineers and doubled effective output, with fewer bugs per line of code than before.\n\nEngineering leaders from Salesforce explain how they measure AI coding ROI with an \"effective output\" score built with Stanford researchers, and how an agent maturity curve moved engineers from simple prompts to autonomous agents across the software development life cycle. They also cover a decades-old codebase made headless in weeks instead of a year, a marketplace for sharing agent skills, incident agents that find the right team automatically, and a bug that Claude Opus tracked down in 24 hours after human attempts failed.\n\nMore here: https://claude.com/office-hours#salesforce\n\nChapters\n0:00 Making Salesforce headless in weeks, enabling Claudeforce\n1:31 Measuring ROI with \"effective output\"\n3:18 The agent maturity curve, from prompts to autonomy\n5:53 Driving adoption with live demos and real data\n7:30 Building a skills marketplace with evals\n9:07 Guardrails: double the code volume, fewer bugs\n10:18 Replaying benchmarks to test new models\n11:37 \"Autonomy without validation is confidence theater\"\n12:44 How big a task to give an agent\n13:52 Biggest mistake: matching model to task\n15:13 Advice for engineers and CTOs",
+      "published_at": "2026-11-06T17:03:04Z",
+      "duration_seconds": 978
+    },
+    {
+      "id": "IrAHINf0M6E",
+      "url": "https://www.youtube.com/watch?v=IrAHINf0M6E",
+      "title": "AI News: New ChatGPT & Google Models (14 Updates Worth Knowing)",
+      "channel": "Matt Wolfe",
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "genres": [
+        "AI"
+      ],
+      "description": "See what Optimizely’s Virtual Teammates can automate for you at http://optimizely.com/mattwolfe\n\nThis week’s AI news covers OpenAI’s GPT-Image 2.6, Google Gemini Omni 1.2 Flash, and the latest AI tools for creating images, generating videos, and getting things done. Watch demos of ChatGPT’s animated GIF creation and image editing, Google’s free AI video generation, and Grokbot’s new phone call feature.\n\nWe also explore Pruna’s PH3 Image and Pika H3 Flex open-weight models, plus voice and video calls with Meta Muse. Then, catch up on Claude’s bank account integration, Kimi K3.1 Pro, GPT-6 Cyber, and more in the rapid-fire roundup.\n\nWhich update will you actually use? Let me know in the comments, and subscribe for weekly AI news and hands-on tutorials.\n\nSharing the latest news and advancements in AI\n\nDiscover More:\n🛠️ Explore AI Tools & News: https://futuretools.io/\n📰 Weekly Newsletter: https://futuretools.io/newsletter\n\nSocials:\n❌ Twiter/X: https://x.com/mreflow\n🖼️ Instagram: https://instagram.com/mr.eflow\n🧵 Threads: https://www.threads.net/@mr.eflow\n🟦 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n👍 Facebook: https://www.facebook.com/mattrwolfe\n\nLet’s work together!\n- Brand, sponsorship & business inquiries: business@mattwolfe.com\n\n#AINews #ChatGPT #googlegemini \n\nTime Stamps:\n0:00 Intro\n0:05 OpenAI Images 2.6\n0:23 GIF Generation Demo\n0:46 Editing Animated GIFs\n1:32 Speed Test Results\n2:17 Pruna PH3 Image\n3:15 Hardware Requirements\n4:05 Try It on Hugging Face\n5:05 Optimizely Virtual Teammates\n6:11 Gemini Omni 1.2 Flash\n7:58 Free Videos in Google Vids\n8:28 Avatar Video Test\n9:30 Pika H3 Flex Open Video\n10:49 Pika Hugging Face Demo\n11:58 Meta Muse Voice Calls\n14:11 GroqBot Phone Calling\n17:09 OpenAI GPT-6 Cyber\n17:24 ChatGPT & Codex Shared Usage Limits\n17:36 Kimi K3.1 Pro Open Weights Released\n18:33 Connect Your Bank Account to Claude\n19:20 Steve Aoki’s AI Video Editor\n19:56 Netflix’s AI Discover Tab\n20:26 Almost Nobody Uses AI Agents for Delivery\n21:54 Go",
+      "published_at": "2026-11-06T18:20:31Z",
+      "duration_seconds": 1484
+    },
+    {
+      "id": "afM70xXNwAs",
+      "url": "https://www.youtube.com/watch?v=afM70xXNwAs",
+      "title": "🔥 More Templar and DK Changes! ✅ Week 2 PTS Summary Notes",
+      "channel": "Skinny Cheeks",
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Thanks for watching my video covering the Week 2 Summary for the Update 52 PTS Patch Notes for the Elder Scrolls Online!\n\nhttps://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary\n\nBuilds are updated for U51 at https://www.skinnycheeks.gg!\n\nMY LINKS\n\n► Website - https://www.skinnycheeks.gg\n► Support Via Patreon - https://www.patreon.com/skinnycheeks\n► Discord - https://discord.gg/dpsnerds\n► Twitch - http://www.twitch.tv/skinnycheeks\n► Twitter - http://www.twitter.com/skinnycheeks\n► Instagram - http://www.instagram.com/skinnycheeks\n► Soundcloud - http://www.soundcloud.com/skinnycheeks\n\nGREAT RESOURCES\n\n► Status Effect Calc - https://www.skinnycheeks.gg/status-effect-calculator\n► Damage Increase Calc - https://www.skinnycheeks.gg/simple-damage-calculator\n► ESO Add-Ons Currently Used - https://tinyurl.com/y8zhz4m3\n► UESP - https://en.uesp.net/wiki/Main_Page\n► ESO-Hub - https://eso-hub.com/\n► ESO Gear Information - http://www.eso-sets.com\n► ESO Skill Information - http://www.eso-skillbook.com\n\n#elderscrollsonline #mmorpg #mmonews",
+      "published_at": "2026-11-06T18:15:59Z",
+      "duration_seconds": 543
+    },
+    {
+      "id": "BvpwieZ4A_c",
+      "url": "https://www.youtube.com/watch?v=BvpwieZ4A_c",
+      "title": "😮 WoW Forever + HUGE PoE News Today 🥳 Subathon Day 61",
+      "channel": "Skinny Cheeks",
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Support the stream: https://streamlabs.com/skinnycheeks/tip\nhttp://twitch.tv/skinnycheeks\n\nMY LINKS\n\n► Website - https://www.skinnycheeks.gg\n► Support Via Patreon - https://www.patreon.com/skinnycheeks\n► Discord - https://discord.gg/dpsnerds\n► Twitch - http://www.twitch.tv/skinnycheeks\n► Twitter - http://www.twitter.com/skinnycheeks\n► Instagram - http://www.instagram.com/skinnycheeks\n► Soundcloud - http://www.soundcloud.com/skinnycheeks\n\nGREAT RESOURCES\n\n► Status Effect Calc - https://www.skinnycheeks.gg/status-effect-calculator\n► Damage Increase Calc - https://www.skinnycheeks.gg/simple-damage-calculator\n► ESO Add-Ons Currently Used - https://tinyurl.com/y8zhz4m3\n► UESP - https://en.uesp.net/wiki/Main_Page\n► ESO-Hub - https://eso-hub.com/\n► ESO Gear Information - http://www.eso-sets.com\n► ESO Skill Information - http://www.eso-skillbook.com\n\n#arpg #mmorpg #gamingnews",
+      "published_at": "2026-11-06T16:09:41Z",
+      "duration_seconds": 32047
+    },
+    {
+      "id": "MXmcb14ydAw",
+      "url": "https://www.youtube.com/watch?v=MXmcb14ydAw",
+      "title": "Best Starter Pact in Soulframe 2026 - Which One Should You Pick?",
+      "channel": "ArzyeL Gaming",
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Follow me on Twitch: https://www.twitch.tv/arzyel_gaming\nMusic by Epidemic Sound! Try it for free: https://share.epidemicsound.com/vy3jpw\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nLinktree: https://linktr.ee/arzyel\nIf you like the video please consider buying me a Coffee!\nhttps://www.buymeacoffee.com/ArzyeL\n\nThe Best Starter Pact for Soulframe in 2026!\nSoulframe Best Starter Pact: https://arzyelbuilds.com/soulframe-best-starter-pact/\nOscelda Builds: https://arzyelbuilds.com/soulframe-oscelda-builds/\nTethren Builds: https://arzyelbuilds.com/soulframe-tethren-builds/\nSirin Builds: https://arzyelbuilds.com/soulframe-sirin-builds/\nSoulframe Preludes 17: https://arzyelbuilds.com/soulframe-preludes-17/\n\nSoulframe Builds: https://arzyelbuilds.com/soulframe-builds/\nESO Best Subclassing Builds: https://arzyelbuilds.com/eso-subclassing-builds/\nESO Best Pure Class Builds: https://arzyelbuilds.com/eso-pure-class-builds/\nFarever Builds: https://arzyelbuilds.com/farever-builds/\nThrone and Liberty Builds: https://arzyelbuilds.com/throne-and-liberty-builds/\n\nFollow me on Twitch: https://www.twitch.tv/arzyel_gaming\nSubscribe to my Newsletter: https://arzyelbuilds.com/subscribe-to-arzyelbuilds/\nJoin me on Discord: https://discord.gg/X3MjdrnTc6\nCheck my Linktree: https://linktr.ee/arzyel\nBuilds & Guides: https://arzyelbuilds.com/\n#arzyelbuilds #soulframe #soulframebuilds",
+      "published_at": "2026-11-06T18:11:56Z",
+      "duration_seconds": 241
+    },
+    {
+      "id": "SgMzem523ro",
+      "url": "https://www.youtube.com/watch?v=SgMzem523ro",
+      "title": "Stamina Nightblade Solo Build | ESO Update 51",
+      "channel": "Hyperioxes",
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "genres": [
+        "ESO"
+      ],
+      "description": "Pure Class Stamina Nightblade (StamBlade) Solo Build for ESO Update 51. The build gets great mitigation from An Eye for Exploitation, especially in execute, and good sustain from Siphoning Attacks. Soul Harvest gives it insane Ultimate generation, while Killer's Blade gives it a fast execute.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 65.3k DPS on the 6 million dummy, going up to 77.3k in the Full Damage setup. An older setup also soloed Veteran Hard Mode The Cauldron and Veteran Frostvault.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/stamina-nightblade-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/Ihz4DhmN-00\nLog - https://www.esologs.com/reports/Ly7kHrazqDX1vg8A\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/q9YQjrufRzI\nLog - https://www.esologs.com/reports/BYxzt4MLhv2pankJ\n\n65.3k DPS Parse\nRecording - https://youtu.be/d_jrZqPxK3A\n\n77.3k DPS Parse (Full Damage setup)\nRecording - https://youtu.be/9nqVABQ5HLQ\n\n=============  Timestamps =============\n\n0:00 Intro\n0:26 Skill Setups\n3:41 Situational Skills\n5:48 Final Setups\n6:33 Rotation\n7:15 Passives\n7:37 Gear\n9:04 Champion Points\n10:00 Class Mastery\n10:33 Race\n10:53 Mundus\n11:12 Attributes\n11:44 Food\n12:09 Potions\n12:39 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-11-06T16:00:54Z",
+      "duration_seconds": 790
     }
   ],
-  "usage": {
-    "total_input_tokens": 23179,
-    "total_output_tokens": 80,
-    "total_thought_tokens": 0
+  "collection_source": "watchlist",
+  "editor_review_required": true,
+  "window": {
+    "start": "2026-11-06T15:00:00Z",
+    "end": "2026-11-07T01:07:53.945949Z",
+    "timezone": "Asia/Tokyo"
   },
-  "analysis": {
-    "summary": "コペルニクスにおけるハイトマップの作成と操作方法について解説しています。セルラーノイズを用いたモノクロ画像からハイトマップを生成し、タイプ情報の変更やリマップ、乗算による変位の調整を行います。ノードベースのワークフローを活用して柔軟なマテリアル編集を行う手法を学べます。",
-    "model": "gemini-3.5-flash-lite"
-  },
-  "api_attempts": 2
+  "selection_limit_per_genre": 4,
+  "candidate_limit_per_channel": 3,
+  "partial": true,
+  "stop_code": "",
+  "channels": [
+    {
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCV03SRZXJEz-hchIAogeJOg",
+      "name": "Claude",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "name": "Google for Developers",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UChpleBmo18P08aKCIgti38g",
+      "name": "Matt Wolfe",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCfapRkagDtoQEkGeyD3uERQ",
+      "name": "KEITO【AI&WEB ch】",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC0xRMqPOyRNPTaL6BxhbCnQ",
+      "name": "いまにゅのAIプログラミング塾",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9buL3Iph_f7AZxdzmiBL8Q",
+      "name": "チャエン【AI研究所】〜仕事で使える最新のAI情報を発信〜 Byデジライズ",
+      "genres": [
+        "AI"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxwR36p9yhwpOO5HLrqdBPg",
+      "name": "Autodesk Media & Entertainment",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCOj8dj8rAJxktIOGXWFJhRw",
+      "name": "Chaos V-Ray",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC-toy9WMImypmLAiU9h_SzQ",
+      "name": "Adobe Substance 3D",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCxn8WbrqCJl7G6i-yI_mFyg",
+      "name": "Foundry",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCegWLyW4CYzph4dYW-gYy0g",
+      "name": "Houdini",
+      "genres": [
+        "3DCG",
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMOQeBJ2RAnuFungnQOxLg",
+      "name": "Blender",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCDr8YRM1Xm_TsSYvIpYNZ0A",
+      "name": "Eloi Andaluz Fullà",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCWu6SQmC6nAZ-reuj3lF2eQ",
+      "name": "Entagma",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCSMLJ2i1e_LE8XoIItYxOZA",
+      "name": "QuadSpinner",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UClabqa6PHVjXzR2Y7s1MP0Q",
+      "name": "World Creator",
+      "genres": [
+        "terrain"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCvZHe-SP3xC7DdOk4Ri8QBw",
+      "name": "Bethesda Softworks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC9DsGeMufUbCTYQT0dPFZhA",
+      "name": "Skinny Cheeks",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 2,
+      "candidates_returned": 2,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCq1i2oFm7IZGJeJe_WJO1yA",
+      "name": "ArzyeL Gaming",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UC_cQb7MSv-bq6LKthYiJzvw",
+      "name": "Hyperioxes",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 1,
+      "candidates_returned": 1,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCHao6f96jnipzDPxPLaiouQ",
+      "name": "Hack The Minotaur",
+      "genres": [
+        "ESO"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    },
+    {
+      "channel_id": "UCYIL1m3Tfa04IgwteS9EnYA",
+      "name": "Olli Huttunen",
+      "genres": [
+        "3DCG"
+      ],
+      "pages_fetched": 2,
+      "items_examined": 20,
+      "candidates_found": 0,
+      "candidates_returned": 0,
+      "partial": true,
+      "reasons": [
+        "pagination_limit"
+      ]
+    }
+  ],
+  "api_attempts": 55
 }
