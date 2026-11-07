@@ -20,13 +20,19 @@
     }
   ],
   "schemaVersion": 1,
-  "articleCount": 194,
+  "articleCount": 215,
   "days": [
+    {
+      "date": "2026-11-07",
+      "path": "data/articles/2026-11-07.json",
+      "count": 21,
+      "sha256": "e84f9384e343fe696d064984e9c0d26c59b9d129a11dcfb261f22fe6d240fcf3"
+    },
     {
       "date": "2026-11-06",
       "path": "data/articles/2026-11-06.json",
       "count": 21,
-      "sha256": "9ce61f145824a869bf6ac4a36c2a74536bb4dbc7283427845e22dac3622bfc85"
+      "sha256": "c10386451eb34996465b39472d0fed5bfd567adf922656ff642448cafeeb589f"
     },
     {
       "date": "2026-11-05",
@@ -44,7 +50,7 @@
       "date": "2026-11-03",
       "path": "data/articles/2026-11-03.json",
       "count": 12,
-      "sha256": "204c778a217ac3429ef6422339d3240a15b84e8c7f2098346f605b0ebbaf67d7"
+      "sha256": "8c1793efbdecce91bc96da027720e515e6060e1c65cc2b71f32fcb2434aab038"
     },
     {
       "date": "2026-11-02",
@@ -74,7 +80,7 @@
       "date": "2026-10-29",
       "path": "data/articles/2026-10-29.json",
       "count": 20,
-      "sha256": "c9e785a153d2aecedaad0d240f4d28e656ab7f9ce3397f147e39d59cccea5910"
+      "sha256": "95c6bb6ac0570576fe532d99a8bf2c7903d1fb906ae70915a62037ed34323a68"
     },
     {
       "date": "2026-10-28",

@@ -1591,7 +1591,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Google for Developersの日本時間10月29日0時08分公開動画の説明欄は、Gemini 4 ArgonとGoogle AntigravityでSurf Clockを構想から試作へ進めたと説明する。1960年代風のデザイン検討、PythonによるBlenderの3D部品作り、海のデータを取る組み込みソフト、対話型の配線手引きを挙げる。タイトル・説明欄のみの要約で、全体の制作を解析したものではない。"
+          "text": "Google for Developersの日本時間10月29日0時08分公開動画の説明欄は、Gemini 4 ArgonとGoogle AntigravityでSurf Clockを構想から試作へ進めたと説明する。1960年代風のデザイン検討、PythonによるBlenderの3D部品作り、海のデータを取る組み込みソフト、対話型の配線手引きを挙げる。タイトル・説明欄のみの要約で、全体の制作を解析したものではない。 11月7日追補：GoogleのX投稿でも、同じSurf Clockのスケッチ、Blenderでの部品制作、制御用ソフトまでの流れが紹介された。新しい作品や新製品発表としては数えていない。"
         },
         {
           "type": "paragraph",
@@ -1602,6 +1602,20 @@
           "videoId": "pQ_Dnr9Q4k8",
           "url": "https://www.youtube.com/watch?v=pQ_Dnr9Q4k8",
           "title": "Google for Developers：Surf Clock"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@Google",
+          "links": [
+            {
+              "text": "X／@Google",
+              "url": "https://x.com/Google/status/2118808678149308701"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Google/status/2118808678149308701"
         },
         {
           "type": "feature",
@@ -1685,6 +1699,10 @@
         {
           "label": "用語解説：MCP",
           "url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
+        },
+        {
+          "label": "X／@Google",
+          "url": "https://x.com/Google/status/2118808678149308701"
         }
       ],
       "sourceUrls": [
@@ -1706,10 +1724,12 @@
         "https://www.youtube.com/watch?v=ID6vEy94j7c",
         "https://www.youtube.com/watch?v=pQ_Dnr9Q4k8",
         "https://developers.google.com/machine-learning/glossary#token",
-        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
+        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+        "https://x.com/Google/status/2118808678149308701"
       ],
       "thumbnailKey": "ai-tips",
-      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。"
+      "sourceNote": "2026年10月29日0時〜10時（日本時間）に届いた素材を内容別に整理。一次資料を実際に確認した部分以外は、素材提供者の要約・発表紹介・利用者の報告として扱う。元投稿の全文・動画全編や実機動作を確認したとはしていない。Facebook由来は匿名要約と元投稿リンクのみで、投稿者名・画像を転載しない。 2026年11月7日、同じ話題の新しい元投稿を追補。初回掲載日時は維持。",
+      "updatedAt": "2026-11-07T10:26:09+09:00"
     },
     {
       "id": "20261029-grok-referral",

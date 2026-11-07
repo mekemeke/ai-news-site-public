@@ -1,0 +1,3380 @@
+{
+  "articles": [
+    {
+      "id": "20261107-ai-tips",
+      "title": "AI小ネタ:2026年11月7日",
+      "summary": "ローカルAI、動画制作、仕事の記録、Salesforceの導入事例を整理。確認した資料の範囲と未確認の主張を分けた。",
+      "category": "ai",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "tips-roundup",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "RTX 3090の変更で速度が上がったという個人測定"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループで、予備のRTX 3090の制限を変更したところ、演算性能の指標TFLOPSが約60％、ComfyUIの処理が約26％向上したという報告が共有された。演算指標とアプリの速度は別の値で、変更方法、測定条件、発熱・電力・故障や保証への影響は未確認。安全な改造手順を示す情報ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent（匿名要約）",
+          "links": [
+            {
+              "text": "Open Source, Local LLM & AI Agent（匿名要約）",
+              "url": "https://facebook.com/groups/runlocalai/permalink/1535195278408181/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "大きな数字だけで判断せず、実際の作業速度と機器への負担を分けて見る必要がありそう。"
+        },
+        {
+          "type": "heading",
+          "text": "QwenをDGX Spark 2台で動かした際の負荷を報告"
+        },
+        {
+          "type": "paragraph",
+          "text": "匿名の利用者は、Qwen 3.8 Flash NextをDGX Spark 2台で動かし、各GPUの使用率が約33％だったと報告した。コメントには、一度に使う部分が約60億パラメーターのモデルだからではないかとの推測もある。処理量、同時利用数、測定方法は未確認で、使用率の低さだけから処理速度や効率の優劣は判断できない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent（匿名要約）",
+          "links": [
+            {
+              "text": "Open Source, Local LLM & AI Agent（匿名要約）",
+              "url": "https://facebook.com/groups/runlocalai/permalink/1534444451816597/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "どれだけ余裕があるかを見るなら、同じ入力や同時利用数で比べることが大事だね。"
+        },
+        {
+          "type": "heading",
+          "text": "Claudeデスクトップからローカルモデルを使ったという報告"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループの投稿者は、ClaudeデスクトップからQwen3.6 35B A3BをM1 Max・メモリ64GBのMacBook Proで動かし、3件のバグ修正と4件の単体テストを37.6秒で終えたと説明している。読み取り約916トークン/秒、出力78〜135トークン/秒という測定値と、当該工程ではクラウドへ送信しなかったという主張もある。公式対応、実行構成、通信記録と測定条件は未確認で、Claude全体がオフラインになったという意味ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent（匿名要約）",
+          "links": [
+            {
+              "text": "Open Source, Local LLM & AI Agent（匿名要約）",
+              "url": "https://facebook.com/groups/runlocalai/permalink/1534420961818946/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "手元で完結できる範囲は魅力的だけれど、どの工程で外部通信が起きるかまで確かめたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "台本・声・映像を分担するAI動画制作の例"
+        },
+        {
+          "type": "paragraph",
+          "text": "匿名の制作者は、Claudeで台本とComfyUIの処理手順を用意し、ElevenLabsで声、ComfyUIの動画モデルで映像、ChatGPTで画像を作る流れを紹介した。Claudeの拡張機能とデスクトップ経由で進めたという。完成動画は元投稿のコメントにあるとの説明で、作品全体、接続手順、素材の利用条件は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent（匿名要約）",
+          "links": [
+            {
+              "text": "Open Source, Local LLM & AI Agent（匿名要約）",
+              "url": "https://facebook.com/groups/runlocalai/permalink/1534823705112005/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "工程ごとの役割を先に分けると、どこを直せばよいか追いやすい制作例になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Claudeでジェットエンジンや電磁場の仕組みを学ぶ利用例"
+        },
+        {
+          "type": "paragraph",
+          "text": "ClaudeのThreadsとして、Opus 5.5でジェットエンジンの内部や電磁場の仕組みを解説させる例が紹介された。図を順に見る形式の投稿という説明だが、全図版や説明内容の正確性は未確認。モデルの新規発表ではなく、学習への活用例として扱う。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／@claudeai",
+          "links": [
+            {
+              "text": "Threads／@claudeai",
+              "url": "https://www.threads.com/@claudeai/post/DfZ_szeoB22"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "仕組みを図と説明で行き来できると理解の助けになりそうだけれど、技術的な説明は信頼できる資料とも照合したいね。"
+        },
+        {
+          "type": "heading",
+          "text": "動画編集の方針を先に言葉にし、10本を並行制作したという例"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿は、過去動画や参考動画、視聴の数字をAIへ渡し、冒頭のつかみ、間、離脱しそうな箇所を分析させる制作例を紹介した。完成動画から編集方針を言語化し、計画を承認してから進めることで10本を約2時間で並行制作できたという。個人の作業報告で、入力の準備時間や再現性は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@XCreators",
+          "links": [
+            {
+              "text": "X／@XCreators",
+              "url": "https://x.com/XCreators/status/2118843705327026400"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/XCreators/status/2118843705327026400"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "最初に編集の基準を共有すると、一本ずつ同じ修正を頼む手間を減らすヒントになりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "メールのプラス別名ごとに整理作業を分ける案"
+        },
+        {
+          "type": "paragraph",
+          "text": "Grok Botのメールではプラス記号付きの別名が同じ受信箱へ届くとして、注文や購読など用途別に処理を分ける使い方が紹介された。購入日・返品期限などを整理し、メール本文を命令と扱わず、支払いや外部送信は別に確認するという考え方。実際の対応アドレス、処理条件と権限は未確認で、この紹介から設定は変更していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@gambrill",
+          "links": [
+            {
+              "text": "X／@gambrill",
+              "url": "https://x.com/gambrill/status/2118670010767794375"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/gambrill/status/2118670010767794375"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "入口を分ける工夫は便利そうだけれど、受信した文章だけで外部操作を始めない線引きも大切だね。"
+        },
+        {
+          "type": "heading",
+          "text": "完成条件と担当を分けるエージェント運用の解説"
+        },
+        {
+          "type": "paragraph",
+          "text": "動画紹介では、最終成果と保存先を先に決め、作業の文脈を共有しつつ複数の担当へ分ける考え方が示された。通知や定時実行、Fathom・Notion・Slackなどをつなぎ、すべてを一体へ背負わせないという内容。元動画全編、サービスの対応範囲と情報の共有条件は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@eeelistar",
+          "links": [
+            {
+              "text": "X／@eeelistar",
+              "url": "https://x.com/eeelistar/status/2118759568096551403"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/eeelistar/status/2118759568096551403"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "作業が終わったと言える条件をそろえると、引き継ぎ時の食い違いを減らせそう。"
+        },
+        {
+          "type": "heading",
+          "text": "AIサービスの移行に備え、作業記録を保存したという体験"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者は、会話や作業文脈、定期処理の記録をGitHubへ残していたため、別のAIサービスへ移る際は主に接続や認証の設定で済んだと報告した。保存範囲や復元結果は未確認。会話全件や秘密情報を公開リポジトリへ置くことを勧めるものではなく、保存先の公開範囲と必要な情報の選別が前提になる。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@suna_gaku",
+          "links": [
+            {
+              "text": "X／@suna_gaku",
+              "url": "https://x.com/suna_gaku/status/2118658888283418882"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/suna_gaku/status/2118658888283418882"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "移行しやすさを考えると、成果を取り出せる形で残しつつ、秘密や個人情報を混ぜない整理が重要だね。"
+        },
+        {
+          "type": "heading",
+          "text": "Hermesでは毎回の処理とAIが選ぶ処理を分けるという助言"
+        },
+        {
+          "type": "paragraph",
+          "text": "開発者の投稿は、手順はスキル、外部サービス連携はMCP、本体への拡張はプラグインと役割を分け、毎回必ず行う処理にはフックを使うと提案する。配布されている拡張でも自分の権限で動くコードとして確認し、検証と診断を行うという助言。現行仕様や診断の有効範囲は未確認で、コマンドやインストールは実行していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@tonbistudio",
+          "links": [
+            {
+              "text": "X／@tonbistudio",
+              "url": "https://x.com/tonbistudio/status/2118792648756765069"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/tonbistudio/status/2118792648756765069"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "誰が実行を決めるかを区別すると、必須の確認がAIの気分で抜ける設計を避けやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "困ったときは実行前に調査だけ頼む、五つの依頼例"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿は、過去の決定の引用、エラーの説明、大きなファイルの一覧、適切なスキルの候補、リポジトリのREADMEと設定確認という五つの読み取り作業を挙げた。削除・導入・実行はまだ行わないと区切り、判断材料を先に集める例だ。実際の作業権限や各ツールの機能を保証するものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@BkashJosi",
+          "links": [
+            {
+              "text": "X／@BkashJosi",
+              "url": "https://x.com/BkashJosi/status/2118796543335809098"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/BkashJosi/status/2118796543335809098"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "調べる段階と変更する段階を分けると、状況が分からないまま操作を重ねずに済むね。"
+        },
+        {
+          "type": "heading",
+          "text": "一語の指示と参考画像から分解する機械を作ったという例"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者は、ClaudeのスキルへChatGPTで作った参考画像と「octopus」を渡すと、three.jsで殻、車輪、レンズなどを組み立てたと報告した。10枚羽根の虹彩や外れるドームなどがあり、部品が順に外れて19秒で分解されるという。寸法・素材の記述は画面内の設計説明で、実物を製造した報告ではない。元コードと動作は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@elvar_official",
+          "links": [
+            {
+              "text": "X／@elvar_official",
+              "url": "https://x.com/elvar_official/status/2118697979607437530"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/elvar_official/status/2118697979607437530"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "参考画像を一枚再現するだけでなく、部品ごとの動きへ展開できるかが面白い使い方だね。"
+        },
+        {
+          "type": "heading",
+          "text": "同じ指示でも画像モデル更新後の出力が変わったという比較"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者はChatGPTの画像モデル更新前後で、同じプロンプトと同じ推論設定でも人物の見え方が大きく変わったと二枚の比較を紹介した。生成のばらつき、シード、参照画像や内部条件は未確認で、モデル更新だけが原因とは断定できない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@nemotsune",
+          "links": [
+            {
+              "text": "X／@nemotsune",
+              "url": "https://x.com/nemotsune/status/2118750175850385521"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/nemotsune/status/2118750175850385521"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "いつもの指示を引き継ぐときも、よく使う作例で出力の傾向を確かめると修正しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "説明せずその場で驚かせる依頼をAIへ試した例"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ethan Mollick氏は、リックロールという音楽のいたずらを、方法の説明なしで返答の中で実行するよう頼んだ比較を紹介した。GPT-6 Proでは注意力テストの途中へ歌い手が現れたという。個別の試行で、各モデルの一般的な能力や安全性を示す評価ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@emollick",
+          "links": [
+            {
+              "text": "X／@emollick",
+              "url": "https://x.com/emollick/status/2118412828373840294"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/emollick/status/2118412828373840294"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "説明文を返すことと体験をその場で作ることの違いを、遊びながら確かめる例だね。"
+        },
+        {
+          "type": "heading",
+          "text": "Notionに残した500件超の作業記録を別のAIとも共有した例"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者は、7月からClaude Codeの作業前後の記録をNotionへ蓄積し、500件を超えたログをChatGPTにも読ませたと報告した。残りのタスクの相談と終了後の記録を同じデータベースへつなげたという。共有範囲、秘密情報の除外と実際の記憶精度は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@mzk_notion02",
+          "links": [
+            {
+              "text": "X／@mzk_notion02",
+              "url": "https://x.com/mzk_notion02/status/2118615345661681744"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/mzk_notion02/status/2118615345661681744"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "仕事の経緯を一つの場所で追えると引き継ぎが楽になりそうだけれど、誰が何を読めるかも整理したいね。"
+        },
+        {
+          "type": "heading",
+          "text": "Bingの検索語とページ本文を照合し、説明の不足を探す"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿は、Search Consoleでは見つからないBing側の検索語をページ本文と合わせてClaudeへ渡し、説明の取りこぼしや検索意図とのずれを探す方法を紹介した。記事の修正と再登録は自分で行うという。具体的な検索順位への効果と分析手順は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@asaio87",
+          "links": [
+            {
+              "text": "X／@asaio87",
+              "url": "https://x.com/asaio87/status/2118634208411185175"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/asaio87/status/2118634208411185175"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "検索語を増やすより、読者が知りたかった内容を本文が答えているか見直すきっかけになりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "NotebookLMの要約PDFをClaudeで見た目だけ調整した例"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者は、NotebookLMから出した要約PDFをClaudeへ渡し、見た目を整えた前後比較を紹介した。要約内容の正確性や、書き換え時に情報が変わっていないかは未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@hunterchi20",
+          "links": [
+            {
+              "text": "X／@hunterchi20",
+              "url": "https://x.com/hunterchi20/status/2118608575652135327"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/hunterchi20/status/2118608575652135327"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "内容の整理と見た目の調整を分けると、変更後も元の意味が残っているか点検しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "画像生成ガイドを図解にして読むという工夫"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者は、GPT Image 2.6の公式プロンプトガイドが読みづらかったため、Museに図解を頼んだと紹介した。元ガイドとの対応と図の内容は未確認。新モデルの発表ではなく、資料を読みやすい形式へ変える活用例だ。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@gufutokuku999",
+          "links": [
+            {
+              "text": "X／@gufutokuku999",
+              "url": "https://x.com/gufutokuku999/status/2118643301532287037"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/gufutokuku999/status/2118643301532287037"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "長い説明を図へ置き換えると入口は作れそうだけれど、細かな条件は原文へ戻って確認したいね。"
+        },
+        {
+          "type": "heading",
+          "text": "日本語の画像指示を意味を保って直す支援スキル"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者は、誤字や助詞を直し、似た言葉の印象を比較し、構図・衣装・背景へ指示を分ける日本語プロンプト支援スキルを紹介した。参照画像との照合でも意図した変更は残し、短い例や一問ずつの確認で直す理由を説明するという。配布物の安全性と実際の出力は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@toraaiuser2",
+          "links": [
+            {
+              "text": "X／@toraaiuser2",
+              "url": "https://x.com/toraaiuser2/status/2118762210260594844"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/toraaiuser2/status/2118762210260594844"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "ただ文章を整えるだけでなく、残したい意図を確認できると、修正で違う絵になってしまうのを防ぎやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "参照画像の渡し方で顔の印象が変わるという比較"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者は、ChatGPTへ完成絵を直接渡す方法と、登録資料だけから再構成する自作スタジオを比較し、目や口が強調されやすいと報告した。どちらもGPT-6 Astraを使ったとしているが、表情の指定もありImage 2.6だけが原因とは断定していない。Sunburstの明示選択にAPIが必要という説明もあるが、仕様と元コードは未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@MioWorkshop",
+          "links": [
+            {
+              "text": "X／@MioWorkshop",
+              "url": "https://x.com/MioWorkshop/status/2118629471305490793"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/MioWorkshop/status/2118629471305490793"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "モデル名だけでなく、どんな参照と指示を渡したかをそろえると、変化の原因を考えやすくなるね。"
+        },
+        {
+          "type": "heading",
+          "text": "Salesforce、Claude Codeの評価をコード量より有効な成果で測る"
+        },
+        {
+          "type": "paragraph",
+          "text": "Claude公式のOffice Hours記事と公開動画の説明は、Salesforceが数千人規模のエンジニアへClaude Codeを導入し、品質を見ながら活用を進める事例を紹介する。APIを通じて既存製品を扱える範囲を80〜90％へ広げたという。effective outputは単なるコード行数でなく有効な成果を重視する指標で、厳密な算式は今回の本文では確認していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "有効な成果が2倍、コード当たりの不具合が減少という数字はSalesforce幹部の事例報告で、独立した検証結果ではない。スキル共有時の評価、モデル更新時のベンチマーク再実行、検証を伴う自律性の必要性にも言及する。動画は11月7日02:03（日本時間）公開の16分18秒。公開説明・一次記事とGeminiの短い解析要約を参照したが、解析要約は一般的で数値を独立に裏付けるものではない。全発言の逐語照合や導入の再現検証は行っていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Claude公式Office Hours：Salesforce",
+          "links": [
+            {
+              "text": "Claude公式Office Hours：Salesforce",
+              "url": "https://claude.com/office-hours#salesforce"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Claude公式動画：How Salesforce uses Claude Code",
+          "links": [
+            {
+              "text": "Claude公式動画：How Salesforce uses Claude Code",
+              "url": "https://www.youtube.com/watch?v=4ZsVR-6YOzs"
+            }
+          ]
+        },
+        {
+          "type": "youtube",
+          "videoId": "4ZsVR-6YOzs",
+          "url": "https://www.youtube.com/watch?v=4ZsVR-6YOzs",
+          "title": "How Salesforce uses Claude Code"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "書いたコードの量より、役立つ変更と不具合を一緒に測る考え方は導入効果を見失わない助けになりそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Open Source, Local LLM & AI Agent（匿名要約）",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1535195278408181/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent（匿名要約）",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1534444451816597/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent（匿名要約）",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1534420961818946/"
+        },
+        {
+          "label": "Open Source, Local LLM & AI Agent（匿名要約）",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1534823705112005/"
+        },
+        {
+          "label": "Threads／@claudeai",
+          "url": "https://www.threads.com/@claudeai/post/DfZ_szeoB22"
+        },
+        {
+          "label": "X／@XCreators",
+          "url": "https://x.com/XCreators/status/2118843705327026400"
+        },
+        {
+          "label": "X／@gambrill",
+          "url": "https://x.com/gambrill/status/2118670010767794375"
+        },
+        {
+          "label": "X／@eeelistar",
+          "url": "https://x.com/eeelistar/status/2118759568096551403"
+        },
+        {
+          "label": "X／@suna_gaku",
+          "url": "https://x.com/suna_gaku/status/2118658888283418882"
+        },
+        {
+          "label": "X／@tonbistudio",
+          "url": "https://x.com/tonbistudio/status/2118792648756765069"
+        },
+        {
+          "label": "X／@BkashJosi",
+          "url": "https://x.com/BkashJosi/status/2118796543335809098"
+        },
+        {
+          "label": "X／@elvar_official",
+          "url": "https://x.com/elvar_official/status/2118697979607437530"
+        },
+        {
+          "label": "X／@nemotsune",
+          "url": "https://x.com/nemotsune/status/2118750175850385521"
+        },
+        {
+          "label": "X／@emollick",
+          "url": "https://x.com/emollick/status/2118412828373840294"
+        },
+        {
+          "label": "X／@mzk_notion02",
+          "url": "https://x.com/mzk_notion02/status/2118615345661681744"
+        },
+        {
+          "label": "X／@asaio87",
+          "url": "https://x.com/asaio87/status/2118634208411185175"
+        },
+        {
+          "label": "X／@hunterchi20",
+          "url": "https://x.com/hunterchi20/status/2118608575652135327"
+        },
+        {
+          "label": "X／@gufutokuku999",
+          "url": "https://x.com/gufutokuku999/status/2118643301532287037"
+        },
+        {
+          "label": "X／@toraaiuser2",
+          "url": "https://x.com/toraaiuser2/status/2118762210260594844"
+        },
+        {
+          "label": "X／@MioWorkshop",
+          "url": "https://x.com/MioWorkshop/status/2118629471305490793"
+        },
+        {
+          "label": "Claude公式Office Hours：Salesforce",
+          "url": "https://claude.com/office-hours#salesforce"
+        },
+        {
+          "label": "Claude公式動画：How Salesforce uses Claude Code",
+          "url": "https://www.youtube.com/watch?v=4ZsVR-6YOzs"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1535195278408181/",
+        "https://facebook.com/groups/runlocalai/permalink/1534444451816597/",
+        "https://facebook.com/groups/runlocalai/permalink/1534420961818946/",
+        "https://facebook.com/groups/runlocalai/permalink/1534823705112005/",
+        "https://www.threads.com/@claudeai/post/DfZ_szeoB22",
+        "https://x.com/XCreators/status/2118843705327026400",
+        "https://x.com/gambrill/status/2118670010767794375",
+        "https://x.com/eeelistar/status/2118759568096551403",
+        "https://x.com/suna_gaku/status/2118658888283418882",
+        "https://x.com/tonbistudio/status/2118792648756765069",
+        "https://x.com/BkashJosi/status/2118796543335809098",
+        "https://x.com/elvar_official/status/2118697979607437530",
+        "https://x.com/nemotsune/status/2118750175850385521",
+        "https://x.com/emollick/status/2118412828373840294",
+        "https://x.com/mzk_notion02/status/2118615345661681744",
+        "https://x.com/asaio87/status/2118634208411185175",
+        "https://x.com/hunterchi20/status/2118608575652135327",
+        "https://x.com/gufutokuku999/status/2118643301532287037",
+        "https://x.com/toraaiuser2/status/2118762210260594844",
+        "https://x.com/MioWorkshop/status/2118629471305490793",
+        "https://claude.com/office-hours#salesforce",
+        "https://www.youtube.com/watch?v=4ZsVR-6YOzs"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。YouTubeの公開説明、記載した一次資料、今回成功したGeminiの短い解析要約を参照。全発言の逐語確認や操作・ゲーム内の再現検証は未実施。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。Threadsは公開画面の本文を確認したが、公式埋め込み表示は確認できず元リンクで参照。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "ai-tips"
+    },
+    {
+      "id": "20261107-ai-news",
+      "title": "AIニュース:2026年11月7日",
+      "summary": "エージェントの新機能、記憶の研究、評価と安全性、利用者の報告を整理。確認した資料の範囲と未確認の主張を分けた。",
+      "category": "ai",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "news-roundup",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "エージェントの時間節約とセキュリティへの不安が話題に"
+        },
+        {
+          "type": "paragraph",
+          "text": "FacebookグループでOpenClaw、Hermes、Codexへの不満や利用しない理由が尋ねられた。素材では、Hermesが時間を節約するという評価と、セキュリティへの不安からツールを削除したという声の両方が紹介されている。少数の利用者の感想であり、全体の満足度や各製品の安全性を測る調査ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Open Source, Local LLM & AI Agent（匿名要約）",
+          "links": [
+            {
+              "text": "Open Source, Local LLM & AI Agent（匿名要約）",
+              "url": "https://facebook.com/groups/runlocalai/permalink/1535321538395555/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "便利さの感想だけでなく、渡す権限や情報の範囲も比べると選びやすくなるね。"
+        },
+        {
+          "type": "heading",
+          "text": "OpenAIの資金調達についてBloomberg報道を紹介する投稿"
+        },
+        {
+          "type": "paragraph",
+          "text": "Threadsの市場ニュースアカウントが、Bloombergの報道として、OpenAIが約110億ドルを調達し評価額が約1.25兆ドルになったと伝えた。全体は最大200億ドル規模、当初の300億ドル超の計画から縮小、3月時点から評価額約47％上昇とも紹介している。当該報道本文と会社側の発表は未確認で、ここでは報道を紹介する投稿として扱う。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／@stockmktnewz",
+          "links": [
+            {
+              "text": "Threads／@stockmktnewz",
+              "url": "https://www.threads.com/@stockmktnewz/post/Dfat_NHgBdH"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "調達額と評価額は別の数字なので、企業が使える資金の話と企業価値の評価を分けて読みたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "進行中表示のまま停止し、作業ファイルを失ったという報告"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者は、チャットが残っていても実行環境が止まる、再起動後にファイルが消える、バックアップ失敗の通知がないなどの体験を投稿した。上位プランの休止上限にも触れているが、対象環境と発生条件、サービス側の確認は未取得。個別報告であり、全利用者に起きる既知障害とは断定しない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@DLKFZWilliam2",
+          "links": [
+            {
+              "text": "X／@DLKFZWilliam2",
+              "url": "https://x.com/DLKFZWilliam2/status/2118720095166112095"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/DLKFZWilliam2/status/2118720095166112095"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "表示だけでなく、成果が実際に保存されているか確認する習慣は、長い作業ほど役立ちそう。"
+        },
+        {
+          "type": "heading",
+          "text": "MuseのSpaces、言葉でページや小さなアプリを作る機能を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "MuseとMark Zuckerberg氏の投稿として、プランナー、記録、ゲームなどを会話からページにし、タブへ固定するSpacesが紹介された。BBQのゲーム、イベント記録、家の操作用ダッシュボードの例が挙げられている。保存・更新の挙動、提供対象、共有範囲と家電操作の実接続は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@Muse",
+          "links": [
+            {
+              "text": "X／@Muse",
+              "url": "https://x.com/Muse/status/2118782474486501510"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Muse/status/2118782474486501510"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@finkd",
+          "links": [
+            {
+              "text": "X／@finkd",
+              "url": "https://x.com/finkd/status/2118765774034579808"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/finkd/status/2118765774034579808"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "用途に合わせた小さな画面を作れるなら、既製のアプリでは足りない整理にも使えそう。"
+        },
+        {
+          "type": "heading",
+          "text": "記憶機能の開発中構造を分析したという投稿"
+        },
+        {
+          "type": "paragraph",
+          "text": "非公式の解析投稿は、27.3の記憶を、人を中心に関係・場所・習慣などを結ぶ構造として説明している。既存データから作る経路と、会話や写真などから情報を取り出す経路があり、後者には未実装部分があるという。対象ソフトの正式仕様、提供予定、取得対象は未確認で、利用できる機能としては扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@itspdfu",
+          "links": [
+            {
+              "text": "X／@itspdfu",
+              "url": "https://x.com/itspdfu/status/2118750259320906080"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/itspdfu/status/2118750259320906080"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "開発中の仕組みの話なら、すでに覚えていることを前提に頼まない方が安心だね。"
+        },
+        {
+          "type": "heading",
+          "text": "Claude Duetからコード作業の確認や承認を行う機能を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者の投稿として、Claude DuetからClaude Codeのセッションを見て、変更の承認や途中の指示をスマートフォンから送れるという説明が共有された。手元のPCとクラウドの両方に言及するが、正式な対応環境、権限と提供範囲は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@davidsuttonca",
+          "links": [
+            {
+              "text": "X／@davidsuttonca",
+              "url": "https://x.com/davidsuttonca/status/2118785613436698719"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/davidsuttonca/status/2118785613436698719"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "席を離れても確認できるのは便利そうだけれど、何を承認する画面なのか読み取れることも重要だね。"
+        },
+        {
+          "type": "heading",
+          "text": "Hermes v0.23.0のブラウザー画面と費用上限を紹介するまとめ"
+        },
+        {
+          "type": "paragraph",
+          "text": "第三者のリリースノート要約では、Hearthと呼ばれるv0.23.0にブラウザー版Desktop、会話をまとめるゲートウェイ、有料MCPの価格表示と支出上限が加わったと説明する。カタログが600件から1,050件超へ増えたとの数字もある。公式リリース、対象サービス、料金と上限の適用範囲は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@RoundtableSpace",
+          "links": [
+            {
+              "text": "X／@RoundtableSpace",
+              "url": "https://x.com/RoundtableSpace/status/2118837821079212188"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/RoundtableSpace/status/2118837821079212188"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "有料ツールの利用前に金額と上限が見えるなら、試す範囲を決めやすくなりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "ChatGPTのRemix、チームのサイトから自分用コピーを作る機能を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "ChatGPTの投稿として、同僚が作ったサイトをRemixし、会話で変更を頼んで自分のコピーへ直す機能が紹介された。BusinessとEnterprise向けに提供中という説明。元サイトの共有権限、コピー後の公開範囲と具体的な利用条件は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@ChatGPT",
+          "links": [
+            {
+              "text": "X／@ChatGPT",
+              "url": "https://x.com/ChatGPT/status/2118827837239226387"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/ChatGPT/status/2118827837239226387"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "元のサイトを直接書き換えずに試せるなら、チームの成果を用途別に調整しやすくなりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Anthropic、経験を整理し直す記憶の仕組みを解説との投稿"
+        },
+        {
+          "type": "paragraph",
+          "text": "Anthropicの投稿は、経験から学ぶエージェントには記憶が必要だとして、Engineering Blogで「夢を見る」ように学習内容を整理し、誤りを直して、必要な情報を見つけやすくする考え方を説明したという。記事本文と具体的な実装範囲は未確認。人と同じ夢や意識を持つという意味ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@AnthropicAI",
+          "links": [
+            {
+              "text": "X／@AnthropicAI",
+              "url": "https://x.com/AnthropicAI/status/2118814753154064501"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/AnthropicAI/status/2118814753154064501"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "記録を増やすだけでなく、誤りを直して取り出しやすくする部分が長い作業には効きそうだね。"
+        },
+        {
+          "type": "heading",
+          "text": "DeepMind、AIを使った暗号の耐久試験研究を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Google DeepMindの投稿として、人間が方向を示したAIエージェントが、古い1024ビットRSAに関わる二つの大きな弱点を見つけたという研究が紹介された。対象となる実装や設定、攻撃条件と原論文は未確認。RSA全体や現行の暗号を一律に破ったという結論へは広げない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@GoogleDeepMind",
+          "links": [
+            {
+              "text": "X／@GoogleDeepMind",
+              "url": "https://x.com/GoogleDeepMind/status/2118755418675765656"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/GoogleDeepMind/status/2118755418675765656"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "どの条件の暗号が対象なのかを押さえると、研究成果と自分の環境への影響を混同せずに読めるね。"
+        },
+        {
+          "type": "heading",
+          "text": "Qwenのティーザー、荘子の大きな魚の言葉を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Qwenの開発者向けアカウントが、本アカウントのポスターにある荘子の鯤の一節と、Qwenに近い発音を説明したという。引用元の文面は「The becoming begins.」とされ、モデル名、仕様、公開日は示されていない。新モデルの提供開始を確認する発表とは区別する。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@QwenDevs",
+          "links": [
+            {
+              "text": "X／@QwenDevs",
+              "url": "https://x.com/QwenDevs/status/2118716745372532865"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/QwenDevs/status/2118716745372532865"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "予告の意図を想像する楽しさはあるけれど、実際に使えるものの判断は具体的な発表を待ちたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "OpenAI、実験の生データを読むBioBasicsBenchを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "OpenAIの投稿として、酵素設計を行うLigoと、実際の実験を基にした100件の作業を評価するBioBasicsBenchが紹介された。生データから誤りを探し、証拠が結論を支えていないことに気付けるかを見るという。元の評価資料、問題構成と結果は未確認で、研究全体を自律的に行える証拠とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@OpenAI",
+          "links": [
+            {
+              "text": "X／@OpenAI",
+              "url": "https://x.com/OpenAI/status/2118782708767965238"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/OpenAI/status/2118782708767965238"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "大きな発見の前に、日々の実験記録を正しく読む力を測る視点が大事そうだね。"
+        },
+        {
+          "type": "heading",
+          "text": "OpenAI、サイバー分野の安全回避を比較する枠組みを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "OpenAIの投稿として、Frontier Model Forumと会員企業が、安全装置をすり抜ける行為が深刻なサイバー被害へつながるかを比べる枠組みを作ったと紹介された。得られる能力だけでなく、利用の容易さも含めて評価するという。原資料、対象モデルと評価方法の詳細は未確認。具体的な侵入手順を提供する紹介ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@OpenAI",
+          "links": [
+            {
+              "text": "X／@OpenAI",
+              "url": "https://x.com/OpenAI/status/2118795218099253606"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/OpenAI/status/2118795218099253606"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "同じ安全回避でも何ができてしまうかが違うので、被害につながる条件をそろえて比べる考え方は重要だね。"
+        },
+        {
+          "type": "heading",
+          "text": "ジェンセン・フアン氏、生産性を安さや速さだけで見ないとする発言"
+        },
+        {
+          "type": "paragraph",
+          "text": "現地で撮影したという投稿は、AIエージェントのチームで多くの可能性を試し、より良い答えを探すことも生産性だとするJensen Huang氏の話を紹介した。「1,000倍の仕事」「10倍良い答え」は発言で用いた考え方の説明で、実測した効率の保証ではない。講演全体と前後の文脈は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@masahirochaen",
+          "links": [
+            {
+              "text": "X／@masahirochaen",
+              "url": "https://x.com/masahirochaen/status/2118659472600248409"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/masahirochaen/status/2118659472600248409"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "同じ作業を速く終えるだけでなく、今まで試せなかった案を比較できるかも価値の見方になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Anthropicの寄稿、科学モデルをコードで作って比較する考え方を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Anthropicのゲスト投稿として、神経の発火や中性子星の衝突後などを説明する数理モデルを、AIがコードとして書き、実行し、データへ合わせ、修正しながら比較する考え方が紹介された。予測値を合わせることと、どの説明がデータに支えられるかを調べることを分けている。原文、実験結果と適用範囲は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@AnthropicAI",
+          "links": [
+            {
+              "text": "X／@AnthropicAI",
+              "url": "https://x.com/AnthropicAI/status/2118792930211107115"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/AnthropicAI/status/2118792930211107115"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "一つの式に決めつけず、別の説明も同じデータで比べる助けになるなら研究の整理に役立ちそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Omarchyの標準音声入力にSuperwhisperを採用との紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "DHH氏の投稿として、Linux環境Omarchyの標準音声入力にSuperwhisperが入ったと紹介された。クラウド利用は無料で、ローカル処理の選択肢も残すという説明。対象版、対応言語、無料の範囲とデータ処理条件は未確認で、恒久的な無料保証とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@dhh",
+          "links": [
+            {
+              "text": "X／@dhh",
+              "url": "https://x.com/dhh/status/2118789607781531989"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/dhh/status/2118789607781531989"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "音声入力でも手元の処理を選べるなら、通信や情報の扱いに合わせて使い分けやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Hugging Face、Slack上でモデル評価やデータ作りを行うボットを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hugging Faceの投稿として、オープンな機械学習インターンがSlackボットになり、モデル評価、データセット作成、微調整を扱えると紹介された。提供先、実行費用、データの送信範囲と必要な権限は未確認。ボット導入やモデルの学習は行っていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@huggingface",
+          "links": [
+            {
+              "text": "X／@huggingface",
+              "url": "https://x.com/huggingface/status/2118430862949945612"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/huggingface/status/2118430862949945612"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "会話から実験を依頼しやすくなる一方、扱うデータと計算費用が見えることが大事だね。"
+        },
+        {
+          "type": "heading",
+          "text": "OpenAI DevelopersプラグインのShowcaseとAPIクレジットを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "OpenAI Developersの投稿として、プラグインへShowcaseタブが加わったと紹介された。対象のChatGPT Pro・Businessでは請求設定からAPIクレジットを受け取れるという案内も添えられている。クレジット自体は既報の制度で、新しい一律の料金発表とは扱わない。対象契約、期限と適用条件は今回未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@OpenAIDevs",
+          "links": [
+            {
+              "text": "X／@OpenAIDevs",
+              "url": "https://x.com/OpenAIDevs/status/2118856544733532452"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/OpenAIDevs/status/2118856544733532452"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "作例から試したい用途を探せるなら、クレジットを受け取る前に何を作るか決めやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Mollick氏、現行AIで公共分野の試作と検証を進めるべきと提言"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ethan Mollick氏の意見として、教育の個別支援、医療のセカンドオピニオン、金融の理解や詐欺対策、行政の分かりやすさに、現行モデルを使った設計と検証をもっと進めるべきだという投稿が紹介された。将来モデルを待つ必要はないという提言で、各分野での安全性や有効性が確認済みという意味ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@emollick",
+          "links": [
+            {
+              "text": "X／@emollick",
+              "url": "https://x.com/emollick/status/2118551754908356979"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/emollick/status/2118551754908356979"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "社会的な使い道を試すときほど、技術の期待と実際に役立ったかの検証をセットにしたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "MistralのVoxtral 3、話し終わりを検出する機能を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mistralの投稿として、音声モデルVoxtral 3のターン終了検出が紹介された。言葉を文字へ起こすことと、人が話し終えたと判断することを分け、会話の応答タイミングを改善するという説明。対応API、提供条件と遅延の測定値は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@MistralAI",
+          "links": [
+            {
+              "text": "X／@MistralAI",
+              "url": "https://x.com/MistralAI/status/2118744719870066936"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/MistralAI/status/2118744719870066936"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "言葉を正しく聞くだけでなく、途中で割り込まないタイミングも音声会話の使いやすさを左右するね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Open Source, Local LLM & AI Agent（匿名要約）",
+          "url": "https://facebook.com/groups/runlocalai/permalink/1535321538395555/"
+        },
+        {
+          "label": "Threads／@stockmktnewz",
+          "url": "https://www.threads.com/@stockmktnewz/post/Dfat_NHgBdH"
+        },
+        {
+          "label": "X／@DLKFZWilliam2",
+          "url": "https://x.com/DLKFZWilliam2/status/2118720095166112095"
+        },
+        {
+          "label": "X／@Muse",
+          "url": "https://x.com/Muse/status/2118782474486501510"
+        },
+        {
+          "label": "X／@finkd",
+          "url": "https://x.com/finkd/status/2118765774034579808"
+        },
+        {
+          "label": "X／@itspdfu",
+          "url": "https://x.com/itspdfu/status/2118750259320906080"
+        },
+        {
+          "label": "X／@davidsuttonca",
+          "url": "https://x.com/davidsuttonca/status/2118785613436698719"
+        },
+        {
+          "label": "X／@RoundtableSpace",
+          "url": "https://x.com/RoundtableSpace/status/2118837821079212188"
+        },
+        {
+          "label": "X／@ChatGPT",
+          "url": "https://x.com/ChatGPT/status/2118827837239226387"
+        },
+        {
+          "label": "X／@AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2118814753154064501"
+        },
+        {
+          "label": "X／@GoogleDeepMind",
+          "url": "https://x.com/GoogleDeepMind/status/2118755418675765656"
+        },
+        {
+          "label": "X／@QwenDevs",
+          "url": "https://x.com/QwenDevs/status/2118716745372532865"
+        },
+        {
+          "label": "X／@OpenAI",
+          "url": "https://x.com/OpenAI/status/2118782708767965238"
+        },
+        {
+          "label": "X／@OpenAI",
+          "url": "https://x.com/OpenAI/status/2118795218099253606"
+        },
+        {
+          "label": "X／@masahirochaen",
+          "url": "https://x.com/masahirochaen/status/2118659472600248409"
+        },
+        {
+          "label": "X／@AnthropicAI",
+          "url": "https://x.com/AnthropicAI/status/2118792930211107115"
+        },
+        {
+          "label": "X／@dhh",
+          "url": "https://x.com/dhh/status/2118789607781531989"
+        },
+        {
+          "label": "X／@huggingface",
+          "url": "https://x.com/huggingface/status/2118430862949945612"
+        },
+        {
+          "label": "X／@OpenAIDevs",
+          "url": "https://x.com/OpenAIDevs/status/2118856544733532452"
+        },
+        {
+          "label": "X／@emollick",
+          "url": "https://x.com/emollick/status/2118551754908356979"
+        },
+        {
+          "label": "X／@MistralAI",
+          "url": "https://x.com/MistralAI/status/2118744719870066936"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1535321538395555/",
+        "https://www.threads.com/@stockmktnewz/post/Dfat_NHgBdH",
+        "https://x.com/DLKFZWilliam2/status/2118720095166112095",
+        "https://x.com/Muse/status/2118782474486501510",
+        "https://x.com/finkd/status/2118765774034579808",
+        "https://x.com/itspdfu/status/2118750259320906080",
+        "https://x.com/davidsuttonca/status/2118785613436698719",
+        "https://x.com/RoundtableSpace/status/2118837821079212188",
+        "https://x.com/ChatGPT/status/2118827837239226387",
+        "https://x.com/AnthropicAI/status/2118814753154064501",
+        "https://x.com/GoogleDeepMind/status/2118755418675765656",
+        "https://x.com/QwenDevs/status/2118716745372532865",
+        "https://x.com/OpenAI/status/2118782708767965238",
+        "https://x.com/OpenAI/status/2118795218099253606",
+        "https://x.com/masahirochaen/status/2118659472600248409",
+        "https://x.com/AnthropicAI/status/2118792930211107115",
+        "https://x.com/dhh/status/2118789607781531989",
+        "https://x.com/huggingface/status/2118430862949945612",
+        "https://x.com/OpenAIDevs/status/2118856544733532452",
+        "https://x.com/emollick/status/2118551754908356979",
+        "https://x.com/MistralAI/status/2118744719870066936"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。Threadsは公開画面の本文を確認したが、公式埋め込み表示は確認できず元リンクで参照。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "ai-news"
+    },
+    {
+      "id": "20261107-cg-tips",
+      "title": "CG小ネタ:2026年11月7日",
+      "summary": "キャラクター制作、AIと3Dソフトの分担、地形・煙・質感の実用ヒントを整理。確認した資料の範囲と未確認の主張を分けた。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "tips-roundup",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Gnomonがキャラクターをスケッチから質感調整まで作る流れを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Gnomon WorkshopのThreadsとして、Photoshopでスケッチ、ZBrushで形の彫り込み、Mayaで形状の整理とUV展開、Substance Painterで表面の質感、Arnoldで見え方を調整する講座が紹介された。UV展開は立体の表面を平面へ対応付ける工程として説明されている。講座本編、所要時間、受講条件は未確認。関連する短縮URLには注釈が混在していたため、確認可能な元投稿を出典にする。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／@thegnomonworkshop",
+          "links": [
+            {
+              "text": "Threads／@thegnomonworkshop",
+              "url": "https://www.threads.com/@thegnomonworkshop/post/DfaLZYrgYG8"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "工程のつなぎ方が見えると、完成品のどこをどのソフトで作っているか理解しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "1950年代の街と歩く家を組み合わせるキーイラスト講座"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Gnomon WorkshopのThreadsでは、1950年代の小さな街並みと、霧の中に爪の生えた脚を持つ家を組み合わせる絵の講座が紹介された。日常的な細部と幻想的な主役を対比させる題材という。講座本編、制作手順と受講条件は未確認で、画像は転載していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／@thegnomonworkshop",
+          "links": [
+            {
+              "text": "Threads／@thegnomonworkshop",
+              "url": "https://www.threads.com/@thegnomonworkshop/post/DfXmijCjtkk"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "身近な街並みの中に一つだけ異質な主役を置く考え方は、絵の見せ場を考える参考になるね。"
+        },
+        {
+          "type": "heading",
+          "text": "Wacom、壁画の12コマを歩行アニメにした制作例を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "WacomのThreadsとして、3人のアーティストが切り紙の人形とMovinkPad Pro 14を使い、スイスの壁画フェスティバルで3面の壁に12コマの歩行動作を描いた事例が共有された。偶然見つけた制作手順がきっかけという。元映像、具体的な制作工程と関連ページ本文は未確認で、機器の新製品発表とは区別する。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／@wacom",
+          "links": [
+            {
+              "text": "Threads／@wacom",
+              "url": "https://www.threads.com/@wacom/post/DfaTaMiGJyj"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "関連資料：Wacom関連記事（Threads本文にリンク、記事本文未確認）",
+          "links": [
+            {
+              "text": "Wacom関連記事（Threads本文にリンク、記事本文未確認）",
+              "url": "https://community.wacom.com/en-us/how-i-turned-a-21-ton-cement-canvas-into-an-animated-walk-cycle/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "デジタルで動きを試してから大きな壁へ移す発想は、画面の外でアニメーションを見せるヒントになりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Blenderで立方体を球へ変える小ワザを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Blender TipsのFacebookグループで、立方体を球体へ変形する短いテクニックが共有された。取得した素材には具体的な操作手順や対応版がなく、変形方法と形状の仕上がりは未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Blender Tips（匿名要約）",
+          "links": [
+            {
+              "text": "Blender Tips（匿名要約）",
+              "url": "https://facebook.com/groups/282909453705941/permalink/1491805579482983/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "単純な形を変える練習でも、変形前後の面の並びを比べると別のモデルづくりへ応用できそう。"
+        },
+        {
+          "type": "heading",
+          "text": "NASAの地形データをTerragenへ使った赤富士の作例"
+        },
+        {
+          "type": "paragraph",
+          "text": "Threadsの制作者が、NASAの地形データを使いTerragenで赤く染まる富士山を描いた短い映像を紹介した。データの種類、解像度、照明設定と制作手順は未確認。映像や画像は保存・転載せず、提供された元投稿を参照する。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Threads／@chicochoco_san_",
+          "links": [
+            {
+              "text": "Threads／@chicochoco_san_",
+              "url": "https://www.threads.com/@chicochoco_san_/post/DfV8N6ojFiY"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "実際の地形を土台に光の色で雰囲気を作る方法は、風景表現の試作にも使えそう。"
+        },
+        {
+          "type": "heading",
+          "text": "ClaudeとBlenderの制作例、生成モデルの比率と6日間の修正を報告"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者はClaude Opus 5.5でBlenderを操作し、Tripoの使用は約5％、多くの形状と質感はOpusが組み立てる処理だったと説明した。文字など一部のテクスチャにはChatGPT、音にはHunyuanVideo-Foleyを使ったという。補足では、できたものへ具体的な修正指示を出し続け、6日かかったと報告している。割合と時間はこの作品の自己申告で、手順や再現性は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@arafune",
+          "links": [
+            {
+              "text": "X／@arafune",
+              "url": "https://x.com/arafune/status/2118582485412131107"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/arafune/status/2118582485412131107"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@arafune",
+          "links": [
+            {
+              "text": "X／@arafune",
+              "url": "https://x.com/arafune/status/2118648503312502813"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/arafune/status/2118648503312502813"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "生成を一回頼んで終わりにせず、具体的な修正を積み重ねる部分が制作の中心だった点が参考になるね。"
+        },
+        {
+          "type": "heading",
+          "text": "Inside Unreal、Gears of War: E-Dayの制作技術を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Unreal Engineの公式投稿として、The Coalitionが『Gears of War: E-Day』の制作を語る配信が紹介された。細かな形状の描画を支えるNaniteや照明のLumenに加え、MegaLights、Motion Matching、Irisなどを扱うという。配信全編、実際の設定と一般公開されている機能の範囲は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@UnrealEngine",
+          "links": [
+            {
+              "text": "X／@UnrealEngine",
+              "url": "https://x.com/UnrealEngine/status/2118388167695057035"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/UnrealEngine/status/2118388167695057035"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "大規模作品で技術をどう組み合わせたかを知ると、機能単体の紹介より採用の理由を理解しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Maxon、RodinとCinema 4Dを組み合わせたメカ映像を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Maxonの投稿として、Luke Bellissimo氏がRodinで作ったメカをCinema 4Dで動かし、Pyroの爆発とRedshiftの描画で仕上げた作品が共有された。MCP連携で骨組みや動きを作り、以前なら1か月超だった場面を数日で完成させたという作者の説明。制作条件、手直し量と時間短縮は独立検証していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@Maxon_Cinema4D",
+          "links": [
+            {
+              "text": "X／@Maxon_Cinema4D",
+              "url": "https://x.com/Maxon_Cinema4D/status/2118744243120361669"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Maxon_Cinema4D/status/2118744243120361669"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "形の生成と動きの調整を別工程に分けることで、どの部分を人が詰めるか見えやすくなりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "BlenderからUnityやVRChatへつなぐ制作ガイド"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者が、Blender、Substance Painter、Unity、Warudo、VRChatを行き来する簡単な3Dモデルの制作ガイドと早回し映像を紹介した。PureRefで工程を整理しているという。受け渡し形式、対応版と配布物の利用条件は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@AliceRe1999",
+          "links": [
+            {
+              "text": "X／@AliceRe1999",
+              "url": "https://x.com/AliceRe1999/status/2118728763504795818"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/AliceRe1999/status/2118728763504795818"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "使うソフトが多いほど、工程の見取り図を残しておくと修正時に戻りやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "自作4D Gaussian Splattingの再構成精度を改善したという進捗"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者は、動く被写体を立体として再構成する自作4D Gaussian Splattingシステムの進捗映像を公開したという。素材は精度が良くなったと紹介するが、測定値、撮影構成、再現手順と配布予定は示されていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@KenjiASABA",
+          "links": [
+            {
+              "text": "X／@KenjiASABA",
+              "url": "https://x.com/KenjiASABA/status/2118579709789532255"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/KenjiASABA/status/2118579709789532255"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "動きのある対象をどれだけ安定して残せるかは、静止した3D化とは別に見ておきたい点だね。"
+        },
+        {
+          "type": "heading",
+          "text": "ノルウェーの標高データを使いUnityで島を組み立てた例"
+        },
+        {
+          "type": "paragraph",
+          "text": "制作者は、ノルウェーのNasjonal høydemodell DTM 1mを利用し、大まかな形を決めた後に谷・湖・海岸を作り、規則に従って約4万2,000本の木を置く島のデモを紹介した。植生を一つずつ手で置いていないという説明。元データの利用条件、表示解像度と出力精度、処理負荷は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@Olmirad",
+          "links": [
+            {
+              "text": "X／@Olmirad",
+              "url": "https://x.com/Olmirad/status/2118067081245610161"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Olmirad/status/2118067081245610161"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "実測の形を土台にしつつ、人は大きな構図を決める分担は、広い景観を試作する参考になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Blenderでメッシュから氷を作る仕組みを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "80 Levelの紹介として、Deepak Kushwaha氏によるメッシュベースのプロシージャルな氷のシステムが共有された。地表の高さだけでなく、表面の形状を手順に従って作る題材として紹介されている。元の解説本文、ノード構成、配布や利用条件は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@80Level",
+          "links": [
+            {
+              "text": "X／@80Level",
+              "url": "https://x.com/80Level/status/2118286448029815287"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/80Level/status/2118286448029815287"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "雪原や氷の形を繰り返し調整するなら、作り方を手順として残す発想が参考になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "戦国アクションの試作でキャラ生成と街づくりを分担する例"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿は、UE5の試作で人物や小物はTripo、環境はOpus 5.5にEpicのClaude Codeプラグイン経由で作らせる分担を紹介した。石段、寺、山、低い太陽、三人称視点、剣と回避を順に指定し、まず歩行と斬撃を一つずつ確認して、修正も一度に一つとする案。プラグインの仕様、生成物の権利と再現結果は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@rewind02",
+          "links": [
+            {
+              "text": "X／@rewind02",
+              "url": "https://x.com/rewind02/status/2118722284328190248"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/rewind02/status/2118722284328190248"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "最初から大きなゲームを完成させようとせず、歩く・攻撃するの小さな確認を積む流れが参考になるね。"
+        },
+        {
+          "type": "heading",
+          "text": "形を作り直した3ds MaxモデルへUVを転送するヒント"
+        },
+        {
+          "type": "paragraph",
+          "text": "Redditの相談に、Attribute Transferを使う方法が紹介された。Autodesk公式ヘルプでは、3ds Max 2026.1で追加され、面や頂点のつながりが一致しないメッシュ間でもUV、法線、頂点カラーなどを転送する機能と説明されている。Reference Objectで参照元を選び、UVW 1を使うのがUV転送の例。結果は近似になることがあり、確認と手直しが必要で、既存機能の実用ヒントとして紹介する。",
+          "terms": [
+            {
+              "text": "Attribute Transfer",
+              "definition": "参照する別のメッシュから、UVや法線、頂点カラーなどの情報を転送する3ds Maxの機能。"
+            }
+          ],
+          "links": [
+            {
+              "text": "Attribute Transfer",
+              "url": "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-Modifiers/files/GUID-969213B0-8081-4529-80A9-CD82AAD56B6F.htm"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/3dsmax",
+          "links": [
+            {
+              "text": "Reddit／r/3dsmax",
+              "url": "https://www.reddit.com/r/3dsmax/comments/1xmy0kg/maintain_uv_after_retopology/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Autodesk公式機能ヘルプ",
+          "links": [
+            {
+              "text": "Autodesk公式機能ヘルプ",
+              "url": "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-Modifiers/files/GUID-969213B0-8081-4529-80A9-CD82AAD56B6F.htm"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：2026.1公式新機能説明",
+          "links": [
+            {
+              "text": "2026.1公式新機能説明",
+              "url": "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-What-s-New/files/GUID-44069A5C-3EB0-44A7-A990-7CB41D112014.htm"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "形を整理し直した後に質感の配置を作り直す負担を減らせるか、複製モデルで比べてみたくなるね。"
+        },
+        {
+          "type": "heading",
+          "text": "枝分かれする経路から煙の動きを作るHoudini解説"
+        },
+        {
+          "type": "paragraph",
+          "text": "作者の80 Level記事は2026年10月5日公開の既刊解説で、点を結んで枝状に伸びるSpace Colonizationの考え方をPyroの煙へ使う流れを説明する。経路から速度を、選んだ点から密度を与え、SolarisとKarmaで仕上げる。枝の探索半径や候補数で形を調整する内容で、配布シーンやコードの再現は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/Houdini",
+          "links": [
+            {
+              "text": "Reddit／r/Houdini",
+              "url": "https://www.reddit.com/r/Houdini/comments/1wywid7/wrote_an_article_for_80lv_explaining_in_detail/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：作者による制作解説",
+          "links": [
+            {
+              "text": "作者による制作解説",
+              "url": "https://80.lv/articles/merging-space-colonization-solver-with-pyro-simulation-to-create-looping-smoke-bursts"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "煙を直接調整するだけでなく、先に通り道を設計する考え方は、狙った形を作る助けになりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "水中の気泡と水面の泡を分けた研究をHoudiniで実装する例"
+        },
+        {
+          "type": "paragraph",
+          "text": "第三者がWētā FXの白波研究を参考に、HoudiniのGas MicrosolversとVEXで処理を組んだ制作例。水中の気泡と水面の泡を分ける考え方は、原著者のSIGGRAPH 2022研究ページでも説明されている。作者は水中の相互作用と水面上の粒子計算を組み合わせたとするが、Wētā FX公式配布ツールではない。既存機能より優れるという評価、速度、配布状況と再現性は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/Houdini",
+          "links": [
+            {
+              "text": "Reddit／r/Houdini",
+              "url": "https://www.reddit.com/r/Houdini/comments/1wxazcb/guided_bubbles_wet_foam_solver_w%C4%93t%C4%81_fx_paper/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：原著者の研究紹介",
+          "links": [
+            {
+              "text": "原著者の研究紹介",
+              "url": "https://alexey.stomakhin.com/research/whitewater.html"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "同じ白い泡に見えても、水中と水面を分けて考えると動きの違いを作り込みやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "MountainとVoronoiから鋭い山を作るGaea 2教材"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿は、MountainとVoronoiを混ぜた形から、Graphic EQ、二段階の侵食、陰影を足す処理でダークファンタジー風の山岳を作る流れを説明している。作者サイトで教材と無料ファイルの案内を確認したが、個別カードの詳しい本文、配布物の内容と利用条件は未確認。今回はReddit本文と教材案内だけを紹介し、約11分の動画の内容を視聴・解析したものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/Gaea",
+          "links": [
+            {
+              "text": "Reddit／r/Gaea",
+              "url": "https://www.reddit.com/r/Gaea/comments/1xd9d1f/dark_fantasy_spiked_mountains_in_gaea_2_100/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：作者の教材案内",
+          "links": [
+            {
+              "text": "作者の教材案内",
+              "url": "https://www.kalysteon.com/tutorials#dark-fantasy-spikes-gaea-2"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "基本の山へ別のパターンを混ぜてから削る手順は、現実寄りとは違う地形を試す入口になりそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Threads／@thegnomonworkshop",
+          "url": "https://www.threads.com/@thegnomonworkshop/post/DfaLZYrgYG8"
+        },
+        {
+          "label": "Threads／@thegnomonworkshop",
+          "url": "https://www.threads.com/@thegnomonworkshop/post/DfXmijCjtkk"
+        },
+        {
+          "label": "Threads／@wacom",
+          "url": "https://www.threads.com/@wacom/post/DfaTaMiGJyj"
+        },
+        {
+          "label": "Blender Tips（匿名要約）",
+          "url": "https://facebook.com/groups/282909453705941/permalink/1491805579482983/"
+        },
+        {
+          "label": "Threads／@chicochoco_san_",
+          "url": "https://www.threads.com/@chicochoco_san_/post/DfV8N6ojFiY"
+        },
+        {
+          "label": "X／@arafune",
+          "url": "https://x.com/arafune/status/2118582485412131107"
+        },
+        {
+          "label": "X／@arafune",
+          "url": "https://x.com/arafune/status/2118648503312502813"
+        },
+        {
+          "label": "X／@UnrealEngine",
+          "url": "https://x.com/UnrealEngine/status/2118388167695057035"
+        },
+        {
+          "label": "X／@Maxon_Cinema4D",
+          "url": "https://x.com/Maxon_Cinema4D/status/2118744243120361669"
+        },
+        {
+          "label": "X／@AliceRe1999",
+          "url": "https://x.com/AliceRe1999/status/2118728763504795818"
+        },
+        {
+          "label": "X／@KenjiASABA",
+          "url": "https://x.com/KenjiASABA/status/2118579709789532255"
+        },
+        {
+          "label": "X／@Olmirad",
+          "url": "https://x.com/Olmirad/status/2118067081245610161"
+        },
+        {
+          "label": "X／@80Level",
+          "url": "https://x.com/80Level/status/2118286448029815287"
+        },
+        {
+          "label": "X／@rewind02",
+          "url": "https://x.com/rewind02/status/2118722284328190248"
+        },
+        {
+          "label": "Reddit／r/3dsmax",
+          "url": "https://www.reddit.com/r/3dsmax/comments/1xmy0kg/maintain_uv_after_retopology/"
+        },
+        {
+          "label": "Autodesk公式機能ヘルプ",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-Modifiers/files/GUID-969213B0-8081-4529-80A9-CD82AAD56B6F.htm"
+        },
+        {
+          "label": "2026.1公式新機能説明",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-What-s-New/files/GUID-44069A5C-3EB0-44A7-A990-7CB41D112014.htm"
+        },
+        {
+          "label": "用語解説：Attribute Transfer",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-Modifiers/files/GUID-969213B0-8081-4529-80A9-CD82AAD56B6F.htm"
+        },
+        {
+          "label": "Reddit／r/Houdini",
+          "url": "https://www.reddit.com/r/Houdini/comments/1wywid7/wrote_an_article_for_80lv_explaining_in_detail/"
+        },
+        {
+          "label": "作者による制作解説",
+          "url": "https://80.lv/articles/merging-space-colonization-solver-with-pyro-simulation-to-create-looping-smoke-bursts"
+        },
+        {
+          "label": "Reddit／r/Houdini",
+          "url": "https://www.reddit.com/r/Houdini/comments/1wxazcb/guided_bubbles_wet_foam_solver_w%C4%93t%C4%81_fx_paper/"
+        },
+        {
+          "label": "原著者の研究紹介",
+          "url": "https://alexey.stomakhin.com/research/whitewater.html"
+        },
+        {
+          "label": "Reddit／r/Gaea",
+          "url": "https://www.reddit.com/r/Gaea/comments/1xd9d1f/dark_fantasy_spiked_mountains_in_gaea_2_100/"
+        },
+        {
+          "label": "作者の教材案内",
+          "url": "https://www.kalysteon.com/tutorials#dark-fantasy-spikes-gaea-2"
+        },
+        {
+          "label": "Wacom関連記事（Threads本文にリンク、記事本文未確認）",
+          "url": "https://community.wacom.com/en-us/how-i-turned-a-21-ton-cement-canvas-into-an-animated-walk-cycle/"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.threads.com/@thegnomonworkshop/post/DfaLZYrgYG8",
+        "https://www.threads.com/@thegnomonworkshop/post/DfXmijCjtkk",
+        "https://www.threads.com/@wacom/post/DfaTaMiGJyj",
+        "https://facebook.com/groups/282909453705941/permalink/1491805579482983/",
+        "https://www.threads.com/@chicochoco_san_/post/DfV8N6ojFiY",
+        "https://x.com/arafune/status/2118582485412131107",
+        "https://x.com/arafune/status/2118648503312502813",
+        "https://x.com/UnrealEngine/status/2118388167695057035",
+        "https://x.com/Maxon_Cinema4D/status/2118744243120361669",
+        "https://x.com/AliceRe1999/status/2118728763504795818",
+        "https://x.com/KenjiASABA/status/2118579709789532255",
+        "https://x.com/Olmirad/status/2118067081245610161",
+        "https://x.com/80Level/status/2118286448029815287",
+        "https://x.com/rewind02/status/2118722284328190248",
+        "https://www.reddit.com/r/3dsmax/comments/1xmy0kg/maintain_uv_after_retopology/",
+        "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-Modifiers/files/GUID-969213B0-8081-4529-80A9-CD82AAD56B6F.htm",
+        "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-What-s-New/files/GUID-44069A5C-3EB0-44A7-A990-7CB41D112014.htm",
+        "https://www.reddit.com/r/Houdini/comments/1wywid7/wrote_an_article_for_80lv_explaining_in_detail/",
+        "https://80.lv/articles/merging-space-colonization-solver-with-pyro-simulation-to-create-looping-smoke-bursts",
+        "https://www.reddit.com/r/Houdini/comments/1wxazcb/guided_bubbles_wet_foam_solver_w%C4%93t%C4%81_fx_paper/",
+        "https://alexey.stomakhin.com/research/whitewater.html",
+        "https://www.reddit.com/r/Gaea/comments/1xd9d1f/dark_fantasy_spiked_mountains_in_gaea_2_100/",
+        "https://www.kalysteon.com/tutorials#dark-fantasy-spikes-gaea-2",
+        "https://community.wacom.com/en-us/how-i-turned-a-21-ton-cement-canvas-into-an-animated-walk-cycle/"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。Redditの公開本文・取得できた返信と、出典欄の作者・公式資料を参照。絶対投稿日時は未確認で、過去の投稿を含む参考紹介。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。Threadsは公開画面の本文を確認したが、公式埋め込み表示は確認できず元リンクで参照。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-tips"
+    },
+    {
+      "id": "20261107-cg-news",
+      "title": "CGニュース:2026年11月7日",
+      "summary": "『フリントストーン』の制作資料を扱うウェビナーの予定を紹介。確認した資料の範囲と未確認の主張を分けた。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "news-roundup",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "フリントストーンの制作資料を扱うウェビナーを11月11日に予定"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Art of Animationのグループでは、『原始家族フリントストーン』の初期スケッチや映像を取り上げるウェビナーが11月11日17:30（米東部時間）に開かれると案内された。チケット購入で1週間の再視聴が可能という。主催側の申込ページ、料金、時間帯表記と再視聴条件は未確認で、購入を行ったものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：The Art of Animation（匿名要約）",
+          "links": [
+            {
+              "text": "The Art of Animation（匿名要約）",
+              "url": "https://facebook.com/groups/ArtofAnimation/permalink/4501216573473562/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "完成映像と初期案を見比べられるなら、キャラクターや世界観を絞っていく過程を学べそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Art of Animation（匿名要約）",
+          "url": "https://facebook.com/groups/ArtofAnimation/permalink/4501216573473562/"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/ArtofAnimation/permalink/4501216573473562/"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news"
+    },
+    {
+      "id": "20261107-eso-news",
+      "title": "ESOニュース:2026年11月7日",
+      "summary": "次回作への希望、サーバー選び、アリーナの不具合報告を整理。確認した資料の範囲と未確認の主張を分けた。",
+      "category": "eso",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "news-roundup",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "元デザイナーがTES次回作に望む騎乗とハシゴの改善"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループでは、元デザイナーのBruce Nesmith氏が、騎乗戦闘や馬の戦闘参加、ハシゴを登る操作をTES次回作に望んでいるという話が紹介された。希望や過去の技術的制約の話で、次回作への採用が決まった仕様ではない。素材中の「Sentinel」という呼称も公式本文で確認できていないため、正式副題として断定しない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online Players（匿名要約）",
+          "links": [
+            {
+              "text": "Elder Scrolls Online Players（匿名要約）",
+              "url": "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29278368391774988/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "探索の自由度に関わる要素だけれど、開発者の希望と実装済みの機能は分けて追いたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "Xbox版ESOの人口とNA・EUサーバー選びを相談する投稿"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループで、Xbox版を始める人がアクティブ人口とNA・EUのどちらを選ぶかを相談していた。取得素材は質問が中心で、サーバー別の人数や比較結果は示されていない。地域・時間帯による差もあり、人口の多いサーバーを確定する資料とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online（公開グループ）（匿名要約）",
+          "links": [
+            {
+              "text": "Elder Scrolls Online（公開グループ）（匿名要約）",
+              "url": "https://facebook.com/groups/esoeu/permalink/40815575141374300/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "人数だけで決めず、自分の遊ぶ時間帯や通信の遅れを確かめる材料が欲しいね。"
+        },
+        {
+          "type": "heading",
+          "text": "ドラゴンスターアリーナ最終戦の炎ダメージに不具合の疑い"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者は、ドラゴンスターアリーナの最終ボスで炎のダメージが異常に大きく、外周へ移動する前に倒れることがあると報告した。タンクが先に炎を受け、その後3人の攻撃役で進めたという対処例を共有している。再現条件、原因、公式の不具合認定と対処の安全性は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@gaobon114514",
+          "links": [
+            {
+              "text": "X／@gaobon114514",
+              "url": "https://x.com/gaobon114514/status/2118382992871809423"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/gaobon114514/status/2118382992871809423"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "謎の失敗を全部操作のせいにせず、発生条件や編成を記録すると切り分けの助けになりそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Elder Scrolls Online Players（匿名要約）",
+          "url": "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29278368391774988/"
+        },
+        {
+          "label": "Elder Scrolls Online（公開グループ）（匿名要約）",
+          "url": "https://facebook.com/groups/esoeu/permalink/40815575141374300/"
+        },
+        {
+          "label": "X／@gaobon114514",
+          "url": "https://x.com/gaobon114514/status/2118382992871809423"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29278368391774988/",
+        "https://facebook.com/groups/esoeu/permalink/40815575141374300/",
+        "https://x.com/gaobon114514/status/2118382992871809423"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "eso-news"
+    },
+    {
+      "id": "20261107-eso-tips",
+      "title": "ESO小ネタ:2026年11月7日",
+      "summary": "住まい、スキル、伝承、装飾とU51対応のソロ構成を紹介。確認した資料の範囲と未確認の主張を分けた。",
+      "category": "eso",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "tips-roundup",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "ESOで住まいを得る方法について利用者が情報交換"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループでは、キャラクターごとの無料の宿屋部屋、合計約36,000ゴールドという3つのアパート、15,000ゴールド前後の家が紹介された。クエスト由来のHall of the Lunar Championや、イベントの欠片を集める家にも言及する。価格、入手資格、イベント期間と現行の報酬は未確認で、すべてが無料という説明ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online（公開グループ）（匿名要約）",
+          "links": [
+            {
+              "text": "Elder Scrolls Online（公開グループ）（匿名要約）",
+              "url": "https://facebook.com/groups/esoeu/permalink/40807440915521056/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "無料の部屋と、ゴールドやイベントの準備が必要な家を分けると、最初の住まいを探しやすそう。"
+        },
+        {
+          "type": "heading",
+          "text": "好きなスキルを挙げるESOプレイヤーの交流"
+        },
+        {
+          "type": "paragraph",
+          "text": "Facebookグループで好きなスキルと理由が尋ねられ、素材ではダーク・クリスタル・ブラスト、エレメンタル・エクスプロージョン、隠密などが例として紹介された。名前の日本語表記や各効果は公式データと未照合で、性能順位や現行の効果値を示すものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Elder Scrolls Online（公開グループ）（匿名要約）",
+          "links": [
+            {
+              "text": "Elder Scrolls Online（公開グループ）（匿名要約）",
+              "url": "https://facebook.com/groups/esoeu/permalink/40741975028734312/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "強さだけでなく、演出や使って楽しい理由から別の遊び方を見つける入口になりそう。"
+        },
+        {
+          "type": "heading",
+          "text": "シロディールの気候の違いを伝承から考える解説"
+        },
+        {
+          "type": "paragraph",
+          "text": "投稿は、初期のTES資料にある密林のシロディールとESOの温帯的な景観の違いを、タロスによる改変や塔が歴史へ影響したという解釈から説明している。ゲーム内外の伝承に基づく考察という紹介で、公式が一つの解釈を確定したものとは限らない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@wesleytypes",
+          "links": [
+            {
+              "text": "X／@wesleytypes",
+              "url": "https://x.com/wesleytypes/status/2118708794473537626"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/wesleytypes/status/2118708794473537626"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "いつも戦う土地の背景を調べると、風景の違いも物語を読む手掛かりになるね。"
+        },
+        {
+          "type": "heading",
+          "text": "青白い光のサイジック家具を水辺へ置く提案"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者が、サイジックのライトニンググローブ（大）を水辺へ置き、不思議な雰囲気と明るさを加える装飾例を紹介した。家具の正確な日本語名、入手先と照明の見え方は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@akino_shosaku",
+          "links": [
+            {
+              "text": "X／@akino_shosaku",
+              "url": "https://x.com/akino_shosaku/status/2118746914581790912"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/akino_shosaku/status/2118746914581790912"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "家具そのものだけでなく、水面への光の映り方まで考えると雰囲気を変えられそう。"
+        },
+        {
+          "type": "heading",
+          "text": "ストラード伯爵を意識したESOの吸血鬼コーデ"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者が『呪われたストラード』の伯爵を意識した吸血鬼の服装を紹介し、ESOにもマントが欲しいという希望を添えた。元の装備名や染色条件は未確認で、ゲームへの新衣装追加の発表ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@Casual_Ranger",
+          "links": [
+            {
+              "text": "X／@Casual_Ranger",
+              "url": "https://x.com/Casual_Ranger/status/2118549091688800639"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/Casual_Ranger/status/2118549091688800639"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "別作品の人物をそのまま再現するより、色や輪郭の特徴を拾うと手持ちの衣装でも工夫できそう。"
+        },
+        {
+          "type": "heading",
+          "text": "Hyperioxes、U51対応のスタミナ・ナイトブレイドを解説"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hyperioxesの公式ガイドはUpdate 51対応、最終更新2026年11月6日と記載し、ソロ向けスタミナ・ナイトブレイドの装備・スキルと生存力の組み立てを説明している。体力600万の標的での通常構成65.3k、火力特化77.3kという実測と、別掲のシミュレーション63.9k・76.4kは異なる値として示されている。いずれも作者の条件下の結果で、全プレイヤーが同じ火力を出せる保証ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Class Masteryは各クラスの5個から2個のパッシブを選ぶ仕組みで、Subclassingを使うと無効になるとガイドは説明する。動画はスキルと装備の選び方、生存力と火力、場面に応じた操作順を扱うというGemini要約も参照した。動画は11月7日01:00（日本時間）公開の13分10秒。公開説明・現行ガイドと短い自動解析を確認した範囲で、全発言の逐語確認やゲーム内での再現検証は行っていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Hyperioxes公式：U51スタミナ・ナイトブレイドガイド",
+          "links": [
+            {
+              "text": "Hyperioxes公式：U51スタミナ・ナイトブレイドガイド",
+              "url": "https://hyperioxes.com/eso/solo/stamina-nightblade-build"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Hyperioxes：スタミナ・ナイトブレイド解説",
+          "links": [
+            {
+              "text": "Hyperioxes：スタミナ・ナイトブレイド解説",
+              "url": "https://www.youtube.com/watch?v=SgMzem523ro"
+            }
+          ]
+        },
+        {
+          "type": "youtube",
+          "videoId": "SgMzem523ro",
+          "url": "https://www.youtube.com/watch?v=SgMzem523ro",
+          "title": "Stamina Nightblade Solo Build | ESO Update 51"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "火力の数字だけでなく、生き残るために何を残した構成かを比べると、自分の遊び方へ合わせやすそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Elder Scrolls Online（公開グループ）（匿名要約）",
+          "url": "https://facebook.com/groups/esoeu/permalink/40807440915521056/"
+        },
+        {
+          "label": "Elder Scrolls Online（公開グループ）（匿名要約）",
+          "url": "https://facebook.com/groups/esoeu/permalink/40741975028734312/"
+        },
+        {
+          "label": "X／@wesleytypes",
+          "url": "https://x.com/wesleytypes/status/2118708794473537626"
+        },
+        {
+          "label": "X／@akino_shosaku",
+          "url": "https://x.com/akino_shosaku/status/2118746914581790912"
+        },
+        {
+          "label": "X／@Casual_Ranger",
+          "url": "https://x.com/Casual_Ranger/status/2118549091688800639"
+        },
+        {
+          "label": "Hyperioxes公式：U51スタミナ・ナイトブレイドガイド",
+          "url": "https://hyperioxes.com/eso/solo/stamina-nightblade-build"
+        },
+        {
+          "label": "Hyperioxes：スタミナ・ナイトブレイド解説",
+          "url": "https://www.youtube.com/watch?v=SgMzem523ro"
+        }
+      ],
+      "sourceUrls": [
+        "https://facebook.com/groups/esoeu/permalink/40807440915521056/",
+        "https://facebook.com/groups/esoeu/permalink/40741975028734312/",
+        "https://x.com/wesleytypes/status/2118708794473537626",
+        "https://x.com/akino_shosaku/status/2118746914581790912",
+        "https://x.com/Casual_Ranger/status/2118549091688800639",
+        "https://hyperioxes.com/eso/solo/stamina-nightblade-build",
+        "https://www.youtube.com/watch?v=SgMzem523ro"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。YouTubeの公開説明、記載した一次資料、今回成功したGeminiの短い解析要約を参照。全発言の逐語確認や操作・ゲーム内の再現検証は未実施。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "eso-tips"
+    },
+    {
+      "id": "20261107-muse-wonder-memory",
+      "title": "Muse Wonder、記憶と自己修正を改善したモデル更新を紹介",
+      "summary": "Mark Zuckerberg氏の投稿として、Muse WonderのActive MemoryとActive Focusを全利用者へ導入したとの説明が共有された。利用条件や確認範囲も整理した。",
+      "category": "ai",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Muse Wonder、記憶と自己修正を改善したモデル更新を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mark Zuckerberg氏の投稿として、Muse WonderのActive MemoryとActive Focusを全利用者へ導入したとの説明が共有された。重要情報を忘れる確率が2.4分の1、自己修正と日常タスクの完了が67％改善したという主張だが、指標の定義、比較対象と評価条件は未確認。Slack見出しの「行き詰まり67％減」と本文の「67％向上」は同じ値として読み替えず、ここでは本文の主張を紹介する。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@finkd",
+          "links": [
+            {
+              "text": "X／@finkd",
+              "url": "https://x.com/finkd/status/2118767522782626104"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/finkd/status/2118767522782626104"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "長い仕事で何を覚え、どこで立て直せるかが改善するなら、同じ説明を繰り返す負担が減りそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@finkd",
+          "url": "https://x.com/finkd/status/2118767522782626104"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/finkd/status/2118767522782626104"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "ai-news",
+      "thumbnail": "assets/news/library-ai-model-v1.webp",
+      "thumbnailAlt": "AIモデルを表すオレンジ色の汎用イラスト。実際の製品画像ではありません。"
+    },
+    {
+      "id": "20261107-lyra20",
+      "title": "NVIDIAのLyra 2.0、画像から戻って歩ける3D空間を生成する研究を紹介",
+      "summary": "NVIDIA AIの投稿として、Lyra 2.0が動画生成と3D再構成を組み合わせ、一枚の画像と選んだカメラの経路から環境を作ると紹介された。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "NVIDIAのLyra 2.0、画像から戻って歩ける3D空間を生成する研究を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "NVIDIA AIの投稿として、Lyra 2.0が動画生成と3D再構成を組み合わせ、一枚の画像と選んだカメラの経路から環境を作ると紹介された。過去に見た視点を参照し、移動を重ねた際の見た目のずれを補正するという。論文・コード・デモへの言及はあるが、本体の利用条件、再構成精度と実動作は未確認で、完成したゲーム世界を保証するものではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@NVIDIAAI",
+          "links": [
+            {
+              "text": "X／@NVIDIAAI",
+              "url": "https://x.com/NVIDIAAI/status/2118800021013643269"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/NVIDIAAI/status/2118800021013643269"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "一度通った場所へ戻ったときに景色を保つ工夫は、世界を作るAIの使い道を広げる手掛かりになりそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@NVIDIAAI",
+          "url": "https://x.com/NVIDIAAI/status/2118800021013643269"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/NVIDIAAI/status/2118800021013643269"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-meshblend-baked-lighting",
+      "title": "MeshBlend、事前計算した照明と陰影への対応を紹介",
+      "summary": "開発者の投稿として、MeshBlendがBaked LightingとMaterial AOに対応し、追加のGBufferや専用エンジンなしで使えるという更新が紹介された。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "MeshBlend、事前計算した照明と陰影への対応を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "開発者の投稿として、MeshBlendが事前計算した照明（Baked Lighting）と、質感の陰影表現（Material AO）に対応し、描画用の追加バッファーや専用エンジンなしで使えるという更新が紹介された。地形のメッシュや岩の継ぎ目をなじませる用途に関係する話題。対応するUnreal Engineの版、制約、配布条件と実動作は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@toreler",
+          "links": [
+            {
+              "text": "X／@toreler",
+              "url": "https://x.com/toreler/status/2117909951687602317"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/toreler/status/2117909951687602317"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "継ぎ目を隠す仕組みが照明の設定にも対応するなら、見た目を合わせるための別作業を減らせそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@toreler",
+          "url": "https://x.com/toreler/status/2117909951687602317"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/toreler/status/2117909951687602317"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-unreal-engine-x-world-composition",
+      "title": "Unreal Engine X、広域地形のWorld Compositionを戻したとの報告",
+      "summary": "Unreal Engineの派生版Unreal Engine Xについて、World Compositionとタイル状のLandscape取り込みを復活させたという更新が紹介された。利用条件や確認範囲も整理した。",
+      "category": "terrain",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Unreal Engine X、広域地形のWorld Compositionを戻したとの報告"
+        },
+        {
+          "type": "paragraph",
+          "text": "Unreal Engineの派生版Unreal Engine Xについて、広い地形を分割して扱うWorld Compositionと、タイル状の地形データの取り込みを復活させたという更新が紹介された。非推奨になっていた広域地形の分割運用を使えるようにしたと説明し、既定は5.8.4を維持するとの注記がある。Epic公式UEの変更ではなく、派生版の互換性・保守状態と実動作は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@andkalysh",
+          "links": [
+            {
+              "text": "X／@andkalysh",
+              "url": "https://x.com/andkalysh/status/2118364785246949400"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/andkalysh/status/2118364785246949400"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "過去の地形制作手順を残す選択肢になりそうだけれど、公式版との違いを把握して検討したいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@andkalysh",
+          "url": "https://x.com/andkalysh/status/2118364785246949400"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/andkalysh/status/2118364785246949400"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-terrain-create-v1.webp",
+      "thumbnailAlt": "地形制作を表す青色の汎用イラスト。実際のソフトの出力例ではありません。"
+    },
+    {
+      "id": "20261107-arete27b",
+      "title": "Nous Research、Qwenを追加学習したArete-27Bを紹介",
+      "summary": "Nous Researchの投稿として、Qwen3.8-27Bを基に約5,300万トークンで追加学習したArete-27Bが紹介された。利用条件や確認範囲も整理した。",
+      "category": "ai",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Nous Research、Qwenを追加学習したArete-27Bを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nous Researchの投稿として、Qwen3.8-27Bを基に約5,300万トークンで追加学習したArete-27Bが紹介された。自由な表現、民主主義、プライバシーなど7分類803問の独自評価で、特定の党路線に沿う回答率が22％から1％になり、Hermes Benchでは目立つ性能低下がなかったという。評価・重み・学習データを公開したとの説明だが、評価の定義、ライセンスと再現性は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@NousResearch",
+          "links": [
+            {
+              "text": "X／@NousResearch",
+              "url": "https://x.com/NousResearch/status/2118822925445050435"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/NousResearch/status/2118822925445050435"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "価値観の調整を数字で示すなら、どんな質問と採点基準を使ったかも一緒に見たいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@NousResearch",
+          "url": "https://x.com/NousResearch/status/2118822925445050435"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/NousResearch/status/2118822925445050435"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "ai-news",
+      "thumbnail": "assets/news/library-ai-model-v1.webp",
+      "thumbnailAlt": "AIモデルを表すオレンジ色の汎用イラスト。実際の製品画像ではありません。"
+    },
+    {
+      "id": "20261107-inkling2-small",
+      "title": "Thinking MachinesのInkling 2 Small、評価結果と重み公開予定を紹介",
+      "summary": "Thinking Machinesの投稿として、Inkling 2 SmallがTinkerで微調整と推論に対応し、AA Intelligence Indexで31を記録したと紹介された。利用条件や確認範囲も整理した。",
+      "category": "ai",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Thinking MachinesのInkling 2 Small、評価結果と重み公開予定を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Thinking Machinesの投稿として、Inkling 2 SmallがTinkerで微調整と推論に対応し、AA Intelligence Indexで31を記録したと紹介された。ARC Prizeの投稿ではARC-AGI-2が81.7％・1問0.27ドル、ARC-AGI-1が96.5％・1問0.08ドルと報告されている。これは特定評価の指標と計算費用で、人の知能指数や一般的な利用料金ではない。完全な重みは「近いうち」または「来週」と予告され、取得素材の時点で公開済みとは確認していない。評価条件と配布条件は未確認。",
+          "terms": [
+            {
+              "text": "AA Intelligence Index",
+              "definition": "知識を使う作業、プログラミング、科学など、複数のテスト結果をまとめたAIの比較指標。"
+            },
+            {
+              "text": "ARC-AGI",
+              "definition": "初めての課題に適応し、少ない情報から解き方を学ぶ力を調べるAI評価テスト。"
+            }
+          ],
+          "links": [
+            {
+              "text": "AA Intelligence Index",
+              "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+            },
+            {
+              "text": "ARC-AGI",
+              "url": "https://arcprize.org/arc-agi"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@thinkymachines",
+          "links": [
+            {
+              "text": "X／@thinkymachines",
+              "url": "https://x.com/thinkymachines/status/2118489527362912566"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/thinkymachines/status/2118489527362912566"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@arcprize",
+          "links": [
+            {
+              "text": "X／@arcprize",
+              "url": "https://x.com/arcprize/status/2118788850742911073"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/arcprize/status/2118788850742911073"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "重みの公開と評価の高さは別々の確認事項なので、試せる時期と実際の作業での得意分野を分けて追いたいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@thinkymachines",
+          "url": "https://x.com/thinkymachines/status/2118489527362912566"
+        },
+        {
+          "label": "X／@arcprize",
+          "url": "https://x.com/arcprize/status/2118788850742911073"
+        },
+        {
+          "label": "用語解説：AA Intelligence Index",
+          "url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+        },
+        {
+          "label": "用語解説：ARC-AGI",
+          "url": "https://arcprize.org/arc-agi"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/thinkymachines/status/2118489527362912566",
+        "https://x.com/arcprize/status/2118788850742911073",
+        "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+        "https://arcprize.org/arc-agi"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "ai-news",
+      "thumbnail": "assets/news/library-ai-model-v1.webp",
+      "thumbnailAlt": "AIモデルを表すオレンジ色の汎用イラスト。実際の製品画像ではありません。"
+    },
+    {
+      "id": "20261107-higgsfield-miracle",
+      "title": "Higgsfield Miracle、動画を層に分けて部分編集する限定ベータを紹介",
+      "summary": "Higgsfieldの投稿として、動画をレイヤーへ分け、一部だけをリアルタイムで編集するMiracleが紹介された。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Higgsfield Miracle、動画を層に分けて部分編集する限定ベータを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "Higgsfieldの投稿として、動画をレイヤーへ分け、一部だけをリアルタイムで編集するMiracleが紹介された。フレームごとに奥行きを持つ表現と説明し、現在は選ばれたテスター向けの限定ベータという。ClaudeとのMCP連携にも触れるが、導入による参加資格、正式な提供範囲、編集品質と料金は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@higgsfield",
+          "links": [
+            {
+              "text": "X／@higgsfield",
+              "url": "https://x.com/higgsfield/status/2118732716346933423"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/higgsfield/status/2118732716346933423"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "映像の一部だけを直せるなら、全体を生成し直す以外の調整方法が増えそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@higgsfield",
+          "url": "https://x.com/higgsfield/status/2118732716346933423"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/higgsfield/status/2118732716346933423"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-hyperframes-skills-media",
+      "title": "HyperFramesのスキル更新、音楽や画像と読み上げ無料枠を紹介",
+      "summary": "利用者はHyperFramesのオープンソースのスキル更新を紹介し、サインインすると1万曲超の音楽、効果音、約7万5,000点の画像、月3分までの読み上げ無料枠を使えると説明した。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "HyperFramesのスキル更新、音楽や画像と読み上げ無料枠を紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "利用者はHyperFramesのオープンソースのスキル更新を紹介し、サインインすると1万曲超の音楽、効果音、約7万5,000点の画像、月3分までの読み上げ無料枠を使えると説明した。自分の紹介映像と音楽もこの範囲で作ったという。公式の料金・上限、素材ごとの商用利用条件と更新手順は未確認で、更新コマンドは実行していない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@tetumemo",
+          "links": [
+            {
+              "text": "X／@tetumemo",
+              "url": "https://x.com/tetumemo/status/2118675067232244135"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/tetumemo/status/2118675067232244135"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "素材探しと編集をつなげやすそうだけれど、無料枠と素材の利用許諾は別々に確認したいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "X／@tetumemo",
+          "url": "https://x.com/tetumemo/status/2118675067232244135"
+        }
+      ],
+      "sourceUrls": [
+        "https://x.com/tetumemo/status/2118675067232244135"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-eso-nov9-maintenance",
+      "title": "ESO、11月9日16時から全サーバーの長時間メンテナンスを予告",
+      "summary": "ESO公式フォーラムで11月7日00:19（日本時間）に公開された告知は、11月9日07:00 UTCから定期的なデータセンター保守を行うと説明している。利用条件や確認範囲も整理した。",
+      "category": "eso",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "全メガサーバーとストア・アカウントシステムが対象"
+        },
+        {
+          "type": "paragraph",
+          "text": "ESO公式フォーラムで11月7日00:19（日本時間）に公開された告知は、11月9日07:00 UTCから定期的なデータセンター保守を行うと説明している。日本時間の開始は9日16:00で、全プラットフォームの全メガサーバーが対象。サーバーの終了見込みは10日02:00で、約10時間を予定している。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ストアとアカウントシステムも停止対象で、公式は両方の進捗を案内するとしている。終了時刻は予定であり、ストアやアカウントの完全復旧を同時刻で保証するものではない。バランス調整やUpdate 52の本番導入を発表する告知ではない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：ESO公式：11月9日のメンテナンス予告",
+          "links": [
+            {
+              "text": "ESO公式：11月9日のメンテナンス予告",
+              "url": "https://forums.elderscrollsonline.com/en/discussion/700853/nov-9-maintenance-starting-2-00-am-est-7-00-am-utc"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "日本では夜のプレイ時間に重なるので、日課や必要な手続きを開始前に済ませる予定を立てたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "利用者の予定表は、マルカルスとその後のイベントにも言及"
+        },
+        {
+          "type": "paragraph",
+          "text": "Slackで紹介された利用者の予定表は、同じメンテナンス時間に加え、マルカルスの基本ゲーム化、西スカイリムの黄金の追跡、ホワイトストレークの騒乱、1月の家具上限やミニマップにも言及している。これらは今回読んだ保守告知の本文から一括確認できる内容ではなく、各公式案内での確認が必要。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@mu_mu_360",
+          "links": [
+            {
+              "text": "X／@mu_mu_360",
+              "url": "https://x.com/mu_mu_360/status/2118848803348656226"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/mu_mu_360/status/2118848803348656226"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "メンテナンスの告知と、その後に遊べる内容の予定は、別の出典として確かめると混同せずに済むね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO公式：11月9日のメンテナンス予告",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/700853/nov-9-maintenance-starting-2-00-am-est-7-00-am-utc"
+        },
+        {
+          "label": "X／@mu_mu_360",
+          "url": "https://x.com/mu_mu_360/status/2118848803348656226"
+        }
+      ],
+      "sourceUrls": [
+        "https://forums.elderscrollsonline.com/en/discussion/700853/nov-9-maintenance-starting-2-00-am-est-7-00-am-utc",
+        "https://x.com/mu_mu_360/status/2118848803348656226"
+      ],
+      "sourceNote": "2026年11月7日0時〜10時（日本時間）にSlackへ届いた指定提供者のニュース素材を編集。ESO公式フォーラムの本文と投稿日時を確認。開発中・テスト中の予定と本番仕様を区別。原資料を読んだ部分以外は投稿者に帰属する紹介で、数値・現行仕様・実動作は未検証。Facebookグループは匿名要約と提供された元リンクを掲載し、投稿者の個人情報や画像は転載していない。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "eso-news",
+      "thumbnail": "assets/news/library-game-official-v1.webp",
+      "thumbnailAlt": "幻想世界を表す緑色の汎用イラスト。ESOの公式画像・実際のゲーム画面ではありません。"
+    },
+    {
+      "id": "20261107-eso-u52-pts-week2",
+      "title": "ESO、Update 52テスト第2週を受けた戦闘とジェラール峠の調整方針を説明",
+      "summary": "ESO公式フォーラムの11月7日00:33（日本時間）の投稿は、Update 52の公開テスト第2週を受けた調整方針を説明している。利用条件や確認範囲も整理した。",
+      "category": "eso",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "公開テスト第3週へ向け、対人戦と対モンスター戦を分けて調整"
+        },
+        {
+          "type": "paragraph",
+          "text": "ESO公式フォーラムの11月7日00:33（日本時間）の投稿は、Update 52の公開テスト第2週を受けた調整方針を説明している。第3週では、DragonknightのLandslideの上限を12から20へ増やし、対人戦ではダメージ1％につき2スタックが必要となる予定。範囲挑発は、対象に残る挑発時間が5秒以下かどうかを見る方式へ変えるとしている。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Dov’rha Sabatonsには、基礎能力値によるダメージ増加の上限を設ける予定。ジェラール峠の集団戦テストは参加人数が十分ではなく、本番公開後も検証を続けるという。いずれもPTS（公開テスト環境）の変更や今後の方針であり、現在の本番仕様を変更した発表ではない。装備・スキルデータベースの本番効果は上書きしていない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：ESO公式：Update 52 PTS Week 2 Summary",
+          "links": [
+            {
+              "text": "ESO公式：Update 52 PTS Week 2 Summary",
+              "url": "https://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "本番前に対人戦と対モンスター戦の影響を分けて見直す方針なので、ビルドの組み直しは確定した版を待ちたいね。"
+        },
+        {
+          "type": "heading",
+          "text": "解説動画は、テスト中の変更とプレイヤーの見方を整理"
+        },
+        {
+          "type": "paragraph",
+          "text": "Skinny Cheeksの動画は、Update 52のPTS第2週についてDragonknight・Templar、範囲効果、アイテムセットなどの変更を整理する。公式の予定と解説者の意見は区別し、具体的な変更値は前段の公式本文を根拠にした。"
+        },
+        {
+          "type": "paragraph",
+          "text": "動画は11月7日03:15（日本時間）公開の9分3秒。公開説明とGeminiの短い動画解析要約を参照し、全発言の逐語確認やゲーム内の性能検証は行っていない。公開テストの話で、本番適用済みと扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Skinny Cheeks：Update 52 PTS Week 2解説",
+          "links": [
+            {
+              "text": "Skinny Cheeks：Update 52 PTS Week 2解説",
+              "url": "https://www.youtube.com/watch?v=afM70xXNwAs"
+            }
+          ]
+        },
+        {
+          "type": "youtube",
+          "videoId": "afM70xXNwAs",
+          "url": "https://www.youtube.com/watch?v=afM70xXNwAs",
+          "title": "🔥 More Templar and DK Changes! ✅ Week 2 PTS Summary Notes"
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "解説で全体像をつかんでから公式の変更点へ戻ると、自分の構成に関係する箇所を探しやすそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "ESO公式：Update 52 PTS Week 2 Summary",
+          "url": "https://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary"
+        },
+        {
+          "label": "Skinny Cheeks：Update 52 PTS Week 2解説",
+          "url": "https://www.youtube.com/watch?v=afM70xXNwAs"
+        }
+      ],
+      "sourceUrls": [
+        "https://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary",
+        "https://www.youtube.com/watch?v=afM70xXNwAs"
+      ],
+      "sourceNote": "ESO公式フォーラムの本文と投稿日時を確認。開発中・テスト中の予定と本番仕様を区別。YouTubeの公開説明、記載した一次資料、今回成功したGeminiの短い解析要約を参照。全発言の逐語確認や操作・ゲーム内の再現検証は未実施。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "eso-news",
+      "thumbnail": "assets/news/library-game-official-v1.webp",
+      "thumbnailAlt": "幻想世界を表す緑色の汎用イラスト。ESOの公式画像・実際のゲーム画面ではありません。"
+    },
+    {
+      "id": "20261107-corona-physical-importer",
+      "title": "Corona未導入の3ds Maxで質感を変換するスクリプトを紹介",
+      "summary": "作者のREADMEは、Corona未導入の3ds Maxで既存シーンのCoronaマテリアルをPhysical Materialへ変換する用途を説明している。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Corona未導入の3ds Maxで質感を変換するスクリプトを紹介"
+        },
+        {
+          "type": "paragraph",
+          "text": "作者のREADMEは、Corona未導入の3ds Maxで既存シーンのCoronaマテリアルをPhysical Materialへ変換する用途を説明している。MaxScriptとPythonを組み合わせ、Python 3以降とファイルの場所の設定が必要。作者は3ds Max 2026の複数シーンで試したとしており、リポジトリはGPL-2.0表記。すべての機能や見た目を完全に再現する保証はなく、導入・実行は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/3dsmax",
+          "links": [
+            {
+              "text": "Reddit／r/3dsmax",
+              "url": "https://www.reddit.com/r/3dsmax/comments/1xofpix/convert_corona_materials_to_physical_materials_no/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：作者の公開README",
+          "links": [
+            {
+              "text": "作者の公開README",
+              "url": "https://github.com/3d-rille/3dsmax---corona-materials-importer"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "読み込めない素材を確認する入口になりそうだけれど、元シーンを残して変換後の見た目を比べたいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reddit／r/3dsmax",
+          "url": "https://www.reddit.com/r/3dsmax/comments/1xofpix/convert_corona_materials_to_physical_materials_no/"
+        },
+        {
+          "label": "作者の公開README",
+          "url": "https://github.com/3d-rille/3dsmax---corona-materials-importer"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/3dsmax/comments/1xofpix/convert_corona_materials_to_physical_materials_no/",
+        "https://github.com/3d-rille/3dsmax---corona-materials-importer"
+      ],
+      "sourceNote": "Redditの公開本文・取得できた返信と、出典欄の作者・公式資料を参照。絶対投稿日時は未確認で、過去の投稿を含む参考紹介。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-kitchen-builder",
+      "title": "Kitchen Builder、箱で範囲を決めて3ds Maxのキッチンを組み立てる",
+      "summary": "公式製品ページは、箱で指定した範囲から収納、天板、家電などを組み立て、直線・L字・U字・アイランド構成を扱う有料ツールと説明している。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Kitchen Builder、箱で範囲を決めて3ds Maxのキッチンを組み立てる"
+        },
+        {
+          "type": "paragraph",
+          "text": "公式製品ページは、箱で指定した範囲から収納、天板、家電などを組み立て、直線・L字・U字・アイランド構成を扱う有料ツールと説明している。Windowsと3ds Max 2017〜2027、Corona・V-Ray・Physicalの質感、RAL色、自前の家電や.mat素材に対応すると記載。設定を保って作り直せる点を掲げるが、速度と実機互換性は未検証。施工設計や法規適合を保証する道具とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/3dsmax",
+          "links": [
+            {
+              "text": "Reddit／r/3dsmax",
+              "url": "https://www.reddit.com/r/3dsmax/comments/1xn5zc1/im_an_interior_designer_and_got_tired_of_modeling/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：公式製品ページ",
+          "links": [
+            {
+              "text": "公式製品ページ",
+              "url": "https://shadowgapstudio.com/kitchen-builder/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "寸法や配置を変えて比較する作業に使えそうだけれど、CGの見た目と実際に施工できる設計は分けて確認したいね。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reddit／r/3dsmax",
+          "url": "https://www.reddit.com/r/3dsmax/comments/1xn5zc1/im_an_interior_designer_and_got_tired_of_modeling/"
+        },
+        {
+          "label": "公式製品ページ",
+          "url": "https://shadowgapstudio.com/kitchen-builder/"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/3dsmax/comments/1xn5zc1/im_an_interior_designer_and_got_tired_of_modeling/",
+        "https://shadowgapstudio.com/kitchen-builder/"
+      ],
+      "sourceNote": "Redditの公開本文・取得できた返信と、出典欄の作者・公式資料を参照。絶対投稿日時は未確認で、過去の投稿を含む参考紹介。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-mayflower-gltf",
+      "title": "Mayflower-glTF、Mayaの静的モデルをglTF・GLBへ読み書きする初期版",
+      "summary": "作者のREADMEは、Maya標準のImport・ExportへglTFとGLBを追加するMITライセンスのプラグインを、初期開発段階のpre-alphaと説明している。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Mayflower-glTF、Mayaの静的モデルをglTF・GLBへ読み書きする初期版"
+        },
+        {
+          "type": "paragraph",
+          "text": "作者のREADMEは、Maya標準のImport・ExportへglTFとGLBを追加するMITライセンスのプラグインを、初期開発段階のpre-alphaと説明している。Maya 2022以降向けで、静的メッシュと基本的なPBR素材が中心。書き出しは複数UVと複数マテリアル、読み込みは単一UVのみで、素材の再構成にはMtoA・Arnoldが必要とする。骨格の変形、アニメーション、表情などの形状変化は計画段階。完全な往復互換性と実動作は未検証。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/Maya",
+          "links": [
+            {
+              "text": "Reddit／r/Maya",
+              "url": "https://www.reddit.com/r/Maya/comments/1vy4xzl/i_built_an_opensource_gltfglb_importer_and/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：公式READMEと互換性表",
+          "links": [
+            {
+              "text": "公式READMEと互換性表",
+              "url": "https://github.com/jaisurya-dev-art/Mayflower-glTF"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "書き出しと読み込みの対応範囲が違うので、移したいデータを先に絞ると試しやすそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reddit／r/Maya",
+          "url": "https://www.reddit.com/r/Maya/comments/1vy4xzl/i_built_an_opensource_gltfglb_importer_and/"
+        },
+        {
+          "label": "公式READMEと互換性表",
+          "url": "https://github.com/jaisurya-dev-art/Mayflower-glTF"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/Maya/comments/1vy4xzl/i_built_an_opensource_gltfglb_importer_and/",
+        "https://github.com/jaisurya-dev-art/Mayflower-glTF"
+      ],
+      "sourceNote": "Redditの公開本文・取得できた返信と、出典欄の作者・公式資料を参照。絶対投稿日時は未確認で、過去の投稿を含む参考紹介。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-maya-content-browser25",
+      "title": "MayaのContent Browser 2.5、素材フォルダーの取り込みとプレビューを整理",
+      "summary": "Redditの相談への返信で紹介された開発者ブログは、Content Browser 2.5のバッチ読み込み修正、Megascansフォルダーの取り込み、動画プレビュー改善を説明する。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "MayaのContent Browser 2.5、素材フォルダーの取り込みとプレビューを整理"
+        },
+        {
+          "type": "paragraph",
+          "text": "Redditの相談への返信で紹介された開発者ブログは、Content Browser 2.5のバッチ読み込み修正、Megascansフォルダーの取り込み、動画プレビュー改善を説明する。2.5.5の追記ではMegascansのローカルライブラリ用パネルにも触れている。ブログには2026年10月3日と6日の表示があり、今回は過去の更新を紹介する。大幅なUSD対応は予定で、対応Maya版とライセンス、実動作は未確認。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/Maya",
+          "links": [
+            {
+              "text": "Reddit／r/Maya",
+              "url": "https://www.reddit.com/r/Maya/comments/1xgm4kx/collaboration_maya_asset_manager/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：開発者ブログ",
+          "links": [
+            {
+              "text": "開発者ブログ",
+              "url": "https://ddankhazi.com/2026/10/03/content-browser-for-maya-v2-5/"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "素材を置いた場所とプレビューを同じ入口で探せると、制作を中断してファイルを探す時間を減らせそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reddit／r/Maya",
+          "url": "https://www.reddit.com/r/Maya/comments/1xgm4kx/collaboration_maya_asset_manager/"
+        },
+        {
+          "label": "開発者ブログ",
+          "url": "https://ddankhazi.com/2026/10/03/content-browser-for-maya-v2-5/"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/Maya/comments/1xgm4kx/collaboration_maya_asset_manager/",
+        "https://ddankhazi.com/2026/10/03/content-browser-for-maya-v2-5/"
+      ],
+      "sourceNote": "Redditの公開本文・取得できた返信と、出典欄の作者・公式資料を参照。絶対投稿日時は未確認で、過去の投稿を含む参考紹介。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    },
+    {
+      "id": "20261107-sculpt-rewind",
+      "title": "Sculpt Rewind、Blenderの彫刻履歴をオブジェクト別に残すアドオン",
+      "summary": "販売ページはBlender 4.2〜5.2向けの有料アドオンとして、オブジェクト別の履歴、Morph Brushによる一部分の巻き戻し、履歴保存、制作過程の動画出力を紹介している。利用条件や確認範囲も整理した。",
+      "category": "3dcg",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "sample": false,
+      "kind": "headline",
+      "runDate": "2026-11-07",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Sculpt Rewind、Blenderの彫刻履歴をオブジェクト別に残すアドオン"
+        },
+        {
+          "type": "paragraph",
+          "text": "販売ページはBlender 4.2〜5.2向けの有料アドオンとして、オブジェクト別の履歴、Morph Brushによる一部分の巻き戻し、履歴保存、制作過程の動画出力を紹介している。最大1万段階という値は作者側の主張で、メモリ負荷と実動作は未検証。元投稿時点ではMultiresとDyntopoは未対応と説明されており、現行版での状況は別途確認が必要。標準Undoを置き換えるのでなく併用する設計という。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reddit投稿の絶対日時は未確認。取得ページの相対日時には古いキャッシュが混在するため、11月7日の新投稿・新発表とは扱わない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：Reddit／r/Blender",
+          "links": [
+            {
+              "text": "Reddit／r/Blender",
+              "url": "https://www.reddit.com/r/blender/comments/1x5v449/perobject_undo_history_up_to_10000_steps_like/"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：公式販売ページ",
+          "links": [
+            {
+              "text": "公式販売ページ",
+              "url": "https://superhivemarket.com/products/sculpt-rewind"
+            }
+          ]
+        },
+        {
+          "type": "feature",
+          "label": "dotの所感",
+          "text": "顔の一部だけを前の形へ戻せるなら、別の部分の作業を残したまま試行錯誤しやすそう。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Reddit／r/Blender",
+          "url": "https://www.reddit.com/r/blender/comments/1x5v449/perobject_undo_history_up_to_10000_steps_like/"
+        },
+        {
+          "label": "公式販売ページ",
+          "url": "https://superhivemarket.com/products/sculpt-rewind"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/blender/comments/1x5v449/perobject_undo_history_up_to_10000_steps_like/",
+        "https://superhivemarket.com/products/sculpt-rewind"
+      ],
+      "sourceNote": "Redditの公開本文・取得できた返信と、出典欄の作者・公式資料を参照。絶対投稿日時は未確認で、過去の投稿を含む参考紹介。外部画像・動画・配布ファイルは転載せず、既存の汎用サムネイルを使用。",
+      "thumbnailKey": "cg-news",
+      "thumbnail": "assets/news/library-cg-edit-v1.webp",
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+    }
+  ]
+}

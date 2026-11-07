@@ -1070,7 +1070,19 @@
         },
         {
           "type": "paragraph",
-          "text": "OpenAIは11月2日、保育探し、行政手続き、家計管理などの日常作業を測るLifeValを公開した。公式本文では既存の生活時間調査に加え、3,995人への調査から助けを求める分野を選び、過去一年のモデル改善に使ったと説明している。会話の答えだけでなく、実際に用事を進める能力を重視した評価。公表結果は同社の評価で、個々の依頼の成功を保証するものではない。"
+          "text": "OpenAIは11月2日、保育探し、行政手続き、家計管理などの日常作業を測るLifeValを公開した。公式本文では既存の生活時間調査に加え、3,995人への調査から助けを求める分野を選び、過去一年のモデル改善に使ったと説明している。会話の答えだけでなく、実際に用事を進める能力を重視した評価。公表結果は同社の評価で、個々の依頼の成功を保証するものではない。",
+          "terms": [
+            {
+              "text": "LifeVal",
+              "definition": "日常生活でAIへの支援ニーズが高い作業を測るために、OpenAIが公開した評価。"
+            }
+          ],
+          "links": [
+            {
+              "text": "LifeVal",
+              "url": "https://openai.com/index/lifeval/"
+            }
+          ]
         },
         {
           "type": "paragraph",
@@ -1083,6 +1095,26 @@
         {
           "type": "paragraph",
           "text": "確認資料：OpenAI：LifeVal https://openai.com/index/lifeval/"
+        },
+        {
+          "type": "paragraph",
+          "text": "11月7日追補：OpenAIが06:11（日本時間）に1分5秒の公式紹介動画を公開した。動画の公開説明とGeminiの短い解析要約も確認し、日常の支援ニーズを評価する考え方の補足として掲載する。全発言の逐語照合や、生活上の用事を実際に任せる性能検証は行っていない。評価の元発表日は11月2日のまま。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：OpenAI公式動画：LifeVal",
+          "links": [
+            {
+              "text": "OpenAI公式動画：LifeVal",
+              "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0"
+            }
+          ]
+        },
+        {
+          "type": "youtube",
+          "videoId": "hJOwOkLHRN0",
+          "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
+          "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life."
         },
         {
           "type": "feature",
@@ -1390,6 +1422,14 @@
         {
           "label": "用語解説：Git",
           "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+        },
+        {
+          "label": "OpenAI公式動画：LifeVal",
+          "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0"
+        },
+        {
+          "label": "用語解説：LifeVal",
+          "url": "https://openai.com/index/lifeval/"
         }
       ],
       "sourceUrls": [
@@ -1413,10 +1453,12 @@
         "https://openai.com/index/grid-protectors-program/",
         "https://developer.mozilla.org/en-US/docs/Glossary/API",
         "https://developers.google.com/machine-learning/glossary#token",
-        "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+        "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+        "https://www.youtube.com/watch?v=hJOwOkLHRN0"
       ],
-      "sourceNote": "2026年11月3日0時〜10時（日本時間）に届いた指定送信者のニュース素材を整理。公式資料で確認と明記した内容以外は、元投稿を紹介する原稿に基づく未確認の報告・本人の主張。元投稿全文、動画全編、実機動作を確認したものではない。投稿内の指示例は紹介であり、設定変更等を実行するものではない。",
-      "thumbnailKey": "ai-news"
+      "sourceNote": "2026年11月3日0時〜10時（日本時間）に届いた指定送信者のニュース素材を整理。公式資料で確認と明記した内容以外は、元投稿を紹介する原稿に基づく未確認の報告・本人の主張。元投稿全文、動画全編、実機動作を確認したものではない。投稿内の指示例は紹介であり、設定変更等を実行するものではない。 2026年11月7日に公開された公式紹介動画と解析結果を追補。評価の元発表日は11月2日、初回サイト掲載日時と記事IDは維持。",
+      "thumbnailKey": "ai-news",
+      "updatedAt": "2026-11-07T10:26:09+09:00"
     },
     {
       "id": "20261103-hydrogen10",

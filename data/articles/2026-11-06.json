@@ -2544,6 +2544,24 @@
           ]
         },
         {
+          "type": "paragraph",
+          "text": "11月7日追補：AUTOMATONのX投稿も同じ再無料化を紹介し、岩・地表・植生の素材探しという観点で共有された。新しい無料化の発表としては重複計上しない。"
+        },
+        {
+          "type": "paragraph",
+          "text": "出典：X／@AUTOMATONJapan",
+          "links": [
+            {
+              "text": "X／@AUTOMATONJapan",
+              "url": "https://x.com/AUTOMATONJapan/status/2118516203815919910"
+            }
+          ]
+        },
+        {
+          "type": "xpost",
+          "url": "https://x.com/AUTOMATONJapan/status/2118516203815919910"
+        },
+        {
           "type": "feature",
           "label": "dotの所感",
           "text": "素材を選ぶ費用の壁は下がりそうだけれど、AI学習への利用条件は普段の制作利用と分けて確認しておきたいね。"
@@ -2553,15 +2571,21 @@
         {
           "label": "Quixel公式：Megascans再無料化の案内（11月5日）",
           "url": "https://quixel.com/news/update-megascans-are-going-free-again"
+        },
+        {
+          "label": "X／@AUTOMATONJapan",
+          "url": "https://x.com/AUTOMATONJapan/status/2118516203815919910"
         }
       ],
       "sourceUrls": [
-        "https://quixel.com/news/update-megascans-are-going-free-again"
+        "https://quixel.com/news/update-megascans-are-going-free-again",
+        "https://x.com/AUTOMATONJapan/status/2118516203815919910"
       ],
-      "sourceNote": "2026年11月6日0時〜10時（日本時間）に収集した素材を編集。外部の原文を確認した箇所を除き、Slackに届いた紹介の匿名要約または発信者に帰属する報告として扱う。元投稿の公開日時・現行の利用条件・実動作は未確認。Facebookグループの投稿者名や画像は転載せず、元リンクを残した。",
+      "sourceNote": "2026年11月6日0時〜10時（日本時間）に収集した素材を編集。外部の原文を確認した箇所を除き、Slackに届いた紹介の匿名要約または発信者に帰属する報告として扱う。元投稿の公開日時・現行の利用条件・実動作は未確認。Facebookグループの投稿者名や画像は転載せず、元リンクを残した。 2026年11月7日、同じ話題の新しい元投稿を追補。初回掲載日時は維持。",
       "thumbnailKey": "cg-news",
       "thumbnail": "assets/news/library-cg-edit-v1.webp",
-      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。"
+      "thumbnailAlt": "3D編集を表す青色の汎用イラスト。実際のソフトの画面ではありません。",
+      "updatedAt": "2026-11-07T10:26:09+09:00"
     },
     {
       "id": "20261106-vray7-update5",

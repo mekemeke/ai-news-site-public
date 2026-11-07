@@ -99,6 +99,22 @@
       },
       "sourceItemCount": 71,
       "notes": "All 71 source items are accounted for. Duplicate announcements supplement existing articles without changing their original publication dates. Confirmed source facts and unverified reports remain distinguished; existing artwork is reused."
+    },
+    {
+      "runDate": "2026-11-07",
+      "publishedAt": "2026-11-07T10:26:09+09:00",
+      "newCount": 21,
+      "updatedCount": 3,
+      "deletedCount": 0,
+      "counts": {
+        "standalone": 15,
+        "tipsRoundup": 3,
+        "newsRoundup": 3
+      },
+      "sourceItemCount": 79,
+      "selectedYouTubeCount": 4,
+      "videoAnalysisSucceeded": 4,
+      "notes": "All 79 Slack news items mapped, including duplicate integrations and existing-article updates. Nine Reddit items adopted with uncertain or older dates disclosed. Two official ESO forum topics confirmed; PTS plans not applied to Live effect data. Four selected videos analyzed successfully. Threads original links preserved; official embed display unverified. Existing illustrations reused; no source images copied. Private Slack identifiers omitted."
     }
   ],
   "articles": [
@@ -876,9 +892,11 @@
         "https://www.youtube.com/watch?v=ID6vEy94j7c",
         "https://www.youtube.com/watch?v=pQ_Dnr9Q4k8",
         "https://developers.google.com/machine-learning/glossary#token",
-        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro"
+        "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+        "https://x.com/Google/status/2118808678149308701"
       ],
-      "forumEvidence": []
+      "forumEvidence": [],
+      "lastUpdatedAt": "2026-11-07T10:26:09+09:00"
     },
     {
       "id": "20261029-grok-referral",
@@ -1566,6 +1584,341 @@
         "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
       ],
       "forumEvidence": []
+    },
+    {
+      "id": "20261107-ai-tips",
+      "runDate": "2026-11-07",
+      "kind": "tips-roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1535195278408181/",
+        "https://facebook.com/groups/runlocalai/permalink/1534444451816597/",
+        "https://facebook.com/groups/runlocalai/permalink/1534420961818946/",
+        "https://facebook.com/groups/runlocalai/permalink/1534823705112005/",
+        "https://www.threads.com/@claudeai/post/DfZ_szeoB22",
+        "https://x.com/XCreators/status/2118843705327026400",
+        "https://x.com/gambrill/status/2118670010767794375",
+        "https://x.com/eeelistar/status/2118759568096551403",
+        "https://x.com/suna_gaku/status/2118658888283418882",
+        "https://x.com/tonbistudio/status/2118792648756765069",
+        "https://x.com/BkashJosi/status/2118796543335809098",
+        "https://x.com/elvar_official/status/2118697979607437530",
+        "https://x.com/nemotsune/status/2118750175850385521",
+        "https://x.com/emollick/status/2118412828373840294",
+        "https://x.com/mzk_notion02/status/2118615345661681744",
+        "https://x.com/asaio87/status/2118634208411185175",
+        "https://x.com/hunterchi20/status/2118608575652135327",
+        "https://x.com/gufutokuku999/status/2118643301532287037",
+        "https://x.com/toraaiuser2/status/2118762210260594844",
+        "https://x.com/MioWorkshop/status/2118629471305490793",
+        "https://claude.com/office-hours#salesforce",
+        "https://www.youtube.com/watch?v=4ZsVR-6YOzs"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-ai-news",
+      "runDate": "2026-11-07",
+      "kind": "news-roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/runlocalai/permalink/1535321538395555/",
+        "https://www.threads.com/@stockmktnewz/post/Dfat_NHgBdH",
+        "https://x.com/DLKFZWilliam2/status/2118720095166112095",
+        "https://x.com/Muse/status/2118782474486501510",
+        "https://x.com/finkd/status/2118765774034579808",
+        "https://x.com/itspdfu/status/2118750259320906080",
+        "https://x.com/davidsuttonca/status/2118785613436698719",
+        "https://x.com/RoundtableSpace/status/2118837821079212188",
+        "https://x.com/ChatGPT/status/2118827837239226387",
+        "https://x.com/AnthropicAI/status/2118814753154064501",
+        "https://x.com/GoogleDeepMind/status/2118755418675765656",
+        "https://x.com/QwenDevs/status/2118716745372532865",
+        "https://x.com/OpenAI/status/2118782708767965238",
+        "https://x.com/OpenAI/status/2118795218099253606",
+        "https://x.com/masahirochaen/status/2118659472600248409",
+        "https://x.com/AnthropicAI/status/2118792930211107115",
+        "https://x.com/dhh/status/2118789607781531989",
+        "https://x.com/huggingface/status/2118430862949945612",
+        "https://x.com/OpenAIDevs/status/2118856544733532452",
+        "https://x.com/emollick/status/2118551754908356979",
+        "https://x.com/MistralAI/status/2118744719870066936"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-cg-tips",
+      "runDate": "2026-11-07",
+      "kind": "tips-roundup",
+      "sourceUrls": [
+        "https://www.threads.com/@thegnomonworkshop/post/DfaLZYrgYG8",
+        "https://www.threads.com/@thegnomonworkshop/post/DfXmijCjtkk",
+        "https://www.threads.com/@wacom/post/DfaTaMiGJyj",
+        "https://facebook.com/groups/282909453705941/permalink/1491805579482983/",
+        "https://www.threads.com/@chicochoco_san_/post/DfV8N6ojFiY",
+        "https://x.com/arafune/status/2118582485412131107",
+        "https://x.com/arafune/status/2118648503312502813",
+        "https://x.com/UnrealEngine/status/2118388167695057035",
+        "https://x.com/Maxon_Cinema4D/status/2118744243120361669",
+        "https://x.com/AliceRe1999/status/2118728763504795818",
+        "https://x.com/KenjiASABA/status/2118579709789532255",
+        "https://x.com/Olmirad/status/2118067081245610161",
+        "https://x.com/80Level/status/2118286448029815287",
+        "https://x.com/rewind02/status/2118722284328190248",
+        "https://www.reddit.com/r/3dsmax/comments/1xmy0kg/maintain_uv_after_retopology/",
+        "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-Modifiers/files/GUID-969213B0-8081-4529-80A9-CD82AAD56B6F.htm",
+        "https://help.autodesk.com/cloudhelp/2026/ENU/3DSMax-What-s-New/files/GUID-44069A5C-3EB0-44A7-A990-7CB41D112014.htm",
+        "https://www.reddit.com/r/Houdini/comments/1wywid7/wrote_an_article_for_80lv_explaining_in_detail/",
+        "https://80.lv/articles/merging-space-colonization-solver-with-pyro-simulation-to-create-looping-smoke-bursts",
+        "https://www.reddit.com/r/Houdini/comments/1wxazcb/guided_bubbles_wet_foam_solver_w%C4%93t%C4%81_fx_paper/",
+        "https://alexey.stomakhin.com/research/whitewater.html",
+        "https://www.reddit.com/r/Gaea/comments/1xd9d1f/dark_fantasy_spiked_mountains_in_gaea_2_100/",
+        "https://www.kalysteon.com/tutorials#dark-fantasy-spikes-gaea-2",
+        "https://community.wacom.com/en-us/how-i-turned-a-21-ton-cement-canvas-into-an-animated-walk-cycle/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-cg-news",
+      "runDate": "2026-11-07",
+      "kind": "news-roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/ArtofAnimation/permalink/4501216573473562/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-eso-news",
+      "runDate": "2026-11-07",
+      "kind": "news-roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/ElderScrollsonlineplayers/permalink/29278368391774988/",
+        "https://facebook.com/groups/esoeu/permalink/40815575141374300/",
+        "https://x.com/gaobon114514/status/2118382992871809423"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-eso-tips",
+      "runDate": "2026-11-07",
+      "kind": "tips-roundup",
+      "sourceUrls": [
+        "https://facebook.com/groups/esoeu/permalink/40807440915521056/",
+        "https://facebook.com/groups/esoeu/permalink/40741975028734312/",
+        "https://x.com/wesleytypes/status/2118708794473537626",
+        "https://x.com/akino_shosaku/status/2118746914581790912",
+        "https://x.com/Casual_Ranger/status/2118549091688800639",
+        "https://hyperioxes.com/eso/solo/stamina-nightblade-build",
+        "https://www.youtube.com/watch?v=SgMzem523ro"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-muse-wonder-memory",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/finkd/status/2118767522782626104"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-lyra20",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/NVIDIAAI/status/2118800021013643269"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-meshblend-baked-lighting",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/toreler/status/2117909951687602317"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-unreal-engine-x-world-composition",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/andkalysh/status/2118364785246949400"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-arete27b",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/NousResearch/status/2118822925445050435"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-inkling2-small",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/thinkymachines/status/2118489527362912566",
+        "https://x.com/arcprize/status/2118788850742911073",
+        "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+        "https://arcprize.org/arc-agi"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-higgsfield-miracle",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/higgsfield/status/2118732716346933423"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-hyperframes-skills-media",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://x.com/tetumemo/status/2118675067232244135"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-eso-nov9-maintenance",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://forums.elderscrollsonline.com/en/discussion/700853/nov-9-maintenance-starting-2-00-am-est-7-00-am-utc",
+        "https://x.com/mu_mu_360/status/2118848803348656226"
+      ],
+      "forumEvidence": [
+        {
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700853/nov-9-maintenance-starting-2-00-am-est-7-00-am-utc",
+          "threadId": "700853",
+          "checkedAt": "2026-11-07T10:26:09+09:00",
+          "previousCheckedAt": null,
+          "points": [
+            "11月9日16時JST開始、全メガサーバー・ストア・アカウントシステムの保守予定",
+            "ゲームサーバーは約10時間、予定終了翌2時JST。ストア等は別扱いで変更可能。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261107-eso-u52-pts-week2",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary",
+        "https://www.youtube.com/watch?v=afM70xXNwAs"
+      ],
+      "forumEvidence": [
+        {
+          "threadUrl": "https://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary",
+          "threadId": "700854",
+          "checkedAt": "2026-11-07T10:26:09+09:00",
+          "previousCheckedAt": null,
+          "points": [
+            "U52 PTS第2週の公式まとめと第3週に向けた調整予定",
+            "Landslide、範囲挑発、Dov’rhaのサバトン、Jerall Passの検証状況。いずれも本番未適用の内容を区別。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261107-corona-physical-importer",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.reddit.com/r/3dsmax/comments/1xofpix/convert_corona_materials_to_physical_materials_no/",
+        "https://github.com/3d-rille/3dsmax---corona-materials-importer"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-kitchen-builder",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.reddit.com/r/3dsmax/comments/1xn5zc1/im_an_interior_designer_and_got_tired_of_modeling/",
+        "https://shadowgapstudio.com/kitchen-builder/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-mayflower-gltf",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.reddit.com/r/Maya/comments/1vy4xzl/i_built_an_opensource_gltfglb_importer_and/",
+        "https://github.com/jaisurya-dev-art/Mayflower-glTF"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-maya-content-browser25",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.reddit.com/r/Maya/comments/1xgm4kx/collaboration_maya_asset_manager/",
+        "https://ddankhazi.com/2026/10/03/content-browser-for-maya-v2-5/"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261107-sculpt-rewind",
+      "runDate": "2026-11-07",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://www.reddit.com/r/blender/comments/1x5v449/perobject_undo_history_up_to_10000_steps_like/",
+        "https://superhivemarket.com/products/sculpt-rewind"
+      ],
+      "forumEvidence": []
+    },
+    {
+      "id": "20261106-megascans-free",
+      "runDate": "2026-11-06",
+      "kind": "headline",
+      "sourceUrls": [
+        "https://quixel.com/news/update-megascans-are-going-free-again",
+        "https://x.com/AUTOMATONJapan/status/2118516203815919910"
+      ],
+      "forumEvidence": [],
+      "lastUpdatedAt": "2026-11-07T10:26:09+09:00"
+    },
+    {
+      "id": "20261103-ai-news",
+      "runDate": "2026-11-03",
+      "kind": "news-roundup",
+      "sourceUrls": [
+        "https://x.com/thsottiaux/status/2117283124833055196",
+        "https://x.com/masahirochaen/status/2117376962578841871",
+        "https://x.com/SawyerMerritt/status/2117258131709350177",
+        "https://x.com/OpenAI/status/2117307611338997846",
+        "https://openai.com/index/lifeval/",
+        "https://x.com/ClaudeDevs/status/2117332449382510884",
+        "https://platform.claude.com/docs/en/build-with-claude/message-threads",
+        "https://x.com/AnthropicAI/status/2117343929960112486",
+        "https://alignment.anthropic.com/2026/anthropic-residency/",
+        "https://x.com/ctgptlb/status/2117397623028256916",
+        "https://x.com/OpenAIDevs/status/2117408792346509663",
+        "https://x.com/m0xt_/status/2117228989010088395",
+        "https://x.com/yugen_matuni/status/2117249515225063838",
+        "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+        "https://github.com/dsx-ai-factory/attribution",
+        "https://github.com/dsx-ai-factory/NVIDIA-Recovery",
+        "https://openai.com/index/grid-protectors-program/",
+        "https://developer.mozilla.org/en-US/docs/Glossary/API",
+        "https://developers.google.com/machine-learning/glossary#token",
+        "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+        "https://www.youtube.com/watch?v=hJOwOkLHRN0"
+      ],
+      "forumEvidence": [],
+      "lastUpdatedAt": "2026-11-07T10:26:09+09:00"
     }
   ]
 }
