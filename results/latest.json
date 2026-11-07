@@ -1,27 +1,27 @@
 {
   "schema_version": 1,
   "mode": "analyze",
-  "genre": "ESO",
-  "created_at": "2026-11-07T01:15:36.977701+00:00",
-  "run_id": "42323069672",
+  "genre": "AI",
+  "created_at": "2026-11-07T01:23:09.255295+00:00",
+  "run_id": "42323775555",
   "videos": [
     {
-      "id": "SgMzem523ro",
-      "url": "https://www.youtube.com/watch?v=SgMzem523ro",
-      "title": "Stamina Nightblade Solo Build | ESO Update 51",
-      "channel": "Hyperioxes",
-      "description": "Pure Class Stamina Nightblade (StamBlade) Solo Build for ESO Update 51. The build gets great mitigation from An Eye for Exploitation, especially in execute, and good sustain from Siphoning Attacks. Soul Harvest gives it insane Ultimate generation, while Killer's Blade gives it a fast execute.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 65.3k DPS on the 6 million dummy, going up to 77.3k in the Full Damage setup. An older setup also soloed Veteran Hard Mode The Cauldron and Veteran Frostvault.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/stamina-nightblade-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/Ihz4DhmN-00\nLog - https://www.esologs.com/reports/Ly7kHrazqDX1vg8A\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/q9YQjrufRzI\nLog - https://www.esologs.com/reports/BYxzt4MLhv2pankJ\n\n65.3k DPS Parse\nRecording - https://youtu.be/d_jrZqPxK3A\n\n77.3k DPS Parse (Full Damage setup)\nRecording - https://youtu.be/9nqVABQ5HLQ\n\n=============  Timestamps =============\n\n0:00 Intro\n0:26 Skill Setups\n3:41 Situational Skills\n5:48 Final Setups\n6:33 Rotation\n7:15 Passives\n7:37 Gear\n9:04 Champion Points\n10:00 Class Mastery\n10:33 Race\n10:53 Mundus\n11:12 Attributes\n11:44 Food\n12:09 Potions\n12:39 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
-      "published_at": "2026-11-06T16:00:54Z",
-      "duration_seconds": 790
+      "id": "hJOwOkLHRN0",
+      "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
+      "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life.",
+      "channel": "OpenAI",
+      "description": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. \n\nSo we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a personal assistant—from finding childcare to accessing government services and managing personal finances.\n\nOver the past year, we’ve used LifeVal to measure and improve how well our models handle these everyday tasks.\n\n\nhttps://openai.com/index/lifeval/",
+      "published_at": "2026-11-06T21:11:34Z",
+      "duration_seconds": 65
     }
   ],
   "usage": {
-    "total_input_tokens": 71955,
-    "total_output_tokens": 78,
+    "total_input_tokens": 5980,
+    "total_output_tokens": 49,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "動画では、ESOのスタミナナイトブレイドビルドの更新内容が紹介されています。特にアップデート51向けに調整されたスキルや装備構成が解説されています。また、ソロプレイ向けの生存力と火力を両立させる方法が説明されています。最後に、様々な戦闘状況に応じたローテーションの比較も提供されています。",
+    "summary": "AIの日常における有用性を測定するため、「LifeVal」という評価ツールが開発された。AIがタスクをどれほど処理できるかを測り、さらなる性能向上につなげる。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
