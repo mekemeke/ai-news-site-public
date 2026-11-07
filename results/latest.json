@@ -2,26 +2,26 @@
   "schema_version": 1,
   "mode": "analyze",
   "genre": "ESO",
-  "created_at": "2026-11-07T01:13:54.526821+00:00",
-  "run_id": "42322907398",
+  "created_at": "2026-11-07T01:15:36.977701+00:00",
+  "run_id": "42323069672",
   "videos": [
     {
-      "id": "afM70xXNwAs",
-      "url": "https://www.youtube.com/watch?v=afM70xXNwAs",
-      "title": "🔥 More Templar and DK Changes! ✅ Week 2 PTS Summary Notes",
-      "channel": "Skinny Cheeks",
-      "description": "Thanks for watching my video covering the Week 2 Summary for the Update 52 PTS Patch Notes for the Elder Scrolls Online!\n\nhttps://forums.elderscrollsonline.com/en/discussion/700854/update-52-pts-week-2-summary\n\nBuilds are updated for U51 at https://www.skinnycheeks.gg!\n\nMY LINKS\n\n► Website - https://www.skinnycheeks.gg\n► Support Via Patreon - https://www.patreon.com/skinnycheeks\n► Discord - https://discord.gg/dpsnerds\n► Twitch - http://www.twitch.tv/skinnycheeks\n► Twitter - http://www.twitter.com/skinnycheeks\n► Instagram - http://www.instagram.com/skinnycheeks\n► Soundcloud - http://www.soundcloud.com/skinnycheeks\n\nGREAT RESOURCES\n\n► Status Effect Calc - https://www.skinnycheeks.gg/status-effect-calculator\n► Damage Increase Calc - https://www.skinnycheeks.gg/simple-damage-calculator\n► ESO Add-Ons Currently Used - https://tinyurl.com/y8zhz4m3\n► UESP - https://en.uesp.net/wiki/Main_Page\n► ESO-Hub - https://eso-hub.com/\n► ESO Gear Information - http://www.eso-sets.com\n► ESO Skill Information - http://www.eso-skillbook.com\n\n#elderscrollsonline #mmorpg #mmonews",
-      "published_at": "2026-11-06T18:15:59Z",
-      "duration_seconds": 543
+      "id": "SgMzem523ro",
+      "url": "https://www.youtube.com/watch?v=SgMzem523ro",
+      "title": "Stamina Nightblade Solo Build | ESO Update 51",
+      "channel": "Hyperioxes",
+      "description": "Pure Class Stamina Nightblade (StamBlade) Solo Build for ESO Update 51. The build gets great mitigation from An Eye for Exploitation, especially in execute, and good sustain from Siphoning Attacks. Soul Harvest gives it insane Ultimate generation, while Killer's Blade gives it a fast execute.\n\nThis setup cleared Solo Moon Hunter Keep and Solo March of Sacrifices with 3 Misfortunes, and parses 65.3k DPS on the 6 million dummy, going up to 77.3k in the Full Damage setup. An older setup also soloed Veteran Hard Mode The Cauldron and Veteran Frostvault.\n\nWorks for all kinds of solo content - overland at any Challenge Difficulty up to Vestige, World Bosses, Maelstrom Arena, Vateshran Hollows, early arcs in Infinite Archive, and Veteran Dungeon soloing.\n\nWebsite guide - https://hyperioxes.com/eso/solo/stamina-nightblade-build\n\nSolo Moon Hunter Keep - 3 Misfortunes\nRecording - https://youtu.be/Ihz4DhmN-00\nLog - https://www.esologs.com/reports/Ly7kHrazqDX1vg8A\n\nSolo March of Sacrifices - 3 Misfortunes\nRecording - https://youtu.be/q9YQjrufRzI\nLog - https://www.esologs.com/reports/BYxzt4MLhv2pankJ\n\n65.3k DPS Parse\nRecording - https://youtu.be/d_jrZqPxK3A\n\n77.3k DPS Parse (Full Damage setup)\nRecording - https://youtu.be/9nqVABQ5HLQ\n\n=============  Timestamps =============\n\n0:00 Intro\n0:26 Skill Setups\n3:41 Situational Skills\n5:48 Final Setups\n6:33 Rotation\n7:15 Passives\n7:37 Gear\n9:04 Champion Points\n10:00 Class Mastery\n10:33 Race\n10:53 Mundus\n11:12 Attributes\n11:44 Food\n12:09 Potions\n12:39 Outro\n\n=========================\n\nTwitch - https://www.twitch.tv/hyperioxes\nCheck out our community discord - Wildheart ➤ https://discord.gg/wildheart\nWebsite - https://hyperioxes.com/\nPatreon - https://www.patreon.com/c/Hyperioxes",
+      "published_at": "2026-11-06T16:00:54Z",
+      "duration_seconds": 790
     }
   ],
   "usage": {
-    "total_input_tokens": 49472,
-    "total_output_tokens": 104,
+    "total_input_tokens": 71955,
+    "total_output_tokens": 78,
     "total_thought_tokens": 0
   },
   "analysis": {
-    "summary": "動画では、「The Elder Scrolls Online」のアップデート52のPTS週2の変更点について解説しています。主に、ドラゴンナイトのスキルやテンプラーの調整、新たなAoEの挙動、アイテムセットの修正などが紹介されています。特にPvPとPvEのバランス調整に関する具体的な数値やフィードバックが詳細に語られています。今後のパッチに向けてプレイヤーがどのような点に注目すべきか、投稿者の意見も交えて説明されています。",
+    "summary": "動画では、ESOのスタミナナイトブレイドビルドの更新内容が紹介されています。特にアップデート51向けに調整されたスキルや装備構成が解説されています。また、ソロプレイ向けの生存力と火力を両立させる方法が説明されています。最後に、様々な戦闘状況に応じたローテーションの比較も提供されています。",
     "model": "gemini-3.5-flash-lite"
   },
   "api_attempts": 2
